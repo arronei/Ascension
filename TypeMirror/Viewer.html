@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Viewer</title>
+  <link rel="stylesheet" href="app.css" type="text/css" />
+
+  <script src="External/FileSaver.js"></script>
+  <script src="Utils/Utils.js"></script>
+  <script src="Utils/MergeIterator.js"></script>
+  <script src="Utils/Html.js"></script>
+  <script src="TypeSystem/Confidence.js"></script>
+  <script src="TypeSystem/PropertyModel.js"></script>
+  <script src="TypeSystem/TypeModel.js"></script>
+  <script src="TypeSystem/ExportedTypes.js"></script>
+  <script src="TypeSystem/Instances.js"></script>
+  <script src="TypeSystem/TypeContext.js"></script>
+  <script src="Report/Report.js"></script>
+  <script src="Viewer/WebIDLView.js"></script>
+  <script src="Viewer/Comment.js"></script>
+  <script src="Viewer/Viewer.js"></script>
+</head>
+<body>
+  <div class="tools">
+    <div class="toolbar">
+      <input id="typeFilterBox" placeholder="Filter types (Regex)" disabled spellcheck="false" />
+      <input id="propertyFilterBox" placeholder="Filter properties (Regex)" disabled spellcheck="false" />
+      <select id="sourceFilterSelect">
+        <option id="allFilter" value="0">All</option>
+      </select>
+      <label><input type="checkbox" id="showInheritedBox">Show Inherited</label>
+      <button id="refreshButton">Refresh</button>
+    </div>
+    <div id="compareBar" class="toolbar">
+      <table>
+        <tr>
+          <td><span id="sources1" class="sources1" style="width: 16%"></span></td>
+          <td><span id="sources6" class="sources6" style="width: 16%"></span></td>
+          <td><span id="sources2" class="sources2" style="width: 16%"></span></td>
+          <td><span id="sources4" class="sources4" style="width: 16%"></span></td>
+          <td><span id="sources5" class="sources5" style="width: 16%"></span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="mainbody" style="overflow: auto">
+    <pre id="content"></pre>
+  </div>
+
+  <script type="text/javascript">
+    (function () {
+        var location = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+        var dataPath = location + "/data/";
+
+        MirrorJS.Report.load(
+            dataPath,
+            function (report) {
+                MirrorJS.Viewer.labelColorKeys(report);
+
+                var viewer = new MirrorJS.WebIDLView(
+                    document.getElementById("content"),
+                    report);
+
+                var typeFilterBox = document.getElementById("typeFilterBox");
+                typeFilterBox.disabled = false;
+                typeFilterBox.oninput = function (ev) {
+                    viewer.setTypeSearchPattern(typeFilterBox.value);
+                };
+
+                var propertyFilterBox = document.getElementById("propertyFilterBox");
+                propertyFilterBox.disabled = false;
+                propertyFilterBox.oninput = function (ev) {
+                    viewer.setPropertySearchPattern(propertyFilterBox.value);
+                };
+
+                var sourceFilterSelect = document.getElementById("sourceFilterSelect");
+                sourceFilterSelect.disabled = false;
+                sourceFilterSelect.onchange = function (ev) {
+                    var value = Number(sourceFilterSelect[sourceFilterSelect.selectedIndex].value);
+                    viewer.setApiFilterMask(value);
+                }
+
+                var refreshButton = document.getElementById("refreshButton");
+                refreshButton.disabled = false;
+                refreshButton.onclick = function (ev) {
+                    viewer.update();
+                }
+
+                var showInheritedBox = document.getElementById("showInheritedBox");
+                showInheritedBox.disabled = false;
+                showInheritedBox.addEventListener(
+                    "change",
+                    function (ev) {
+                        viewer.setShowInherited(showInheritedBox.checked);
+                    });
+            });
+        })();
+  </script>
+</body>
+</html>

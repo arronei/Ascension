@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Auto Exporter</title>
+  <link rel="stylesheet" href="app.css" type="text/css" />
+
+  <script src="External/FileSaver.js"></script>
+  <script src="Utils/Utils.js"></script>
+  <script src="Utils/MergeIterator.js"></script>
+  <script src="Utils/Html.js"></script>
+  <script src="TypeSystem/Confidence.js"></script>
+  <script src="TypeSystem/PropertyModel.js"></script>
+  <script src="TypeSystem/TypeModel.js"></script>
+  <script src="TypeSystem/ExportedTypes.js"></script>
+  <script src="TypeSystem/Instances.js"></script>
+  <script src="TypeSystem/TypeContext.js"></script>
+  <script src="Exporter/Exporter.js"></script>
+</head>
+<body>
+  <div>Auto Exporting...</div>
+  <div id="log"></div>
+  <script>
+      MirrorJS.Utils.setupErrorHandler();
+      MirrorJS.Exporter.uploadModel(MirrorJS.Utils.getExportFilename());
+  </script>
+</body>
+</html>

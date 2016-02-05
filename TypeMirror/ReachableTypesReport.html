@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Viewer</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+
+    <!-- <script src="External/jquery.js"></script> -->
+    <script src="Utils/Utils.js"></script>
+    <script src="Utils/MergeIterator.js"></script>
+    <script src="Utils/Html.js"></script>
+    <script src="TypeSystem/Confidence.js"></script>
+    <script src="TypeSystem/PropertyModel.js"></script>
+    <script src="TypeSystem/TypeModel.js"></script>
+    <script src="TypeSystem/ExportedTypes.js"></script>
+    <script src="TypeSystem/Instances.js"></script>
+    <script src="TypeSystem/TypeContext.js"></script>
+    <script src="Report/Report.js"></script>
+    <script src="Report/ReachableTypesReport.js"></script>
+</head>
+<body>
+    <div class="tools">
+    </div>
+
+    <pre id="content"></pre>
+
+    <script type="text/javascript">
+    (function () {
+      var location = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+      var dataPath = location + "/data/";
+
+      MirrorJS.Report.load(
+          dataPath,
+          function (report) {
+              var r = new MirrorJS.ReachableTypesReport(report, content);
+              r.execute();
+          });
+    })();
+    </script>
+</body>
+</html>

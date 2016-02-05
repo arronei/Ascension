@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>TypeMirror</title>
+  <style type="text/css">
+      body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif }
+      h1 { font-weight: normal; color: mediumblue }
+      h4 { font-weight: normal; color: mediumblue }
+  </style>
+</head>
+<body style="width:800px;padding-left:40px">
+  <h1>TypeMirror</h1>
+  <div>
+    <p>
+      TypeMirror is our long-term bet to fix interoperability issues <em>before</em> they break sites by inspecting
+      the APIs exposed by browsers to script.  The IE interoperability effort uses TypeMirror to review API
+      discrepancies between IE and Chrome/Firefox, detect new incoming issues as Chrome releases, and to prevent
+      regressions in IE.
+    </p>
+  </div>
+  <div>
+    <h4><a href="http://sharepoint/sites/IE/Shared%20Documents/TypeReview.xlsx?Web=1">Type Review Workbook</a></h4>
+
+    <h1><a href="ProgressReport.html?config=report.js">Test</a></h1>
+
+    <h4>Interopability Reports:</h4>
+    <ul>
+      <li><a href="Viewer.html?sources=SpecMirror.js,Edge.js&views=1,6">Specifications vs. Edge</a></li>
+      <li><a href="Viewer.html?sources=Edge.js,Chrome45.js,Firefox40.js&views=1,6">Edge vs. Chrome 43 (Dev) vs. Firefox 36</a></li>
+      <li><a href="Viewer.html?sources=.,Chrome45.js,Firefox40.js&views=1,6">(Your Browser) vs. Chrome 43 (Dev) vs. Firefox 36</a></li>
+    </ul>
+    <h4>Versioning Reports:</h4>
+    <ul>
+      <li><a href="Viewer.html?sources=IE11.js,Edge.js&views=1,2">IE 11 vs. IE12-Edge</a></li>
+      <li><a href="Viewer.html?sources=Chrome41.js,Chrome43.js&views=1,2">Chrome 41 vs. Chrome 43 (Dev)</a> (Note: Mostly shows the effects of <a href="http://code.google.com/p/chromium/issues/detail?id=43394">chromium #43394</a>)</li>
+      <li><a href="Viewer.html?sources=Chrome40.js,Chrome41.js&views=1,2">Chrome 40 vs. Chrome 41</a></li>
+      <li><a href="Viewer.html?sources=Chrome39.js,Chrome40.js&views=1,2">Chrome 39 vs. Chrome 40</a> (Note: Ignore changes in CSSStyleDeclarations)</li>
+      <li><a href="Viewer.html?sources=Firefox35.js,Firefox36.js&views=1,2">Firefox 35 vs. Firefox 36</a></li>
+      <li><a href="Viewer.html?sources=Firefox34.js,Firefox35.js&views=1,2">Firefox 34 vs. Firefox 35</a></li>
+    </ul>
+    <h4>Statistics:</h4>
+    <ul>
+      <li><a href="ProgressReport.html?config=Report.js">IE12-Edge vs. Chrome 43 (Dev) vs. Firefox 36</a></li>
+    </ul>
+    <h4>Tools:</h4>
+    <ul>
+      <li><a href="Export.html">Export</a></li>
+      <li><a href="ReachableTypesReport.html?sources=.">Reachable Instances</a></li>
+      <li><a href="PropertyConfigurationReport.html?config=Report-IE11.js">Property Configuration</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿body {
+    margin: 0px
+}
+
+body,
+.warning,
+.error,
+.commentColumn,
+#log,
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+#log {
+    font-size:x-small;
+}
+
+.tools {
+    padding: 4px 12px;
+    background-color: lightgray;
+}
+
+.toolbar {
+    padding: 4px 12px;
+}
+
+.mainbody {
+    position: absolute;
+    top: 76px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    width: 100%;
+}
+
+#content {
+    font-family: Consolas, 'Lucida Console', monospace;
+    font-size: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.sources6 /* chrome | firefox */,
+.sources2 /* chrome */
+{
+    background-color: #FFFFB4;
+}
+
+.sources6 /* chrome | firefox */ {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sources1 /* ie */ {
+    background-color: #FFBFBF;
+}
+
+.sources3 /* ie | chrome */ {
+}
+
+.sources4 /* firefox */ {
+    background-color: #B4FFB4;
+}
+
+.sources5 /* ie | firefox */ {
+    background-color: #f5dbfe;
+}
+
+.compare,
+.warning,
+.error {
+    font-size: 12px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 4px 8px;
+}
+
+.warning,
+.error {
+    margin: 8px 0px 8px -10px;
+    display: inline-block;
+}
+
+.keyword {
+    color: #0000FF;
+}
+
+.identifier {
+    color: #2B91AF;
+}
+
+.fromPrototype {
+    font-style: normal;
+}
+
+.fromInstanceWithoutBase,
+.error {
+    color: red;
+}
+
+.codeColumn {
+    min-width: 400px
+}
