@@ -1,0 +1,68 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+using AngleSharp.Dom;
+using WebIDLCollector.GetData;
+
+namespace WebIDLCollector.Process
+{
+    public static partial class ProcessSpecs
+    {
+        public static void ProcessRespec(IEnumerable<IElement> respecItems, string selector, SpecData specificationData)
+        {
+            var cleanString = GenerateRespecIdls(respecItems, selector);
+
+            specificationData.Callbacks.AddRange(DataCollectors.GetAllCallbacks(cleanString, specificationData));
+            specificationData.Dictionaries.AddRange(DataCollectors.GetAllDictionaries(cleanString, specificationData));
+            specificationData.Enumerations.AddRange(DataCollectors.GetAllEnums(cleanString, specificationData));
+            specificationData.Implements.AddRange(DataCollectors.GetAllImplements(cleanString, specificationData));
+            specificationData.Interfaces.AddRange(DataCollectors.GetAllInterfaces(cleanString, specificationData));
+            specificationData.TypeDefs.AddRange(DataCollectors.GetAllTypeDefs(cleanString, specificationData));
+        }
+
+        private static string GenerateRespecIdls(IEnumerable<IElement> respecItems, string selector)
+        {
+            var allIdls = string.Empty;
+            foreach (var definition in respecItems)
+            {
+                var idlItem = definition.GetAttribute("title");
+                if (idlItem.Contains("interface") || idlItem.Contains("dictionary") || idlItem.Contains("enum"))
+                {
+                    idlItem += " {";
+                    var members = definition.QuerySelectorAll(selector + " > dt");
+                    var endChar = idlItem.Contains("enum") ? "," : ";";
+
+                    var memberData = string.Empty;
+                    foreach (var member in members)
+                    {
+                        var content = member.TextContent.Trim();
+                        if (content.Contains("("))
+                        {
+                            var dd = member.NextElementSibling;
+                            var paramItems = dd.QuerySelectorAll("dl.parameters dt");
+                            if (paramItems.Length > 0)
+                            {
+                                var parameters = paramItems.Aggregate(string.Empty, (current, parameter) => current + (parameter.TextContent + ", ")).Trim().TrimEnd(',');
+                                if (content.Contains("()"))
+                                {
+                                    content = content.Replace("()", "(" + parameters + ")");
+                                }
+                            }
+                        }
+
+                        memberData += content + endChar;
+                    }
+
+                    memberData = idlItem.Contains("enum") ? memberData.TrimEnd(',') : memberData;
+                    idlItem += memberData + "}";
+                }
+                else
+                {
+                    idlItem += ";";
+                }
+                allIdls += idlItem;
+            }
+            return Regex.Replace(allIdls, @"\s+", " ").Trim();
+        }
+    }
+}

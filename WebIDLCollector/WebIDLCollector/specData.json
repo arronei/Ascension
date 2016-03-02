@@ -1,0 +1,30 @@
+﻿[
+  {
+    "name": "css-animations",
+    "url": "https://drafts.csswg.org/css-animations/",
+    "identification": [
+      {
+        "selector": "table.propdef",
+        "type": "bikeshed"
+      },
+      {
+        "selector": "#idl-index + pre.idl",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "css-animations-2",
+    "url": "https://drafts.csswg.org/css-animations-2/",
+    "identification": [
+      {
+        "selector": "table.propdef",
+        "type": "bikeshed"
+      },
+      {
+        "selector": "#idl-index + pre.idl",
+        "type": "idl"
+      }
+    ]
+  }
+]
