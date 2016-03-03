@@ -19,7 +19,7 @@ namespace WebIDLCollector
 
         public void GenerateFile()
         {
-            Console.WriteLine("Generating WebIdl");
+            Console.WriteLine("Generating WebIdl - " + _specData.Name);
             var webidlString = CreateWebIdl(_specData);
             using (var file = new StreamWriter("webidl/" + _specData.Name + ".webidl"))
             {
