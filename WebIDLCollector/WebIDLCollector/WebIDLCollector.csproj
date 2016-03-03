@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\BuilderHelpers.cs" />
     <Compile Include="GetData\GetCallbackData.cs" />
     <Compile Include="GetData\GetDictionaryData.cs" />
     <Compile Include="GetData\GetEnumData.cs" />
@@ -69,17 +70,34 @@
     <Compile Include="IDLTypes\Member.cs" />
     <Compile Include="IDLTypes\Property.cs" />
     <Compile Include="IDLTypes\TypeDefType.cs" />
-    <Compile Include="JsonDataBuilder.cs" />
+    <Compile Include="Builders\JsonDataBuilder.cs" />
     <Compile Include="Process\ProcessCssSpecs.cs" />
     <Compile Include="Process\ProcessOthers.cs" />
     <Compile Include="Process\ProcessRespecSpecs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeMirrorTypes\TypeMirrorProperty.cs" />
+    <Compile Include="TypeMirrorTypes\TypeMirrorType.cs" />
     <Compile Include="Utilities\Extensions.cs" />
-    <Compile Include="WebIdlBuilder.cs" />
+    <Compile Include="Builders\WebIdlBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Data\dom3xpath-bugfix.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\ECMAScript2015.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\indexeddb-bugfix.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\telephony-bugfix.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\webgl20-bugfix.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="specData.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

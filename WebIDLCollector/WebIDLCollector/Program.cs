@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using AngleSharp;
 using Newtonsoft.Json;
+using WebIDLCollector.Builders;
 using WebIDLCollector.IDLTypes;
 using WebIDLCollector.Process;
 
@@ -86,6 +87,9 @@ namespace WebIDLCollector
             var mergedSpecData = MergeSpecData();
             var allWebIdl = new WebIdlBuilder(mergedSpecData, true);
             allWebIdl.GenerateFile();
+
+            var jsonDataBuilder = new JsonDataBuilder(mergedSpecData);
+            jsonDataBuilder.GenerateFile();
         }
 
         private static SpecData MergeSpecData()

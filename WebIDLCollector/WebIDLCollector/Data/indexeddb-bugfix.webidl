@@ -1,0 +1,1 @@
+﻿WorkerGlobalScope implements IDBEnvironment;

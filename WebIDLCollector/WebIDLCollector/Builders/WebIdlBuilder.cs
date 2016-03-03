@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using WebIDLCollector.IDLTypes;
 
-namespace WebIDLCollector
+namespace WebIDLCollector.Builders
 {
     public class WebIdlBuilder
     {
