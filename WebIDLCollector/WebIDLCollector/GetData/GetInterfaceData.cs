@@ -271,7 +271,7 @@ namespace WebIDLCollector.GetData
             var arguments = args.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries);
             var argumentList = new List<Argument>();
 
-            foreach (var argument in arguments)
+            foreach (var argument in arguments.Select(argument => argument.Trim()))
             {
                 if (ArgumentParser.IsMatch(argument))
                 {
