@@ -45,7 +45,9 @@ namespace WebIDLCollector.GetData
                 }
                 catch (ArgumentException)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Fail argument for callback- " + callbackDefinition.Name);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     continue;
                 }
 
@@ -55,7 +57,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Duplicate callback: " + callbackDefinition.Name);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 

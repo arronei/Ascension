@@ -32,7 +32,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Duplicate enum: " + enumDefinition.Name);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 

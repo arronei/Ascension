@@ -28,7 +28,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Duplicate typedef: " + typeDefDefinition.Name);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 

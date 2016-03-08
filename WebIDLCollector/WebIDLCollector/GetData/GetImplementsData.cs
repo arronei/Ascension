@@ -28,7 +28,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Duplicate implements: " + implementsDefinition.DestinationInterface + " " + implementsDefinition.OriginatorInterface);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 

@@ -10,50 +10,91 @@ using WebIDLCollector.Process;
 
 namespace WebIDLCollector
 {
-    public class SpecData
+    [Serializable]
+    public class SpecRef
     {
-        public SpecData()
+        public SpecRef()
         {
-            Implements = new List<ImplementsType>();
-            Interfaces = new List<InterfaceType>();
-            Dictionaries = new List<DictionaryType>();
-            Enumerations = new List<EnumType>();
-            TypeDefs = new List<TypeDefType>();
-            Callbacks = new List<CallbackType>();
+            Authors = new List<string>();
+            Versions = new List<string>();
+            ObsoletedBy = new List<string>();
         }
 
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string File { get; set; }
-
-        public IEnumerable<SpecIdentification> Identification;
-
-        public List<ImplementsType> Implements { get; set; }
-
-        public List<InterfaceType> Interfaces { get; set; }
-
-        public List<DictionaryType> Dictionaries { get; set; }
-
-        public List<EnumType> Enumerations { get; set; }
-
-        public List<TypeDefType> TypeDefs { get; set; }
-
-        public List<CallbackType> Callbacks { get; set; }
-    }
-
-    public class SpecIdentification
-    {
-        public string Selector { get; set; }
-        public string Type { get; set; }//Change this to an enum
+        public string Href { get; set; }
+        public string Title { get; set; }
+        public string Date { get; set; }
+        public string Status { get; set; }
+        public string Id { get; set; }
+        public string AliasOf { get; set; }
+        public string Publisher { get; set; }
+        public List<string> Authors { get; }
+        public List<string> Versions { get; }
+        public List<string> ObsoletedBy { get; }
+        public string Data { get; set; }
     }
 
     public class Program
     {
-        public static SortedDictionary<string, SpecData> AllSpecData = new SortedDictionary<string, SpecData>();
-
         public static void Main(string[] args)
         {
+            const string webidlLocation = "webidl";
+            if (Directory.Exists(webidlLocation))
+            {
+                Console.WriteLine("Deleting old files...");
+                Directory.Delete(webidlLocation, true);
+            }
+
+            //Console.WriteLine("Retrieve SpecRef data...");
+            //var request = WebRequest.Create("https://specref.herokuapp.com/bibrefs");
+            //var speRefData = new SortedDictionary<string, SpecRef>();
+            //using (var response = request.GetResponse())
+            //{
+            //    using (var responseStream = response.GetResponseStream())
+            //    {
+            //        if (responseStream == null)
+            //        {
+            //            Console.ForegroundColor = ConsoleColor.Red;
+            //            Console.WriteLine("Unable to get SpecRef data.");
+            //            Console.ForegroundColor = ConsoleColor.Gray;
+            //            Console.ReadKey();
+            //            return;
+            //        }
+            //        using (var stream = new StreamReader(responseStream))
+            //        {
+            //            var specRefSerializer = new JsonSerializer();
+            //            var specRefDictionary = (IDictionary<string, dynamic>)specRefSerializer.Deserialize(stream, typeof(IDictionary<string, dynamic>));
+            //            foreach (var item in specRefDictionary)
+            //            {
+            //                var shortName = item.Key;
+
+            //                SpecRef specRef;
+            //                if (item.Value is string)
+            //                {
+            //                    specRef = new SpecRef
+            //                    {
+            //                        Data = item.Value
+            //                    };
+            //                }
+            //                else
+            //                {
+            //                    specRef = new SpecRef
+            //                    {
+            //                        AliasOf = item.Value["aliasOf"],
+            //                        Date = item.Value["date"],
+            //                        Href = item.Value["href"],
+            //                        Title = item.Value["title"]
+            //                    };
+            //                }
+
+            //                speRefData.Add(shortName, specRef);
+            //            }
+            //        }
+            //    }
+            //}
+
             ProcessJsonFile("specData.json");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Generation Complete!");
             Console.ReadKey();
         }
 
@@ -63,6 +104,8 @@ namespace WebIDLCollector
             {
                 return;
             }
+
+            var allSpecData = new List<SpecData>();
 
             using (var file = File.OpenText(jsonFile))
             {
@@ -80,11 +123,11 @@ namespace WebIDLCollector
                     var webIdl = new WebIdlBuilder(specData);
                     webIdl.GenerateFile();
 
-                    AllSpecData.Add(specData.Name, specData);
+                    allSpecData.Add(specData);
                 }
             }
 
-            var mergedSpecData = MergeSpecData();
+            var mergedSpecData = MergeSpecData(allSpecData);
             var allWebIdl = new WebIdlBuilder(mergedSpecData, true);
             allWebIdl.GenerateFile();
 
@@ -92,7 +135,7 @@ namespace WebIDLCollector
             jsonDataBuilder.GenerateFile();
         }
 
-        private static SpecData MergeSpecData()
+        private static SpecData MergeSpecData(IEnumerable<SpecData> allSpecData)
         {
             var finalInterfaceTypes = new SortedDictionary<string, InterfaceType>();
             var finalCallbackTypes = new SortedDictionary<string, CallbackType>();
@@ -102,7 +145,7 @@ namespace WebIDLCollector
             var finalEnumTypes = new SortedDictionary<string, EnumType>();
 
             //Consolidate all specs into merged interfaces, dictionaries, callbacks, etc..., merge partials
-            foreach (var specData in AllSpecData.Values)
+            foreach (var specData in allSpecData)
             {
                 //Merge partials
                 MergeInterfaces(specData, ref finalInterfaceTypes);
@@ -272,24 +315,24 @@ namespace WebIDLCollector
                 currentInterface.NamedConstructors = currentInterface.NamedConstructors.Union(interfaceType.NamedConstructors);
                 currentInterface.SpecNames = currentInterface.SpecNames.Union(interfaceType.SpecNames).OrderBy(a => a);
 
-                var sortedMembers = new SortedDictionary<Tuple<string, string, IEnumerable<Argument>>, Member>(currentInterface.Members.ToDictionary(a => a.Key, b => b));
+                var members = currentInterface.Members.ToList();
 
                 foreach (var member in interfaceType.Members)
                 {
-                    var memberKey = member.Key;
-
-                    if (!sortedMembers.ContainsKey(memberKey))
+                    if (!members.Contains(member))
                     {
-                        sortedMembers.Add(memberKey, member);
+                        members.Add(member);
                     }
 
-                    var currentMember = sortedMembers[memberKey];
+                    var currentMember = members.Single(a => a.Equals(member));
 
                     currentMember.SpecNames = currentMember.SpecNames.Union(member.SpecNames).OrderBy(a => a);
 
-                    sortedMembers[memberKey] = currentMember;
+                    members.Remove(member);
+                    members.Add(currentMember);
                 }
-                currentInterface.Members = sortedMembers.Values;
+                currentInterface.Members = members;
+                currentInterface.Members = currentInterface.Members.OrderBy(a => a.Name);
 
                 finalInterfaceTypes[interfaceName] = currentInterface;
             }
@@ -342,12 +385,25 @@ namespace WebIDLCollector
                 }
             }
 
+            if (!specData.Callbacks.Any() &&
+                !specData.Dictionaries.Any() &&
+                !specData.Enumerations.Any() &&
+                !specData.Implements.Any() &&
+                !specData.Interfaces.Any() &&
+                !specData.TypeDefs.Any())
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+
             Console.Write("Dictionaries: " + specData.Dictionaries.Count + ", ");
             Console.Write("Enumerations: " + specData.Enumerations.Count + ", ");
             Console.Write("Implements: " + specData.Implements.Count + ", ");
             Console.Write("Interfaces: " + specData.Interfaces.Count + ", ");
             Console.Write("TypeDefs: " + specData.TypeDefs.Count + ", ");
             Console.WriteLine("Callbacks: " + specData.Callbacks.Count);
+            Console.ForegroundColor = ConsoleColor.Gray;
+
+            //Console.ReadKey();
         }
     }
 }

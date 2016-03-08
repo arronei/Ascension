@@ -19,9 +19,16 @@ namespace WebIDLCollector.Builders
 
         public void GenerateFile()
         {
+            var webidlDirectory = "webidl";
+            var webidlFile = webidlDirectory + "/" + _specData.Name + ".webidl";
+            if (!Directory.Exists(webidlDirectory))
+            {
+                Directory.CreateDirectory(webidlDirectory);
+            }
+
             Console.WriteLine("Generating WebIdl - " + _specData.Name);
             var webidlString = CreateWebIdl(_specData);
-            using (var file = new StreamWriter("webidl/" + _specData.Name + ".webidl"))
+            using (var file = new StreamWriter(webidlFile, true))
             {
                 file.WriteLine("// Last Generated: " + "\"" + DateTime.Now + "\",");
                 file.Write(webidlString);

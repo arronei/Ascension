@@ -33,7 +33,14 @@ namespace WebIDLCollector.TypeMirrorTypes
             }
             sb.Append("\"confidence\": ").Append(Confidence).AppendLine(",");
 
-            sb.Append("\"specNames\": \"").Append(string.Join(", ", SpecNames)).AppendLine("\"");
+            sb.Append("\"specNames\": [");
+            var comma = string.Empty;
+            foreach (var specName in SpecNames)
+            {
+                sb.Append(comma).Append("\"").Append(specName).Append("\"");
+                comma = ", ";
+            }
+            sb.AppendLine("],");
 
             sb.Append("\"properties\": {");
             if (Properties.Count > 0)
@@ -41,7 +48,7 @@ namespace WebIDLCollector.TypeMirrorTypes
                 // add list of members
                 sb.AppendLine().Append(string.Join(",\r\n", Properties)).AppendLine();
             }
-            sb.AppendLine("},");
+            sb.AppendLine("}");
             sb.Append("}");
 
             return sb.ToString();

@@ -139,7 +139,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Duplicate interface: " + interfaceDefinition.Name);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 
@@ -148,7 +150,7 @@ namespace WebIDLCollector.GetData
 
         private static string CleanString(string value)
         {
-            value = Regex.Replace(value, @"\s*//.*$", string.Empty, RegexOptions.Singleline | RegexOptions.Multiline);
+            value = Regex.Replace(value, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
             value = Regex.Replace(value, @"\s+", " ");
             value = Regex.Replace(value, @"\s*(set)?raises\([^)]*?\)\s*;", ";");
             value = Regex.Replace(value, @"(?<start>(\(|,)\s*)in\s+", "${start}");
@@ -238,7 +240,9 @@ namespace WebIDLCollector.GetData
                     }
                     catch (ArgumentException)
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Fail argument for member- " + item);
+                        Console.ForegroundColor = ConsoleColor.Gray;
                         continue;
                     }
 
@@ -253,7 +257,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Fail member- " + item);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 
@@ -295,7 +301,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Invalid argument- " + argument);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                     throw new ArgumentException();
                 }
             }

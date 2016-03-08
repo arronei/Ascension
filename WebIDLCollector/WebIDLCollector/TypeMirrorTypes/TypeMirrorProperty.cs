@@ -22,7 +22,14 @@ namespace WebIDLCollector.TypeMirrorTypes
             var sb = new StringBuilder();
 
             sb.Append("\"").Append(Name).AppendLine("\": {");
-            sb.Append("\"specName\": \"").Append(string.Join(", ", SpecNames)).AppendLine("\",");
+            sb.Append("\"specNames\": [");
+            var comma = string.Empty;
+            foreach (var specName in SpecNames)
+            {
+                sb.Append(comma).Append("\"").Append(specName).Append("\"");
+                comma = ", ";
+            }
+            sb.AppendLine("],");
             sb.Append("\"confidence\": ").Append(Confidence);
             if (!string.IsNullOrWhiteSpace(Type))
             {

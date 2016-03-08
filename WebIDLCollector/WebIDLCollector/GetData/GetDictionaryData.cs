@@ -63,7 +63,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Duplicate dictionary: " + dictionaryDefinition.Name);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 
@@ -112,7 +114,9 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Fail dictionary memember- " + item);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 

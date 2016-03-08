@@ -19,9 +19,14 @@ namespace WebIDLCollector.Builders
 
         public void GenerateFile()
         {
+            var typeMirrorFile = "typeMirror/SpecMirror.js";
             Console.WriteLine("Creating JsonObject");
             var jsonString = CreateJsonObject();
-            using (var file = new StreamWriter("typeMirror/SpecMirror.js"))
+            if (File.Exists(typeMirrorFile))
+            {
+                File.Delete(typeMirrorFile);
+            }
+            using (var file = new StreamWriter(typeMirrorFile))
             {
                 file.WriteLine("{");
                 file.WriteLine("\"browserVersion\": \"Specifications\",");
@@ -39,26 +44,26 @@ namespace WebIDLCollector.Builders
             var finalList = GenerateFinalInterfaceList();
             var commaPlaceHolder = string.Empty;
 
-            foreach (var interfaceType in finalList)
+            foreach (var interfaceType in finalList.Values)
             {
                 var tmType = new TypeMirrorType
                 {
-                    TypeName = interfaceType.Value.Name,
-                    BaseType = string.Join(", ", interfaceType.Value.Inherits),
+                    TypeName = interfaceType.Name,
+                    BaseType = string.Join(", ", interfaceType.Inherits),
                     Confidence = 4,
-                    DerivedTypes = interfaceType.Value.ExtendedBy.ToList(),
+                    DerivedTypes = interfaceType.ExtendedBy.ToList(),
                     Properties = new List<TypeMirrorProperty>(),
-                    SpecNames = interfaceType.Value.SpecNames
+                    SpecNames = interfaceType.SpecNames
                 };
 
-                var mem = interfaceType.Value.Members.ToList();
+                var mem = interfaceType.Members.ToList();
 
-                if (!interfaceType.Value.NoInterfaceObject)
+                if (!interfaceType.NoInterfaceObject)
                 {
                     var constructor = new TypeMirrorProperty
                     {
                         Name = "constructor",
-                        SpecNames = interfaceType.Value.SpecNames,
+                        SpecNames = interfaceType.SpecNames,
                         Confidence = 4,
                         IsConfigurable = true,
                         IsWritable = true,
@@ -101,9 +106,9 @@ namespace WebIDLCollector.Builders
             return sb.ToString();
         }
 
-        private SortedDictionary<string, InterfaceType> GenerateFinalInterfaceList()
+        private Dictionary<string, InterfaceType> GenerateFinalInterfaceList()
         {
-            var finalList = new SortedDictionary<string, InterfaceType>(_specData.Interfaces.ToDictionary(a => a.Name, b => b), StringComparer.OrdinalIgnoreCase);
+            var finalList = _specData.Interfaces.ToDictionary(a => a.Name, b => b);
 
             foreach (var item in _specData.Implements)
             {
@@ -132,7 +137,7 @@ namespace WebIDLCollector.Builders
                         else
                         {
                             // Merge NoInterfaceObject members
-                            var sortedMembers = new SortedDictionary<Tuple<string, string, IEnumerable<Argument>>, Member>(finalItem.Members.ToDictionary(a => a.Key, b => b));
+                            var sortedMembers = finalItem.Members.ToDictionary(a => a.Key, b => b);
                             foreach (var member in originItem.Members)
                             {
                                 var memberKey = member.Key;
@@ -149,16 +154,21 @@ namespace WebIDLCollector.Builders
                                 sortedMembers[memberKey] = currentMember;
                             }
                             finalItem.Members = sortedMembers.Values;
+                            finalItem.Members.OrderBy(a => a.Name);
                         }
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Originator - " + originatorItem + " // " + string.Join(", ", implementsSpec));
+                        Console.ForegroundColor = ConsoleColor.Gray;
                     }
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Destination - " + destinationItem + " // " + string.Join(", ", implementsSpec));
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
 

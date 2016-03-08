@@ -86,7 +86,8 @@ namespace WebIDLCollector.Process
                     try
                     {
                         th = row.QuerySelector("th").TextContent.Trim().TrimEnd(':', '>');
-                        td = Regex.Replace(row.QuerySelector("td").TextContent.Trim(), @"\s+", " ");
+                        var text = row.QuerySelector("td dfn")?.FirstChild?.TextContent ?? row.QuerySelector("td").TextContent;
+                        td = Regex.Replace(text.Trim(), @"\s+", " ");
                     }
                     catch
                     {

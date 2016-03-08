@@ -1,1918 +1,2131 @@
 ﻿[
     {
-        "@name": "Web Audio API",
-        "@shortname": "webaudio",
-        "@status": "WD",
-        "@date": "2013/10/10",
-        "@url": "http://www.w3.org/TR/webaudio/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Web MIDI API",
-        "@shortname": "webmidi",
-        "@status": "WD",
-        "@date": "2015/03/17",
-        "@url": "http://www.w3.org/TR/webmidi/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebDriver",
-        "@shortname": "webdriver",
-        "@status": "WD",
-        "@date": "2015/08/08",
-        "@url": "http://www.w3.org/TR/webdriver/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/box.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/visuren.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/visudet.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/visufx.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/generate.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/page.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/colors.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/fonts.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/text.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/tables.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/ui.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS 2.1",
-        "@shortname": "css21",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/CSS21/aural.html",
-        "@selector": "div.propdef",
-        "@type": "css"
-    },
-    {
-        "@name": "CSS Box Alignment",
-        "@shortname": "align",
-        "@status": "WD",
-        "@date": "2014/12/18",
-        "@url": "http://www.w3.org/TR/css3-align/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Animations",
-        "@shortname": "animations",
-        "@status": "ED",
-        "@date": "2015/09/23",
-        "@url": "https://drafts.csswg.org/css-animations/",
-        "@selector": "table.propdef, #idl-index + pre.idl",
-        "@type": "bikeshed, idl"
-    },
-    {
-        "@name": "CSS Animations",
-        "@shortname": "animations",
-        "@status": "ED",
-        "@date": "2015/09/30",
-        "@url": "https://drafts.csswg.org/css-animations-2/",
-        "@selector": "table.propdef, #idl-index + pre.idl",
-        "@type": "bikeshed, idl"
-    },
-    {
-        "@name": "CSS Backgrounds and Borders",
-        "@shortname": "backgrounds",
-        "@status": "CR",
-        "@date": "2015/08/14",
-        "@url": "https://drafts.csswg.org/css-backgrounds/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Backgrounds and Borders",
-        "@shortname": "backgrounds",
-        "@status": "ED",
-        "@date": "2014/03/14",
-        "@url": "http://dev.w3.org/csswg/css-backgrounds-4/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Fragmentation",
-        "@shortname": "break",
-        "@status": "WD",
-        "@date": "2015/01/29",
-        "@url": "http://www.w3.org/TR/css3-break/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Cascading and Inheritance",
-        "@shortname": "cascade",
-        "@status": "CR",
-        "@date": "2015/04/16",
-        "@url": "http://www.w3.org/TR/css-cascade-3/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Cascading and Inheritance",
-        "@shortname": "cascade",
-        "@status": "ED",
-        "@date": "2015/09/08",
-        "@url": "https://drafts.csswg.org/css-cascade/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Color",
-        "@shortname": "color",
-        "@status": "REC",
-        "@date": "2011/06/07",
-        "@url": "http://www.w3.org/TR/css3-color/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Color",
-        "@shortname": "color",
-        "@status": "ED",
-        "@date": "2015/10/02",
-        "@url": "https://drafts.csswg.org/css-color/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Color Correction",
-        "@shortname": "colorcorrection",
-        "@status": "ED",
-        "@date": "2012/07/30",
-        "@url": "https://drafts.csswg.org/css-color-correction/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Conditional Rules",
-        "@shortname": "conditional",
-        "@status": "CR",
-        "@date": "2013/04/04",
-        "@url": "http://www.w3.org/TR/css3-conditional/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSS Containment Module",
-        "@shortname": "containment",
-        "@status": "ED",
-        "@date": "2015/07/16",
-        "@url": "https://drafts.csswg.org/css-containment/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Counter Styles",
-        "@shortname": "counter-styles",
-        "@status": "CR",
-        "@date": "2015/06/15",
-        "@url": "http://www.w3.org/TR/css-counter-styles-3/",
-        "@selector": "#idl-index + pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSS Device Adaptation",
-        "@shortname": "deviceadapt",
-        "@status": "ED",
-        "@date": "2015/05/29",
-        "@url": "https://drafts.csswg.org/css-device-adapt/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSS Display",
-        "@shortname": "display",
-        "@status": "WD",
-        "@date": "2015/07/21",
-        "@url": "http://www.w3.org/TR/css-display-3/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Exclusions",
-        "@shortname": "exclusions",
-        "@status": "WD",
-        "@date": "2015/01/15",
-        "@url": "http://www.w3.org/TR/css3-exclusions/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Flexible Box Layout",
-        "@shortname": "flexbox",
-        "@status": "LC",
-        "@date": "2015/05/14",
-        "@url": "http://www.w3.org/TR/css3-flexbox/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Font Loading",
-        "@shortname": "font-loading",
-        "@status": "LC",
-        "@date": "2014/05/22",
-        "@url": "http://www.w3.org/TR/css-font-loading/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSS Fonts",
-        "@shortname": "fonts",
-        "@status": "CR",
-        "@date": "2013/10/03",
-        "@url": "http://www.w3.org/TR/css-fonts-3/",
-        "@selector": "table.propdef, pre.idl",
-        "@type": "bikeshed, idl"
-    },
-    {
-        "@name": "CSS Generated Content for Paged Media",
-        "@shortname": "gcpm",
-        "@status": "WD",
-        "@date": "2014/05/13",
-        "@url": "http://www.w3.org/TR/css3-gcpm/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Grid Layout",
-        "@shortname": "grid-layout",
-        "@status": "WD",
-        "@date": "2015/08/06",
-        "@url": "http://www.w3.org/TR/css3-grid-layout/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Image Values and Replaced Content",
-        "@shortname": "images",
-        "@status": "WD",
-        "@date": "2015/09/07",
-        "@url": "https://drafts.csswg.org/css-images/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Image Values and Replaced Content",
-        "@shortname": "images",
-        "@status": "ED",
-        "@date": "2012/09/11",
-        "@url": "https://drafts.csswg.org/css-images-4/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Inline Layout",
-        "@shortname": "inline",
-        "@status": "ED",
-        "@date": "2015/09/30",
-        "@url": "https://drafts.csswg.org/css-inline/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Line Grid",
-        "@shortname": "line-grid",
-        "@status": "WD",
-        "@date": "2014/09/16",
-        "@url": "https://drafts.csswg.org/css-line-grid/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Lists and Counters",
-        "@shortname": "lists",
-        "@status": "WD",
-        "@date": "2014/03/20",
-        "@url": "https://drafts.csswg.org/css-lists/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Logical Properties",
-        "@shortname": "logical-props",
-        "@status": "ED",
-        "@date": "2015/07/21",
-        "@url": "http://dev.w3.org/csswg/css-logical-props/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Multi-column Layout",
-        "@shortname": "multicol",
-        "@status": "CR",
-        "@date": "2011/04/12",
-        "@url": "http://www.w3.org/TR/css3-multicol/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Multi-column Layout",
-        "@shortname": "multicol",
-        "@status": "ED",
-        "@date": "2015/05/29",
-        "@url": "https://drafts.csswg.org/css-multicol-2/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Overflow",
-        "@shortname": "overflow",
-        "@status": "WD",
-        "@date": "2013/04/18",
-        "@url": "https://drafts.csswg.org/css-overflow/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Paged Media",
-        "@shortname": "page",
-        "@status": "ED",
-        "@date": "2015/07/06",
-        "@url": "https://drafts.csswg.org/css-page/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Positioned Layout",
-        "@shortname": "positioning",
-        "@status": "WD",
-        "@date": "2015/07/22",
-        "@url": "https://drafts.csswg.org/css-position/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Regions",
-        "@shortname": "regions",
-        "@status": "WD",
-        "@date": "2015/07/07",
-        "@url": "https://drafts.csswg.org/css-regions/",
-        "@selector": "table.propdef, pre.idl",
-        "@type": "bikeshed, idl"
-    },
-    {
-        "@name": "CSS Round Display",
-        "@shortname": "round-display",
-        "@status": "ED",
-        "@date": "2015/08/10",
-        "@url": "http://dev.w3.org/csswg/css-round-display/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Ruby Layout",
-        "@shortname": "ruby",
-        "@status": "WD",
-        "@date": "2014/08/04",
-        "@url": "http://www.w3.org/TR/css3-ruby/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Shapes",
-        "@shortname": "shapes",
-        "@status": "CR",
-        "@date": "2015/09/20",
-        "@url": "https://drafts.csswg.org/css-shapes/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Shapes",
-        "@shortname": "shapes",
-        "@status": "ED",
-        "@date": "2015/08/27",
-        "@url": "https://drafts.csswg.org/css-shapes-2/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Mobile Text Size Adjustment",
-        "@shortname": "size-adjust",
-        "@status": "ED",
-        "@date": "2012/03/29",
-        "@url": "http://dev.w3.org/csswg/css-size-adjust/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Intrinsic & Extrinsic Sizing",
-        "@shortname": "sizing",
-        "@status": "WD",
-        "@date": "2012/09/27",
-        "@url": "https://drafts.csswg.org/css-sizing/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Scroll Snap Points",
-        "@shortname": "snappoints",
-        "@status": "WD",
-        "@date": "2015/09/15",
-        "@url": "http://dev.w3.org/csswg/css-snappoints/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Speech",
-        "@shortname": "speech",
-        "@status": "CR",
-        "@date": "2012/03/20",
-        "@url": "http://www.w3.org/TR/css3-speech/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Text",
-        "@shortname": "text",
-        "@status": "WD",
-        "@date": "2015/09/30",
-        "@url": "https://drafts.csswg.org/css-text/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Text",
-        "@shortname": "text",
-        "@status": "WD",
-        "@date": "2015/09/21",
-        "@url": "https://drafts.csswg.org/css-text-4/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Text Decoration",
-        "@shortname": "text-decor",
-        "@status": "CR",
-        "@date": "2013/08/01",
-        "@url": "https://drafts.csswg.org/css-text-decor/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Text Decoration",
-        "@shortname": "text-decor",
-        "@status": "UD",
-        "@date": "2015/06/09",
-        "@url": "http://dev.w3.org/csswg/css-text-decor-4/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Transforms",
-        "@shortname": "transforms",
-        "@status": "WD",
-        "@date": "2015/08/19",
-        "@url": "https://drafts.csswg.org/css-transforms/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Transforms",
-        "@shortname": "transforms",
-        "@status": "ED",
-        "@date": "2015/05/29",
-        "@url": "https://drafts.csswg.org/css-transforms-2/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Transitions",
-        "@shortname": "transitions",
-        "@status": "WD",
-        "@date": "2015/08/12",
-        "@url": "https://drafts.csswg.org/css-transitions/",
-        "@selector": "table.propdef, div.idl-code",
-        "@type": "bikeshed, idl"
-    },
-    {
-        "@name": "CSS Transitions",
-        "@shortname": "transitions",
-        "@status": "ED",
-        "@date": "2015/09/30",
-        "@url": "https://drafts.csswg.org/css-transitions-2/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSS Basic User Interface",
-        "@shortname": "cssui",
-        "@status": "CR",
-        "@date": "2015/09/29",
-        "@url": "https://drafts.csswg.org/css-ui/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Basic User Interface",
-        "@shortname": "cssui",
-        "@status": "ED",
-        "@date": "2015/09/29",
-        "@url": "https://drafts.csswg.org/css-ui-4/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Will Change",
-        "@shortname": "will-change",
-        "@status": "WD",
-        "@date": "2014/04/29",
-        "@url": "https://drafts.csswg.org/css-will-change/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Writing Modes",
-        "@shortname": "writing-modes",
-        "@status": "CR",
-        "@date": "2014/03/20",
-        "@url": "https://drafts.csswg.org/css-writing-modes/",
-        "@selector": "table.propdef",
-        "@type": "bikeshed"
-    },
-    {
-        "@name": "CSS Object Model",
-        "@shortname": "cssom",
-        "@status": "WD",
-        "@date": "2015/09/08",
-        "@url": "https://drafts.csswg.org/cssom/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSSOM Values",
-        "@shortname": "cssomvalues",
-        "@status": "ED",
-        "@date": "2014/01/08",
-        "@url": "https://drafts.csswg.org/cssom-values/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "CSSOM View",
-        "@shortname": "cssom-view",
-        "@status": "WD",
-        "@date": "2013/12/17",
-        "@url": "https://drafts.csswg.org/cssom-view/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Media Queries",
-        "@shortname": "mediaqueries",
-        "@status": "REC",
-        "@date": "2012/06/19",
-        "@url": "http://www.w3.org/TR/css3-mediaqueries/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Media Queries",
-        "@shortname": "mediaqueries",
-        "@status": "WD",
-        "@date": "2015/09/24",
-        "@url": "https://drafts.csswg.org/mediaqueries/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Web Animations",
-        "@shortname": "animations",
-        "@status": "WD",
-        "@date": "2014/06/05",
-        "@url": "http://www.w3.org/TR/web-animations/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Ambient Light Events",
-        "@shortname": "ambient-light",
-        "@status": "WD",
-        "@date": "2014/06/19",
-        "@url": "http://www.w3.org/TR/ambient-light/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Battery Status API",
-        "@shortname": "battery-status",
-        "@status": "CR",
-        "@date": "2014/12/09",
-        "@url": "http://www.w3.org/TR/battery-status/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML Media Capture",
-        "@shortname": "media-capture",
-        "@status": "CR",
-        "@date": "2014/12/09",
-        "@url": "http://www.w3.org/TR/html-media-capture/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Proximity Events",
-        "@shortname": "proximity",
-        "@status": "CR",
-        "@date": "2013/10/01",
-        "@url": "http://www.w3.org/TR/proximity/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Vibration API",
-        "@shortname": "vibration",
-        "@status": "REC",
-        "@date": "2015/02/10",
-        "@url": "http://www.w3.org/TR/vibration/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Device Orientation Event",
-        "@shortname": "orientation-event",
-        "@status": "WD",
-        "@date": "2011/12/01",
-        "@url": "http://www.w3.org/TR/orientation-event/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Element Traversal",
-        "@shortname": "elementstraversal",
-        "@status": "REC",
-        "@date": "2008/12/22",
-        "@url": "http://www.w3.org/TR/ElementTraversal/",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM3 Core",
-        "@shortname": "dom3core",
-        "@status": "REC",
-        "@date": "2004/04/07",
-        "@url": "http://www.w3.org/TR/DOM-Level-3-Core/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM2 HTML",
-        "@shortname": "dom2html",
-        "@status": "REC",
-        "@date": "2003/01/09",
-        "@url": "http://www.w3.org/TR/DOM-Level-2-HTML/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM2 Core",
-        "@shortname": "dom2core",
-        "@status": "REC",
-        "@date": "2000/11/13",
-        "@url": "http://www.w3.org/TR/DOM-Level-2-Core/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM2 Events",
-        "@shortname": "dom2events",
-        "@status": "REC",
-        "@date": "2000/11/13",
-        "@url": "http://www.w3.org/TR/DOM-Level-2-Events/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM2 Style",
-        "@shortname": "dom2style",
-        "@status": "REC",
-        "@date": "2000/11/13",
-        "@url": "http://www.w3.org/TR/DOM-Level-2-Style/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM2 Traversal and Range",
-        "@shortname": "dom2traversal",
-        "@status": "REC",
-        "@date": "2000/11/13",
-        "@url": "http://www.w3.org/TR/DOM-Level-2-Traversal-Range/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM2 Views",
-        "@shortname": "dom2views",
-        "@status": "REC",
-        "@date": "2000/11/13",
-        "@url": "http://www.w3.org/TR/DOM-Level-2-Views/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM3 XPATH",
-        "@shortname": "dom3xpath",
-        "@status": "N",
-        "@date": "2004/01/26",
-        "@url": "http://www.w3.org/TR/DOM-Level-3-XPath/idl-definitions.html",
-        "@selector": ".idl-code pre",
-        "@type": "idl, file",
-        "@file": "dom3xpath-bugfix.webidl"
-    },
-    {
-        "@name": "DOM",
-        "@shortname": "dom",
-        "@status": "LS",
-        "@date": "2015/08/04",
-        "@url": "https://dom.spec.whatwg.org/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Encypted Media Extensions",
-        "@shortname": "encrypted-media",
-        "@status": "WD",
-        "@date": "2015/03/31",
-        "@url": "http://www.w3.org/TR/encrypted-media/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML 5.1",
-        "@shortname": "html51",
-        "@status": "WD",
-        "@date": "2015/07/09",
-        "@url": "http://www.w3.org/TR/html51/infrastructure.html#infrastructure",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML 5.1",
-        "@shortname": "html51",
-        "@status": "WD",
-        "@date": "2015/07/09",
-        "@url": "http://www.w3.org/TR/html51/dom.html#dom",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML 5.1",
-        "@shortname": "html51",
-        "@status": "WD",
-        "@date": "2015/07/09",
-        "@url": "http://www.w3.org/TR/html51/semantics.html#semantics",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML 5.1",
-        "@shortname": "html51",
-        "@status": "WD",
-        "@date": "",
-        "@url": "http://www.w3.org/TR/html51/editing.html#editing",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML 5.1",
-        "@shortname": "html51",
-        "@status": "WD",
-        "@date": "",
-        "@url": "http://www.w3.org/TR/html51/browsers.html#browsers",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML 5.1",
-        "@shortname": "html51",
-        "@status": "WD",
-        "@date": "",
-        "@url": "http://www.w3.org/TR/html51/webappapis.html#webappapis",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML 5.1",
-        "@shortname": "html51",
-        "@status": "WD",
-        "@date": "",
-        "@url": "http://www.w3.org/TR/html51/obsolete.html#obsolete",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML Canvas 2D Context",
-        "@shortname": "canvas",
-        "@status": "CR",
-        "@date": "2015/07/",
-        "@url": "http://www.w3.org/TR/2dcontext/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML Canvas 2D Context",
-        "@shortname": "canvas",
-        "@status": "WD",
-        "@date": "2014/08/28",
-        "@url": "http://www.w3.org/TR/2dcontext2/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Media Source Extensions",
-        "@shortname": "media-source",
-        "@status": "CR",
-        "@date": "2015/03/31",
-        "@url": "http://www.w3.org/TR/media-source/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Pointer Events",
-        "@shortname": "pointerevents",
-        "@status": "REC",
-        "@date": "2015/02/24",
-        "@url": "http://www.w3.org/TR/pointerevents/",
-        "@selector": "pre.idl, #the-touch-action-css-property table",
-        "@type": "idl, bikeshed"
-    },
-    {
-        "@name": "SVG 1.1",
-        "@shortname": "svg",
-        "@status": "REC",
-        "@date": "2011/08/16",
-        "@url": "http://www.w3.org/TR/SVG11/idl.html",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "SVG 1.1",
-        "@shortname": "svg",
-        "@status": "REC",
-        "@date": "2011/08/16",
-        "@url": "http://www.w3.org/TR/SVG11/propidx.html",
-        "@selector": "table.vert.property-table",
-        "@type": "svgcss"
-    },
-    {
-        "@name": "SVG 2",
-        "@shortname": "svg",
-        "@status": "WD",
-        "@date": "2015/07/09",
-        "@url": "http://www.w3.org/TR/SVG2/idl.html",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "SVG 2",
-        "@shortname": "svg",
-        "@status": "WD",
-        "@date": "2015/07/09",
-        "@url": "http://www.w3.org/TR/SVG2/propidx.html",
-        "@selector": "table.proptable",
-        "@type": "svgcss"
-    },
-    {
-        "@name": "Web Telephony API",
-        "@shortname": "telephony",
-        "@status": "WD",
-        "@date": "2015/06/02",
-        "@url": "http://www.w3.org/TR/telephony/",
-        "@selector": "pre.idl",
-        "@type": "idl, file",
-        "@file": "telephony-bugfix.webidl"
-    },
-    {
-        "@name": "WebVTT",
-        "@shortname": "webvtt",
-        "@status": "WD",
-        "@date": "2014/11/13",
-        "@url": "http://www.w3.org/TR/webvtt1/",
-        "@selector": "pre.idl_whatwg",
-        "@type": "idl"
-    },
-    {
-        "@name": "Clipboard API and Events",
-        "@shortname": "clipboard-api",
-        "@status": "WD",
-        "@date": "2015/04/21",
-        "@url": "http://www.w3.org/TR/clipboard-apis/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "UI Events",
-        "@shortname": "dom-events",
-        "@status": "WD",
-        "@date": "2015/04/28",
-        "@url": "http://www.w3.org/TR/DOM-Level-3-Events/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "DOM Parsing and Serialization",
-        "@shortname": "dom-parsing",
-        "@status": "CR",
-        "@date": "2014/06/17",
-        "@url": "http://www.w3.org/TR/DOM-Parsing/",
-        "@selector": "pre.idl, pre.extraidl",
-        "@type": "idl"
-    },
-    {
-        "@name": "File API",
-        "@shortname": "fileapi",
-        "@status": "WD",
-        "@date": "2015/04/21",
-        "@url": "http://www.w3.org/TR/FileAPI/",
-        "@selector": "code.idl-code",
-        "@type": "idl"
-    },
-    {
-        "@name": "Gamepad",
-        "@shortname": "gamepad",
-        "@status": "WD",
-        "@date": "2015/04/29",
-        "@url": "http://www.w3.org/TR/gamepad/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Indexed Database API",
-        "@shortname": "indexeddb",
-        "@status": "REC",
-        "@date": "2015/01/08",
-        "@url": "http://www.w3.org/TR/IndexedDB/",
-        "@selector": "pre.idl",
-        "@type": "idl, file",
-        "@file": "indexeddb-bugfix.webidl"
-    },
-    {
-        "@name": "Input Method Editor API",
-        "@shortname": "ime-api",
-        "@status": "WD",
-        "@date": "2015/05/26",
-        "@url": "http://www.w3.org/TR/ime-api/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Pointer Lock",
-        "@shortname": "pointerlock",
-        "@status": "CR",
-        "@date": "2013/12/17",
-        "@url": "http://www.w3.org/TR/pointerlock/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Push API",
-        "@shortname": "push-api",
-        "@status": "WD",
-        "@date": "2015/04/27",
-        "@url": "http://www.w3.org/TR/push-api/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Quota Management API",
-        "@shortname": "quota-api",
-        "@status": "WD",
-        "@date": "2015/04/09",
-        "@url": "http://www.w3.org/TR/quota-api/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Screen Orientation API",
-        "@shortname": "screen-orientation",
-        "@status": "WD",
-        "@date": "2015/04/28",
-        "@url": "http://www.w3.org/TR/screen-orientation/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Selectors API",
-        "@shortname": "selectors-api2",
-        "@status": "N",
-        "@date": "2013/10/17",
-        "@url": "http://www.w3.org/TR/selectors-api2/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Server-Sent Events",
-        "@shortname": "eventsource",
-        "@status": "REC",
-        "@date": "2015/02/03",
-        "@url": "http://www.w3.org/TR/eventsource/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Shadow DOM",
-        "@shortname": "shadow-dom",
-        "@status": "WD",
-        "@date": "2015/10/06",
-        "@url": "http://w3c.github.io/webcomponents/spec/shadow/",
-        "@selector": "dl.idl",
-        "@type": "respec"
-    },
-    {
-        "@name": "WebSocket API",
-        "@shortname": "websockets",
-        "@status": "CR",
-        "@date": "2012/09/20",
-        "@url": "http://www.w3.org/TR/websockets/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Web Workers",
-        "@shortname": "workers",
-        "@status": "CR",
-        "@date": "2012/05/01",
-        "@url": "http://www.w3.org/TR/workers/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "XMLHttpRequest",
-        "@shortname": "xmlhttprequest",
-        "@status": "WD",
-        "@date": "2014/01/30",
-        "@url": "http://www.w3.org/TR/XMLHttpRequest/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Content Security Policy",
-        "@shortname": "csp",
-        "@status": "CR",
-        "@date": "2015/07/21",
-        "@url": "http://www.w3.org/TR/CSP/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Geolocation API",
-        "@shortname": "geolocation",
-        "@status": "ED",
-        "@date": "2014/07/11",
-        "@url": "http://dev.w3.org/geo/api/spec-source.html",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Geolocation API",
-        "@shortname": "geolocation",
-        "@status": "REC",
-        "@date": "2014/07/11",
-        "@url": "http://www.w3.org/TR/geolocation-API/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Subresource Integrity",
-        "@shortname": "sri",
-        "@status": "WD",
-        "@date": "2015/07/07",
-        "@url": "http://www.w3.org/TR/SRI/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Web Cryptography API",
-        "@shortname": "webcrypto",
-        "@status": "CR",
-        "@date": "2014/12/11",
-        "@url": "http://www.w3.org/TR/WebCryptoAPI/",
-        "@selector": "code.idl-code",
-        "@type": "idl"
-    },
-    {
-        "@name": "Beacon",
-        "@shortname": "beacon",
-        "@status": "LC",
-        "@date": "2014/06/24",
-        "@url": "http://www.w3.org/TR/beacon/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Frame Timing",
-        "@shortname": "frame-timing",
-        "@status": "WD",
-        "@date": "2015/07/17",
-        "@url": "http://www.w3.org/TR/frame-timing/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "High Resolution Time",
-        "@shortname": "hr-time",
-        "@status": "WD",
-        "@date": "2015/07/21",
-        "@url": "http://www.w3.org/TR/hr-time-2/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Navigation Timing",
-        "@shortname": "navigation-timing",
-        "@status": "WD",
-        "@date": "2015/07/21",
-        "@url": "http://www.w3.org/TR/navigation-timing-2/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Resource Hints",
-        "@shortname": "resource-hints",
-        "@status": "WD",
-        "@date": "2015/07/17",
-        "@url": "http://www.w3.org/TR/resource-hints/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Resource Timing",
-        "@shortname": "resource-timing",
-        "@status": "WD",
-        "@date": "2015/07/21",
-        "@url": "http://www.w3.org/TR/resource-timing/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Server Timing",
-        "@shortname": "server-timing",
-        "@status": "WD",
-        "@date": "2015/07/17",
-        "@url": "http://www.w3.org/TR/server-timing/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Timing control for script-based animations",
-        "@shortname": "animation-timing",
-        "@status": "CR",
-        "@date": "2013/10/31",
-        "@url": "http://www.w3.org/TR/animation-timing/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebRTC",
-        "@shortname": "webrtc",
-        "@status": "WD",
-        "@date": "2015/02/10",
-        "@url": "http://www.w3.org/TR/webrtc/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Audio Output Devices API",
-        "@shortname": "audio-output",
-        "@status": "WD",
-        "@date": "2015/02/10",
-        "@url": "http://www.w3.org/TR/audio-output/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Media Capture and Streams",
-        "@shortname": "mediacapture-streams",
-        "@status": "LC",
-        "@date": "2015/04/14",
-        "@url": "http://www.w3.org/TR/mediacapture-streams/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Media Capture Depth Stream Extensions",
-        "@shortname": "mediacapture-depth",
-        "@status": "WD",
-        "@date": "2015/01/29",
-        "@url": "http://www.w3.org/TR/mediacapture-depth/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Mediastream Image Capture",
-        "@shortname": "image-capture",
-        "@status": "WD",
-        "@date": "2015/01/27",
-        "@url": "http://www.w3.org/TR/image-capture/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "MediaStream Recording",
-        "@shortname": "mediastream-recording",
-        "@status": "WD",
-        "@date": "2015/01/27",
-        "@url": "http://www.w3.org/TR/mediastream-recording/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Screen Capture",
-        "@shortname": "screen-capture",
-        "@status": "WD",
-        "@date": "2015/02/10",
-        "@url": "http://www.w3.org/TR/screen-capture/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Fullscreen API",
-        "@shortname": "fullscreen",
-        "@status": "LS",
-        "@date": "2015/08/19",
-        "@url": "https://fullscreen.spec.whatwg.org/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "URL",
-        "@shortname": "url",
-        "@status": "LS",
-        "@date": "2015/08/20",
-        "@url": "https://url.spec.whatwg.org/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Fetch",
-        "@shortname": "fetch",
-        "@status": "LS",
-        "@date": "2015/08/20",
-        "@url": "https://fetch.spec.whatwg.org/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Encoding",
-        "@shortname": "encoding",
-        "@status": "CR",
-        "@date": "2014/09/16",
-        "@url": "http://www.w3.org/TR/encoding/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL 1.0",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/10/27",
-        "@url": "https://www.khronos.org/registry/webgl/specs/1.0/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL 2.0",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2015/08/18",
-        "@url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-        "@selector": "pre.idl",
-        "@type": "idl, file",
-        "@file": "webgl20-bugfix.webidl"
-    },
-    {
-        "@name": "Selection API",
-        "@shortname": "selection-api",
-        "@status": "WD",
-        "@date": "2014/10/07",
-        "@url": "http://www.w3.org/TR/selection-api/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Presentation API",
-        "@shortname": "presentation-api",
-        "@status": "ED",
-        "@date": "2015/08/18",
-        "@url": "http://w3c.github.io/presentation-api/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Page Visibility",
-        "@shortname": "page-visibility",
-        "@status": "ED",
-        "@date": "2015/07/17",
-        "@url": "http://w3c.github.io/page-visibility/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Custom Elements",
-        "@shortname": "custom-elements",
-        "@status": "WD",
-        "@date": "2014/12/16",
-        "@url": "http://www.w3.org/TR/custom-elements/",
-        "@selector": "pre code",
-        "@type": "idl"
-    },
-    {
-        "@name": "Service Workers",
-        "@shortname": "service-workers",
-        "@status": "WD",
-        "@date": "2015/06/25",
-        "@url": "http://www.w3.org/TR/service-workers/",
-        "@selector": "pre code",
-        "@type": "idl"
-    },
-    {
-        "@name": "XMLHttpRequest",
-        "@shortname": "xhr",
-        "@status": "LS",
-        "@date": "2015/08/20",
-        "@url": "http://xhr.spec.whatwg.org/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Object RTC (ORTC) API for WebRTC",
-        "@shortname": "ortc",
-        "@status": "WD",
-        "@date": "2015/06/22",
-        "@url": "http://ortc.org/wp-content/uploads/2015/06/ortc.html",
-        "@selector": "dl.idl",
-        "@type": "respec"
-    },
-    {
-        "@name": "File API: Directories and System",
-        "@shortname": "file-system",
-        "@status": "ED",
-        "@date": "2012/03/07",
-        "@url": "http://dev.w3.org/2009/dap/file-system/file-dir-sys.html",
-        "@selector": "div.idl, dl.idl",
-        "@type": "respec, respec"
-    },
-    {
-        "@name": "Media Capture from DOM Elements",
-        "@shortname": "mediacapture-fromelement",
-        "@status": "ED",
-        "@date": "2015/08/17",
-        "@url": "http://w3c.github.io/mediacapture-fromelement/",
-        "@selector": "dl.idl",
-        "@type": "respec"
-    },
-    {
-        "@name": "Efficient Script Yielding",
-        "@shortname": "setimmediate",
-        "@status": "ED",
-        "@date": "2011/07/28",
-        "@url": "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/setImmediate/Overview.html",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Web Notifications",
-        "@shortname": "notifications",
-        "@status": "CR",
-        "@date": "2015/05/19",
-        "@url": "http://www.w3.org/TR/notifications/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "HTML Imports",
-        "@shortname": "imports",
-        "@status": "WD",
-        "@date": "2014/03/11",
-        "@url": "http://www.w3.org/TR/html-imports/",
-        "@selector": "pre code.prettyprint",
-        "@type": "idl"
-    },
-    {
-        "@name": "ECMAScript 2015",
-        "@shortname": "es6",
-        "@status": "REC",
-        "@date": "2015/06/17",
-        "@url": "http://www.ecma-international.org/ecma-262/6.0/",
-        "@file": "ECMAScript2015.webidl",
-        "@selector": "",
-        "@type": "file"
-    },
-    {
-        "@name": "Tracking Preference Expression (DNT)",
-        "@shortname": "dnt",
-        "@status": "CR",
-        "@date": "2015/08/20",
-        "@url": "http://www.w3.org/TR/tracking-dnt/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "User Timing",
-        "@shortname": "usertime",
-        "@status": "REC",
-        "@date": "2013/12/12",
-        "@url": "http://www.w3.org/TR/user-timing/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Performance Timeline",
-        "@shortname": "perftime",
-        "@status": "REC",
-        "@date": "2013/12/12",
-        "@url": "http://www.w3.org/TR/performance-timeline/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Navigation Timing",
-        "@shortname": "navtime",
-        "@status": "REC",
-        "@date": "2012/12/17",
-        "@url": "http://www.w3.org/TR/navigation-timing/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Web Accessibility Properties and Actions (WAPA) Explainer",
-        "@shortname": "wapa",
-        "@status": "ED",
-        "@date": "2014/10/24",
-        "@url": "https://raw.githubusercontent.com/cyns/wapa/master/wapa.html",
-        "@selector": "div.idl code",
-        "@type": "idl"
-    },
-    {
-        "@name": "Touch Events",
-        "@shortname": "touchevents2",
-        "@status": "ED",
-        "@date": "2015/08/11",
-        "@url": "https://w3c.github.io/touch-events/",
-        "@selector": "dl.idl",
-        "@type": "respec"
-    },
-    {
-        "@name": "Generic Sensor API",
-        "@shortname": "sensor",
-        "@status": "ED",
-        "@date": "2015/09/24",
-        "@url": "https://w3c.github.io/sensors/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Selectors API",
-        "@shortname": "selectors-api",
-        "@status": "REC",
-        "@date": "2013/02/21",
-        "@url": "http://www.w3.org/TR/selectors-api/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "Cooperative Scheduling of Background Tasks",
-        "@shortname": "requestidle",
-        "@status": "WD",
-        "@date": "2015-09-25",
-        "@url": "http://www.w3.org/TR/requestidlecallback/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebVR",
-        "@shortname": "webvr",
-        "@status": "UD",
-        "@date": "2015/05/13",
-        "@url": "https://mozvr.github.io/webvr-spec/webvr.html",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "FileSystem API",
-        "@shortname": "filesystemapi",
-        "@status": "ED",
-        "@date": "2015/07/17",
-        "@url": "http://w3c.github.io/filesystem-api/",
-        "@selector": "dl.idl",
-        "@type": "respec"
-    },
-    {
-        "@name": "WebGL OES_texture_float",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/09/11",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL OES_texture_half_float",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/09/11",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_lose_context",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL OES_standard_derivatives",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL OES_vertex_array_object",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_debug_renderer_info",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_debug_shaders",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_compressed_texture_s3tc",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_depth_texture",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL OES_element_index_uint",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_texture_filter_anisotropic",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_compressed_texture_atc",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_atc/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_compressed_texture_pvrtc",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_color_buffer_half_float",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/11/24",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_color_buffer_float",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/11/24",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_frag_depth",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/05/29",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_sRGB",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_draw_buffers",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/08/08",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL ANGLE_instanced_arrays",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/09/23",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL OES_texture_float_linear",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/08/08",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL OES_texture_half_float_linear",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/08/08",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_shared_resources",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_shared_resources/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_security_sensitive_resources",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_security_sensitive_resources/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_compressed_texture_etc1",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/07/15",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_blend_minmax",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/05/29",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_disjoint_timer_query",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2015/10/05",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_shader_texture_lod",
-        "@shortname": "webgl",
-        "@status": "REC",
-        "@date": "2014/05/29",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL OES_fbo_render_mipmap",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2015/01/31",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_compressed_texture_es3",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2015/01/31",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_es3/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL WEBGL_compressed_texture_astc",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2015/08/10",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "WebGL EXT_color_buffer_float",
-        "@shortname": "webgl",
-        "@status": "WD",
-        "@date": "2014/10/29",
-        "@url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-        "@selector": "pre.idl",
-        "@type": "idl"
-    },
-    {
-        "@name": "FindText API",
-        "@shortname": "findtext",
-        "@status": "WD",
-        "@date": "2015/10/06",
-        "@url": "http://w3c.github.io/findtext/",
-        "@selector": "dl.idl",
-        "@type": "respec"
-    },
-    {
-        "@name": "Intersection Observer",
-        "@shortname": "intersection",
-        "@status": "ED",
-        "@date": "2015/10/08",
-        "@url": "https://rawgit.com/slightlyoff/IntersectionObserver/master/index.html",
-        "@selector": "pre.idl",
-        "@type": "idl"
+        "name": "webaudio",
+        "url": "http://www.w3.org/TR/webaudio/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webmidi",
+        "url": "http://www.w3.org/TR/webmidi/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webdriver",
+        "url": "http://www.w3.org/TR/webdriver/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/box.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/visuren.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/visudet.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/visufx.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/generate.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/page.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/colors.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/fonts.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/text.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/tables.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/ui.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css21",
+        "url": "http://www.w3.org/TR/CSS21/aural.html",
+        "identification": [
+            {
+                "selector": "div.propdef",
+                "type": "css"
+            }
+        ]
+    },
+    {
+        "name": "css-align",
+        "url": "http://www.w3.org/TR/css3-align/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-animations-1",
+        "url": "https://drafts.csswg.org/css-animations/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "#idl-index + pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-animations-2",
+        "url": "https://drafts.csswg.org/css-animations-2/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "#idl-index + pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-backgrounds-3",
+        "url": "https://drafts.csswg.org/css-backgrounds/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-backgrounds-4",
+        "url": "http://dev.w3.org/csswg/css-backgrounds-4/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-break",
+        "url": "http://www.w3.org/TR/css3-break/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-cascade-3",
+        "url": "http://www.w3.org/TR/css-cascade-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-cascade-4",
+        "url": "https://drafts.csswg.org/css-cascade/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-color-3",
+        "url": "http://www.w3.org/TR/css3-color/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-color-4",
+        "url": "https://drafts.csswg.org/css-color/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-colorcorrection",
+        "url": "https://drafts.csswg.org/css-color-correction/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-conditional",
+        "url": "http://www.w3.org/TR/css3-conditional/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-containment",
+        "url": "https://drafts.csswg.org/css-containment/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-counter-styles-3",
+        "url": "http://www.w3.org/TR/css-counter-styles-3/",
+        "identification": [
+            {
+                "selector": "#idl-index + pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-deviceadapt",
+        "url": "https://drafts.csswg.org/css-device-adapt/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-display-3",
+        "url": "http://www.w3.org/TR/css-display-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-exclusions",
+        "url": "http://www.w3.org/TR/css3-exclusions/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-flexbox",
+        "url": "http://www.w3.org/TR/css3-flexbox/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-font-loading",
+        "url": "http://www.w3.org/TR/css-font-loading/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-fonts-3",
+        "url": "http://www.w3.org/TR/css-fonts-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-gcpm",
+        "url": "http://www.w3.org/TR/css3-gcpm/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-grid-layout",
+        "url": "http://www.w3.org/TR/css3-grid-layout/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-images-3",
+        "url": "https://drafts.csswg.org/css-images/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-images-4",
+        "url": "https://drafts.csswg.org/css-images-4/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-inline",
+        "url": "https://drafts.csswg.org/css-inline/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-line-grid",
+        "url": "https://drafts.csswg.org/css-line-grid/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-lists",
+        "url": "https://drafts.csswg.org/css-lists/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-logical-props",
+        "url": "http://dev.w3.org/csswg/css-logical-props/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-multicol-1",
+        "url": "http://www.w3.org/TR/css3-multicol/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-multicol-2",
+        "url": "https://drafts.csswg.org/css-multicol-2/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-overflow",
+        "url": "https://drafts.csswg.org/css-overflow/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-page",
+        "url": "https://drafts.csswg.org/css-page/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-positioning",
+        "url": "https://drafts.csswg.org/css-position/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-regions",
+        "url": "https://drafts.csswg.org/css-regions/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-round-display",
+        "url": "http://dev.w3.org/csswg/css-round-display/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-ruby",
+        "url": "http://www.w3.org/TR/css3-ruby/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-shapes-1",
+        "url": "https://drafts.csswg.org/css-shapes/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-shapes-2",
+        "url": "https://drafts.csswg.org/css-shapes-2/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-size-adjust",
+        "url": "http://dev.w3.org/csswg/css-size-adjust/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-sizing",
+        "url": "https://drafts.csswg.org/css-sizing/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-snappoints",
+        "url": "http://dev.w3.org/csswg/css-snappoints/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-speech",
+        "url": "http://www.w3.org/TR/css3-speech/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-text-3",
+        "url": "https://drafts.csswg.org/css-text/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-text-4",
+        "url": "https://drafts.csswg.org/css-text-4/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-text-decor-3",
+        "url": "https://drafts.csswg.org/css-text-decor/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-text-decor-4",
+        "url": "http://dev.w3.org/csswg/css-text-decor-4/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-transforms-1",
+        "url": "https://drafts.csswg.org/css-transforms/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-transforms-2",
+        "url": "https://drafts.csswg.org/css-transforms-2/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-transitions-1",
+        "url": "https://drafts.csswg.org/css-transitions/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "div.idl-code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-transitions-2",
+        "url": "https://drafts.csswg.org/css-transitions-2/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-cssui-3",
+        "url": "https://drafts.csswg.org/css-ui/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-cssui-4",
+        "url": "https://drafts.csswg.org/css-ui-4/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-will-change",
+        "url": "https://drafts.csswg.org/css-will-change/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-writing-modes",
+        "url": "https://drafts.csswg.org/css-writing-modes/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "cssom",
+        "url": "https://drafts.csswg.org/cssom/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "cssomvalues",
+        "url": "https://drafts.csswg.org/cssom-values/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "cssom-view",
+        "url": "https://drafts.csswg.org/cssom-view/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "mediaqueries-4",
+        "url": "https://drafts.csswg.org/mediaqueries/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "animations",
+        "url": "http://www.w3.org/TR/web-animations/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "ambient-light",
+        "url": "http://www.w3.org/TR/ambient-light/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "battery-status",
+        "url": "http://www.w3.org/TR/battery-status/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "media-capture",
+        "url": "http://www.w3.org/TR/html-media-capture/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "proximity",
+        "url": "http://www.w3.org/TR/proximity/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "vibration",
+        "url": "http://www.w3.org/TR/vibration/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "orientation-event",
+        "url": "http://www.w3.org/TR/orientation-event/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "elementstraversal",
+        "url": "http://www.w3.org/TR/ElementTraversal/",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom3core",
+        "url": "http://www.w3.org/TR/DOM-Level-3-Core/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom2html",
+        "url": "http://www.w3.org/TR/DOM-Level-2-HTML/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom2core",
+        "url": "http://www.w3.org/TR/DOM-Level-2-Core/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom2events",
+        "url": "http://www.w3.org/TR/DOM-Level-2-Events/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom2style",
+        "url": "http://www.w3.org/TR/DOM-Level-2-Style/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom2traversal",
+        "url": "http://www.w3.org/TR/DOM-Level-2-Traversal-Range/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom2views",
+        "url": "http://www.w3.org/TR/DOM-Level-2-Views/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom3xpath",
+        "url": "http://www.w3.org/TR/DOM-Level-3-XPath/idl-definitions.html",
+        "file": "dom3xpath-bugfix.webidl",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            },
+            {
+                "type": "file"
+            }
+        ]
+    },
+    {
+        "name": "dom",
+        "url": "https://dom.spec.whatwg.org/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "encrypted-media",
+        "url": "http://www.w3.org/TR/encrypted-media/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html51",
+        "url": "http://www.w3.org/TR/html51/infrastructure.html#infrastructure",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html51",
+        "url": "http://www.w3.org/TR/html51/dom.html#dom",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html51",
+        "url": "http://www.w3.org/TR/html51/semantics.html#semantics",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html51",
+        "url": "http://www.w3.org/TR/html51/editing.html#editing",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html51",
+        "url": "http://www.w3.org/TR/html51/browsers.html#browsers",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html51",
+        "url": "http://www.w3.org/TR/html51/webappapis.html#webappapis",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html51",
+        "url": "http://www.w3.org/TR/html51/obsolete.html#obsolete",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "canvas",
+        "url": "http://www.w3.org/TR/2dcontext/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "canvas",
+        "url": "http://www.w3.org/TR/2dcontext2/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "media-source",
+        "url": "http://www.w3.org/TR/media-source/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "pointerevents",
+        "url": "http://www.w3.org/TR/pointerevents/",
+        "identification": [
+            {
+                "selector": "#the-touch-action-css-property table",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "svg",
+        "url": "http://www.w3.org/TR/SVG11/idl.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "svg",
+        "url": "http://www.w3.org/TR/SVG11/propidx.html",
+        "identification": [
+            {
+                "selector": "table.vert.property-table",
+                "type": "svgcss"
+            }
+        ]
+    },
+    {
+        "name": "svg",
+        "url": "http://www.w3.org/TR/SVG2/idl.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "svg",
+        "url": "http://www.w3.org/TR/SVG2/propidx.html",
+        "identification": [
+            {
+                "selector": "table.proptable",
+                "type": "svgcss"
+            }
+        ]
+    },
+    {
+        "name": "telephony",
+        "url": "http://www.w3.org/TR/telephony/",
+        "file": "telephony-bugfix.webidl",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            },
+            {
+                "type": "file"
+            }
+        ]
+    },
+    {
+        "name": "webvtt",
+        "url": "http://www.w3.org/TR/webvtt1/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "clipboard-api",
+        "url": "http://www.w3.org/TR/clipboard-apis/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-events",
+        "url": "http://www.w3.org/TR/DOM-Level-3-Events/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-parsing",
+        "url": "http://www.w3.org/TR/DOM-Parsing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            },
+            {
+                "selector": "pre.extraidl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "fileapi",
+        "url": "http://www.w3.org/TR/FileAPI/",
+        "identification": [
+            {
+                "selector": "code.idl-code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "gamepad",
+        "url": "http://www.w3.org/TR/gamepad/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "indexeddb",
+        "url": "http://www.w3.org/TR/IndexedDB/",
+        "file": "indexeddb-bugfix.webidl",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            },
+            {
+                "type": "file"
+            }
+        ]
+    },
+    {
+        "name": "ime-api",
+        "url": "http://www.w3.org/TR/ime-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "pointerlock",
+        "url": "http://www.w3.org/TR/pointerlock/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "push-api",
+        "url": "http://www.w3.org/TR/push-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "quota-api",
+        "url": "http://www.w3.org/TR/quota-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "screen-orientation",
+        "url": "http://www.w3.org/TR/screen-orientation/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "selectors-api2",
+        "url": "http://www.w3.org/TR/selectors-api2/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "eventsource",
+        "url": "http://www.w3.org/TR/eventsource/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "shadow-dom",
+        "url": "http://w3c.github.io/webcomponents/spec/shadow/",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "websockets",
+        "url": "http://www.w3.org/TR/websockets/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "workers",
+        "url": "http://www.w3.org/TR/workers/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "xmlhttprequest",
+        "url": "http://www.w3.org/TR/XMLHttpRequest/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "csp",
+        "url": "http://www.w3.org/TR/CSP/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "geolocation",
+        "url": "http://dev.w3.org/geo/api/spec-source.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "geolocation",
+        "url": "http://www.w3.org/TR/geolocation-API/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "sri",
+        "url": "http://www.w3.org/TR/SRI/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webcrypto",
+        "url": "http://www.w3.org/TR/WebCryptoAPI/",
+        "identification": [
+            {
+                "selector": "code.idl-code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "beacon",
+        "url": "http://www.w3.org/TR/beacon/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "frame-timing",
+        "url": "http://www.w3.org/TR/frame-timing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "hr-time",
+        "url": "http://www.w3.org/TR/hr-time-2/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "navigation-timing",
+        "url": "http://www.w3.org/TR/navigation-timing-2/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "resource-hints",
+        "url": "http://www.w3.org/TR/resource-hints/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "resource-timing",
+        "url": "http://www.w3.org/TR/resource-timing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "server-timing",
+        "url": "http://www.w3.org/TR/server-timing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "animation-timing",
+        "url": "http://www.w3.org/TR/animation-timing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webrtc",
+        "url": "http://www.w3.org/TR/webrtc/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "audio-output",
+        "url": "http://www.w3.org/TR/audio-output/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "mediacapture-streams",
+        "url": "http://www.w3.org/TR/mediacapture-streams/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "mediacapture-depth",
+        "url": "http://www.w3.org/TR/mediacapture-depth/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "image-capture",
+        "url": "http://www.w3.org/TR/image-capture/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "mediastream-recording",
+        "url": "http://www.w3.org/TR/mediastream-recording/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "screen-capture",
+        "url": "http://www.w3.org/TR/screen-capture/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "fullscreen",
+        "url": "https://fullscreen.spec.whatwg.org/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "url",
+        "url": "https://url.spec.whatwg.org/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "fetch",
+        "url": "https://fetch.spec.whatwg.org/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "encoding",
+        "url": "http://www.w3.org/TR/encoding/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/specs/1.0/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+        "file": "webgl20-bugfix.webidl",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            },
+            {
+                "type": "file"
+            }
+        ]
+    },
+    {
+        "name": "selection-api",
+        "url": "http://www.w3.org/TR/selection-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "presentation-api",
+        "url": "http://w3c.github.io/presentation-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "page-visibility",
+        "url": "http://w3c.github.io/page-visibility/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "custom-elements",
+        "url": "http://www.w3.org/TR/custom-elements/",
+        "identification": [
+            {
+                "selector": "pre code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "service-workers",
+        "url": "http://www.w3.org/TR/service-workers/",
+        "identification": [
+            {
+                "selector": "pre code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "xhr",
+        "url": "http://xhr.spec.whatwg.org/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "ortc",
+        "url": "http://ortc.org/wp-content/uploads/2015/06/ortc.html",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "file-system",
+        "url": "http://dev.w3.org/2009/dap/file-system/file-dir-sys.html",
+        "identification": [
+            {
+                "selector": "div.idl",
+                "type": "respec"
+            },
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "mediacapture-fromelement",
+        "url": "http://w3c.github.io/mediacapture-fromelement/",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "setimmediate",
+        "url": "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/setImmediate/Overview.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "notifications",
+        "url": "http://www.w3.org/TR/notifications/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "imports",
+        "url": "http://www.w3.org/TR/html-imports/",
+        "identification": [
+            {
+                "selector": "pre code.prettyprint",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "es6",
+        "url": "http://www.ecma-international.org/ecma-262/6.0/",
+        "file": "ECMAScript2015.webidl",
+        "identification": [
+            {
+                "selector": "",
+                "type": "file"
+            }
+        ]
+    },
+    {
+        "name": "dnt",
+        "url": "http://www.w3.org/TR/tracking-dnt/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "usertime",
+        "url": "http://www.w3.org/TR/user-timing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "perftime",
+        "url": "http://www.w3.org/TR/performance-timeline/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "navtime",
+        "url": "http://www.w3.org/TR/navigation-timing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "wapa",
+        "url": "https://raw.githubusercontent.com/cyns/wapa/master/wapa.html",
+        "identification": [
+            {
+                "selector": "div.idl code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "touchevents2",
+        "url": "https://w3c.github.io/touch-events/",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "sensor",
+        "url": "https://w3c.github.io/sensors/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "selectors-api",
+        "url": "http://www.w3.org/TR/selectors-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "requestidle",
+        "url": "http://www.w3.org/TR/requestidlecallback/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webvr",
+        "url": "https://mozvr.github.io/webvr-spec/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "filesystemapi",
+        "url": "http://w3c.github.io/filesystem-api/",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_atc/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_shared_resources/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_security_sensitive_resources/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_es3/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webgl",
+        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "findtext",
+        "url": "http://w3c.github.io/findtext/",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "intersection",
+        "url": "https://rawgit.com/slightlyoff/IntersectionObserver/master/index.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
     }
-]
-[
-  {
-    "name": "css-animations",
-    "url": "https://drafts.csswg.org/css-animations/",
-    "identification": [
-      {
-        "selector": "table.propdef",
-        "type": "bikeshed"
-      },
-      {
-        "selector": "#idl-index + pre.idl",
-        "type": "idl"
-      }
-    ]
-  },
-  {
-    "name": "css-animations-2",
-    "url": "https://drafts.csswg.org/css-animations-2/",
-    "identification": [
-      {
-        "selector": "table.propdef",
-        "type": "bikeshed"
-      },
-      {
-        "selector": "#idl-index + pre.idl",
-        "type": "idl"
-      }
-    ]
-  }
 ]
