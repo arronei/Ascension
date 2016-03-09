@@ -2044,6 +2044,16 @@
         ]
     },
     {
+        "name": "screen-orientation",
+        "url": "https://w3c.github.io/screen-orientation/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "selectors-api2",
         "url": "http://www.w3.org/TR/selectors-api2/",
         "identification": [
@@ -2924,6 +2934,16 @@
     },
     {
         "name": "findtext",
+        "url": "https://www.w3.org/TR/findtext/",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
+        "name": "findtext",
         "url": "http://w3c.github.io/findtext/",
         "identification": [
             {
@@ -2934,7 +2954,7 @@
     },
     {
         "name": "intersection",
-        "url": "https://rawgit.com/slightlyoff/IntersectionObserver/master/index.html",
+        "url": "http://rawgit.com/WICG/IntersectionObserver/master/index.html",
         "identification": [
             {
                 "selector": "pre.idl",
