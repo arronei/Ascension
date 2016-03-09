@@ -39,8 +39,8 @@ namespace WebIDLCollector.Process
                         if (content.Contains("("))
                         {
                             var dd = member.NextElementSibling;
-                            var paramItems = dd.QuerySelectorAll("dl.parameters dt");
-                            if (paramItems.Length > 0)
+                            var paramItems = dd?.QuerySelectorAll("dl.parameters dt");
+                            if (paramItems?.Length > 0)
                             {
                                 var parameters = paramItems.Aggregate(string.Empty, (current, parameter) => current + (parameter.TextContent + ", ")).Trim().TrimEnd(',');
                                 if (content.Contains("()"))

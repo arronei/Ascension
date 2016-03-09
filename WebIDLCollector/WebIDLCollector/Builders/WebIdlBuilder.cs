@@ -19,7 +19,7 @@ namespace WebIDLCollector.Builders
 
         public void GenerateFile()
         {
-            var webidlDirectory = "webidl";
+            const string webidlDirectory = "webidl";
             var webidlFile = webidlDirectory + "/" + _specData.Name + ".webidl";
             if (!Directory.Exists(webidlDirectory))
             {

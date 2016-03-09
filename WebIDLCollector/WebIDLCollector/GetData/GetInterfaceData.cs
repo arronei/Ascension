@@ -150,6 +150,7 @@ namespace WebIDLCollector.GetData
 
         private static string CleanString(string value)
         {
+            value = value.Trim().Trim('.');
             value = Regex.Replace(value, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
             value = Regex.Replace(value, @"\s+", " ");
             value = Regex.Replace(value, @"\s*(set)?raises\([^)]*?\)\s*;", ";");
@@ -160,8 +161,6 @@ namespace WebIDLCollector.GetData
         private static IEnumerable<Member> GetAllInterfaceMembers(string memberItems, SpecData specificationData)
         {
             var memberList = new List<Member>();
-
-            memberItems = memberItems.Trim().Trim('.');
 
             memberItems = CleanString(memberItems);
 
@@ -257,6 +256,12 @@ namespace WebIDLCollector.GetData
                 }
                 else
                 {
+                    //detect if its an interface extended attribute
+                    if (InterfaceExtendedParser.IsMatch(item))
+                    {
+
+                    }
+
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Fail member- " + item);
                     Console.ForegroundColor = ConsoleColor.Gray;

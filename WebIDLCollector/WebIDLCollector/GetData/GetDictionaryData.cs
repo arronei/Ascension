@@ -77,8 +77,7 @@ namespace WebIDLCollector.GetData
             var memberList = new List<DictionaryMember>();
 
             memberItems = memberItems.Trim().Trim('.');
-            //Remove single line comments
-            memberItems = Regex.Replace(memberItems, @"\s*//.*$", string.Empty, RegexOptions.Singleline | RegexOptions.Multiline);
+            memberItems = Regex.Replace(memberItems, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
             memberItems = Regex.Replace(memberItems, @"$\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline).Trim();
 
             var members = memberItems.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(m => m.Trim()).ToArray();

@@ -117,9 +117,30 @@ namespace WebIDLCollector
                     return;
                 }
 
+                // Debug single item
+                //specDataList = new List<SpecData>
+                //{
+                //    new SpecData
+                //    {
+                //        Name = "mediastream-recording",
+                //        Url = "https://w3c.github.io/mediacapture-record/MediaRecorder.html",
+                //        Identification = new List<SpecIdentification>()
+                //        {
+                //            new SpecIdentification
+                //            {
+                //                Selector = "dl.idl",
+                //                Type = "respec"
+                //            }
+                //        }
+                //    }
+                //};
+
                 foreach (var specData in specDataList)
                 {
-                    ProcessSpec(specData);
+                    if (!ProcessSpec(specData))
+                    {
+                        continue;
+                    }
                     var webIdl = new WebIdlBuilder(specData);
                     webIdl.GenerateFile();
 
@@ -338,7 +359,7 @@ namespace WebIDLCollector
             }
         }
 
-        private static void ProcessSpec(SpecData specData)
+        private static bool ProcessSpec(SpecData specData)
         {
             Console.WriteLine("Processing (" + specData.Url + ")");
 
@@ -346,43 +367,87 @@ namespace WebIDLCollector
             var specUrl = specData.Url;
             var specFile = specData.File;
 
+            var config = Configuration.Default.WithDefaultLoader();
+            var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
+
+            if (!specData.Identification.Any())
+            {
+                //Determine Bikeshed
+                var meta = document.QuerySelector("meta[name=generator]");
+                if (meta != null && meta.GetAttribute("content").StartsWith("bikeshed", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    var bikeshedIdentificationList = new List<SpecIdentification>();
+                    var idlIndex = document.QuerySelector("#idl-index");
+                    if (idlIndex != null && idlIndex.HasChildNodes) // determine IDL Index
+                    {
+                        bikeshedIdentificationList.Add(new SpecIdentification
+                        {
+                            Selector = "#idl-index + pre.idl",
+                            Type = "idl"
+                        });
+                    }
+                    var propDef = document.QuerySelector("table.propdef");
+                    if (propDef != null && propDef.HasChildNodes) // determine propdef table
+                    {
+                        bikeshedIdentificationList.Add(new SpecIdentification
+                        {
+                            Selector = "table.propdef",
+                            Type = "bikeshed"
+                        });
+                    }
+                    if (!bikeshedIdentificationList.Any())
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("No standards bikeshed sections found");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                    }
+                    specData.Identification = bikeshedIdentificationList;//Change this to .Add()
+                }
+                //Determine respec
+                //else if (){}
+
+            }
+            if (!specData.Identification.Any() && string.IsNullOrWhiteSpace(specFile))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Unable to determine what to parse");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                return false;
+            }
+
             foreach (var specIdentification in specData.Identification)
             {
-                if (specIdentification.Type != "file")
+                switch (specIdentification.Type)
                 {
-                    var config = Configuration.Default.WithDefaultLoader();
-                    var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
-                    switch (specIdentification.Type)
-                    {
-                        case "css":
-                            var cssItems = document.QuerySelectorAll(specIdentification.Selector);
-                            ProcessSpecs.ProcessCss(cssItems, specData);
-                            break;
-                        case "svgcss":
-                            var svgCssItems = document.QuerySelector(specIdentification.Selector);
-                            ProcessSpecs.ProcessSvGCss(svgCssItems, specData);
-                            break;
-                        case "bikeshed":
-                            var bikeshedItems = document.QuerySelectorAll(specIdentification.Selector);
-                            ProcessSpecs.ProcessBikeshed(bikeshedItems, specData);
-                            break;
-                        case "respec":
-                            var respecItems = document.QuerySelectorAll(specIdentification.Selector);
-                            ProcessSpecs.ProcessRespec(respecItems, specIdentification.Selector, specData);
-                            break;
-                        case "idl":
-                            var idlItems = document.QuerySelectorAll(specIdentification.Selector);
-                            ProcessSpecs.ProcessIdl(idlItems, specData);
-                            break;
-                        default:
-                            throw new NotImplementedException();
-                    }
+                    case "css":
+                        var cssItems = document.QuerySelectorAll(specIdentification.Selector);
+                        ProcessSpecs.ProcessCss(cssItems, specData);
+                        break;
+                    case "svgcss":
+                        var svgCssItems = document.QuerySelector(specIdentification.Selector);
+                        ProcessSpecs.ProcessSvGCss(svgCssItems, specData);
+                        break;
+                    case "bikeshed":
+                        var bikeshedItems = document.QuerySelectorAll(specIdentification.Selector);
+                        ProcessSpecs.ProcessBikeshed(bikeshedItems, specData);
+                        break;
+                    case "respec":
+                        var respecItems = document.QuerySelectorAll(specIdentification.Selector);
+                        ProcessSpecs.ProcessRespec(respecItems, specIdentification.Selector, specData);
+                        break;
+                    case "idl":
+                        var idlItems = document.QuerySelectorAll(specIdentification.Selector);
+                        ProcessSpecs.ProcessIdl(idlItems, specData);
+                        break;
+                    default:
+                        throw new NotImplementedException();
                 }
-                else
-                {
-                    var fileItems = File.ReadAllText("data/" + specFile);
-                    ProcessSpecs.ProcessFile(fileItems, specData);
-                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(specFile))
+            {
+                var fileItems = File.ReadAllText("data/" + specFile);
+                ProcessSpecs.ProcessFile(fileItems, specData);
             }
 
             if (!specData.Callbacks.Any() &&
@@ -401,9 +466,14 @@ namespace WebIDLCollector
             Console.Write("Interfaces: " + specData.Interfaces.Count + ", ");
             Console.Write("TypeDefs: " + specData.TypeDefs.Count + ", ");
             Console.WriteLine("Callbacks: " + specData.Callbacks.Count);
+            if (Console.ForegroundColor == ConsoleColor.Red)
+            {
+                Console.ReadKey();
+            }
+
             Console.ForegroundColor = ConsoleColor.Gray;
 
-            //Console.ReadKey();
+            return true;
         }
     }
 }
