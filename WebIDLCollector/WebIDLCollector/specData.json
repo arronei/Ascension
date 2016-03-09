@@ -10,6 +10,16 @@
         ]
     },
     {
+        "name": "webaudio",
+        "url": "https://webaudio.github.io/web-audio-api/",
+        "identification": [
+            {
+                "selector": "dl.idl",
+                "type": "respec"
+            }
+        ]
+    },
+    {
         "name": "webmidi",
         "url": "http://www.w3.org/TR/webmidi/",
         "identification": [
@@ -20,8 +30,28 @@
         ]
     },
     {
+        "name": "webmidi",
+        "url": "https://webaudio.github.io/web-midi-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "webdriver",
         "url": "http://www.w3.org/TR/webdriver/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webdriver",
+        "url": "https://w3c.github.io/webdriver/webdriver-spec.html",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -150,12 +180,36 @@
         ]
     },
     {
-        "name": "css-align",
+        "name": "css-align-3",
         "url": "http://www.w3.org/TR/css3-align/",
         "identification": [
             {
                 "selector": "table.propdef",
                 "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-align-3",
+        "url": "https://drafts.csswg.org/css-align/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-animations-1",
+        "url": "https://www.w3.org/TR/css3-animations/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "#idl-index + pre.idl",
+                "type": "idl"
             }
         ]
     },
@@ -189,6 +243,16 @@
     },
     {
         "name": "css-backgrounds-3",
+        "url": "http://www.w3.org/TR/css3-background/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-backgrounds-3",
         "url": "https://drafts.csswg.org/css-backgrounds/",
         "identification": [
             {
@@ -208,8 +272,18 @@
         ]
     },
     {
-        "name": "css-break",
+        "name": "css-break-3",
         "url": "http://www.w3.org/TR/css3-break/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-break-3",
+        "url": "https://drafts.csswg.org/css-break/",
         "identification": [
             {
                 "selector": "table.propdef",
@@ -220,6 +294,26 @@
     {
         "name": "css-cascade-3",
         "url": "http://www.w3.org/TR/css-cascade-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-cascade-3",
+        "url": "https://drafts.csswg.org/css-cascade-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-cascade-4",
+        "url": "https://www.w3.org/TR/css-cascade-4/",
         "identification": [
             {
                 "selector": "table.propdef",
@@ -258,18 +352,18 @@
         ]
     },
     {
-        "name": "css-colorcorrection",
-        "url": "https://drafts.csswg.org/css-color-correction/",
+        "name": "css-conditional-3",
+        "url": "http://www.w3.org/TR/css3-conditional/",
         "identification": [
             {
-                "selector": "table.propdef",
-                "type": "bikeshed"
+                "selector": "pre.idl",
+                "type": "idl"
             }
         ]
     },
     {
-        "name": "css-conditional",
-        "url": "http://www.w3.org/TR/css3-conditional/",
+        "name": "css-conditional-3",
+        "url": "https://drafts.csswg.org/css-conditional-3/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -298,7 +392,27 @@
         ]
     },
     {
-        "name": "css-deviceadapt",
+        "name": "css-counter-styles-3",
+        "url": "https://drafts.csswg.org/css-counter-styles/",
+        "identification": [
+            {
+                "selector": "#idl-index + pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-deviceadapt-1",
+        "url": "https://www.w3.org/TR/css-device-adapt/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-deviceadapt-1",
         "url": "https://drafts.csswg.org/css-device-adapt/",
         "identification": [
             {
@@ -318,7 +432,17 @@
         ]
     },
     {
-        "name": "css-exclusions",
+        "name": "css-display-3",
+        "url": "https://drafts.csswg.org/css-display/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-exclusions-1",
         "url": "http://www.w3.org/TR/css3-exclusions/",
         "identification": [
             {
@@ -328,7 +452,17 @@
         ]
     },
     {
-        "name": "css-flexbox",
+        "name": "css-exclusions-1",
+        "url": "https://drafts.csswg.org/css-exclusions/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-flexbox-1",
         "url": "http://www.w3.org/TR/css3-flexbox/",
         "identification": [
             {
@@ -338,8 +472,28 @@
         ]
     },
     {
-        "name": "css-font-loading",
+        "name": "css-flexbox-1",
+        "url": "https://drafts.csswg.org/css-flexbox/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-font-loading-3",
         "url": "http://www.w3.org/TR/css-font-loading/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-font-loading-3",
+        "url": "http://dev.w3.org/csswg/css-font-loading/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -362,7 +516,21 @@
         ]
     },
     {
-        "name": "css-gcpm",
+        "name": "css-fonts-3",
+        "url": "https://drafts.csswg.org/css-fonts/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-gcpm-3",
         "url": "http://www.w3.org/TR/css3-gcpm/",
         "identification": [
             {
@@ -372,8 +540,38 @@
         ]
     },
     {
-        "name": "css-grid-layout",
+        "name": "css-gcpm-3",
+        "url": "https://drafts.csswg.org/css-gcpm/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-grid-1",
         "url": "http://www.w3.org/TR/css3-grid-layout/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-grid-1",
+        "url": "https://drafts.csswg.org/css-grid/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-images-3",
+        "url": "https://www.w3.org/TR/css3-images/",
         "identification": [
             {
                 "selector": "table.propdef",
@@ -393,6 +591,16 @@
     },
     {
         "name": "css-images-4",
+        "url": "https://www.w3.org/TR/css4-images/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-images-4",
         "url": "https://drafts.csswg.org/css-images-4/",
         "identification": [
             {
@@ -402,7 +610,17 @@
         ]
     },
     {
-        "name": "css-inline",
+        "name": "css-inline-3",
+        "url": "https://www.w3.org/TR/css-inline/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-inline-3",
         "url": "https://drafts.csswg.org/css-inline/",
         "identification": [
             {
@@ -412,7 +630,17 @@
         ]
     },
     {
-        "name": "css-line-grid",
+        "name": "css-line-grid-1",
+        "url": "https://www.w3.org/TR/css-line-grid-1/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-line-grid-1",
         "url": "https://drafts.csswg.org/css-line-grid/",
         "identification": [
             {
@@ -422,7 +650,17 @@
         ]
     },
     {
-        "name": "css-lists",
+        "name": "css-lists-3",
+        "url": "https://www.w3.org/TR/css3-lists/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-lists-3",
         "url": "https://drafts.csswg.org/css-lists/",
         "identification": [
             {
@@ -432,7 +670,7 @@
         ]
     },
     {
-        "name": "css-logical-props",
+        "name": "css-logical-props-1",
         "url": "http://dev.w3.org/csswg/css-logical-props/",
         "identification": [
             {
@@ -452,6 +690,16 @@
         ]
     },
     {
+        "name": "css-multicol-1",
+        "url": "https://drafts.csswg.org/css-multicol/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
         "name": "css-multicol-2",
         "url": "https://drafts.csswg.org/css-multicol-2/",
         "identification": [
@@ -462,7 +710,17 @@
         ]
     },
     {
-        "name": "css-overflow",
+        "name": "css-overflow-4",
+        "url": "https://www.w3.org/TR/css-overflow-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-overflow-4",
         "url": "https://drafts.csswg.org/css-overflow/",
         "identification": [
             {
@@ -472,7 +730,17 @@
         ]
     },
     {
-        "name": "css-page",
+        "name": "css-page-3",
+        "url": "http://www.w3.org/TR/css3-page/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-page-3",
         "url": "https://drafts.csswg.org/css-page/",
         "identification": [
             {
@@ -482,7 +750,17 @@
         ]
     },
     {
-        "name": "css-positioning",
+        "name": "css-position-3",
+        "url": "http://www.w3.org/TR/css3-positioning/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-position-3",
         "url": "https://drafts.csswg.org/css-position/",
         "identification": [
             {
@@ -492,7 +770,21 @@
         ]
     },
     {
-        "name": "css-regions",
+        "name": "css-regions-1",
+        "url": "https://www.w3.org/TR/css-regions-1/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-regions-1",
         "url": "https://drafts.csswg.org/css-regions/",
         "identification": [
             {
@@ -506,7 +798,17 @@
         ]
     },
     {
-        "name": "css-round-display",
+        "name": "css-round-display-1",
+        "url": "https://www.w3.org/TR/css-round-display-1/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-round-display-1",
         "url": "http://dev.w3.org/csswg/css-round-display/",
         "identification": [
             {
@@ -516,8 +818,28 @@
         ]
     },
     {
-        "name": "css-ruby",
+        "name": "css-ruby-1",
         "url": "http://www.w3.org/TR/css3-ruby/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-ruby-1",
+        "url": "http://dev.w3.org/csswg/css-ruby-1/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-shapes-1",
+        "url": "https://www.w3.org/TR/css-shapes/",
         "identification": [
             {
                 "selector": "table.propdef",
@@ -546,7 +868,7 @@
         ]
     },
     {
-        "name": "css-size-adjust",
+        "name": "css-size-adjust-1",
         "url": "http://dev.w3.org/csswg/css-size-adjust/",
         "identification": [
             {
@@ -556,7 +878,17 @@
         ]
     },
     {
-        "name": "css-sizing",
+        "name": "css-sizing-3",
+        "url": "https://www.w3.org/TR/css3-sizing/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-sizing-4",
         "url": "https://drafts.csswg.org/css-sizing/",
         "identification": [
             {
@@ -566,7 +898,17 @@
         ]
     },
     {
-        "name": "css-snappoints",
+        "name": "css-snappoints-1",
+        "url": "https://www.w3.org/TR/css-snappoints-1/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-snappoints-1",
         "url": "http://dev.w3.org/csswg/css-snappoints/",
         "identification": [
             {
@@ -576,8 +918,28 @@
         ]
     },
     {
-        "name": "css-speech",
+        "name": "css-speech-3",
         "url": "http://www.w3.org/TR/css3-speech/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-speech-3",
+        "url": "https://drafts.csswg.org/css-speech/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-text-3",
+        "url": "https://www.w3.org/TR/css-text-3/",
         "identification": [
             {
                 "selector": "table.propdef",
@@ -607,6 +969,16 @@
     },
     {
         "name": "css-text-decor-3",
+        "url": "https://www.w3.org/TR/css-text-decor-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-text-decor-3",
         "url": "https://drafts.csswg.org/css-text-decor/",
         "identification": [
             {
@@ -618,6 +990,16 @@
     {
         "name": "css-text-decor-4",
         "url": "http://dev.w3.org/csswg/css-text-decor-4/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-transforms-1",
+        "url": "http://www.w3.org/TR/css3-transforms/",
         "identification": [
             {
                 "selector": "table.propdef",
@@ -647,6 +1029,20 @@
     },
     {
         "name": "css-transitions-1",
+        "url": "https://www.w3.org/TR/css3-transitions/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "div.idl-code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-transitions-1",
         "url": "https://drafts.csswg.org/css-transitions/",
         "identification": [
             {
@@ -671,6 +1067,16 @@
     },
     {
         "name": "css-cssui-3",
+        "url": "https://www.w3.org/TR/css3-ui/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-cssui-3",
         "url": "https://drafts.csswg.org/css-ui/",
         "identification": [
             {
@@ -690,7 +1096,17 @@
         ]
     },
     {
-        "name": "css-will-change",
+        "name": "css-will-change-1",
+        "url": "https://www.w3.org/TR/css-will-change/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-will-change-1",
         "url": "https://drafts.csswg.org/css-will-change/",
         "identification": [
             {
@@ -700,12 +1116,32 @@
         ]
     },
     {
-        "name": "css-writing-modes",
+        "name": "css-writing-modes-3",
+        "url": "https://www.w3.org/TR/css-writing-modes-3/",
+        "identification": [
+            {
+                "selector": "table.propdef",
+                "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "css-writing-modes-3",
         "url": "https://drafts.csswg.org/css-writing-modes/",
         "identification": [
             {
                 "selector": "table.propdef",
                 "type": "bikeshed"
+            }
+        ]
+    },
+    {
+        "name": "cssom",
+        "url": "https://www.w3.org/TR/cssom/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
             }
         ]
     },
@@ -720,8 +1156,88 @@
         ]
     },
     {
-        "name": "cssomvalues",
-        "url": "https://drafts.csswg.org/cssom-values/",
+        "name": "box-tree-api",
+        "url": "https://drafts.css-houdini.org/box-tree-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-layout-api",
+        "url": "https://drafts.css-houdini.org/css-layout-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-paint-api",
+        "url": "https://drafts.css-houdini.org/css-paint-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-parser-api",
+        "url": "https://drafts.css-houdini.org/css-parser-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-properties-values-api",
+        "url": "https://drafts.css-houdini.org/css-properties-values-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "css-typed-om",
+        "url": "https://drafts.css-houdini.org/css-typed-om/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "font-metrics-api",
+        "url": "https://drafts.css-houdini.org/font-metrics-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "worklets",
+        "url": "https://drafts.css-houdini.org/worklets/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "cssom-view",
+        "url": "https://www.w3.org/TR/cssom-view/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -741,6 +1257,16 @@
     },
     {
         "name": "mediaqueries-4",
+        "url": "https://www.w3.org/TR/mediaqueries-4/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "mediaqueries-4",
         "url": "https://drafts.csswg.org/mediaqueries/",
         "identification": [
             {
@@ -750,8 +1276,18 @@
         ]
     },
     {
-        "name": "animations",
-        "url": "http://www.w3.org/TR/web-animations/",
+        "name": "web-animations-1",
+        "url": "http://www.w3.org/TR/web-animations-1",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "web-animations-1",
+        "url": "https://w3c.github.io/web-animations/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -770,6 +1306,16 @@
         ]
     },
     {
+        "name": "ambient-light",
+        "url": "https://w3c.github.io/ambient-light/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "battery-status",
         "url": "http://www.w3.org/TR/battery-status/",
         "identification": [
@@ -780,8 +1326,28 @@
         ]
     },
     {
-        "name": "media-capture",
+        "name": "battery-status",
+        "url": "https://dvcs.w3.org/hg/dap/raw-file/default/battery/Overview.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html-media-capture",
         "url": "http://www.w3.org/TR/html-media-capture/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html-media-capture",
+        "url": "http://dev.w3.org/2009/dap/camera/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -800,8 +1366,28 @@
         ]
     },
     {
+        "name": "proximity",
+        "url": "https://w3c.github.io/proximity/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "vibration",
         "url": "http://www.w3.org/TR/vibration/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "vibration",
+        "url": "https://w3c.github.io/vibration/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -820,6 +1406,16 @@
         ]
     },
     {
+        "name": "orientation-event",
+        "url": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "elementstraversal",
         "url": "http://www.w3.org/TR/ElementTraversal/",
         "identification": [
@@ -830,17 +1426,7 @@
         ]
     },
     {
-        "name": "dom3core",
-        "url": "http://www.w3.org/TR/DOM-Level-3-Core/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom2html",
+        "name": "dom-level-2-html",
         "url": "http://www.w3.org/TR/DOM-Level-2-HTML/idl-definitions.html",
         "identification": [
             {
@@ -850,7 +1436,7 @@
         ]
     },
     {
-        "name": "dom2core",
+        "name": "dom-level-2-core",
         "url": "http://www.w3.org/TR/DOM-Level-2-Core/idl-definitions.html",
         "identification": [
             {
@@ -860,7 +1446,7 @@
         ]
     },
     {
-        "name": "dom2events",
+        "name": "dom-level-2-events",
         "url": "http://www.w3.org/TR/DOM-Level-2-Events/idl-definitions.html",
         "identification": [
             {
@@ -870,7 +1456,7 @@
         ]
     },
     {
-        "name": "dom2style",
+        "name": "dom-level-2-style",
         "url": "http://www.w3.org/TR/DOM-Level-2-Style/idl-definitions.html",
         "identification": [
             {
@@ -880,7 +1466,7 @@
         ]
     },
     {
-        "name": "dom2traversal",
+        "name": "dom-level-2-traversal-range",
         "url": "http://www.w3.org/TR/DOM-Level-2-Traversal-Range/idl-definitions.html",
         "identification": [
             {
@@ -890,7 +1476,7 @@
         ]
     },
     {
-        "name": "dom2views",
+        "name": "dom-level-2-views",
         "url": "http://www.w3.org/TR/DOM-Level-2-Views/idl-definitions.html",
         "identification": [
             {
@@ -900,8 +1486,58 @@
         ]
     },
     {
-        "name": "dom3xpath",
-        "url": "http://www.w3.org/TR/DOM-Level-3-XPath/idl-definitions.html",
+        "name": "dom-level-3-as",
+        "url": "http://www.w3.org/TR/DOM-Level-3-AS/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-level-3-core",
+        "url": "http://www.w3.org/TR/DOM-Level-3-Core/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-level-3-ls",
+        "url": "https://www.w3.org/TR/DOM-Level-3-LS/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-level-3-val",
+        "url": "https://www.w3.org/TR/DOM-Level-3-Val/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-level-3-views",
+        "url": "https://www.w3.org/TR/DOM-Level-3-Views/idl-definitions.html",
+        "identification": [
+            {
+                "selector": ".idl-code pre",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-level-3-xpath",
+        "url": "https://www.w3.org/TR/DOM-Level-3-XPath/idl-definitions.html",
         "file": "dom3xpath-bugfix.webidl",
         "identification": [
             {
@@ -914,7 +1550,17 @@
         ]
     },
     {
-        "name": "dom",
+        "name": "dom4",
+        "url": "https://www.w3.org/TR/dom/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "whatwg-dom",
         "url": "https://dom.spec.whatwg.org/",
         "identification": [
             {
@@ -934,8 +1580,78 @@
         ]
     },
     {
-        "name": "html51",
-        "url": "http://www.w3.org/TR/html51/infrastructure.html#infrastructure",
+        "name": "encrypted-media",
+        "url": "https://w3c.github.io/encrypted-media/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "url": "http://www.w3.org/TR/html5/infrastructure.html#infrastructure",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "url": "http://www.w3.org/TR/html5/dom.html#dom",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "url": "http://www.w3.org/TR/html5/semantics.html#semantics",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "url": "http://www.w3.org/TR/html5/editing.html#editing",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "url": "http://www.w3.org/TR/html5/browsers.html#browsers",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "url": "http://www.w3.org/TR/html5/webappapis.html#webappapis",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "html5",
+        "url": "http://www.w3.org/TR/html5/obsolete.html#obsolete",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -945,7 +1661,7 @@
     },
     {
         "name": "html51",
-        "url": "http://www.w3.org/TR/html51/dom.html#dom",
+        "url": "https://w3c.github.io/html/idl-index.html#idl-index",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -954,57 +1670,7 @@
         ]
     },
     {
-        "name": "html51",
-        "url": "http://www.w3.org/TR/html51/semantics.html#semantics",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "html51",
-        "url": "http://www.w3.org/TR/html51/editing.html#editing",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "html51",
-        "url": "http://www.w3.org/TR/html51/browsers.html#browsers",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "html51",
-        "url": "http://www.w3.org/TR/html51/webappapis.html#webappapis",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "html51",
-        "url": "http://www.w3.org/TR/html51/obsolete.html#obsolete",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "canvas",
+        "name": "2dcontext",
         "url": "http://www.w3.org/TR/2dcontext/",
         "identification": [
             {
@@ -1014,7 +1680,7 @@
         ]
     },
     {
-        "name": "canvas",
+        "name": "2dcontext2",
         "url": "http://www.w3.org/TR/2dcontext2/",
         "identification": [
             {
@@ -1026,6 +1692,16 @@
     {
         "name": "media-source",
         "url": "http://www.w3.org/TR/media-source/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "media-source",
+        "url": "https://w3c.github.io/media-source/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -1048,7 +1724,21 @@
         ]
     },
     {
-        "name": "svg",
+        "name": "pointerevents",
+        "url": "https://w3c.github.io/pointerevents/",
+        "identification": [
+            {
+                "selector": "#the-touch-action-css-property table",
+                "type": "bikeshed"
+            },
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "svg11",
         "url": "http://www.w3.org/TR/SVG11/idl.html",
         "identification": [
             {
@@ -1058,7 +1748,7 @@
         ]
     },
     {
-        "name": "svg",
+        "name": "svg11",
         "url": "http://www.w3.org/TR/SVG11/propidx.html",
         "identification": [
             {
@@ -1068,7 +1758,7 @@
         ]
     },
     {
-        "name": "svg",
+        "name": "svg2",
         "url": "http://www.w3.org/TR/SVG2/idl.html",
         "identification": [
             {
@@ -1078,7 +1768,7 @@
         ]
     },
     {
-        "name": "svg",
+        "name": "svg2",
         "url": "http://www.w3.org/TR/SVG2/propidx.html",
         "identification": [
             {
@@ -1102,7 +1792,17 @@
         ]
     },
     {
-        "name": "webvtt",
+        "name": "telephony",
+        "url": "https://www.w3.org/2012/sysapps/telephony/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "webvtt1",
         "url": "http://www.w3.org/TR/webvtt1/",
         "identification": [
             {
@@ -1112,7 +1812,17 @@
         ]
     },
     {
-        "name": "clipboard-api",
+        "name": "webvtt1",
+        "url": "https://w3c.github.io/webvtt/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "clipboard-apis",
         "url": "http://www.w3.org/TR/clipboard-apis/",
         "identification": [
             {
@@ -1122,8 +1832,28 @@
         ]
     },
     {
-        "name": "dom-events",
+        "name": "clipboard-apis",
+        "url": "https://w3c.github.io/clipboard-apis/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "dom-level-3-events",
         "url": "http://www.w3.org/TR/DOM-Level-3-Events/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "uievents",
+        "url": "https://w3c.github.io/uievents/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -1146,6 +1876,20 @@
         ]
     },
     {
+        "name": "dom-parsing",
+        "url": "https://w3c.github.io/DOM-Parsing/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            },
+            {
+                "selector": "pre.extraidl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "fileapi",
         "url": "http://www.w3.org/TR/FileAPI/",
         "identification": [
@@ -1156,8 +1900,28 @@
         ]
     },
     {
+        "name": "fileapi",
+        "url": "https://w3c.github.io/FileAPI/",
+        "identification": [
+            {
+                "selector": "code.idl-code",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "gamepad",
         "url": "http://www.w3.org/TR/gamepad/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "gamepad",
+        "url": "https://w3c.github.io/gamepad/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -1180,8 +1944,28 @@
         ]
     },
     {
+        "name": "indexeddb2",
+        "url": "http://w3c.github.io/IndexedDB/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "ime-api",
         "url": "http://www.w3.org/TR/ime-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "ime-api",
+        "url": "https://w3c.github.io/ime-api/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -1200,6 +1984,16 @@
         ]
     },
     {
+        "name": "pointerlock",
+        "url": "https://w3c.github.io/pointerlock/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "push-api",
         "url": "http://www.w3.org/TR/push-api/",
         "identification": [
@@ -1210,8 +2004,28 @@
         ]
     },
     {
+        "name": "push-api",
+        "url": "https://w3c.github.io/push-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
         "name": "quota-api",
         "url": "http://www.w3.org/TR/quota-api/",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "quota-api",
+        "url": "http://w3c.github.io/quota-api/",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -1540,7 +2354,7 @@
         ]
     },
     {
-        "name": "webgl",
+        "name": "webgl2",
         "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "file": "webgl20-bugfix.webidl",
         "identification": [
@@ -2121,6 +2935,16 @@
     {
         "name": "intersection",
         "url": "https://rawgit.com/slightlyoff/IntersectionObserver/master/index.html",
+        "identification": [
+            {
+                "selector": "pre.idl",
+                "type": "idl"
+            }
+        ]
+    },
+    {
+        "name": "typedarray",
+        "url": "https://www.khronos.org/registry/typedarray/specs/latest/",
         "identification": [
             {
                 "selector": "pre.idl",
