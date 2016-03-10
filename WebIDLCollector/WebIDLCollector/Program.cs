@@ -2,41 +2,25 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Text.RegularExpressions;
 using AngleSharp;
+using AngleSharp.Dom;
 using Newtonsoft.Json;
 using WebIDLCollector.Builders;
-using WebIDLCollector.IDLTypes;
+using WebIDLCollector.GetData;
 using WebIDLCollector.Process;
 
 namespace WebIDLCollector
 {
-    [Serializable]
-    public class SpecRef
-    {
-        public SpecRef()
-        {
-            Authors = new List<string>();
-            Versions = new List<string>();
-            ObsoletedBy = new List<string>();
-        }
-
-        public string Href { get; set; }
-        public string Title { get; set; }
-        public string Date { get; set; }
-        public string Status { get; set; }
-        public string Id { get; set; }
-        public string AliasOf { get; set; }
-        public string Publisher { get; set; }
-        public List<string> Authors { get; }
-        public List<string> Versions { get; }
-        public List<string> ObsoletedBy { get; }
-        public string Data { get; set; }
-    }
-
     public class Program
     {
+        static Program()
+        {
+            SpecRefShortNameTitle = new SortedDictionary<string, string>();
+        }
+
+        public static SortedDictionary<string, string> SpecRefShortNameTitle { get; set; }
+
         public static void Main(string[] args)
         {
             const string webidlLocation = "webidl";
@@ -46,63 +30,17 @@ namespace WebIDLCollector
                 Directory.Delete(webidlLocation, true);
             }
 
-            Console.WriteLine("Retrieve SpecRef data...");
-            var request = WebRequest.Create("https://specref.herokuapp.com/bibrefs");
-            var speRefData = new SortedDictionary<string, SpecRef>();
-            var specShortNameTitle = new SortedDictionary<string, string>();
-            using (var response = request.GetResponse())
+            //Set up list for spec ref
+            var specRefData = DataCollectors.GetSpecRefData();
+            foreach (var specRefType in specRefData.Where(specRefType => !string.IsNullOrWhiteSpace(specRefType.Value.Title) && !SpecRefShortNameTitle.ContainsKey(specRefType.Key)))
             {
-                using (var responseStream = response.GetResponseStream())
-                {
-                    if (responseStream == null)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Unable to get SpecRef data.");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.ReadKey();
-                        return;
-                    }
-                    using (var stream = new StreamReader(responseStream))
-                    {
-                        var specRefSerializer = new JsonSerializer();
-                        var specRefDictionary = (IDictionary<string, dynamic>)specRefSerializer.Deserialize(stream, typeof(IDictionary<string, dynamic>));
-                        foreach (var item in specRefDictionary)
-                        {
-                            var shortName = item.Key;
-
-                            SpecRef specRef;
-                            if (item.Value is string)
-                            {
-                                specRef = new SpecRef
-                                {
-                                    Data = item.Value
-                                };
-                            }
-                            else
-                            {
-                                specRef = new SpecRef
-                                {
-                                    AliasOf = item.Value["aliasOf"],
-                                    Date = item.Value["date"],
-                                    Href = item.Value["href"],
-                                    Title = item.Value["title"]
-                                };
-                            }
-
-                            if (!string.IsNullOrWhiteSpace(specRef.Title))
-                            {
-                                specShortNameTitle.Add(shortName.ToLowerInvariant(), specRef.Title);
-                            }
-                            speRefData.Add(shortName, specRef);
-                        }
-                    }
-                }
+                SpecRefShortNameTitle.Add(specRefType.Key.ToLowerInvariant(), specRefType.Value.Title);
             }
 
             ProcessJsonFile("specData.json");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Generation Complete!");
-            Console.ReadKey();
+            Console.ReadLine();
         }
 
         private static void ProcessJsonFile(string jsonFile)
@@ -155,7 +93,7 @@ namespace WebIDLCollector
                 }
             }
 
-            var mergedSpecData = MergeSpecData(allSpecData);
+            var mergedSpecData = MergeProcessor.MergeSpecData(allSpecData);
             var allWebIdl = new WebIdlBuilder(mergedSpecData, true);
             allWebIdl.GenerateFile();
 
@@ -163,259 +101,39 @@ namespace WebIDLCollector
             jsonDataBuilder.GenerateFile();
         }
 
-        private static SpecData MergeSpecData(IEnumerable<SpecData> allSpecData)
-        {
-            var finalInterfaceTypes = new SortedDictionary<string, InterfaceType>();
-            var finalCallbackTypes = new SortedDictionary<string, CallbackType>();
-            var finalDictionaryTypes = new SortedDictionary<string, DictionaryType>();
-            var finalImplementsTypes = new Dictionary<Tuple<string, string>, ImplementsType>();
-            var finalTypeDefsTypes = new SortedDictionary<string, TypeDefType>();
-            var finalEnumTypes = new SortedDictionary<string, EnumType>();
-
-            //Consolidate all specs into merged interfaces, dictionaries, callbacks, etc..., merge partials
-            foreach (var specData in allSpecData)
-            {
-                //Merge partials
-                MergeInterfaces(specData, ref finalInterfaceTypes);
-
-                MergeCallbacks(specData, ref finalCallbackTypes);
-
-                MergeDictionaries(specData, ref finalDictionaryTypes);
-
-                MergeImplements(specData, ref finalImplementsTypes);
-
-                MergeTypeDefs(specData, ref finalTypeDefsTypes);
-
-                MergeEnumerations(specData, ref finalEnumTypes);
-            }
-
-            var fullSpecData = new SpecData
-            {
-                Name = "Specifications",
-                Interfaces = finalInterfaceTypes.Values.ToList(),
-                Callbacks = finalCallbackTypes.Values.ToList(),
-                Dictionaries = finalDictionaryTypes.Values.ToList(),
-                Implements = finalImplementsTypes.Values.ToList(),
-                TypeDefs = finalTypeDefsTypes.Values.ToList(),
-                Enumerations = finalEnumTypes.Values.ToList()
-            };
-
-            return fullSpecData;
-        }
-
-        private static void MergeEnumerations(SpecData data, ref SortedDictionary<string, EnumType> finalEnumTypes)
-        {
-            foreach (var enumType in data.Enumerations)
-            {
-                var enumTypeName = enumType.Name;
-
-                if (!finalEnumTypes.ContainsKey(enumTypeName))
-                {
-                    finalEnumTypes.Add(enumTypeName, enumType);
-                    continue;
-                }
-
-                var currentEnumeration = finalEnumTypes[enumTypeName];
-                currentEnumeration.SpecNames = currentEnumeration.SpecNames.Union(enumType.SpecNames).OrderBy(a => a);
-
-                finalEnumTypes[enumTypeName] = currentEnumeration;
-            }
-        }
-
-        private static void MergeTypeDefs(SpecData data, ref SortedDictionary<string, TypeDefType> finalTypeDefsTypes)
-        {
-            foreach (var typeDefType in data.TypeDefs)
-            {
-                var typeDefName = typeDefType.Name;
-
-                if (!finalTypeDefsTypes.ContainsKey(typeDefName))
-                {
-                    finalTypeDefsTypes.Add(typeDefName, typeDefType);
-                    continue;
-                }
-
-                var currentTypeDef = finalTypeDefsTypes[typeDefName];
-                currentTypeDef.SpecNames = currentTypeDef.SpecNames.Union(typeDefType.SpecNames).OrderBy(a => a);
-
-                finalTypeDefsTypes[typeDefName] = currentTypeDef;
-            }
-        }
-
-        private static void MergeImplements(SpecData data, ref Dictionary<Tuple<string, string>, ImplementsType> finalImplementsTypes)
-        {
-            foreach (var implementsType in data.Implements)
-            {
-                var implementsKey = implementsType.Key;
-
-                if (!finalImplementsTypes.ContainsKey(implementsKey))
-                {
-                    finalImplementsTypes.Add(implementsKey, implementsType);
-                    continue;
-                }
-
-                var currentImplements = finalImplementsTypes[implementsKey];
-                currentImplements.SpecNames = currentImplements.SpecNames.Union(implementsType.SpecNames).OrderBy(a => a);
-
-                finalImplementsTypes[implementsKey] = currentImplements;
-            }
-        }
-
-        private static void MergeCallbacks(SpecData data, ref SortedDictionary<string, CallbackType> finalCallbackTypes)
-        {
-            foreach (var callbackType in data.Callbacks)
-            {
-                var callbackName = callbackType.Name;
-
-                if (!finalCallbackTypes.ContainsKey(callbackName))
-                {
-                    finalCallbackTypes.Add(callbackName, callbackType);
-                    continue;
-                }
-
-                var currentCallback = finalCallbackTypes[callbackName];
-                currentCallback.SpecNames = currentCallback.SpecNames.Union(callbackType.SpecNames).OrderBy(a => a);
-
-                finalCallbackTypes[callbackName] = currentCallback;
-            }
-        }
-
-        private static void MergeDictionaries(SpecData data, ref SortedDictionary<string, DictionaryType> finalDictionaryTypes)
-        {
-            foreach (var dictionaryType in data.Dictionaries)
-            {
-                var dictionaryName = dictionaryType.Name;
-
-                if (!finalDictionaryTypes.ContainsKey(dictionaryName))
-                {
-                    dictionaryType.IsPartial = false;
-                    finalDictionaryTypes.Add(dictionaryName, dictionaryType);
-                    continue;
-                }
-
-                var currentDictionary = finalDictionaryTypes[dictionaryName];
-                currentDictionary.IsPartial = false;
-                var constructors = currentDictionary.Constructors as IList<string> ?? currentDictionary.Constructors.ToList();
-                currentDictionary.Constructors = constructors.Union(constructors);
-                currentDictionary.Exposed = currentDictionary.Exposed.Union(currentDictionary.Exposed).OrderBy(a => a);
-                currentDictionary.Inherits = currentDictionary.Inherits.Union(dictionaryType.Inherits).OrderBy(a => a);
-                currentDictionary.SpecNames = currentDictionary.SpecNames.Union(dictionaryType.SpecNames).OrderBy(a => a);
-
-                var sortedMembers = new SortedDictionary<string, DictionaryMember>(currentDictionary.Members.ToDictionary(a => a.Name, b => b));
-                foreach (var member in dictionaryType.Members)
-                {
-                    var memberName = member.Name;
-
-                    if (!sortedMembers.ContainsKey(memberName))
-                    {
-                        sortedMembers.Add(memberName, member);
-                    }
-
-                    var currentMemeber = sortedMembers[memberName];
-                    currentMemeber.SpecNames = currentMemeber.SpecNames.Union(member.SpecNames).OrderBy(a => a);
-
-                    sortedMembers[memberName] = currentMemeber;
-                }
-
-                currentDictionary.Members = sortedMembers.Values;
-
-                finalDictionaryTypes[dictionaryName] = currentDictionary;
-            }
-        }
-
-        private static void MergeInterfaces(SpecData data, ref SortedDictionary<string, InterfaceType> finalInterfaceTypes)
-        {
-            foreach (var interfaceType in data.Interfaces)
-            {
-                var interfaceName = interfaceType.Name;
-
-                if (!finalInterfaceTypes.ContainsKey(interfaceName))
-                {
-                    interfaceType.IsPartial = false;
-                    finalInterfaceTypes.Add(interfaceName, interfaceType);
-                    continue;
-                }
-
-                var currentInterface = finalInterfaceTypes[interfaceName];
-                currentInterface.IsPartial = false;
-                currentInterface.Constructors = currentInterface.Constructors.Union(interfaceType.Constructors);
-                currentInterface.ExtendedBy = currentInterface.ExtendedBy.Union(interfaceType.ExtendedBy).OrderBy(a => a);
-                currentInterface.Inherits = currentInterface.Inherits.Union(interfaceType.Inherits).OrderBy(a => a);
-                currentInterface.NamedConstructors = currentInterface.NamedConstructors.Union(interfaceType.NamedConstructors);
-                currentInterface.SpecNames = currentInterface.SpecNames.Union(interfaceType.SpecNames).OrderBy(a => a);
-
-                var members = currentInterface.Members.ToList();
-
-                foreach (var member in interfaceType.Members)
-                {
-                    if (!members.Contains(member))
-                    {
-                        members.Add(member);
-                    }
-
-                    var currentMember = members.Single(a => a.Equals(member));
-
-                    currentMember.SpecNames = currentMember.SpecNames.Union(member.SpecNames).OrderBy(a => a);
-
-                    members.Remove(member);
-                    members.Add(currentMember);
-                }
-                currentInterface.Members = members;
-                currentInterface.Members = currentInterface.Members.OrderBy(a => a.Name);
-
-                finalInterfaceTypes[interfaceName] = currentInterface;
-            }
-        }
-
         private static bool ProcessSpec(SpecData specData)
         {
             Console.WriteLine("Processing (" + specData.Url + ")");
 
-            //var specShortName = specData.Name;  //Lookup spec URL from respec data file
+            var specShortName = specData.Name;
+            var specTitle = specData.Title;
             var specUrl = specData.Url;
             var specFile = specData.File;
+
+            if (SpecRefShortNameTitle.ContainsKey(specShortName))
+            {
+                specTitle = SpecRefShortNameTitle[specShortName];
+                if (!specData.ShortNamesTitles.ContainsKey(specShortName))
+                {
+                    specData.ShortNamesTitles.Add(specShortName, specTitle);
+                }
+            }
+            else if (!string.IsNullOrWhiteSpace(specTitle))
+            {
+                specData.ShortNamesTitles.Add(specShortName, specTitle);
+                SpecRefShortNameTitle.Add(specShortName, Regex.Replace(specTitle, @"\s+Module|\s+Specification", string.Empty, RegexOptions.IgnoreCase));
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Unable to determine title for- " + specShortName);
+                Console.ForegroundColor = ConsoleColor.Gray;
+            }
 
             var config = Configuration.Default.WithDefaultLoader();
             var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
 
-            if (!specData.Identification.Any())
-            {
-                //Determine Bikeshed
-                var meta = document.QuerySelector("meta[name=generator]");
-                if (meta != null && meta.GetAttribute("content").StartsWith("bikeshed", StringComparison.InvariantCultureIgnoreCase))
-                {
-                    var bikeshedIdentificationList = new List<SpecIdentification>();
-                    var idlIndex = document.QuerySelector("#idl-index");
-                    if (idlIndex != null && idlIndex.HasChildNodes) // determine IDL Index
-                    {
-                        bikeshedIdentificationList.Add(new SpecIdentification
-                        {
-                            Selector = "#idl-index + pre.idl",
-                            Type = "idl"
-                        });
-                    }
-                    var propDef = document.QuerySelector("table.propdef");
-                    if (propDef != null && propDef.HasChildNodes) // determine propdef table
-                    {
-                        bikeshedIdentificationList.Add(new SpecIdentification
-                        {
-                            Selector = "table.propdef",
-                            Type = "bikeshed"
-                        });
-                    }
-                    if (!bikeshedIdentificationList.Any())
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("No standards bikeshed sections found");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-                    }
-                    specData.Identification = bikeshedIdentificationList;//Change this to .Add()
-                }
-                //Determine respec
-                else if (Regex.IsMatch(document.TextContent, @"\brespec\b", RegexOptions.IgnoreCase))
-                {
-                }
-
-            }
+            specData.Identification = AutoDetectSpecDataIdentification(specData, document);
             if (!specData.Identification.Any() && string.IsNullOrWhiteSpace(specFile))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -483,6 +201,120 @@ namespace WebIDLCollector
             Console.ForegroundColor = ConsoleColor.Gray;
 
             return true;
+        }
+
+        private static List<SpecIdentification> AutoDetectSpecDataIdentification(SpecData specData, IDocument document)
+        {
+            if (specData.Identification.Any())
+            {
+                return specData.Identification;
+            }
+
+            var specIdentification = new List<SpecIdentification>();
+            var foundIdl = false;
+            //Determine Bikeshed
+            var meta = document.QuerySelector("meta[name=generator]");
+            if (meta != null && meta.GetAttribute("content").StartsWith("bikeshed", StringComparison.InvariantCultureIgnoreCase))
+            {
+                var bikeshedIdentificationList = new List<SpecIdentification>();
+                var idlIndex = document.QuerySelector("#idl-index");
+                if (idlIndex != null && idlIndex.HasChildNodes) // determine IDL Index
+                {
+                    bikeshedIdentificationList.Add(new SpecIdentification
+                    {
+                        Selector = "#idl-index + pre.idl",
+                        Type = "idl"
+                    });
+                }
+                var bikeshedPropDef = document.QuerySelector("table.propdef");
+                if (bikeshedPropDef != null && bikeshedPropDef.HasChildNodes) // determine propdef table
+                {
+                    foundIdl = true;
+                    bikeshedIdentificationList.Add(new SpecIdentification
+                    {
+                        Selector = "table.propdef",
+                        Type = "bikeshed"
+                    });
+                }
+                if (!bikeshedIdentificationList.Any())
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("No common bikeshed sections found");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                }
+                specIdentification.AddRange(bikeshedIdentificationList);
+            }
+            //Determine respec
+            else if (Regex.IsMatch(document.DocumentElement.OuterHtml, @"\brespec\b", RegexOptions.IgnoreCase))
+            {
+                var respecIdentificationList = new List<SpecIdentification>();
+                var dlIdl = document.QuerySelector("dl.idl");
+                if (dlIdl != null && dlIdl.HasChildNodes)
+                {
+                    foundIdl = true;
+                    respecIdentificationList.Add(new SpecIdentification
+                    {
+                        Selector = "dl.idl",
+                        Type = "respec"
+                    });
+                }
+                if (!respecIdentificationList.Any())
+                {
+                    var respecPreIdl = document.QuerySelector("pre.idl");
+                    if (respecPreIdl != null && respecPreIdl.HasChildNodes)
+                    {
+                        foundIdl = true;
+                        respecIdentificationList.Add(new SpecIdentification
+                        {
+                            Selector = "pre.idl",
+                            Type = "idl"
+                        });
+                    }
+                }
+                if (!respecIdentificationList.Any())
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("No common respec sections found");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                }
+                specIdentification.AddRange(respecIdentificationList);
+            }
+
+            if (specIdentification.Any() && foundIdl)
+            {
+                return specIdentification;
+            }
+
+            //Fallback case
+            var fallbackIdentificationList = new List<SpecIdentification>();
+            var preIdl = document.QuerySelector("pre.idl");
+            if (preIdl != null && preIdl.HasChildNodes)
+            {
+                fallbackIdentificationList.Add(new SpecIdentification
+                {
+                    Selector = "pre.idl",
+                    Type = "idl"
+                });
+            }
+            var propDef = document.QuerySelector("table.propdef");
+            if (propDef != null && propDef.HasChildNodes)
+            {
+                foundIdl = true;
+                fallbackIdentificationList.Add(new SpecIdentification
+                {
+                    Selector = "table.propdef",
+                    Type = "bikeshed"
+                });
+            }
+            if (!fallbackIdentificationList.Any() && string.IsNullOrWhiteSpace(specData.File))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No common sections to parse");
+                Console.ForegroundColor = ConsoleColor.Gray;
+            }
+            specIdentification.AddRange(fallbackIdentificationList);
+
+            return specIdentification;
         }
     }
 }

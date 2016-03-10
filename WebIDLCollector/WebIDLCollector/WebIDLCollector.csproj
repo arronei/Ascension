@@ -71,12 +71,15 @@
     <Compile Include="IDLTypes\Property.cs" />
     <Compile Include="IDLTypes\TypeDefType.cs" />
     <Compile Include="Builders\JsonDataBuilder.cs" />
+    <Compile Include="Process\MergeProcessors.cs" />
     <Compile Include="Process\ProcessCssSpecs.cs" />
     <Compile Include="Process\ProcessOthers.cs" />
     <Compile Include="Process\ProcessRespecSpecs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpecData.cs" />
+    <Compile Include="GetData\GetSpecRefData.cs" />
+    <Compile Include="SpecRef\SpecRefType.cs" />
     <Compile Include="TypeMirrorTypes\TypeMirrorProperty.cs" />
     <Compile Include="TypeMirrorTypes\TypeMirrorType.cs" />
     <Compile Include="Utilities\Extensions.cs" />
@@ -94,6 +97,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\telephony-bugfix.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\web-animations-1-bugfix.webidl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\webgl20-bugfix.webidl">

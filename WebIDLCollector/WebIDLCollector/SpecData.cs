@@ -7,19 +7,22 @@ namespace WebIDLCollector
     {
         public SpecData()
         {
+            Identification = new List<SpecIdentification>();
             Implements = new List<ImplementsType>();
             Interfaces = new List<InterfaceType>();
             Dictionaries = new List<DictionaryType>();
             Enumerations = new List<EnumType>();
             TypeDefs = new List<TypeDefType>();
             Callbacks = new List<CallbackType>();
+            ShortNamesTitles = new SortedDictionary<string, string>();
         }
 
         public string Name { get; set; }
+        public string Title { get; set; }
         public string Url { get; set; }
         public string File { get; set; }
 
-        public IEnumerable<SpecIdentification> Identification;
+        public List<SpecIdentification> Identification { get; set; }
 
         public List<ImplementsType> Implements { get; set; }
 
@@ -32,6 +35,8 @@ namespace WebIDLCollector
         public List<TypeDefType> TypeDefs { get; set; }
 
         public List<CallbackType> Callbacks { get; set; }
+
+        public SortedDictionary<string, string> ShortNamesTitles { get; set; }
     }
 
     public class SpecIdentification

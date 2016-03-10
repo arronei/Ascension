@@ -1,66 +1,31 @@
 ﻿[
     {
         "name": "webaudio",
-        "url": "http://www.w3.org/TR/webaudio/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "http://www.w3.org/TR/webaudio/"
     },
     {
         "name": "webaudio",
-        "url": "https://webaudio.github.io/web-audio-api/",
-        "identification": [
-            {
-                "selector": "dl.idl",
-                "type": "respec"
-            }
-        ]
+        "url": "https://webaudio.github.io/web-audio-api/"
     },
     {
         "name": "webmidi",
-        "url": "http://www.w3.org/TR/webmidi/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "http://www.w3.org/TR/webmidi/"
     },
     {
         "name": "webmidi",
-        "url": "https://webaudio.github.io/web-midi-api/",
-        "identification": [
-            {
-                "selector": "dl.idl",
-                "type": "respec"
-            }
-        ]
+        "url": "https://webaudio.github.io/web-midi-api/"
     },
     {
         "name": "webdriver",
-        "url": "http://www.w3.org/TR/webdriver/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "http://www.w3.org/TR/webdriver/"
     },
     {
         "name": "webdriver",
-        "url": "https://w3c.github.io/webdriver/webdriver-spec.html",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "https://w3c.github.io/webdriver/webdriver-spec.html"
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/box.html",
         "identification": [
             {
@@ -71,6 +36,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/visuren.html",
         "identification": [
             {
@@ -81,6 +47,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/visudet.html",
         "identification": [
             {
@@ -91,6 +58,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/visufx.html",
         "identification": [
             {
@@ -101,6 +69,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/generate.html",
         "identification": [
             {
@@ -111,6 +80,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/page.html",
         "identification": [
             {
@@ -121,6 +91,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/colors.html",
         "identification": [
             {
@@ -131,6 +102,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/fonts.html",
         "identification": [
             {
@@ -141,6 +113,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/text.html",
         "identification": [
             {
@@ -151,6 +124,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/tables.html",
         "identification": [
             {
@@ -161,6 +135,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/ui.html",
         "identification": [
             {
@@ -171,6 +146,7 @@
     },
     {
         "name": "css21",
+        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/aural.html",
         "identification": [
             {
@@ -181,526 +157,229 @@
     },
     {
         "name": "css-align-3",
-        "url": "http://www.w3.org/TR/css3-align/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css3-align/"
     },
     {
         "name": "css-align-3",
-        "url": "https://drafts.csswg.org/css-align/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-align/"
     },
     {
         "name": "css-animations-1",
-        "url": "https://www.w3.org/TR/css3-animations/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            },
-            {
-                "selector": "#idl-index + pre.idl",
-                "type": "idl"
-            }
-        ]
+        "title": "CSS Animations",
+        "url": "https://www.w3.org/TR/css3-animations/"
     },
     {
         "name": "css-animations-1",
-        "url": "https://drafts.csswg.org/css-animations/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            },
-            {
-                "selector": "#idl-index + pre.idl",
-                "type": "idl"
-            }
-        ]
+        "title": "CSS Animations",
+        "url": "https://drafts.csswg.org/css-animations/"
     },
     {
         "name": "css-animations-2",
-        "url": "https://drafts.csswg.org/css-animations-2/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            },
-            {
-                "selector": "#idl-index + pre.idl",
-                "type": "idl"
-            }
-        ]
+        "title": "CSS Animations Level 2",
+        "url": "https://drafts.csswg.org/css-animations-2/"
     },
     {
         "name": "css-backgrounds-3",
-        "url": "http://www.w3.org/TR/css3-background/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Backgrounds and Borders Level 3",
+        "url": "http://www.w3.org/TR/css3-background/"
     },
     {
         "name": "css-backgrounds-3",
-        "url": "https://drafts.csswg.org/css-backgrounds/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Backgrounds and Borders Level 3",
+        "url": "https://drafts.csswg.org/css-backgrounds/"
     },
     {
         "name": "css-backgrounds-4",
-        "url": "http://dev.w3.org/csswg/css-backgrounds-4/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Backgrounds and Borders Level 4",
+        "url": "http://dev.w3.org/csswg/css-backgrounds-4/"
     },
     {
         "name": "css-break-3",
-        "url": "http://www.w3.org/TR/css3-break/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css3-break/"
     },
     {
         "name": "css-break-3",
-        "url": "https://drafts.csswg.org/css-break/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-break/"
     },
     {
         "name": "css-cascade-3",
-        "url": "http://www.w3.org/TR/css-cascade-3/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css-cascade-3/"
     },
     {
         "name": "css-cascade-3",
-        "url": "https://drafts.csswg.org/css-cascade-3/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-cascade-3/"
     },
     {
         "name": "css-cascade-4",
-        "url": "https://www.w3.org/TR/css-cascade-4/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://www.w3.org/TR/css-cascade-4/"
     },
     {
         "name": "css-cascade-4",
-        "url": "https://drafts.csswg.org/css-cascade/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-cascade/"
     },
     {
         "name": "css-color-3",
-        "url": "http://www.w3.org/TR/css3-color/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Color Level 3",
+        "url": "http://www.w3.org/TR/css3-color/"
     },
     {
         "name": "css-color-4",
-        "url": "https://drafts.csswg.org/css-color/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Color Level 4",
+        "url": "https://drafts.csswg.org/css-color/"
     },
     {
         "name": "css-conditional-3",
-        "url": "http://www.w3.org/TR/css3-conditional/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "title": "CSS Conditional Rules Level 3",
+        "url": "http://www.w3.org/TR/css3-conditional/"
     },
     {
         "name": "css-conditional-3",
-        "url": "https://drafts.csswg.org/css-conditional-3/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "title": "CSS Conditional Rules Level 3",
+        "url": "https://drafts.csswg.org/css-conditional-3/"
     },
     {
         "name": "css-containment",
-        "url": "https://drafts.csswg.org/css-containment/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Containment Level 3",
+        "url": "https://drafts.csswg.org/css-containment/"
     },
     {
         "name": "css-counter-styles-3",
-        "url": "http://www.w3.org/TR/css-counter-styles-3/",
-        "identification": [
-            {
-                "selector": "#idl-index + pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css-counter-styles-3/"
     },
     {
         "name": "css-counter-styles-3",
-        "url": "https://drafts.csswg.org/css-counter-styles/",
-        "identification": [
-            {
-                "selector": "#idl-index + pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-counter-styles/"
     },
     {
         "name": "css-deviceadapt-1",
-        "url": "https://www.w3.org/TR/css-device-adapt/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "title": "CSS Device Adaptation Level 1",
+        "url": "https://www.w3.org/TR/css-device-adapt/"
     },
     {
         "name": "css-deviceadapt-1",
-        "url": "https://drafts.csswg.org/css-device-adapt/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "title": "CSS Device Adaptation Level 1",
+        "url": "https://drafts.csswg.org/css-device-adapt/"
     },
     {
         "name": "css-display-3",
-        "url": "http://www.w3.org/TR/css-display-3/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css-display-3/"
     },
     {
         "name": "css-display-3",
-        "url": "https://drafts.csswg.org/css-display/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-display/"
     },
     {
         "name": "css-exclusions-1",
-        "url": "http://www.w3.org/TR/css3-exclusions/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Exclusions Level 1",
+        "url": "http://www.w3.org/TR/css3-exclusions/"
     },
     {
         "name": "css-exclusions-1",
-        "url": "https://drafts.csswg.org/css-exclusions/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Exclusions Level 1",
+        "url": "https://drafts.csswg.org/css-exclusions/"
     },
     {
         "name": "css-flexbox-1",
-        "url": "http://www.w3.org/TR/css3-flexbox/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css3-flexbox/"
     },
     {
         "name": "css-flexbox-1",
-        "url": "https://drafts.csswg.org/css-flexbox/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-flexbox/"
     },
     {
         "name": "css-font-loading-3",
-        "url": "http://www.w3.org/TR/css-font-loading/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css-font-loading/"
     },
     {
         "name": "css-font-loading-3",
-        "url": "http://dev.w3.org/csswg/css-font-loading/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "http://dev.w3.org/csswg/css-font-loading/"
     },
     {
         "name": "css-fonts-3",
-        "url": "http://www.w3.org/TR/css-fonts-3/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            },
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css-fonts-3/"
     },
     {
         "name": "css-fonts-3",
-        "url": "https://drafts.csswg.org/css-fonts/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            },
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-fonts/"
     },
     {
         "name": "css-gcpm-3",
-        "url": "http://www.w3.org/TR/css3-gcpm/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css3-gcpm/"
     },
     {
         "name": "css-gcpm-3",
-        "url": "https://drafts.csswg.org/css-gcpm/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-gcpm/"
     },
     {
         "name": "css-grid-1",
-        "url": "http://www.w3.org/TR/css3-grid-layout/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "http://www.w3.org/TR/css3-grid-layout/"
     },
     {
         "name": "css-grid-1",
-        "url": "https://drafts.csswg.org/css-grid/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-grid/"
     },
     {
         "name": "css-images-3",
-        "url": "https://www.w3.org/TR/css3-images/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Image Values and Replaced Content Level 3",
+        "url": "https://www.w3.org/TR/css3-images/"
     },
     {
         "name": "css-images-3",
-        "url": "https://drafts.csswg.org/css-images/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Image Values and Replaced Content Level 3",
+        "url": "https://drafts.csswg.org/css-images/"
     },
     {
         "name": "css-images-4",
-        "url": "https://www.w3.org/TR/css4-images/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Image Values and Replaced Content Level 4",
+        "url": "https://www.w3.org/TR/css4-images/"
     },
     {
         "name": "css-images-4",
-        "url": "https://drafts.csswg.org/css-images-4/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Image Values and Replaced Content Level 4",
+        "url": "https://drafts.csswg.org/css-images-4/"
     },
     {
         "name": "css-inline-3",
-        "url": "https://www.w3.org/TR/css-inline/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://www.w3.org/TR/css-inline/"
     },
     {
         "name": "css-inline-3",
-        "url": "https://drafts.csswg.org/css-inline/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-inline/"
     },
     {
         "name": "css-line-grid-1",
-        "url": "https://www.w3.org/TR/css-line-grid-1/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://www.w3.org/TR/css-line-grid-1/"
     },
     {
         "name": "css-line-grid-1",
-        "url": "https://drafts.csswg.org/css-line-grid/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-line-grid/"
     },
     {
         "name": "css-lists-3",
-        "url": "https://www.w3.org/TR/css3-lists/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://www.w3.org/TR/css3-lists/"
     },
     {
         "name": "css-lists-3",
-        "url": "https://drafts.csswg.org/css-lists/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-lists/"
     },
     {
         "name": "css-logical-props-1",
-        "url": "http://dev.w3.org/csswg/css-logical-props/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Logical Properties Level 1",
+        "url": "http://dev.w3.org/csswg/css-logical-props/"
     },
     {
         "name": "css-multicol-1",
-        "url": "http://www.w3.org/TR/css3-multicol/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Multi-column Layout",
+        "url": "http://www.w3.org/TR/css3-multicol/"
     },
     {
         "name": "css-multicol-1",
-        "url": "https://drafts.csswg.org/css-multicol/",
-        "identification": [
-            {
-                "selector": "table.propdef",
-                "type": "bikeshed"
-            }
-        ]
+        "title": "CSS Multi-column Layout",
+        "url": "https://drafts.csswg.org/css-multicol/"
     },
     {
         "name": "css-multicol-2",
+        "title": "CSS Multi-column Layout Level 2",
         "url": "https://drafts.csswg.org/css-multicol-2/",
         "identification": [
             {
@@ -711,6 +390,7 @@
     },
     {
         "name": "css-overflow-4",
+        "title": "CSS Overflow Level 4",
         "url": "https://www.w3.org/TR/css-overflow-3/",
         "identification": [
             {
@@ -721,6 +401,7 @@
     },
     {
         "name": "css-overflow-4",
+        "title": "CSS Overflow Level 4",
         "url": "https://drafts.csswg.org/css-overflow/",
         "identification": [
             {
@@ -731,6 +412,7 @@
     },
     {
         "name": "css-page-3",
+        "title": "CSS Paged Media Level 3",
         "url": "http://www.w3.org/TR/css3-page/",
         "identification": [
             {
@@ -741,6 +423,7 @@
     },
     {
         "name": "css-page-3",
+        "title": "CSS Paged Media Level 3",
         "url": "https://drafts.csswg.org/css-page/",
         "identification": [
             {
@@ -751,6 +434,7 @@
     },
     {
         "name": "css-position-3",
+        "title": "CSS Positioned Layout Level 3",
         "url": "http://www.w3.org/TR/css3-positioning/",
         "identification": [
             {
@@ -761,6 +445,7 @@
     },
     {
         "name": "css-position-3",
+        "title": "CSS Positioned Layout Level 3",
         "url": "https://drafts.csswg.org/css-position/",
         "identification": [
             {
@@ -859,6 +544,7 @@
     },
     {
         "name": "css-shapes-2",
+        "title": "CSS Shapes Level 2",
         "url": "https://drafts.csswg.org/css-shapes-2/",
         "identification": [
             {
@@ -869,6 +555,7 @@
     },
     {
         "name": "css-size-adjust-1",
+        "title": "CSS Mobile Text Size Adjustment Level 1",
         "url": "http://dev.w3.org/csswg/css-size-adjust/",
         "identification": [
             {
@@ -879,6 +566,7 @@
     },
     {
         "name": "css-sizing-3",
+        "title": "CSS Intrinsic & Extrinsic Sizing Level 3",
         "url": "https://www.w3.org/TR/css3-sizing/",
         "identification": [
             {
@@ -889,6 +577,7 @@
     },
     {
         "name": "css-sizing-4",
+        "title": "CSS Intrinsic & Extrinsic Sizing Level 4",
         "url": "https://drafts.csswg.org/css-sizing/",
         "identification": [
             {
@@ -919,7 +608,8 @@
     },
     {
         "name": "css-speech-3",
-        "url": "http://www.w3.org/TR/css3-speech/",
+        "title": "CSS Speech",
+        "url": "https://www.w3.org/TR/css3-speech/",
         "identification": [
             {
                 "selector": "table.propdef",
@@ -929,6 +619,7 @@
     },
     {
         "name": "css-speech-3",
+        "title": "CSS Speech",
         "url": "https://drafts.csswg.org/css-speech/",
         "identification": [
             {
@@ -989,6 +680,7 @@
     },
     {
         "name": "css-text-decor-4",
+        "title": "CSS Text Decoration Level 4",
         "url": "http://dev.w3.org/csswg/css-text-decor-4/",
         "identification": [
             {
@@ -1019,6 +711,7 @@
     },
     {
         "name": "css-transforms-2",
+        "title": "CSS Transform Level 2",
         "url": "https://drafts.csswg.org/css-transforms-2/",
         "identification": [
             {
@@ -1029,6 +722,7 @@
     },
     {
         "name": "css-transitions-1",
+        "title": "CSS Transitions",
         "url": "https://www.w3.org/TR/css3-transitions/",
         "identification": [
             {
@@ -1043,6 +737,7 @@
     },
     {
         "name": "css-transitions-1",
+        "title": "CSS Transitions",
         "url": "https://drafts.csswg.org/css-transitions/",
         "identification": [
             {
@@ -1057,6 +752,7 @@
     },
     {
         "name": "css-transitions-2",
+        "title": "CSS Transitions Level 2",
         "url": "https://drafts.csswg.org/css-transitions-2/",
         "identification": [
             {
@@ -1067,6 +763,7 @@
     },
     {
         "name": "css-cssui-3",
+        "title": "CSS Basic User Interface Level 3",
         "url": "https://www.w3.org/TR/css3-ui/",
         "identification": [
             {
@@ -1077,6 +774,7 @@
     },
     {
         "name": "css-cssui-3",
+        "title": "CSS Basic User Interface Level 3",
         "url": "https://drafts.csswg.org/css-ui/",
         "identification": [
             {
@@ -1087,6 +785,7 @@
     },
     {
         "name": "css-cssui-4",
+        "title": "CSS Basic User Interface Level 4",
         "url": "https://drafts.csswg.org/css-ui-4/",
         "identification": [
             {
@@ -1157,6 +856,7 @@
     },
     {
         "name": "box-tree-api",
+        "title": "Box Tree API Level 1",
         "url": "https://drafts.css-houdini.org/box-tree-api/",
         "identification": [
             {
@@ -1167,6 +867,7 @@
     },
     {
         "name": "css-layout-api",
+        "title": "CSS Layout API Level 1",
         "url": "https://drafts.css-houdini.org/css-layout-api/",
         "identification": [
             {
@@ -1177,6 +878,7 @@
     },
     {
         "name": "css-paint-api",
+        "title": "CSS Painting API Level 1",
         "url": "https://drafts.css-houdini.org/css-paint-api/",
         "identification": [
             {
@@ -1187,16 +889,12 @@
     },
     //{
     //    "name": "css-parser-api",
-    //    "url": "https://drafts.css-houdini.org/css-parser-api/",
-    //    "identification": [
-    //        {
-    //            "selector": "pre.idl",
-    //            "type": "idl"
-    //        }
-    //    ]
+    //    "title": "CSS Parser API Level 1",
+    //    "url": "https://drafts.css-houdini.org/css-parser-api/"
     //},
     {
         "name": "css-properties-values-api",
+        "title": "CSS Properties and Values API Level 1",
         "url": "https://drafts.css-houdini.org/css-properties-values-api/",
         "identification": [
             {
@@ -1207,6 +905,7 @@
     },
     {
         "name": "css-typed-om",
+        "title": "CSS Typed OM Level 1",
         "url": "https://drafts.css-houdini.org/css-typed-om/",
         "identification": [
             {
@@ -1217,16 +916,12 @@
     },
     //{
     //    "name": "font-metrics-api",
-    //    "url": "https://drafts.css-houdini.org/font-metrics-api/",
-    //    "identification": [
-    //        {
-    //            "selector": "pre.idl",
-    //            "type": "idl"
-    //        }
-    //    ]
+    //    "title": "Font Metrics API Level 1",
+    //    "url": "https://drafts.css-houdini.org/font-metrics-api/"
     //},
     {
         "name": "worklets",
+        "title": "Worklets Level 1",
         "url": "https://drafts.css-houdini.org/worklets/",
         "identification": [
             {
@@ -1288,6 +983,7 @@
     {
         "name": "web-animations-1",
         "url": "https://w3c.github.io/web-animations/",
+        "file": "web-animations-1-bugfix.webidl",
         "identification": [
             {
                 "selector": "pre.idl",
@@ -1416,7 +1112,7 @@
         ]
     },
     {
-        "name": "elementstraversal",
+        "name": "elementtraversal",
         "url": "http://www.w3.org/TR/ElementTraversal/",
         "identification": [
             {
@@ -1548,6 +1244,7 @@
     },
     {
         "name": "dom4",
+        "title": "W3C DOM4",
         "url": "https://www.w3.org/TR/dom/",
         "identification": [
             {
@@ -1826,7 +1523,7 @@
         ]
     },
     {
-        "name": "dom-level-3-events",
+        "name": "uievents",
         "url": "http://www.w3.org/TR/DOM-Level-3-Events/",
         "identification": [
             {
@@ -1926,6 +1623,7 @@
     },
     {
         "name": "indexeddb2",
+        "title": "Indexed Database API (Second Edition)",
         "url": "http://w3c.github.io/IndexedDB/",
         "identification": [
             {
@@ -2265,7 +1963,7 @@
         ]
     },
     {
-        "name": "hr-time2",
+        "name": "hr-time-2",
         "url": "http://www.w3.org/TR/hr-time-2/",
         "identification": [
             {
@@ -2275,7 +1973,7 @@
         ]
     },
     {
-        "name": "hr-time2",
+        "name": "hr-time-2",
         "url": "https://w3c.github.io/hr-time/",
         "identification": [
             {
@@ -2556,6 +2254,7 @@
     },
     {
         "name": "whatwg-fetch",
+        "title": "Fetch",
         "url": "https://fetch.spec.whatwg.org/",
         "identification": [
             {
@@ -2596,6 +2295,7 @@
     },
     {
         "name": "webgl2",
+        "title": "WebGL 2",
         "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "file": "webgl20-bugfix.webidl",
         "identification": [
@@ -2712,6 +2412,7 @@
     },
     {
         "name": "ortc",
+        "title": "Object RTC (ORTC) API for WebRTC",
         "url": "http://ortc.org/wp-content/uploads/2015/06/ortc.html",
         "identification": [
             {
@@ -2756,6 +2457,7 @@
     },
     {
         "name": "setimmediate",
+        "title": "Efficient Script Yielding",
         "url": "http://w3c.github.io/setImmediate/",
         "identification": [
             {
@@ -2806,9 +2508,9 @@
     },
     {
         "name": "es6",
+        "title": "ECMAScript 2015",
         "url": "http://www.ecma-international.org/ecma-262/6.0/",
-        "file": "ECMAScript2015.webidl",
-        "identification": [ ]
+        "file": "ECMAScript2015.webidl"
     },
     {
         "name": "tracking-dnt",
@@ -2902,6 +2604,7 @@
     },
     {
         "name": "wapa",
+        "title": "Web Accessibility Properties and Actions (WAPA) Explainer",
         "url": "https://raw.githubusercontent.com/cyns/wapa/master/wapa.html",
         "identification": [
             {
@@ -2922,6 +2625,7 @@
     },
     {
         "name": "touch-events-2",
+        "title": "Touch Events Level 2",
         "url": "https://w3c.github.io/touch-events/",
         "identification": [
             {
@@ -2982,6 +2686,7 @@
     },
     {
         "name": "webvr",
+        "title": "WebVR",
         "url": "https://mozvr.github.io/webvr-spec/",
         "identification": [
             {
@@ -2992,6 +2697,7 @@
     },
     {
         "name": "filesystemapi",
+        "title": "FileSystem API",
         "url": "http://w3c.github.io/filesystem-api/",
         "identification": [
             {
@@ -3332,6 +3038,7 @@
     },
     {
         "name": "intersection",
+        "title": "Intersection Observer",
         "url": "http://rawgit.com/WICG/IntersectionObserver/master/index.html",
         "identification": [
             {
@@ -3352,6 +3059,7 @@
     },
     {
         "name": "whatwg-html",
+        "title": "HTML Living Standard",
         "url": "https://html.spec.whatwg.org/",
         "identification": [
             {
