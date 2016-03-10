@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Text.RegularExpressions;
 using AngleSharp;
 using Newtonsoft.Json;
 using WebIDLCollector.Builders;
@@ -44,53 +46,58 @@ namespace WebIDLCollector
                 Directory.Delete(webidlLocation, true);
             }
 
-            //Console.WriteLine("Retrieve SpecRef data...");
-            //var request = WebRequest.Create("https://specref.herokuapp.com/bibrefs");
-            //var speRefData = new SortedDictionary<string, SpecRef>();
-            //using (var response = request.GetResponse())
-            //{
-            //    using (var responseStream = response.GetResponseStream())
-            //    {
-            //        if (responseStream == null)
-            //        {
-            //            Console.ForegroundColor = ConsoleColor.Red;
-            //            Console.WriteLine("Unable to get SpecRef data.");
-            //            Console.ForegroundColor = ConsoleColor.Gray;
-            //            Console.ReadKey();
-            //            return;
-            //        }
-            //        using (var stream = new StreamReader(responseStream))
-            //        {
-            //            var specRefSerializer = new JsonSerializer();
-            //            var specRefDictionary = (IDictionary<string, dynamic>)specRefSerializer.Deserialize(stream, typeof(IDictionary<string, dynamic>));
-            //            foreach (var item in specRefDictionary)
-            //            {
-            //                var shortName = item.Key;
+            Console.WriteLine("Retrieve SpecRef data...");
+            var request = WebRequest.Create("https://specref.herokuapp.com/bibrefs");
+            var speRefData = new SortedDictionary<string, SpecRef>();
+            var specShortNameTitle = new SortedDictionary<string, string>();
+            using (var response = request.GetResponse())
+            {
+                using (var responseStream = response.GetResponseStream())
+                {
+                    if (responseStream == null)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Unable to get SpecRef data.");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.ReadKey();
+                        return;
+                    }
+                    using (var stream = new StreamReader(responseStream))
+                    {
+                        var specRefSerializer = new JsonSerializer();
+                        var specRefDictionary = (IDictionary<string, dynamic>)specRefSerializer.Deserialize(stream, typeof(IDictionary<string, dynamic>));
+                        foreach (var item in specRefDictionary)
+                        {
+                            var shortName = item.Key;
 
-            //                SpecRef specRef;
-            //                if (item.Value is string)
-            //                {
-            //                    specRef = new SpecRef
-            //                    {
-            //                        Data = item.Value
-            //                    };
-            //                }
-            //                else
-            //                {
-            //                    specRef = new SpecRef
-            //                    {
-            //                        AliasOf = item.Value["aliasOf"],
-            //                        Date = item.Value["date"],
-            //                        Href = item.Value["href"],
-            //                        Title = item.Value["title"]
-            //                    };
-            //                }
+                            SpecRef specRef;
+                            if (item.Value is string)
+                            {
+                                specRef = new SpecRef
+                                {
+                                    Data = item.Value
+                                };
+                            }
+                            else
+                            {
+                                specRef = new SpecRef
+                                {
+                                    AliasOf = item.Value["aliasOf"],
+                                    Date = item.Value["date"],
+                                    Href = item.Value["href"],
+                                    Title = item.Value["title"]
+                                };
+                            }
 
-            //                speRefData.Add(shortName, specRef);
-            //            }
-            //        }
-            //    }
-            //}
+                            if (!string.IsNullOrWhiteSpace(specRef.Title))
+                            {
+                                specShortNameTitle.Add(shortName.ToLowerInvariant(), specRef.Title);
+                            }
+                            speRefData.Add(shortName, specRef);
+                        }
+                    }
+                }
+            }
 
             ProcessJsonFile("specData.json");
             Console.ForegroundColor = ConsoleColor.Green;
@@ -404,7 +411,9 @@ namespace WebIDLCollector
                     specData.Identification = bikeshedIdentificationList;//Change this to .Add()
                 }
                 //Determine respec
-                //else if (){}
+                else if (Regex.IsMatch(document.TextContent, @"\brespec\b", RegexOptions.IgnoreCase))
+                {
+                }
 
             }
             if (!specData.Identification.Any() && string.IsNullOrWhiteSpace(specFile))
