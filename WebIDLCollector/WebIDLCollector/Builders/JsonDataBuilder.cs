@@ -154,7 +154,7 @@ namespace WebIDLCollector.Builders
                                 sortedMembers[memberKey] = currentMember;
                             }
                             finalItem.Members = sortedMembers.Values;
-                            finalItem.Members.OrderBy(a => a.Name);
+                            finalItem.Members = finalItem.Members.OrderBy(a => a.Name);
                         }
                     }
                     else

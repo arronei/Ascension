@@ -299,7 +299,6 @@ namespace WebIDLCollector
             var propDef = document.QuerySelector("table.propdef");
             if (propDef != null && propDef.HasChildNodes)
             {
-                foundIdl = true;
                 fallbackIdentificationList.Add(new SpecIdentification
                 {
                     Selector = "table.propdef",

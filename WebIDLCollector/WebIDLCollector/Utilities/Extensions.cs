@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -23,24 +22,6 @@ namespace WebIDLCollector.Utilities
                 stream.Position = 0;
                 return (T)formatter.Deserialize(stream);
             }
-        }
-
-        public static string GetDescription(this Enum value)
-        {
-            var returnValue = string.Empty;
-            var info = value.GetType().GetField(value.ToString());
-
-            if (null == info)
-            {
-                return returnValue;
-            }
-            var attrs = info.GetCustomAttributes(typeof(DescriptionAttribute), true);
-            if (!attrs.IsNullOrEmpty())
-            {
-                returnValue = ((DescriptionAttribute)attrs[0]).Description;
-            }
-
-            return returnValue;
         }
 
         /// <summary>Determies if an IColleciton is null or empty</summary>
