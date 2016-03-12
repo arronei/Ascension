@@ -7,20 +7,12 @@ using AngleSharp;
 using AngleSharp.Dom;
 using Newtonsoft.Json;
 using WebIDLCollector.Builders;
-using WebIDLCollector.GetData;
 using WebIDLCollector.Process;
 
 namespace WebIDLCollector
 {
     public class Program
     {
-        static Program()
-        {
-            SpecRefShortNameTitle = new SortedDictionary<string, string>();
-        }
-
-        public static SortedDictionary<string, string> SpecRefShortNameTitle { get; set; }
-
         public static void Main(string[] args)
         {
             const string webidlLocation = "webidl";
@@ -28,13 +20,6 @@ namespace WebIDLCollector
             {
                 Console.WriteLine("Deleting old files...");
                 Directory.Delete(webidlLocation, true);
-            }
-
-            //Set up list for spec ref
-            var specRefData = DataCollectors.GetSpecRefData();
-            foreach (var specRefType in specRefData.Where(specRefType => !string.IsNullOrWhiteSpace(specRefType.Value.Title) && !SpecRefShortNameTitle.ContainsKey(specRefType.Key)))
-            {
-                SpecRefShortNameTitle.Add(specRefType.Key.ToLowerInvariant(), specRefType.Value.Title);
             }
 
             ProcessJsonFile("specData.json");
@@ -45,7 +30,7 @@ namespace WebIDLCollector
 
         private static void ProcessJsonFile(string jsonFile)
         {
-            if ((string.IsNullOrWhiteSpace(jsonFile)) || (!File.Exists(jsonFile)))
+            if (string.IsNullOrWhiteSpace(jsonFile) || !File.Exists(jsonFile))
             {
                 return;
             }
@@ -67,33 +52,21 @@ namespace WebIDLCollector
                 //{
                 //    new SpecData
                 //    {
-                //        Name = "mediastream-recording",
-                //        Url = "https://w3c.github.io/mediacapture-record/MediaRecorder.html",
-                //        Identification = new List<SpecIdentification>()
-                //        {
-                //            new SpecIdentification
-                //            {
-                //                Selector = "dl.idl",
-                //                Type = "respec"
-                //            }
-                //        }
+                //        Name = "css-text-3",
+                //        Url = "https://drafts.csswg.org/css-text/"
                 //    }
                 //};
 
-                foreach (var specData in specDataList)
-                {
-                    if (!ProcessSpec(specData))
-                    {
-                        continue;
-                    }
-                    var webIdl = new WebIdlBuilder(specData);
-                    webIdl.GenerateFile();
+                allSpecData.AddRange(specDataList.Where(ProcessSpec));
 
-                    allSpecData.Add(specData);
+                var specNames = allSpecData.Select(a => a.Name).Distinct();
+                foreach (var webIdl in from specName in specNames let specSpecData = allSpecData.Where(a => a.Name.Equals(specName)) select MergeProcessor.MergeSpecData(specSpecData, specName, true) into mergedSpecSpecData select new WebIdlBuilder(mergedSpecSpecData))
+                {
+                    webIdl.GenerateFile();
                 }
             }
 
-            var mergedSpecData = MergeProcessor.MergeSpecData(allSpecData);
+            var mergedSpecData = MergeProcessor.MergeSpecData(allSpecData, "Specifications");
             var allWebIdl = new WebIdlBuilder(mergedSpecData, true);
             allWebIdl.GenerateFile();
 
@@ -105,30 +78,10 @@ namespace WebIDLCollector
         {
             Console.WriteLine("Processing (" + specData.Url + ")");
 
-            var specShortName = specData.Name;
-            var specTitle = specData.Title;
+            //var specShortName = specData.Name;
+            //var specTitle = specData.Title;
             var specUrl = specData.Url;
             var specFile = specData.File;
-
-            if (SpecRefShortNameTitle.ContainsKey(specShortName))
-            {
-                specTitle = SpecRefShortNameTitle[specShortName];
-                if (!specData.ShortNamesTitles.ContainsKey(specShortName))
-                {
-                    specData.ShortNamesTitles.Add(specShortName, specTitle);
-                }
-            }
-            else if (!string.IsNullOrWhiteSpace(specTitle))
-            {
-                specData.ShortNamesTitles.Add(specShortName, specTitle);
-                SpecRefShortNameTitle.Add(specShortName, Regex.Replace(specTitle, @"\s+Module|\s+Specification", string.Empty, RegexOptions.IgnoreCase));
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Unable to determine title for- " + specShortName);
-                Console.ForegroundColor = ConsoleColor.Gray;
-            }
 
             var config = Configuration.Default.WithDefaultLoader();
             var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
@@ -211,7 +164,6 @@ namespace WebIDLCollector
             }
 
             var specIdentification = new List<SpecIdentification>();
-            var foundIdl = false;
             //Determine Bikeshed
             var meta = document.QuerySelector("meta[name=generator]");
             if (meta != null && meta.GetAttribute("content").StartsWith("bikeshed", StringComparison.InvariantCultureIgnoreCase))
@@ -229,7 +181,6 @@ namespace WebIDLCollector
                 var bikeshedPropDef = document.QuerySelector("table.propdef");
                 if (bikeshedPropDef != null && bikeshedPropDef.HasChildNodes) // determine propdef table
                 {
-                    foundIdl = true;
                     bikeshedIdentificationList.Add(new SpecIdentification
                     {
                         Selector = "table.propdef",
@@ -249,9 +200,8 @@ namespace WebIDLCollector
             {
                 var respecIdentificationList = new List<SpecIdentification>();
                 var dlIdl = document.QuerySelector("dl.idl");
-                if (dlIdl != null && dlIdl.HasChildNodes)
+                if (dlIdl != null)
                 {
-                    foundIdl = true;
                     respecIdentificationList.Add(new SpecIdentification
                     {
                         Selector = "dl.idl",
@@ -263,7 +213,6 @@ namespace WebIDLCollector
                     var respecPreIdl = document.QuerySelector("pre.idl");
                     if (respecPreIdl != null && respecPreIdl.HasChildNodes)
                     {
-                        foundIdl = true;
                         respecIdentificationList.Add(new SpecIdentification
                         {
                             Selector = "pre.idl",
@@ -280,7 +229,7 @@ namespace WebIDLCollector
                 specIdentification.AddRange(respecIdentificationList);
             }
 
-            if (specIdentification.Any() && foundIdl)
+            if (specIdentification.Any())
             {
                 return specIdentification;
             }

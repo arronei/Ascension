@@ -22,19 +22,57 @@ namespace WebIDLCollector.IDLTypes
         public bool IsRequired { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct2(bool showSpecName = false)
+        public string Reconstruct(bool showSpecName = false)
         {
             var sb = new StringBuilder();
             var comma = string.Empty;
 
+            if (Clamp || EnforceRange)
+            {
+                sb.Append("[");
 
+                if (Clamp)
+                {
+                    sb.Append("Clamp");
+                    comma = ", ";
+                }
+                if (EnforceRange)
+                {
+                    sb.Append(comma).Append("EnforceRange");
+                }
+
+                sb.Append("] ");
+            }
+
+            if (IsRequired)
+            {
+                sb.Append("required ");
+            }
+
+            sb.Append(Type.Trim());
+            sb.Append(" ");
+            sb.Append(Name.Trim());
+            if (!string.IsNullOrWhiteSpace(Value))
+            {
+                sb.Append(" = ");
+                sb.Append(Value.Trim());
+            }
+            sb.Append(";");
+
+            if (!showSpecName || !SpecNames.Any())
+            {
+                return sb.ToString();
+            }
+
+            sb.Append(" // ");
+            sb.AppendLine(string.Join(", ", SpecNames));
 
             return sb.ToString();
         }
 
-        public string Reconstruct(bool showSpecName = false)
+        public string Reconstruct2(bool showSpecName = false)
         {
-            return (IsRequired ? "required " : string.Empty) + Regex.Replace((Type + " " + Name).Trim(), @"\s+", " ") + (!string.IsNullOrWhiteSpace(Value) ? " = " + Value : string.Empty).TrimEnd() + (showSpecName ? (SpecNames.Any() ? "; // " + string.Join(", ", SpecNames) : string.Empty) : string.Empty);
+            return (IsRequired ? "required " : string.Empty) + Regex.Replace((Type + " " + Name).Trim(), @"\s+", " ") + (!string.IsNullOrWhiteSpace(Value) ? " = " + Value : string.Empty).TrimEnd() + ";" + (showSpecName ? (SpecNames.Any() ? " // " + string.Join(", ", SpecNames) : string.Empty) : string.Empty);
         }
 
         public override bool Equals(object otherMember)

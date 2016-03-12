@@ -7,7 +7,7 @@ namespace WebIDLCollector.Process
 {
     public static class MergeProcessor
     {
-        public static SpecData MergeSpecData(IEnumerable<SpecData> allSpecData)
+        public static SpecData MergeSpecData(IEnumerable<SpecData> allSpecData, string name, bool keepPartials = false)
         {
             var finalInterfaceTypes = new SortedDictionary<string, InterfaceType>();
             var finalCallbackTypes = new SortedDictionary<string, CallbackType>();
@@ -20,11 +20,11 @@ namespace WebIDLCollector.Process
             foreach (var specData in allSpecData)
             {
                 //Merge partials
-                MergeInterfaces(specData, ref finalInterfaceTypes);
+                MergeInterfaces(specData, keepPartials, ref finalInterfaceTypes);
 
                 MergeCallbacks(specData, ref finalCallbackTypes);
 
-                MergeDictionaries(specData, ref finalDictionaryTypes);
+                MergeDictionaries(specData, keepPartials, ref finalDictionaryTypes);
 
                 MergeImplements(specData, ref finalImplementsTypes);
 
@@ -35,7 +35,7 @@ namespace WebIDLCollector.Process
 
             var fullSpecData = new SpecData
             {
-                Name = "Specifications",
+                Name = name,
                 Interfaces = finalInterfaceTypes.Values.ToList(),
                 Callbacks = finalCallbackTypes.Values.ToList(),
                 Dictionaries = finalDictionaryTypes.Values.ToList(),
@@ -123,7 +123,7 @@ namespace WebIDLCollector.Process
             }
         }
 
-        private static void MergeDictionaries(SpecData data, ref SortedDictionary<string, DictionaryType> finalDictionaryTypes)
+        private static void MergeDictionaries(SpecData data, bool keepPartials, ref SortedDictionary<string, DictionaryType> finalDictionaryTypes)
         {
             foreach (var dictionaryType in data.Dictionaries)
             {
@@ -131,7 +131,11 @@ namespace WebIDLCollector.Process
 
                 if (!finalDictionaryTypes.ContainsKey(dictionaryName))
                 {
-                    dictionaryType.IsPartial = false;
+                    if (!keepPartials)
+                    {
+                        dictionaryType.IsPartial = false;
+                    }
+
                     finalDictionaryTypes.Add(dictionaryName, dictionaryType);
                     continue;
                 }
@@ -166,7 +170,7 @@ namespace WebIDLCollector.Process
             }
         }
 
-        private static void MergeInterfaces(SpecData data, ref SortedDictionary<string, InterfaceType> finalInterfaceTypes)
+        private static void MergeInterfaces(SpecData data, bool keepPartials, ref SortedDictionary<string, InterfaceType> finalInterfaceTypes)
         {
             foreach (var interfaceType in data.Interfaces)
             {
@@ -174,13 +178,19 @@ namespace WebIDLCollector.Process
 
                 if (!finalInterfaceTypes.ContainsKey(interfaceName))
                 {
-                    interfaceType.IsPartial = false;
+                    if (!keepPartials)
+                    {
+                        interfaceType.IsPartial = false;
+                    }
                     finalInterfaceTypes.Add(interfaceName, interfaceType);
                     continue;
                 }
 
                 var currentInterface = finalInterfaceTypes[interfaceName];
-                currentInterface.IsPartial = false;
+                if (!keepPartials)
+                {
+                    currentInterface.IsPartial = false;
+                }
                 currentInterface.Constructors = currentInterface.Constructors.Union(interfaceType.Constructors);
                 currentInterface.ExtendedBy = currentInterface.ExtendedBy.Union(interfaceType.ExtendedBy).OrderBy(a => a);
                 currentInterface.Inherits = currentInterface.Inherits.Union(interfaceType.Inherits).OrderBy(a => a);

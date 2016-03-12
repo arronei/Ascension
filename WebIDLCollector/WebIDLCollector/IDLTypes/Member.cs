@@ -59,16 +59,186 @@ namespace WebIDLCollector.IDLTypes
         public IEnumerable<Argument> ArgTypes { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct2(bool showSpecName = false)
+        public string Reconstruct(bool showSpecName = false)
         {
             var sb = new StringBuilder();
             var comma = string.Empty;
+
+            if (Clamp ||
+                EnforceRange ||
+                Exposed.Any() ||
+                LenientThis ||
+                NewObject ||
+                !string.IsNullOrWhiteSpace(PutForwards) ||
+                Replaceable ||
+                SameObject ||
+                !string.IsNullOrWhiteSpace(TreatNullAs) ||
+                Unforgeable ||
+                Unscopeable)
+            {
+                sb.Append("[");
+
+                if (Clamp)
+                {
+                    sb.Append("Clamp");
+                    comma = ", ";
+                }
+                if (EnforceRange)
+                {
+                    sb.Append(comma).Append("EnforceRange");
+                    comma = ", ";
+                }
+                if (Exposed.Any())
+                {
+                    sb.Append(comma).Append("Exposed=");
+
+                    if (Exposed.Count() == 1)
+                    {
+                        sb.Append(Exposed.Single());
+                    }
+                    else
+                    {
+                        sb.Append("(").Append(string.Join(", ", Exposed)).Append(")");
+                    }
+                    comma = ", ";
+                }
+                if (LenientThis)
+                {
+                    sb.Append(comma).Append("LenientThis");
+                    comma = ", ";
+                }
+                if (NewObject)
+                {
+                    sb.Append(comma).Append("NewObject");
+                    comma = ", ";
+                }
+                if (!string.IsNullOrWhiteSpace(PutForwards))
+                {
+                    sb.Append(comma).Append("PutForwards=").Append(PutForwards);
+                    comma = ", ";
+                }
+                if (Replaceable)
+                {
+                    sb.Append(comma).Append("Replaceable");
+                    comma = ", ";
+                }
+                if (SameObject)
+                {
+                    sb.Append(comma).Append("SameObject");
+                    comma = ", ";
+                }
+                if (!string.IsNullOrWhiteSpace(TreatNullAs))
+                {
+                    sb.Append(comma).Append("TreatNullAs=").Append(TreatNullAs);
+                    comma = ", ";
+                }
+                if (Unforgeable)
+                {
+                    sb.Append(comma).Append("Unforgeable");
+                    comma = ", ";
+                }
+                if (Unscopeable)
+                {
+                    sb.Append(comma).Append("Unscopeable");
+                }
+
+                sb.Append("] ");
+            }
+
+            if (Static)
+            {
+                sb.Append("static ");
+            }
+            if (Getter)
+            {
+                sb.Append("getter ");
+            }
+            if (Setter)
+            {
+                sb.Append("setter ");
+            }
+            if (Creator)
+            {
+                sb.Append("creator ");
+            }
+            if (Deleter)
+            {
+                sb.Append("deleter ");
+            }
+            if (LegacyCaller)
+            {
+                sb.Append("legacycaller ");
+            }
+            if (Stringifier)
+            {
+                sb.Append("stringifier ");
+            }
+            if (Serializer)
+            {
+                sb.Append("serializer ");
+            }
+            if (Inherit)
+            {
+                sb.Append("inherit ");
+            }
+            if (Readonly)
+            {
+                sb.Append("readonly ");
+            }
+            if (Const)
+            {
+                sb.Append("const ");
+            }
+            if (Attribute)
+            {
+                sb.Append("attribute ");
+            }
+            if (Iterable)
+            {
+                sb.Append("iterable ");
+            }
+            if (LegacyIterable)
+            {
+                sb.Append("legacyiterable ");
+            }
+            if (MapLike)
+            {
+                sb.Append("maplike <");
+            }
+            if (SetLike)
+            {
+                sb.Append("setlike <");
+            }
+            sb.Append(Type);
+            if (MapLike || SetLike)
+            {
+                sb.Append(">");
+            }
+            sb.Append(" ");
+            if (Required)
+            {
+                sb.Append("required ");
+            }
+            sb.Append(Name);
+            if (Function)
+            {
+                sb.Append("(").Append(ReconstructArgs(ArgTypes)).Append(")");
+            }
+            if (!string.IsNullOrWhiteSpace(Value))
+            {
+                sb.Append(" = ").Append(Value);
+            }
+            sb.Append(";");
+            if (showSpecName && SpecNames.Any())
+            {
+                sb.Append(" // ").Append(string.Join(", ", SpecNames));
+            }
 
             return sb.ToString();
         }
 
 
-        public string Reconstruct(bool showSpecName = false)
+        public string Reconstruct2(bool showSpecName = false)
         {
             return
                 (

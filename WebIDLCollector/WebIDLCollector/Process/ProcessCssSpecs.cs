@@ -91,8 +91,9 @@ namespace WebIDLCollector.Process
                     }
                     catch
                     {
-                        th = row.QuerySelector("td").TextContent.Trim().TrimEnd(':');
-                        td = Regex.Replace(row.QuerySelectorAll("td")[1].TextContent.Trim(), @"\s+", " ");
+                        th = row.QuerySelector("td").TextContent.Trim().TrimEnd(':', '>');
+                        var text = row.QuerySelectorAll("td dfn")[0]?.FirstChild?.TextContent ?? row.QuerySelectorAll("td")[1].TextContent;
+                        td = Regex.Replace(text.Trim(), @"\s+", " ");
                     }
 
                     p.GetType().GetProperty(FixPropertyName(th)).SetValue(p, td, null);

@@ -72,7 +72,7 @@ namespace WebIDLCollector.IDLTypes
                         sb.Append("=");
                         if (Globals.Count() == 1)
                         {
-                            sb.Append(Globals);
+                            sb.Append(Globals.Single());
                         }
                         else
                         {
@@ -89,7 +89,7 @@ namespace WebIDLCollector.IDLTypes
                         sb.Append("=");
                         if (PrimaryGlobals.Count() == 1)
                         {
-                            sb.Append(PrimaryGlobals);
+                            sb.Append(PrimaryGlobals.Single());
                         }
                         else
                         {
@@ -114,7 +114,7 @@ namespace WebIDLCollector.IDLTypes
 
                     if (Exposed.Count() == 1)
                     {
-                        sb.Append(Exposed);
+                        sb.Append(Exposed.Single());
                     }
                     else
                     {

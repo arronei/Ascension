@@ -24,7 +24,7 @@ namespace WebIDLCollector.IDLTypes
         {
             get
             {
-                return "callback " + Name + " = " + Type + " (" + ReconstructArgs(ArgTypes) + "); // " + string.Join(", ", SpecNames);
+                return (TreatNonObjectAsNull ? "[TreatNonObjectAsNull] " : string.Empty) + "callback " + Name + " = " + Type + " (" + ReconstructArgs(ArgTypes) + "); // " + string.Join(", ", SpecNames);
             }
         }
 

@@ -44,7 +44,7 @@ namespace WebIDLCollector.IDLTypes
 
                     if (Exposed.Count() == 1)
                     {
-                        sb.Append(Exposed);
+                        sb.Append(Exposed.Single());
                     }
                     else
                     {

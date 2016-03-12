@@ -14,7 +14,6 @@ namespace WebIDLCollector
             Enumerations = new List<EnumType>();
             TypeDefs = new List<TypeDefType>();
             Callbacks = new List<CallbackType>();
-            ShortNamesTitles = new SortedDictionary<string, string>();
         }
 
         public string Name { get; set; }
@@ -35,8 +34,6 @@ namespace WebIDLCollector
         public List<TypeDefType> TypeDefs { get; set; }
 
         public List<CallbackType> Callbacks { get; set; }
-
-        public SortedDictionary<string, string> ShortNamesTitles { get; set; }
     }
 
     public class SpecIdentification

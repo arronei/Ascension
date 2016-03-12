@@ -10,11 +10,15 @@ namespace WebIDLCollector.GetData
     {
         private static readonly Regex TypeDefParser = new Regex(@"\s*typedef\s+(?<type>(\([^)]+\)|.+?))\s+(?<item>[^;]+);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
-        public static IEnumerable<TypeDefType> GetAllTypeDefs(string cleanString, SpecData specificationData)
+        public static IEnumerable<TypeDefType> GetAllTypeDefs(string typeDefData, SpecData specificationData)
         {
             var typeDefs = new List<TypeDefType>();
 
-            foreach (var typeDefDefinition in from Match typeDefMatch in TypeDefParser.Matches(cleanString)
+            typeDefData = typeDefData.Trim().Trim('.');
+            typeDefData = Regex.Replace(typeDefData, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
+            typeDefData = Regex.Replace(typeDefData, @"$\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline).Trim();
+
+            foreach (var typeDefDefinition in from Match typeDefMatch in TypeDefParser.Matches(typeDefData)
                                               select new TypeDefType
                                               {
                                                   Name = typeDefMatch.Groups["item"].Value.Trim(),

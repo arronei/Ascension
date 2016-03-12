@@ -8,7 +8,9 @@ namespace WebIDLCollector.GetData
 {
     public partial class DataCollectors
     {
-        private static readonly Regex InterfaceParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?(((?<partial>partial)|(?<callback>callback))\s+)?(/\*[^\*]+\*/\s*)?interface\s+(/\*[^\*]+\*/\s*)?(?<name>\w+)(?:\s*:\s*(?<inherits>[\w,\s]+))?\s*{\s*(?<members>[^\}]+)?\s*};?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase);
+        private static readonly Regex InterfaceParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?
+        (((?<partial>partial)|(?<callback>callback))\s+)?(/\*[^\*]+\*/\s*)?interface\s+(/\*[^\*]+\*/\s*)?
+        (?<name>\w+)(?:\s*:\s*(?<inherits>[\w,\s]+))?\s*\{\s*(?<members>(.*?\{.*?\};.*?|[^\}]+))?\s*\};?", RegexOptions.Compiled | RegexOptions.IgnorePatternWhitespace | RegexOptions.ExplicitCapture);
 
         private static readonly Regex InterfaceExtendedParser = new Regex(@"((?<constructor>constructor(\s*\((?<args>.+?)?\))?)(,|$)|
         (?<namedconstructor>namedconstructor\s*=\s*[^\)\s,\]]+(\s*\((?<ncargs>.+)?\))?)(,|$)|
@@ -99,7 +101,7 @@ namespace WebIDLCollector.GetData
                         var constructor = m.Groups["constructor"].Value.Trim();
                         if (!string.IsNullOrWhiteSpace(constructor))
                         {
-                            constructors.Add(constructor);
+                            constructors.Add(Regex.Replace(constructor, @"\(\)", string.Empty));
                         }
                         var named = m.Groups["namedconstructor"].Value.Trim();
                         if (!string.IsNullOrWhiteSpace(named))

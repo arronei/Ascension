@@ -17,11 +17,15 @@ namespace WebIDLCollector.GetData
         )*
         )", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
-        public static IEnumerable<CallbackType> GetAllCallbacks(string cleanString, SpecData specificationData)
+        public static IEnumerable<CallbackType> GetAllCallbacks(string callbackData, SpecData specificationData)
         {
             var callbackDefs = new List<CallbackType>();
 
-            foreach (var callbackDefinition in from Match callbackMatch in CallbackParser.Matches(cleanString)
+            callbackData = callbackData.Trim().Trim('.');
+            callbackData = Regex.Replace(callbackData, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
+            callbackData = Regex.Replace(callbackData, @"$\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline).Trim();
+
+            foreach (var callbackDefinition in from Match callbackMatch in CallbackParser.Matches(callbackData)
                                                select new CallbackType(callbackMatch.Groups["name"].Value.Trim())
                                                {
                                                    Type = callbackMatch.Groups["type"].Value.Trim(),
