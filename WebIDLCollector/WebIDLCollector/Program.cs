@@ -52,8 +52,8 @@ namespace WebIDLCollector
                 //{
                 //    new SpecData
                 //    {
-                //        Name = "css-text-3",
-                //        Url = "https://drafts.csswg.org/css-text/"
+                //        Name = "ortc",
+                //        Url = "https://rawgit.com/openpeer/ortc/master/ortc.html"
                 //    }
                 //};
 

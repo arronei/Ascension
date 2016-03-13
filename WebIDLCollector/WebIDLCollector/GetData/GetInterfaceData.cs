@@ -133,7 +133,7 @@ namespace WebIDLCollector.GetData
 
                 var inherits = iface.Groups["inherits"].Value;
                 interfaceDefinition.Inherits = inherits.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim());
-                interfaceDefinition.Members = iface.Groups["members"].Length > 0 ? GetAllInterfaceMembers(iface.Groups["members"].Value, specificationData) : new List<Member>();
+                interfaceDefinition.Members = iface.Groups["members"].Length > 0 ? GetAllInterfaceMembers(iface.Groups["members"].Value, specificationData, ref interfaceDefinition) : new List<Member>();
 
                 if (!interfaces.Contains(interfaceDefinition))
                 {
@@ -160,7 +160,7 @@ namespace WebIDLCollector.GetData
             return value.Trim();
         }
 
-        private static IEnumerable<Member> GetAllInterfaceMembers(string memberItems, SpecData specificationData)
+        private static IEnumerable<Member> GetAllInterfaceMembers(string memberItems, SpecData specificationData, ref InterfaceType interfaceDefinition)
         {
             var memberList = new List<Member>();
 
@@ -260,9 +260,19 @@ namespace WebIDLCollector.GetData
                 else
                 {
                     //detect if its an interface extended attribute
-                    if (InterfaceExtendedParser.IsMatch(item))
+                    if ((item.StartsWith("constructor", StringComparison.InvariantCultureIgnoreCase)) && (InterfaceExtendedParser.IsMatch(item)))
                     {
-
+                        var constructors = interfaceDefinition.Constructors.ToList();
+                        foreach (Match m in InterfaceExtendedParser.Matches(item))
+                        {
+                            var constructor = m.Groups["constructor"].Value.Trim();
+                            if (!string.IsNullOrWhiteSpace(constructor))
+                            {
+                                constructors.Add(Regex.Replace(constructor, @"\(\)", string.Empty));
+                            }
+                        }
+                        interfaceDefinition.Constructors = constructors.Distinct();
+                        continue;
                     }
 
                     Console.ForegroundColor = ConsoleColor.Red;
