@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace WebIDLCollector.IDLTypes
 {
@@ -54,6 +55,7 @@ namespace WebIDLCollector.IDLTypes
         public bool Const { get; set; }
         public bool Iterable { get; set; }
         public bool LegacyIterable { get; set; }
+        public string Bracket { get; set; }
         public string Value { get; set; }
         public string Args { get; set; }
         public IEnumerable<Argument> ArgTypes { get; set; }
@@ -226,7 +228,17 @@ namespace WebIDLCollector.IDLTypes
             }
             if (!string.IsNullOrWhiteSpace(Value))
             {
-                sb.Append(" = ").Append(Value);
+                sb.Append(" = ");
+                if (!string.IsNullOrWhiteSpace(Bracket))
+                {
+                    sb.Append(Bracket).Append(" ");
+                }
+
+                sb.Append(Value);
+                if (!string.IsNullOrWhiteSpace(Bracket))
+                {
+                    sb.Append(Bracket.Equals("{") ? " }" : " ]");
+                }
             }
             sb.Append(";");
             if (showSpecName && SpecNames.Any())
@@ -234,7 +246,7 @@ namespace WebIDLCollector.IDLTypes
                 sb.Append(" // ").Append(string.Join(", ", SpecNames));
             }
 
-            return sb.ToString();
+            return Regex.Replace(Regex.Replace(sb.ToString().Trim(), @"\s+;", ";"), @"\s+", " ");
         }
 
 

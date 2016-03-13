@@ -28,8 +28,8 @@ namespace WebIDLCollector.GetData
         private static readonly Regex IndividualMember = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
         ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(?<type>.+)\s+(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
         (?<const>const)\s+(?<type>.+)\s+(?<item>.+?)\s*=\s*(?<value>.+?)|
-        (?<serializer>serializer)\s*(((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|=\s*(?<value>.*))?|
-        (?<stringifier>stringifier)(\s+((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<type>.+?)\s*((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\)))?|
+        (?<serializer>serializer)\s*((?<type>.+)\s+((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
+        (?<stringifier>stringifier)((\s+((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)(\s+(?<required>required))?(\s+(?<item>[^;]+)))|(\s+(?<type>.+))(\s+(?<item>.*))(?<function>\((?<args>.*)\)))?$|
         (?<static>static)\s+(((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<type>.+?)\s*((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\)))|
         ((?<iterable>iterable)|(?<legacyiterable>legacyiterable))\s*<(?<type>.+)>|
         (?<readonly>readonly)\s+((?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<maplike>maplike)\s*<(?<type>.+)>|(?<setlike>setlike)\s*<(?<type>.+)>)|
@@ -205,6 +205,7 @@ namespace WebIDLCollector.GetData
                         Required = !string.IsNullOrWhiteSpace(m.Groups["required"].Value),
                         Iterable = !string.IsNullOrWhiteSpace(m.Groups["iterable"].Value),
                         LegacyIterable = !string.IsNullOrWhiteSpace(m.Groups["legacyiterable"].Value),
+                        Bracket = m.Groups["bracket"].Value.Trim(),
                         Const = !string.IsNullOrWhiteSpace(m.Groups["const"].Value),
                         Value = m.Groups["value"].Value.Trim(),
                         SpecNames = new[] { specificationData.Name }

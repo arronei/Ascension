@@ -117,6 +117,9 @@ namespace WebIDLCollector.Process
                 }
 
                 var currentCallback = finalCallbackTypes[callbackName];
+
+                currentCallback.TreatNonObjectAsNull = currentCallback.TreatNonObjectAsNull || callbackType.TreatNonObjectAsNull;
+
                 currentCallback.SpecNames = currentCallback.SpecNames.Union(callbackType.SpecNames).OrderBy(a => a);
 
                 finalCallbackTypes[callbackName] = currentCallback;
@@ -141,10 +144,13 @@ namespace WebIDLCollector.Process
                 }
 
                 var currentDictionary = finalDictionaryTypes[dictionaryName];
-                currentDictionary.IsPartial = false;
-                var constructors = currentDictionary.Constructors as IList<string> ?? currentDictionary.Constructors.ToList();
-                currentDictionary.Constructors = constructors.Union(constructors);
-                currentDictionary.Exposed = currentDictionary.Exposed.Union(currentDictionary.Exposed).OrderBy(a => a);
+                if (!keepPartials)
+                {
+                    currentDictionary.IsPartial = false;
+                }
+
+                currentDictionary.Constructors = currentDictionary.Constructors.Union(dictionaryType.Constructors);
+                currentDictionary.Exposed = currentDictionary.Exposed.Union(dictionaryType.Exposed).OrderBy(a => a);
                 currentDictionary.Inherits = currentDictionary.Inherits.Union(dictionaryType.Inherits).OrderBy(a => a);
                 currentDictionary.SpecNames = currentDictionary.SpecNames.Union(dictionaryType.SpecNames).OrderBy(a => a);
 
@@ -159,6 +165,10 @@ namespace WebIDLCollector.Process
                     }
 
                     var currentMemeber = sortedMembers[memberName];
+
+                    currentMemeber.Clamp = currentMemeber.Clamp || member.Clamp;
+                    currentMemeber.EnforceRange = currentMemeber.EnforceRange || member.EnforceRange;
+
                     currentMemeber.SpecNames = currentMemeber.SpecNames.Union(member.SpecNames).OrderBy(a => a);
 
                     sortedMembers[memberName] = currentMemeber;
@@ -191,6 +201,19 @@ namespace WebIDLCollector.Process
                 {
                     currentInterface.IsPartial = false;
                 }
+
+                currentInterface.IsCallback = currentInterface.IsCallback || interfaceType.IsCallback;
+                currentInterface.ImplicitThis = currentInterface.ImplicitThis || interfaceType.ImplicitThis;
+                currentInterface.IsGlobal = currentInterface.IsGlobal || interfaceType.IsGlobal;
+                currentInterface.IsPrimaryGlobal = currentInterface.IsPrimaryGlobal || interfaceType.IsPrimaryGlobal;
+                currentInterface.LegacyArrayClass = currentInterface.LegacyArrayClass || interfaceType.LegacyArrayClass;
+                currentInterface.LegacyUnenumerableNamedProperties = currentInterface.LegacyUnenumerableNamedProperties || interfaceType.LegacyUnenumerableNamedProperties;
+                currentInterface.NoInterfaceObject = currentInterface.NoInterfaceObject || interfaceType.NoInterfaceObject;
+                currentInterface.OverrideBuiltins = currentInterface.OverrideBuiltins || interfaceType.OverrideBuiltins;
+                currentInterface.Unforgeable = currentInterface.Unforgeable || interfaceType.Unforgeable;
+
+                currentInterface.Globals = currentInterface.Globals.Union(interfaceType.Globals).OrderBy(a => a);
+                currentInterface.PrimaryGlobals = currentInterface.PrimaryGlobals.Union(interfaceType.PrimaryGlobals).OrderBy(a => a);
                 currentInterface.Constructors = currentInterface.Constructors.Union(interfaceType.Constructors);
                 currentInterface.ExtendedBy = currentInterface.ExtendedBy.Union(interfaceType.ExtendedBy).OrderBy(a => a);
                 currentInterface.Inherits = currentInterface.Inherits.Union(interfaceType.Inherits).OrderBy(a => a);
@@ -207,6 +230,18 @@ namespace WebIDLCollector.Process
                     }
 
                     var currentMember = members.Single(a => a.Equals(member));
+
+                    currentMember.Clamp = currentMember.Clamp || member.Clamp;
+                    currentMember.EnforceRange = currentMember.EnforceRange || member.EnforceRange;
+                    currentMember.Exposed = currentMember.Exposed.Union(member.Exposed).OrderBy(a => a);
+                    currentMember.LenientThis = currentMember.LenientThis || member.LenientThis;
+                    currentMember.NewObject = currentMember.NewObject || member.NewObject;
+                    currentMember.PutForwards = currentMember.PutForwards ?? member.PutForwards;
+                    currentMember.Replaceable = currentMember.Replaceable || member.Replaceable;
+                    currentMember.SameObject = currentMember.SameObject || member.SameObject;
+                    currentMember.TreatNullAs = currentMember.TreatNullAs ?? member.TreatNullAs;
+                    currentMember.Unforgeable = currentMember.Unforgeable || member.Unforgeable;
+                    currentMember.Unscopeable = currentMember.Unscopeable || member.Unscopeable;
 
                     currentMember.SpecNames = currentMember.SpecNames.Union(member.SpecNames).OrderBy(a => a);
 
