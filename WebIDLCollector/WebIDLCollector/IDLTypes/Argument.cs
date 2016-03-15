@@ -17,6 +17,7 @@ namespace WebIDLCollector.IDLTypes
         public bool Clamp { get; set; }
         public bool EnforceRange { get; set; }
         public string TreatNullAs { get; set; }
+        public string TreatUndefinedAs { get; set; }
         public bool Ellipsis { get; set; }
         public string Value { get; set; }
 

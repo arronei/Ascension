@@ -18,6 +18,7 @@ namespace WebIDLCollector.IDLTypes
         public IEnumerable<Argument> ArgTypes { get; set; }
         public string ExtendedAttribute { get; set; }
         public bool TreatNonObjectAsNull { get; set; }
+        public bool TreatNonCallableAsNull { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
         public string Reconstruct

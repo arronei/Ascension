@@ -35,6 +35,7 @@ namespace WebIDLCollector.IDLTypes
         public bool Replaceable { get; set; }
         public bool SameObject { get; set; }
         public string TreatNullAs { get; set; }
+        public string TreatUndefinedAs { get; set; }
         public bool Unforgeable { get; set; }
         public bool Unscopeable { get; set; }
         public bool Static { get; set; }

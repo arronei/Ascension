@@ -15,6 +15,7 @@ namespace WebIDLCollector.Process
 
             specificationData.Interfaces.AddRange(GenerateInterfacesForCss(properties, specificationData));
         }
+
         private static IEnumerable<Property> BuildSvgPropertyList(IParentNode table)
         {
             var properties = new List<Property>();
@@ -140,8 +141,13 @@ namespace WebIDLCollector.Process
             };
 
             var memberList = new List<Member>();
+
+            //TODO: need to add dashed properties see CSSOM
+            //TODO: need to add webkit properties webkitName and WebkitName and -webkit-name see CSSOM
             foreach (var memberItem in properties.Select(property => new Member(property.OmName)
             {
+                ExtendedAttribute = "TreatNullAs=EmptyString",
+                TreatNullAs = "EmptyString",
                 Type = "DOMString",
                 Attribute = true,
                 HasGet = true,
@@ -152,7 +158,7 @@ namespace WebIDLCollector.Process
                 memberList.Add(memberItem);
             }
 
-            interfaceDefinition.Members = memberList.Count > 0 ? memberList : new List<Member>();
+            interfaceDefinition.Members = memberList;
             interfaces.Add(interfaceDefinition);
             return interfaces;
         }
