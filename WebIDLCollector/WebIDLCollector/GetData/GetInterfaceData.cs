@@ -182,7 +182,13 @@ namespace WebIDLCollector.GetData
                                         .Trim())
                                         .Equals("function", StringComparison.OrdinalIgnoreCase);
 
-                    var memberItem = new Member(m.Groups["item"].Value.Trim())
+                    var name = m.Groups["item"].Value.Trim();
+                    //Skip special CSSOM definitions
+                    if (new[] { "_camel_cased_attribute", "_webkit_cased_attribute", "_dashed_attribute" }.Contains(name))
+                    {
+                        continue;
+                    }
+                    var memberItem = new Member(name)
                     {
                         Type = Regex.Replace(Regex.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), @"\s+\?", "?"), @"[a-z]*::", string.Empty).Trim(),
                         Args = m.Groups["args"].Value.Trim(),

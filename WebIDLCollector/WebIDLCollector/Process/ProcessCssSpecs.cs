@@ -141,10 +141,37 @@ namespace WebIDLCollector.Process
             };
 
             var memberList = new List<Member>();
+            foreach (var property in properties)
+            {
+                var memberOmItem = CreateCssOmMember(property.OmName, specificationData);
+                if (!memberList.Contains(memberOmItem))
+                {
+                    memberList.Add(memberOmItem);
+                }
+                var memberPropertyItem = CreateCssOmMember(property.Name, specificationData);
+                if (!memberList.Contains(memberPropertyItem))
+                {
+                    memberList.Add(memberPropertyItem);
+                }
+                if (string.IsNullOrWhiteSpace(property.WebkitOmName))
+                {
+                    continue;
+                }
+                var memberWebkitItem = CreateCssOmMember(property.WebkitOmName, specificationData);
+                if (!memberList.Contains(memberWebkitItem))
+                {
+                    memberList.Add(memberWebkitItem);
+                }
+            }
 
-            //TODO: need to add dashed properties see CSSOM
-            //TODO: need to add webkit properties webkitName and WebkitName and -webkit-name see CSSOM
-            foreach (var memberItem in properties.Select(property => new Member(property.OmName)
+            interfaceDefinition.Members = memberList;
+            interfaces.Add(interfaceDefinition);
+            return interfaces;
+        }
+
+        private static Member CreateCssOmMember(string name, SpecData specificationData)
+        {
+            return new Member(name)
             {
                 ExtendedAttribute = "TreatNullAs=EmptyString",
                 TreatNullAs = "EmptyString",
@@ -153,14 +180,7 @@ namespace WebIDLCollector.Process
                 HasGet = true,
                 HasSet = true,
                 SpecNames = new[] { specificationData.Name }
-            }).Where(memberItem => !memberList.Contains(memberItem)))
-            {
-                memberList.Add(memberItem);
-            }
-
-            interfaceDefinition.Members = memberList;
-            interfaces.Add(interfaceDefinition);
-            return interfaces;
+            };
         }
 
         private static string FixPropertyName(string value)
