@@ -82,20 +82,26 @@ namespace WebIDLCollector.Process
 
                 foreach (var row in table.QuerySelectorAll("tr"))
                 {
-                    string th;
-                    string td;
-                    try
+                    IElement tdAsThElement = null;
+                    var thElement = row.QuerySelector("th") ?? (tdAsThElement = row.QuerySelector("td"));
+                    var th = thElement.TextContent.Trim().TrimEnd(':', '>');
+
+                    string text = null;
+                    var comma = string.Empty;
+                    foreach (var element in row.QuerySelectorAll("td dfn"))
                     {
-                        th = row.QuerySelector("th").TextContent.Trim().TrimEnd(':', '>');
-                        var text = row.QuerySelector("td dfn")?.FirstChild?.TextContent ?? row.QuerySelector("td").TextContent;
-                        td = Regex.Replace(text.Trim(), @"\s+", " ");
+                        text += comma + element.FirstChild?.TextContent;
+                        comma = ", ";
                     }
-                    catch
+                    if (tdAsThElement == null)
                     {
-                        th = row.QuerySelector("td").TextContent.Trim().TrimEnd(':', '>');
-                        var text = row.QuerySelectorAll("td dfn")[0]?.FirstChild?.TextContent ?? row.QuerySelectorAll("td")[1].TextContent;
-                        td = Regex.Replace(text.Trim(), @"\s+", " ");
+                        text = text ?? row.QuerySelector("td").TextContent;
                     }
+                    else
+                    {
+                        text = text ?? row.QuerySelectorAll("td")[1].TextContent;
+                    }
+                    var td = Regex.Replace(text.Trim(), @"\s+", " ");
 
                     p.GetType().GetProperty(FixPropertyName(th)).SetValue(p, td, null);
                 }
