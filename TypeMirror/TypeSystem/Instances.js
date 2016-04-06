@@ -67,7 +67,7 @@ var MirrorJS;
         /** Attempts to return an instance of the given 'typeName' via document.createElementNS. */
         Instances.getInstanceFromTag = function (typeName) {
             var tags = Instances.typesToTags[typeName];
-            if (!tags) {
+            if ((!tags) || (typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope)) {
                 return undefined;
             }
             var instance;

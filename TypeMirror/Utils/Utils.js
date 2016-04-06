@@ -13,23 +13,42 @@ var MirrorJS;
             return log;
         };
         Utils.log = function (text) {
-            var log = Utils.getLog();
-            if (log) {
-                log.innerHTML += text;
-                MirrorJS.Html.addBr(log);
+            //Disable logging here
+            if (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope) {
+                if (typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope) {
+                    self.port.postMessage({ type: "log", text: text });
+                } else {
+                    self.postMessage({ type: "log", text: text });
+                }
             }
-            console.log(text);
+            else {
+                var log = Utils.getLog();
+                if (log) {
+                    log.innerHTML += text;
+                    MirrorJS.Html.addBr(log);
+                }
+                console.log(text);
+            }
         };
         /** Helper that adds HTML displaying "{errorType}: {text}" and scrolls the window to ensure it is visible.
             If errorType is ommitted, it defaults to 'Script Error' */
         Utils.logError = function (text, errorType) {
-            errorType = errorType || "Script Error";
-            var log = Utils.getLog(true);
-            var div = MirrorJS.Html.addDiv(log);
-            var labelSpan = MirrorJS.Html.addSpan(div, errorType + ": ");
-            labelSpan.style.color = "red";
-            MirrorJS.Html.addSpan(div, text);
-            window.scrollTo(labelSpan.clientLeft, labelSpan.clientTop);
+            if (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope) {
+                if (typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope) {
+                    self.port.postMessage({ type: "log", text: text });
+                } else {
+                    self.postMessage({ type: "error", text: text, "errorType": errorType });
+                }
+            }
+            else {
+                errorType = errorType || "Script Error";
+                var log = Utils.getLog(true);
+                var div = MirrorJS.Html.addDiv(log);
+                var labelSpan = MirrorJS.Html.addSpan(div, errorType + ": ");
+                labelSpan.style.color = "red";
+                MirrorJS.Html.addSpan(div, text);
+                window.scrollTo(labelSpan.clientLeft, labelSpan.clientTop);
+            }
         };
         Utils.setupErrorHandler = function () {
             window.onerror = function (event, source, fileno, columnNumber) {
@@ -37,32 +56,48 @@ var MirrorJS;
             };
         };
         Utils.Xhr = function (url, done, data) {
-            var errorHandler = function (xhr) {
-                Utils.logError(xhr.statusText, "Server Error");
-                if (xhr.responseText) {
-                    Utils.logError(xhr.responseText, "Server Error");
-                }
-            };
-            var xhr = new XMLHttpRequest();
             var method = data === undefined ? "GET" : "POST";
             var cacheWorkaround = data === undefined ? "?date=" + Date.now() : "";
-            xhr.open(method, url + cacheWorkaround, true);
-            xhr.onload = function (e) {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        done(xhr.responseText);
-                    }
-                    else {
-                        errorHandler(xhr);
-                        done(undefined);
-                    }
+            var errorHandler = function (statusText, responseText, done) {
+                Utils.logError(statusText, "Server Error");
+                if (responseText) {
+                    Utils.logError(responseText, "Server Error");
                 }
-            };
-            xhr.onerror = function (e) {
-                errorHandler(xhr);
                 done(undefined);
             };
-            xhr.send(data || null);
+
+            if (typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope) {
+                fetch(url + cacheWorkaround, {'method': method, 'body': (data || null)}).then(function(response) {
+                    if (response.status === 200) {
+                        response.text().then(done);
+                    }
+                    else {
+                        response.text().then(function(text) {
+                            errorHandler(response.statusText, text, done);
+                        });
+                    }}).catch(function(response) {
+                        response.text().then(function(text) {
+                            errorHandler(response.statusText, text, done);
+                        });
+                    });
+            } else {
+                var xhr = new XMLHttpRequest();
+                xhr.open(method, url + cacheWorkaround, true);
+                xhr.onload = function (e) {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            done(xhr.responseText);
+                        }
+                        else {
+                            errorHandler(xhr.statusText, xhr.responseText, done);
+                        }
+                    }
+                };
+                xhr.onerror = function (e) {
+                    errorHandler(xhr.statusText, xhr.responseText, done);
+                };
+                xhr.send(data || null);
+            }
         };
         /** Returns true if running on Chrome.  This is largely used in work-arounds for Chromium #43394. */
         Utils.isChrome = function () {
@@ -83,10 +118,10 @@ var MirrorJS;
             return browserVersion.substring(0, 6).toLowerCase() === "chrome";
         };
         Utils.getChromeVersion = function () {
-            return parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10);
+            return parseInt(self.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10);
         };
         Utils.is = function (instance, typeName) {
-            var typeCtor = window[typeName];
+            var typeCtor = self[typeName];
             if (!typeCtor) {
                 console.assert(Utils.isChrome(), "Global types must be reachable via 'window' (except on Chrome).");
                 return undefined;
@@ -217,8 +252,9 @@ var MirrorJS;
             }
             return matches.join(' ');
         };
-        Utils.getExportFilename = function () {
-            return Utils.detectBrowser().split(" ").join("").concat(".js");
+        Utils.getExportFilename = function (context) {
+            if (!context) { context = ""; }
+            return Utils.detectBrowser().split(" ").join("").concat(context + ".js");
         };
         Utils.getParameterByName = function (name) {
             name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");

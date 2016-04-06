@@ -5,7 +5,7 @@ var MirrorJS;
         function Exporter() {
         }
         Exporter.modelToJSON = function () {
-            var types = new MirrorJS.TypeContext(window);
+            var types = new MirrorJS.TypeContext(self);
             var model = types.exportReflection();
             return JSON.stringify(model, null, 2);
         };

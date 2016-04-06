@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Auto Exporter (Worker)</title>
+  <link rel="stylesheet" href="app.css" type="text/css" />
+
+  <script src="Utils/Utils.js"></script>
+  <script src="Utils/MergeIterator.js"></script>
+  <script src="Utils/Html.js"></script>
+</head>
+<body>
+  <div>Auto Exporting...</div>
+  <div id="log"></div>
+  <script>
+    var worker = new Worker("Worker.js");
+
+    worker.addEventListener("message", function (event) {
+      var data = event.data;
+      if (data.type === "log") {
+        MirrorJS.Utils.log(data.text);
+      }
+      else if (data.type === "error") {
+        MirrorJS.Utils.logError(data.text, data.errorType);
+      }
+    });
+  </script>
+</body>
+</html>

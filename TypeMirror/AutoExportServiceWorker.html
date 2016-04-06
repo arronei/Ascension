@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Auto Exporter (Service Worker)</title>
+  <link rel="stylesheet" href="app.css" type="text/css" />
+
+  <script src="Utils/Utils.js"></script>
+  <script src="Utils/MergeIterator.js"></script>
+  <script src="Utils/Html.js"></script>
+</head>
+<body>
+  <div>Auto Exporting...</div>
+  <div id="log"></div>
+  <script>
+    navigator.serviceWorker.register('ServiceWorker.js').then(function() {
+      return navigator.serviceWorker.ready;
+    })
+    .then(function(sw) {
+      var messageChannel = new MessageChannel();
+      messageChannel.port1.onmessage = function(event) {
+        var data = event.data;
+        if (data.type === "log") {
+          MirrorJS.Utils.log(data.text);
+        }
+        else if (data.type === "error") {
+          MirrorJS.Utils.logError(data.text, data.errorType);
+        }
+      };
+
+      sw.active.postMessage('start', [messageChannel.port2]);
+    });
+  </script>
+</body>
+</html>
