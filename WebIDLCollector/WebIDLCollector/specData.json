@@ -627,11 +627,11 @@
         "url": "https://drafts.css-houdini.org/worklets/"
     },
     {
-        "name": "cssom-view",
-        "url": "https://www.w3.org/TR/cssom-view/"
+        "name": "cssom-view-1",
+        "url": "https://www.w3.org/TR/cssom-view-1/"
     },
     {
-        "name": "cssom-view",
+        "name": "cssom-view-1",
         "url": "https://drafts.csswg.org/cssom-view/"
     },
     {
@@ -665,7 +665,7 @@
     },
     {
         "name": "battery-status",
-        "url": "https://dvcs.w3.org/hg/dap/raw-file/default/battery/Overview.html"
+        "url": "https://w3c.github.io/battery/"
     },
     {
         "name": "html-media-capture",
@@ -673,7 +673,7 @@
     },
     {
         "name": "html-media-capture",
-        "url": "http://dev.w3.org/2009/dap/camera/"
+        "url": "https://w3c.github.io/html-media-capture/"
     },
     {
         "name": "proximity",
@@ -1020,13 +1020,7 @@
     },
     {
         "name": "fileapi",
-        "url": "https://w3c.github.io/FileAPI/",
-        "identification": [
-            {
-                "selector": "code.idl-code",
-                "type": "idl"
-            }
-        ]
+        "url": "https://w3c.github.io/FileAPI/"
     },
     {
         "name": "gamepad",
@@ -1367,7 +1361,7 @@
         "identification": [
             {
                 "selector": "pre code",
-                "type":  "idl"
+                "type": "idl"
             }
         ]
     },
@@ -1377,7 +1371,7 @@
     },
     {
         "name": "xhr",
-        "url": "http://xhr.spec.whatwg.org/"
+        "url": "https://xhr.spec.whatwg.org/"
     },
     {
         "name": "ortc",
@@ -1670,5 +1664,89 @@
         "name": "whatwg-html",
         "title": "HTML Living Standard",
         "url": "https://html.spec.whatwg.org/"
+    },
+    {
+        "name": "compositing-1",
+        "url": "https://www.w3.org/TR/compositing-1/"
+    },
+    {
+        "name": "compositing-1",
+        "url": "https://drafts.fxtf.org/compositing-1/"
+    },
+    {
+        "name": "css-masking-1",
+        "url": "http://www.w3.org/TR/css-masking-1/"
+    },
+    {
+        "name": "css-masking-1",
+        "url": "http://dev.w3.org/fxtf/css-masking-1/"
+    },
+    {
+        "name": "wbauthn",
+        "url": "http://w3c.github.io/webauthn/"
+    },
+    {
+        "name": "file-system",
+        "url": "https://dev.w3.org/2009/dap/file-system/file-writer.html"
+    },
+    {
+        "name": "filter-effects-1",
+        "url": "http://www.w3.org/TR/filter-effects-1/"
+    },
+    {
+        "name": "filter-effects-1",
+        "url": "http://dev.w3.org/fxtf/filters/"
+    },
+    {
+        "name": "motion-1",
+        "url": "http://www.w3.org/TR/motion-1/"
+    },
+    {
+        "name": "motion-1",
+        "url": "http://dev.w3.org/fxtf/motion-1/"
+    },
+    {
+        "name": "navigatorcores",
+        "url": "https://wiki.whatwg.org/wiki/Navigator_HW_Concurrency",
+        "file": "navigatorcores.webidl"
+    },
+    {
+        "name": "speech-api",
+        "url": "https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html",
+        "identification": [
+            {
+                "selector": "code.idl-code",
+                "type": "idl"
+            }
+        ],
+        "file": "speech-api.webidl"
+    },
+    {
+        "name": "web-bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    {
+        "name": "webdatabase",
+        "url": "https://www.w3.org/TR/webdatabase/"
+    },
+    {
+        "name": "webmessaging",
+        "url": "https://www.w3.org/TR/webmessaging/"
+    },
+    {
+        "name": "web-nfc",
+        "url": "http://w3c.github.io/web-nfc/releases/20150515/"
+    },
+    {
+        "name": "webstorage",
+        "url": "https://www.w3.org/TR/webstorage/"
+    },
+    {
+        "name": "credential-management-1",
+        "url": "https://www.w3.org/TR/credential-management/"
+    },
+    {
+        "name": "credential-management-1",
+        "url": "https://w3c.github.io/webappsec-credential-management/"
     }
 ]

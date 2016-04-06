@@ -96,6 +96,12 @@
     <None Include="Data\indexeddb-bugfix.webidl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Data\navigatorcores.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\speech-api.webidl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Data\telephony-bugfix.webidl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
