@@ -284,7 +284,7 @@ var MirrorJS;
         TypeContext.prototype.getIsConstructor = function (propertyName) {
             // By convention, the names of constructors begin with an upper-case letter.
             var firstChar = propertyName[0];
-            if (firstChar.toLowerCase() === firstChar) {
+            if ((!propertyName.startsWith('webkit') && (firstChar.toLowerCase() === firstChar))) {
                 // Begins with a lower-case character.  Exclude it.
                 return false;
             }
