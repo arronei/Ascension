@@ -579,11 +579,11 @@
         "url": "https://drafts.csswg.org/css-writing-modes/"
     },
     {
-        "name": "cssom",
+        "name": "cssom-1",
         "url": "https://www.w3.org/TR/cssom/"
     },
     {
-        "name": "cssom",
+        "name": "cssom-1",
         "url": "https://drafts.csswg.org/cssom/"
     },
     {
@@ -1735,7 +1735,7 @@
     },
     {
         "name": "web-nfc",
-        "url": "http://w3c.github.io/web-nfc/releases/20150515/"
+        "url": "http://w3c.github.io/web-nfc/"
     },
     {
         "name": "webstorage",

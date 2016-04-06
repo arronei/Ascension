@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using AngleSharp.Dom;
@@ -220,8 +219,6 @@ namespace WebIDLCollector.Process
                 case "Anim.":
                     value = "Animatable";
                     break;
-                default:
-                    throw new ArgumentException();
             }
 
             return value;
