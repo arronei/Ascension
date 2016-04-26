@@ -1,5 +1,13 @@
 ﻿[
     {
+        "name": "payment-request",
+        "url": "https://www.w3.org/TR/payment-request/"
+    },
+    {
+        "name": "payment-request",
+        "url": "https://w3c.github.io/browser-payment-api/specs/paymentrequest.html"
+    },
+    {
         "name": "webaudio",
         "url": "http://www.w3.org/TR/webaudio/"
     },
@@ -179,17 +187,17 @@
         "url": "https://drafts.csswg.org/css-animations-2/"
     },
     {
-        "name": "css-backgrounds-3",
+        "name": "css-background-3",
         "title": "CSS Backgrounds and Borders Level 3",
         "url": "http://www.w3.org/TR/css3-background/"
     },
     {
-        "name": "css-backgrounds-3",
+        "name": "css-background-3",
         "title": "CSS Backgrounds and Borders Level 3",
         "url": "https://drafts.csswg.org/css-backgrounds/"
     },
     {
-        "name": "css-backgrounds-4",
+        "name": "css-background-4",
         "title": "CSS Backgrounds and Borders Level 4",
         "url": "http://dev.w3.org/csswg/css-backgrounds-4/"
     },
@@ -238,7 +246,7 @@
         "url": "https://drafts.csswg.org/css-conditional-3/"
     },
     {
-        "name": "css-containment",
+        "name": "css-containment-1",
         "title": "CSS Containment Level 3",
         "url": "https://drafts.csswg.org/css-containment/"
     },
@@ -251,12 +259,12 @@
         "url": "https://drafts.csswg.org/css-counter-styles/"
     },
     {
-        "name": "css-deviceadapt-1",
+        "name": "css-device-adapt-1",
         "title": "CSS Device Adaptation Level 1",
-        "url": "https://www.w3.org/TR/css-device-adapt/"
+        "url": "https://www.w3.org/TR/css-device-adapt-1/"
     },
     {
-        "name": "css-deviceadapt-1",
+        "name": "css-device-adapt-1",
         "title": "CSS Device Adaptation Level 1",
         "url": "https://drafts.csswg.org/css-device-adapt/"
     },
@@ -383,8 +391,8 @@
         "url": "https://drafts.csswg.org/css-multicol-2/"
     },
     {
-        "name": "css-overflow-4",
-        "title": "CSS Overflow Level 4",
+        "name": "css-overflow-3",
+        "title": "CSS Overflow Level 3",
         "url": "https://www.w3.org/TR/css-overflow-3/"
     },
     {
@@ -411,6 +419,14 @@
         "name": "css-position-3",
         "title": "CSS Positioned Layout Level 3",
         "url": "https://drafts.csswg.org/css-position/"
+    },
+    {
+        "name": "css-pseudo-4",
+        "url": "http://www.w3.org/TR/css-pseudo-4/"
+    },
+    {
+        "name": "css-pseudo-4",
+        "url": "http://dev.w3.org/csswg/css-pseudo-4/"
     },
     {
         "name": "css-regions-1",
@@ -481,6 +497,10 @@
         "name": "css-speech-3",
         "title": "CSS Speech Level 3",
         "url": "https://drafts.csswg.org/css-speech/"
+    },
+    {
+        "name": "css-step-sizing-1",
+        "url": "https://drafts.csswg.org/css-step-sizing/"
     },
     {
         "name": "css-text-3",
@@ -587,42 +607,42 @@
         "url": "https://drafts.csswg.org/cssom/"
     },
     {
-        "name": "box-tree-api",
+        "name": "box-tree-api-1",
         "title": "Box Tree API Level 1",
         "url": "https://drafts.css-houdini.org/box-tree-api/"
     },
     {
-        "name": "css-layout-api",
+        "name": "css-layout-api-1",
         "title": "CSS Layout API Level 1",
         "url": "https://drafts.css-houdini.org/css-layout-api/"
     },
     {
-        "name": "css-paint-api",
+        "name": "css-paint-api-1",
         "title": "CSS Painting API Level 1",
         "url": "https://drafts.css-houdini.org/css-paint-api/"
     },
     //{
-    //    "name": "css-parser-api",
+    //    "name": "css-parser-api-1",
     //    "title": "CSS Parser API Level 1",
     //    "url": "https://drafts.css-houdini.org/css-parser-api/"
     //},
     {
-        "name": "css-properties-values-api",
+        "name": "css-properties-values-api-1",
         "title": "CSS Properties and Values API Level 1",
         "url": "https://drafts.css-houdini.org/css-properties-values-api/"
     },
     {
-        "name": "css-typed-om",
+        "name": "css-typed-om-1",
         "title": "CSS Typed OM Level 1",
         "url": "https://drafts.css-houdini.org/css-typed-om/"
     },
     //{
-    //    "name": "font-metrics-api",
+    //    "name": "font-metrics-api-1",
     //    "title": "Font Metrics API Level 1",
     //    "url": "https://drafts.css-houdini.org/font-metrics-api/"
     //},
     {
-        "name": "worklets",
+        "name": "worklets-1",
         "title": "Worklets Level 1",
         "url": "https://drafts.css-houdini.org/worklets/"
     },
@@ -648,8 +668,7 @@
     },
     {
         "name": "web-animations-1",
-        "url": "https://w3c.github.io/web-animations/",
-        "file": "web-animations-1-bugfix.webidl"
+        "url": "https://w3c.github.io/web-animations/"
     },
     {
         "name": "ambient-light",
@@ -1315,11 +1334,11 @@
     },
     {
         "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/specs/1.0/"
+        "url": "https://www.khronos.org/registry/webgl/specs/1.0/",
+        "file": "webgl10-bugfix.webidl"
     },
     {
         "name": "webgl2",
-        "title": "WebGL 2",
         "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "file": "webgl20-bugfix.webidl"
     },
@@ -1654,7 +1673,7 @@
     {
         "name": "intersection",
         "title": "Intersection Observer",
-        "url": "http://rawgit.com/WICG/IntersectionObserver/master/index.html"
+        "url": "https://wicg.github.io/IntersectionObserver/"
     },
     {
         "name": "typedarray",
