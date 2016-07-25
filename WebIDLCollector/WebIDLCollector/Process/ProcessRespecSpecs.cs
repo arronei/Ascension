@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using AngleSharp.Dom;
 using WebIDLCollector.GetData;
 
@@ -10,7 +9,7 @@ namespace WebIDLCollector.Process
     {
         public static void ProcessRespec(IEnumerable<IElement> respecItems, string selector, SpecData specificationData)
         {
-            var cleanString = GenerateRespecIdls(respecItems, selector);
+            var cleanString = CleanString(GenerateRespecIdls(respecItems, selector));
 
             specificationData.Callbacks.AddRange(DataCollectors.GetAllCallbacks(cleanString, specificationData));
             specificationData.Dictionaries.AddRange(DataCollectors.GetAllDictionaries(cleanString, specificationData));
@@ -30,7 +29,7 @@ namespace WebIDLCollector.Process
                 {
                     idlItem += " {";
                     var members = definition.QuerySelectorAll(selector + " > dt");
-                    var endChar = idlItem.Contains("enum") ? "," : ";";
+                    var endChar = idlItem.Contains("enum") ? "," : ";\r\n";
 
                     var memberData = string.Empty;
                     foreach (var member in members)
@@ -62,7 +61,7 @@ namespace WebIDLCollector.Process
                 }
                 allIdls += idlItem;
             }
-            return Regex.Replace(allIdls, @"\s+", " ").Trim();
+            return allIdls;
         }
     }
 }

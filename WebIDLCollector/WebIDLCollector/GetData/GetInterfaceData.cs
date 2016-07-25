@@ -10,7 +10,7 @@ namespace WebIDLCollector.GetData
     {
         private static readonly Regex InterfaceParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?
         (((?<partial>partial)|(?<callback>callback))\s+)?(/\*[^\*]+\*/\s*)?interface\s+(/\*[^\*]+\*/\s*)?
-        (?<name>\w+)(?:\s*:\s*(?<inherits>[\w,\s]+))?\s*\{\s*(?<members>(.*?\{.*?\};.*?|[^\}]+))?\s*\};?", RegexOptions.Compiled | RegexOptions.IgnorePatternWhitespace | RegexOptions.ExplicitCapture);
+        (?<name>\w+)(?:\s*:\s*(?<inherits>[\w,\s]+))?\s*\{\s*(?<members>([^\}]*?\{.*?\};.*?|[^\}]+))?\s*\};?", RegexOptions.Compiled | RegexOptions.IgnorePatternWhitespace | RegexOptions.ExplicitCapture);
 
         private static readonly Regex InterfaceExtendedParser = new Regex(@"((?<constructor>constructor(\s*\((?<args>.+?)?\))?)(,|$)|
         (?<namedconstructor>namedconstructor\s*=\s*[^\)\s,\]]+(\s*\((?<ncargs>.+)?\))?)(,|$)|
@@ -152,9 +152,7 @@ namespace WebIDLCollector.GetData
 
         private static string CleanString(string value)
         {
-            value = value.Trim().Trim('.');
-            value = Regex.Replace(value, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
-            value = Regex.Replace(value, @"\s+", " ");
+            value = value.Trim().Trim('.').Trim();
             value = Regex.Replace(value, @"\s*(set)?raises\([^)]*?\)\s*;", ";");
             value = Regex.Replace(value, @"(?<start>(\(|,)\s*)in\s+", "${start}");
             return value.Trim();

@@ -47,13 +47,14 @@ namespace WebIDLCollector
                     return;
                 }
 
-                // Debug single item
+                //Debug single item
                 //specDataList = new List<SpecData>
                 //{
                 //    new SpecData
                 //    {
-                //        Name = "ortc",
-                //        Url = "https://rawgit.com/openpeer/ortc/master/ortc.html"
+                //        Name = "telophony",
+                //        Url = "http://telephony.sysapps.org/",
+                //        //File = "webgl10-bugfix.webidl"
                 //    }
                 //};
 

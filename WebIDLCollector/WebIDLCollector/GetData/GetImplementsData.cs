@@ -14,8 +14,6 @@ namespace WebIDLCollector.GetData
         {
             var implements = new List<ImplementsType>();
 
-            cleanString = Regex.Replace(cleanString, @"\s*//[^\n]*\n?", string.Empty, RegexOptions.IgnoreCase);
-
             foreach (var implementsDefinition in from Match implementsMatch in ImplementsParser.Matches(cleanString)
                                                  select new ImplementsType(implementsMatch.Groups["destination"].Value.Trim(), implementsMatch.Groups["originator"].Value.Trim())
                                                  {

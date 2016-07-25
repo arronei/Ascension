@@ -219,6 +219,9 @@ namespace WebIDLCollector.Process
                 case "Anim.":
                     value = "Animatable";
                     break;
+                case "AminationType":
+                    value = "AnimationType";
+                    break;
             }
 
             return value;

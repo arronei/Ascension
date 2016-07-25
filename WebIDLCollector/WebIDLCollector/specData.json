@@ -5,7 +5,7 @@
     },
     {
         "name": "payment-request",
-        "url": "https://w3c.github.io/browser-payment-api/specs/paymentrequest.html"
+        "url": "https://w3c.github.io/browser-payment-api/"
     },
     {
         "name": "webaudio",
@@ -653,14 +653,6 @@
     {
         "name": "cssom-view-1",
         "url": "https://drafts.csswg.org/cssom-view/"
-    },
-    {
-        "name": "mediaqueries-4",
-        "url": "https://www.w3.org/TR/mediaqueries-4/"
-    },
-    {
-        "name": "mediaqueries-4",
-        "url": "https://drafts.csswg.org/mediaqueries/"
     },
     {
         "name": "web-animations-1",
@@ -1531,7 +1523,7 @@
     {
         "name": "webvr",
         "title": "WebVR",
-        "url": "https://mozvr.github.io/webvr-spec/"
+        "url": "https://w3c.github.io/webvr/"
     },
     {
         "name": "filesystemapi",

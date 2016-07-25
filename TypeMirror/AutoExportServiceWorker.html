@@ -30,6 +30,26 @@
 
       sw.active.postMessage('start', [messageChannel.port2]);
     });
+
+    // RUN THIS IN EDGE (FOR NOW)
+    /*navigator.serviceWorker.register('ServiceWorker.js').then(function(registration) {
+      return registration.installing;
+    })
+    .then(function(sw) {
+      var messageChannel = new MessageChannel();
+      messageChannel.port1.onmessage = function(event) {
+        var data = event.data;
+        if (data.type === "log") {
+          MirrorJS.Utils.log(data.text);
+        }
+        else if (data.type === "error") {
+          MirrorJS.Utils.logError(data.text, data.errorType);
+        }
+      };
+
+      //sw.active.postMessage('start', [messageChannel.port2]);
+      sw.postMessage('start', [messageChannel.port2]);
+    });*/
   </script>
 </body>
 </html>

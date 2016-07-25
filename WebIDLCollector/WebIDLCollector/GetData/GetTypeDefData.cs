@@ -8,15 +8,13 @@ namespace WebIDLCollector.GetData
 {
     public partial class DataCollectors
     {
-        private static readonly Regex TypeDefParser = new Regex(@"typedef\s+(?<type>.+?)\s+(?<item>[^;]+);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        private static readonly Regex TypeDefParser = new Regex(@"typedef\s+(?<type>[^;]+)\s+(?<item>[^;]+);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
         public static IEnumerable<TypeDefType> GetAllTypeDefs(string typeDefData, SpecData specificationData)
         {
             var typeDefs = new List<TypeDefType>();
 
-            typeDefData = typeDefData.Trim().Trim('.');
-            typeDefData = Regex.Replace(typeDefData, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
-            typeDefData = Regex.Replace(typeDefData, @"$\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline).Trim();
+            typeDefData = typeDefData.Trim('.').Trim();
 
             foreach (var typeDefDefinition in from Match typeDefMatch in TypeDefParser.Matches(typeDefData)
                                               select new TypeDefType

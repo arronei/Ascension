@@ -63,6 +63,8 @@ namespace WebIDLCollector.IDLTypes
 
         public string Animatable { get; set; }
 
+        public string AnimationType { get; set; }
+
         public string ComputedValue { get; set; }
 
         public string NewComputedValue { get; set; }

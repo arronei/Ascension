@@ -61,6 +61,7 @@ namespace WebIDLCollector.IDLTypes
 
             if (!showSpecName || !SpecNames.Any())
             {
+                sb.AppendLine();
                 return sb.ToString();
             }
 

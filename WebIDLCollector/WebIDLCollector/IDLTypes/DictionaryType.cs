@@ -73,7 +73,7 @@ namespace WebIDLCollector.IDLTypes
 
                 foreach (var member in Members)
                 {
-                    sb.Append("    ").AppendLine(member.Reconstruct(showMemberSpecName));
+                    sb.Append("    ").Append(member.Reconstruct(showMemberSpecName));
                 }
 
                 sb.AppendLine("};");

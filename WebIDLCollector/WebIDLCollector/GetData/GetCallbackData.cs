@@ -8,7 +8,7 @@ namespace WebIDLCollector.GetData
 {
     public partial class DataCollectors
     {
-        private static readonly Regex CallbackParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?callback\s+(?<name>\w+)\s*=\s*(?<type>.+?)\s*\((?<args>[^\)]+)?\);", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        private static readonly Regex CallbackParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?callback\s+(?<name>\w+)\s*=\s*(?<type>.+?)\s*\((?<args>[^\)]+)?\);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
         private static readonly Regex CallbackExtendedParser = new Regex(@"(?<extended>
         ((?<treatnonobjectasnull>treatnonobjectasnull))
@@ -21,9 +21,7 @@ namespace WebIDLCollector.GetData
         {
             var callbackDefs = new List<CallbackType>();
 
-            callbackData = callbackData.Trim().Trim('.');
-            callbackData = Regex.Replace(callbackData, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
-            callbackData = Regex.Replace(callbackData, @"$\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline).Trim();
+            callbackData = callbackData.Trim('.').Trim();
 
             foreach (var callbackDefinition in from Match callbackMatch in CallbackParser.Matches(callbackData)
                                                select new CallbackType(callbackMatch.Groups["name"].Value.Trim())
