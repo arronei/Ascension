@@ -52,7 +52,7 @@ interface DataView {
     attribute object buffer;
     attribute unsigned long byteLength;
     attribute unsigned long byteOffset;
-    attribute DataView contructor;
+    attribute DataView constructor;
     float getFloat32(float byteOffset, optional boolean littleEndian);
     double getFloat64(double byteOffset, optional boolean littleEndian);
     byte getInt8(byte byteOffset);
@@ -76,7 +76,7 @@ interface Date {
     static object now();
     static object parse(DOMString string);
     static unsigned long UTC(long year, long month, optional long date, optional long hours, optional long minutes, optional long seconds, optional long ms);
-    attribute Date contructor;
+    attribute Date constructor;
     octet getDate();
     octet getDay();
     unsigned long getFullYear();

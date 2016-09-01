@@ -1,6 +1,6 @@
 {
   "browserVersion": "IE14-Edge",
-  "timestamp": "2016-07-21T16:04:23.853Z",
+  "timestamp": "2016-09-01T19:27:54.308Z",
   "types": {
     "ANGLE_instanced_arrays": {
       "typeName": "ANGLE_instanced_arrays",
@@ -7036,6 +7036,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "rotate": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "rubyAlign": {
           "confidence": 4,
           "type": "string",
@@ -7057,6 +7067,16 @@
           "isEnumerable": true
         },
         "rubyPosition": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "scale": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -7387,6 +7407,16 @@
           "isEnumerable": true
         },
         "transitionTimingFunction": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "translate": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -7987,6 +8017,36 @@
           "isEnumerable": true
         },
         "webkitTextSizeAdjust": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitTextStroke": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitTextStrokeColor": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitTextStrokeWidth": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -14350,15 +14410,6 @@
           "isEnumerable": true
         },
         "currentScript": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "defaultCharset": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,

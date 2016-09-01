@@ -1189,7 +1189,7 @@
     },
     {
         "name": "frame-timing",
-        "url": "https://w3c.github.io/frame-timing/"
+        "url": "http://wicg.github.io/frame-timing/"
     },
     {
         "name": "hr-time",
@@ -1237,7 +1237,7 @@
     },
     {
         "name": "server-timing",
-        "url": "https://w3c.github.io/server-timing/"
+        "url": "http://wicg.github.io/server-timing/"
     },
     {
         "name": "animation-timing",
@@ -1378,7 +1378,7 @@
     },
     {
         "name": "service-workers",
-        "url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/"
+        "url": "https://w3c.github.io/ServiceWorker/spec/service_worker/"
     },
     {
         "name": "xhr",
