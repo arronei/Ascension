@@ -1,0 +1,26 @@
+[
+    {
+        "Vendor": "Microsoft",
+        "Name": "Edge",
+        "MinVersion": "12",
+        "MaxVersion": "14"
+    },
+    {
+        "Vendor": "Google",
+        "Name": "Chrome",
+        "MinVersion": "10",
+        "MaxVersion": "55"
+    },
+    {
+        "Vendor": "Mozilla",
+        "Name": "Firefox",
+        "MinVersion": "23",
+        "MaxVersion": "51"
+    },
+    {
+        "Vendor": "Apple",
+        "Name": "Safari",
+        "MinVersion": "5",
+        "MaxVersion": "10"
+    }
+]

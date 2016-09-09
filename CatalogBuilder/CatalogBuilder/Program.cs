@@ -1,14 +1,16 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Autofac;
+using CatalogBuilder;
 using CatalogBuilder.CatalogDataModel;
 using CatalogBuilder.TypeMirrorDataModel;
+using Newtonsoft.Json;
 
-namespace CatalogBuilder
+namespace MS.Internal
 {
-    public class Program
+    public class CatalogBuilder
     {
         public const string JsonFilePath = @"D:\GitHub\Ascension\TypeMirror\Data\";
 
@@ -26,8 +28,29 @@ namespace CatalogBuilder
         //        @"D:\GitHub\Ascension\TypeMirror\Data\Safari\Safari10.js"
         //    };
 
+        private static IContainer Container { get; set; }
+
         public static void Main(string[] args)
         {
+
+            var builder = new ContainerBuilder();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Output file locations
             const string dataTableJsonOutputPath = @".\interfaceDataTable.json";
             const string apiViewOutputPath = @".\apiViewDataTable.json";
             const string vennOutputPath = @"D:\GitHub\MicrosoftEdge\APIComparisonData\vennData.json";
