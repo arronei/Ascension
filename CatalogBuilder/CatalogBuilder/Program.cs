@@ -1,119 +1,73 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using Autofac;
+using Autofac.Core;
 using CatalogBuilder;
-using CatalogBuilder.CatalogDataModel;
-using CatalogBuilder.TypeMirrorDataModel;
-using Newtonsoft.Json;
+using MS.Internal.Generator.Core;
 
 namespace MS.Internal
 {
     public class CatalogBuilder
     {
-        public const string JsonFilePath = @"D:\GitHub\Ascension\TypeMirror\Data\";
-
-        public static List<string> JsonFileNames { get; } = new List<string>
-        {
-            @".\TypeMirrorJsonFiles\SpecMirror.js"
-        };
-
-        //string[] jsonFileNames =
-        //{
-        //        @".\TypeMirrorJsonFiles\SpecMirror.js",
-        //        @"D:\GitHub\Ascension\TypeMirror\Data\IE\IE14-Edge.js",
-        //        @"D:\GitHub\Ascension\TypeMirror\Data\Chrome\Chrome54.js",
-        //        @"D:\GitHub\Ascension\TypeMirror\Data\Firefox\Firefox51.js",
-        //        @"D:\GitHub\Ascension\TypeMirror\Data\Safari\Safari10.js"
-        //    };
+        public static IList<string> JsonFileNames { get; } = new List<string>();
 
         private static IContainer Container { get; set; }
 
         public static void Main(string[] args)
         {
-
-            var builder = new ContainerBuilder();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // Output file locations
-            const string dataTableJsonOutputPath = @".\interfaceDataTable.json";
-            const string apiViewOutputPath = @".\apiViewDataTable.json";
-            const string vennOutputPath = @"D:\GitHub\MicrosoftEdge\APIComparisonData\vennData.json";
-            const string specificationListPath = @"D:\GitHub\MicrosoftEdge\APIComparisonData\specifications.json";
-
-            const string apiCatalogCsvDownloadPath = @"D:\GitHub\MicrosoftEdge\APIComparisonData\apiCatalog.csv";
-            const string apiCatalogJsonDownloadPath = @"D:\GitHub\MicrosoftEdge\APIComparisonData\apiCatalog.json";
-
-            CatalogObject catalogDataObject;
-
             PromptUser();
 
-            if (JsonFileNames.Count == 5)
-            {
-                foreach (var jsonFileName in JsonFileNames)
-                {
-                    Console.Write("Deserialize " + jsonFileName + " ... ");
-                    var typeMirrorObject = DeserializeJsonFile(jsonFileName);
-                    if (typeMirrorObject == null)
-                    {
-                        continue;
-                    }
-                    Console.WriteLine("Done");
-                    Console.Write("Add data for " + typeMirrorObject.BrowserVersion + " to ParityDataObject ...");
+            //var config = new ConfigurationBuilder();
 
-                    catalogDataObject = ProcessTypeMirrorObject(typeMirrorObject);
+            //var builder = new ContainerBuilder();
 
-                    Console.WriteLine("Done");
-                    Console.WriteLine();
-                }
-            }
-            else
-            {
-                // this should never happen
-            }
+            //builder.RegisterType<VennDataGenerator>().As<BaseGenerator>();
+
+
+            //Container = builder.Build();
+
+            //var fileName = "";
+
+            //using (var scope = Container.BeginLifetimeScope())
+            //{
+            //    var de = scope.Resolve<BaseGenerator>();
+
+            //    var s = de.DeserializeJsonDataFile<RootObject>(fileName);
+            //}
         }
 
-        private static CatalogObject ProcessTypeMirrorObject(TypeMirrorObject typeMirrorObject)
+        private void RegisterModules(ContainerBuilder builder)
         {
-            var returnValue = new CatalogObject();
-            var browserIdentifier = typeMirrorObject.BrowserVersion;
+            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            if (string.IsNullOrWhiteSpace(path))
+            {
+                return;
+            }
 
-            return returnValue;
+            var assemblies = Directory.GetFiles(path, "*Module.dll", SearchOption.TopDirectoryOnly).Select(Assembly.LoadFrom);
+            foreach (var assembly in assemblies)
+            {
+                var modules = assembly.GetTypes().Where(p => typeof(IModule).IsAssignableFrom(p) && !p.IsAbstract).Select(p => (IModule)Activator.CreateInstance(p));
+                foreach (var module in modules)
+                {
+                    builder.RegisterModule(module);
+                }
+            }
         }
 
         private static void PromptUser()
         {
-            var browserList = new Dictionary<string, int[]>
-                {
-                    // "Browser Name", { min version, max version }
-                    { "Edge", new[] { 12, 14 } },
-                    { "Chrome", new[] { 10, 54 } },
-                    { "Firefox", new[] { 23, 51 } },
-                    { "Safari", new [] { 5, 10 } },
-                };
-
             try
             {
                 Console.WriteLine("Use defaults? (Y/N) Waiting 3 seconds...");
                 var entry = Reader.ReadLine(3000);
                 if (entry.Equals("N", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    BuildJsonFilePathList(browserList);
+                    BuildJsonFilePathList();
                     Console.WriteLine();
                     return;
                 }
@@ -123,22 +77,30 @@ namespace MS.Internal
                 Console.WriteLine("Timeout expired. Using defaults...");
             }
 
-            BuildJsonFilePathList(browserList, true);
+            BuildJsonFilePathList(true);
             Console.WriteLine();
         }
 
-        public static void BuildJsonFilePathList(Dictionary<string, int[]> browserList, bool useMax = false)
+        public static void BuildJsonFilePathList(bool useDefaults = false)
         {
-            foreach (var item in browserList)
+            var browserSupportListFile = ConfigurationManager.AppSettings["browserSupportListFile"] ?? @".\DataFiles\browsers.json";
+            var browserSupportList = new BaseSerializarionJson().DeserializeJsonDataFile<IList<Browser>>(browserSupportListFile);
+
+            var dataFilePath = ConfigurationManager.AppSettings["browserDataFilePath"] ?? @"D:\GitHub\Ascension\TypeMirror\Data\";
+
+            var specDataFilePath = ConfigurationManager.AppSettings["specDataFile"] ?? @".\TypeMirrorDataFiles\SpecMirror.js";
+            JsonFileNames.Add(specDataFilePath);
+
+            foreach (var item in browserSupportList)
             {
-                var browserName = item.Key;
-                var minVersion = item.Value.Min();
-                var maxVersion = item.Value.Max();
+                var browserName = item.Name;
+                var minVersion = item.MinimumSupportedVersion;
+                var maxVersion = item.MaximumSupportedVersion;
                 var finalVersion = maxVersion;
 
-                if (useMax)
+                if (useDefaults)
                 {
-                    JsonFileNames.Add(string.Concat(JsonFilePath, $@"{browserName}\{browserName}{finalVersion}.js"));
+                    JsonFileNames.Add(string.Concat(dataFilePath, $@"{browserName}\{browserName}{finalVersion}.js"));
                     continue;
                 }
                 while (true)
@@ -150,23 +112,14 @@ namespace MS.Internal
                         Console.WriteLine($"Using {browserName} default ({maxVersion}).");
                         break;
                     }
-                    if ((int.TryParse(browserVersion, out finalVersion)) && (finalVersion >= minVersion && finalVersion <= maxVersion))
+                    if ((byte.TryParse(browserVersion, out finalVersion)) && (finalVersion >= minVersion && finalVersion <= maxVersion))
                     {
                         break;
                     }
-                    //Console.WriteLine($"Enter a valid version number between {minVersion} and {maxVersion}.");
+                    Console.WriteLine($"Enter a valid version number between {minVersion} and {maxVersion}.");
                 }
 
-                JsonFileNames.Add(string.Concat(JsonFilePath, $@"{browserName}\{browserName}{finalVersion}.js"));
-            }
-        }
-
-        public static TypeMirrorObject DeserializeJsonFile(string fileString)
-        {
-            if (!File.Exists(fileString)) { return null; }
-            using (var r = new StreamReader(fileString))
-            {
-                return JsonConvert.DeserializeObject<TypeMirrorObject>(r.ReadToEnd());
+                JsonFileNames.Add(string.Concat(dataFilePath, $@"{browserName}\{browserName}{finalVersion}.js"));
             }
         }
     }
