@@ -7,6 +7,8 @@
         /// <param name="args">Input arguments for the app</param>
         public static void Main(string[] args)
         {
+            var inputWebIdlLocaiton = string.Empty;
+
             var outputDirectory = string.Empty;
             var hdlDirectory = string.Empty;
             var validateDirectory = string.Empty;
