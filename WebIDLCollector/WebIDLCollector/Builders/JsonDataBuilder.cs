@@ -19,7 +19,7 @@ namespace WebIDLCollector.Builders
 
         public void GenerateFile()
         {
-            var typeMirrorFile = @"D:\GitHub\Project-Parity\PropertyDiffer\PropertyDiffer\TypeMirrorJsonFiles\SpecMirror.js";
+            const string typeMirrorFile = @"D:\GitHub\Project-Parity\PropertyDiffer\PropertyDiffer\TypeMirrorJsonFiles\SpecMirror.js";
             Console.WriteLine("Creating JsonObject");
             var jsonString = CreateJsonObject();
             if (File.Exists(typeMirrorFile))

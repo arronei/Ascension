@@ -101,8 +101,8 @@ namespace WebIDLCollector.GetData
                     {
                         foreach (Match mep in DictionaryMemberExtendedParser.Matches(memberItem.ExtendedAttribute))
                         {
-                            memberItem.Clamp = !string.IsNullOrWhiteSpace(mep.Groups["clamp"].Value.Trim());
-                            memberItem.EnforceRange = !string.IsNullOrWhiteSpace(mep.Groups["enforcerange"].Value.Trim());
+                            memberItem.Clamp = memberItem.Clamp || !string.IsNullOrWhiteSpace(mep.Groups["clamp"].Value.Trim());
+                            memberItem.EnforceRange = memberItem.EnforceRange || !string.IsNullOrWhiteSpace(mep.Groups["enforcerange"].Value.Trim());
                         }
                     }
 

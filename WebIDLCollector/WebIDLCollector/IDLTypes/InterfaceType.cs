@@ -34,6 +34,7 @@ namespace WebIDLCollector.IDLTypes
         public bool OverrideBuiltins { get; set; }
         public bool IsPrimaryGlobal { get; set; }
         public IEnumerable<string> PrimaryGlobals { get; set; }
+        public bool SecureContext { get; set; }
         public bool Unforgeable { get; set; }
         public bool IsPartial { get; set; }
         public bool IsCallback { get; set; }
@@ -62,6 +63,7 @@ namespace WebIDLCollector.IDLTypes
                 OverrideBuiltins ||
                 IsPrimaryGlobal ||
                 PrimaryGlobals.Any() ||
+                SecureContext ||
                 Unforgeable)
             {
                 sb.Append("[");
@@ -146,6 +148,11 @@ namespace WebIDLCollector.IDLTypes
                 if (OverrideBuiltins)
                 {
                     sb.Append(comma).Append("OverrideBuiltins");
+                    comma = ", ";
+                }
+                if (SecureContext)
+                {
+                    sb.Append(comma).Append("SecureContext");
                     comma = ", ";
                 }
                 if (Unforgeable)

@@ -25,7 +25,7 @@ namespace WebIDLCollector.Process
             foreach (var definition in respecItems)
             {
                 var idlItem = definition.GetAttribute("title");
-                if (idlItem.Contains("interface") || idlItem.Contains("dictionary") || idlItem.Contains("enum"))
+                if (idlItem.Contains("interface") || idlItem.Contains("dictionary") || idlItem.Contains("namespace") || idlItem.Contains("enum"))
                 {
                     idlItem += " {";
                     var members = definition.QuerySelectorAll(selector + " > dt");
@@ -54,6 +54,19 @@ namespace WebIDLCollector.Process
 
                     memberData = idlItem.Contains("enum") ? memberData.TrimEnd(',') : memberData;
                     idlItem += memberData + "}";
+                }
+                else if (idlItem.Contains("callback"))
+                {
+                    var members = definition.QuerySelectorAll(selector + " > dt");
+
+                    var memberData = string.Empty;
+                    var comma = string.Empty;
+                    foreach (var member in members)
+                    {
+                        memberData += comma + member.TextContent.Trim();
+                        comma = ", ";
+                    }
+                    idlItem += " (" + memberData + ");\r\n";
                 }
                 else
                 {

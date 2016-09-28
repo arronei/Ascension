@@ -23,6 +23,7 @@ namespace WebIDLCollector.GetData
         (?<nointerfaceobject>nointerfaceobject)(,|$)|
         (?<overridebuiltins>overridebuiltins)(,|$)|
         (?<primaryglobal>primaryglobal(\s*=\s*(?<primaryglobals>(\([^\)]+\))|[^\(\s,\]]+))?)(,|$)|
+        (?<securecontext>securecontext)(,|$)|
         (?<unforgeable>unforgeable)(,|$))+", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         private static readonly Regex IndividualMember = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
@@ -44,10 +45,12 @@ namespace WebIDLCollector.GetData
         (?<clamp>clamp)(,|$)|
         (?<enforcerange>enforcerange)(,|$)|
         (?<lenientthis>lenientthis)(,|$)|
+        (?<lenientsetter>lenientsetter)(,|$)|
         (?<newobject>newobject)(,|$)|
         (putforwards(\s*=\s*(?<putforwards>[^\s,\]]+)))(,|$)|
         (?<replaceable>replaceable)(,|$)|
         (?<sameobject>sameobject)(,|$)|
+        (?<securecontext>securecontext)(,|$)|
         (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)|
         (?<unforgeable>unforgeable)(,|$)|
         (?<unscopeable>unscopeable)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
@@ -88,15 +91,16 @@ namespace WebIDLCollector.GetData
                     var primaryGlobals = interfaceDefinition.PrimaryGlobals.ToList();
                     foreach (Match m in InterfaceExtendedParser.Matches(interfaceDefinition.ExtendedAttribute))
                     {
-                        interfaceDefinition.IsGlobal = !string.IsNullOrWhiteSpace(m.Groups["global"].Value.Trim());
-                        interfaceDefinition.ImplicitThis = !string.IsNullOrWhiteSpace(m.Groups["implicitthis"].Value.Trim());
-                        interfaceDefinition.ArrayClass = !string.IsNullOrWhiteSpace(m.Groups["arrayclass"].Value.Trim());
-                        interfaceDefinition.LegacyArrayClass = !string.IsNullOrWhiteSpace(m.Groups["legacyarrayclass"].Value.Trim());
-                        interfaceDefinition.LegacyUnenumerableNamedProperties = !string.IsNullOrWhiteSpace(m.Groups["legacyunenumerablenamedproperties"].Value.Trim());
-                        interfaceDefinition.NoInterfaceObject = !string.IsNullOrWhiteSpace(m.Groups["nointerfaceobject"].Value.Trim());
-                        interfaceDefinition.OverrideBuiltins = !string.IsNullOrWhiteSpace(m.Groups["overridebuiltins"].Value.Trim());
-                        interfaceDefinition.IsPrimaryGlobal = !string.IsNullOrWhiteSpace(m.Groups["primaryglobal"].Value.Trim());
-                        interfaceDefinition.Unforgeable = !string.IsNullOrWhiteSpace(m.Groups["unforgeable"].Value.Trim());
+                        interfaceDefinition.IsGlobal = interfaceDefinition.IsGlobal || !string.IsNullOrWhiteSpace(m.Groups["global"].Value.Trim());
+                        interfaceDefinition.ImplicitThis = interfaceDefinition.ImplicitThis || !string.IsNullOrWhiteSpace(m.Groups["implicitthis"].Value.Trim());
+                        interfaceDefinition.ArrayClass = interfaceDefinition.ArrayClass || !string.IsNullOrWhiteSpace(m.Groups["arrayclass"].Value.Trim());
+                        interfaceDefinition.LegacyArrayClass = interfaceDefinition.LegacyArrayClass || !string.IsNullOrWhiteSpace(m.Groups["legacyarrayclass"].Value.Trim());
+                        interfaceDefinition.LegacyUnenumerableNamedProperties = interfaceDefinition.LegacyUnenumerableNamedProperties || !string.IsNullOrWhiteSpace(m.Groups["legacyunenumerablenamedproperties"].Value.Trim());
+                        interfaceDefinition.NoInterfaceObject = interfaceDefinition.NoInterfaceObject || !string.IsNullOrWhiteSpace(m.Groups["nointerfaceobject"].Value.Trim());
+                        interfaceDefinition.OverrideBuiltins = interfaceDefinition.OverrideBuiltins || !string.IsNullOrWhiteSpace(m.Groups["overridebuiltins"].Value.Trim());
+                        interfaceDefinition.IsPrimaryGlobal = interfaceDefinition.IsPrimaryGlobal || !string.IsNullOrWhiteSpace(m.Groups["primaryglobal"].Value.Trim());
+                        interfaceDefinition.SecureContext = interfaceDefinition.SecureContext || !string.IsNullOrWhiteSpace(m.Groups["securecontext"].Value.Trim());
+                        interfaceDefinition.Unforgeable = interfaceDefinition.Unforgeable || !string.IsNullOrWhiteSpace(m.Groups["unforgeable"].Value.Trim());
 
                         var constructor = m.Groups["constructor"].Value.Trim();
                         if (!string.IsNullOrWhiteSpace(constructor))
@@ -220,16 +224,18 @@ namespace WebIDLCollector.GetData
                         var exposed = new List<string>();
                         foreach (Match mep in MemberExtendedParser.Matches(memberItem.ExtendedAttribute))
                         {
-                            memberItem.Clamp = !string.IsNullOrWhiteSpace(mep.Groups["clamp"].Value.Trim());
-                            memberItem.EnforceRange = !string.IsNullOrWhiteSpace(mep.Groups["enforcerange"].Value.Trim());
-                            memberItem.LenientThis = !string.IsNullOrWhiteSpace(mep.Groups["lenientthis"].Value.Trim());
-                            memberItem.NewObject = !string.IsNullOrWhiteSpace(mep.Groups["newobject"].Value.Trim());
+                            memberItem.Clamp = memberItem.Clamp || !string.IsNullOrWhiteSpace(mep.Groups["clamp"].Value.Trim());
+                            memberItem.EnforceRange = memberItem.EnforceRange || !string.IsNullOrWhiteSpace(mep.Groups["enforcerange"].Value.Trim());
+                            memberItem.LenientSetter = memberItem.LenientSetter || !string.IsNullOrWhiteSpace(mep.Groups["lenientsetter"].Value.Trim());
+                            memberItem.LenientThis = memberItem.LenientThis || !string.IsNullOrWhiteSpace(mep.Groups["lenientthis"].Value.Trim());
+                            memberItem.NewObject = memberItem.NewObject || !string.IsNullOrWhiteSpace(mep.Groups["newobject"].Value.Trim());
                             memberItem.PutForwards = mep.Groups["putforwards"].Value.Trim();
-                            memberItem.Replaceable = !string.IsNullOrWhiteSpace(mep.Groups["replaceable"].Value.Trim());
-                            memberItem.SameObject = !string.IsNullOrWhiteSpace(mep.Groups["sameobject"].Value.Trim());
+                            memberItem.Replaceable = memberItem.Replaceable || !string.IsNullOrWhiteSpace(mep.Groups["replaceable"].Value.Trim());
+                            memberItem.SameObject = memberItem.SameObject || !string.IsNullOrWhiteSpace(mep.Groups["sameobject"].Value.Trim());
+                            memberItem.SecureContext = memberItem.SecureContext || !string.IsNullOrWhiteSpace(mep.Groups["securecontext"].Value.Trim());
                             memberItem.TreatNullAs = mep.Groups["treatnullas"].Value.Trim();
-                            memberItem.Unforgeable = !string.IsNullOrWhiteSpace(mep.Groups["unforgeable"].Value.Trim());
-                            memberItem.Unscopeable = !string.IsNullOrWhiteSpace(mep.Groups["unscopeable"].Value.Trim());
+                            memberItem.Unforgeable = memberItem.Unforgeable || !string.IsNullOrWhiteSpace(mep.Groups["unforgeable"].Value.Trim());
+                            memberItem.Unscopeable = memberItem.Unscopeable || !string.IsNullOrWhiteSpace(mep.Groups["unscopeable"].Value.Trim());
 
                             var exposedValue = Regex.Replace(mep.Groups["exposed"].Value, @"[\(\)\s]+", string.Empty);
                             if (!string.IsNullOrWhiteSpace(exposedValue))
@@ -301,7 +307,7 @@ namespace WebIDLCollector.GetData
 
                     var argumentItem = new Argument(m.Groups["name"].Value.Trim())
                     {
-                        Type = Regex.Replace(Regex.Replace(m.Groups["type"].Value, @"\s+\?", "?"), @"[a-z]*::", "").Trim(),
+                        Type = Regex.Replace(Regex.Replace(m.Groups["type"].Value, @"\s+\?", "?"), @"[a-z]*::", string.Empty).Trim(),
                         ExtendedAttribute = m.Groups["extended"].Value.Trim(),
                         In = !string.IsNullOrWhiteSpace(m.Groups["in"].Value),
                         Optional = !string.IsNullOrWhiteSpace(m.Groups["optional"].Value),

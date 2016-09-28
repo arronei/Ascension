@@ -29,11 +29,13 @@ namespace WebIDLCollector.IDLTypes
         public IEnumerable<string> Exposed { get; set; }
         public bool Clamp { get; set; }
         public bool EnforceRange { get; set; }
+        public bool LenientSetter { get; set; }
         public bool LenientThis { get; set; }
         public bool NewObject { get; set; }
         public string PutForwards { get; set; }
         public bool Replaceable { get; set; }
         public bool SameObject { get; set; }
+        public bool SecureContext { get; set; }
         public string TreatNullAs { get; set; }
         public string TreatUndefinedAs { get; set; }
         public bool Unforgeable { get; set; }
@@ -70,11 +72,13 @@ namespace WebIDLCollector.IDLTypes
             if (Clamp ||
                 EnforceRange ||
                 Exposed.Any() ||
+                LenientSetter ||
                 LenientThis ||
                 NewObject ||
                 !string.IsNullOrWhiteSpace(PutForwards) ||
                 Replaceable ||
                 SameObject ||
+                SecureContext ||
                 !string.IsNullOrWhiteSpace(TreatNullAs) ||
                 Unforgeable ||
                 Unscopeable)
@@ -105,6 +109,11 @@ namespace WebIDLCollector.IDLTypes
                     }
                     comma = ", ";
                 }
+                if (LenientSetter)
+                {
+                    sb.Append(comma).Append("LenientSetter");
+                    comma = ", ";
+                }
                 if (LenientThis)
                 {
                     sb.Append(comma).Append("LenientThis");
@@ -128,6 +137,11 @@ namespace WebIDLCollector.IDLTypes
                 if (SameObject)
                 {
                     sb.Append(comma).Append("SameObject");
+                    comma = ", ";
+                }
+                if (SecureContext)
+                {
+                    sb.Append(comma).Append("SecureContext");
                     comma = ", ";
                 }
                 if (!string.IsNullOrWhiteSpace(TreatNullAs))

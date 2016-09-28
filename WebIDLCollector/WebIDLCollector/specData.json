@@ -1378,7 +1378,7 @@
     },
     {
         "name": "service-workers",
-        "url": "https://w3c.github.io/ServiceWorker/spec/service_worker/"
+        "url": "https://w3c.github.io/ServiceWorker/"
     },
     {
         "name": "xhr",
@@ -1387,7 +1387,7 @@
     {
         "name": "ortc",
         "title": "Object RTC (ORTC) API for WebRTC",
-        "url": "https://rawgit.com/openpeer/ortc/master/ortc.html"
+        "url": "http://draft.ortc.org/"
     },
     {
         "name": "file-system-api",
@@ -1644,7 +1644,7 @@
     },
     {
         "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_es3/"
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_es3_0/"
     },
     {
         "name": "webgl",

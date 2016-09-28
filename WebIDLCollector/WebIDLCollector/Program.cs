@@ -52,9 +52,9 @@ namespace WebIDLCollector
                 //{
                 //    new SpecData
                 //    {
-                //        Name = "telophony",
-                //        Url = "http://telephony.sysapps.org/",
-                //        //File = "webgl10-bugfix.webidl"
+                //        Name = "navigatorcores",
+                //        Url = "https://wiki.whatwg.org/wiki/Navigator_HW_Concurrency",
+                //        File = "navigatorcores.webidl"
                 //    }
                 //};
 
@@ -179,6 +179,18 @@ namespace WebIDLCollector
                         Type = "idl"
                     });
                 }
+                else
+                {
+                    var preIdlBikeshed = document.QuerySelector("pre.idl");
+                    if (preIdlBikeshed != null && preIdlBikeshed.HasChildNodes)
+                    {
+                        bikeshedIdentificationList.Add(new SpecIdentification
+                        {
+                            Selector = "pre.idl",
+                            Type = "idl"
+                        });
+                    }
+                }
                 var bikeshedPropDef = document.QuerySelector("table.propdef");
                 if (bikeshedPropDef != null && bikeshedPropDef.HasChildNodes) // determine propdef table
                 {
@@ -194,7 +206,10 @@ namespace WebIDLCollector
                     Console.WriteLine("No common bikeshed sections found");
                     Console.ForegroundColor = ConsoleColor.Gray;
                 }
-                specIdentification.AddRange(bikeshedIdentificationList);
+                else
+                {
+                    specIdentification.AddRange(bikeshedIdentificationList);
+                }
             }
             //Determine respec
             else if (Regex.IsMatch(document.DocumentElement.OuterHtml, @"\brespec\b", RegexOptions.IgnoreCase))
@@ -209,17 +224,14 @@ namespace WebIDLCollector
                         Type = "respec"
                     });
                 }
-                if (!respecIdentificationList.Any())
+                var preIdlRespec = document.QuerySelector("pre.idl");
+                if (preIdlRespec != null && preIdlRespec.HasChildNodes)
                 {
-                    var respecPreIdl = document.QuerySelector("pre.idl");
-                    if (respecPreIdl != null && respecPreIdl.HasChildNodes)
+                    respecIdentificationList.Add(new SpecIdentification
                     {
-                        respecIdentificationList.Add(new SpecIdentification
-                        {
-                            Selector = "pre.idl",
-                            Type = "idl"
-                        });
-                    }
+                        Selector = "pre.idl",
+                        Type = "idl"
+                    });
                 }
                 if (!respecIdentificationList.Any())
                 {
@@ -227,7 +239,10 @@ namespace WebIDLCollector
                     Console.WriteLine("No common respec sections found");
                     Console.ForegroundColor = ConsoleColor.Gray;
                 }
-                specIdentification.AddRange(respecIdentificationList);
+                else
+                {
+                    specIdentification.AddRange(respecIdentificationList);
+                }
             }
 
             if (specIdentification.Any())
