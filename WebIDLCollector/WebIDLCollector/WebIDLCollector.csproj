@@ -58,6 +58,7 @@
     <Compile Include="GetData\GetEnumData.cs" />
     <Compile Include="GetData\GetImplementsData.cs" />
     <Compile Include="GetData\GetInterfaceData.cs" />
+    <Compile Include="GetData\GetNamespaceData.cs" />
     <Compile Include="GetData\GetTypeDefData.cs" />
     <Compile Include="IDLTypes\Argument.cs" />
     <Compile Include="IDLTypes\CallbackType.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="IDLTypes\ImplementsType.cs" />
     <Compile Include="IDLTypes\InterfaceType.cs" />
     <Compile Include="IDLTypes\Member.cs" />
+    <Compile Include="IDLTypes\NamespaceType.cs" />
     <Compile Include="IDLTypes\Property.cs" />
     <Compile Include="IDLTypes\TypeDefType.cs" />
     <Compile Include="Builders\JsonDataBuilder.cs" />
