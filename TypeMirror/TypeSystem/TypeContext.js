@@ -30,7 +30,9 @@ var MirrorJS;
                             if (propertyName === "MirrorJS") {
                                 return;
                             }
-                            var descriptor = Object.getOwnPropertyDescriptor(prototype, propertyName);
+                            try {
+                                var descriptor = Object.getOwnPropertyDescriptor(prototype, propertyName);
+                            } catch (ignored) {}
                             nameToModel[propertyName] = new MirrorJS.PropertyModel(4 /* Prototype */, undefined, descriptor);
                         });
                     }
@@ -46,7 +48,9 @@ var MirrorJS;
                                 if (!ctor.hasOwnProperty(propertyName)) { //(result.isInherited) {
                                     return;
                                 }
-                                var descriptor = Object.getOwnPropertyDescriptor(ctor, propertyName);
+                                try {
+                                    var descriptor = Object.getOwnPropertyDescriptor(ctor, propertyName);
+                                } catch (ignored) {}
                                 model = new MirrorJS.PropertyModel(result.confidence, undefined, descriptor);
                                 nameToModel[propertyName] = model;
                             }
@@ -77,7 +81,10 @@ var MirrorJS;
                                 continue;
                             }
                             if (instance.__proto__) {
-                                var descriptor = Object.getOwnPropertyDescriptor(instance.__proto__, propertyName);
+                                try {
+                                    var descriptor = Object.getOwnPropertyDescriptor(instance.__proto__, propertyName);
+                                }
+                                catch (ignored) {}
                                 if (!descriptor) {
                                     try{
                                         descriptor = Object.getOwnPropertyDescriptor(instance, propertyName);
