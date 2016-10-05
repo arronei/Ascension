@@ -31,7 +31,7 @@ protected void Page_Load(object sender, System.EventArgs e)
                 totalBytes += bytesRead;
             }
         }
-      
+
         Response.Write(
             string.Format(
                 @"Successfully wrote <a href=""./Data/{0}"">{0}</a>. ({1} bytes)",
