@@ -1,6 +1,6 @@
 {
   "browserVersion": "IE15-Edge",
-  "timestamp": "2016-09-30T16:12:13.654Z",
+  "timestamp": "2016-10-05T16:24:50.334Z",
   "types": {
     "ANGLE_instanced_arrays": {
       "typeName": "ANGLE_instanced_arrays",
