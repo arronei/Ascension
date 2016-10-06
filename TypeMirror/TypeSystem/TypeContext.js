@@ -284,14 +284,22 @@ var MirrorJS;
             }
             return false;
         };
+        TypeContext.prototype.startsWith = function (inputString, searchString, position) {
+            if (!String.prototype.startsWith) {
+                position = position || 0;
+                return inputString.substr(position, searchString.length) === searchString;
+            }
+            return inputString.startsWith(searchString, position);
+        };
         /** Returns true if the window[propertyName] resembles a constructor.  This method is used
             by getConstructors to filter non-constructible objects like 'Math', etc.
 
             The hueristics seem to work pretty well on Chrome, IE, and FireFox. */
         TypeContext.prototype.getIsConstructor = function (propertyName) {
+            var _this = this;
             // By convention, the names of constructors begin with an upper-case letter.
             var firstChar = propertyName[0];
-            if ((!propertyName.startsWith('webkit') && (firstChar.toLowerCase() === firstChar))) {
+            if ((!_this.startsWith(propertyName, 'webkit') && (firstChar.toLowerCase() === firstChar))) {
                 // Begins with a lower-case character.  Exclude it.
                 return false;
             }
