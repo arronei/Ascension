@@ -16,7 +16,7 @@ var MirrorJS;
             }
             return Instances.canvas;
         };
-        Instances.catch = function (throws) {
+        Instances._catch = function (throws) {
             return function () {
                 try {
                     throws();
@@ -172,7 +172,7 @@ var MirrorJS;
             "DocumentType": function () {
                 return document.implementation.createDocumentType("unknown", "unknown", "unknown");
             },
-            "DOMException": Instances.catch(function () {
+            "DOMException": Instances._catch(function () {
                 return document.body.removeChild(document.body);
             }),
             "DOMImplementation": function () {
@@ -318,7 +318,7 @@ var MirrorJS;
             "SVGElement": function () {
                 return document.createElementNS("http://www.w3.org/2000/svg", "someUnknownSVGElement");
             },
-            "SVGException": Instances.catch(function () {
+            "SVGException": Instances._catch(function () {
                 var m = document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGMatrix();
                 m.d = 0;
                 m.inverse();
