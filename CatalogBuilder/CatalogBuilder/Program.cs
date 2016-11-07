@@ -11,9 +11,9 @@ using MS.Internal.Generator.Core;
 
 namespace MS.Internal
 {
-    public class CatalogBuilder
+    public static class CatalogBuilder
     {
-        public static IList<string> JsonFileNames { get; } = new List<string>();
+        private static IList<string> JsonFileNames { get; } = new List<string>();
 
         private static IContainer Container { get; set; }
 
@@ -40,7 +40,7 @@ namespace MS.Internal
             //}
         }
 
-        private void RegisterModules(ContainerBuilder builder)
+        private static void RegisterModules(ContainerBuilder builder)
         {
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             if (string.IsNullOrWhiteSpace(path))
@@ -48,7 +48,7 @@ namespace MS.Internal
                 return;
             }
 
-            var assemblies = Directory.GetFiles(path, "*Module.dll", SearchOption.TopDirectoryOnly).Select(Assembly.LoadFrom);
+            var assemblies = Directory.GetFiles(path, "Generator*.dll", SearchOption.TopDirectoryOnly).Select(Assembly.LoadFrom);
             foreach (var assembly in assemblies)
             {
                 var modules = assembly.GetTypes().Where(p => typeof(IModule).IsAssignableFrom(p) && !p.IsAbstract).Select(p => (IModule)Activator.CreateInstance(p));
@@ -81,7 +81,7 @@ namespace MS.Internal
             Console.WriteLine();
         }
 
-        public static void BuildJsonFilePathList(bool useDefaults = false)
+        private static void BuildJsonFilePathList(bool useDefaults = false)
         {
             var browserSupportListFile = ConfigurationManager.AppSettings["browserSupportListFile"] ?? @".\DataFiles\browsers.json";
             var browserSupportList = new BaseSerializarionJson().DeserializeJsonDataFile<IList<Browser>>(browserSupportListFile);
