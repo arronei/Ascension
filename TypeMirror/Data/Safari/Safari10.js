@@ -1,6 +1,6 @@
 {
   "browserVersion": "Safari 10",
-  "timestamp": "2016-10-05T17:27:05.163Z",
+  "timestamp": "2016-11-07T20:36:34.814Z",
   "types": {
     "AnalyserNode": {
       "typeName": "AnalyserNode",
@@ -37919,83 +37919,6 @@
           "isEnumerable": true,
           "isWritable": false
         },
-        "4": {
-          "confidence": 3,
-          "type": "MimeType",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "5": {
-          "confidence": 3,
-          "type": "MimeType",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "6": {
-          "confidence": 3,
-          "type": "MimeType",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "7": {
-          "confidence": 3,
-          "type": "MimeType",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "8": {
-          "confidence": 3,
-          "type": "MimeType",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "9": {
-          "confidence": 3,
-          "type": "MimeType",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "10": {
-          "confidence": 3,
-          "type": "MimeType",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
         "constructor": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -39045,7 +38968,7 @@
         },
         "doNotTrack": {
           "confidence": 3,
-          "type": "string",
+          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42381,6 +42304,17 @@
       "confidence": 4,
       "properties": {
         "0": {
+          "confidence": 3,
+          "type": "Plugin",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": true,
+          "isWritable": false
+        },
+        "1": {
           "confidence": 3,
           "type": "Plugin",
           "isPlausiblyInherited": false,
