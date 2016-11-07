@@ -554,13 +554,7 @@
     {
         "name": "css-transitions-1",
         "title": "CSS Transitions Level 1",
-        "url": "https://drafts.csswg.org/css-transitions/",
-        "identification": [
-            {
-                "selector": "div.idl-code",
-                "type": "idl"
-            }
-        ]
+        "url": "https://drafts.csswg.org/css-transitions/"
     },
     {
         "name": "css-transitions-2",
@@ -1116,14 +1110,6 @@
         "url": "http://www.w3.org/TR/workers/"
     },
     {
-        "name": "xmlhttprequest",
-        "url": "http://www.w3.org/TR/XMLHttpRequest/"
-    },
-    {
-        "name": "xmlhttprequest",
-        "url": "https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html"
-    },
-    {
         "name": "csp2",
         "url": "http://www.w3.org/TR/CSP2/"
     },
@@ -1167,7 +1153,7 @@
     },
     {
         "name": "webcryptoapi",
-        "url": "https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html",
+        "url": "https://w3c.github.io/webcrypto/Overview.html",
         "identification": [
             {
                 "selector": "code.idl-code",
@@ -1644,11 +1630,11 @@
     },
     {
         "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_es3_0/"
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
     },
     {
         "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
+        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
     },
     {
         "name": "webgl",
