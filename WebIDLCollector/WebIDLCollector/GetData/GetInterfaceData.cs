@@ -173,7 +173,7 @@ namespace WebIDLCollector.GetData
                                     string.IsNullOrWhiteSpace(m.Groups["function"].Value) &&
                                     string.IsNullOrWhiteSpace(m.Groups["maplike"].Value) &&
                                     string.IsNullOrWhiteSpace(m.Groups["setlike"].Value) &&
-                                    !(Regex.Replace(m.Groups["type"].Value, @"\s+\?", "?")
+                                    !(TypeCleaner.Replace(m.Groups["type"].Value, "?")
                                         .Trim())
                                         .Equals("function", StringComparison.OrdinalIgnoreCase);
 
@@ -185,7 +185,7 @@ namespace WebIDLCollector.GetData
                     }
                     var memberItem = new Member(name)
                     {
-                        Type = Regex.Replace(Regex.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), @"\s+\?", "?"), @"[a-z]*::", string.Empty).Trim(),
+                        Type = OldTypeCleaner.Replace(TypeCleaner.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), "?"), string.Empty).Trim(),
                         Args = m.Groups["args"].Value.Trim(),
                         Function = !string.IsNullOrWhiteSpace(m.Groups["function"].Value),
                         Attribute = !string.IsNullOrWhiteSpace(m.Groups["attribute"].Value),
@@ -267,14 +267,7 @@ namespace WebIDLCollector.GetData
                     if ((item.StartsWith("constructor", StringComparison.InvariantCultureIgnoreCase)) && (InterfaceExtendedParser.IsMatch(item)))
                     {
                         var constructors = interfaceDefinition.Constructors.ToList();
-                        foreach (Match m in InterfaceExtendedParser.Matches(item))
-                        {
-                            var constructor = m.Groups["constructor"].Value.Trim();
-                            if (!string.IsNullOrWhiteSpace(constructor))
-                            {
-                                constructors.Add(Regex.Replace(constructor, @"\(\)", string.Empty));
-                            }
-                        }
+                        constructors.AddRange(from Match m in InterfaceExtendedParser.Matches(item) select m.Groups["constructor"].Value.Trim() into constructor where !string.IsNullOrWhiteSpace(constructor) select ParenCleaner.Replace(constructor, string.Empty));
                         interfaceDefinition.Constructors = constructors.Distinct();
                         continue;
                     }

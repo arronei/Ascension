@@ -47,7 +47,6 @@ namespace WebIDLCollector.IDLTypes
                 if (SecureContext)
                 {
                     sb.Append(comma).Append("SecureContext");
-                    comma = ", ";
                 }
                 sb.AppendLine("]");
             }

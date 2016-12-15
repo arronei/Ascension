@@ -63,7 +63,6 @@
     <Compile Include="GetData\GetTypeDefData.cs" />
     <Compile Include="IDLTypes\Argument.cs" />
     <Compile Include="IDLTypes\CallbackType.cs" />
-    <Compile Include="IDLTypes\Definitions.cs" />
     <Compile Include="IDLTypes\DictionaryMember.cs" />
     <Compile Include="IDLTypes\DictionaryType.cs" />
     <Compile Include="IDLTypes\EnumType.cs" />

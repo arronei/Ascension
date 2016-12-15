@@ -16,7 +16,7 @@ namespace WebIDLCollector.IDLTypes
         }
 
         public string Name { get; set; }
-        public bool IsPartial { get; set; }
+        public bool IsPartial { private get; set; }
         public IEnumerable<string> Inherits { get; set; }
         public IEnumerable<DictionaryMember> Members { get; set; }
         public string ExtendedAttribute { get; set; }

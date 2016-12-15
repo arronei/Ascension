@@ -53,7 +53,7 @@ namespace WebIDLCollector.GetData
                     namespaceDefinition.Exposed = exposed.Distinct();
                 }
 
-                namespaceDefinition.Members = _namespace.Groups["members"].Length > 0 ? GetAllNamespaceMembers(_namespace.Groups["members"].Value, specificationData, ref namespaceDefinition) : new List<NamespaceMember>();
+                namespaceDefinition.Members = _namespace.Groups["members"].Length > 0 ? GetAllNamespaceMembers(_namespace.Groups["members"].Value, specificationData) : new List<NamespaceMember>();
 
                 if (!namespaces.Contains(namespaceDefinition))
                 {
@@ -70,7 +70,7 @@ namespace WebIDLCollector.GetData
             return namespaces;
         }
 
-        private static IEnumerable<NamespaceMember> GetAllNamespaceMembers(string memberItems, SpecData specificationData, ref NamespaceType namespaceDefinition)
+        private static IEnumerable<NamespaceMember> GetAllNamespaceMembers(string memberItems, SpecData specificationData)
         {
             var memberList = new List<NamespaceMember>();
 

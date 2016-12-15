@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -24,14 +22,6 @@ namespace WebIDLCollector.Utilities
             }
         }
 
-        /// <summary>Determies if an IColleciton is null or empty</summary>
-        /// <param name="item">The item to check</param>
-        /// <returns>true if null or empty; false otherwise</returns>
-        public static bool IsNullOrEmpty(this ICollection item)
-        {
-            return item == null || item.Count == 0;
-        }
-
         /// <summary>Does a merge of two IEnumerable lists if not null; otherwise just sets the list to the second list</summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="first"></param>
@@ -52,11 +42,6 @@ namespace WebIDLCollector.Utilities
             }
 
             return first;
-        }
-
-        public static SortedDictionary<T1, T2> ToSortedDictionary<T1, T2>(this IEnumerable<T2> source, Func<T2, T1> keySelector)
-        {
-            return new SortedDictionary<T1, T2>(source.ToDictionary(keySelector));
         }
     }
 }

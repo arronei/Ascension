@@ -147,11 +147,6 @@ namespace WebIDLCollector.IDLTypes
                     sb.Append(comma).Append("TreatNullAs=").Append(TreatNullAs);
                     comma = ", ";
                 }
-                if (!string.IsNullOrWhiteSpace(TreatUndefinedAs))
-                {
-                    sb.Append(comma).Append("TreatUndefinedAs=").Append(TreatUndefinedAs);
-                    comma = ", ";
-                }
                 if (Unforgeable)
                 {
                     sb.Append(comma).Append("Unforgeable");
@@ -242,7 +237,7 @@ namespace WebIDLCollector.IDLTypes
             sb.Append(Name);
             if (Function)
             {
-                sb.Append("(").Append(ReconstructArgs(ArgTypes)).Append(")");
+                sb.Append("(").Append(Argument.ReconstructArgs(ArgTypes)).Append(")");
             }
             if (!string.IsNullOrWhiteSpace(Value))
             {
@@ -265,20 +260,6 @@ namespace WebIDLCollector.IDLTypes
             }
 
             return Regex.Replace(Regex.Replace(sb.ToString().Trim(), @"\s+;", ";"), @"\s+", " ");
-        }
-
-        private static string ReconstructArgs(IEnumerable<Argument> argTypes)
-        {
-            var sb = new StringBuilder();
-
-            var comma = string.Empty;
-            foreach (var argument in argTypes)
-            {
-                sb.Append(comma).Append(argument.Reconstruct());
-                comma = ", ";
-            }
-
-            return sb.ToString();
         }
 
         public override bool Equals(object otherMember)

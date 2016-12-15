@@ -5,17 +5,17 @@ namespace WebIDLCollector.TypeMirrorTypes
 {
     public class TypeMirrorProperty
     {
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public int Confidence { get; set; }
-        public bool IsPlausiblyInherited { get; set; }
-        public bool IsPlausiblyDefined { get; set; }
-        public bool HasGet { get; set; }
-        public bool HasSet { get; set; }
-        public bool IsConfigurable { get; set; }
-        public bool IsEnumerable { get; set; }
-        public bool IsWritable { get; set; }
-        public IEnumerable<string> SpecNames { get; set; }
+        public string Name { private get; set; }
+        public string Type { private get; set; }
+        public int Confidence { private get; set; }
+        private static bool IsPlausiblyInherited => false;
+        private static bool IsPlausiblyDefined => false;
+        public bool HasGet { private get; set; }
+        public bool HasSet { private get; set; }
+        public bool IsConfigurable { private get; set; }
+        public bool IsEnumerable { private get; set; }
+        public bool IsWritable { private get; set; }
+        public IEnumerable<string> SpecNames { private get; set; }
 
         public override string ToString()
         {

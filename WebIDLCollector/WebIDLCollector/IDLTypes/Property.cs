@@ -33,17 +33,7 @@ namespace WebIDLCollector.IDLTypes
             }
         }
 
-        public string WebkitOmName
-        {
-            get
-            {
-                if (!OmName.StartsWith("webkit"))
-                {
-                    return string.Empty;
-                }
-                return Regex.Replace(OmName, @"webkit", "Webkit");
-            }
-        }
+        public string WebkitOmName => !OmName.StartsWith("webkit") ? string.Empty : Regex.Replace(OmName, @"webkit", "Webkit");
 
         public string Value { get; set; }
 

@@ -13,9 +13,9 @@ namespace WebIDLCollector.IDLTypes
         }
 
         public string Name { get; }
-        public string Type { get; set; }
+        public string Type { private get; set; }
         public string Args { get; set; }
-        public IEnumerable<Argument> ArgTypes { get; set; }
+        public IEnumerable<Argument> ArgTypes { private get; set; }
         public string ExtendedAttribute { get; set; }
         public bool TreatNonObjectAsNull { get; set; }
         public bool TreatNonCallableAsNull { get; set; }

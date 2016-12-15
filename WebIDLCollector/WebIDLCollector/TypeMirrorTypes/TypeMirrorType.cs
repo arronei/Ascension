@@ -5,10 +5,10 @@ namespace WebIDLCollector.TypeMirrorTypes
 {
     public class TypeMirrorType
     {
-        public string TypeName { get; set; }
-        public List<string> DerivedTypes { get; set; }
-        public string BaseType { get; set; }
-        public int Confidence { get; set; }
+        public string TypeName { private get; set; }
+        public List<string> DerivedTypes { private get; set; }
+        public string BaseType { private get; set; }
+        public int Confidence { private get; set; }
         public List<TypeMirrorProperty> Properties { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 

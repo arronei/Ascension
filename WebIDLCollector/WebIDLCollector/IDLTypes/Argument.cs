@@ -12,12 +12,13 @@ namespace WebIDLCollector.IDLTypes
 
         private string Name { get; }
         public string Type { get; set; }
+        public bool In { private get; set; }
         public bool Optional { get; set; }
         public string ExtendedAttribute { get; set; }
         public bool Clamp { get; set; }
         public bool EnforceRange { get; set; }
         public string TreatNullAs { get; set; }
-        public string TreatUndefinedAs { get; set; }
+        public string TreatUndefinedAs { private get; set; }
         public bool Ellipsis { get; set; }
         public string Value { get; set; }
 
@@ -28,8 +29,7 @@ namespace WebIDLCollector.IDLTypes
 
             if (Clamp ||
                 EnforceRange ||
-                !string.IsNullOrWhiteSpace(TreatNullAs) ||
-                !string.IsNullOrWhiteSpace(TreatUndefinedAs))
+                !string.IsNullOrWhiteSpace(TreatNullAs))
             {
                 sb.Append("[");
 
@@ -46,11 +46,6 @@ namespace WebIDLCollector.IDLTypes
                 if (!string.IsNullOrWhiteSpace(TreatNullAs))
                 {
                     sb.Append(comma).Append("TreatNullAs=").Append(TreatNullAs);
-                    comma = ", ";
-                }
-                if (!string.IsNullOrWhiteSpace(TreatUndefinedAs))
-                {
-                    sb.Append(comma).Append("TreatUndefinedAs=").Append(TreatUndefinedAs);
                 }
 
                 sb.Append("] ");
@@ -75,6 +70,20 @@ namespace WebIDLCollector.IDLTypes
 
             return sb.ToString().Trim();
         }
+
+        public static string ReconstructArgs(IEnumerable<Argument> argTypes)
+        {
+            var sb = new StringBuilder();
+
+            var comma = string.Empty;
+            foreach (var argument in argTypes)
+            {
+                sb.Append(comma).Append(argument.Reconstruct());
+                comma = ", ";
+            }
+
+            return sb.ToString();
+        }
     }
 
     public class ArgumentTypeCompare : IEqualityComparer<Argument>
@@ -86,7 +95,6 @@ namespace WebIDLCollector.IDLTypes
                     x.Clamp.Equals(y.Clamp) &&
                     x.EnforceRange.Equals(y.EnforceRange) &&
                     x.TreatNullAs.Equals(y.TreatNullAs) &&
-                    x.TreatUndefinedAs.Equals(y.TreatUndefinedAs) &&
                     x.Ellipsis.Equals(y.Ellipsis) &&
                     (x.Value == null || x.Value.Equals(y.Value));
         }

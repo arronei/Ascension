@@ -26,6 +26,7 @@ namespace WebIDLCollector.GetData
                 {
                     Name = dictionaryMatch.Groups["name"].Value.Trim(),
                     IsPartial = !string.IsNullOrWhiteSpace(dictionaryMatch.Groups["partial"].Value),
+                    ExtendedAttribute = CleanString(dictionaryMatch.Groups["extended"].Value),
                     SpecNames = new[] { specificationData.Name }
                 };
 
@@ -40,7 +41,7 @@ namespace WebIDLCollector.GetData
                         {
                             constructors.Add(constructor);
                         }
-                        var exposedValue = Regex.Replace(m.Groups["exposed"].Value, @"[\(\)\s]+", string.Empty);
+                        var exposedValue = GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(exposedValue))
                         {
                             exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(item => item.Trim()));
@@ -76,9 +77,7 @@ namespace WebIDLCollector.GetData
         {
             var memberList = new List<DictionaryMember>();
 
-            memberItems = memberItems.Trim().Trim('.');
-            memberItems = Regex.Replace(memberItems, @"\s*//.*$", string.Empty, RegexOptions.Multiline);
-            memberItems = Regex.Replace(memberItems, @"$\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline).Trim();
+            memberItems = CleanString(memberItems);
 
             var members = memberItems.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(m => m.Trim()).ToArray();
 
@@ -91,7 +90,7 @@ namespace WebIDLCollector.GetData
                     var memberItem = new DictionaryMember(m.Groups["item"].Value.Trim())
                     {
                         ExtendedAttribute = m.Groups["extended"].Value.Trim(),
-                        Type = Regex.Replace(m.Groups["type"].Value, @"\s+\?", "?").Trim(),
+                        Type = OldTypeCleaner.Replace(TypeCleaner.Replace(m.Groups["type"].Value, "?"), string.Empty).Trim(),
                         Value = m.Groups["value"].Value.Trim(),
                         IsRequired = !string.IsNullOrWhiteSpace(m.Groups["required"].Value.Trim()),
                         SpecNames = new[] { specificationData.Name }

@@ -11,9 +11,9 @@ using WebIDLCollector.Process;
 
 namespace WebIDLCollector
 {
-    public class Program
+    public static class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             const string webidlLocation = "webidl";
             if (Directory.Exists(webidlLocation))

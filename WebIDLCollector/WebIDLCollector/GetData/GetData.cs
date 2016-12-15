@@ -10,11 +10,19 @@ namespace WebIDLCollector.GetData
     {
         private static readonly Regex GroupingCleaner = new Regex(@"[\(\)\s]+", RegexOptions.Compiled);
 
+        private static readonly Regex TypeCleaner = new Regex(@"\s+\?", RegexOptions.Compiled);
+
+        private static readonly Regex OldTypeCleaner = new Regex(@"[a-z]*::", RegexOptions.Compiled);
+
+        private static readonly Regex ParenCleaner = new Regex(@"\(\)", RegexOptions.Compiled);
+
         private static string CleanString(string value)
         {
             value = value.Trim().Trim('.').Trim();
+            value = Regex.Replace(value, @"\s *//.*$", string.Empty, RegexOptions.Multiline);
             value = Regex.Replace(value, @"\s*(set)?raises\([^)]*?\)\s*;", ";");
-            value = Regex.Replace(value, @"(?<start>(\(|,)\s*)in\s+", "${start}");
+            value = Regex.Replace(value, @"\s*(?<start>(\(|,)\s*)in\s+", "${start}");
+            value = Regex.Replace(value, @"\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline);
             return value.Trim();
         }
 
@@ -31,9 +39,9 @@ namespace WebIDLCollector.GetData
 
                     var argumentItem = new Argument(m.Groups["name"].Value.Trim())
                     {
-                        Type = Regex.Replace(Regex.Replace(m.Groups["type"].Value, @"\s+\?", "?"), @"[a-z]*::", string.Empty).Trim(),
+                        Type = OldTypeCleaner.Replace(TypeCleaner.Replace(m.Groups["type"].Value, "?"), string.Empty).Trim(),
                         ExtendedAttribute = m.Groups["extended"].Value.Trim(),
-                        //In = !string.IsNullOrWhiteSpace(m.Groups["in"].Value),
+                        In = !string.IsNullOrWhiteSpace(m.Groups["in"].Value),
                         Optional = !string.IsNullOrWhiteSpace(m.Groups["optional"].Value),
                         Ellipsis = !string.IsNullOrWhiteSpace(m.Groups["ellipsis"].Value),
                         Value = m.Groups["value"].Value.Trim()
