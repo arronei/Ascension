@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using WebIDLCollector.IDLTypes;
+using WebIDLCollector.Utilities;
 
 namespace WebIDLCollector.GetData
 {
@@ -43,7 +44,7 @@ namespace WebIDLCollector.GetData
                     {
                         namespaceDefinition.SecureContext = namespaceDefinition.SecureContext || !string.IsNullOrWhiteSpace(m.Groups["securecontext"].Value.Trim());
 
-                        var exposedValue = GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
+                        var exposedValue = RegexLibrary.GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(exposedValue))
                         {
                             exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
@@ -95,7 +96,7 @@ namespace WebIDLCollector.GetData
 
                 var memberItem = new NamespaceMember(name)
                 {
-                    Type = Regex.Replace(Regex.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), @"\s+\?", "?"), @"[a-z]*::", string.Empty).Trim(),
+                    Type = RegexLibrary.OldTypeCleaner.Replace(RegexLibrary.TypeCleaner.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), "?"), string.Empty).Trim(),
                     Args = m.Groups["args"].Value.Trim(),
                     Function = !string.IsNullOrWhiteSpace(m.Groups["function"].Value),
                     ExtendedAttribute = m.Groups["extended"].Value.Trim(),
@@ -109,7 +110,7 @@ namespace WebIDLCollector.GetData
                     {
                         memberItem.SecureContext = memberItem.SecureContext || !string.IsNullOrWhiteSpace(mep.Groups["securecontext"].Value.Trim());
 
-                        var exposedValue = GroupingCleaner.Replace(mep.Groups["exposed"].Value, string.Empty);
+                        var exposedValue = RegexLibrary.GroupingCleaner.Replace(mep.Groups["exposed"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(exposedValue))
                         {
                             exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));

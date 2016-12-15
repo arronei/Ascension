@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using AngleSharp.Dom;
@@ -55,7 +56,7 @@ namespace WebIDLCollector.Process
                 foreach (var row in propdef.QuerySelectorAll("dd table.propinfo tr"))
                 {
                     var th = row.QuerySelector("td").TextContent.Trim().TrimEnd(':');
-                    var td = Regex.Replace(row.QuerySelectorAll("td")[1].TextContent.Trim(), @"\s+", " ");
+                    var td = RegexLibrary.WhitespaceCleaner.Replace(row.QuerySelectorAll("td")[1].TextContent.Trim(), " ");
 
                     p.GetType().GetProperty(FixPropertyName(th)).SetValue(p, td, null);
                 }
@@ -101,7 +102,7 @@ namespace WebIDLCollector.Process
                     {
                         text = text ?? row.QuerySelectorAll("td")[1].TextContent;
                     }
-                    var td = Regex.Replace(text.Trim(), @"\s+", " ");
+                    var td = RegexLibrary.WhitespaceCleaner.Replace(text.Trim(), " ");
 
                     p.GetType().GetProperty(FixPropertyName(th)).SetValue(p, td, null);
                 }
@@ -121,7 +122,7 @@ namespace WebIDLCollector.Process
                 foreach (var item in d)
                 {
                     var newProp = p.DeepClone();
-                    newProp.Name = Regex.Replace(item, @"[^-a-z]", string.Empty);
+                    newProp.Name = RegexLibrary.PropertyCleaner.Replace(item, string.Empty);
                     //add prop
                     properties.Add(newProp);
                 }
@@ -129,7 +130,7 @@ namespace WebIDLCollector.Process
             else
             {
                 //Fix Name
-                p.Name = Regex.Replace(p.Name, @"[^-a-z]", string.Empty);
+                p.Name = RegexLibrary.PropertyCleaner.Replace(p.Name, string.Empty);
                 //Just add it
                 properties.Add(p);
             }
@@ -222,6 +223,8 @@ namespace WebIDLCollector.Process
                 case "AminationType":
                     value = "AnimationType";
                     break;
+                default:
+                    throw new ArgumentException();
             }
 
             return value;

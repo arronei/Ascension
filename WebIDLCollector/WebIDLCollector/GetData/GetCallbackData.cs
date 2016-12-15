@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using WebIDLCollector.IDLTypes;
+using WebIDLCollector.Utilities;
 
 namespace WebIDLCollector.GetData
 {
     public static partial class DataCollectors
     {
-        private static readonly Regex CallbackParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?callback\s+(?<name>\w+)\s*=\s*(?<type>.+?)\s+\((?<args>[^\)]+)?\);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        private static readonly Regex CallbackParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?callback\s+(?<name>\w+)\s*=\s*(?<type>.+?)\s+\((?<args>[^\)]+)?\);?", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Singleline);
 
-        private static readonly Regex CallbackExtendedParser = new Regex(@"(?<extended>
-        ((?<treatnonobjectasnull>treatnonobjectasnull))
-        (\s*,\s*
-        ((?<treatnonobjectasnull>treatnonobjectasnull))
-        )*
-        )", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
+        private static readonly Regex CallbackExtendedParser = new Regex(@"(?<extended>(?<treatnonobjectasnull>treatnonobjectasnull))", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         public static IEnumerable<CallbackType> GetAllCallbacks(string callbackData, SpecData specificationData)
         {
@@ -26,7 +22,7 @@ namespace WebIDLCollector.GetData
             foreach (var callbackDefinition in from Match callbackMatch in CallbackParser.Matches(callbackData)
                                                select new CallbackType(callbackMatch.Groups["name"].Value.Trim())
                                                {
-                                                   Type = callbackMatch.Groups["type"].Value.Trim(),
+                                                   Type = RegexLibrary.OldTypeCleaner.Replace(RegexLibrary.TypeCleaner.Replace(callbackMatch.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), "?"), string.Empty).Trim(),
                                                    Args = callbackMatch.Groups["args"].Value.Trim(),
                                                    ExtendedAttribute = callbackMatch.Groups["extended"].Value.Trim(),
                                                    SpecNames = new[] { specificationData.Name }

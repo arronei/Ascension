@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using WebIDLCollector.IDLTypes;
+using WebIDLCollector.Utilities;
 
 namespace WebIDLCollector.GetData
 {
@@ -44,8 +45,8 @@ namespace WebIDLCollector.GetData
         private static readonly Regex MemberExtendedParser = new Regex(@"(exposed(\s*=\s*(?<exposed>(\([^\)]+\))|[^\(\s,\]]+)))(,|$)|
         (?<clamp>clamp)(,|$)|
         (?<enforcerange>enforcerange)(,|$)|
-        (?<lenientthis>lenientthis)(,|$)|
         (?<lenientsetter>lenientsetter)(,|$)|
+        (?<lenientthis>lenientthis)(,|$)|
         (?<newobject>newobject)(,|$)|
         (putforwards(\s*=\s*(?<putforwards>[^\s,\]]+)))(,|$)|
         (?<replaceable>replaceable)(,|$)|
@@ -55,18 +56,6 @@ namespace WebIDLCollector.GetData
         (treatundefinedas(\s*=\s*(?<treatundefinedas>[^\s,\]]+)))(,|$)|
         (?<unforgeable>unforgeable)(,|$)|
         (?<unscopeable>unscopeable)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
-
-        private static readonly Regex ArgumentParser = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
-        ((?<in>in)\s+)?
-        ((?<optional>optional)\s+)?
-        (?<type>[^\.=]+)
-        (\s*(?<ellipsis>\.\.\.))?\s+
-        ((?<name>[^=\s]+)
-        (\s*=\s*(?<value>.+?))?))$", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
-
-        private static readonly Regex AttributeExtendedParser = new Regex(@"(?<clamp>clamp)(,|$)|
-        (?<enforcerange>enforcerange)(,|$)|
-        (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         public static IEnumerable<InterfaceType> GetAllInterfaces(string cleanString, SpecData specificationData)
         {
@@ -106,24 +95,24 @@ namespace WebIDLCollector.GetData
                         var constructor = m.Groups["constructor"].Value.Trim();
                         if (!string.IsNullOrWhiteSpace(constructor))
                         {
-                            constructors.Add(Regex.Replace(constructor, @"\(\)", string.Empty));
+                            constructors.Add(RegexLibrary.ParenCleaner.Replace(constructor, string.Empty));
                         }
                         var named = m.Groups["namedconstructor"].Value.Trim();
                         if (!string.IsNullOrWhiteSpace(named))
                         {
                             namedConstructors.Add(named);
                         }
-                        var exposedValue = GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
+                        var exposedValue = RegexLibrary.GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(exposedValue))
                         {
                             exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
                         }
-                        var globalsValue = GroupingCleaner.Replace(m.Groups["globals"].Value, string.Empty);
+                        var globalsValue = RegexLibrary.GroupingCleaner.Replace(m.Groups["globals"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(globalsValue))
                         {
                             globals.AddRange(globalsValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
                         }
-                        var primaryGlobalsValue = GroupingCleaner.Replace(m.Groups["primaryglobals"].Value, string.Empty);
+                        var primaryGlobalsValue = RegexLibrary.GroupingCleaner.Replace(m.Groups["primaryglobals"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(primaryGlobalsValue))
                         {
                             primaryGlobals.AddRange(primaryGlobalsValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
@@ -173,7 +162,7 @@ namespace WebIDLCollector.GetData
                                     string.IsNullOrWhiteSpace(m.Groups["function"].Value) &&
                                     string.IsNullOrWhiteSpace(m.Groups["maplike"].Value) &&
                                     string.IsNullOrWhiteSpace(m.Groups["setlike"].Value) &&
-                                    !(TypeCleaner.Replace(m.Groups["type"].Value, "?")
+                                    !(RegexLibrary.TypeCleaner.Replace(m.Groups["type"].Value, "?")
                                         .Trim())
                                         .Equals("function", StringComparison.OrdinalIgnoreCase);
 
@@ -185,7 +174,7 @@ namespace WebIDLCollector.GetData
                     }
                     var memberItem = new Member(name)
                     {
-                        Type = OldTypeCleaner.Replace(TypeCleaner.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), "?"), string.Empty).Trim(),
+                        Type = RegexLibrary.OldTypeCleaner.Replace(RegexLibrary.TypeCleaner.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), "?"), string.Empty).Trim(),
                         Args = m.Groups["args"].Value.Trim(),
                         Function = !string.IsNullOrWhiteSpace(m.Groups["function"].Value),
                         Attribute = !string.IsNullOrWhiteSpace(m.Groups["attribute"].Value),
@@ -231,7 +220,7 @@ namespace WebIDLCollector.GetData
                             memberItem.Unforgeable = memberItem.Unforgeable || !string.IsNullOrWhiteSpace(mep.Groups["unforgeable"].Value.Trim());
                             memberItem.Unscopeable = memberItem.Unscopeable || !string.IsNullOrWhiteSpace(mep.Groups["unscopeable"].Value.Trim());
 
-                            var exposedValue = GroupingCleaner.Replace(mep.Groups["exposed"].Value, string.Empty);
+                            var exposedValue = RegexLibrary.GroupingCleaner.Replace(mep.Groups["exposed"].Value, string.Empty);
                             if (!string.IsNullOrWhiteSpace(exposedValue))
                             {
                                 exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
@@ -267,7 +256,7 @@ namespace WebIDLCollector.GetData
                     if ((item.StartsWith("constructor", StringComparison.InvariantCultureIgnoreCase)) && (InterfaceExtendedParser.IsMatch(item)))
                     {
                         var constructors = interfaceDefinition.Constructors.ToList();
-                        constructors.AddRange(from Match m in InterfaceExtendedParser.Matches(item) select m.Groups["constructor"].Value.Trim() into constructor where !string.IsNullOrWhiteSpace(constructor) select ParenCleaner.Replace(constructor, string.Empty));
+                        constructors.AddRange(from Match m in InterfaceExtendedParser.Matches(item) select m.Groups["constructor"].Value.Trim() into constructor where !string.IsNullOrWhiteSpace(constructor) select RegexLibrary.ParenCleaner.Replace(constructor, string.Empty));
                         interfaceDefinition.Constructors = constructors.Distinct();
                         continue;
                     }

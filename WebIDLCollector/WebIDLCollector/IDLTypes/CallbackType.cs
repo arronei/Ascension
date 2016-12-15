@@ -18,27 +18,26 @@ namespace WebIDLCollector.IDLTypes
         public IEnumerable<Argument> ArgTypes { private get; set; }
         public string ExtendedAttribute { get; set; }
         public bool TreatNonObjectAsNull { get; set; }
-        public bool TreatNonCallableAsNull { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct
-        {
-            get
-            {
-                return (TreatNonObjectAsNull ? "[TreatNonObjectAsNull] " : string.Empty) + "callback " + Name + " = " + Type + " (" + ReconstructArgs(ArgTypes) + "); // " + string.Join(", ", SpecNames);
-            }
-        }
-
-        private static string ReconstructArgs(IEnumerable<Argument> argTypes)
+        public string Reconstruct()
         {
             var sb = new StringBuilder();
 
-            var comma = string.Empty;
-            foreach (var argument in argTypes)
+            if (TreatNonObjectAsNull)
             {
-                sb.Append(comma).Append(argument.Reconstruct());
-                comma = ", ";
+                sb.Append("[TreatNonObjectAsNull] ");
             }
+            sb.Append("callback ");
+            sb.Append(Name);
+            sb.Append(" = ");
+            sb.Append(Type);
+            sb.Append(" (");
+            sb.Append(Argument.ReconstructArgs(ArgTypes));
+            sb.Append(");");
+
+            sb.Append(" // ");
+            sb.AppendLine(string.Join(", ", SpecNames));
 
             return sb.ToString();
         }

@@ -12,17 +12,15 @@ namespace WebIDLCollector.IDLTypes
 
         private string Name { get; }
         public string Type { get; set; }
-        public bool In { private get; set; }
         public bool Optional { get; set; }
         public string ExtendedAttribute { get; set; }
         public bool Clamp { get; set; }
         public bool EnforceRange { get; set; }
         public string TreatNullAs { get; set; }
-        public string TreatUndefinedAs { private get; set; }
         public bool Ellipsis { get; set; }
         public string Value { get; set; }
 
-        public string Reconstruct()
+        private string Reconstruct()
         {
             var sb = new StringBuilder();
             var comma = string.Empty;

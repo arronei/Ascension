@@ -81,7 +81,7 @@ namespace WebIDLCollector.Builders
 
             foreach (var callbackType in specData.Callbacks)
             {
-                finalRecreate.AppendLine(callbackType.Reconstruct).AppendLine();
+                finalRecreate.AppendLine(callbackType.Reconstruct()).AppendLine();
             }
 
             return finalRecreate.ToString().Trim();

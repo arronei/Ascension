@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using WebIDLCollector.IDLTypes;
+using WebIDLCollector.Utilities;
 
 namespace WebIDLCollector.GetData
 {
@@ -41,7 +42,7 @@ namespace WebIDLCollector.GetData
                         {
                             constructors.Add(constructor);
                         }
-                        var exposedValue = GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
+                        var exposedValue = RegexLibrary.GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(exposedValue))
                         {
                             exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(item => item.Trim()));
@@ -90,7 +91,7 @@ namespace WebIDLCollector.GetData
                     var memberItem = new DictionaryMember(m.Groups["item"].Value.Trim())
                     {
                         ExtendedAttribute = m.Groups["extended"].Value.Trim(),
-                        Type = OldTypeCleaner.Replace(TypeCleaner.Replace(m.Groups["type"].Value, "?"), string.Empty).Trim(),
+                        Type = RegexLibrary.OldTypeCleaner.Replace(RegexLibrary.TypeCleaner.Replace(m.Groups["type"].Value.Replace("≺", "<").Replace("≻", ">"), "?"), string.Empty).Trim(),
                         Value = m.Groups["value"].Value.Trim(),
                         IsRequired = !string.IsNullOrWhiteSpace(m.Groups["required"].Value.Trim()),
                         SpecNames = new[] { specificationData.Name }

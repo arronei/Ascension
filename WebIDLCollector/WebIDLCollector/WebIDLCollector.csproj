@@ -87,6 +87,7 @@
     <Compile Include="TypeMirrorTypes\TypeMirrorType.cs" />
     <Compile Include="Utilities\Extensions.cs" />
     <Compile Include="Builders\WebIdlBuilder.cs" />
+    <Compile Include="Utilities\RegexLibrary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using WebIDLCollector.IDLTypes;
+using WebIDLCollector.Utilities;
 
 namespace WebIDLCollector.GetData
 {
     public static partial class DataCollectors
     {
-        private static readonly Regex GroupingCleaner = new Regex(@"[\(\)\s]+", RegexOptions.Compiled);
+        private static readonly Regex ArgumentParser = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
+        ((?<in>in)\s+)?
+        ((?<optional>optional)\s+)?
+        (?<type>[^\.=]+)
+        (\s*(?<ellipsis>\.\.\.))?\s+
+        ((?<name>[^=\s]+)
+        (\s*=\s*(?<value>.+?))?))$", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
-        private static readonly Regex TypeCleaner = new Regex(@"\s+\?", RegexOptions.Compiled);
-
-        private static readonly Regex OldTypeCleaner = new Regex(@"[a-z]*::", RegexOptions.Compiled);
-
-        private static readonly Regex ParenCleaner = new Regex(@"\(\)", RegexOptions.Compiled);
+        private static readonly Regex ArgumentExtendedParser = new Regex(@"(?<clamp>clamp)(,|$)|
+        (?<enforcerange>enforcerange)(,|$)|
+        (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)|
+        (treatundefinedas(\s*=\s*(?<treatundefinedas>[^\s,\]]+)))(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         private static string CleanString(string value)
         {
@@ -22,7 +28,7 @@ namespace WebIDLCollector.GetData
             value = Regex.Replace(value, @"\s *//.*$", string.Empty, RegexOptions.Multiline);
             value = Regex.Replace(value, @"\s*(set)?raises\([^)]*?\)\s*;", ";");
             value = Regex.Replace(value, @"\s*(?<start>(\(|,)\s*)in\s+", "${start}");
-            value = Regex.Replace(value, @"\s*", " ", RegexOptions.Singleline | RegexOptions.Multiline);
+            value = RegexLibrary.WhitespaceCleaner.Replace(value, " ");
             return value.Trim();
         }
 
@@ -39,9 +45,8 @@ namespace WebIDLCollector.GetData
 
                     var argumentItem = new Argument(m.Groups["name"].Value.Trim())
                     {
-                        Type = OldTypeCleaner.Replace(TypeCleaner.Replace(m.Groups["type"].Value, "?"), string.Empty).Trim(),
+                        Type = RegexLibrary.OldTypeCleaner.Replace(RegexLibrary.TypeCleaner.Replace(m.Groups["type"].Value, "?"), string.Empty).Trim(),
                         ExtendedAttribute = m.Groups["extended"].Value.Trim(),
-                        In = !string.IsNullOrWhiteSpace(m.Groups["in"].Value),
                         Optional = !string.IsNullOrWhiteSpace(m.Groups["optional"].Value),
                         Ellipsis = !string.IsNullOrWhiteSpace(m.Groups["ellipsis"].Value),
                         Value = m.Groups["value"].Value.Trim()
@@ -49,12 +54,11 @@ namespace WebIDLCollector.GetData
 
                     if (!string.IsNullOrWhiteSpace(argumentItem.ExtendedAttribute))
                     {
-                        foreach (Match aep in AttributeExtendedParser.Matches(argumentItem.ExtendedAttribute))
+                        foreach (Match aep in ArgumentExtendedParser.Matches(argumentItem.ExtendedAttribute))
                         {
                             argumentItem.Clamp = !string.IsNullOrWhiteSpace(aep.Groups["clamp"].Value.Trim());
                             argumentItem.EnforceRange = !string.IsNullOrWhiteSpace(aep.Groups["enforcerange"].Value.Trim());
                             argumentItem.TreatNullAs = aep.Groups["treatnullas"].Value.Trim();
-                            argumentItem.TreatUndefinedAs = aep.Groups["treatundefinedas"].Value.Trim();
                         }
                     }
 
