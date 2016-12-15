@@ -6,7 +6,7 @@ using WebIDLCollector.IDLTypes;
 
 namespace WebIDLCollector.GetData
 {
-    public partial class DataCollectors
+    public static partial class DataCollectors
     {
         private static readonly Regex CallbackParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?callback\s+(?<name>\w+)\s*=\s*(?<type>.+?)\s+\((?<args>[^\)]+)?\);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 

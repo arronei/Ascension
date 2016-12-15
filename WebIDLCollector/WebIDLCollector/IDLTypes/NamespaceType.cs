@@ -11,12 +11,12 @@ namespace WebIDLCollector.IDLTypes
             Exposed = new List<string>();
         }
 
+        public string ExtendedAttribute { get; set; }
         public IEnumerable<string> Exposed { get; set; }
-
         public bool SecureContext { get; set; }
-        public bool IsPartial { get; set; }
+        public bool IsPartial { private get; set; }
         public string Name { get; set; }
-        public IEnumerable<Member> Members { get; set; }
+        public IEnumerable<NamespaceMember> Members { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
         public string Reconstruct(bool showMemberSpecName = false)

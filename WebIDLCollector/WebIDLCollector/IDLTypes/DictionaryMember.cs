@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace WebIDLCollector.IDLTypes
 {
@@ -18,8 +17,8 @@ namespace WebIDLCollector.IDLTypes
         public bool EnforceRange { get; set; }
         public string Name { get; }
         public string Type { get; set; }
-        public string Value { get; set; }
-        public bool IsRequired { get; set; }
+        public string Value { private get; set; }
+        public bool IsRequired { private get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
         public string Reconstruct(bool showSpecName = false)
@@ -69,11 +68,6 @@ namespace WebIDLCollector.IDLTypes
             sb.AppendLine(string.Join(", ", SpecNames));
 
             return sb.ToString();
-        }
-
-        public string Reconstruct2(bool showSpecName = false)
-        {
-            return (IsRequired ? "required " : string.Empty) + Regex.Replace((Type + " " + Name).Trim(), @"\s+", " ") + (!string.IsNullOrWhiteSpace(Value) ? " = " + Value : string.Empty).TrimEnd() + ";" + (showSpecName ? (SpecNames.Any() ? " // " + string.Join(", ", SpecNames) : string.Empty) : string.Empty);
         }
 
         public override bool Equals(object otherMember)

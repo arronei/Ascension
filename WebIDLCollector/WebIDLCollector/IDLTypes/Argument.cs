@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace WebIDLCollector.IDLTypes
 {
@@ -9,9 +10,8 @@ namespace WebIDLCollector.IDLTypes
             Name = name;
         }
 
-        public string Name { get; }
+        private string Name { get; }
         public string Type { get; set; }
-        public bool In { get; set; }
         public bool Optional { get; set; }
         public string ExtendedAttribute { get; set; }
         public bool Clamp { get; set; }
@@ -21,20 +21,59 @@ namespace WebIDLCollector.IDLTypes
         public bool Ellipsis { get; set; }
         public string Value { get; set; }
 
-        public string Reconstruct
+        public string Reconstruct()
         {
-            get
+            var sb = new StringBuilder();
+            var comma = string.Empty;
+
+            if (Clamp ||
+                EnforceRange ||
+                !string.IsNullOrWhiteSpace(TreatNullAs) ||
+                !string.IsNullOrWhiteSpace(TreatUndefinedAs))
             {
-                return
-                    (
-                        (!string.IsNullOrWhiteSpace(ExtendedAttribute) ? "[" + ExtendedAttribute + "] " : string.Empty) +
-                        (Optional ? "optional " : string.Empty) +
-                        Type + " " +
-                        (Ellipsis ? "... " : string.Empty) +
-                        Name +
-                        (!string.IsNullOrWhiteSpace(Value) ? " = " + Value : string.Empty)
-                    ).TrimEnd();
+                sb.Append("[");
+
+                if (Clamp)
+                {
+                    sb.Append("Clamp");
+                    comma = ", ";
+                }
+                if (EnforceRange)
+                {
+                    sb.Append(comma).Append("EnforceRange");
+                    comma = ", ";
+                }
+                if (!string.IsNullOrWhiteSpace(TreatNullAs))
+                {
+                    sb.Append(comma).Append("TreatNullAs=").Append(TreatNullAs);
+                    comma = ", ";
+                }
+                if (!string.IsNullOrWhiteSpace(TreatUndefinedAs))
+                {
+                    sb.Append(comma).Append("TreatUndefinedAs=").Append(TreatUndefinedAs);
+                }
+
+                sb.Append("] ");
             }
+
+            if (Optional)
+            {
+                sb.Append("optional ");
+            }
+            sb.Append(Type);
+            sb.Append(" ");
+            if (Ellipsis)
+            {
+                sb.Append("... ");
+            }
+            sb.Append(Name);
+            if (!string.IsNullOrWhiteSpace(Value))
+            {
+                sb.Append(" = ");
+                sb.Append(Value);
+            }
+
+            return sb.ToString().Trim();
         }
     }
 
@@ -43,12 +82,13 @@ namespace WebIDLCollector.IDLTypes
         public bool Equals(Argument x, Argument y)
         {
             return x.Type.Equals(y.Type) &&
-                   x.Optional.Equals(y.Optional) &&
-                   x.Clamp.Equals(y.Clamp) &&
-                   x.EnforceRange.Equals(y.EnforceRange) &&
-                   x.TreatNullAs.Equals(y.TreatNullAs) &&
-                   x.Ellipsis.Equals(y.Ellipsis) &&
-                   (x.Value == null || x.Value.Equals(y.Value));
+                    x.Optional.Equals(y.Optional) &&
+                    x.Clamp.Equals(y.Clamp) &&
+                    x.EnforceRange.Equals(y.EnforceRange) &&
+                    x.TreatNullAs.Equals(y.TreatNullAs) &&
+                    x.TreatUndefinedAs.Equals(y.TreatUndefinedAs) &&
+                    x.Ellipsis.Equals(y.Ellipsis) &&
+                    (x.Value == null || x.Value.Equals(y.Value));
         }
 
         public int GetHashCode(Argument obj)
@@ -58,8 +98,8 @@ namespace WebIDLCollector.IDLTypes
                               ^ obj.Clamp.GetHashCode()) << 5)
                             ^ obj.EnforceRange.GetHashCode()) << 5)
                           ^ obj.TreatNullAs.GetHashCode()) << 5)
-                      ^ obj.Ellipsis.GetHashCode()) << 5)
-                    ^ obj.Value.GetHashCode()) << 5;
+                        ^ obj.Ellipsis.GetHashCode()) << 5)
+                      ^ obj.Value.GetHashCode()) << 5;
         }
     }
 }

@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Builders\BuilderHelpers.cs" />
     <Compile Include="GetData\GetCallbackData.cs" />
+    <Compile Include="GetData\GetData.cs" />
     <Compile Include="GetData\GetDictionaryData.cs" />
     <Compile Include="GetData\GetEnumData.cs" />
     <Compile Include="GetData\GetImplementsData.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="IDLTypes\ImplementsType.cs" />
     <Compile Include="IDLTypes\InterfaceType.cs" />
     <Compile Include="IDLTypes\Member.cs" />
+    <Compile Include="IDLTypes\NamespaceMember.cs" />
     <Compile Include="IDLTypes\NamespaceType.cs" />
     <Compile Include="IDLTypes\Property.cs" />
     <Compile Include="IDLTypes\TypeDefType.cs" />

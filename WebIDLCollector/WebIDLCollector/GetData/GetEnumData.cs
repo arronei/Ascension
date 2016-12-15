@@ -6,7 +6,7 @@ using WebIDLCollector.IDLTypes;
 
 namespace WebIDLCollector.GetData
 {
-    public partial class DataCollectors
+    public static partial class DataCollectors
     {
         private static readonly Regex EnumParser = new Regex(@"enum\s+(?<name>[A-Z_a-z][0-9A-Z_a-z]*)\s*{\s*(?<enumvalues>[^}]+)\s*};?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 

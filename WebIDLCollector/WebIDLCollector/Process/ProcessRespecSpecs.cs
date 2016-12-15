@@ -16,6 +16,7 @@ namespace WebIDLCollector.Process
             specificationData.Enumerations.AddRange(DataCollectors.GetAllEnums(cleanString, specificationData));
             specificationData.Implements.AddRange(DataCollectors.GetAllImplements(cleanString, specificationData));
             specificationData.Interfaces.AddRange(DataCollectors.GetAllInterfaces(cleanString, specificationData));
+            specificationData.Namespaces.AddRange(DataCollectors.GetAllNamespaces(cleanString, specificationData));
             specificationData.TypeDefs.AddRange(DataCollectors.GetAllTypeDefs(cleanString, specificationData));
         }
 

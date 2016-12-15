@@ -16,15 +16,12 @@ namespace WebIDLCollector.IDLTypes
             SpecNames = new List<string>();
         }
 
-        public Tuple<string, string, IEnumerable<Argument>> Key
-        {
-            get { return new Tuple<string, string, IEnumerable<Argument>>(Name, Type, ArgTypes); }
-        }
+        public Tuple<string, string, IEnumerable<Argument>> Key => new Tuple<string, string, IEnumerable<Argument>>(Name, Type, ArgTypes);
 
         public string Name { get; }
         public string Type { get; set; }
-        public bool Function { get; set; }
-        public bool Attribute { get; set; }
+        public bool Function { private get; set; }
+        public bool Attribute { private get; set; }
         public string ExtendedAttribute { get; set; }
         public IEnumerable<string> Exposed { get; set; }
         public bool Clamp { get; set; }
@@ -40,28 +37,28 @@ namespace WebIDLCollector.IDLTypes
         public string TreatUndefinedAs { get; set; }
         public bool Unforgeable { get; set; }
         public bool Unscopeable { get; set; }
-        public bool Static { get; set; }
+        public bool Static { private get; set; }
         public bool HasGet { get; set; }
         public bool HasSet { get; set; }
         public bool Getter { get; set; }
-        public bool Setter { get; set; }
-        public bool Creator { get; set; }
-        public bool Deleter { get; set; }
-        public bool LegacyCaller { get; set; }
+        public bool Setter { private get; set; }
+        public bool Creator { private get; set; }
+        public bool Deleter { private get; set; }
+        public bool LegacyCaller { private get; set; }
         public bool Stringifier { get; set; }
         public bool Serializer { get; set; }
-        public bool Inherit { get; set; }
+        public bool Inherit { private get; set; }
         public bool MapLike { get; set; }
         public bool SetLike { get; set; }
         public bool Readonly { get; set; }
-        public bool Required { get; set; }
-        public bool Const { get; set; }
+        public bool Required { private get; set; }
+        public bool Const { private get; set; }
         public bool Iterable { get; set; }
-        public bool LegacyIterable { get; set; }
-        public string Bracket { get; set; }
-        public string Value { get; set; }
+        public bool LegacyIterable { private get; set; }
+        public string Bracket { private get; set; }
+        public string Value { private get; set; }
         public string Args { get; set; }
-        public IEnumerable<Argument> ArgTypes { get; set; }
+        public IEnumerable<Argument> ArgTypes { private get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
         public string Reconstruct(bool showSpecName = false)
@@ -80,6 +77,7 @@ namespace WebIDLCollector.IDLTypes
                 SameObject ||
                 SecureContext ||
                 !string.IsNullOrWhiteSpace(TreatNullAs) ||
+                !string.IsNullOrWhiteSpace(TreatUndefinedAs) ||
                 Unforgeable ||
                 Unscopeable)
             {
@@ -147,6 +145,11 @@ namespace WebIDLCollector.IDLTypes
                 if (!string.IsNullOrWhiteSpace(TreatNullAs))
                 {
                     sb.Append(comma).Append("TreatNullAs=").Append(TreatNullAs);
+                    comma = ", ";
+                }
+                if (!string.IsNullOrWhiteSpace(TreatUndefinedAs))
+                {
+                    sb.Append(comma).Append("TreatUndefinedAs=").Append(TreatUndefinedAs);
                     comma = ", ";
                 }
                 if (Unforgeable)
@@ -264,38 +267,6 @@ namespace WebIDLCollector.IDLTypes
             return Regex.Replace(Regex.Replace(sb.ToString().Trim(), @"\s+;", ";"), @"\s+", " ");
         }
 
-
-        public string Reconstruct2(bool showSpecName = false)
-        {
-            return
-                (
-                    (!string.IsNullOrWhiteSpace(ExtendedAttribute) ? "[" + ExtendedAttribute + "] " : string.Empty) +
-                    (Static ? "static " : string.Empty) +
-                    (Getter ? "getter " : string.Empty) +
-                    (Setter ? "setter " : string.Empty) +
-                    (Creator ? "creator " : string.Empty) +
-                    (Deleter ? "deleter " : string.Empty) +
-                    (LegacyCaller ? "legacycaller " : string.Empty) +
-                    (Stringifier ? "stringifier " : string.Empty) +
-                    (Serializer ? "serializer " : string.Empty) +
-                    (Inherit ? "inherit " : string.Empty) +
-                    (Readonly ? "readonly " : string.Empty) +
-                    (Const ? "const " : string.Empty) +
-                    (Attribute ? "attribute " : string.Empty) +
-                    (Iterable ? "iterable " : string.Empty) +
-                    (LegacyIterable ? "legacyiterable " : string.Empty) +
-                    (MapLike ? "maplike <" : string.Empty) +
-                    (SetLike ? "setlike <" : string.Empty) +
-                    Type + " " +
-                    (MapLike || SetLike ? ">" : string.Empty) +
-                    (Required ? "required " : string.Empty) +
-                    Name +
-                    (Function ? "(" + ReconstructArgs(ArgTypes) + ")" : (!string.IsNullOrWhiteSpace(Value) ? " = " + Value : string.Empty)) +
-                    ";"
-                    + (showSpecName ? (SpecNames.Any() ? " // " + string.Join(", ", SpecNames) : string.Empty) : string.Empty)
-                ).TrimEnd();
-        }
-
         private static string ReconstructArgs(IEnumerable<Argument> argTypes)
         {
             var sb = new StringBuilder();
@@ -303,7 +274,7 @@ namespace WebIDLCollector.IDLTypes
             var comma = string.Empty;
             foreach (var argument in argTypes)
             {
-                sb.Append(comma).Append(argument.Reconstruct);
+                sb.Append(comma).Append(argument.Reconstruct());
                 comma = ", ";
             }
 

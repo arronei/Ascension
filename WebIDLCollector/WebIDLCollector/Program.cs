@@ -133,6 +133,7 @@ namespace WebIDLCollector
 
             if (!specData.Callbacks.Any() &&
                 !specData.Dictionaries.Any() &&
+                !specData.Namespaces.Any() &&
                 !specData.Enumerations.Any() &&
                 !specData.Implements.Any() &&
                 !specData.Interfaces.Any() &&
@@ -141,9 +142,10 @@ namespace WebIDLCollector
                 Console.ForegroundColor = ConsoleColor.Red;
             }
 
-            Console.Write("Dictionaries: " + specData.Dictionaries.Count + ", ");
             Console.Write("Enumerations: " + specData.Enumerations.Count + ", ");
             Console.Write("Implements: " + specData.Implements.Count + ", ");
+            Console.Write("Dictionaries: " + specData.Dictionaries.Count + ", ");
+            Console.Write("Namespaces: " + specData.Namespaces.Count + ", ");
             Console.Write("Interfaces: " + specData.Interfaces.Count + ", ");
             Console.Write("TypeDefs: " + specData.TypeDefs.Count + ", ");
             Console.WriteLine("Callbacks: " + specData.Callbacks.Count);

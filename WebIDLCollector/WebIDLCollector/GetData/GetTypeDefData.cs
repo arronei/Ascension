@@ -6,7 +6,7 @@ using WebIDLCollector.IDLTypes;
 
 namespace WebIDLCollector.GetData
 {
-    public partial class DataCollectors
+    public static partial class DataCollectors
     {
         private static readonly Regex TypeDefParser = new Regex(@"typedef\s+(?<type>[^;]+)\s+(?<item>[^;]+);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 

@@ -36,7 +36,7 @@ namespace WebIDLCollector.IDLTypes
             var comma = string.Empty;
             foreach (var argument in argTypes)
             {
-                sb.Append(comma).Append(argument.Reconstruct);
+                sb.Append(comma).Append(argument.Reconstruct());
                 comma = ", ";
             }
 

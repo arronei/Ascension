@@ -29,14 +29,13 @@ namespace WebIDLCollector.IDLTypes
         public bool LegacyArrayClass { get; set; }
         public bool LegacyUnenumerableNamedProperties { get; set; }
         public IEnumerable<string> NamedConstructors { get; set; }
-        public bool NamedPropertiesObject { get; set; }
         public bool NoInterfaceObject { get; set; }
         public bool OverrideBuiltins { get; set; }
         public bool IsPrimaryGlobal { get; set; }
         public IEnumerable<string> PrimaryGlobals { get; set; }
         public bool SecureContext { get; set; }
         public bool Unforgeable { get; set; }
-        public bool IsPartial { get; set; }
+        public bool IsPartial { private get; set; }
         public bool IsCallback { get; set; }
         public string Name { get; set; }
         public IEnumerable<string> Inherits { get; set; }

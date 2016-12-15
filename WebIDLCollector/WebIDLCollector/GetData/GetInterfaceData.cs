@@ -6,7 +6,7 @@ using WebIDLCollector.IDLTypes;
 
 namespace WebIDLCollector.GetData
 {
-    public partial class DataCollectors
+    public static partial class DataCollectors
     {
         private static readonly Regex InterfaceParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?
         (((?<partial>partial)|(?<callback>callback))\s+)?(/\*[^\*]+\*/\s*)?interface\s+(/\*[^\*]+\*/\s*)?
@@ -26,7 +26,7 @@ namespace WebIDLCollector.GetData
         (?<securecontext>securecontext)(,|$)|
         (?<unforgeable>unforgeable)(,|$))+", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
-        private static readonly Regex IndividualMember = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
+        private static readonly Regex IndividualInterfaceMember = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
         ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(?<type>.+)\s+(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
         (?<const>const)\s+(?<type>.+)\s+(?<item>.+?)\s*=\s*(?<value>.+?)|
         (?<serializer>serializer)\s*((?<type>.+)\s+((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
@@ -52,6 +52,7 @@ namespace WebIDLCollector.GetData
         (?<sameobject>sameobject)(,|$)|
         (?<securecontext>securecontext)(,|$)|
         (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)|
+        (treatundefinedas(\s*=\s*(?<treatundefinedas>[^\s,\]]+)))(,|$)|
         (?<unforgeable>unforgeable)(,|$)|
         (?<unscopeable>unscopeable)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
@@ -112,17 +113,17 @@ namespace WebIDLCollector.GetData
                         {
                             namedConstructors.Add(named);
                         }
-                        var exposedValue = Regex.Replace(m.Groups["exposed"].Value, @"[\(\)\s]+", string.Empty);
+                        var exposedValue = GroupingCleaner.Replace(m.Groups["exposed"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(exposedValue))
                         {
                             exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
                         }
-                        var globalsValue = Regex.Replace(m.Groups["globals"].Value, @"[\(\)\s]+", string.Empty);
+                        var globalsValue = GroupingCleaner.Replace(m.Groups["globals"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(globalsValue))
                         {
                             globals.AddRange(globalsValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
                         }
-                        var primaryGlobalsValue = Regex.Replace(m.Groups["primaryglobals"].Value, @"[\(\)\s]+", string.Empty);
+                        var primaryGlobalsValue = GroupingCleaner.Replace(m.Groups["primaryglobals"].Value, string.Empty);
                         if (!string.IsNullOrWhiteSpace(primaryGlobalsValue))
                         {
                             primaryGlobals.AddRange(primaryGlobalsValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
@@ -154,14 +155,6 @@ namespace WebIDLCollector.GetData
             return interfaces;
         }
 
-        private static string CleanString(string value)
-        {
-            value = value.Trim().Trim('.').Trim();
-            value = Regex.Replace(value, @"\s*(set)?raises\([^)]*?\)\s*;", ";");
-            value = Regex.Replace(value, @"(?<start>(\(|,)\s*)in\s+", "${start}");
-            return value.Trim();
-        }
-
         private static IEnumerable<Member> GetAllInterfaceMembers(string memberItems, SpecData specificationData, ref InterfaceType interfaceDefinition)
         {
             var memberList = new List<Member>();
@@ -172,9 +165,9 @@ namespace WebIDLCollector.GetData
 
             foreach (var item in members.Where(item => !string.IsNullOrWhiteSpace(item)))
             {
-                if (IndividualMember.IsMatch(item))
+                if (IndividualInterfaceMember.IsMatch(item))
                 {
-                    var m = IndividualMember.Match(item);
+                    var m = IndividualInterfaceMember.Match(item);
 
                     var isProperty = !string.IsNullOrWhiteSpace(m.Groups["attribute"].Value) &&
                                     string.IsNullOrWhiteSpace(m.Groups["function"].Value) &&
@@ -234,10 +227,11 @@ namespace WebIDLCollector.GetData
                             memberItem.SameObject = memberItem.SameObject || !string.IsNullOrWhiteSpace(mep.Groups["sameobject"].Value.Trim());
                             memberItem.SecureContext = memberItem.SecureContext || !string.IsNullOrWhiteSpace(mep.Groups["securecontext"].Value.Trim());
                             memberItem.TreatNullAs = mep.Groups["treatnullas"].Value.Trim();
+                            memberItem.TreatUndefinedAs = mep.Groups["treatundefinedas"].Value.Trim();
                             memberItem.Unforgeable = memberItem.Unforgeable || !string.IsNullOrWhiteSpace(mep.Groups["unforgeable"].Value.Trim());
                             memberItem.Unscopeable = memberItem.Unscopeable || !string.IsNullOrWhiteSpace(mep.Groups["unscopeable"].Value.Trim());
 
-                            var exposedValue = Regex.Replace(mep.Groups["exposed"].Value, @"[\(\)\s]+", string.Empty);
+                            var exposedValue = GroupingCleaner.Replace(mep.Groups["exposed"].Value, string.Empty);
                             if (!string.IsNullOrWhiteSpace(exposedValue))
                             {
                                 exposed.AddRange(exposedValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
@@ -292,51 +286,6 @@ namespace WebIDLCollector.GetData
             }
 
             return memberList.OrderBy(a => a.Name).ToList();
-        }
-
-        private static IEnumerable<Argument> GetArgTypes(string args)
-        {
-            var arguments = args.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries);
-            var argumentList = new List<Argument>();
-
-            foreach (var argument in arguments.Select(argument => argument.Trim()))
-            {
-                if (ArgumentParser.IsMatch(argument))
-                {
-                    var m = ArgumentParser.Match(argument);
-
-                    var argumentItem = new Argument(m.Groups["name"].Value.Trim())
-                    {
-                        Type = Regex.Replace(Regex.Replace(m.Groups["type"].Value, @"\s+\?", "?"), @"[a-z]*::", string.Empty).Trim(),
-                        ExtendedAttribute = m.Groups["extended"].Value.Trim(),
-                        In = !string.IsNullOrWhiteSpace(m.Groups["in"].Value),
-                        Optional = !string.IsNullOrWhiteSpace(m.Groups["optional"].Value),
-                        Ellipsis = !string.IsNullOrWhiteSpace(m.Groups["ellipsis"].Value),
-                        Value = m.Groups["value"].Value.Trim()
-                    };
-
-                    if (!string.IsNullOrWhiteSpace(argumentItem.ExtendedAttribute))
-                    {
-                        foreach (Match aep in AttributeExtendedParser.Matches(argumentItem.ExtendedAttribute))
-                        {
-                            argumentItem.Clamp = !string.IsNullOrWhiteSpace(aep.Groups["clamp"].Value.Trim());
-                            argumentItem.EnforceRange = !string.IsNullOrWhiteSpace(aep.Groups["enforcerange"].Value.Trim());
-                            argumentItem.TreatNullAs = aep.Groups["treatnullas"].Value.Trim();
-                        }
-                    }
-
-                    argumentList.Add(argumentItem);
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Invalid argument- " + argument);
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    throw new ArgumentException();
-                }
-            }
-
-            return argumentList;
         }
     }
 }

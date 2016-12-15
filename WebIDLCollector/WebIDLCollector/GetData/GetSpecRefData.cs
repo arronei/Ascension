@@ -7,7 +7,7 @@ using WebIDLCollector.SpecRef;
 
 namespace WebIDLCollector.GetData
 {
-    public partial class DataCollectors
+    public static partial class DataCollectors
     {
         public static SortedDictionary<string, SpecRefType> GetSpecRefData()
         {

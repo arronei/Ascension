@@ -54,6 +54,11 @@ namespace WebIDLCollector.Builders
                 finalRecreate.AppendLine(dictionaryType.Reconstruct(_showSpecNames));
             }
 
+            foreach (var namespaceType in specData.Namespaces)
+            {
+                finalRecreate.AppendLine(namespaceType.Reconstruct(_showSpecNames));
+            }
+
             foreach (var interfaceType in specData.Interfaces)
             {
                 var name = interfaceType.Name;

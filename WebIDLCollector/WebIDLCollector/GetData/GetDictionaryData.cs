@@ -6,7 +6,7 @@ using WebIDLCollector.IDLTypes;
 
 namespace WebIDLCollector.GetData
 {
-    public partial class DataCollectors
+    public static partial class DataCollectors
     {
         private static readonly Regex DictionaryParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?(?<partial>partial)?\s*dictionary\s+(?<name>\w+)(?:\s*:\s*(?<inherits>[\w,\s]+))?\s*{\s*(?<members>[^}]+)\s*};?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 

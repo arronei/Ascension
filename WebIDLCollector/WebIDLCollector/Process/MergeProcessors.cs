@@ -12,6 +12,7 @@ namespace WebIDLCollector.Process
             var finalInterfaceTypes = new SortedDictionary<string, InterfaceType>();
             var finalCallbackTypes = new SortedDictionary<string, CallbackType>();
             var finalDictionaryTypes = new SortedDictionary<string, DictionaryType>();
+            var finalNamespaceTypes = new SortedDictionary<string, NamespaceType>();
             var finalImplementsTypes = new Dictionary<Tuple<string, string>, ImplementsType>();
             var finalTypeDefsTypes = new SortedDictionary<string, TypeDefType>();
             var finalEnumTypes = new SortedDictionary<string, EnumType>();
@@ -26,6 +27,8 @@ namespace WebIDLCollector.Process
 
                 MergeDictionaries(specData, keepPartials, ref finalDictionaryTypes);
 
+                MergeNamespaces(specData, keepPartials, ref finalNamespaceTypes);
+
                 MergeImplements(specData, ref finalImplementsTypes);
 
                 MergeTypeDefs(specData, ref finalTypeDefsTypes);
@@ -39,6 +42,7 @@ namespace WebIDLCollector.Process
                 Interfaces = finalInterfaceTypes.Values.ToList(),
                 Callbacks = finalCallbackTypes.Values.ToList(),
                 Dictionaries = finalDictionaryTypes.Values.ToList(),
+                Namespaces = finalNamespaceTypes.Values.ToList(),
                 Implements = finalImplementsTypes.Values.ToList(),
                 TypeDefs = finalTypeDefsTypes.Values.ToList(),
                 Enumerations = finalEnumTypes.Values.ToList()
@@ -180,6 +184,57 @@ namespace WebIDLCollector.Process
             }
         }
 
+        private static void MergeNamespaces(SpecData data, bool keepPartials, ref SortedDictionary<string, NamespaceType> finalNamespaceTypes)
+        {
+            foreach (var namespaceType in data.Namespaces)
+            {
+                var namespaceName = namespaceType.Name;
+
+                if (!finalNamespaceTypes.ContainsKey(namespaceName))
+                {
+                    if (!keepPartials)
+                    {
+                        namespaceType.IsPartial = false;
+                    }
+                    finalNamespaceTypes.Add(namespaceName, namespaceType);
+                    continue;
+                }
+
+                var currentNamespace = finalNamespaceTypes[namespaceName];
+                if (!keepPartials)
+                {
+                    currentNamespace.IsPartial = false;
+                }
+
+                currentNamespace.SecureContext = currentNamespace.SecureContext || namespaceType.SecureContext;
+                currentNamespace.Exposed = currentNamespace.Exposed.Union(namespaceType.Exposed).OrderBy(a => a);
+                currentNamespace.SpecNames = currentNamespace.SpecNames.Union(namespaceType.SpecNames).OrderBy(a => a);
+
+                var members = currentNamespace.Members.ToList();
+
+                foreach (var member in namespaceType.Members)
+                {
+                    if (!members.Contains(member))
+                    {
+                        members.Add(member);
+                    }
+
+                    var currentMember = members.Single(a => a.Equals(member));
+
+                    currentMember.Exposed = currentMember.Exposed.Union(member.Exposed).OrderBy(a => a);
+                    currentMember.SecureContext = currentMember.SecureContext || member.SecureContext;
+                    currentMember.SpecNames = currentMember.SpecNames.Union(member.SpecNames).OrderBy(a => a);
+
+                    members.Remove(member);
+                    members.Add(currentMember);
+                }
+                currentNamespace.Members = members;
+                currentNamespace.Members = currentNamespace.Members.OrderBy(a => a.Name);
+
+                finalNamespaceTypes[namespaceName] = currentNamespace;
+            }
+        }
+
         private static void MergeInterfaces(SpecData data, bool keepPartials, ref SortedDictionary<string, InterfaceType> finalInterfaceTypes)
         {
             foreach (var interfaceType in data.Interfaces)
@@ -210,8 +265,10 @@ namespace WebIDLCollector.Process
                 currentInterface.LegacyUnenumerableNamedProperties = currentInterface.LegacyUnenumerableNamedProperties || interfaceType.LegacyUnenumerableNamedProperties;
                 currentInterface.NoInterfaceObject = currentInterface.NoInterfaceObject || interfaceType.NoInterfaceObject;
                 currentInterface.OverrideBuiltins = currentInterface.OverrideBuiltins || interfaceType.OverrideBuiltins;
+                currentInterface.SecureContext = currentInterface.SecureContext || interfaceType.SecureContext;
                 currentInterface.Unforgeable = currentInterface.Unforgeable || interfaceType.Unforgeable;
 
+                currentInterface.Exposed = currentInterface.Exposed.Union(interfaceType.Exposed).OrderBy(a => a);
                 currentInterface.Globals = currentInterface.Globals.Union(interfaceType.Globals).OrderBy(a => a);
                 currentInterface.PrimaryGlobals = currentInterface.PrimaryGlobals.Union(interfaceType.PrimaryGlobals).OrderBy(a => a);
                 currentInterface.Constructors = currentInterface.Constructors.Union(interfaceType.Constructors);
@@ -234,12 +291,15 @@ namespace WebIDLCollector.Process
                     currentMember.Clamp = currentMember.Clamp || member.Clamp;
                     currentMember.EnforceRange = currentMember.EnforceRange || member.EnforceRange;
                     currentMember.Exposed = currentMember.Exposed.Union(member.Exposed).OrderBy(a => a);
+                    currentMember.LenientSetter = currentMember.LenientSetter || member.LenientSetter;
                     currentMember.LenientThis = currentMember.LenientThis || member.LenientThis;
                     currentMember.NewObject = currentMember.NewObject || member.NewObject;
                     currentMember.PutForwards = currentMember.PutForwards ?? member.PutForwards;
                     currentMember.Replaceable = currentMember.Replaceable || member.Replaceable;
                     currentMember.SameObject = currentMember.SameObject || member.SameObject;
+                    currentMember.SecureContext = currentMember.SecureContext || member.SecureContext;
                     currentMember.TreatNullAs = currentMember.TreatNullAs ?? member.TreatNullAs;
+                    currentMember.TreatUndefinedAs = currentMember.TreatUndefinedAs ?? member.TreatUndefinedAs;
                     currentMember.Unforgeable = currentMember.Unforgeable || member.Unforgeable;
                     currentMember.Unscopeable = currentMember.Unscopeable || member.Unscopeable;
 

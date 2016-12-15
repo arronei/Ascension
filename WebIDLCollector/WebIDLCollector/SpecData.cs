@@ -10,6 +10,7 @@ namespace WebIDLCollector
             Identification = new List<SpecIdentification>();
             Implements = new List<ImplementsType>();
             Interfaces = new List<InterfaceType>();
+            Namespaces = new List<NamespaceType>();
             Dictionaries = new List<DictionaryType>();
             Enumerations = new List<EnumType>();
             TypeDefs = new List<TypeDefType>();
@@ -26,6 +27,8 @@ namespace WebIDLCollector
         public List<ImplementsType> Implements { get; set; }
 
         public List<InterfaceType> Interfaces { get; set; }
+
+        public List<NamespaceType> Namespaces { get; set; }
 
         public List<DictionaryType> Dictionaries { get; set; }
 

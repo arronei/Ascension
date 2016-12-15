@@ -6,7 +6,7 @@ using WebIDLCollector.IDLTypes;
 
 namespace WebIDLCollector.GetData
 {
-    public partial class DataCollectors
+    public static partial class DataCollectors
     {
         private static readonly Regex ImplementsParser = new Regex(@"\s*(?<destination>[A-Z_a-z][0-9A-Z_a-z]*)\s+implements\s+(?<originator>[A-Z_a-z][0-9A-Z_a-z]*)", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
