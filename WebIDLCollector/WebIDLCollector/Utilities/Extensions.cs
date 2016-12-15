@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace WebIDLCollector.Utilities
@@ -20,28 +18,6 @@ namespace WebIDLCollector.Utilities
                 stream.Position = 0;
                 return (T)formatter.Deserialize(stream);
             }
-        }
-
-        /// <summary>Does a merge of two IEnumerable lists if not null; otherwise just sets the list to the second list</summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="first"></param>
-        /// <param name="second"></param>
-        /// <returns></returns>
-        public static IEnumerable<T> Merge<T>(this IEnumerable<T> first, IEnumerable<T> second)
-        {
-            if (first != null)
-            {
-                if (second != null)
-                {
-                    first = first.Union(second);
-                }
-            }
-            else
-            {
-                first = second;
-            }
-
-            return first;
         }
     }
 }

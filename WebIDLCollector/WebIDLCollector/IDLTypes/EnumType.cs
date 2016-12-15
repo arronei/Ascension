@@ -12,7 +12,7 @@ namespace WebIDLCollector.IDLTypes
         }
 
         public string Name { get; set; }
-        public IEnumerable<string> EnumValues { get; set; }
+        public IEnumerable<string> EnumValues { private get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
         public string Reconstruct

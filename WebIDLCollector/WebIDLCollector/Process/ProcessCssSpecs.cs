@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using AngleSharp.Dom;
@@ -223,8 +222,6 @@ namespace WebIDLCollector.Process
                 case "AminationType":
                     value = "AnimationType";
                     break;
-                default:
-                    throw new ArgumentException();
             }
 
             return value;

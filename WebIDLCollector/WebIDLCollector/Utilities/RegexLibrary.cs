@@ -12,7 +12,7 @@ namespace WebIDLCollector.Utilities
 
         public static Regex ParenCleaner { get; } = new Regex(@"\(\)", RegexOptions.Compiled);
 
-        public static Regex WhitespaceCleaner { get; } = new Regex(@"\s*", RegexOptions.Compiled | RegexOptions.Multiline | RegexOptions.Singleline);
+        public static Regex WhitespaceCleaner { get; } = new Regex(@"\s+", RegexOptions.Compiled | RegexOptions.Multiline | RegexOptions.Singleline);
 
         public static Regex PropertyCleaner { get; } = new Regex(@"[^-a-z]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
     }

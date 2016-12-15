@@ -87,4 +87,18 @@ namespace WebIDLCollector.IDLTypes
             return Name.GetHashCode();
         }
     }
+
+    public class NamespaceMemberCompare : IEqualityComparer<NamespaceMember>
+    {
+        public bool Equals(NamespaceMember x, NamespaceMember y)
+        {
+            return x.Key.Item1.Equals(y.Key.Item1) && x.Key.Item2.Equals(y.Key.Item2) && (x.Key.Item3 == null || x.Key.Item3.SequenceEqual(y.Key.Item3, new ArgumentTypeCompare()));
+        }
+
+        public int GetHashCode(NamespaceMember obj)
+        {
+            return ((obj.Key.Item1.GetHashCode() << 5)
+                    ^ obj.Key.Item2.GetHashCode()) << 5;
+        }
+    }
 }

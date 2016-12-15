@@ -12,22 +12,13 @@ namespace WebIDLCollector.IDLTypes
             SpecNames = new List<string>();
         }
 
-        public Tuple<string, string> Key
-        {
-            get { return new Tuple<string, string>(DestinationInterface, OriginatorInterface); }
-        }
+        public Tuple<string, string> Key => new Tuple<string, string>(DestinationInterface, OriginatorInterface);
 
         public string DestinationInterface { get; }
         public string OriginatorInterface { get; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct
-        {
-            get
-            {
-                return DestinationInterface + " implements " + OriginatorInterface + "; // " + string.Join(", ", SpecNames);
-            }
-        }
+        public string Reconstruct => DestinationInterface + " implements " + OriginatorInterface + "; // " + string.Join(", ", SpecNames);
 
         public override bool Equals(object otherMember)
         {

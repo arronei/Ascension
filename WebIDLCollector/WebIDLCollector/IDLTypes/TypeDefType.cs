@@ -13,12 +13,6 @@ namespace WebIDLCollector.IDLTypes
         public string Type { private get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct
-        {
-            get
-            {
-                return "typedef " + Type + " " + Name + "; // " + string.Join(", ", SpecNames);
-            }
-        }
+        public string Reconstruct => "typedef " + Type + " " + Name + "; // " + string.Join(", ", SpecNames);
     }
 }
