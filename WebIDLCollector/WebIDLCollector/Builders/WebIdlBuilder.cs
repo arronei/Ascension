@@ -41,12 +41,17 @@ namespace WebIDLCollector.Builders
 
             foreach (var enumerationType in specData.Enumerations)
             {
-                finalRecreate.AppendLine(enumerationType.Reconstruct);
+                finalRecreate.AppendLine(enumerationType.Reconstruct());
             }
 
             foreach (var typeDefType in specData.TypeDefs)
             {
-                finalRecreate.AppendLine(typeDefType.Reconstruct).AppendLine();
+                finalRecreate.AppendLine(typeDefType.Reconstruct());
+            }
+
+            foreach (var callbackType in specData.Callbacks)
+            {
+                finalRecreate.AppendLine(callbackType.Reconstruct());
             }
 
             foreach (var dictionaryType in specData.Dictionaries)
@@ -77,11 +82,6 @@ namespace WebIDLCollector.Builders
                     }
                 }
                 finalRecreate.AppendLine();
-            }
-
-            foreach (var callbackType in specData.Callbacks)
-            {
-                finalRecreate.AppendLine(callbackType.Reconstruct()).AppendLine();
             }
 
             return finalRecreate.ToString().Trim();

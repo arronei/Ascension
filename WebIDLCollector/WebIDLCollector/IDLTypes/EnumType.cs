@@ -15,24 +15,23 @@ namespace WebIDLCollector.IDLTypes
         public IEnumerable<string> EnumValues { private get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct
+        public string Reconstruct()
         {
-            get
+            var sb = new StringBuilder();
+
+            sb.Append("// ").AppendLine(string.Join(", ", SpecNames));
+            sb.Append("enum ").AppendLine(Name);
+            sb.Append("{");
+            var comma = string.Empty;
+            foreach (var item in EnumValues)
             {
-                var sb = new StringBuilder();
-                sb.Append("// ").AppendLine(string.Join(", ", SpecNames));
-                sb.Append("enum ").AppendLine(Name);
-                sb.AppendLine("{");
-                var comma = string.Empty;
-                foreach (var item in EnumValues)
-                {
-                    sb.Append(comma).Append("    \"").Append(item).Append("\"");
-                    comma = ",\r\n";
-                }
-                sb.AppendLine();
-                sb.AppendLine("};");
-                return sb.ToString();
+                sb.AppendLine(comma).Append("    \"").Append(item).Append("\"");
+                comma = ",";
             }
+            sb.AppendLine();
+            sb.AppendLine("};");
+
+            return sb.ToString();
         }
     }
 }

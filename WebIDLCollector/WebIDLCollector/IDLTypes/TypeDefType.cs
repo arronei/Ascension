@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace WebIDLCollector.IDLTypes
 {
@@ -13,6 +14,18 @@ namespace WebIDLCollector.IDLTypes
         public string Type { private get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct => "typedef " + Type + " " + Name + "; // " + string.Join(", ", SpecNames);
+        public string Reconstruct()
+        {
+            var sb = new StringBuilder();
+
+            sb.Append("typedef ");
+            sb.Append(Type);
+            sb.Append(" ");
+            sb.Append(Name);
+            sb.Append("; // ");
+            sb.AppendLine(string.Join(", ", SpecNames));
+
+            return sb.ToString();
+        }
     }
 }

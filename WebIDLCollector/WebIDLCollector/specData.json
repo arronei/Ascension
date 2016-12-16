@@ -854,27 +854,7 @@
     },
     {
         "name": "html5",
-        "url": "http://www.w3.org/TR/html5/infrastructure.html#infrastructure"
-    },
-    {
-        "name": "html5",
-        "url": "http://www.w3.org/TR/html5/dom.html#dom"
-    },
-    {
-        "name": "html5",
-        "url": "http://www.w3.org/TR/html5/semantics.html#semantics"
-    },
-    {
-        "name": "html5",
-        "url": "http://www.w3.org/TR/html5/browsers.html#browsers"
-    },
-    {
-        "name": "html5",
-        "url": "http://www.w3.org/TR/html5/webappapis.html#webappapis"
-    },
-    {
-        "name": "html5",
-        "url": "http://www.w3.org/TR/html5/obsolete.html#obsolete"
+        "url": "https://www.w3.org/TR/html5/single-page.html"
     },
     {
         "name": "html51",

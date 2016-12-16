@@ -61,8 +61,11 @@ namespace WebIDLCollector
                 allSpecData.AddRange(specDataList.Where(ProcessSpec));
 
                 var specNames = allSpecData.Select(a => a.Name).Distinct();
-                foreach (var webIdl in from specName in specNames let specSpecData = allSpecData.Where(a => a.Name.Equals(specName)) select MergeProcessor.MergeSpecData(specSpecData, specName, true) into mergedSpecSpecData select new WebIdlBuilder(mergedSpecSpecData))
+                foreach (var specName in specNames)
                 {
+                    var specSpecData = allSpecData.Where(a => a.Name.Equals(specName));
+                    var mergedSpecSpecData = MergeProcessor.MergeSpecData(specSpecData, specName, true);
+                    var webIdl = new WebIdlBuilder(mergedSpecSpecData);
                     webIdl.GenerateFile();
                 }
             }
