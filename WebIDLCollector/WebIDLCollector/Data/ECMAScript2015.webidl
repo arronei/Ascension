@@ -32,20 +32,20 @@ interface Array {
     unsigned long unshift(any... items);
     object values();
     attribute unsigned long length;
-}
+};
 
 [Constructor(unsigned long length)]
 interface ArrayBuffer {
     static boolean isView(any arg);
     attribute unsigned long byteLength;
     ArrayBuffer slice(unsigned long start, unsigned long end);
-}
+};
 
 [Constructor(optional boolean val)]
 interface Boolean {
     DOMString toString();
     boolean valueOf();
-}
+};
 
 [Constructor(object buffer, optional long byteOffset, optional unsigned long byteLength)]
 interface DataView {
@@ -69,7 +69,7 @@ interface DataView {
     void setUint8(octet byteOffset, octet value, optional boolean littleEndian);
     void setUint16(unsigned short byteOffset, unsigned short value, optional boolean littleEndian);
     void setUint32(unsigned long byteOffset, unsigned long value, optional boolean littleEndian);
-}
+};
 
 [Constructor, Constructor(object value), Constructor(long year, long month, optional long date, optional long hours, optional long minutes, optional long seconds, optional long ms)]
 interface Date {
@@ -120,27 +120,27 @@ interface Date {
     DOMString toTimeString();
     DOMString toUTCString();
     unsigned long valueOf();
-}
+};
 
 [Constructor(optional DOMString message)]
 interface Error {
     attribute DOMString message;
     attribute DOMString name;
     DOMString toString();
-}
+};
 
 [Constructor(optional DOMString message)]
 interface EvalError : Error {
-}
+};
 
 [Constructor, Constructor(any... argList), Constructor(unsigned long length), Constructor(Float32Array array), Constructor(object obj), Constructor(object buffer, optional long byteOffset, optional unsigned long byteLength)]
 interface Float32Array {
-}
+};
 Float32Array implements TypedArray;
 
 [Constructor, Constructor(any... argList), Constructor(unsigned long length), Constructor(Float64Array array), Constructor(object obj), Constructor(object buffer, optional long byteOffset, optional unsigned long byteLength)]
 interface Float64Array {
-}
+};
 Float64Array implements TypedArray;
 
 [Constructor(optional DOMString... params, optional DOMString functionBody)]
@@ -156,17 +156,17 @@ interface Function {
 
 [Constructor, Constructor(any... argList), Constructor(unsigned long length), Constructor(Int8Array array), Constructor(object obj), Constructor(object buffer, optional long byteOffset, optional unsigned long byteLength)]
 interface Int8Array {
-}
+};
 Int8Array implements TypedArray;
 
 [Constructor, Constructor(any... argList), Constructor(unsigned long length), Constructor(Int16Array array), Constructor(object obj), Constructor(object buffer, optional long byteOffset, optional unsigned long byteLength)]
 interface Int16Array {
-}
+};
 Int16Array implements TypedArray;
 
 [Constructor, Constructor(any... argList), Constructor(unsigned long length), Constructor(Int32Array array), Constructor(object obj), Constructor(object buffer, optional long byteOffset, optional unsigned long byteLength)]
 interface Int32Array {
-}
+};
 Int32Array implements TypedArray;
 
 [Constructor(optional object iterable)]
@@ -181,7 +181,7 @@ interface Map {
     Map set(any key, any value);
     attribute unsinged long size;
     object values();
-}
+};
 
 [Constructor(optional long value)]
 interface Number {
@@ -205,7 +205,7 @@ interface Number {
     DOMString toPrecision(long precision);
     DOMString toString(long radix);
     object valueOf();
-}
+};
 
 [Constructor(optional any value)]
 interface Object {
@@ -256,7 +256,7 @@ dictionary DataPropertyDescriptor {
 [Constructor(target, handler)]
 interface Proxy {
     static object revocable(object target, object handler);
-}
+};
 
 [Constructor(object executor)]
 interface Promise {
@@ -266,15 +266,15 @@ interface Promise {
     static Promise resolve(object x);
     object catch(object onRejected);
     Promise then(object onFulfilled, object onReject);
-}
+};
 
 [Constructor(optional DOMString message)]
 interface RangeError : Error {
-}
+};
 
 [Constructor(optional DOMString message)]
 interface ReferenceError : Error {
-}
+};
 
 [Constructor(object pattern, flags)]
 interface RegExp {
@@ -288,7 +288,7 @@ interface RegExp {
     boolean test(DOMString s);
     DOMString toString();
     attribute boolean unicode;
-}
+};
 
 [Constructor(optional iterable)]
 interface Set{
@@ -301,7 +301,7 @@ interface Set{
     object keys();
     attribute unsigned long size;
     object values();
-}
+};
 
 interface SIMD {
     static attribute float Float32x4;
@@ -313,7 +313,7 @@ interface SIMD {
     static attribute boolean Bool32x4;
     static attribute boolean Bool16x8;
     static attribute boolean Bool8x16;
-}
+};
 
 [Constructor(any value)]
 interface String {
@@ -345,7 +345,7 @@ interface String {
     DOMString toUpperCase();
     DOMString trim();
     object valueOf();
-}
+};
 
 [Constructor(optional DOMString description)]
 interface Symbol {
@@ -364,11 +364,11 @@ interface Symbol {
     static attribute object unscopables;
     DOMString toString();
     object valueOf();
-}
+};
 
 [Constructor(optional DOMString message)]
 interface SyntaxError : Error {
-}
+};
 
 [NoInterFaceObject]
 interface TypedArray {
@@ -404,55 +404,55 @@ interface TypedArray {
     DOMString toString();
     object values();
     attribute unsigned long BYTES_PER_ELEMENT;
-}
+};
 
 [Constructor(optional DOMString message)]
 interface TypeError : Error {
-}
+};
 
 [Constructor, Constructor(any... argList), Constructor(octet length), Constructor(Uint8Array array), Constructor(object obj), Constructor(object buffer, optional octet byteOffset, optional octet byteLength)]
 interface Uint8Array {
-}
+};
 Uint8Array implements TypedArray;
 
 [Constructor, Constructor(any... argList), Constructor(octet length), Constructor(Uint8ClampedArray array), Constructor(object obj), Constructor(object buffer, optional octet byteOffset, optional octet byteLength)]
 interface Uint8ClampedArray {
-}
+};
 Uint8ClampedArray implements TypedArray;
 
 [Constructor, Constructor(any... argList), Constructor(unsigned short length), Constructor(Uint16Array array), Constructor(object obj), Constructor(object buffer, optional unsigned short byteOffset, optional unsigned short byteLength)]
 interface Uint16Array {
-}
+};
 Uint16Array implements TypedArray;
 
 [Constructor, Constructor(any... argList), Constructor(unsigned long length), Constructor(Uint32Array array), Constructor(object obj), Constructor(object buffer, optional unsigned long byteOffset, optional unsigned long byteLength)]
 interface Uint32Array {
-}
+};
 Uint32Array implements TypedArray;
 
 [Constructor(optional DOMString message)]
 interface URIError : Error {
-}
+};
 
 [Constructor(optional object iterable)]
 interface WeakMap {
     boolean delete(any key);
     void get(any key);
-    boolean has(kany ey);
+    boolean has(any key);
     WeakMap set(any key, any value);
-}
+};
 
 [Constructor(optional object iterable)]
 interface WeakSet {
     Weakset add(any value);
     boolean delete(any value);
     boolean has(any value);
-}
+};
 
 interface JSON {
     static object parse(DOMString text, optional object reviver);
     DOMString stringify(object value, optional object replacer, optional object space);
-}
+};
 
 interface Math {
     const double E = 2.7182818284590452354;
@@ -498,10 +498,10 @@ interface Math {
     static float tan(float x);
     static float tanh(float x);
     static float trunc(float x);
-}
+};
 
 interface Intl {
     static attribute object Collator;
     static attribute object DateTimeFormat;
     static attribute object NumberFormat;
-}
+};

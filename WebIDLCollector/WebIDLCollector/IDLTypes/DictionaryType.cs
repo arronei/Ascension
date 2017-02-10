@@ -65,7 +65,7 @@ namespace WebIDLCollector.IDLTypes
             }
             if (!Members.Any())
             {
-                sb.AppendLine(" { }");
+                sb.AppendLine(" { };");
             }
             else
             {

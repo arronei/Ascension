@@ -92,7 +92,7 @@ namespace WebIDLCollector.IDLTypes
                     x.Optional.Equals(y.Optional) &&
                     x.Clamp.Equals(y.Clamp) &&
                     x.EnforceRange.Equals(y.EnforceRange) &&
-                    x.TreatNullAs.Equals(y.TreatNullAs) &&
+                    (x.TreatNullAs == null || x.TreatNullAs.Equals(y.TreatNullAs)) &&
                     x.Ellipsis.Equals(y.Ellipsis) &&
                     (x.Value == null || x.Value.Equals(y.Value));
         }
