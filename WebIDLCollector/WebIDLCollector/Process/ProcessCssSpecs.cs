@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 using AngleSharp.Dom;
+using WebIDLCollector.Builders;
 using WebIDLCollector.IDLTypes;
 using WebIDLCollector.Utilities;
 
@@ -171,6 +172,7 @@ namespace WebIDLCollector.Process
             }
 
             interfaceDefinition.Members = memberList;
+            WebIdlBuilder.GenerateInterfaceFile(interfaceDefinition);
             interfaces.Add(interfaceDefinition);
             return interfaces;
         }

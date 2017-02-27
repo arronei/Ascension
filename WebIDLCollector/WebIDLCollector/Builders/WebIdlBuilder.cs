@@ -35,6 +35,35 @@ namespace WebIDLCollector.Builders
             }
         }
 
+        public static void GenerateInterfaceFile(InterfaceType interfaceDefinition)
+        {
+            //const string webidlDirectory = "webidl/interfaces";
+            //var webidlFile = webidlDirectory + "/" + interfaceDefinition.Name + ".webidl";
+            //if (!Directory.Exists(webidlDirectory))
+            //{
+            //    Directory.CreateDirectory(webidlDirectory);
+            //}
+
+            //var name = interfaceDefinition.Name;
+            //Console.WriteLine("Generating interface WebIdl - " + name);
+
+            //var finalRecreate = new StringBuilder();
+            //finalRecreate.AppendLine().Append(interfaceDefinition.Reconstruct());
+
+            //if (File.Exists(webidlFile))
+            //{
+            //    File.AppendAllText(webidlFile, finalRecreate.ToString().TrimEnd());
+            //}
+            //else
+            //{
+            //    using (var file = new StreamWriter(webidlFile, true))
+            //    {
+            //        file.WriteLine("// Last Generated: " + "\"" + DateTime.Now + "\",");
+            //        file.Write(finalRecreate.ToString().Trim());
+            //    }
+            //}
+        }
+
         private string CreateWebIdl(SpecData specData)
         {
             var finalRecreate = new StringBuilder();

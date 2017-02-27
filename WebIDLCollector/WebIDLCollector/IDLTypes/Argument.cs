@@ -54,11 +54,11 @@ namespace WebIDLCollector.IDLTypes
                 sb.Append("optional ");
             }
             sb.Append(Type);
-            sb.Append(" ");
             if (Ellipsis)
             {
-                sb.Append("... ");
+                sb.Append("...");
             }
+            sb.Append(" ");
             sb.Append(Name);
             if (!string.IsNullOrWhiteSpace(Value))
             {

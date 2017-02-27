@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using WebIDLCollector.Builders;
 using WebIDLCollector.IDLTypes;
 using WebIDLCollector.Utilities;
 
@@ -43,6 +44,7 @@ namespace WebIDLCollector.GetData
         (?<type>.+?)\s+(?<item>[^\(\s]+)\s*(?<function>\((?<args>.*)\)))$", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace);
 
         private static readonly Regex MemberExtendedParser = new Regex(@"(exposed(\s*=\s*(?<exposed>(\([^\)]+\))|[^\(\s,\]]+)))(,|$)|
+        (?<cereactions>cereactions)(,|$)|
         (?<clamp>clamp)(,|$)|
         (?<enforcerange>enforcerange)(,|$)|
         (?<lenientsetter>lenientsetter)(,|$)|
@@ -55,7 +57,7 @@ namespace WebIDLCollector.GetData
         (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)|
         (treatundefinedas(\s*=\s*(?<treatundefinedas>[^\s,\]]+)))(,|$)|
         (?<unforgeable>unforgeable)(,|$)|
-        (?<unscopeable>unscopeable)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
+        (?<unscopable>unscopable)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         public static IEnumerable<InterfaceType> GetAllInterfaces(string cleanString, SpecData specificationData)
         {
@@ -131,6 +133,7 @@ namespace WebIDLCollector.GetData
 
                 if (!interfaces.Contains(interfaceDefinition))
                 {
+                    WebIdlBuilder.GenerateInterfaceFile(interfaceDefinition);
                     interfaces.Add(interfaceDefinition);
                 }
                 else
@@ -206,6 +209,7 @@ namespace WebIDLCollector.GetData
                         var exposed = new List<string>();
                         foreach (Match mep in MemberExtendedParser.Matches(memberItem.ExtendedAttribute))
                         {
+                            memberItem.CeReactions = memberItem.CeReactions || !string.IsNullOrWhiteSpace(mep.Groups["cereactions"].Value.Trim());
                             memberItem.Clamp = memberItem.Clamp || !string.IsNullOrWhiteSpace(mep.Groups["clamp"].Value.Trim());
                             memberItem.EnforceRange = memberItem.EnforceRange || !string.IsNullOrWhiteSpace(mep.Groups["enforcerange"].Value.Trim());
                             memberItem.LenientSetter = memberItem.LenientSetter || !string.IsNullOrWhiteSpace(mep.Groups["lenientsetter"].Value.Trim());
@@ -218,7 +222,7 @@ namespace WebIDLCollector.GetData
                             memberItem.TreatNullAs = mep.Groups["treatnullas"].Value.Trim();
                             memberItem.TreatUndefinedAs = mep.Groups["treatundefinedas"].Value.Trim();
                             memberItem.Unforgeable = memberItem.Unforgeable || !string.IsNullOrWhiteSpace(mep.Groups["unforgeable"].Value.Trim());
-                            memberItem.Unscopeable = memberItem.Unscopeable || !string.IsNullOrWhiteSpace(mep.Groups["unscopeable"].Value.Trim());
+                            memberItem.Unscopable = memberItem.Unscopable || !string.IsNullOrWhiteSpace(mep.Groups["unscopable"].Value.Trim());
 
                             var exposedValue = RegexLibrary.GroupingCleaner.Replace(mep.Groups["exposed"].Value, string.Empty);
                             if (!string.IsNullOrWhiteSpace(exposedValue))

@@ -73,7 +73,7 @@ namespace WebIDLCollector.IDLTypes
         public override bool Equals(object otherMember)
         {
             var member = otherMember as DictionaryMember;
-            return (member != null) && Name.Equals(member.Name);
+            return (member != null) && Name.Equals(member.Name) && Type.Equals(member.Type);
         }
 
         public override int GetHashCode()

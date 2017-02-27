@@ -158,27 +158,28 @@ namespace WebIDLCollector.Process
                 currentDictionary.Inherits = currentDictionary.Inherits.Union(dictionaryType.Inherits).OrderBy(a => a);
                 currentDictionary.SpecNames = currentDictionary.SpecNames.Union(dictionaryType.SpecNames).OrderBy(a => a);
 
-                var sortedMembers = new SortedDictionary<string, DictionaryMember>(currentDictionary.Members.ToDictionary(a => a.Name, b => b));
+                var members = currentDictionary.Members.ToList();
+
                 foreach (var member in dictionaryType.Members)
                 {
-                    var memberName = member.Name;
-
-                    if (!sortedMembers.ContainsKey(memberName))
+                    if (!members.Contains(member, new DictionaryMemberCompare()))
                     {
-                        sortedMembers.Add(memberName, member);
+                        members.Add(member);
                     }
 
-                    var currentMemeber = sortedMembers[memberName];
+                    var currentMember = members.Single(a => a.Equals(member));
 
-                    currentMemeber.Clamp = currentMemeber.Clamp || member.Clamp;
-                    currentMemeber.EnforceRange = currentMemeber.EnforceRange || member.EnforceRange;
+                    currentMember.Clamp = currentMember.Clamp || member.Clamp;
+                    currentMember.EnforceRange = currentMember.EnforceRange || member.EnforceRange;
 
-                    currentMemeber.SpecNames = currentMemeber.SpecNames.Union(member.SpecNames).OrderBy(a => a);
+                    currentMember.SpecNames = currentMember.SpecNames.Union(member.SpecNames).OrderBy(a => a);
 
-                    sortedMembers[memberName] = currentMemeber;
+                    members.Remove(member);
+                    members.Add(currentMember);
                 }
 
-                currentDictionary.Members = sortedMembers.Values;
+                currentDictionary.Members = members;
+                currentDictionary.Members = currentDictionary.Members.OrderBy(a => a.Name);
 
                 finalDictionaryTypes[dictionaryName] = currentDictionary;
             }
@@ -214,7 +215,7 @@ namespace WebIDLCollector.Process
 
                 foreach (var member in namespaceType.Members)
                 {
-                    if (!members.Contains(member))
+                    if (!members.Contains(member, new NamespaceMemberCompare()))
                     {
                         members.Add(member);
                     }
@@ -281,7 +282,7 @@ namespace WebIDLCollector.Process
 
                 foreach (var member in interfaceType.Members)
                 {
-                    if (!members.Contains(member))
+                    if (!members.Contains(member, new MemberCompare()))
                     {
                         members.Add(member);
                     }
@@ -301,7 +302,7 @@ namespace WebIDLCollector.Process
                     currentMember.TreatNullAs = currentMember.TreatNullAs ?? member.TreatNullAs;
                     currentMember.TreatUndefinedAs = currentMember.TreatUndefinedAs ?? member.TreatUndefinedAs;
                     currentMember.Unforgeable = currentMember.Unforgeable || member.Unforgeable;
-                    currentMember.Unscopeable = currentMember.Unscopeable || member.Unscopeable;
+                    currentMember.Unscopable = currentMember.Unscopable || member.Unscopable;
 
                     currentMember.SpecNames = currentMember.SpecNames.Union(member.SpecNames).OrderBy(a => a);
 

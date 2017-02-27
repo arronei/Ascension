@@ -163,6 +163,9 @@ var MirrorJS;
             "ClientRectList": function () {
                 return document.body.getClientRects();
             },
+            "Console": function () {
+                return window.console;
+            },
             "Comment": function () {
                 return document.createComment("unknown comment");
             },

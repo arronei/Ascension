@@ -1,6 +1,6 @@
 {
   "browserVersion": "Chrome 56",
-  "timestamp": "2016-11-18T15:42:33.103Z",
+  "timestamp": "2017-02-13T17:07:12.831Z",
   "types": {
     "Accelerometer": {
       "typeName": "Accelerometer",
@@ -10,6 +10,7 @@
       "properties": {
         "reading": {
           "confidence": 4,
+          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19,6 +20,7 @@
         },
         "includesGravity": {
           "confidence": 4,
+          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -201,6 +203,7 @@
       "properties": {
         "reading": {
           "confidence": 4,
+          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12377,6 +12380,17 @@
           "isEnumerable": false,
           "isWritable": true
         },
+        "292": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
         "cssText": {
           "confidence": 4,
           "type": "string",
@@ -14606,6 +14620,17 @@
           "isWritable": true
         },
         "offsetPosition": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "offsetRotate": {
           "confidence": 3,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -32065,6 +32090,7 @@
       "properties": {
         "reading": {
           "confidence": 4,
+          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -40079,15 +40105,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "disableRemotePlayback": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "srcObject": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -40122,6 +40139,15 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "disableRemotePlayback": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -50538,6 +50564,7 @@
       "properties": {
         "reading": {
           "confidence": 4,
+          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61221,6 +61248,16 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "canMakePayment": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "constructor": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -61828,6 +61865,7 @@
     "PerformanceEntry": {
       "typeName": "PerformanceEntry",
       "derivedTypes": [
+        "PerformanceLongTaskTiming",
         "PerformanceMark",
         "PerformanceMeasure",
         "PerformanceResourceTiming"
@@ -61928,6 +61966,88 @@
         "prototype": {
           "confidence": 3,
           "type": "PerformanceEntry",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PerformanceLongTaskTiming": {
+      "typeName": "PerformanceLongTaskTiming",
+      "derivedTypes": [],
+      "baseType": "PerformanceEntry",
+      "confidence": 4,
+      "properties": {
+        "culpritWindow": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "arguments": {
+          "confidence": 3,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "caller": {
+          "confidence": 3,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PerformanceLongTaskTiming",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -97162,28 +97282,6 @@
           "isEnumerable": true,
           "isWritable": false
         },
-        "GREEN": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "BLUE": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
         "INT_2_10_10_10_REV": {
           "confidence": 4,
           "type": "number",
@@ -97251,17 +97349,6 @@
           "isWritable": false
         },
         "MAX_ELEMENT_INDEX": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "NUM_SAMPLE_COUNTS": {
           "confidence": 4,
           "type": "number",
           "isPlausiblyInherited": false,

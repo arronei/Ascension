@@ -32,6 +32,10 @@
         "url": "https://w3c.github.io/webdriver/webdriver-spec.html"
     },
     {
+        "name": "console",
+        "url": "https://console.spec.whatwg.org/"
+    },
+    {
         "name": "css21",
         "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
         "url": "http://www.w3.org/TR/CSS21/box.html",

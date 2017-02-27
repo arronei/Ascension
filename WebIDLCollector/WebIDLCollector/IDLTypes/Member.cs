@@ -24,6 +24,7 @@ namespace WebIDLCollector.IDLTypes
         public bool Attribute { private get; set; }
         public string ExtendedAttribute { get; set; }
         public IEnumerable<string> Exposed { get; set; }
+        public bool CeReactions { get; set; }
         public bool Clamp { get; set; }
         public bool EnforceRange { get; set; }
         public bool LenientSetter { get; set; }
@@ -36,7 +37,7 @@ namespace WebIDLCollector.IDLTypes
         public string TreatNullAs { get; set; }
         public string TreatUndefinedAs { get; set; }
         public bool Unforgeable { get; set; }
-        public bool Unscopeable { get; set; }
+        public bool Unscopable { get; set; }
         public bool Static { private get; set; }
         public bool HasGet { get; set; }
         public bool HasSet { get; set; }
@@ -66,7 +67,8 @@ namespace WebIDLCollector.IDLTypes
             var sb = new StringBuilder();
             var comma = string.Empty;
 
-            if (Clamp ||
+            if (CeReactions ||
+                Clamp ||
                 EnforceRange ||
                 Exposed.Any() ||
                 LenientSetter ||
@@ -79,10 +81,15 @@ namespace WebIDLCollector.IDLTypes
                 !string.IsNullOrWhiteSpace(TreatNullAs) ||
                 !string.IsNullOrWhiteSpace(TreatUndefinedAs) ||
                 Unforgeable ||
-                Unscopeable)
+                Unscopable)
             {
                 sb.Append("[");
 
+                if (CeReactions)
+                {
+                    sb.Append("CEReactions");
+                    comma = ", ";
+                }
                 if (Clamp)
                 {
                     sb.Append("Clamp");
@@ -152,9 +159,9 @@ namespace WebIDLCollector.IDLTypes
                     sb.Append(comma).Append("Unforgeable");
                     comma = ", ";
                 }
-                if (Unscopeable)
+                if (Unscopable)
                 {
-                    sb.Append(comma).Append("Unscopeable");
+                    sb.Append(comma).Append("Unscopable");
                 }
 
                 sb.Append("] ");
@@ -265,7 +272,7 @@ namespace WebIDLCollector.IDLTypes
         public override bool Equals(object otherMember)
         {
             var member = otherMember as Member;
-            return (member != null) && Name.Equals(member.Name);
+            return (member != null) && Name.Equals(member.Name) && Type.Equals(member.Type) && ArgTypes.SequenceEqual(member.ArgTypes, new ArgumentTypeCompare());
         }
 
         public override int GetHashCode()
