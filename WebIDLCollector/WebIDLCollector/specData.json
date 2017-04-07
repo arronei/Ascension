@@ -963,7 +963,7 @@
     },
     {
         "name": "telephony",
-        "url": "https://www.w3.org/2012/sysapps/telephony/"
+        "url": "http://telephony.sysapps.org/"
     },
     {
         "name": "webvtt1",
@@ -1227,7 +1227,7 @@
     },
     {
         "name": "server-timing",
-        "url": "http://wicg.github.io/server-timing/"
+        "url": "https://w3c.github.io/server-timing/"
     },
     {
         "name": "animation-timing",
@@ -1509,7 +1509,7 @@
     {
         "name": "webvr",
         "title": "WebVR",
-        "url": "https://w3c.github.io/webvr/"
+        "url": "https://w3c.github.io/webvr/spec/latest/"
     },
     {
         "name": "filesystemapi",

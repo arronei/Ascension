@@ -1,6 +1,6 @@
 {
   "browserVersion": "Safari 11",
-  "timestamp": "2017-01-11T22:38:03.793Z",
+  "timestamp": "2017-04-06T17:41:01.251Z",
   "types": {
     "AnalyserNode": {
       "typeName": "AnalyserNode",
@@ -128,128 +128,6 @@
         }
       }
     },
-    "Animation": {
-      "typeName": "Animation",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "effect": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "timeline": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "AnimationPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "AnimationEffectReadOnly": {
-      "typeName": "AnimationEffectReadOnly",
-      "derivedTypes": [
-        "KeyframeEffect"
-      ],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "AnimationEffectReadOnlyPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
     "AnimationEvent": {
       "typeName": "AnimationEvent",
       "derivedTypes": [],
@@ -319,11 +197,9 @@
         }
       }
     },
-    "AnimationTimeline": {
-      "typeName": "AnimationTimeline",
-      "derivedTypes": [
-        "DocumentTimeline"
-      ],
+    "ApplePayError": {
+      "typeName": "ApplePayError",
+      "derivedTypes": [],
       "baseType": "Object",
       "confidence": 4,
       "properties": {
@@ -337,9 +213,36 @@
           "isEnumerable": false,
           "isWritable": true
         },
+        "code": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "message": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "contactField": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "prototype": {
           "confidence": 3,
-          "type": "AnimationTimelinePrototype",
+          "type": "ApplePayErrorPrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1309,6 +1212,15 @@
           "isEnumerable": false,
           "isWritable": true
         },
+        "byteLength": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false
+        },
         "constructor": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -1553,16 +1465,6 @@
         "ownerElement": {
           "confidence": 4,
           "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "isId": {
-          "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -4642,7 +4544,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "1": {
           "confidence": 3,
@@ -4653,7 +4555,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "2": {
           "confidence": 3,
@@ -4664,7 +4566,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "3": {
           "confidence": 3,
@@ -4675,7 +4577,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "4": {
           "confidence": 3,
@@ -4686,7 +4588,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "5": {
           "confidence": 3,
@@ -4697,7 +4599,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "6": {
           "confidence": 3,
@@ -4708,7 +4610,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "7": {
           "confidence": 3,
@@ -4719,7 +4621,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "8": {
           "confidence": 3,
@@ -4730,7 +4632,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "9": {
           "confidence": 3,
@@ -4741,7 +4643,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "10": {
           "confidence": 3,
@@ -4752,7 +4654,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "11": {
           "confidence": 3,
@@ -4763,7 +4665,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "12": {
           "confidence": 3,
@@ -4774,7 +4676,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "13": {
           "confidence": 3,
@@ -4785,7 +4687,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "14": {
           "confidence": 3,
@@ -4796,7 +4698,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "15": {
           "confidence": 3,
@@ -4807,7 +4709,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "16": {
           "confidence": 3,
@@ -4818,7 +4720,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "17": {
           "confidence": 3,
@@ -4829,7 +4731,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "18": {
           "confidence": 3,
@@ -4840,7 +4742,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "19": {
           "confidence": 3,
@@ -4851,7 +4753,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "20": {
           "confidence": 3,
@@ -4862,7 +4764,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "21": {
           "confidence": 3,
@@ -4873,7 +4775,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "22": {
           "confidence": 3,
@@ -4884,7 +4786,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "23": {
           "confidence": 3,
@@ -4895,7 +4797,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "24": {
           "confidence": 3,
@@ -4906,7 +4808,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "25": {
           "confidence": 3,
@@ -4917,7 +4819,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "26": {
           "confidence": 3,
@@ -4928,7 +4830,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "27": {
           "confidence": 3,
@@ -4939,7 +4841,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "28": {
           "confidence": 3,
@@ -4950,7 +4852,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "29": {
           "confidence": 3,
@@ -4961,7 +4863,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "30": {
           "confidence": 3,
@@ -4972,7 +4874,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "31": {
           "confidence": 3,
@@ -4983,7 +4885,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "32": {
           "confidence": 3,
@@ -4994,7 +4896,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "33": {
           "confidence": 3,
@@ -5005,7 +4907,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "34": {
           "confidence": 3,
@@ -5016,7 +4918,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "35": {
           "confidence": 3,
@@ -5027,7 +4929,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "36": {
           "confidence": 3,
@@ -5038,7 +4940,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "37": {
           "confidence": 3,
@@ -5049,7 +4951,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "38": {
           "confidence": 3,
@@ -5060,7 +4962,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "39": {
           "confidence": 3,
@@ -5071,7 +4973,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "40": {
           "confidence": 3,
@@ -5082,7 +4984,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "41": {
           "confidence": 3,
@@ -5093,7 +4995,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "42": {
           "confidence": 3,
@@ -5104,7 +5006,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "43": {
           "confidence": 3,
@@ -5115,7 +5017,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "44": {
           "confidence": 3,
@@ -5126,7 +5028,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "45": {
           "confidence": 3,
@@ -5137,7 +5039,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "46": {
           "confidence": 3,
@@ -5148,7 +5050,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "47": {
           "confidence": 3,
@@ -5159,7 +5061,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "48": {
           "confidence": 3,
@@ -5170,7 +5072,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "49": {
           "confidence": 3,
@@ -5181,7 +5083,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "50": {
           "confidence": 3,
@@ -5192,7 +5094,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "51": {
           "confidence": 3,
@@ -5203,7 +5105,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "52": {
           "confidence": 3,
@@ -5214,7 +5116,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "53": {
           "confidence": 3,
@@ -5225,7 +5127,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "54": {
           "confidence": 3,
@@ -5236,7 +5138,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "55": {
           "confidence": 3,
@@ -5247,7 +5149,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "56": {
           "confidence": 3,
@@ -5258,7 +5160,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "57": {
           "confidence": 3,
@@ -5269,7 +5171,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "58": {
           "confidence": 3,
@@ -5280,7 +5182,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "59": {
           "confidence": 3,
@@ -5291,7 +5193,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "60": {
           "confidence": 3,
@@ -5302,7 +5204,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "61": {
           "confidence": 3,
@@ -5313,7 +5215,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "62": {
           "confidence": 3,
@@ -5324,7 +5226,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "63": {
           "confidence": 3,
@@ -5335,7 +5237,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "64": {
           "confidence": 3,
@@ -5346,7 +5248,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "65": {
           "confidence": 3,
@@ -5357,7 +5259,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "66": {
           "confidence": 3,
@@ -5368,7 +5270,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "67": {
           "confidence": 3,
@@ -5379,7 +5281,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "68": {
           "confidence": 3,
@@ -5390,7 +5292,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "69": {
           "confidence": 3,
@@ -5401,7 +5303,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "70": {
           "confidence": 3,
@@ -5412,7 +5314,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "71": {
           "confidence": 3,
@@ -5423,7 +5325,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "72": {
           "confidence": 3,
@@ -5434,7 +5336,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "73": {
           "confidence": 3,
@@ -5445,7 +5347,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "74": {
           "confidence": 3,
@@ -5456,7 +5358,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "75": {
           "confidence": 3,
@@ -5467,7 +5369,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "76": {
           "confidence": 3,
@@ -5478,7 +5380,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "77": {
           "confidence": 3,
@@ -5489,7 +5391,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "78": {
           "confidence": 3,
@@ -5500,7 +5402,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "79": {
           "confidence": 3,
@@ -5511,7 +5413,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "80": {
           "confidence": 3,
@@ -5522,7 +5424,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "81": {
           "confidence": 3,
@@ -5533,7 +5435,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "82": {
           "confidence": 3,
@@ -5544,7 +5446,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "83": {
           "confidence": 3,
@@ -5555,7 +5457,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "84": {
           "confidence": 3,
@@ -5566,7 +5468,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "85": {
           "confidence": 3,
@@ -5577,7 +5479,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "86": {
           "confidence": 3,
@@ -5588,7 +5490,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "87": {
           "confidence": 3,
@@ -5599,7 +5501,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "88": {
           "confidence": 3,
@@ -5610,7 +5512,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "89": {
           "confidence": 3,
@@ -5621,7 +5523,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "90": {
           "confidence": 3,
@@ -5632,7 +5534,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "91": {
           "confidence": 3,
@@ -5643,7 +5545,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "92": {
           "confidence": 3,
@@ -5654,7 +5556,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "93": {
           "confidence": 3,
@@ -5665,7 +5567,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "94": {
           "confidence": 3,
@@ -5676,7 +5578,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "95": {
           "confidence": 3,
@@ -5687,7 +5589,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "96": {
           "confidence": 3,
@@ -5698,7 +5600,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "97": {
           "confidence": 3,
@@ -5709,7 +5611,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "98": {
           "confidence": 3,
@@ -5720,7 +5622,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "99": {
           "confidence": 3,
@@ -5731,7 +5633,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "100": {
           "confidence": 3,
@@ -5742,7 +5644,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "101": {
           "confidence": 3,
@@ -5753,7 +5655,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "102": {
           "confidence": 3,
@@ -5764,7 +5666,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "103": {
           "confidence": 3,
@@ -5775,7 +5677,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "104": {
           "confidence": 3,
@@ -5786,7 +5688,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "105": {
           "confidence": 3,
@@ -5797,7 +5699,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "106": {
           "confidence": 3,
@@ -5808,7 +5710,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "107": {
           "confidence": 3,
@@ -5819,7 +5721,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "108": {
           "confidence": 3,
@@ -5830,7 +5732,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "109": {
           "confidence": 3,
@@ -5841,7 +5743,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "110": {
           "confidence": 3,
@@ -5852,7 +5754,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "111": {
           "confidence": 3,
@@ -5863,7 +5765,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "112": {
           "confidence": 3,
@@ -5874,7 +5776,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "113": {
           "confidence": 3,
@@ -5885,7 +5787,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "114": {
           "confidence": 3,
@@ -5896,7 +5798,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "115": {
           "confidence": 3,
@@ -5907,7 +5809,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "116": {
           "confidence": 3,
@@ -5918,7 +5820,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "117": {
           "confidence": 3,
@@ -5929,7 +5831,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "118": {
           "confidence": 3,
@@ -5940,7 +5842,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "119": {
           "confidence": 3,
@@ -5951,7 +5853,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "120": {
           "confidence": 3,
@@ -5962,7 +5864,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "121": {
           "confidence": 3,
@@ -5973,7 +5875,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "122": {
           "confidence": 3,
@@ -5984,7 +5886,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "123": {
           "confidence": 3,
@@ -5995,7 +5897,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "124": {
           "confidence": 3,
@@ -6006,7 +5908,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "125": {
           "confidence": 3,
@@ -6017,7 +5919,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "126": {
           "confidence": 3,
@@ -6028,7 +5930,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "127": {
           "confidence": 3,
@@ -6039,7 +5941,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "128": {
           "confidence": 3,
@@ -6050,7 +5952,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "129": {
           "confidence": 3,
@@ -6061,7 +5963,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "130": {
           "confidence": 3,
@@ -6072,7 +5974,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "131": {
           "confidence": 3,
@@ -6083,7 +5985,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "132": {
           "confidence": 3,
@@ -6094,7 +5996,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "133": {
           "confidence": 3,
@@ -6105,7 +6007,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "134": {
           "confidence": 3,
@@ -6116,7 +6018,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "135": {
           "confidence": 3,
@@ -6127,7 +6029,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "136": {
           "confidence": 3,
@@ -6138,7 +6040,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "137": {
           "confidence": 3,
@@ -6149,7 +6051,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "138": {
           "confidence": 3,
@@ -6160,7 +6062,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "139": {
           "confidence": 3,
@@ -6171,7 +6073,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "140": {
           "confidence": 3,
@@ -6182,7 +6084,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "141": {
           "confidence": 3,
@@ -6193,7 +6095,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "142": {
           "confidence": 3,
@@ -6204,7 +6106,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "143": {
           "confidence": 3,
@@ -6215,7 +6117,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "144": {
           "confidence": 3,
@@ -6226,7 +6128,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "145": {
           "confidence": 3,
@@ -6237,7 +6139,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "146": {
           "confidence": 3,
@@ -6248,7 +6150,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "147": {
           "confidence": 3,
@@ -6259,7 +6161,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "148": {
           "confidence": 3,
@@ -6270,7 +6172,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "149": {
           "confidence": 3,
@@ -6281,7 +6183,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "150": {
           "confidence": 3,
@@ -6292,7 +6194,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "151": {
           "confidence": 3,
@@ -6303,7 +6205,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "152": {
           "confidence": 3,
@@ -6314,7 +6216,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "153": {
           "confidence": 3,
@@ -6325,7 +6227,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "154": {
           "confidence": 3,
@@ -6336,7 +6238,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "155": {
           "confidence": 3,
@@ -6347,7 +6249,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "156": {
           "confidence": 3,
@@ -6358,7 +6260,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "157": {
           "confidence": 3,
@@ -6369,7 +6271,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "158": {
           "confidence": 3,
@@ -6380,7 +6282,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "159": {
           "confidence": 3,
@@ -6391,7 +6293,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "160": {
           "confidence": 3,
@@ -6402,7 +6304,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "161": {
           "confidence": 3,
@@ -6413,7 +6315,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "162": {
           "confidence": 3,
@@ -6424,7 +6326,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "163": {
           "confidence": 3,
@@ -6435,7 +6337,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "164": {
           "confidence": 3,
@@ -6446,7 +6348,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "165": {
           "confidence": 3,
@@ -6457,7 +6359,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "166": {
           "confidence": 3,
@@ -6468,7 +6370,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "167": {
           "confidence": 3,
@@ -6479,7 +6381,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "168": {
           "confidence": 3,
@@ -6490,7 +6392,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "169": {
           "confidence": 3,
@@ -6501,7 +6403,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "170": {
           "confidence": 3,
@@ -6512,7 +6414,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "171": {
           "confidence": 3,
@@ -6523,7 +6425,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "172": {
           "confidence": 3,
@@ -6534,7 +6436,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "173": {
           "confidence": 3,
@@ -6545,7 +6447,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "174": {
           "confidence": 3,
@@ -6556,7 +6458,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "175": {
           "confidence": 3,
@@ -6567,7 +6469,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "176": {
           "confidence": 3,
@@ -6578,7 +6480,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "177": {
           "confidence": 3,
@@ -6589,7 +6491,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "178": {
           "confidence": 3,
@@ -6600,7 +6502,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "179": {
           "confidence": 3,
@@ -6611,7 +6513,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "180": {
           "confidence": 3,
@@ -6622,7 +6524,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "181": {
           "confidence": 3,
@@ -6633,7 +6535,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "182": {
           "confidence": 3,
@@ -6644,7 +6546,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "183": {
           "confidence": 3,
@@ -6655,7 +6557,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "184": {
           "confidence": 3,
@@ -6666,7 +6568,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "185": {
           "confidence": 3,
@@ -6677,7 +6579,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "186": {
           "confidence": 3,
@@ -6688,7 +6590,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "187": {
           "confidence": 3,
@@ -6699,7 +6601,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "188": {
           "confidence": 3,
@@ -6710,7 +6612,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "189": {
           "confidence": 3,
@@ -6721,7 +6623,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "190": {
           "confidence": 3,
@@ -6732,7 +6634,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "191": {
           "confidence": 3,
@@ -6743,7 +6645,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "192": {
           "confidence": 3,
@@ -6754,7 +6656,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "193": {
           "confidence": 3,
@@ -6765,7 +6667,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "194": {
           "confidence": 3,
@@ -6776,7 +6678,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "195": {
           "confidence": 3,
@@ -6787,7 +6689,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "196": {
           "confidence": 3,
@@ -6798,7 +6700,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "197": {
           "confidence": 3,
@@ -6809,7 +6711,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "198": {
           "confidence": 3,
@@ -6820,7 +6722,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "199": {
           "confidence": 3,
@@ -6831,7 +6733,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "200": {
           "confidence": 3,
@@ -6842,7 +6744,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "201": {
           "confidence": 3,
@@ -6853,7 +6755,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "202": {
           "confidence": 3,
@@ -6864,7 +6766,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "203": {
           "confidence": 3,
@@ -6875,7 +6777,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "204": {
           "confidence": 3,
@@ -6886,7 +6788,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "205": {
           "confidence": 3,
@@ -6897,7 +6799,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "206": {
           "confidence": 3,
@@ -6908,7 +6810,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "207": {
           "confidence": 3,
@@ -6919,7 +6821,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "208": {
           "confidence": 3,
@@ -6930,7 +6832,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "209": {
           "confidence": 3,
@@ -6941,7 +6843,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "210": {
           "confidence": 3,
@@ -6952,7 +6854,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "211": {
           "confidence": 3,
@@ -6963,7 +6865,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "212": {
           "confidence": 3,
@@ -6974,7 +6876,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "213": {
           "confidence": 3,
@@ -6985,7 +6887,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "214": {
           "confidence": 3,
@@ -6996,7 +6898,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "215": {
           "confidence": 3,
@@ -7007,7 +6909,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "216": {
           "confidence": 3,
@@ -7018,7 +6920,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "217": {
           "confidence": 3,
@@ -7029,7 +6931,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "218": {
           "confidence": 3,
@@ -7040,7 +6942,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "219": {
           "confidence": 3,
@@ -7051,7 +6953,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "220": {
           "confidence": 3,
@@ -7062,7 +6964,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "221": {
           "confidence": 3,
@@ -7073,7 +6975,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "222": {
           "confidence": 3,
@@ -7084,7 +6986,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "223": {
           "confidence": 3,
@@ -7095,7 +6997,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "224": {
           "confidence": 3,
@@ -7106,7 +7008,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "225": {
           "confidence": 3,
@@ -7117,7 +7019,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "226": {
           "confidence": 3,
@@ -7128,7 +7030,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "227": {
           "confidence": 3,
@@ -7139,7 +7041,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "228": {
           "confidence": 3,
@@ -7150,7 +7052,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "229": {
           "confidence": 3,
@@ -7161,7 +7063,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "230": {
           "confidence": 3,
@@ -7172,7 +7074,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "231": {
           "confidence": 3,
@@ -7183,7 +7085,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "232": {
           "confidence": 3,
@@ -7194,7 +7096,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "233": {
           "confidence": 3,
@@ -7205,7 +7107,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "234": {
           "confidence": 3,
@@ -7216,7 +7118,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "235": {
           "confidence": 3,
@@ -7227,7 +7129,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "236": {
           "confidence": 3,
@@ -7238,7 +7140,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "237": {
           "confidence": 3,
@@ -7249,7 +7151,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "238": {
           "confidence": 3,
@@ -7260,7 +7162,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "239": {
           "confidence": 3,
@@ -7271,7 +7173,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "240": {
           "confidence": 3,
@@ -7282,7 +7184,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "241": {
           "confidence": 3,
@@ -7293,7 +7195,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "242": {
           "confidence": 3,
@@ -7304,7 +7206,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "243": {
           "confidence": 3,
@@ -7315,7 +7217,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "244": {
           "confidence": 3,
@@ -7326,7 +7228,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "245": {
           "confidence": 3,
@@ -7337,7 +7239,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "246": {
           "confidence": 3,
@@ -7348,7 +7250,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "247": {
           "confidence": 3,
@@ -7359,7 +7261,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "248": {
           "confidence": 3,
@@ -7370,7 +7272,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "249": {
           "confidence": 3,
@@ -7381,7 +7283,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "250": {
           "confidence": 3,
@@ -7392,7 +7294,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "251": {
           "confidence": 3,
@@ -7403,7 +7305,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "252": {
           "confidence": 3,
@@ -7414,7 +7316,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "253": {
           "confidence": 3,
@@ -7425,7 +7327,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "254": {
           "confidence": 3,
@@ -7436,7 +7338,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "255": {
           "confidence": 3,
@@ -7447,7 +7349,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "256": {
           "confidence": 3,
@@ -7458,7 +7360,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "257": {
           "confidence": 3,
@@ -7469,7 +7371,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "258": {
           "confidence": 3,
@@ -7480,7 +7382,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "259": {
           "confidence": 3,
@@ -7491,7 +7393,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "260": {
           "confidence": 3,
@@ -7502,7 +7404,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "261": {
           "confidence": 3,
@@ -7513,7 +7415,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "262": {
           "confidence": 3,
@@ -7524,7 +7426,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "263": {
           "confidence": 3,
@@ -7535,7 +7437,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "264": {
           "confidence": 3,
@@ -7546,7 +7448,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "265": {
           "confidence": 3,
@@ -7557,7 +7459,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "266": {
           "confidence": 3,
@@ -7568,7 +7470,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "267": {
           "confidence": 3,
@@ -7579,7 +7481,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "268": {
           "confidence": 3,
@@ -7590,7 +7492,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "269": {
           "confidence": 3,
@@ -7601,7 +7503,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "270": {
           "confidence": 3,
@@ -7612,7 +7514,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "271": {
           "confidence": 3,
@@ -7623,7 +7525,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "272": {
           "confidence": 3,
@@ -7634,7 +7536,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "273": {
           "confidence": 3,
@@ -7645,7 +7547,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "274": {
           "confidence": 3,
@@ -7656,7 +7558,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "275": {
           "confidence": 3,
@@ -7667,7 +7569,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "276": {
           "confidence": 3,
@@ -7678,7 +7580,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "277": {
           "confidence": 3,
@@ -7689,7 +7591,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "278": {
           "confidence": 3,
@@ -7700,7 +7602,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "279": {
           "confidence": 3,
@@ -7711,7 +7613,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "280": {
           "confidence": 3,
@@ -7722,7 +7624,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "281": {
           "confidence": 3,
@@ -7733,7 +7635,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "282": {
           "confidence": 3,
@@ -7744,7 +7646,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "283": {
           "confidence": 3,
@@ -7755,7 +7657,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "284": {
           "confidence": 3,
@@ -7766,7 +7668,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "285": {
           "confidence": 3,
@@ -7777,7 +7679,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "286": {
           "confidence": 3,
@@ -7788,7 +7690,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "287": {
           "confidence": 3,
@@ -7799,7 +7701,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "288": {
           "confidence": 3,
@@ -7810,7 +7712,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "289": {
           "confidence": 3,
@@ -7821,7 +7723,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "290": {
           "confidence": 3,
@@ -7832,7 +7734,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "291": {
           "confidence": 3,
@@ -7843,7 +7745,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "292": {
           "confidence": 3,
@@ -7854,7 +7756,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "293": {
           "confidence": 3,
@@ -7865,7 +7767,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "294": {
           "confidence": 3,
@@ -7876,7 +7778,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "295": {
           "confidence": 3,
@@ -7887,7 +7789,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "296": {
           "confidence": 3,
@@ -7898,7 +7800,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "297": {
           "confidence": 3,
@@ -7909,7 +7811,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "298": {
           "confidence": 3,
@@ -7920,7 +7822,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "299": {
           "confidence": 3,
@@ -7931,7 +7833,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "300": {
           "confidence": 3,
@@ -7942,7 +7844,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "301": {
           "confidence": 3,
@@ -7953,7 +7855,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "302": {
           "confidence": 3,
@@ -7964,7 +7866,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "303": {
           "confidence": 3,
@@ -7975,7 +7877,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "304": {
           "confidence": 3,
@@ -7986,7 +7888,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "305": {
           "confidence": 3,
@@ -7997,7 +7899,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "306": {
           "confidence": 3,
@@ -8008,7 +7910,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "307": {
           "confidence": 3,
@@ -8019,7 +7921,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "308": {
           "confidence": 3,
@@ -8030,7 +7932,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "309": {
           "confidence": 3,
@@ -8041,7 +7943,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "310": {
           "confidence": 3,
@@ -8052,7 +7954,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "311": {
           "confidence": 3,
@@ -8063,7 +7965,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "312": {
           "confidence": 3,
@@ -8074,7 +7976,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "313": {
           "confidence": 3,
@@ -8085,7 +7987,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "314": {
           "confidence": 3,
@@ -8096,7 +7998,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "315": {
           "confidence": 3,
@@ -8107,7 +8009,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "316": {
           "confidence": 3,
@@ -8118,7 +8020,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "317": {
           "confidence": 3,
@@ -8129,7 +8031,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "318": {
           "confidence": 3,
@@ -8140,7 +8042,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "319": {
           "confidence": 3,
@@ -8151,7 +8053,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "320": {
           "confidence": 3,
@@ -8162,7 +8064,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "321": {
           "confidence": 3,
@@ -8173,7 +8075,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "322": {
           "confidence": 3,
@@ -8184,7 +8086,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "323": {
           "confidence": 3,
@@ -8195,7 +8097,7 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
         },
         "324": {
           "confidence": 3,
@@ -8206,7 +8108,139 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true,
-          "isWritable": false
+          "isWritable": true
+        },
+        "325": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "326": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "327": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "328": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "329": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "330": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "331": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "332": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "333": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "334": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "335": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "336": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
         },
         "constructor": {
           "confidence": 4,
@@ -9656,6 +9690,17 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "fontOpticalSizing": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "fontSize": {
           "confidence": 3,
           "type": "string",
@@ -10130,6 +10175,17 @@
           "isWritable": true
         },
         "lightingColor": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "lineBreak": {
           "confidence": 3,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -10679,6 +10735,17 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "placeContent": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "pointerEvents": {
           "confidence": 3,
           "type": "string",
@@ -11152,117 +11219,7 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "textLineThrough": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textLineThroughColor": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textLineThroughMode": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textLineThroughStyle": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textLineThroughWidth": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
         "textOverflow": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textOverline": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textOverlineColor": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textOverlineMode": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textOverlineStyle": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textOverlineWidth": {
           "confidence": 3,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -11296,61 +11253,6 @@
           "isWritable": true
         },
         "textTransform": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textUnderline": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textUnderlineColor": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textUnderlineMode": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textUnderlineStyle": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "textUnderlineWidth": {
           "confidence": 3,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -12220,17 +12122,6 @@
           "isWritable": true
         },
         "webkitLineBoxContain": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "webkitLineBreak": {
           "confidence": 3,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -13715,6 +13606,76 @@
         "name": {
           "confidence": 3,
           "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "CanvasCaptureMediaStreamTrack": {
+      "typeName": "CanvasCaptureMediaStreamTrack",
+      "derivedTypes": [],
+      "baseType": "MediaStreamTrack",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "canvas": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "requestFrame": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "CanvasCaptureMediaStreamTrackPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -19034,16 +18995,6 @@
           "isConfigurable": true,
           "isEnumerable": false
         },
-        "timeline": {
-          "confidence": 4,
-          "type": "DocumentTimeline",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "activeElement": {
           "confidence": 4,
           "type": "object",
@@ -20171,17 +20122,6 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "getAnimations": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
         "elementFromPoint": {
           "confidence": 4,
           "type": "function",
@@ -20409,57 +20349,6 @@
         "prototype": {
           "confidence": 3,
           "type": "DocumentFragmentPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "DocumentTimeline": {
-      "typeName": "DocumentTimeline",
-      "derivedTypes": [],
-      "baseType": "AnimationTimeline",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "DocumentTimelinePrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21713,17 +21602,6 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "getAnimations": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
         "before": {
           "confidence": 4,
           "type": "function",
@@ -21927,6 +21805,17 @@
           "isConfigurable": true,
           "isEnumerable": false,
           "isWritable": false
+        },
+        "stackTraceLimit": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
         },
         "line": {
           "confidence": 3,
@@ -22388,182 +22277,6 @@
           "isWritable": false
         },
         "BUBBLING_PHASE": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "MOUSEDOWN": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "MOUSEUP": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "MOUSEOVER": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "MOUSEOUT": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "MOUSEMOVE": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "MOUSEDRAG": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "CLICK": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "DBLCLICK": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "KEYDOWN": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "KEYUP": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "KEYPRESS": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "DRAGDROP": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "FOCUS": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "BLUR": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "SELECT": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "CHANGE": {
           "confidence": 4,
           "type": "number",
           "isPlausiblyInherited": false,
@@ -24640,16 +24353,6 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "tags": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
         "prototype": {
           "confidence": 3,
           "type": "HTMLAllCollectionPrototype",
@@ -26271,6 +25974,28 @@
           "isWritable": true
         },
         "toDataURL": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "toBlob": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "captureStream": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -28455,59 +28180,9 @@
           "isEnumerable": false,
           "isWritable": true
         },
-        "frameBorder": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "longDesc": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "marginHeight": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "marginWidth": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "name": {
           "confidence": 4,
           "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "noResize": {
-          "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28535,6 +28210,36 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "frameBorder": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "longDesc": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "noResize": {
+          "confidence": 4,
+          "type": "boolean",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "contentDocument": {
           "confidence": 4,
           "type": "object",
@@ -28555,7 +28260,17 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "location": {
+        "marginHeight": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "marginWidth": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -28582,6 +28297,16 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "location": {
+          "confidence": 4,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -31133,6 +30858,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "srcObject": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "currentSrc": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -31409,15 +31143,6 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "srcObject": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -32584,16 +32309,6 @@
           "isEnumerable": false,
           "isWritable": true
         },
-        "selectedIndex": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "length": {
           "confidence": 4,
           "type": "number",
@@ -32604,27 +32319,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "item": {
+        "selectedIndex": {
           "confidence": 4,
-          "type": "function",
+          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
+          "hasGet": true,
+          "hasSet": true,
           "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "namedItem": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
+          "isEnumerable": true
         },
         "add": {
           "confidence": 4,
@@ -32638,6 +32341,28 @@
           "isWritable": true
         },
         "remove": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "item": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "namedItem": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -33357,6 +33082,16 @@
         "nonce": {
           "confidence": 4,
           "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "noModule": {
+          "confidence": 4,
+          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -36216,6 +35951,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "scrollRestoration": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "state": {
           "confidence": 4,
           "type": "object",
@@ -38602,57 +38347,6 @@
         }
       }
     },
-    "KeyframeEffect": {
-      "typeName": "KeyframeEffect",
-      "derivedTypes": [],
-      "baseType": "AnimationEffectReadOnly",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "KeyframeEffectPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
     "Location": {
       "typeName": "Location",
       "derivedTypes": [],
@@ -40137,26 +39831,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "onactive": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "oninactive": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "onaddtrack": {
           "confidence": 4,
           "type": "object",
@@ -40168,6 +39842,26 @@
           "isEnumerable": true
         },
         "onremovetrack": {
+          "confidence": 4,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onactive": {
+          "confidence": 4,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "oninactive": {
           "confidence": 4,
           "type": "object",
           "isPlausiblyInherited": false,
@@ -40411,7 +40105,9 @@
     },
     "MediaStreamTrack": {
       "typeName": "MediaStreamTrack",
-      "derivedTypes": [],
+      "derivedTypes": [
+        "CanvasCaptureMediaStreamTrack"
+      ],
       "baseType": "EventTarget",
       "confidence": 4,
       "properties": {
@@ -40488,24 +40184,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "readonly": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "remote": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "readyState": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -40533,6 +40211,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "readonly": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "clone": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -40553,6 +40240,16 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "getCapabilities": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "getConstraints": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -40564,16 +40261,6 @@
           "isWritable": true
         },
         "getSettings": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "getCapabilities": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -40826,17 +40513,6 @@
           "isEnumerable": true
         },
         "initMessageEvent": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "webkitInitMessageEvent": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -43736,9 +43412,7 @@
     "Object": {
       "typeName": "Object",
       "derivedTypes": [
-        "Animation",
-        "AnimationEffectReadOnly",
-        "AnimationTimeline",
+        "ApplePayError",
         "Array",
         "ArrayBuffer",
         "AudioBuffer",
@@ -43810,7 +43484,10 @@
         "NodeList",
         "Number",
         "Path2D",
+        "PerformanceEntry",
         "PerformanceNavigation",
+        "PerformanceObserver",
+        "PerformanceObserverEntryList",
         "PerformanceTiming",
         "PeriodicWave",
         "Plugin",
@@ -45133,7 +44810,116 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "onresourcetimingbufferfull": {
+          "confidence": 4,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "now": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "getEntries": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "getEntriesByType": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "getEntriesByName": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "clearResourceTimings": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "setResourceTimingBufferSize": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "mark": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "clearMarks": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "measure": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "clearMeasures": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -45157,6 +44943,199 @@
         },
         "name": {
           "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PerformanceEntry": {
+      "typeName": "PerformanceEntry",
+      "derivedTypes": [
+        "PerformanceMark",
+        "PerformanceMeasure",
+        "PerformanceResourceTiming"
+      ],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "name": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "entryType": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "startTime": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "duration": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "toJSON": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PerformanceEntryPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PerformanceMark": {
+      "typeName": "PerformanceMark",
+      "derivedTypes": [],
+      "baseType": "PerformanceEntry",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PerformanceMarkPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PerformanceMeasure": {
+      "typeName": "PerformanceMeasure",
+      "derivedTypes": [],
+      "baseType": "PerformanceEntry",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PerformanceMeasurePrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -45272,6 +45251,360 @@
         },
         "name": {
           "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PerformanceObserver": {
+      "typeName": "PerformanceObserver",
+      "derivedTypes": [],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "observe": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "disconnect": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PerformanceObserverPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PerformanceObserverEntryList": {
+      "typeName": "PerformanceObserverEntryList",
+      "derivedTypes": [],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "getEntries": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "getEntriesByType": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "getEntriesByName": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PerformanceObserverEntryListPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PerformanceResourceTiming": {
+      "typeName": "PerformanceResourceTiming",
+      "derivedTypes": [],
+      "baseType": "PerformanceEntry",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "initiatorType": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "nextHopProtocol": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "workerStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "redirectStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "redirectEnd": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "fetchStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "domainLookupStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "domainLookupEnd": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "connectStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "connectEnd": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "secureConnectionStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "requestStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "responseStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "responseEnd": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "toJSON": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PerformanceResourceTimingPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -47839,17 +48172,6 @@
           "isWritable": true
         },
         "blob": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "formData": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -65438,6 +65760,15 @@
           "isEnumerable": false,
           "isWritable": true
         },
+        "byteLength": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false
+        },
         "constructor": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -69136,6 +69467,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "toJSON": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "toString": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -69143,7 +69484,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false,
+          "isEnumerable": true,
           "isWritable": true
         },
         "prototype": {
@@ -69285,7 +69626,62 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "sort": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "toString": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "entries": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "keys": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "values": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "forEach": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -70595,6 +70991,17 @@
           "isWritable": true
         },
         "compile": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "instantiate": {
           "confidence": 3,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -77815,13 +78222,23 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "performance": {
+        "indexedDB": {
           "confidence": 2,
-          "type": "Performance",
+          "type": "IDBFactory",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
-          "hasSet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitIndexedDB": {
+          "confidence": 2,
+          "type": "IDBFactory",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -78415,6 +78832,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "performance": {
+          "confidence": 2,
+          "type": "Performance",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "onbeforeunload": {
           "confidence": 2,
           "type": "object",
@@ -78518,6 +78945,16 @@
         "onunload": {
           "confidence": 2,
           "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "origin": {
+          "confidence": 2,
+          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -78964,26 +79401,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "indexedDB": {
-          "confidence": 2,
-          "type": "IDBFactory",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "webkitIndexedDB": {
-          "confidence": 2,
-          "type": "IDBFactory",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "fetch": {
           "confidence": 2,
           "type": "function",
@@ -79288,16 +79705,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "timeout": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "readyState": {
           "confidence": 4,
           "type": "number",
@@ -79305,6 +79712,16 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "timeout": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -79328,37 +79745,7 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "responseText": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "responseXML": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "responseType": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "response": {
+        "responseURL": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -79388,9 +79775,39 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "responseURL": {
+        "responseType": {
           "confidence": 4,
           "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "response": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "responseText": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "responseXML": {
+          "confidence": 4,
+          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -79442,7 +79859,7 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "getAllResponseHeaders": {
+        "getResponseHeader": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -79453,7 +79870,7 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "getResponseHeader": {
+        "getAllResponseHeaders": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -81346,6 +81763,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "toJSON": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "toString": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -81353,7 +81780,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false,
+          "isEnumerable": true,
           "isWritable": true
         },
         "prototype": {

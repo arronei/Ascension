@@ -289,6 +289,7 @@ namespace WebIDLCollector.Process
 
                     var currentMember = members.Single(a => a.Equals(member));
 
+                    currentMember.CeReactions = currentMember.CeReactions || member.CeReactions;
                     currentMember.Clamp = currentMember.Clamp || member.Clamp;
                     currentMember.EnforceRange = currentMember.EnforceRange || member.EnforceRange;
                     currentMember.Exposed = currentMember.Exposed.Union(member.Exposed).OrderBy(a => a);

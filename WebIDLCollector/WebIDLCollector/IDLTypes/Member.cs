@@ -217,7 +217,7 @@ namespace WebIDLCollector.IDLTypes
             }
             if (Iterable)
             {
-                sb.Append("iterable ");
+                sb.Append("iterable<");
             }
             if (LegacyIterable)
             {
@@ -225,14 +225,14 @@ namespace WebIDLCollector.IDLTypes
             }
             if (MapLike)
             {
-                sb.Append("maplike <");
+                sb.Append("maplike<");
             }
             if (SetLike)
             {
-                sb.Append("setlike <");
+                sb.Append("setlike<");
             }
             sb.Append(Type);
-            if (MapLike || SetLike)
+            if (Iterable || MapLike || SetLike)
             {
                 sb.Append(">");
             }

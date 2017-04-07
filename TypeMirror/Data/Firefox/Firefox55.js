@@ -1,6 +1,6 @@
 {
-  "browserVersion": "Firefox 54",
-  "timestamp": "2017-04-06T17:16:05.905Z",
+  "browserVersion": "Firefox 55",
+  "timestamp": "2017-04-06T17:16:35.885Z",
   "types": {
     "AnalyserNode": {
       "typeName": "AnalyserNode",
@@ -4065,6 +4065,15 @@
           "isEnumerable": true
         },
         "-moz-appearance": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "appearance": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -9050,6 +9059,24 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "textJustify": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "text-justify": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "textOrientation": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -10779,6 +10806,33 @@
           "isEnumerable": true
         },
         "-webkit-animation-timing-function": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "WebkitAppearance": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitAppearance": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "-webkit-appearance": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -17002,6 +17056,28 @@
           "isEnumerable": true,
           "isWritable": false
         },
+        "273": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": false
+        },
+        "274": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": false
+        },
         "item": {
           "confidence": 4,
           "type": "function",
@@ -17381,6 +17457,16 @@
           "isEnumerable": true
         },
         "-moz-appearance": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "appearance": {
           "confidence": 3,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -22920,6 +23006,26 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "textJustify": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "text-justify": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "textOrientation": {
           "confidence": 3,
           "type": "string",
@@ -24841,6 +24947,36 @@
           "isEnumerable": true
         },
         "-webkit-animation-timing-function": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "WebkitAppearance": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitAppearance": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "-webkit-appearance": {
           "confidence": 3,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -35444,6 +35580,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "onanimationcancel": {
+          "confidence": 4,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "onanimationend": {
           "confidence": 4,
           "type": "object",
@@ -37436,7 +37582,6 @@
         "RTCPeerConnectionIceEvent",
         "RTCTrackEvent",
         "RecordErrorEvent",
-        "ServiceWorkerMessageEvent",
         "SpeechSynthesisEvent",
         "StorageEvent",
         "TimeEvent",
@@ -39885,6 +40030,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "hapticActuators": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "constructor": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -40181,6 +40335,76 @@
         "prototype": {
           "confidence": 3,
           "type": "GamepadEventPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "GamepadHapticActuator": {
+      "typeName": "GamepadHapticActuator",
+      "derivedTypes": [],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "pulse": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "type": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "constructor": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "GamepadHapticActuatorPrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43859,6 +44083,16 @@
           "isEnumerable": true
         },
         "onmozfullscreenerror": {
+          "confidence": 4,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onanimationcancel": {
           "confidence": 4,
           "type": "object",
           "isPlausiblyInherited": false,
@@ -54396,36 +54630,6 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "findOptimalFormat": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "mappedDataLength": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "mapDataInto": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
         "width": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -59976,17 +60180,6 @@
         "reload": {
           "confidence": 3,
           "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "toJSON": {
-          "confidence": 3,
-          "type": "undefined",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66279,6 +66472,7 @@
         "Function",
         "Gamepad",
         "GamepadButton",
+        "GamepadHapticActuator",
         "GamepadPose",
         "HTMLAllCollection",
         "HTMLCollection",
@@ -69589,6 +69783,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "tangentialPressure": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "tiltX": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -69599,6 +69802,15 @@
           "isEnumerable": true
         },
         "tiltY": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "twist": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -76165,6 +76377,16 @@
           "isEnumerable": true
         },
         "onmozfullscreenerror": {
+          "confidence": 4,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onanimationcancel": {
           "confidence": 4,
           "type": "object",
           "isPlausiblyInherited": false,
@@ -87901,97 +88123,6 @@
         }
       }
     },
-    "SVGZoomEvent": {
-      "typeName": "SVGZoomEvent",
-      "derivedTypes": [],
-      "baseType": "UIEvent",
-      "confidence": 4,
-      "properties": {
-        "previousScale": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "previousTranslate": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "newScale": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "newTranslate": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "constructor": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "SVGZoomEventPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
     "Screen": {
       "typeName": "Screen",
       "derivedTypes": [],
@@ -88933,102 +89064,6 @@
           "hasSet": false,
           "isConfigurable": false,
           "isEnumerable": true
-        }
-      }
-    },
-    "ServiceWorkerMessageEvent": {
-      "typeName": "ServiceWorkerMessageEvent",
-      "derivedTypes": [],
-      "baseType": "Event",
-      "confidence": 4,
-      "properties": {
-        "data": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "origin": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "lastEventId": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "source": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "ports": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "constructor": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "ServiceWorkerMessageEventPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
         }
       }
     },
@@ -91941,6 +91976,17 @@
           "isEnumerable": false,
           "isWritable": false
         },
+        "asyncIterator": {
+          "confidence": 3,
+          "type": "symbol",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
         "prototype": {
           "confidence": 3,
           "type": "Symbol",
@@ -93873,7 +93919,6 @@
         "InputEvent",
         "KeyboardEvent",
         "MouseEvent",
-        "SVGZoomEvent",
         "ScrollAreaEvent",
         "TouchEvent"
       ],
@@ -93974,16 +94019,6 @@
         "rangeOffset": {
           "confidence": 4,
           "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "isChar": {
-          "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -96348,6 +96383,123 @@
           "isConfigurable": true,
           "isEnumerable": false,
           "isWritable": false
+        }
+      }
+    },
+    "WebAssembly": {
+      "typeName": "WebAssembly",
+      "derivedTypes": [],
+      "confidence": 4,
+      "properties": {
+        "compile": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "instantiate": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "validate": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "Module": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "Instance": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "Memory": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "Table": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "CompileError": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "LinkError": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "RuntimeError": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
         }
       }
     },
@@ -112568,6 +112720,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "onanimationcancel": {
+          "confidence": 2,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "onanimationend": {
           "confidence": 2,
           "type": "object",
@@ -112875,6 +113037,16 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "origin": {
+          "confidence": 2,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
