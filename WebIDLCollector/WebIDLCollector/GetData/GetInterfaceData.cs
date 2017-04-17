@@ -18,6 +18,7 @@ namespace WebIDLCollector.GetData
         (?<namedconstructor>namedconstructor\s*=\s*[^\)\s,\]]+(\s*\((?<ncargs>.+)?\))?)(,|$)|
         (exposed(\s*=\s*(?<exposed>(\([^\)]+\))|[^\(\s,\]]+))?)(,|$)|
         (?<global>global(\s*=\s*(?<globals>(\([^\)]+\))|[^\(\s,\]]+))?)(,|$)|
+        (?<htmlconstructor>htmlconstructor)(,|$)|
         (?<implicitthis>implicitthis)(,|$)|
         [^y](?<arrayclass>arrayclass)(,|$)|
         (?<legacyarrayclass>legacyarrayclass)(,|$)|
@@ -84,6 +85,7 @@ namespace WebIDLCollector.GetData
                     foreach (Match m in InterfaceExtendedParser.Matches(interfaceDefinition.ExtendedAttribute))
                     {
                         interfaceDefinition.IsGlobal = interfaceDefinition.IsGlobal || !string.IsNullOrWhiteSpace(m.Groups["global"].Value.Trim());
+                        interfaceDefinition.HtmlConstructor = interfaceDefinition.HtmlConstructor || !string.IsNullOrWhiteSpace(m.Groups["htmlconstructor"].Value.Trim());
                         interfaceDefinition.ImplicitThis = interfaceDefinition.ImplicitThis || !string.IsNullOrWhiteSpace(m.Groups["implicitthis"].Value.Trim());
                         interfaceDefinition.ArrayClass = interfaceDefinition.ArrayClass || !string.IsNullOrWhiteSpace(m.Groups["arrayclass"].Value.Trim());
                         interfaceDefinition.LegacyArrayClass = interfaceDefinition.LegacyArrayClass || !string.IsNullOrWhiteSpace(m.Groups["legacyarrayclass"].Value.Trim());

@@ -27,6 +27,7 @@ namespace WebIDLCollector.IDLTypes
         public bool ImplicitThis { get; set; }
         public bool ArrayClass { get; set; }
         public bool LegacyArrayClass { get; set; }
+        public bool HtmlConstructor { get; set; }
         public bool LegacyUnenumerableNamedProperties { get; set; }
         public IEnumerable<string> NamedConstructors { get; set; }
         public bool NoInterfaceObject { get; set; }
@@ -98,6 +99,11 @@ namespace WebIDLCollector.IDLTypes
                             sb.Append("(").Append(string.Join(", ", PrimaryGlobals)).Append(")");
                         }
                     }
+                    comma = ", ";
+                }
+                if (HtmlConstructor)
+                {
+                    sb.Append(comma).Append("HTMLConstructor");
                     comma = ", ";
                 }
                 if (Constructors.Any())
