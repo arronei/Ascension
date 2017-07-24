@@ -71,9 +71,9 @@ namespace WebIDLDownloader
             var startInfo = new ProcessStartInfo
             {
                 //WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-                WorkingDirectory = @"D:\GitHub\Browsers\" + platform,
+                WorkingDirectory = @"F:\GitHub\Browsers\" + platform,
                 FileName = "cmd.exe",
-                Arguments = "/C git pull --ff-only"
+                Arguments = "/K git pull --ff-only"
             };
             process.StartInfo = startInfo;
             process.Start();

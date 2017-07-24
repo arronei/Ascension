@@ -26,6 +26,28 @@ var MirrorJS;
                 if (ctor !== undefined) {
                     var prototype = ctor.prototype;
                     if (prototype) {
+                        // Process Symbol members
+                        try {
+                            Object.getOwnPropertySymbols(prototype).forEach(function (symbol, index, array) {
+                                var symbolName = symbol.toString();
+                                if (symbolName.startsWith("Symbol(Symbol.")) {
+                                    // Shorten well-known symbols
+                                    symbolName = "@@" + symbolName.substring("Symbol(Symbol.".length, symbolName.length - 1);
+                                }
+                                var descriptor = Object.getOwnPropertyDescriptor(prototype, symbol);
+                                nameToModel[symbolName] = new MirrorJS.PropertyModel(4 /* Prototype */, undefined, descriptor);
+                                if (symbolName === "@@iterator") {
+                                    nameToModel[symbolName].extraData = (descriptor.value === Array.prototype[Symbol.iterator] ? "value-iterable" : "pair-iterable");
+                                }
+                                else if (symbolName === "@@unscopables") {
+                                    var entries = [];
+                                    for (var key of Object.keys(descriptor.value)) {
+                                        entries.push(`"${key}": ${descriptor.value[key]}`);
+                                    }
+                                    nameToModel[symbolName].extraData = `{ ${entries.join(", ")} }`;
+                                }
+                            });
+                        } catch (ignored) {}
                         Object.getOwnPropertyNames(prototype).forEach(function (propertyName, index, array) {
                             if (propertyName === "MirrorJS") {
                                 return;
@@ -55,7 +77,7 @@ var MirrorJS;
                                 nameToModel[propertyName] = model;
                             }
                             try {
-                                if (!_this.preventAV(typeName, propertyName)) {
+                                if (!nameToModel[propertyName].type && !_this.preventAV(typeName, propertyName)) {
                                     nameToModel[propertyName].type = MirrorJS.Utils.getTypeNameFromInstance(ctor[propertyName]);
                                 }
                             }
@@ -98,7 +120,7 @@ var MirrorJS;
                             }
                         }
                         try {
-                            if (!_this.preventAV(typeName, propertyName)) {
+                            if (!nameToModel[propertyName].type && !_this.preventAV(typeName, propertyName)) {
                                 nameToModel[propertyName].type = MirrorJS.Utils.getTypeNameFromInstance(instance[propertyName]);
                             }
                         }
@@ -109,7 +131,9 @@ var MirrorJS;
                     }
                 }
                 else {
-                    console.warn("Could not create instance of type '" + typeName + "'.");
+                    if (typeName.constructor) {
+                        console.warn("Could not create instance of type '" + typeName + "'.");
+                    }
                 }
                 return nameToModel;
             });
@@ -133,11 +157,11 @@ var MirrorJS;
                 var ctor = _this.getCtor(typeName);
                 if (!ctor) {
                     console.assert(MirrorJS.Utils.workaroundChromium43394(), "Only Chrome has cases where we are unable to find a ctor for a type.");
-                    return;
+                    return undefined;
                 }
                 var proto = ctor.prototype;
                 if(!proto){
-                    return;
+                    return undefined;
                 }
                 var base = Object.getPrototypeOf(proto);
                 if (!base) {
@@ -200,12 +224,13 @@ var MirrorJS;
                 console.assert(typeName === "Object", "All types must inherit from Object (exempting Object).");
                 return { isInherited: false, confidence: 3 /* InstanceWithBase */ };
             }
+            // If any ancestor owns a property with the same name, the property is assumed to be inherited.
             for (var ancestor = baseType; ancestor; ancestor = this.getBaseType(ancestor)) {
                 // We use our 'getOwnProperties' helper which produces a merged list of properties discovered
                 // via prototypes and by enumerating instances.
                 var baseProperties = this.getOwnProperties(ancestor);
                 var propertyModel = baseProperties[propertyName];
-                if (propertyModel !== undefined) {
+                if (propertyModel) {
                     switch (propertyModel.confidence) {
                         case 4 /* Prototype */:
                             return { isInherited: true, confidence: 4 /* Prototype */ };

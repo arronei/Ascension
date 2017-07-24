@@ -1354,13 +1354,7 @@
     },
     {
         "name": "service-workers",
-        "url": "http://www.w3.org/TR/service-workers/",
-        "identification": [
-            {
-                "selector": "pre code",
-                "type": "idl"
-            }
-        ]
+        "url": "https://www.w3.org/TR/service-workers-1/"
     },
     {
         "name": "service-workers",

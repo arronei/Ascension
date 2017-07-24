@@ -51,8 +51,8 @@ var MirrorJS;
             }
         };
         Utils.setupErrorHandler = function () {
-            window.onerror = function (event, source, fileno, columnNumber) {
-                Utils.logError(source + "(" + fileno + "," + columnNumber + "): " + event.toString());
+            window.onerror = function (message, source, fileno, columnNumber) {
+                Utils.logError(source + "(" + fileno + "," + columnNumber + "): " + message);
             };
         };
         Utils.Xhr = function (url, done, data) {
