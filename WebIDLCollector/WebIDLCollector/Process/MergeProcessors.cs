@@ -169,6 +169,7 @@ namespace WebIDLCollector.Process
 
                     var currentMember = members.Single(a => a.Equals(member));
 
+                    currentMember.AllowShared = currentMember.AllowShared || member.AllowShared;
                     currentMember.Clamp = currentMember.Clamp || member.Clamp;
                     currentMember.EnforceRange = currentMember.EnforceRange || member.EnforceRange;
 
@@ -260,10 +261,12 @@ namespace WebIDLCollector.Process
 
                 currentInterface.IsCallback = currentInterface.IsCallback || interfaceType.IsCallback;
                 currentInterface.ImplicitThis = currentInterface.ImplicitThis || interfaceType.ImplicitThis;
+                currentInterface.HtmlConstructor = currentInterface.HtmlConstructor || interfaceType.HtmlConstructor;
                 currentInterface.IsGlobal = currentInterface.IsGlobal || interfaceType.IsGlobal;
                 currentInterface.IsPrimaryGlobal = currentInterface.IsPrimaryGlobal || interfaceType.IsPrimaryGlobal;
                 currentInterface.LegacyArrayClass = currentInterface.LegacyArrayClass || interfaceType.LegacyArrayClass;
                 currentInterface.LegacyUnenumerableNamedProperties = currentInterface.LegacyUnenumerableNamedProperties || interfaceType.LegacyUnenumerableNamedProperties;
+                currentInterface.IsLegacyWindowAlias = currentInterface.IsLegacyWindowAlias || interfaceType.IsLegacyWindowAlias;
                 currentInterface.NoInterfaceObject = currentInterface.NoInterfaceObject || interfaceType.NoInterfaceObject;
                 currentInterface.OverrideBuiltins = currentInterface.OverrideBuiltins || interfaceType.OverrideBuiltins;
                 currentInterface.SecureContext = currentInterface.SecureContext || interfaceType.SecureContext;
@@ -272,6 +275,7 @@ namespace WebIDLCollector.Process
                 currentInterface.Exposed = currentInterface.Exposed.Union(interfaceType.Exposed).OrderBy(a => a);
                 currentInterface.Globals = currentInterface.Globals.Union(interfaceType.Globals).OrderBy(a => a);
                 currentInterface.PrimaryGlobals = currentInterface.PrimaryGlobals.Union(interfaceType.PrimaryGlobals).OrderBy(a => a);
+                currentInterface.LegacyWindowAliases = currentInterface.LegacyWindowAliases.Union(interfaceType.LegacyWindowAliases).OrderBy(a => a);
                 currentInterface.Constructors = currentInterface.Constructors.Union(interfaceType.Constructors);
                 currentInterface.ExtendedBy = currentInterface.ExtendedBy.Union(interfaceType.ExtendedBy).OrderBy(a => a);
                 currentInterface.Inherits = currentInterface.Inherits.Union(interfaceType.Inherits).OrderBy(a => a);
@@ -289,8 +293,10 @@ namespace WebIDLCollector.Process
 
                     var currentMember = members.Single(a => a.Equals(member));
 
+                    currentMember.AllowShared = currentMember.AllowShared || member.AllowShared;
                     currentMember.CeReactions = currentMember.CeReactions || member.CeReactions;
                     currentMember.Clamp = currentMember.Clamp || member.Clamp;
+                    currentMember.Default = currentMember.Default || member.Default;
                     currentMember.EnforceRange = currentMember.EnforceRange || member.EnforceRange;
                     currentMember.Exposed = currentMember.Exposed.Union(member.Exposed).OrderBy(a => a);
                     currentMember.LenientSetter = currentMember.LenientSetter || member.LenientSetter;

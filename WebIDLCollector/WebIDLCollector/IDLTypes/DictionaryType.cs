@@ -24,12 +24,14 @@ namespace WebIDLCollector.IDLTypes
         public IEnumerable<string> Exposed { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct(bool showMemberSpecName = false)
+        public string Reconstruct(bool showSpecName = false)
         {
             var sb = new StringBuilder();
             var comma = string.Empty;
-
-            sb.AppendLine("// " + string.Join(", ", SpecNames));
+            if (showSpecName)
+            {
+                sb.AppendLine("// " + string.Join(", ", SpecNames));
+            }
             if (Constructors.Any() || Exposed.Any())
             {
                 sb.Append("[");
@@ -73,7 +75,7 @@ namespace WebIDLCollector.IDLTypes
 
                 foreach (var member in Members)
                 {
-                    sb.Append("    ").Append(member.Reconstruct(showMemberSpecName));
+                    sb.Append("    ").Append(member.Reconstruct(showSpecName));
                 }
 
                 sb.AppendLine("};");

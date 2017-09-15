@@ -24,8 +24,10 @@ namespace WebIDLCollector.IDLTypes
         public bool Attribute { private get; set; }
         public string ExtendedAttribute { get; set; }
         public IEnumerable<string> Exposed { get; set; }
+        public bool AllowShared { get; set; }
         public bool CeReactions { get; set; }
         public bool Clamp { get; set; }
+        public bool Default { get; set; }
         public bool EnforceRange { get; set; }
         public bool LenientSetter { get; set; }
         public bool LenientThis { get; set; }
@@ -38,6 +40,11 @@ namespace WebIDLCollector.IDLTypes
         public string TreatUndefinedAs { get; set; }
         public bool Unforgeable { get; set; }
         public bool Unscopable { get; set; }
+
+        public bool Pure { get; set; }
+        public bool Constant { get; set; }
+        public string StoreInSlot { get; set; }
+
         public bool Static { private get; set; }
         public bool HasGet { get; set; }
         public bool HasSet { get; set; }
@@ -67,8 +74,10 @@ namespace WebIDLCollector.IDLTypes
             var sb = new StringBuilder();
             var comma = string.Empty;
 
-            if (CeReactions ||
+            if (AllowShared ||
+                CeReactions ||
                 Clamp ||
+                Default ||
                 EnforceRange ||
                 Exposed.Any() ||
                 LenientSetter ||
@@ -81,10 +90,19 @@ namespace WebIDLCollector.IDLTypes
                 !string.IsNullOrWhiteSpace(TreatNullAs) ||
                 !string.IsNullOrWhiteSpace(TreatUndefinedAs) ||
                 Unforgeable ||
-                Unscopable)
+                Unscopable ||
+                Pure ||
+                Constant ||
+                !string.IsNullOrWhiteSpace(StoreInSlot)
+                )
             {
                 sb.Append("[");
 
+                if (Clamp)
+                {
+                    sb.Append("AllowShared");
+                    comma = ", ";
+                }
                 if (CeReactions)
                 {
                     sb.Append("CEReactions");
@@ -93,6 +111,11 @@ namespace WebIDLCollector.IDLTypes
                 if (Clamp)
                 {
                     sb.Append("Clamp");
+                    comma = ", ";
+                }
+                if (Default)
+                {
+                    sb.Append("Default");
                     comma = ", ";
                 }
                 if (EnforceRange)
@@ -162,6 +185,20 @@ namespace WebIDLCollector.IDLTypes
                 if (Unscopable)
                 {
                     sb.Append(comma).Append("Unscopable");
+                    comma = ", ";
+                }
+                if (Pure)
+                {
+                    sb.Append(comma).Append("Pure");
+                }
+                if (Constant)
+                {
+                    sb.Append(comma).Append("Constant");
+                }
+                if (!string.IsNullOrWhiteSpace(StoreInSlot))
+                {
+                    sb.Append(comma).Append("StoreInSlot=").Append(StoreInSlot);
+                    comma = ", ";
                 }
 
                 sb.Append("] ");

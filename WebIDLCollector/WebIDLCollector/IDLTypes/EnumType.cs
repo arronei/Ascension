@@ -15,11 +15,15 @@ namespace WebIDLCollector.IDLTypes
         public IEnumerable<string> EnumValues { private get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct()
+        public string Reconstruct(bool showMemberSpecName = false)
         {
             var sb = new StringBuilder();
 
-            sb.Append("// ").AppendLine(string.Join(", ", SpecNames));
+            if (showMemberSpecName)
+            {
+                sb.Append("// ").AppendLine(string.Join(", ", SpecNames));
+            }
+
             sb.Append("enum ").AppendLine(Name);
             sb.Append("{");
             var comma = string.Empty;

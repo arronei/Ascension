@@ -1,1739 +1,1755 @@
 ﻿[
-    {
-        "name": "payment-request",
-        "url": "https://www.w3.org/TR/payment-request/"
-    },
-    {
-        "name": "payment-request",
-        "url": "https://w3c.github.io/browser-payment-api/"
-    },
-    {
-        "name": "webaudio",
-        "url": "http://www.w3.org/TR/webaudio/"
-    },
-    {
-        "name": "webaudio",
-        "url": "https://webaudio.github.io/web-audio-api/"
-    },
-    {
-        "name": "webmidi",
-        "url": "http://www.w3.org/TR/webmidi/"
-    },
-    {
-        "name": "webmidi",
-        "url": "https://webaudio.github.io/web-midi-api/"
-    },
-    {
-        "name": "webdriver",
-        "url": "http://www.w3.org/TR/webdriver/"
-    },
-    {
-        "name": "webdriver",
-        "url": "https://w3c.github.io/webdriver/webdriver-spec.html"
-    },
-    {
-        "name": "console",
-        "url": "https://console.spec.whatwg.org/"
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/box.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/visuren.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/visudet.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/visufx.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/generate.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/page.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/colors.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/fonts.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/text.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/tables.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/ui.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css21",
-        "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-        "url": "http://www.w3.org/TR/CSS21/aural.html",
-        "identification": [
-            {
-                "selector": "div.propdef",
-                "type": "css"
-            }
-        ]
-    },
-    {
-        "name": "css-align-3",
-        "url": "http://www.w3.org/TR/css3-align/"
-    },
-    {
-        "name": "css-align-3",
-        "url": "https://drafts.csswg.org/css-align/"
-    },
-    {
-        "name": "css-animations-1",
-        "title": "CSS Animations Level 1",
-        "url": "https://www.w3.org/TR/css3-animations/"
-    },
-    {
-        "name": "css-animations-1",
-        "title": "CSS Animations Level 1",
-        "url": "https://drafts.csswg.org/css-animations/"
-    },
-    {
-        "name": "css-animations-2",
-        "title": "CSS Animations Level 2",
-        "url": "https://drafts.csswg.org/css-animations-2/"
-    },
-    {
-        "name": "css-background-3",
-        "title": "CSS Backgrounds and Borders Level 3",
-        "url": "http://www.w3.org/TR/css3-background/"
-    },
-    {
-        "name": "css-background-3",
-        "title": "CSS Backgrounds and Borders Level 3",
-        "url": "https://drafts.csswg.org/css-backgrounds/"
-    },
-    {
-        "name": "css-background-4",
-        "title": "CSS Backgrounds and Borders Level 4",
-        "url": "http://dev.w3.org/csswg/css-backgrounds-4/"
-    },
-    {
-        "name": "css-break-3",
-        "url": "http://www.w3.org/TR/css3-break/"
-    },
-    {
-        "name": "css-break-3",
-        "url": "https://drafts.csswg.org/css-break/"
-    },
-    {
-        "name": "css-cascade-3",
-        "url": "http://www.w3.org/TR/css-cascade-3/"
-    },
-    {
-        "name": "css-cascade-3",
-        "url": "https://drafts.csswg.org/css-cascade-3/"
-    },
-    {
-        "name": "css-cascade-4",
-        "url": "https://www.w3.org/TR/css-cascade-4/"
-    },
-    {
-        "name": "css-cascade-4",
-        "url": "https://drafts.csswg.org/css-cascade/"
-    },
-    {
-        "name": "css-color-3",
-        "title": "CSS Color Level 3",
-        "url": "http://www.w3.org/TR/css3-color/"
-    },
-    {
-        "name": "css-color-4",
-        "title": "CSS Color Level 4",
-        "url": "https://drafts.csswg.org/css-color/"
-    },
-    {
-        "name": "css-conditional-3",
-        "title": "CSS Conditional Rules Level 3",
-        "url": "http://www.w3.org/TR/css3-conditional/"
-    },
-    {
-        "name": "css-conditional-3",
-        "title": "CSS Conditional Rules Level 3",
-        "url": "https://drafts.csswg.org/css-conditional-3/"
-    },
-    {
-        "name": "css-containment-1",
-        "title": "CSS Containment Level 3",
-        "url": "https://drafts.csswg.org/css-containment/"
-    },
-    {
-        "name": "css-counter-styles-3",
-        "url": "http://www.w3.org/TR/css-counter-styles-3/"
-    },
-    {
-        "name": "css-counter-styles-3",
-        "url": "https://drafts.csswg.org/css-counter-styles/"
-    },
-    {
-        "name": "css-device-adapt-1",
-        "title": "CSS Device Adaptation Level 1",
-        "url": "https://www.w3.org/TR/css-device-adapt-1/"
-    },
-    {
-        "name": "css-device-adapt-1",
-        "title": "CSS Device Adaptation Level 1",
-        "url": "https://drafts.csswg.org/css-device-adapt/"
-    },
-    {
-        "name": "css-display-3",
-        "url": "http://www.w3.org/TR/css-display-3/"
-    },
-    {
-        "name": "css-display-3",
-        "url": "https://drafts.csswg.org/css-display/"
-    },
-    {
-        "name": "css-exclusions-1",
-        "title": "CSS Exclusions Level 1",
-        "url": "http://www.w3.org/TR/css3-exclusions/"
-    },
-    {
-        "name": "css-exclusions-1",
-        "title": "CSS Exclusions Level 1",
-        "url": "https://drafts.csswg.org/css-exclusions/"
-    },
-    {
-        "name": "css-flexbox-1",
-        "url": "http://www.w3.org/TR/css3-flexbox/"
-    },
-    {
-        "name": "css-flexbox-1",
-        "url": "https://drafts.csswg.org/css-flexbox/"
-    },
-    {
-        "name": "css-font-loading-3",
-        "url": "http://www.w3.org/TR/css-font-loading/"
-    },
-    {
-        "name": "css-font-loading-3",
-        "url": "http://dev.w3.org/csswg/css-font-loading/"
-    },
-    {
-        "name": "css-fonts-3",
-        "url": "http://www.w3.org/TR/css-fonts-3/"
-    },
-    {
-        "name": "css-fonts-3",
-        "url": "https://drafts.csswg.org/css-fonts/"
-    },
-    {
-        "name": "css-gcpm-3",
-        "url": "http://www.w3.org/TR/css3-gcpm/"
-    },
-    {
-        "name": "css-gcpm-3",
-        "url": "https://drafts.csswg.org/css-gcpm/"
-    },
-    {
-        "name": "css-grid-1",
-        "url": "http://www.w3.org/TR/css3-grid-layout/"
-    },
-    {
-        "name": "css-grid-1",
-        "url": "https://drafts.csswg.org/css-grid/"
-    },
-    {
-        "name": "css-images-3",
-        "title": "CSS Image Values and Replaced Content Level 3",
-        "url": "https://www.w3.org/TR/css3-images/"
-    },
-    {
-        "name": "css-images-3",
-        "title": "CSS Image Values and Replaced Content Level 3",
-        "url": "https://drafts.csswg.org/css-images/"
-    },
-    {
-        "name": "css-images-4",
-        "title": "CSS Image Values and Replaced Content Level 4",
-        "url": "https://www.w3.org/TR/css4-images/"
-    },
-    {
-        "name": "css-images-4",
-        "title": "CSS Image Values and Replaced Content Level 4",
-        "url": "https://drafts.csswg.org/css-images-4/"
-    },
-    {
-        "name": "css-inline-3",
-        "url": "https://www.w3.org/TR/css-inline/"
-    },
-    {
-        "name": "css-inline-3",
-        "url": "https://drafts.csswg.org/css-inline/"
-    },
-    {
-        "name": "css-line-grid-1",
-        "url": "https://www.w3.org/TR/css-line-grid-1/"
-    },
-    {
-        "name": "css-line-grid-1",
-        "url": "https://drafts.csswg.org/css-line-grid/"
-    },
-    {
-        "name": "css-lists-3",
-        "url": "https://www.w3.org/TR/css3-lists/"
-    },
-    {
-        "name": "css-lists-3",
-        "url": "https://drafts.csswg.org/css-lists/"
-    },
-    {
-        "name": "css-logical-props-1",
-        "title": "CSS Logical Properties Level 1",
-        "url": "http://dev.w3.org/csswg/css-logical-props/"
-    },
-    {
-        "name": "css-multicol-1",
-        "title": "CSS Multi-column Layout Level 1",
-        "url": "http://www.w3.org/TR/css3-multicol/"
-    },
-    {
-        "name": "css-multicol-1",
-        "title": "CSS Multi-column Layout Level 1",
-        "url": "https://drafts.csswg.org/css-multicol/"
-    },
-    {
-        "name": "css-multicol-2",
-        "title": "CSS Multi-column Layout Level 2",
-        "url": "https://drafts.csswg.org/css-multicol-2/"
-    },
-    {
-        "name": "css-overflow-3",
-        "title": "CSS Overflow Level 3",
-        "url": "https://www.w3.org/TR/css-overflow-3/"
-    },
-    {
-        "name": "css-overflow-4",
-        "title": "CSS Overflow Level 4",
-        "url": "https://drafts.csswg.org/css-overflow/"
-    },
-    {
-        "name": "css-page-3",
-        "title": "CSS Paged Media Level 3",
-        "url": "http://www.w3.org/TR/css3-page/"
-    },
-    {
-        "name": "css-page-3",
-        "title": "CSS Paged Media Level 3",
-        "url": "https://drafts.csswg.org/css-page/"
-    },
-    {
-        "name": "css-position-3",
-        "title": "CSS Positioned Layout Level 3",
-        "url": "http://www.w3.org/TR/css3-positioning/"
-    },
-    {
-        "name": "css-position-3",
-        "title": "CSS Positioned Layout Level 3",
-        "url": "https://drafts.csswg.org/css-position/"
-    },
-    {
-        "name": "css-pseudo-4",
-        "url": "http://www.w3.org/TR/css-pseudo-4/"
-    },
-    {
-        "name": "css-pseudo-4",
-        "url": "http://dev.w3.org/csswg/css-pseudo-4/"
-    },
-    {
-        "name": "css-regions-1",
-        "url": "https://www.w3.org/TR/css-regions-1/"
-    },
-    {
-        "name": "css-regions-1",
-        "url": "https://drafts.csswg.org/css-regions/"
-    },
-    {
-        "name": "css-round-display-1",
-        "url": "https://www.w3.org/TR/css-round-display-1/"
-    },
-    {
-        "name": "css-round-display-1",
-        "url": "http://dev.w3.org/csswg/css-round-display/"
-    },
-    {
-        "name": "css-ruby-1",
-        "url": "http://www.w3.org/TR/css3-ruby/"
-    },
-    {
-        "name": "css-ruby-1",
-        "url": "http://dev.w3.org/csswg/css-ruby-1/"
-    },
-    {
-        "name": "css-shapes-1",
-        "url": "https://www.w3.org/TR/css-shapes/"
-    },
-    {
-        "name": "css-shapes-1",
-        "url": "https://drafts.csswg.org/css-shapes/"
-    },
-    {
-        "name": "css-shapes-2",
-        "title": "CSS Shapes Level 2",
-        "url": "https://drafts.csswg.org/css-shapes-2/"
-    },
-    {
-        "name": "css-size-adjust-1",
-        "title": "CSS Mobile Text Size Adjustment Level 1",
-        "url": "http://dev.w3.org/csswg/css-size-adjust/"
-    },
-    {
-        "name": "css-sizing-3",
-        "title": "CSS Intrinsic & Extrinsic Sizing Level 3",
-        "url": "https://www.w3.org/TR/css3-sizing/"
-    },
-    {
-        "name": "css-sizing-4",
-        "title": "CSS Intrinsic & Extrinsic Sizing Level 4",
-        "url": "https://drafts.csswg.org/css-sizing/"
-    },
-    {
-        "name": "css-snappoints-1",
-        "url": "https://www.w3.org/TR/css-snappoints-1/"
-    },
-    {
-        "name": "css-snappoints-1",
-        "url": "http://dev.w3.org/csswg/css-snappoints/"
-    },
-    {
-        "name": "css-speech-3",
-        "title": "CSS Speech Level 3",
-        "url": "https://www.w3.org/TR/css3-speech/"
-    },
-    {
-        "name": "css-speech-3",
-        "title": "CSS Speech Level 3",
-        "url": "https://drafts.csswg.org/css-speech/"
-    },
-    {
-        "name": "css-step-sizing-1",
-        "url": "https://drafts.csswg.org/css-step-sizing/"
-    },
-    {
-        "name": "css-text-3",
-        "url": "https://www.w3.org/TR/css-text-3/"
-    },
-    {
-        "name": "css-text-3",
-        "url": "https://drafts.csswg.org/css-text/"
-    },
-    {
-        "name": "css-text-4",
-        "url": "https://drafts.csswg.org/css-text-4/"
-    },
-    {
-        "name": "css-text-decor-3",
-        "url": "https://www.w3.org/TR/css-text-decor-3/"
-    },
-    {
-        "name": "css-text-decor-3",
-        "url": "https://drafts.csswg.org/css-text-decor/"
-    },
-    {
-        "name": "css-text-decor-4",
-        "title": "CSS Text Decoration Level 4",
-        "url": "http://dev.w3.org/csswg/css-text-decor-4/"
-    },
-    {
-        "name": "css-transforms-1",
-        "url": "http://www.w3.org/TR/css3-transforms/"
-    },
-    {
-        "name": "css-transforms-1",
-        "url": "https://drafts.csswg.org/css-transforms/"
-    },
-    {
-        "name": "css-transforms-2",
-        "title": "CSS Transform Level 2",
-        "url": "https://drafts.csswg.org/css-transforms-2/"
-    },
-    {
-        "name": "css-transitions-1",
-        "title": "CSS Transitions Level 1",
-        "url": "https://www.w3.org/TR/css3-transitions/",
-        "identification": [
-            {
-                "selector": "div.idl-code",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "css-transitions-1",
-        "title": "CSS Transitions Level 1",
-        "url": "https://drafts.csswg.org/css-transitions/"
-    },
-    {
-        "name": "css-transitions-2",
-        "title": "CSS Transitions Level 2",
-        "url": "https://drafts.csswg.org/css-transitions-2/"
-    },
-    {
-        "name": "css-cssui-3",
-        "title": "CSS Basic User Interface Level 3",
-        "url": "https://www.w3.org/TR/css3-ui/"
-    },
-    {
-        "name": "css-cssui-3",
-        "title": "CSS Basic User Interface Level 3",
-        "url": "https://drafts.csswg.org/css-ui/"
-    },
-    {
-        "name": "css-cssui-4",
-        "title": "CSS Basic User Interface Level 4",
-        "url": "https://drafts.csswg.org/css-ui-4/"
-    },
-    {
-        "name": "css-will-change-1",
-        "url": "https://www.w3.org/TR/css-will-change/"
-    },
-    {
-        "name": "css-will-change-1",
-        "url": "https://drafts.csswg.org/css-will-change/"
-    },
-    {
-        "name": "css-writing-modes-3",
-        "url": "https://www.w3.org/TR/css-writing-modes-3/"
-    },
-    {
-        "name": "css-writing-modes-3",
-        "url": "https://drafts.csswg.org/css-writing-modes/"
-    },
-    {
-        "name": "cssom-1",
-        "url": "https://www.w3.org/TR/cssom/"
-    },
-    {
-        "name": "cssom-1",
-        "url": "https://drafts.csswg.org/cssom/"
-    },
-    {
-        "name": "box-tree-api-1",
-        "title": "Box Tree API Level 1",
-        "url": "https://drafts.css-houdini.org/box-tree-api/"
-    },
-    {
-        "name": "css-layout-api-1",
-        "title": "CSS Layout API Level 1",
-        "url": "https://drafts.css-houdini.org/css-layout-api/"
-    },
-    {
-        "name": "css-paint-api-1",
-        "title": "CSS Painting API Level 1",
-        "url": "https://drafts.css-houdini.org/css-paint-api/"
-    },
-    //{
-    //    "name": "css-parser-api-1",
-    //    "title": "CSS Parser API Level 1",
-    //    "url": "https://drafts.css-houdini.org/css-parser-api/"
-    //},
-    {
-        "name": "css-properties-values-api-1",
-        "title": "CSS Properties and Values API Level 1",
-        "url": "https://drafts.css-houdini.org/css-properties-values-api/"
-    },
-    {
-        "name": "css-typed-om-1",
-        "title": "CSS Typed OM Level 1",
-        "url": "https://drafts.css-houdini.org/css-typed-om/"
-    },
-    //{
-    //    "name": "font-metrics-api-1",
-    //    "title": "Font Metrics API Level 1",
-    //    "url": "https://drafts.css-houdini.org/font-metrics-api/"
-    //},
-    {
-        "name": "worklets-1",
-        "title": "Worklets Level 1",
-        "url": "https://drafts.css-houdini.org/worklets/"
-    },
-    {
-        "name": "cssom-view-1",
-        "url": "https://www.w3.org/TR/cssom-view-1/"
-    },
-    {
-        "name": "cssom-view-1",
-        "url": "https://drafts.csswg.org/cssom-view/"
-    },
-    {
-        "name": "web-animations-1",
-        "url": "http://www.w3.org/TR/web-animations-1"
-    },
-    {
-        "name": "web-animations-1",
-        "url": "https://w3c.github.io/web-animations/"
-    },
-    {
-        "name": "ambient-light",
-        "url": "http://www.w3.org/TR/ambient-light/"
-    },
-    {
-        "name": "ambient-light",
-        "url": "https://w3c.github.io/ambient-light/"
-    },
-    {
-        "name": "battery-status",
-        "url": "http://www.w3.org/TR/battery-status/"
-    },
-    {
-        "name": "battery-status",
-        "url": "https://w3c.github.io/battery/"
-    },
-    {
-        "name": "html-media-capture",
-        "url": "http://www.w3.org/TR/html-media-capture/"
-    },
-    {
-        "name": "html-media-capture",
-        "url": "https://w3c.github.io/html-media-capture/"
-    },
-    {
-        "name": "proximity",
-        "url": "http://www.w3.org/TR/proximity/"
-    },
-    {
-        "name": "proximity",
-        "url": "https://w3c.github.io/proximity/"
-    },
-    {
-        "name": "vibration",
-        "url": "http://www.w3.org/TR/vibration/"
-    },
-    {
-        "name": "vibration",
-        "url": "https://w3c.github.io/vibration/"
-    },
-    {
-        "name": "orientation-event",
-        "url": "http://www.w3.org/TR/orientation-event/"
-    },
-    {
-        "name": "orientation-event",
-        "url": "https://w3c.github.io/deviceorientation/spec-source-orientation.html"
-    },
-    {
-        "name": "elementtraversal",
-        "url": "http://www.w3.org/TR/ElementTraversal/",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-1",
-        "url": "https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html",
-        "identification": [
-            {
-                "selector": ".idl-code",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-1",
-        "url": "https://www.w3.org/TR/REC-DOM-Level-1/level-one-html.html",
-        "identification": [
-            {
-                "selector": ".idl-code",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-2-html",
-        "url": "http://www.w3.org/TR/DOM-Level-2-HTML/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-2-core",
-        "url": "http://www.w3.org/TR/DOM-Level-2-Core/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-2-events",
-        "url": "http://www.w3.org/TR/DOM-Level-2-Events/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-2-style",
-        "url": "http://www.w3.org/TR/DOM-Level-2-Style/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-2-traversal-range",
-        "url": "http://www.w3.org/TR/DOM-Level-2-Traversal-Range/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-2-views",
-        "url": "http://www.w3.org/TR/DOM-Level-2-Views/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-3-as",
-        "url": "http://www.w3.org/TR/DOM-Level-3-AS/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-3-core",
-        "url": "http://www.w3.org/TR/DOM-Level-3-Core/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-3-ls",
-        "url": "https://www.w3.org/TR/DOM-Level-3-LS/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-3-val",
-        "url": "https://www.w3.org/TR/DOM-Level-3-Val/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-3-views",
-        "url": "https://www.w3.org/TR/DOM-Level-3-Views/idl-definitions.html",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-level-3-xpath",
-        "url": "https://www.w3.org/TR/DOM-Level-3-XPath/idl-definitions.html",
-        "file": "dom3xpath-bugfix.webidl",
-        "identification": [
-            {
-                "selector": ".idl-code pre",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom4",
-        "title": "W3C DOM4",
-        "url": "https://www.w3.org/TR/dom/"
-    },
-    {
-        "name": "whatwg-dom",
-        "url": "https://dom.spec.whatwg.org/"
-    },
-    {
-        "name": "encrypted-media",
-        "url": "http://www.w3.org/TR/encrypted-media/"
-    },
-    {
-        "name": "encrypted-media",
-        "url": "https://w3c.github.io/encrypted-media/"
-    },
-    {
-        "name": "html5",
-        "url": "https://www.w3.org/TR/html5/single-page.html"
-    },
-    {
-        "name": "html51",
-        "url": "https://w3c.github.io/html/idl-index.html#idl-index"
-    },
-    {
-        "name": "2dcontext",
-        "url": "http://www.w3.org/TR/2dcontext/"
-    },
-    {
-        "name": "2dcontext2",
-        "url": "http://www.w3.org/TR/2dcontext2/"
-    },
-    {
-        "name": "media-source",
-        "url": "http://www.w3.org/TR/media-source/"
-    },
-    {
-        "name": "media-source",
-        "url": "https://w3c.github.io/media-source/"
-    },
-    {
-        "name": "pointerevents",
-        "url": "http://www.w3.org/TR/pointerevents/",
-        "identification": [
-            {
-                "selector": "#the-touch-action-css-property table",
-                "type": "bikeshed"
-            },
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "pointerevents",
-        "url": "https://w3c.github.io/pointerevents/",
-        "identification": [
-            {
-                "selector": "#the-touch-action-css-property table",
-                "type": "bikeshed"
-            },
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "svg11",
-        "url": "http://www.w3.org/TR/SVG11/idl.html"
-    },
-    {
-        "name": "svg11",
-        "url": "http://www.w3.org/TR/SVG11/propidx.html",
-        "identification": [
-            {
-                "selector": "table.vert.property-table",
-                "type": "svgcss"
-            }
-        ]
-    },
-    {
-        "name": "svg2",
-        "url": "http://www.w3.org/TR/SVG2/idl.html"
-    },
-    {
-        "name": "svg2",
-        "url": "http://www.w3.org/TR/SVG2/propidx.html",
-        "identification": [
-            {
-                "selector": "table.proptable",
-                "type": "svgcss"
-            }
-        ]
-    },
-    {
-        "name": "telephony",
-        "url": "http://www.w3.org/TR/telephony/",
-        "file": "telephony-bugfix.webidl"
-    },
-    {
-        "name": "telephony",
-        "url": "http://telephony.sysapps.org/"
-    },
-    {
-        "name": "webvtt1",
-        "url": "http://www.w3.org/TR/webvtt1/"
-    },
-    {
-        "name": "webvtt1",
-        "url": "https://w3c.github.io/webvtt/"
-    },
-    {
-        "name": "clipboard-apis",
-        "url": "http://www.w3.org/TR/clipboard-apis/"
-    },
-    {
-        "name": "clipboard-apis",
-        "url": "https://w3c.github.io/clipboard-apis/"
-    },
-    {
-        "name": "uievents",
-        "url": "http://www.w3.org/TR/DOM-Level-3-Events/"
-    },
-    {
-        "name": "uievents",
-        "url": "https://w3c.github.io/uievents/"
-    },
-    {
-        "name": "dom-parsing",
-        "url": "http://www.w3.org/TR/DOM-Parsing/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            },
-            {
-                "selector": "pre.extraidl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "dom-parsing",
-        "url": "https://w3c.github.io/DOM-Parsing/",
-        "identification": [
-            {
-                "selector": "pre.idl",
-                "type": "idl"
-            },
-            {
-                "selector": "pre.extraidl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "fileapi",
-        "url": "http://www.w3.org/TR/FileAPI/",
-        "identification": [
-            {
-                "selector": "code.idl-code",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "fileapi",
-        "url": "https://w3c.github.io/FileAPI/"
-    },
-    {
-        "name": "gamepad",
-        "url": "http://www.w3.org/TR/gamepad/"
-    },
-    {
-        "name": "gamepad",
-        "url": "https://w3c.github.io/gamepad/"
-    },
-    {
-        "name": "indexeddb",
-        "url": "http://www.w3.org/TR/IndexedDB/",
-        "file": "indexeddb-bugfix.webidl"
-    },
-    {
-        "name": "indexeddb2",
-        "title": "Indexed Database API (Second Edition)",
-        "url": "http://w3c.github.io/IndexedDB/"
-    },
-    {
-        "name": "ime-api",
-        "url": "http://www.w3.org/TR/ime-api/"
-    },
-    {
-        "name": "ime-api",
-        "url": "https://w3c.github.io/ime-api/"
-    },
-    {
-        "name": "pointerlock",
-        "url": "http://www.w3.org/TR/pointerlock/"
-    },
-    {
-        "name": "pointerlock",
-        "url": "https://w3c.github.io/pointerlock/"
-    },
-    {
-        "name": "push-api",
-        "url": "http://www.w3.org/TR/push-api/"
-    },
-    {
-        "name": "push-api",
-        "url": "https://w3c.github.io/push-api/"
-    },
-    {
-        "name": "quota-api",
-        "url": "http://www.w3.org/TR/quota-api/"
-    },
-    {
-        "name": "quota-api",
-        "url": "http://w3c.github.io/quota-api/"
-    },
-    {
-        "name": "screen-orientation",
-        "url": "http://www.w3.org/TR/screen-orientation/"
-    },
-    {
-        "name": "screen-orientation",
-        "url": "https://w3c.github.io/screen-orientation/"
-    },
-    {
-        "name": "selectors-api2",
-        "url": "http://www.w3.org/TR/selectors-api2/"
-    },
-    {
-        "name": "eventsource",
-        "url": "http://www.w3.org/TR/eventsource/"
-    },
-    {
-        "name": "shadow-dom",
-        "url": "https://www.w3.org/TR/shadow-dom/"
-    },
-    {
-        "name": "shadow-dom",
-        "url": "http://w3c.github.io/webcomponents/spec/shadow/"
-    },
-    {
-        "name": "websockets",
-        "url": "http://www.w3.org/TR/websockets/"
-    },
-    {
-        "name": "workers",
-        "url": "http://www.w3.org/TR/workers/"
-    },
-    {
-        "name": "csp2",
-        "url": "http://www.w3.org/TR/CSP2/"
-    },
-    {
-        "name": "csp2",
-        "url": "https://w3c.github.io/webappsec-csp/2/"
-    },
-    {
-        "name": "csp3",
-        "url": "http://www.w3.org/TR/CSP3/"
-    },
-    {
-        "name": "csp3",
-        "url": "https://w3c.github.io/webappsec-csp/"
-    },
-    {
-        "name": "geolocation-api",
-        "url": "http://www.w3.org/TR/geolocation-API/"
-    },
-    {
-        "name": "geolocation-api",
-        "url": "http://dev.w3.org/geo/api/spec-source.html"
-    },
-    {
-        "name": "sri",
-        "url": "http://www.w3.org/TR/SRI/"
-    },
-    {
-        "name": "sri",
-        "url": "https://w3c.github.io/webappsec-subresource-integrity/"
-    },
-    {
-        "name": "webcryptoapi",
-        "url": "http://www.w3.org/TR/WebCryptoAPI/",
-        "identification": [
-            {
-                "selector": "code.idl-code",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "webcryptoapi",
-        "url": "https://w3c.github.io/webcrypto/Overview.html",
-        "identification": [
-            {
-                "selector": "code.idl-code",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "beacon",
-        "url": "http://www.w3.org/TR/beacon/"
-    },
-    {
-        "name": "beacon",
-        "url": "https://w3c.github.io/beacon/"
-    },
-    {
-        "name": "frame-timing",
-        "url": "http://www.w3.org/TR/frame-timing/"
-    },
-    {
-        "name": "frame-timing",
-        "url": "http://wicg.github.io/frame-timing/"
-    },
-    {
-        "name": "hr-time",
-        "url": "http://www.w3.org/TR/hr-time/"
-    },
-    {
-        "name": "hr-time-2",
-        "url": "http://www.w3.org/TR/hr-time-2/"
-    },
-    {
-        "name": "hr-time-2",
-        "url": "https://w3c.github.io/hr-time/"
-    },
-    {
-        "name": "navigation-timing",
-        "url": "http://www.w3.org/TR/navigation-timing/"
-    },
-    {
-        "name": "navigation-timing-2",
-        "url": "http://www.w3.org/TR/navigation-timing-2/"
-    },
-    {
-        "name": "navigation-timing-2",
-        "url": "https://w3c.github.io/navigation-timing/"
-    },
-    {
-        "name": "resource-hints",
-        "url": "http://www.w3.org/TR/resource-hints/"
-    },
-    {
-        "name": "resource-hints",
-        "url": "https://w3c.github.io/resource-hints/"
-    },
-    {
-        "name": "resource-timing",
-        "url": "http://www.w3.org/TR/resource-timing/"
-    },
-    {
-        "name": "resource-timing",
-        "url": "https://w3c.github.io/resource-timing/"
-    },
-    {
-        "name": "server-timing",
-        "url": "http://www.w3.org/TR/server-timing/"
-    },
-    {
-        "name": "server-timing",
-        "url": "https://w3c.github.io/server-timing/"
-    },
-    {
-        "name": "animation-timing",
-        "url": "http://www.w3.org/TR/animation-timing/"
-    },
-    {
-        "name": "webrtc",
-        "url": "http://www.w3.org/TR/webrtc/"
-    },
-    {
-        "name": "webrtc",
-        "url": "https://w3c.github.io/webrtc-pc/"
-    },
-    {
-        "name": "audio-output",
-        "url": "http://www.w3.org/TR/audio-output/"
-    },
-    {
-        "name": "audio-output",
-        "url": "https://w3c.github.io/mediacapture-output/"
-    },
-    {
-        "name": "mediacapture-streams",
-        "url": "http://www.w3.org/TR/mediacapture-streams/"
-    },
-    {
-        "name": "mediacapture-streams",
-        "url": "https://w3c.github.io/mediacapture-main/"
-    },
-    {
-        "name": "mediacapture-depth",
-        "url": "http://www.w3.org/TR/mediacapture-depth/"
-    },
-    {
-        "name": "mediacapture-depth",
-        "url": "https://w3c.github.io/mediacapture-depth/"
-    },
-    {
-        "name": "image-capture",
-        "url": "http://www.w3.org/TR/image-capture/"
-    },
-    {
-        "name": "image-capture",
-        "url": "https://w3c.github.io/mediacapture-image/"
-    },
-    {
-        "name": "mediastream-recording",
-        "url": "http://www.w3.org/TR/mediastream-recording/"
-    },
-    {
-        "name": "mediastream-recording",
-        "url": "https://w3c.github.io/mediacapture-record/MediaRecorder.html"
-    },
-    {
-        "name": "screen-capture",
-        "url": "http://www.w3.org/TR/screen-capture/"
-    },
-    {
-        "name": "screen-capture",
-        "url": "https://w3c.github.io/mediacapture-screen-share/"
-    },
-    {
-        "name": "whatwg-fullscreen",
-        "url": "https://fullscreen.spec.whatwg.org/"
-    },
-    {
-        "name": "whatwg-url",
-        "url": "https://url.spec.whatwg.org/"
-    },
-    {
-        "name": "whatwg-fetch",
-        "title": "Fetch",
-        "url": "https://fetch.spec.whatwg.org/"
-    },
-    {
-        "name": "encoding",
-        "url": "http://www.w3.org/TR/encoding/"
-    },
-    {
-        "name": "whatwg-encoding",
-        "url": "https://encoding.spec.whatwg.org/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/specs/1.0/",
-        "file": "webgl10-bugfix.webidl"
-    },
-    {
-        "name": "webgl2",
-        "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-        "file": "webgl20-bugfix.webidl"
-    },
-    {
-        "name": "selection-api",
-        "url": "http://www.w3.org/TR/selection-api/"
-    },
-    {
-        "name": "selection-api",
-        "url": "https://w3c.github.io/selection-api/"
-    },
-    {
-        "name": "presentation-api",
-        "url": "https://www.w3.org/TR/presentation-api/"
-    },
-    {
-        "name": "presentation-api",
-        "url": "http://w3c.github.io/presentation-api/"
-    },
-    {
-        "name": "page-visibility",
-        "url": "https://www.w3.org/TR/page-visibility/"
-    },
-    {
-        "name": "page-visibility",
-        "url": "http://w3c.github.io/page-visibility/"
-    },
-    {
-        "name": "custom-elements",
-        "url": "http://www.w3.org/TR/custom-elements/"
-    },
-    {
-        "name": "custom-elements",
-        "url": "https://w3c.github.io/webcomponents/spec/custom/"
-    },
-    {
-        "name": "service-workers",
-        "url": "https://www.w3.org/TR/service-workers-1/"
-    },
-    {
-        "name": "service-workers",
-        "url": "https://w3c.github.io/ServiceWorker/"
-    },
-    {
-        "name": "xhr",
-        "url": "https://xhr.spec.whatwg.org/"
-    },
-    {
-        "name": "ortc",
-        "title": "Object RTC (ORTC) API for WebRTC",
-        "url": "http://draft.ortc.org/"
-    },
-    {
-        "name": "file-system-api",
-        "url": "http://dev.w3.org/2009/dap/file-system/file-dir-sys.html",
-        "identification": [
-            {
-                "selector": "div.idl",
-                "type": "respec"
-            },
-            {
-                "selector": "dl.idl",
-                "type": "respec"
-            }
-        ]
-    },
-    {
-        "name": "mediacapture-fromelement",
-        "url": "http://www.w3.org/TR/mediacapture-fromelement/"
-    },
-    {
-        "name": "mediacapture-fromelement",
-        "url": "http://w3c.github.io/mediacapture-fromelement/"
-    },
-    {
-        "name": "setimmediate",
-        "title": "Efficient Script Yielding",
-        "url": "http://w3c.github.io/setImmediate/"
-    },
-    {
-        "name": "notifications",
-        "url": "http://www.w3.org/TR/notifications/"
-    },
-    {
-        "name": "whatwg-notifications",
-        "url": "https://notifications.spec.whatwg.org/"
-    },
-    {
-        "name": "html-imports",
-        "url": "http://www.w3.org/TR/html-imports/",
-        "identification": [
-            {
-                "selector": "pre code",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "html-imports",
-        "url": "http://w3c.github.io/webcomponents/spec/imports/"
-    },
-    {
-        "name": "es6",
-        "title": "ECMAScript 2015",
-        "url": "http://www.ecma-international.org/ecma-262/6.0/",
-        "file": "ECMAScript2015.webidl"
-    },
-    {
-        "name": "tracking-dnt",
-        "url": "http://www.w3.org/TR/tracking-dnt/"
-    },
-    {
-        "name": "tracking-dnt",
-        "url": "https://www.w3.org/2011/tracking-protection/drafts/tracking-dnt.html"
-    },
-    {
-        "name": "user-timing",
-        "url": "http://www.w3.org/TR/user-timing/"
-    },
-    {
-        "name": "performance-timeline",
-        "url": "http://www.w3.org/TR/performance-timeline/"
-    },
-    {
-        "name": "performance-timeline-2",
-        "url": "http://www.w3.org/TR/performance-timeline-2/"
-    },
-    {
-        "name": "performance-timeline-2",
-        "url": "https://w3c.github.io/performance-timeline/"
-    },
-    {
-        "name": "navigation-timing",
-        "url": "http://www.w3.org/TR/navigation-timing/"
-    },
-    {
-        "name": "navigation-timing-2",
-        "url": "http://www.w3.org/TR/navigation-timing-2/"
-    },
-    {
-        "name": "navigation-timing-2",
-        "url": "https://w3c.github.io/navigation-timing/"
-    },
-    {
-        "name": "wapa",
-        "title": "Web Accessibility Properties and Actions (WAPA) Explainer",
-        "url": "https://raw.githubusercontent.com/cyns/wapa/master/wapa.html",
-        "identification": [
-            {
-                "selector": "div.idl",
-                "type": "idl"
-            }
-        ]
-    },
-    {
-        "name": "touch-events",
-        "url": "http://www.w3.org/TR/touch-events/"
-    },
-    {
-        "name": "touch-events-2",
-        "title": "Touch Events Level 2",
-        "url": "https://w3c.github.io/touch-events/"
-    },
-    {
-        "name": "generic-sensor",
-        "url": "https://www.w3.org/TR/generic-sensor/"
-    },
-    {
-        "name": "generic-sensor",
-        "url": "https://w3c.github.io/sensors/"
-    },
-    {
-        "name": "selectors-api",
-        "url": "http://www.w3.org/TR/selectors-api/"
-    },
-    {
-        "name": "requestidlecallback",
-        "url": "https://www.w3.org/TR/requestidlecallback/"
-    },
-    {
-        "name": "requestidlecallback",
-        "url": "https://w3c.github.io/requestidlecallback/"
-    },
-    {
-        "name": "webvr",
-        "title": "WebVR",
-        "url": "https://w3c.github.io/webvr/spec/latest/"
-    },
-    {
-        "name": "filesystemapi",
-        "title": "FileSystem API",
-        "url": "http://w3c.github.io/filesystem-api/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_atc/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_shared_resources/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_security_sensitive_resources/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
-    },
-    {
-        "name": "webgl",
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
-    },
-    {
-        "name": "findtext",
-        "url": "https://www.w3.org/TR/findtext/"
-    },
-    {
-        "name": "findtext",
-        "url": "http://w3c.github.io/findtext/"
-    },
-    {
-        "name": "intersection",
-        "title": "Intersection Observer",
-        "url": "https://wicg.github.io/IntersectionObserver/"
-    },
-    {
-        "name": "whatwg-html",
-        "title": "HTML Living Standard",
-        "url": "https://html.spec.whatwg.org/"
-    },
-    {
-        "name": "compositing-1",
-        "url": "https://www.w3.org/TR/compositing-1/"
-    },
-    {
-        "name": "compositing-1",
-        "url": "https://drafts.fxtf.org/compositing-1/"
-    },
-    {
-        "name": "css-masking-1",
-        "url": "http://www.w3.org/TR/css-masking-1/"
-    },
-    {
-        "name": "css-masking-1",
-        "url": "http://dev.w3.org/fxtf/css-masking-1/"
-    },
-    {
-        "name": "wbauthn",
-        "url": "http://w3c.github.io/webauthn/"
-    },
-    {
-        "name": "file-system",
-        "url": "https://dev.w3.org/2009/dap/file-system/file-writer.html"
-    },
-    {
-        "name": "filter-effects-1",
-        "url": "http://www.w3.org/TR/filter-effects-1/"
-    },
-    {
-        "name": "filter-effects-1",
-        "url": "http://dev.w3.org/fxtf/filters/"
-    },
-    {
-        "name": "motion-1",
-        "url": "http://www.w3.org/TR/motion-1/"
-    },
-    {
-        "name": "motion-1",
-        "url": "http://dev.w3.org/fxtf/motion-1/"
-    },
-    {
-        "name": "navigatorcores",
-        "url": "https://wiki.whatwg.org/wiki/Navigator_HW_Concurrency",
-        "file": "navigatorcores.webidl"
-    },
-    {
-        "name": "speech-api",
-        "url": "https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html",
-        "identification": [
-            {
-                "selector": "code.idl-code",
-                "type": "idl"
-            }
-        ],
-        "file": "speech-api.webidl"
-    },
-    {
-        "name": "web-bluetooth",
-        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
-    },
-    {
-        "name": "webdatabase",
-        "url": "https://www.w3.org/TR/webdatabase/"
-    },
-    {
-        "name": "webmessaging",
-        "url": "https://www.w3.org/TR/webmessaging/"
-    },
-    {
-        "name": "web-nfc",
-        "url": "http://w3c.github.io/web-nfc/"
-    },
-    {
-        "name": "webstorage",
-        "url": "https://www.w3.org/TR/webstorage/"
-    },
-    {
-        "name": "credential-management-1",
-        "url": "https://www.w3.org/TR/credential-management/"
-    },
-    {
-        "name": "credential-management-1",
-        "url": "https://w3c.github.io/webappsec-credential-management/"
-    }
+  {
+    "name": "payment-request",
+    "url": "https://www.w3.org/TR/payment-request/"
+  },
+  {
+    "name": "payment-request",
+    "url": "https://w3c.github.io/payment-request/"
+  },
+  {
+    "name": "webaudio",
+    "url": "http://www.w3.org/TR/webaudio/"
+  },
+  {
+    "name": "webaudio",
+    "url": "https://webaudio.github.io/web-audio-api/"
+  },
+  {
+    "name": "webmidi",
+    "url": "http://www.w3.org/TR/webmidi/"
+  },
+  {
+    "name": "webmidi",
+    "url": "https://webaudio.github.io/web-midi-api/"
+  },
+  {
+    "name": "webdriver",
+    "url": "http://www.w3.org/TR/webdriver/"
+  },
+  {
+    "name": "webdriver",
+    "url": "https://w3c.github.io/webdriver/webdriver-spec.html"
+  },
+  {
+    "name": "console",
+    "url": "https://console.spec.whatwg.org/"
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/box.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/visuren.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/visudet.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/visufx.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/generate.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/page.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/colors.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/fonts.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/text.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/tables.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/ui.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css21",
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
+    "url": "http://www.w3.org/TR/CSS21/aural.html",
+    "identification": [
+      {
+        "selector": "div.propdef",
+        "type": "css"
+      }
+    ]
+  },
+  {
+    "name": "css-align-3",
+    "url": "http://www.w3.org/TR/css3-align/"
+  },
+  {
+    "name": "css-align-3",
+    "url": "https://drafts.csswg.org/css-align/"
+  },
+  {
+    "name": "css-animations-1",
+    "title": "CSS Animations Level 1",
+    "url": "https://www.w3.org/TR/css3-animations/"
+  },
+  {
+    "name": "css-animations-1",
+    "title": "CSS Animations Level 1",
+    "url": "https://drafts.csswg.org/css-animations/"
+  },
+  {
+    "name": "css-animations-2",
+    "title": "CSS Animations Level 2",
+    "url": "https://drafts.csswg.org/css-animations-2/"
+  },
+  {
+    "name": "css-background-3",
+    "title": "CSS Backgrounds and Borders Level 3",
+    "url": "http://www.w3.org/TR/css3-background/"
+  },
+  {
+    "name": "css-background-3",
+    "title": "CSS Backgrounds and Borders Level 3",
+    "url": "https://drafts.csswg.org/css-backgrounds/"
+  },
+  {
+    "name": "css-background-4",
+    "title": "CSS Backgrounds and Borders Level 4",
+    "url": "http://dev.w3.org/csswg/css-backgrounds-4/"
+  },
+  {
+    "name": "css-break-3",
+    "url": "http://www.w3.org/TR/css3-break/"
+  },
+  {
+    "name": "css-break-3",
+    "url": "https://drafts.csswg.org/css-break/"
+  },
+  {
+    "name": "css-cascade-3",
+    "url": "http://www.w3.org/TR/css-cascade-3/"
+  },
+  {
+    "name": "css-cascade-3",
+    "url": "https://drafts.csswg.org/css-cascade-3/"
+  },
+  {
+    "name": "css-cascade-4",
+    "url": "https://www.w3.org/TR/css-cascade-4/"
+  },
+  {
+    "name": "css-cascade-4",
+    "url": "https://drafts.csswg.org/css-cascade/"
+  },
+  {
+    "name": "css-color-3",
+    "title": "CSS Color Level 3",
+    "url": "http://www.w3.org/TR/css3-color/"
+  },
+  {
+    "name": "css-color-4",
+    "title": "CSS Color Level 4",
+    "url": "https://drafts.csswg.org/css-color/"
+  },
+  {
+    "name": "css-conditional-3",
+    "title": "CSS Conditional Rules Level 3",
+    "url": "http://www.w3.org/TR/css3-conditional/"
+  },
+  {
+    "name": "css-conditional-3",
+    "title": "CSS Conditional Rules Level 3",
+    "url": "https://drafts.csswg.org/css-conditional-3/"
+  },
+  {
+    "name": "css-containment-1",
+    "title": "CSS Containment Level 3",
+    "url": "https://drafts.csswg.org/css-containment/"
+  },
+  {
+    "name": "css-counter-styles-3",
+    "url": "http://www.w3.org/TR/css-counter-styles-3/"
+  },
+  {
+    "name": "css-counter-styles-3",
+    "url": "https://drafts.csswg.org/css-counter-styles/"
+  },
+  {
+    "name": "css-device-adapt-1",
+    "title": "CSS Device Adaptation Level 1",
+    "url": "https://www.w3.org/TR/css-device-adapt-1/"
+  },
+  {
+    "name": "css-device-adapt-1",
+    "title": "CSS Device Adaptation Level 1",
+    "url": "https://drafts.csswg.org/css-device-adapt/"
+  },
+  {
+    "name": "css-display-3",
+    "url": "http://www.w3.org/TR/css-display-3/"
+  },
+  {
+    "name": "css-display-3",
+    "url": "https://drafts.csswg.org/css-display/"
+  },
+  {
+    "name": "css-exclusions-1",
+    "title": "CSS Exclusions Level 1",
+    "url": "http://www.w3.org/TR/css3-exclusions/"
+  },
+  {
+    "name": "css-exclusions-1",
+    "title": "CSS Exclusions Level 1",
+    "url": "https://drafts.csswg.org/css-exclusions/"
+  },
+  {
+    "name": "css-flexbox-1",
+    "url": "http://www.w3.org/TR/css3-flexbox/"
+  },
+  {
+    "name": "css-flexbox-1",
+    "url": "https://drafts.csswg.org/css-flexbox/"
+  },
+  {
+    "name": "css-font-loading-3",
+    "url": "http://www.w3.org/TR/css-font-loading/"
+  },
+  {
+    "name": "css-font-loading-3",
+    "url": "http://dev.w3.org/csswg/css-font-loading/"
+  },
+  {
+    "name": "css-fonts-3",
+    "url": "http://www.w3.org/TR/css-fonts-3/"
+  },
+  {
+    "name": "css-fonts-3",
+    "url": "https://drafts.csswg.org/css-fonts/"
+  },
+  {
+    "name": "css-gcpm-3",
+    "url": "http://www.w3.org/TR/css3-gcpm/"
+  },
+  {
+    "name": "css-gcpm-3",
+    "url": "https://drafts.csswg.org/css-gcpm/"
+  },
+  {
+    "name": "css-grid-1",
+    "url": "http://www.w3.org/TR/css3-grid-layout/"
+  },
+  {
+    "name": "css-grid-1",
+    "url": "https://drafts.csswg.org/css-grid/"
+  },
+  {
+    "name": "css-images-3",
+    "title": "CSS Image Values and Replaced Content Level 3",
+    "url": "https://www.w3.org/TR/css3-images/"
+  },
+  {
+    "name": "css-images-3",
+    "title": "CSS Image Values and Replaced Content Level 3",
+    "url": "https://drafts.csswg.org/css-images/"
+  },
+  {
+    "name": "css-images-4",
+    "title": "CSS Image Values and Replaced Content Level 4",
+    "url": "https://www.w3.org/TR/css4-images/"
+  },
+  {
+    "name": "css-images-4",
+    "title": "CSS Image Values and Replaced Content Level 4",
+    "url": "https://drafts.csswg.org/css-images-4/"
+  },
+  {
+    "name": "css-inline-3",
+    "url": "https://www.w3.org/TR/css-inline/"
+  },
+  {
+    "name": "css-inline-3",
+    "url": "https://drafts.csswg.org/css-inline/"
+  },
+  {
+    "name": "css-line-grid-1",
+    "url": "https://www.w3.org/TR/css-line-grid-1/"
+  },
+  {
+    "name": "css-line-grid-1",
+    "url": "https://drafts.csswg.org/css-line-grid/"
+  },
+  {
+    "name": "css-lists-3",
+    "url": "https://www.w3.org/TR/css3-lists/"
+  },
+  {
+    "name": "css-lists-3",
+    "url": "https://drafts.csswg.org/css-lists/"
+  },
+  {
+    "name": "css-logical-props-1",
+    "title": "CSS Logical Properties Level 1",
+    "url": "http://dev.w3.org/csswg/css-logical-props/"
+  },
+  {
+    "name": "css-multicol-1",
+    "title": "CSS Multi-column Layout Level 1",
+    "url": "http://www.w3.org/TR/css3-multicol/"
+  },
+  {
+    "name": "css-multicol-1",
+    "title": "CSS Multi-column Layout Level 1",
+    "url": "https://drafts.csswg.org/css-multicol/"
+  },
+  {
+    "name": "css-multicol-2",
+    "title": "CSS Multi-column Layout Level 2",
+    "url": "https://drafts.csswg.org/css-multicol-2/"
+  },
+  {
+    "name": "css-overflow-3",
+    "title": "CSS Overflow Level 3",
+    "url": "https://www.w3.org/TR/css-overflow-3/"
+  },
+  {
+    "name": "css-overflow-4",
+    "title": "CSS Overflow Level 4",
+    "url": "https://drafts.csswg.org/css-overflow/"
+  },
+  {
+    "name": "css-page-3",
+    "title": "CSS Paged Media Level 3",
+    "url": "http://www.w3.org/TR/css3-page/"
+  },
+  {
+    "name": "css-page-3",
+    "title": "CSS Paged Media Level 3",
+    "url": "https://drafts.csswg.org/css-page/"
+  },
+  {
+    "name": "css-position-3",
+    "title": "CSS Positioned Layout Level 3",
+    "url": "http://www.w3.org/TR/css3-positioning/"
+  },
+  {
+    "name": "css-position-3",
+    "title": "CSS Positioned Layout Level 3",
+    "url": "https://drafts.csswg.org/css-position/"
+  },
+  {
+    "name": "css-pseudo-4",
+    "url": "http://www.w3.org/TR/css-pseudo-4/"
+  },
+  {
+    "name": "css-pseudo-4",
+    "url": "http://dev.w3.org/csswg/css-pseudo-4/"
+  },
+  {
+    "name": "css-regions-1",
+    "url": "https://www.w3.org/TR/css-regions-1/"
+  },
+  {
+    "name": "css-regions-1",
+    "url": "https://drafts.csswg.org/css-regions/"
+  },
+  {
+    "name": "css-round-display-1",
+    "url": "https://www.w3.org/TR/css-round-display-1/"
+  },
+  {
+    "name": "css-round-display-1",
+    "url": "http://dev.w3.org/csswg/css-round-display/"
+  },
+  {
+    "name": "css-ruby-1",
+    "url": "http://www.w3.org/TR/css3-ruby/"
+  },
+  {
+    "name": "css-ruby-1",
+    "url": "http://dev.w3.org/csswg/css-ruby-1/"
+  },
+  {
+    "name": "css-shapes-1",
+    "url": "https://www.w3.org/TR/css-shapes/"
+  },
+  {
+    "name": "css-shapes-1",
+    "url": "https://drafts.csswg.org/css-shapes/"
+  },
+  {
+    "name": "css-shapes-2",
+    "title": "CSS Shapes Level 2",
+    "url": "https://drafts.csswg.org/css-shapes-2/"
+  },
+  {
+    "name": "css-size-adjust-1",
+    "title": "CSS Mobile Text Size Adjustment Level 1",
+    "url": "http://dev.w3.org/csswg/css-size-adjust/"
+  },
+  {
+    "name": "css-sizing-3",
+    "title": "CSS Intrinsic & Extrinsic Sizing Level 3",
+    "url": "https://www.w3.org/TR/css3-sizing/"
+  },
+  {
+    "name": "css-sizing-4",
+    "title": "CSS Intrinsic & Extrinsic Sizing Level 4",
+    "url": "https://drafts.csswg.org/css-sizing/"
+  },
+  {
+    "name": "css-snappoints-1",
+    "url": "https://www.w3.org/TR/css-snappoints-1/"
+  },
+  {
+    "name": "css-snappoints-1",
+    "url": "http://dev.w3.org/csswg/css-snappoints/"
+  },
+  {
+    "name": "css-speech-3",
+    "title": "CSS Speech Level 3",
+    "url": "https://www.w3.org/TR/css3-speech/"
+  },
+  {
+    "name": "css-speech-3",
+    "title": "CSS Speech Level 3",
+    "url": "https://drafts.csswg.org/css-speech/"
+  },
+  {
+    "name": "css-step-sizing-1",
+    "url": "https://drafts.csswg.org/css-step-sizing/"
+  },
+  {
+    "name": "css-text-3",
+    "url": "https://www.w3.org/TR/css-text-3/"
+  },
+  {
+    "name": "css-text-3",
+    "url": "https://drafts.csswg.org/css-text/"
+  },
+  {
+    "name": "css-text-4",
+    "url": "https://drafts.csswg.org/css-text-4/"
+  },
+  {
+    "name": "css-text-decor-3",
+    "url": "https://www.w3.org/TR/css-text-decor-3/"
+  },
+  {
+    "name": "css-text-decor-3",
+    "url": "https://drafts.csswg.org/css-text-decor/"
+  },
+  {
+    "name": "css-text-decor-4",
+    "title": "CSS Text Decoration Level 4",
+    "url": "http://dev.w3.org/csswg/css-text-decor-4/"
+  },
+  {
+    "name": "css-transforms-1",
+    "url": "http://www.w3.org/TR/css3-transforms/"
+  },
+  {
+    "name": "css-transforms-1",
+    "url": "https://drafts.csswg.org/css-transforms/"
+  },
+  {
+    "name": "css-transforms-2",
+    "title": "CSS Transform Level 2",
+    "url": "https://drafts.csswg.org/css-transforms-2/"
+  },
+  {
+    "name": "css-transitions-1",
+    "title": "CSS Transitions Level 1",
+    "url": "https://www.w3.org/TR/css3-transitions/",
+    "identification": [
+      {
+        "selector": "div.idl-code",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "css-transitions-1",
+    "title": "CSS Transitions Level 1",
+    "url": "https://drafts.csswg.org/css-transitions/"
+  },
+  {
+    "name": "css-transitions-2",
+    "title": "CSS Transitions Level 2",
+    "url": "https://drafts.csswg.org/css-transitions-2/"
+  },
+  {
+    "name": "css-cssui-3",
+    "title": "CSS Basic User Interface Level 3",
+    "url": "https://www.w3.org/TR/css3-ui/"
+  },
+  {
+    "name": "css-cssui-3",
+    "title": "CSS Basic User Interface Level 3",
+    "url": "https://drafts.csswg.org/css-ui/"
+  },
+  {
+    "name": "css-cssui-4",
+    "title": "CSS Basic User Interface Level 4",
+    "url": "https://drafts.csswg.org/css-ui-4/"
+  },
+  {
+    "name": "css-will-change-1",
+    "url": "https://www.w3.org/TR/css-will-change/"
+  },
+  {
+    "name": "css-will-change-1",
+    "url": "https://drafts.csswg.org/css-will-change/"
+  },
+  {
+    "name": "css-writing-modes-3",
+    "url": "https://www.w3.org/TR/css-writing-modes-3/"
+  },
+  {
+    "name": "css-writing-modes-3",
+    "url": "https://drafts.csswg.org/css-writing-modes/"
+  },
+  {
+    "name": "cssom-1",
+    "url": "https://www.w3.org/TR/cssom/"
+  },
+  {
+    "name": "cssom-1",
+    "url": "https://drafts.csswg.org/cssom/"
+  },
+  {
+    "name": "box-tree-api-1",
+    "title": "Box Tree API Level 1",
+    "url": "https://drafts.css-houdini.org/box-tree-api/"
+  },
+  {
+    "name": "css-layout-api-1",
+    "title": "CSS Layout API Level 1",
+    "url": "https://drafts.css-houdini.org/css-layout-api/"
+  },
+  {
+    "name": "css-paint-api-1",
+    "title": "CSS Painting API Level 1",
+    "url": "https://drafts.css-houdini.org/css-paint-api/"
+  },
+  //{
+  //    "name": "css-parser-api-1",
+  //    "title": "CSS Parser API Level 1",
+  //    "url": "https://drafts.css-houdini.org/css-parser-api/"
+  //},
+  {
+    "name": "css-properties-values-api-1",
+    "title": "CSS Properties and Values API Level 1",
+    "url": "https://drafts.css-houdini.org/css-properties-values-api/"
+  },
+  {
+    "name": "css-typed-om-1",
+    "title": "CSS Typed OM Level 1",
+    "url": "https://drafts.css-houdini.org/css-typed-om/"
+  },
+  //{
+  //    "name": "font-metrics-api-1",
+  //    "title": "Font Metrics API Level 1",
+  //    "url": "https://drafts.css-houdini.org/font-metrics-api/"
+  //},
+  {
+    "name": "worklets-1",
+    "title": "Worklets Level 1",
+    "url": "https://drafts.css-houdini.org/worklets/"
+  },
+  {
+    "name": "cssom-view-1",
+    "url": "https://www.w3.org/TR/cssom-view-1/"
+  },
+  {
+    "name": "cssom-view-1",
+    "url": "https://drafts.csswg.org/cssom-view/"
+  },
+  {
+    "name": "web-animations-1",
+    "url": "http://www.w3.org/TR/web-animations-1"
+  },
+  {
+    "name": "web-animations-1",
+    "url": "https://w3c.github.io/web-animations/"
+  },
+  {
+    "name": "ambient-light",
+    "url": "http://www.w3.org/TR/ambient-light/"
+  },
+  {
+    "name": "ambient-light",
+    "url": "https://w3c.github.io/ambient-light/"
+  },
+  {
+    "name": "battery-status",
+    "url": "http://www.w3.org/TR/battery-status/"
+  },
+  {
+    "name": "battery-status",
+    "url": "https://w3c.github.io/battery/"
+  },
+  {
+    "name": "html-media-capture",
+    "url": "http://www.w3.org/TR/html-media-capture/"
+  },
+  {
+    "name": "html-media-capture",
+    "url": "https://w3c.github.io/html-media-capture/"
+  },
+  {
+    "name": "proximity",
+    "url": "http://www.w3.org/TR/proximity/"
+  },
+  {
+    "name": "proximity",
+    "url": "https://w3c.github.io/proximity/"
+  },
+  {
+    "name": "vibration",
+    "url": "http://www.w3.org/TR/vibration/"
+  },
+  {
+    "name": "vibration",
+    "url": "https://w3c.github.io/vibration/"
+  },
+  {
+    "name": "orientation-event",
+    "url": "https://www.w3.org/TR/2016/CR-orientation-event-20160818/",
+    "file": "orientation-event.webidl"
+  },
+  {
+    "name": "orientation-event",
+    "url": "https://w3c.github.io/deviceorientation/spec-source-orientation.html"
+  },
+  {
+    "name": "elementtraversal",
+    "url": "http://www.w3.org/TR/ElementTraversal/",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-1",
+    "url": "https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html",
+    "identification": [
+      {
+        "selector": ".idl-code",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-1",
+    "url": "https://www.w3.org/TR/REC-DOM-Level-1/level-one-html.html",
+    "identification": [
+      {
+        "selector": ".idl-code",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-2-html",
+    "url": "http://www.w3.org/TR/DOM-Level-2-HTML/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-2-core",
+    "url": "http://www.w3.org/TR/DOM-Level-2-Core/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-2-events",
+    "url": "http://www.w3.org/TR/DOM-Level-2-Events/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-2-style",
+    "url": "http://www.w3.org/TR/DOM-Level-2-Style/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-2-traversal-range",
+    "url": "http://www.w3.org/TR/DOM-Level-2-Traversal-Range/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-2-views",
+    "url": "http://www.w3.org/TR/DOM-Level-2-Views/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-3-as",
+    "url": "http://www.w3.org/TR/DOM-Level-3-AS/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-3-core",
+    "url": "http://www.w3.org/TR/DOM-Level-3-Core/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-3-ls",
+    "url": "https://www.w3.org/TR/DOM-Level-3-LS/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-3-val",
+    "url": "https://www.w3.org/TR/DOM-Level-3-Val/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-3-views",
+    "url": "https://www.w3.org/TR/DOM-Level-3-Views/idl-definitions.html",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-level-3-xpath",
+    "url": "https://www.w3.org/TR/DOM-Level-3-XPath/idl-definitions.html",
+    "file": "dom3xpath-bugfix.webidl",
+    "identification": [
+      {
+        "selector": ".idl-code pre",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom4",
+    "title": "W3C DOM4",
+    "url": "https://www.w3.org/TR/dom/"
+  },
+  {
+    "name": "whatwg-dom",
+    "url": "https://dom.spec.whatwg.org/"
+  },
+  {
+    "name": "encrypted-media",
+    "url": "http://www.w3.org/TR/encrypted-media/"
+  },
+  {
+    "name": "encrypted-media",
+    "url": "https://w3c.github.io/encrypted-media/"
+  },
+  {
+    "name": "html5",
+    "url": "https://www.w3.org/TR/html5/single-page.html"
+  },
+  {
+    "name": "html51",
+    "url": "https://w3c.github.io/html/idl-index.html#idl-index"
+  },
+  {
+    "name": "2dcontext",
+    "url": "http://www.w3.org/TR/2dcontext/"
+  },
+  {
+    "name": "2dcontext2",
+    "url": "http://www.w3.org/TR/2dcontext2/"
+  },
+  {
+    "name": "media-source",
+    "url": "http://www.w3.org/TR/media-source/"
+  },
+  {
+    "name": "media-source",
+    "url": "https://w3c.github.io/media-source/"
+  },
+  {
+    "name": "pointerevents",
+    "url": "http://www.w3.org/TR/pointerevents/",
+    "identification": [
+      {
+        "selector": "#the-touch-action-css-property table",
+        "type": "bikeshed"
+      },
+      {
+        "selector": "pre.idl",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "pointerevents",
+    "url": "https://w3c.github.io/pointerevents/",
+    "identification": [
+      {
+        "selector": "#the-touch-action-css-property table",
+        "type": "bikeshed"
+      },
+      {
+        "selector": "pre.idl",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "svg11",
+    "url": "http://www.w3.org/TR/SVG11/idl.html"
+  },
+  {
+    "name": "svg11",
+    "url": "http://www.w3.org/TR/SVG11/propidx.html",
+    "identification": [
+      {
+        "selector": "table.vert.property-table",
+        "type": "svgcss"
+      }
+    ]
+  },
+  {
+    "name": "svg2",
+    "url": "http://www.w3.org/TR/SVG2/idl.html"
+  },
+  {
+    "name": "svg2",
+    "url": "http://www.w3.org/TR/SVG2/propidx.html",
+    "identification": [
+      {
+        "selector": "table.proptable",
+        "type": "svgcss"
+      }
+    ]
+  },
+  {
+    "name": "telephony",
+    "url": "http://www.w3.org/TR/telephony/",
+    "file": "telephony-bugfix.webidl"
+  },
+  {
+    "name": "telephony",
+    "url": "http://telephony.sysapps.org/"
+  },
+  {
+    "name": "webvtt1",
+    "url": "http://www.w3.org/TR/webvtt1/"
+  },
+  {
+    "name": "webvtt1",
+    "url": "https://w3c.github.io/webvtt/"
+  },
+  {
+    "name": "clipboard-apis",
+    "url": "http://www.w3.org/TR/clipboard-apis/"
+  },
+  {
+    "name": "clipboard-apis",
+    "url": "https://w3c.github.io/clipboard-apis/"
+  },
+  {
+    "name": "uievents",
+    "url": "http://www.w3.org/TR/DOM-Level-3-Events/"
+  },
+  {
+    "name": "uievents",
+    "url": "https://w3c.github.io/uievents/"
+  },
+  {
+    "name": "dom-parsing",
+    "url": "http://www.w3.org/TR/DOM-Parsing/",
+    "identification": [
+      {
+        "selector": "pre.idl",
+        "type": "idl"
+      },
+      {
+        "selector": "pre.extraidl",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "dom-parsing",
+    "url": "https://w3c.github.io/DOM-Parsing/",
+    "identification": [
+      {
+        "selector": "pre.idl",
+        "type": "idl"
+      },
+      {
+        "selector": "pre.extraidl",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "fileapi",
+    "url": "http://www.w3.org/TR/FileAPI/",
+    "identification": [
+      {
+        "selector": "code.idl-code",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "fileapi",
+    "url": "https://w3c.github.io/FileAPI/"
+  },
+  {
+    "name": "gamepad",
+    "url": "http://www.w3.org/TR/gamepad/"
+  },
+  {
+    "name": "gamepad",
+    "url": "https://w3c.github.io/gamepad/"
+  },
+  {
+    "name": "indexeddb",
+    "url": "http://www.w3.org/TR/IndexedDB/",
+    "file": "indexeddb-bugfix.webidl"
+  },
+  {
+    "name": "indexeddb2",
+    "title": "Indexed Database API (Second Edition)",
+    "url": "http://w3c.github.io/IndexedDB/"
+  },
+  {
+    "name": "ime-api",
+    "url": "http://www.w3.org/TR/ime-api/"
+  },
+  {
+    "name": "ime-api",
+    "url": "https://w3c.github.io/ime-api/"
+  },
+  {
+    "name": "pointerlock",
+    "url": "http://www.w3.org/TR/pointerlock/"
+  },
+  {
+    "name": "pointerlock",
+    "url": "https://w3c.github.io/pointerlock/"
+  },
+  {
+    "name": "push-api",
+    "url": "http://www.w3.org/TR/push-api/"
+  },
+  {
+    "name": "push-api",
+    "url": "https://w3c.github.io/push-api/"
+  },
+  {
+    "name": "quota-api",
+    "url": "http://www.w3.org/TR/quota-api/"
+  },
+  {
+    "name": "quota-api",
+    "url": "http://w3c.github.io/quota-api/"
+  },
+  {
+    "name": "screen-orientation",
+    "url": "http://www.w3.org/TR/screen-orientation/"
+  },
+  {
+    "name": "screen-orientation",
+    "url": "https://w3c.github.io/screen-orientation/"
+  },
+  {
+    "name": "selectors-api2",
+    "url": "http://www.w3.org/TR/selectors-api2/"
+  },
+  {
+    "name": "eventsource",
+    "url": "http://www.w3.org/TR/eventsource/"
+  },
+  {
+    "name": "shadow-dom",
+    "url": "https://www.w3.org/TR/shadow-dom/"
+  },
+  {
+    "name": "shadow-dom",
+    "url": "http://w3c.github.io/webcomponents/spec/shadow/"
+  },
+  {
+    "name": "websockets",
+    "url": "http://www.w3.org/TR/websockets/"
+  },
+  {
+    "name": "workers",
+    "url": "http://www.w3.org/TR/workers/"
+  },
+  {
+    "name": "csp2",
+    "url": "http://www.w3.org/TR/CSP2/"
+  },
+  {
+    "name": "csp2",
+    "url": "https://w3c.github.io/webappsec-csp/2/"
+  },
+  {
+    "name": "csp3",
+    "url": "http://www.w3.org/TR/CSP3/"
+  },
+  {
+    "name": "csp3",
+    "url": "https://w3c.github.io/webappsec-csp/"
+  },
+  {
+    "name": "geolocation-api",
+    "url": "http://www.w3.org/TR/geolocation-API/"
+  },
+  {
+    "name": "geolocation-api",
+    "url": "http://dev.w3.org/geo/api/spec-source.html"
+  },
+  {
+    "name": "sri",
+    "url": "http://www.w3.org/TR/SRI/"
+  },
+  {
+    "name": "sri",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+  },
+  {
+    "name": "webcryptoapi",
+    "url": "http://www.w3.org/TR/WebCryptoAPI/",
+    "identification": [
+      {
+        "selector": "code.idl-code",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "webcryptoapi",
+    "url": "https://w3c.github.io/webcrypto/Overview.html",
+    "identification": [
+      {
+        "selector": "code.idl-code",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "beacon",
+    "url": "http://www.w3.org/TR/beacon/"
+  },
+  {
+    "name": "beacon",
+    "url": "https://w3c.github.io/beacon/"
+  },
+  {
+    "name": "frame-timing",
+    "url": "http://www.w3.org/TR/frame-timing/"
+  },
+  {
+    "name": "frame-timing",
+    "url": "http://wicg.github.io/frame-timing/"
+  },
+  {
+    "name": "hr-time",
+    "url": "http://www.w3.org/TR/hr-time/"
+  },
+  {
+    "name": "hr-time-2",
+    "url": "http://www.w3.org/TR/hr-time-2/"
+  },
+  {
+    "name": "hr-time-2",
+    "url": "https://w3c.github.io/hr-time/"
+  },
+  {
+    "name": "navigation-timing",
+    "url": "http://www.w3.org/TR/navigation-timing/"
+  },
+  {
+    "name": "navigation-timing-2",
+    "url": "http://www.w3.org/TR/navigation-timing-2/"
+  },
+  {
+    "name": "navigation-timing-2",
+    "url": "https://w3c.github.io/navigation-timing/"
+  },
+  {
+    "name": "resource-hints",
+    "url": "http://www.w3.org/TR/resource-hints/"
+  },
+  {
+    "name": "resource-hints",
+    "url": "https://w3c.github.io/resource-hints/"
+  },
+  {
+    "name": "resource-timing",
+    "url": "http://www.w3.org/TR/resource-timing/"
+  },
+  {
+    "name": "resource-timing",
+    "url": "https://w3c.github.io/resource-timing/"
+  },
+  {
+    "name": "server-timing",
+    "url": "http://www.w3.org/TR/server-timing/"
+  },
+  {
+    "name": "server-timing",
+    "url": "https://w3c.github.io/server-timing/"
+  },
+  {
+    "name": "animation-timing",
+    "url": "http://www.w3.org/TR/animation-timing/"
+  },
+  {
+    "name": "webrtc",
+    "url": "http://www.w3.org/TR/webrtc/"
+  },
+  {
+    "name": "webrtc",
+    "url": "https://w3c.github.io/webrtc-pc/"
+  },
+  {
+    "name": "audio-output",
+    "url": "http://www.w3.org/TR/audio-output/"
+  },
+  {
+    "name": "audio-output",
+    "url": "https://w3c.github.io/mediacapture-output/"
+  },
+  {
+    "name": "mediacapture-streams",
+    "url": "http://www.w3.org/TR/mediacapture-streams/"
+  },
+  {
+    "name": "mediacapture-streams",
+    "url": "https://w3c.github.io/mediacapture-main/"
+  },
+  {
+    "name": "mediacapture-depth",
+    "url": "http://www.w3.org/TR/mediacapture-depth/"
+  },
+  {
+    "name": "mediacapture-depth",
+    "url": "https://w3c.github.io/mediacapture-depth/"
+  },
+  {
+    "name": "image-capture",
+    "url": "http://www.w3.org/TR/image-capture/"
+  },
+  {
+    "name": "image-capture",
+    "url": "https://w3c.github.io/mediacapture-image/"
+  },
+  {
+    "name": "mediastream-recording",
+    "url": "http://www.w3.org/TR/mediastream-recording/"
+  },
+  {
+    "name": "mediastream-recording",
+    "url": "https://w3c.github.io/mediacapture-record/MediaRecorder.html"
+  },
+  {
+    "name": "screen-capture",
+    "url": "http://www.w3.org/TR/screen-capture/"
+  },
+  {
+    "name": "screen-capture",
+    "url": "https://w3c.github.io/mediacapture-screen-share/"
+  },
+  {
+    "name": "whatwg-fullscreen",
+    "url": "https://fullscreen.spec.whatwg.org/"
+  },
+  {
+    "name": "whatwg-url",
+    "url": "https://url.spec.whatwg.org/"
+  },
+  {
+    "name": "whatwg-fetch",
+    "title": "Fetch",
+    "url": "https://fetch.spec.whatwg.org/"
+  },
+  {
+    "name": "encoding",
+    "url": "http://www.w3.org/TR/encoding/"
+  },
+  {
+    "name": "whatwg-encoding",
+    "url": "https://encoding.spec.whatwg.org/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/specs/1.0/",
+    "file": "webgl10-bugfix.webidl"
+  },
+  {
+    "name": "webgl2",
+    "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+    "file": "webgl20-bugfix.webidl"
+  },
+  {
+    "name": "selection-api",
+    "url": "http://www.w3.org/TR/selection-api/"
+  },
+  {
+    "name": "selection-api",
+    "url": "https://w3c.github.io/selection-api/"
+  },
+  {
+    "name": "presentation-api",
+    "url": "https://www.w3.org/TR/presentation-api/"
+  },
+  {
+    "name": "presentation-api",
+    "url": "http://w3c.github.io/presentation-api/"
+  },
+  {
+    "name": "page-visibility",
+    "url": "https://www.w3.org/TR/page-visibility/"
+  },
+  {
+    "name": "page-visibility",
+    "url": "http://w3c.github.io/page-visibility/"
+  },
+  {
+    "name": "custom-elements",
+    "url": "http://www.w3.org/TR/custom-elements/"
+  },
+  {
+    "name": "custom-elements",
+    "url": "https://w3c.github.io/webcomponents/spec/custom/"
+  },
+  {
+    "name": "service-workers",
+    "url": "https://www.w3.org/TR/service-workers-1/"
+  },
+  {
+    "name": "service-workers",
+    "url": "https://w3c.github.io/ServiceWorker/"
+  },
+  {
+    "name": "xhr",
+    "url": "https://xhr.spec.whatwg.org/"
+  },
+  {
+    "name": "ortc",
+    "title": "Object RTC (ORTC) API for WebRTC",
+    "url": "http://draft.ortc.org/"
+  },
+  {
+    "name": "file-system-api",
+    "url": "http://dev.w3.org/2009/dap/file-system/file-dir-sys.html",
+    "identification": [
+      {
+        "selector": "div.idl",
+        "type": "respec"
+      },
+      {
+        "selector": "dl.idl",
+        "type": "respec"
+      }
+    ]
+  },
+  {
+    "name": "mediacapture-fromelement",
+    "url": "http://www.w3.org/TR/mediacapture-fromelement/"
+  },
+  {
+    "name": "mediacapture-fromelement",
+    "url": "http://w3c.github.io/mediacapture-fromelement/"
+  },
+  {
+    "name": "setimmediate",
+    "title": "Efficient Script Yielding",
+    "url": "http://w3c.github.io/setImmediate/"
+  },
+  {
+    "name": "notifications",
+    "url": "http://www.w3.org/TR/notifications/"
+  },
+  {
+    "name": "whatwg-notifications",
+    "url": "https://notifications.spec.whatwg.org/"
+  },
+  {
+    "name": "html-imports",
+    "url": "http://www.w3.org/TR/html-imports/",
+    "identification": [
+      {
+        "selector": "pre code",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "html-imports",
+    "url": "http://w3c.github.io/webcomponents/spec/imports/"
+  },
+  {
+    "name": "es6",
+    "title": "ECMAScript 2015",
+    "url": "http://www.ecma-international.org/ecma-262/6.0/",
+    "file": "ECMAScript2015.webidl"
+  },
+  {
+    "name": "es8",
+    "title": "ECMAScript 2017",
+    "url": "http://www.ecma-international.org/ecma-262/8.0/",
+    "file": "ECMAScript2017.webidl"
+  },
+  {
+    "name": "tracking-dnt",
+    "url": "http://www.w3.org/TR/tracking-dnt/"
+  },
+  {
+    "name": "tracking-dnt",
+    "url": "https://www.w3.org/2011/tracking-protection/drafts/tracking-dnt.html"
+  },
+  {
+    "name": "user-timing",
+    "url": "http://www.w3.org/TR/user-timing/"
+  },
+  {
+    "name": "performance-timeline",
+    "url": "http://www.w3.org/TR/performance-timeline/"
+  },
+  {
+    "name": "performance-timeline-2",
+    "url": "http://www.w3.org/TR/performance-timeline-2/"
+  },
+  {
+    "name": "performance-timeline-2",
+    "url": "https://w3c.github.io/performance-timeline/"
+  },
+  {
+    "name": "navigation-timing",
+    "url": "http://www.w3.org/TR/navigation-timing/"
+  },
+  {
+    "name": "navigation-timing-2",
+    "url": "http://www.w3.org/TR/navigation-timing-2/"
+  },
+  {
+    "name": "navigation-timing-2",
+    "url": "https://w3c.github.io/navigation-timing/"
+  },
+  {
+    "name": "wapa",
+    "title": "Web Accessibility Properties and Actions (WAPA) Explainer",
+    "url": "https://raw.githubusercontent.com/cyns/wapa/master/wapa.html",
+    "identification": [
+      {
+        "selector": "div.idl",
+        "type": "idl"
+      }
+    ]
+  },
+  {
+    "name": "touch-events",
+    "url": "http://www.w3.org/TR/touch-events/"
+  },
+  {
+    "name": "touch-events-2",
+    "title": "Touch Events Level 2",
+    "url": "https://w3c.github.io/touch-events/"
+  },
+  {
+    "name": "generic-sensor",
+    "url": "https://www.w3.org/TR/generic-sensor/"
+  },
+  {
+    "name": "generic-sensor",
+    "url": "https://w3c.github.io/sensors/"
+  },
+  {
+    "name": "selectors-api",
+    "url": "http://www.w3.org/TR/selectors-api/"
+  },
+  {
+    "name": "requestidlecallback",
+    "url": "https://www.w3.org/TR/requestidlecallback/"
+  },
+  {
+    "name": "requestidlecallback",
+    "url": "https://w3c.github.io/requestidlecallback/"
+  },
+  {
+    "name": "webvr",
+    "title": "WebVR",
+    "url": "https://w3c.github.io/webvr/spec/latest/"
+  },
+  {
+    "name": "filesystemapi",
+    "title": "FileSystem API",
+    "url": "http://w3c.github.io/filesystem-api/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_atc/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_shared_resources/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_security_sensitive_resources/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
+  },
+  {
+    "name": "webgl",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
+  },
+  {
+    "name": "findtext",
+    "url": "https://www.w3.org/TR/findtext/"
+  },
+  {
+    "name": "findtext",
+    "url": "http://w3c.github.io/findtext/"
+  },
+  //{
+  //  "name": "intersection",
+  //  "title": "Intersection Observer",
+  //  "url": "https://wicg.github.io/IntersectionObserver/"
+  //},
+  {
+    "name": "whatwg-html",
+    "title": "HTML Living Standard",
+    "url": "https://html.spec.whatwg.org/"
+  },
+  {
+    "name": "compositing-1",
+    "url": "https://www.w3.org/TR/compositing-1/"
+  },
+  {
+    "name": "compositing-1",
+    "url": "https://drafts.fxtf.org/compositing-1/"
+  },
+  {
+    "name": "css-masking-1",
+    "url": "http://www.w3.org/TR/css-masking-1/"
+  },
+  {
+    "name": "css-masking-1",
+    "url": "http://dev.w3.org/fxtf/css-masking-1/"
+  },
+  {
+    "name": "wbauthn",
+    "url": "http://w3c.github.io/webauthn/"
+  },
+  {
+    "name": "file-system",
+    "url": "https://dev.w3.org/2009/dap/file-system/file-writer.html"
+  },
+  {
+    "name": "filter-effects-1",
+    "url": "http://www.w3.org/TR/filter-effects-1/"
+  },
+  {
+    "name": "filter-effects-1",
+    "url": "http://dev.w3.org/fxtf/filters/"
+  },
+  {
+    "name": "motion-1",
+    "url": "http://www.w3.org/TR/motion-1/"
+  },
+  {
+    "name": "motion-1",
+    "url": "http://dev.w3.org/fxtf/motion-1/"
+  },
+  {
+    "name": "navigatorcores",
+    "url": "https://wiki.whatwg.org/wiki/Navigator_HW_Concurrency",
+    "file": "navigatorcores.webidl"
+  },
+  {
+    "name": "speech-api",
+    "url": "https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html",
+    "identification": [
+      {
+        "selector": "code.idl-code",
+        "type": "idl"
+      }
+    ],
+    "file": "speech-api.webidl"
+  },
+  {
+    "name": "web-bluetooth",
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+  },
+  {
+    "name": "webdatabase",
+    "url": "https://www.w3.org/TR/webdatabase/"
+  },
+  {
+    "name": "webmessaging",
+    "url": "https://www.w3.org/TR/webmessaging/"
+  },
+  {
+    "name": "web-nfc",
+    "url": "http://w3c.github.io/web-nfc/"
+  },
+  {
+    "name": "webstorage",
+    "url": "https://www.w3.org/TR/webstorage/"
+  },
+  {
+    "name": "credential-management-1",
+    "url": "https://www.w3.org/TR/credential-management/"
+  },
+  {
+    "name": "credential-management-1",
+    "url": "https://w3c.github.io/webappsec-credential-management/"
+  },
+  {
+    "name": "webidl-1",
+    "url": "https://www.w3.org/TR/WebIDL-1/",
+    "file": "webidl-1.webidl"
+  },
+  {
+    "name": "webidl",
+    "url": "https://heycam.github.io/webidl/"
+  }
 ]

@@ -17,10 +17,11 @@ namespace WebIDLCollector.Builders
             _showSpecNames = showSpecNames;
         }
 
-        public void GenerateFile()
+        public void GenerateFile(string fileName = null)
         {
             const string webidlDirectory = "webidl";
-            var webidlFile = webidlDirectory + "/" + _specData.Name + ".webidl";
+            fileName = fileName ?? _specData.Name;
+            var webidlFile = webidlDirectory + "/" + fileName + ".webidl";
             if (!Directory.Exists(webidlDirectory))
             {
                 Directory.CreateDirectory(webidlDirectory);
@@ -70,17 +71,17 @@ namespace WebIDLCollector.Builders
 
             foreach (var enumerationType in specData.Enumerations)
             {
-                finalRecreate.AppendLine(enumerationType.Reconstruct());
+                finalRecreate.AppendLine(enumerationType.Reconstruct(_showSpecNames));
             }
 
             foreach (var typeDefType in specData.TypeDefs)
             {
-                finalRecreate.AppendLine(typeDefType.Reconstruct());
+                finalRecreate.AppendLine(typeDefType.Reconstruct(_showSpecNames));
             }
 
             foreach (var callbackType in specData.Callbacks)
             {
-                finalRecreate.AppendLine(callbackType.Reconstruct());
+                finalRecreate.AppendLine(callbackType.Reconstruct(_showSpecNames));
             }
 
             foreach (var dictionaryType in specData.Dictionaries)

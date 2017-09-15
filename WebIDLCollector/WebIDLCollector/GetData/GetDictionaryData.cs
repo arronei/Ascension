@@ -15,7 +15,7 @@ namespace WebIDLCollector.GetData
 
         private static readonly Regex DictionaryMemberParser = new Regex(@"^\s*(\[(?<extended>[^]]+)]\s*)?(((?<required>required)\s+)?(?<type>.+)\s+(?<item>[^=]+)(\s*=\s*(?<value>.+))|(?<type>.+)\s+(?<item>[^=]+))$", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
-        private static readonly Regex DictionaryMemberExtendedParser = new Regex(@"(?<clamp>clamp)(,|$)|(?<enforcerange>enforcerange)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
+        private static readonly Regex DictionaryMemberExtendedParser = new Regex(@"(?<allowshared>allowshared)(,|$)|(?<clamp>clamp)(,|$)|(?<enforcerange>enforcerange)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         public static IEnumerable<DictionaryType> GetAllDictionaries(string cleanString, SpecData specificationData)
         {
@@ -101,6 +101,7 @@ namespace WebIDLCollector.GetData
                     {
                         foreach (Match mep in DictionaryMemberExtendedParser.Matches(memberItem.ExtendedAttribute))
                         {
+                            memberItem.AllowShared = memberItem.AllowShared || !string.IsNullOrWhiteSpace(mep.Groups["allowshared"].Value.Trim());
                             memberItem.Clamp = memberItem.Clamp || !string.IsNullOrWhiteSpace(mep.Groups["clamp"].Value.Trim());
                             memberItem.EnforceRange = memberItem.EnforceRange || !string.IsNullOrWhiteSpace(mep.Groups["enforcerange"].Value.Trim());
                         }

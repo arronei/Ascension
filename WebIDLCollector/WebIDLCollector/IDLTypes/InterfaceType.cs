@@ -12,6 +12,7 @@ namespace WebIDLCollector.IDLTypes
             Exposed = new List<string>();
             Globals = new List<string>();
             PrimaryGlobals = new List<string>();
+            LegacyWindowAliases = new List<string>();
             NamedConstructors = new List<string>();
             Inherits = new List<string>();
             ExtendedBy = new List<string>();
@@ -29,6 +30,8 @@ namespace WebIDLCollector.IDLTypes
         public bool LegacyArrayClass { get; set; }
         public bool HtmlConstructor { get; set; }
         public bool LegacyUnenumerableNamedProperties { get; set; }
+        public bool IsLegacyWindowAlias { get; set; }
+        public IEnumerable<string> LegacyWindowAliases { get; set; }
         public IEnumerable<string> NamedConstructors { get; set; }
         public bool NoInterfaceObject { get; set; }
         public bool OverrideBuiltins { get; set; }
@@ -49,7 +52,10 @@ namespace WebIDLCollector.IDLTypes
             var sb = new StringBuilder();
             var comma = string.Empty;
 
-            sb.AppendLine("// " + string.Join(", ", SpecNames));
+            if (showMemberSpecName)
+            {
+                sb.AppendLine("// " + string.Join(", ", SpecNames));
+            }
             if (Constructors.Any() ||
                 NamedConstructors.Any() ||
                 Exposed.Any() ||

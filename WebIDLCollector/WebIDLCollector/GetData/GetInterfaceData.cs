@@ -23,6 +23,7 @@ namespace WebIDLCollector.GetData
         [^y](?<arrayclass>arrayclass)(,|$)|
         (?<legacyarrayclass>legacyarrayclass)(,|$)|
         (?<legacyunenumerablenamedproperties>legacyunenumerablenamedproperties)(,|$)|
+        (?<legacywindowalias>legacywindowalias(\s*=\s*(?<legacywindowaliases>(\([^\)]+\))|[^\(\s,\]]+))?)(,|$)|
         (?<nointerfaceobject>nointerfaceobject)(,|$)|
         (?<overridebuiltins>overridebuiltins)(,|$)|
         (?<primaryglobal>primaryglobal(\s*=\s*(?<primaryglobals>(\([^\)]+\))|[^\(\s,\]]+))?)(,|$)|
@@ -45,8 +46,10 @@ namespace WebIDLCollector.GetData
         (?<type>.+?)\s+(?<item>[^\(\s]+)\s*(?<function>\((?<args>.*)\)))$", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace);
 
         private static readonly Regex MemberExtendedParser = new Regex(@"(exposed(\s*=\s*(?<exposed>(\([^\)]+\))|[^\(\s,\]]+)))(,|$)|
+        (?<allowshared>allowshared)(,|$)|
         (?<cereactions>cereactions)(,|$)|
         (?<clamp>clamp)(,|$)|
+        (?<default>default)(,|$)|
         (?<enforcerange>enforcerange)(,|$)|
         (?<lenientsetter>lenientsetter)(,|$)|
         (?<lenientthis>lenientthis)(,|$)|
@@ -58,7 +61,17 @@ namespace WebIDLCollector.GetData
         (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)|
         (treatundefinedas(\s*=\s*(?<treatundefinedas>[^\s,\]]+)))(,|$)|
         (?<unforgeable>unforgeable)(,|$)|
-        (?<unscopable>unscopable)(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
+        (?<unscopable>unscopable)(,|$)|
+        (?<pure>pure)(,|$)|
+        (?<constant>constant)(,|$)|
+        
+        (?<mspassbyvariant>mspassbyvariant)(,|$)|
+        (?<mspdldefaultvalue>mspdldefaultvalue)(,|$)|
+        (msinternaldisablekey(\s*=\s*(?<msinternaldisablekey>[^\s,\]]+)))(,|$)|
+        (msoverridetype(\s*=\s*(?<msoverridetype>[^\s,\]]+)))(,|$)|
+        (msinternalpdlbinding(\s*=\s*(?<msinternalpdlbinding>[^\s,\]]+)))(,|$)|
+
+        (storeinslot(\s*=\s*(?<storeinslot>[^\s,\]]+)))(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         public static IEnumerable<InterfaceType> GetAllInterfaces(string cleanString, SpecData specificationData)
         {
@@ -82,6 +95,7 @@ namespace WebIDLCollector.GetData
                     var exposed = interfaceDefinition.Exposed.ToList();
                     var globals = interfaceDefinition.Globals.ToList();
                     var primaryGlobals = interfaceDefinition.PrimaryGlobals.ToList();
+                    var legacyWindowAliases = interfaceDefinition.LegacyWindowAliases.ToList();
                     foreach (Match m in InterfaceExtendedParser.Matches(interfaceDefinition.ExtendedAttribute))
                     {
                         interfaceDefinition.IsGlobal = interfaceDefinition.IsGlobal || !string.IsNullOrWhiteSpace(m.Groups["global"].Value.Trim());
@@ -90,6 +104,9 @@ namespace WebIDLCollector.GetData
                         interfaceDefinition.ArrayClass = interfaceDefinition.ArrayClass || !string.IsNullOrWhiteSpace(m.Groups["arrayclass"].Value.Trim());
                         interfaceDefinition.LegacyArrayClass = interfaceDefinition.LegacyArrayClass || !string.IsNullOrWhiteSpace(m.Groups["legacyarrayclass"].Value.Trim());
                         interfaceDefinition.LegacyUnenumerableNamedProperties = interfaceDefinition.LegacyUnenumerableNamedProperties || !string.IsNullOrWhiteSpace(m.Groups["legacyunenumerablenamedproperties"].Value.Trim());
+
+                        interfaceDefinition.IsLegacyWindowAlias = interfaceDefinition.IsLegacyWindowAlias || !string.IsNullOrWhiteSpace(m.Groups["legacywindowalias"].Value.Trim());
+
                         interfaceDefinition.NoInterfaceObject = interfaceDefinition.NoInterfaceObject || !string.IsNullOrWhiteSpace(m.Groups["nointerfaceobject"].Value.Trim());
                         interfaceDefinition.OverrideBuiltins = interfaceDefinition.OverrideBuiltins || !string.IsNullOrWhiteSpace(m.Groups["overridebuiltins"].Value.Trim());
                         interfaceDefinition.IsPrimaryGlobal = interfaceDefinition.IsPrimaryGlobal || !string.IsNullOrWhiteSpace(m.Groups["primaryglobal"].Value.Trim());
@@ -121,12 +138,18 @@ namespace WebIDLCollector.GetData
                         {
                             primaryGlobals.AddRange(primaryGlobalsValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
                         }
+                        var legacyWindowAliasValue = RegexLibrary.GroupingCleaner.Replace(m.Groups["legacywindowaliases"].Value, string.Empty);
+                        if (!string.IsNullOrWhiteSpace(legacyWindowAliasValue))
+                        {
+                            legacyWindowAliases.AddRange(legacyWindowAliasValue.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(api => api.Trim()));
+                        }
                     }
                     interfaceDefinition.Constructors = constructors.Distinct();
                     interfaceDefinition.NamedConstructors = namedConstructors.Distinct();
                     interfaceDefinition.Exposed = exposed.Distinct();
                     interfaceDefinition.Globals = globals.Distinct();
                     interfaceDefinition.PrimaryGlobals = primaryGlobals.Distinct();
+                    interfaceDefinition.LegacyWindowAliases = legacyWindowAliases.Distinct();
                 }
 
                 var inherits = iface.Groups["inherits"].Value;
@@ -211,8 +234,10 @@ namespace WebIDLCollector.GetData
                         var exposed = new List<string>();
                         foreach (Match mep in MemberExtendedParser.Matches(memberItem.ExtendedAttribute))
                         {
+                            memberItem.AllowShared = memberItem.AllowShared || !string.IsNullOrWhiteSpace(mep.Groups["allowshared"].Value.Trim());
                             memberItem.CeReactions = memberItem.CeReactions || !string.IsNullOrWhiteSpace(mep.Groups["cereactions"].Value.Trim());
                             memberItem.Clamp = memberItem.Clamp || !string.IsNullOrWhiteSpace(mep.Groups["clamp"].Value.Trim());
+                            memberItem.Default = memberItem.Default || !string.IsNullOrWhiteSpace(mep.Groups["default"].Value.Trim());
                             memberItem.EnforceRange = memberItem.EnforceRange || !string.IsNullOrWhiteSpace(mep.Groups["enforcerange"].Value.Trim());
                             memberItem.LenientSetter = memberItem.LenientSetter || !string.IsNullOrWhiteSpace(mep.Groups["lenientsetter"].Value.Trim());
                             memberItem.LenientThis = memberItem.LenientThis || !string.IsNullOrWhiteSpace(mep.Groups["lenientthis"].Value.Trim());
@@ -225,6 +250,10 @@ namespace WebIDLCollector.GetData
                             memberItem.TreatUndefinedAs = mep.Groups["treatundefinedas"].Value.Trim();
                             memberItem.Unforgeable = memberItem.Unforgeable || !string.IsNullOrWhiteSpace(mep.Groups["unforgeable"].Value.Trim());
                             memberItem.Unscopable = memberItem.Unscopable || !string.IsNullOrWhiteSpace(mep.Groups["unscopable"].Value.Trim());
+
+                            memberItem.Pure = memberItem.Unscopable || !string.IsNullOrWhiteSpace(mep.Groups["pure"].Value.Trim());
+                            memberItem.Constant = memberItem.Unscopable || !string.IsNullOrWhiteSpace(mep.Groups["constant"].Value.Trim());
+                            memberItem.StoreInSlot = mep.Groups["storeinslot"].Value.Trim();
 
                             var exposedValue = RegexLibrary.GroupingCleaner.Replace(mep.Groups["exposed"].Value, string.Empty);
                             if (!string.IsNullOrWhiteSpace(exposedValue))

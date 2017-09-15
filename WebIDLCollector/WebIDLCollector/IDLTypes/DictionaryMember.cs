@@ -13,6 +13,7 @@ namespace WebIDLCollector.IDLTypes
         }
 
         public string ExtendedAttribute { get; set; }
+        public bool AllowShared { get; set; }
         public bool Clamp { get; set; }
         public bool EnforceRange { get; set; }
         public string Name { get; }
@@ -26,10 +27,18 @@ namespace WebIDLCollector.IDLTypes
             var sb = new StringBuilder();
             var comma = string.Empty;
 
-            if (Clamp || EnforceRange)
+            if (AllowShared ||
+                Clamp ||
+                EnforceRange
+                )
             {
                 sb.Append("[");
 
+                if (AllowShared)
+                {
+                    sb.Append("AllowShared");
+                    comma = ", ";
+                }
                 if (Clamp)
                 {
                     sb.Append("Clamp");
@@ -63,9 +72,7 @@ namespace WebIDLCollector.IDLTypes
                 sb.AppendLine();
                 return sb.ToString();
             }
-
-            sb.Append(" // ");
-            sb.AppendLine(string.Join(", ", SpecNames));
+            sb.Append(" // ").AppendLine(string.Join(", ", SpecNames));
 
             return sb.ToString();
         }

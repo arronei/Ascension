@@ -20,7 +20,7 @@ namespace WebIDLCollector.IDLTypes
         public bool TreatNonObjectAsNull { get; set; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct()
+        public string Reconstruct(bool showMemberSpecName = false)
         {
             var sb = new StringBuilder();
 
@@ -36,8 +36,10 @@ namespace WebIDLCollector.IDLTypes
             sb.Append(Argument.ReconstructArgs(ArgTypes));
             sb.Append(");");
 
-            sb.Append(" // ");
-            sb.AppendLine(string.Join(", ", SpecNames));
+            if (showMemberSpecName)
+            {
+                sb.Append(" // ").AppendLine(string.Join(", ", SpecNames));
+            }
 
             return sb.ToString();
         }

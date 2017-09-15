@@ -17,9 +17,11 @@ namespace WebIDLCollector.Builders
             _specData = allCombinedSpecData;
         }
 
-        public void GenerateFile()
+        public void GenerateFile(string fileName = null)
         {
-            const string typeMirrorFile = @"F:\GitHub\Project-Parity\PropertyDiffer\PropertyDiffer\TypeMirrorJsonFiles\SpecMirror.js";
+            const string typeMirrorOutputDirectory = @"F:\GitHub\Project-Parity\PropertyDiffer\PropertyDiffer\TypeMirrorJsonFiles\";
+            fileName = fileName ?? "SpecMirror";
+            var typeMirrorFile = typeMirrorOutputDirectory + fileName + ".js";
             Console.WriteLine("Creating JsonObject");
             var jsonString = CreateJsonObject();
             if (File.Exists(typeMirrorFile))
@@ -58,7 +60,7 @@ namespace WebIDLCollector.Builders
 
                 var mem = interfaceType.Members.ToList();
 
-                if (!interfaceType.NoInterfaceObject)
+                if (!interfaceType.NoInterfaceObject && (interfaceType.Constructors.Any() || interfaceType.HtmlConstructor))
                 {
                     var constructor = new TypeMirrorProperty
                     {

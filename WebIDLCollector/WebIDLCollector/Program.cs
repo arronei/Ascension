@@ -13,7 +13,16 @@ namespace WebIDLCollector
 {
     public static class Program
     {
+        private static readonly List<string> Warnings = new List<string>();
+        private static readonly List<string> Errors = new List<string>();
+
         public static void Main()
+        {
+            Main1();
+            //Main2();
+        }
+
+        private static void Main1()
         {
             const string webidlLocation = "webidl";
             if (Directory.Exists(webidlLocation))
@@ -23,9 +32,59 @@ namespace WebIDLCollector
             }
 
             ProcessJsonFile("specData.json");
+
+            Reporting();
+
+            Console.ReadLine();
+        }
+
+        private static void Main2()
+        {
+            const string webidlPath = @"C:\Users\arronei\Desktop\webidl_baseline_20170310";
+            const string webidlLocation = "webidl";
+            if (Directory.Exists(webidlLocation))
+            {
+                Console.WriteLine("Deleting old files...");
+                Directory.Delete(webidlLocation, true);
+            }
+
+            var allSpecData = new List<SpecData> { ProcessWebIdl(webidlPath) };
+
+            var mergedSpecData = MergeProcessor.MergeSpecData(allSpecData, "Edge");
+            var allWebIdl = new WebIdlBuilder(mergedSpecData);
+            allWebIdl.GenerateFile("EdgeRS2");
+
+            var jsonDataBuilder = new JsonDataBuilder(mergedSpecData);
+            jsonDataBuilder.GenerateFile("EdgeRS2");
+
+            Reporting();
+
+            Console.ReadLine();
+        }
+
+        private static void Reporting()
+        {
+            if (Warnings.Any())
+            {
+                Console.WriteLine();
+                Console.WriteLine("Warning no data found for URLs:");
+                foreach (var warning in Warnings)
+                {
+                    Console.WriteLine(warning);
+                }
+            }
+            if (Errors.Any())
+            {
+                Console.WriteLine();
+                Console.WriteLine("Error parsing URLs:");
+                foreach (var error in Errors)
+                {
+                    Console.WriteLine(error);
+                }
+            }
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Generation Complete!");
-            Console.ReadLine();
         }
 
         private static void ProcessJsonFile(string jsonFile)
@@ -52,11 +111,13 @@ namespace WebIDLCollector
                 //{
                 //    new SpecData
                 //    {
-                //        Name = "navigatorcores",
-                //        Url = "https://wiki.whatwg.org/wiki/Navigator_HW_Concurrency",
-                //        File = "navigatorcores.webidl"
+                //        Name = "dom4",
+                //        Url = "https://www.w3.org/TR/dom/",
+                //        // File = "navigatorcores.webidl"
                 //    }
                 //};
+
+                //specDataList = specDataList.FindAll(a => a.Name == "dom4");
 
                 allSpecData.AddRange(specDataList.Where(ProcessSpec));
 
@@ -78,6 +139,49 @@ namespace WebIDLCollector
             jsonDataBuilder.GenerateFile();
         }
 
+        private static SpecData ProcessWebIdl(string path)
+        {
+            Console.WriteLine("Processing (" + path + ")");
+
+            if (!Directory.Exists(path))
+            {
+                return null;
+            }
+
+            var files = Directory.EnumerateFiles(path);
+            var specData = new SpecData();
+            foreach (var file in files)
+            {
+                var fileData = File.ReadAllText(file);
+                ProcessSpecs.ProcessFile(fileData, specData);
+            }
+
+            if (!specData.Callbacks.Any() &&
+                !specData.Dictionaries.Any() &&
+                !specData.Namespaces.Any() &&
+                !specData.Enumerations.Any() &&
+                !specData.Implements.Any() &&
+                !specData.Interfaces.Any() &&
+                !specData.TypeDefs.Any())
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Warnings.Add(path);
+            }
+
+            Console.Write("Enumerations: " + specData.Enumerations.Count + ", ");
+            Console.Write("Implements: " + specData.Implements.Count + ", ");
+            Console.Write("Dictionaries: " + specData.Dictionaries.Count + ", ");
+            Console.Write("Namespaces: " + specData.Namespaces.Count + ", ");
+            Console.Write("Interfaces: " + specData.Interfaces.Count + ", ");
+            Console.Write("TypeDefs: " + specData.TypeDefs.Count + ", ");
+            Console.WriteLine("Callbacks: " + specData.Callbacks.Count);
+
+            Console.ForegroundColor = ConsoleColor.Gray;
+
+            return specData;
+        }
+
+
         private static bool ProcessSpec(SpecData specData)
         {
             Console.WriteLine("Processing (" + specData.Url + ")");
@@ -96,6 +200,7 @@ namespace WebIDLCollector
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Unable to determine what to parse");
                 Console.ForegroundColor = ConsoleColor.Gray;
+                Errors.Add(specUrl);
                 return false;
             }
 
@@ -143,6 +248,7 @@ namespace WebIDLCollector
                 !specData.TypeDefs.Any())
             {
                 Console.ForegroundColor = ConsoleColor.Red;
+                Warnings.Add(specUrl);
             }
 
             Console.Write("Enumerations: " + specData.Enumerations.Count + ", ");
@@ -152,10 +258,6 @@ namespace WebIDLCollector
             Console.Write("Interfaces: " + specData.Interfaces.Count + ", ");
             Console.Write("TypeDefs: " + specData.TypeDefs.Count + ", ");
             Console.WriteLine("Callbacks: " + specData.Callbacks.Count);
-            if (Console.ForegroundColor == ConsoleColor.Red)
-            {
-                Console.ReadKey();
-            }
 
             Console.ForegroundColor = ConsoleColor.Gray;
 

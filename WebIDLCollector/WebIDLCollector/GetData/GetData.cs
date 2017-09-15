@@ -17,9 +17,16 @@ namespace WebIDLCollector.GetData
         ((?<name>[^=\s]+)
         (\s*=\s*(?<value>.+?))?))$", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
-        private static readonly Regex ArgumentExtendedParser = new Regex(@"(?<clamp>clamp)(,|$)|
+        private static readonly Regex ArgumentExtendedParser = new Regex(@"(?<allowshared>allowshared)(,|$)|
+        (?<clamp>clamp)(,|$)|
         (?<enforcerange>enforcerange)(,|$)|
         (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)|
+
+        (?<mspassbyvariant>mspassbyvariant)(,|$)|
+        (?<mscallersecurity>mscallersecurity)(,|$)|
+        (?<mspdldefaultvalue>mspdldefaultvalue)(,|$)|
+        (msoverridetype(\s*=\s*(?<msoverridetype>[^\s,\]]+)))(,|$)|
+
         (treatundefinedas(\s*=\s*(?<treatundefinedas>[^\s,\]]+)))(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         private static string CleanString(string value)
@@ -34,10 +41,11 @@ namespace WebIDLCollector.GetData
 
         private static IEnumerable<Argument> GetArgTypes(string args)
         {
+            args = Regex.Replace(args, @"\[([^,]+?),([^,]+?)\]", @"[$1\|$2]");
             var arguments = args.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries);
             var argumentList = new List<Argument>();
 
-            foreach (var argument in arguments.Select(argument => argument.Trim()))
+            foreach (var argument in arguments.Select(argument => argument.Trim().Replace("|", ",")))
             {
                 if (ArgumentParser.IsMatch(argument))
                 {
