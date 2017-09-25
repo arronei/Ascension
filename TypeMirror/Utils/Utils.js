@@ -240,9 +240,9 @@ var MirrorJS;
                 if (isOpera) {
                     return 'Opera ' + isOpera[1];
                 }
-                var isEdge = ua.match(/\bEdge\/(\d+)/);
+                var isEdge = ua.match(/\bEdge\/(\d+).(\d+)?/);
                 if (isEdge) {
-                    return 'IE' + isEdge[1] + "-Edge";
+                    return 'Edge' + isEdge[1] + ((isEdge[2]) ? '-' + isEdge[2] : '');
                 }
             }
             matches = matches[2] ? [matches[1], matches[2]] : [navigator.appName, navigator.appVersion, '-?'];

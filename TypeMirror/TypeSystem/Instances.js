@@ -74,7 +74,6 @@ var MirrorJS;
             for (var i = 0; i < tags.length; i++) {
                 var tag = tags[i];
                 var candidate = document.createElementNS(tag.namespace, tag.tagName);
-                var ctor = candidate.constructor;
                 MirrorJS.Utils.assertType(candidate, typeName);
                 if (MirrorJS.Utils.is(candidate, typeName)) {
                     instance = candidate;
@@ -643,7 +642,7 @@ var MirrorJS;
                 { tagName: "audio", namespace: "http://www.w3.org/1999/xhtml" },
             ],
             "HTMLSourceElement": [
-                { tagName: "SOURCE", namespace: "http://www.w3.org/1999/xhtml" },
+                { tagName: "source", namespace: "http://www.w3.org/1999/xhtml" },
             ],
             "HTMLCanvasElement": [
                 { tagName: "canvas", namespace: "http://www.w3.org/1999/xhtml" },

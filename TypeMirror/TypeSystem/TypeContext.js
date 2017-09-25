@@ -49,8 +49,8 @@ var MirrorJS;
                             });
                         } catch (ignored) {}
                         Object.getOwnPropertyNames(prototype).forEach(function (propertyName, index, array) {
-                            if (propertyName === "MirrorJS") {
-                                return;
+                            if ((propertyName === "MirrorJS") || (/\d+/.test(propertyName))) {
+                                continue;
                             }
                             try {
                                 var descriptor = Object.getOwnPropertyDescriptor(prototype, propertyName);
@@ -60,8 +60,8 @@ var MirrorJS;
                     }
                     // Process static members and instance members on static types
                     Object.getOwnPropertyNames(ctor).forEach(function (propertyName, index, array) {
-                            if (propertyName === "MirrorJS") {
-                                return;
+                            if ((propertyName === "MirrorJS") || (/\d+/.test(propertyName))) {
+                                continue;
                             }
                             var model = nameToModel[propertyName];
                             if (model === undefined) {
@@ -93,7 +93,7 @@ var MirrorJS;
                 var instance = _this.getInstance(typeName);
                 if (instance) {
                     for (var propertyName in instance) {
-                        if (propertyName === "MirrorJS") {
+                        if ((propertyName === "MirrorJS") || (/\d+/.test(propertyName))) {
                             continue;
                         }
                         var model = nameToModel[propertyName];
