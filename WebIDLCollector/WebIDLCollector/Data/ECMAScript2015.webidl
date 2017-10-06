@@ -195,7 +195,7 @@ interface Number {
     const float NaN = NaN;
     static boolean isFinite(any number);
     static boolean isInteger(any number);
-    static boolean iNaN(any number);
+    static boolean isNaN(any number);
     static boolean isSafeInteger(any number);
     static float parseFloat(DOMString str);
     static long parseInt(DOMString str, long radix);
@@ -505,3 +505,16 @@ interface Intl {
     static attribute object DateTimeFormat;
     static attribute object NumberFormat;
 };
+
+partial interface Window {
+    static USVString decodeURI(USVString encodedURI);
+    static USVString decodeURIComponent(USVString encodedURIComponent);
+    static USVString encodeURI(USVString uri);
+    static USVString encodeURIComponent(USVString uriComponent);
+    static DOMString escape(DOMString value);
+    static DOMString unescape(DOMString value);
+    static object eval(DOMString value);
+    static attribute float Infinity;
+    static attribute any NaN;
+    static attribute any undefined;
+}

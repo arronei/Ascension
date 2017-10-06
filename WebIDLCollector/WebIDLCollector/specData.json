@@ -1139,6 +1139,14 @@
     "url": "http://dev.w3.org/geo/api/spec-source.html"
   },
   {
+    "name": "geometry-1",
+    "url": "https://www.w3.org/TR/geometry-1/"
+  },
+  {
+    "name": "geometry",
+    "url": "https://drafts.fxtf.org/geometry/"
+  },
+  {
     "name": "sri",
     "url": "http://www.w3.org/TR/SRI/"
   },
@@ -1425,8 +1433,14 @@
     "url": "http://www.ecma-international.org/ecma-262/6.0/",
     "file": "ECMAScript2015.webidl"
   },
+  //{
+  //  "name": "es2016",
+  //  "title": "ECMAScript 2016",
+  //  "url": "http://www.ecma-international.org/ecma-262/7.0/",
+  //  "file": "ECMAScript2016.webidl"
+  //},
   {
-    "name": "es8",
+    "name": "es2017",
     "title": "ECMAScript 2017",
     "url": "http://www.ecma-international.org/ecma-262/8.0/",
     "file": "ECMAScript2017.webidl"
@@ -1751,5 +1765,9 @@
   {
     "name": "webidl",
     "url": "https://heycam.github.io/webidl/"
+  },
+  {
+    "name": "Network Information API",
+    "url": "http://wicg.github.io/netinfo/"
   }
 ]
