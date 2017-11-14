@@ -308,8 +308,12 @@ namespace WebIDLCollector.IDLTypes
 
         public override bool Equals(object otherMember)
         {
-            var member = otherMember as Member;
-            return (member != null) && Name.Equals(member.Name) && Type.Equals(member.Type) && ArgTypes.SequenceEqual(member.ArgTypes, new ArgumentTypeCompare());
+            return (otherMember is Member member) && Name.Equals(member.Name) && Type.Equals(member.Type) && ArgTypes.SequenceEqual(member.ArgTypes, new ArgumentTypeCompare());
+        }
+
+        public bool NameTypeEquals(object otherMember)
+        {
+            return (otherMember is Member member) && Name.Equals(member.Name);
         }
 
         public override int GetHashCode()
@@ -322,7 +326,21 @@ namespace WebIDLCollector.IDLTypes
     {
         public bool Equals(Member x, Member y)
         {
-            return x.Key.Item1.Equals(y.Key.Item1) && x.Key.Item2.Equals(y.Key.Item2) && (x.Key.Item3 == null || x.Key.Item3.SequenceEqual(y.Key.Item3, new ArgumentTypeCompare()));
+            return x != null && (x.Key.Item1.Equals(y.Key.Item1) && x.Key.Item2.Equals(y.Key.Item2) && (x.Key.Item3 == null || x.Key.Item3.SequenceEqual(y.Key.Item3, new ArgumentTypeCompare())));
+        }
+
+        public int GetHashCode(Member obj)
+        {
+            return ((obj.Key.Item1.GetHashCode() << 5)
+                    ^ obj.Key.Item2.GetHashCode()) << 5;
+        }
+    }
+
+    public class MemberNameTypeCompare : IEqualityComparer<Member>
+    {
+        public bool Equals(Member x, Member y)
+        {
+            return y != null && (x != null && (x.Key.Item1.Equals(y.Key.Item1) && x.Key.Item2.Equals(y.Key.Item2)));
         }
 
         public int GetHashCode(Member obj)

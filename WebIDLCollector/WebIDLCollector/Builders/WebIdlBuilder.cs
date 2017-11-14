@@ -108,7 +108,7 @@ namespace WebIDLCollector.Builders
                             .ToList();
                     foreach (var implements in thisTypeImplements)
                     {
-                        finalRecreate.AppendLine(implements.Reconstruct);
+                        finalRecreate.AppendLine(implements.Reconstruct(_showSpecNames));
                     }
                 }
                 finalRecreate.AppendLine();

@@ -57,6 +57,7 @@
     <Compile Include="GetData\GetData.cs" />
     <Compile Include="GetData\GetDictionaryData.cs" />
     <Compile Include="GetData\GetEnumData.cs" />
+    <Compile Include="GetData\GetIcludesData.cs" />
     <Compile Include="GetData\GetImplementsData.cs" />
     <Compile Include="GetData\GetInterfaceData.cs" />
     <Compile Include="GetData\GetNamespaceData.cs" />

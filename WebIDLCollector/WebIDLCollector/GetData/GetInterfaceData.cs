@@ -12,7 +12,7 @@ namespace WebIDLCollector.GetData
     {
         private static readonly Regex InterfaceParser = new Regex(@"(\[(?<extended>[^\]]+)\]\s*)?
         (((?<partial>partial)|(?<callback>callback))\s+)?(/\*[^\*]+\*/\s*)?interface\s+(/\*[^\*]+\*/\s*)?
-        (?<name>\w+)(?:\s*:\s*(?<inherits>[\w,\s]+))?\s*\{\s*(?<members>([^\}]*?\{.*?\};.*?|[^\}]+))?\s*\};?", RegexOptions.Compiled | RegexOptions.IgnorePatternWhitespace | RegexOptions.ExplicitCapture);
+        ((?<mixin>mixin)\s+(/\*[^\*]+\*/\s*)?)?(?<name>\w+)(?:\s*:\s*(?<inherits>[\w,\s]+))?\s*\{\s*(?<members>([^\}]*?\{.*?\};.*?|[^\}]+))?\s*\};?", RegexOptions.Compiled | RegexOptions.IgnorePatternWhitespace | RegexOptions.ExplicitCapture);
 
         private static readonly Regex InterfaceExtendedParser = new Regex(@"((?<constructor>constructor(\s*\((?<args>.+?)?\))?)(,|$)|
         (?<namedconstructor>namedconstructor\s*=\s*[^\)\s,\]]+(\s*\((?<ncargs>.+)?\))?)(,|$)|
@@ -34,7 +34,7 @@ namespace WebIDLCollector.GetData
         ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(?<type>.+)\s+(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
         (?<const>const)\s+(?<type>.+)\s+(?<item>.+?)\s*=\s*(?<value>.+?)|
         (?<serializer>serializer)\s*((?<type>.+)\s+((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
-        (?<stringifier>stringifier)((\s+((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)(\s+(?<required>required))?(\s+(?<item>[^;]+)))|(\s+(?<type>.+))(\s+(?<item>.*))(?<function>\((?<args>.*)\)))?$|
+        (?<stringifier>stringifier)((\s+((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)(\s+(?<required>required))?(\s+(?<item>[^;]+)))|(\s+(?<type>.+))(\s+(?<item>.+))?(?<function>\((?<args>.*)\)))?$|
         (?<static>static)\s+(((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<type>.+?)\s*((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\)))|
         ((?<iterable>iterable)|(?<legacyiterable>legacyiterable))\s*<(?<type>.+)>|
         (?<readonly>readonly)\s+((?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<maplike>maplike)\s*<(?<type>.+)>|(?<setlike>setlike)\s*<(?<type>.+)>)|
@@ -84,6 +84,7 @@ namespace WebIDLCollector.GetData
                     Name = iface.Groups["name"].Value.Trim(),
                     IsPartial = !string.IsNullOrWhiteSpace(iface.Groups["partial"].Value.Trim()),
                     IsCallback = !string.IsNullOrWhiteSpace(iface.Groups["callback"].Value.Trim()),
+                    IsMixin = !string.IsNullOrWhiteSpace(iface.Groups["mixin"].Value.Trim()),
                     ExtendedAttribute = CleanString(iface.Groups["extended"].Value),
                     SpecNames = new[] { specificationData.Name }
                 };

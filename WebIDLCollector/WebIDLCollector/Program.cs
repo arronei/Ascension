@@ -111,8 +111,8 @@ namespace WebIDLCollector
                 //{
                 //    new SpecData
                 //    {
-                //        Name = "dom4",
-                //        Url = "https://www.w3.org/TR/dom/",
+                //        Name = "dom",
+                //        Url = "https://dom.spec.whatwg.org/",
                 //        // File = "navigatorcores.webidl"
                 //    }
                 //};

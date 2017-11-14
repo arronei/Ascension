@@ -313,7 +313,7 @@ namespace WebIDLCollector.Process
 
                     currentMember.SpecNames = currentMember.SpecNames.Union(member.SpecNames).OrderBy(a => a);
 
-                    members.Remove(member);
+                    members.RemoveAll(r=>r.Equals(member));
                     members.Add(currentMember);
                 }
                 currentInterface.Members = members;

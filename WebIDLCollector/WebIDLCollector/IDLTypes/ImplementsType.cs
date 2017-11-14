@@ -18,12 +18,14 @@ namespace WebIDLCollector.IDLTypes
         public string OriginatorInterface { get; }
         public IEnumerable<string> SpecNames { get; set; }
 
-        public string Reconstruct => DestinationInterface + " implements " + OriginatorInterface + "; // " + string.Join(", ", SpecNames);
+        public string Reconstruct(bool showMemberSpecName = false)
+        {
+            return DestinationInterface + " implements " + OriginatorInterface + (showMemberSpecName ? "; // " + string.Join(", ", SpecNames) : string.Empty);
+        }
 
         public override bool Equals(object otherMember)
         {
-            var member = otherMember as ImplementsType;
-            return (member != null) &&
+            return (otherMember is ImplementsType member) &&
                    DestinationInterface.Equals(member.DestinationInterface, StringComparison.OrdinalIgnoreCase) &&
                    OriginatorInterface.Equals(member.OriginatorInterface, StringComparison.OrdinalIgnoreCase);
         }
@@ -39,7 +41,7 @@ namespace WebIDLCollector.IDLTypes
     {
         public bool Equals(ImplementsType x, ImplementsType y)
         {
-            return x.OriginatorInterface.Equals(y.OriginatorInterface, StringComparison.OrdinalIgnoreCase);
+            return y != null && (x != null && x.OriginatorInterface.Equals(y.OriginatorInterface, StringComparison.OrdinalIgnoreCase));
         }
 
         public int GetHashCode(ImplementsType obj)

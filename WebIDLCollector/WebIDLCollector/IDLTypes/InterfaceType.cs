@@ -41,6 +41,7 @@ namespace WebIDLCollector.IDLTypes
         public bool Unforgeable { get; set; }
         public bool IsPartial { private get; set; }
         public bool IsCallback { get; set; }
+        public bool IsMixin { get; set; }
         public string Name { get; set; }
         public IEnumerable<string> Inherits { get; set; }
         public IEnumerable<string> ExtendedBy { get; set; }
@@ -186,6 +187,10 @@ namespace WebIDLCollector.IDLTypes
                 sb.Append("partial ");
             }
             sb.Append("interface ");
+            if (IsMixin)
+            {
+                sb.Append("mixin ");
+            }
             sb.Append(Name);
             if (Inherits.Any())
             {
@@ -215,7 +220,7 @@ namespace WebIDLCollector.IDLTypes
     {
         public bool Equals(InterfaceType x, InterfaceType y)
         {
-            return x.Name.Equals(y.Name);
+            return y != null && (x != null && x.Name.Equals(y.Name));
         }
 
         public int GetHashCode(InterfaceType obj)

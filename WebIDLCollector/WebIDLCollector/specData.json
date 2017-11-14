@@ -36,9 +36,9 @@
     "url": "https://console.spec.whatwg.org/"
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/box.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/box.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -47,9 +47,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/visuren.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/visuren.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -58,9 +58,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/visudet.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/visudet.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -69,9 +69,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/visufx.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/visufx.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -80,9 +80,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/generate.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/generate.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -91,9 +91,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/page.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/page.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -102,9 +102,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/colors.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/colors.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -113,9 +113,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/fonts.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/fonts.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -124,9 +124,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/text.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/text.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -135,9 +135,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/tables.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/tables.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -146,9 +146,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/ui.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/ui.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -157,9 +157,9 @@
     ]
   },
   {
-    "name": "css21",
-    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1)",
-    "url": "http://www.w3.org/TR/CSS21/aural.html",
+    "name": "css22",
+    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
+    "url": "http://www.w3.org/TR/CSS22/aural.html",
     "identification": [
       {
         "selector": "div.propdef",
@@ -741,7 +741,7 @@
   },
   {
     "name": "dom-level-2-html",
-    "url": "http://www.w3.org/TR/DOM-Level-2-HTML/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -751,7 +751,7 @@
   },
   {
     "name": "dom-level-2-core",
-    "url": "http://www.w3.org/TR/DOM-Level-2-Core/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -761,7 +761,7 @@
   },
   {
     "name": "dom-level-2-events",
-    "url": "http://www.w3.org/TR/DOM-Level-2-Events/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -771,7 +771,7 @@
   },
   {
     "name": "dom-level-2-style",
-    "url": "http://www.w3.org/TR/DOM-Level-2-Style/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -781,7 +781,7 @@
   },
   {
     "name": "dom-level-2-traversal-range",
-    "url": "http://www.w3.org/TR/DOM-Level-2-Traversal-Range/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -791,7 +791,7 @@
   },
   {
     "name": "dom-level-2-views",
-    "url": "http://www.w3.org/TR/DOM-Level-2-Views/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -801,7 +801,7 @@
   },
   {
     "name": "dom-level-3-as",
-    "url": "http://www.w3.org/TR/DOM-Level-3-AS/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2002/NOTE-DOM-Level-3-AS-20020725/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -811,7 +811,7 @@
   },
   {
     "name": "dom-level-3-core",
-    "url": "http://www.w3.org/TR/DOM-Level-3-Core/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -821,7 +821,7 @@
   },
   {
     "name": "dom-level-3-ls",
-    "url": "https://www.w3.org/TR/DOM-Level-3-LS/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2004/REC-DOM-Level-3-Val-20040127/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -831,7 +831,7 @@
   },
   {
     "name": "dom-level-3-val",
-    "url": "https://www.w3.org/TR/DOM-Level-3-Val/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2004/NOTE-DOM-Level-3-Views-20040226/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -841,7 +841,7 @@
   },
   {
     "name": "dom-level-3-views",
-    "url": "https://www.w3.org/TR/DOM-Level-3-Views/idl-definitions.html",
+    "url": "https://www.w3.org/TR/2004/NOTE-DOM-Level-3-Views-20040226/idl-definitions.html",
     "identification": [
       {
         "selector": ".idl-code pre",
@@ -1021,12 +1021,6 @@
   {
     "name": "fileapi",
     "url": "http://www.w3.org/TR/FileAPI/",
-    "identification": [
-      {
-        "selector": "code.idl-code",
-        "type": "idl"
-      }
-    ]
   },
   {
     "name": "fileapi",
@@ -1143,7 +1137,7 @@
     "url": "https://www.w3.org/TR/geometry-1/"
   },
   {
-    "name": "geometry",
+    "name": "geometry-1",
     "url": "https://drafts.fxtf.org/geometry/"
   },
   {

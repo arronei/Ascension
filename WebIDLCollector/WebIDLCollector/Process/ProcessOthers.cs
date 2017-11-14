@@ -15,7 +15,11 @@ namespace WebIDLCollector.Process
             specificationData.Callbacks.AddRange(DataCollectors.GetAllCallbacks(cleanString, specificationData));
             specificationData.Dictionaries.AddRange(DataCollectors.GetAllDictionaries(cleanString, specificationData));
             specificationData.Enumerations.AddRange(DataCollectors.GetAllEnums(cleanString, specificationData));
+
+            //Need to do both types for now until all specs are updated.
             specificationData.Implements.AddRange(DataCollectors.GetAllImplements(cleanString, specificationData));
+            specificationData.Implements.AddRange(DataCollectors.GetAllIncludes(cleanString, specificationData));
+
             specificationData.Interfaces.AddRange(DataCollectors.GetAllInterfaces(cleanString, specificationData));
             specificationData.Namespaces.AddRange(DataCollectors.GetAllNamespaces(cleanString, specificationData));
             specificationData.TypeDefs.AddRange(DataCollectors.GetAllTypeDefs(cleanString, specificationData));
@@ -28,7 +32,11 @@ namespace WebIDLCollector.Process
                 specificationData.Callbacks.AddRange(DataCollectors.GetAllCallbacks(cleanString, specificationData));
                 specificationData.Dictionaries.AddRange(DataCollectors.GetAllDictionaries(cleanString, specificationData));
                 specificationData.Enumerations.AddRange(DataCollectors.GetAllEnums(cleanString, specificationData));
+
+                //Need to do both types for now until all specs are updated.
                 specificationData.Implements.AddRange(DataCollectors.GetAllImplements(cleanString, specificationData));
+                specificationData.Implements.AddRange(DataCollectors.GetAllIncludes(cleanString, specificationData));
+
                 specificationData.Interfaces.AddRange(DataCollectors.GetAllInterfaces(cleanString, specificationData));
                 specificationData.Namespaces.AddRange(DataCollectors.GetAllNamespaces(cleanString, specificationData));
                 specificationData.TypeDefs.AddRange(DataCollectors.GetAllTypeDefs(cleanString, specificationData));

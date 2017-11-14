@@ -60,7 +60,7 @@ namespace WebIDLCollector.Builders
 
                 var mem = interfaceType.Members.ToList();
 
-                if (!interfaceType.NoInterfaceObject && (interfaceType.Constructors.Any() || interfaceType.HtmlConstructor))
+                if (!interfaceType.NoInterfaceObject && !interfaceType.IsMixin && (interfaceType.Constructors.Any() || interfaceType.HtmlConstructor))
                 {
                     var constructor = new TypeMirrorProperty
                     {
@@ -124,21 +124,13 @@ namespace WebIDLCollector.Builders
                     {
                         var finalItem = finalList[destinationItem];
                         var originItem = finalList[originatorItem];
-                        if (!finalList.ContainsKey(originatorItem))
+
+                        //merge Specs
+                        //finalList[destinationItem].SpecNames = finalList[destinationItem].SpecNames.Union(originItem.SpecNames).OrderBy(a => a);
+
+                        if (originItem.NoInterfaceObject || originItem.IsMixin)
                         {
-                            continue;
-                        }
-                        var oItem = finalList[originatorItem];
-                        if (!oItem.NoInterfaceObject)
-                        {
-                            finalItem.ExtendedBy =
-                                _specData.Implements.Where(a => a.DestinationInterface == destinationItem)
-                                    .Select(o => o.OriginatorInterface)
-                                    .Distinct();
-                        }
-                        else
-                        {
-                            // Merge NoInterfaceObject members
+                            // Merge NoInterfaceObject members or mixin members
                             var sortedMembers = finalItem.Members.ToDictionary(a => a.Key, b => b);
                             foreach (var member in originItem.Members)
                             {
@@ -157,6 +149,13 @@ namespace WebIDLCollector.Builders
                             }
                             finalItem.Members = sortedMembers.Values;
                             finalItem.Members = finalItem.Members.OrderBy(a => a.Name);
+                        }
+                        else
+                        {
+                            finalItem.ExtendedBy =
+                                _specData.Implements.Where(a => a.DestinationInterface == destinationItem)
+                                    .Select(o => o.OriginatorInterface)
+                                    .Distinct();
                         }
                     }
                     else
@@ -178,6 +177,18 @@ namespace WebIDLCollector.Builders
             foreach (var noInterface in noInterfaceObjects)
             {
                 finalList.Remove(noInterface.Name);
+            }
+
+            var mixinObjects = _specData.Interfaces.Where(a => a.IsMixin);
+            foreach (var mixin in mixinObjects)
+            {
+                finalList.Remove(mixin.Name);
+            }
+
+            var callbackInterfaceObjects = _specData.Interfaces.Where(a => a.IsCallback);
+            foreach (var callbackInterface in callbackInterfaceObjects)
+            {
+                finalList.Remove(callbackInterface.Name);
             }
 
             return finalList;
