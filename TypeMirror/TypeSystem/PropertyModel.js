@@ -3,13 +3,16 @@ var MirrorJS;
 (function (MirrorJS) {
     /** Describes a property, returned by TypeModel. */
     var PropertyModel = (function () {
-        function PropertyModel(confidence, type, descriptor) {
+        function PropertyModel(confidence, descriptor) {
             this.confidence = confidence;
-            this.type = type;
+            this.type = undefined;
             this.isPlausiblyInherited = false;
             this.isPlausiblyDefined = false;
             console.assert(confidence !== 0 /* None */);
             if (descriptor !== undefined) {
+                if (descriptor.value) {
+                    this.type = MirrorJS.Utils.getTypeNameFromInstance(descriptor.value);
+                }
                 this.hasGet = descriptor.get !== undefined;
                 this.hasSet = descriptor.set !== undefined;
                 this.isConfigurable = descriptor.configurable;

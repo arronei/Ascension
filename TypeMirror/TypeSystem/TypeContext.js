@@ -35,7 +35,7 @@ var MirrorJS;
                                     symbolName = "@@" + symbolName.substring("Symbol(Symbol.".length, symbolName.length - 1);
                                 }
                                 var descriptor = Object.getOwnPropertyDescriptor(prototype, symbol);
-                                nameToModel[symbolName] = new MirrorJS.PropertyModel(4 /* Prototype */, undefined, descriptor);
+                                nameToModel[symbolName] = new MirrorJS.PropertyModel(4 /* Prototype */, descriptor);
                                 if (symbolName === "@@iterator") {
                                     nameToModel[symbolName].extraData = (descriptor.value === Array.prototype[Symbol.iterator] ? "value-iterable" : "pair-iterable");
                                 }
@@ -49,19 +49,19 @@ var MirrorJS;
                             });
                         } catch (ignored) {}
                         Object.getOwnPropertyNames(prototype).forEach(function (propertyName, index, array) {
-                            if ((propertyName === "MirrorJS") || (/\d+/.test(propertyName))) {
-                                continue;
+                            if ((propertyName === "MirrorJS") || (/^\d+$/.test(propertyName))) {
+                                return;
                             }
                             try {
                                 var descriptor = Object.getOwnPropertyDescriptor(prototype, propertyName);
                             } catch (ignored) {}
-                            nameToModel[propertyName] = new MirrorJS.PropertyModel(4 /* Prototype */, undefined, descriptor);
+                            nameToModel[propertyName] = new MirrorJS.PropertyModel(4 /* Prototype */, descriptor);
                         });
                     }
                     // Process static members and instance members on static types
                     Object.getOwnPropertyNames(ctor).forEach(function (propertyName, index, array) {
-                            if ((propertyName === "MirrorJS") || (/\d+/.test(propertyName))) {
-                                continue;
+                            if ((propertyName === "MirrorJS") || (/^\d+$/.test(propertyName))) {
+                                return;
                             }
                             var model = nameToModel[propertyName];
                             if (model === undefined) {
@@ -73,7 +73,7 @@ var MirrorJS;
                                 try {
                                     var descriptor = Object.getOwnPropertyDescriptor(ctor, propertyName);
                                 } catch (ignored) {}
-                                model = new MirrorJS.PropertyModel(result.confidence, undefined, descriptor);
+                                model = new MirrorJS.PropertyModel(result.confidence, descriptor);
                                 nameToModel[propertyName] = model;
                             }
                             try {
@@ -93,7 +93,7 @@ var MirrorJS;
                 var instance = _this.getInstance(typeName);
                 if (instance) {
                     for (var propertyName in instance) {
-                        if ((propertyName === "MirrorJS") || (/\d+/.test(propertyName))) {
+                        if ((propertyName === "MirrorJS") || (/^\d+$/.test(propertyName))) {
                             continue;
                         }
                         var model = nameToModel[propertyName];
@@ -115,7 +115,7 @@ var MirrorJS;
                                         //console.warn("" + propertyname);
                                     }
                                 }
-                                model = new MirrorJS.PropertyModel(result.confidence, undefined, descriptor);
+                                model = new MirrorJS.PropertyModel(result.confidence, descriptor);
                                 nameToModel[propertyName] = model;
                             }
                         }
