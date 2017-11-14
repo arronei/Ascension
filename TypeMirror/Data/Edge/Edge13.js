@@ -1,5 +1,5 @@
 {
-  "browserVersion": "IE13-Edge",
+  "browserVersion": "Edge 13",
   "timestamp": "2015-10-13T16:44:56.891Z",
   "types": {
     "ANGLE_instanced_arrays": {
