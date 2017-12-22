@@ -1,5 +1,5 @@
 {
-  "browserVersion": "Internet Explorer 11",
+  "browserVersion": "IE 11",
   "timestamp": "2015-10-13T16:24:55.571Z",
   "types": {
     "ANGLE_instanced_arrays": {

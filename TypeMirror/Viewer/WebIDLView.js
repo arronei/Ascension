@@ -149,11 +149,11 @@ var MirrorJS;
             iterator.forEach(function (json, sources) {
                 var flags = JSON.parse(json);
                 switch (flags.confidence) {
-                    case 4 /* Prototype */:
-                    case 3 /* InstanceWithBase */:
-                    case 2 /* InstanceWithSibling */:
+                    case MirrorJS.Confidence.Prototype:
+                    case MirrorJS.Confidence.InstanceWithBase:
+                    case MirrorJS.Confidence.InstanceWithSibling:
                         break;
-                    case 1 /* InstanceWithoutBase */:
+                    case MirrorJS.Confidence.InstanceWithoutBase:
                         _this.addWarningIcon(parent);
                         parent.className += " fromInstanceWithoutBase";
                         break;
@@ -186,7 +186,7 @@ var MirrorJS;
         };
         WebIDLView.prototype.addConfigurableModifier = function (parent, typeName, propertyName) {
             this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.isEnumerable ? ["configurable"] : [];
+                return property.isConfigurable ? ["configurable"] : [];
             }, "keyword");
         };
         WebIDLView.prototype.addOpenBrace = function (parent, typeName, propertyName) {

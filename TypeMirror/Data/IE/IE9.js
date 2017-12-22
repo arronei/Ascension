@@ -1,5 +1,5 @@
 {
-  "browserVersion": "MSIE 9",
+  "browserVersion": "IE 9",
   "timestamp": "2015-10-22T20:47:44.264Z",
   "types": {
     "ActiveXObject": {

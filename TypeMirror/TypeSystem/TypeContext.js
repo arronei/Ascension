@@ -35,7 +35,7 @@ var MirrorJS;
                                     symbolName = "@@" + symbolName.substring("Symbol(Symbol.".length, symbolName.length - 1);
                                 }
                                 var descriptor = Object.getOwnPropertyDescriptor(prototype, symbol);
-                                nameToModel[symbolName] = new MirrorJS.PropertyModel(4 /* Prototype */, descriptor);
+                                nameToModel[symbolName] = new MirrorJS.PropertyModel(MirrorJS.Confidence.Prototype, descriptor);
                                 if (symbolName === "@@iterator") {
                                     nameToModel[symbolName].extraData = (descriptor.value === Array.prototype[Symbol.iterator] ? "value-iterable" : "pair-iterable");
                                 }
@@ -47,45 +47,49 @@ var MirrorJS;
                                     nameToModel[symbolName].extraData = `{ ${entries.join(", ")} }`;
                                 }
                             });
-                        } catch (ignored) {}
+                        }
+                        catch (ignored) { }
                         Object.getOwnPropertyNames(prototype).forEach(function (propertyName, index, array) {
                             if ((propertyName === "MirrorJS") || (/^\d+$/.test(propertyName))) {
                                 return;
                             }
+                            var descriptor = undefined;
                             try {
-                                var descriptor = Object.getOwnPropertyDescriptor(prototype, propertyName);
-                            } catch (ignored) {}
-                            nameToModel[propertyName] = new MirrorJS.PropertyModel(4 /* Prototype */, descriptor);
+                                descriptor = Object.getOwnPropertyDescriptor(prototype, propertyName);
+                            }
+                            catch (ignored) { }
+                            nameToModel[propertyName] = new MirrorJS.PropertyModel(MirrorJS.Confidence.Prototype, descriptor);
                         });
                     }
                     // Process static members and instance members on static types
                     Object.getOwnPropertyNames(ctor).forEach(function (propertyName, index, array) {
-                            if ((propertyName === "MirrorJS") || (/^\d+$/.test(propertyName))) {
+                        if ((propertyName === "MirrorJS") || (/^\d+$/.test(propertyName))) {
+                            return;
+                        }
+                        var model = nameToModel[propertyName];
+                        if (model === undefined) {
+                            var result = _this.isPropertyInherited(typeName, propertyName);
+                            if (!ctor.hasOwnProperty(propertyName)) {
                                 return;
                             }
-                            var model = nameToModel[propertyName];
-                            if (model === undefined) {
-                                //var result = ctor.hasOwnProperty(propertyName);
-                                var result = _this.isPropertyInherited(typeName, propertyName);
-                                if (!ctor.hasOwnProperty(propertyName)) { //(result.isInherited) {
-                                    return;
-                                }
-                                try {
-                                    var descriptor = Object.getOwnPropertyDescriptor(ctor, propertyName);
-                                } catch (ignored) {}
-                                model = new MirrorJS.PropertyModel(result.confidence, descriptor);
-                                nameToModel[propertyName] = model;
-                            }
+                            var descriptor = undefined;
                             try {
-                                if (!nameToModel[propertyName].type && !_this.preventAV(typeName, propertyName)) {
-                                    nameToModel[propertyName].type = MirrorJS.Utils.getTypeNameFromInstance(ctor[propertyName]);
-                                }
+                                descriptor = Object.getOwnPropertyDescriptor(ctor, propertyName);
                             }
-                            catch (ignored) {
-                                // REVIEW: On Firefox, this throws a security exception.
-                                console.assert(typeName === "XSLTProcessor" && propertyName === "flags");
+                            catch (ignored) { }
+                            model = new MirrorJS.PropertyModel(result.confidence, descriptor);
+                            nameToModel[propertyName] = model;
+                        }
+                        try {
+                            if (!nameToModel[propertyName].type && !this.preventAV(typeName, propertyName)) {
+                                nameToModel[propertyName].type = MirrorJS.Utils.getTypeNameFromInstance(ctor[propertyName]);
                             }
-                        });
+                        }
+                        catch (ignored) {
+                            // REVIEW: On Firefox, this throws a security exception.
+                            console.assert(typeName === "XSLTProcessor" && propertyName === "flags");
+                        }
+                    });
                 }
                 // Next, we attempt to enumerate the properties of an instance of an object to discover any properties
                 // that didn't appear on the prototype.  This is a workaround for Chromium #43394, but it doesn't hurt
@@ -103,24 +107,23 @@ var MirrorJS;
                                 continue;
                             }
                             if (instance.__proto__) {
+                                var descriptor = undefined;
                                 try {
-                                    var descriptor = Object.getOwnPropertyDescriptor(instance.__proto__, propertyName);
+                                    descriptor = Object.getOwnPropertyDescriptor(instance.__proto__, propertyName);
                                 }
-                                catch (ignored) {}
+                                catch (ignored) { }
                                 if (!descriptor) {
-                                    try{
+                                    try {
                                         descriptor = Object.getOwnPropertyDescriptor(instance, propertyName);
                                     }
-                                    catch(e){
-                                        //console.warn("" + propertyname);
-                                    }
+                                    catch (ignored) { }
                                 }
                                 model = new MirrorJS.PropertyModel(result.confidence, descriptor);
                                 nameToModel[propertyName] = model;
                             }
                         }
                         try {
-                            if (!nameToModel[propertyName].type && !_this.preventAV(typeName, propertyName)) {
+                            if (!nameToModel[propertyName].type && !this.preventAV(typeName, propertyName)) {
                                 nameToModel[propertyName].type = MirrorJS.Utils.getTypeNameFromInstance(instance[propertyName]);
                             }
                         }
@@ -160,7 +163,7 @@ var MirrorJS;
                     return undefined;
                 }
                 var proto = ctor.prototype;
-                if(!proto){
+                if (!proto) {
                     return undefined;
                 }
                 var base = Object.getPrototypeOf(proto);
@@ -222,7 +225,7 @@ var MirrorJS;
             // If there is no base type, there is 0% probability that the property was inherited.
             if (!baseType) {
                 console.assert(typeName === "Object", "All types must inherit from Object (exempting Object).");
-                return { isInherited: false, confidence: 3 /* InstanceWithBase */ };
+                return { isInherited: false, confidence: MirrorJS.Confidence.InstanceWithBase };
             }
             // If any ancestor owns a property with the same name, the property is assumed to be inherited.
             for (var ancestor = baseType; ancestor; ancestor = this.getBaseType(ancestor)) {
@@ -232,12 +235,12 @@ var MirrorJS;
                 var propertyModel = baseProperties[propertyName];
                 if (propertyModel) {
                     switch (propertyModel.confidence) {
-                        case 4 /* Prototype */:
-                            return { isInherited: true, confidence: 4 /* Prototype */ };
-                        case 2 /* InstanceWithSibling */:
-                        case 3 /* InstanceWithBase */:
-                        case 1 /* InstanceWithoutBase */:
-                            return { isInherited: true, confidence: 3 /* InstanceWithBase */ };
+                        case MirrorJS.Confidence.Prototype:
+                            return { isInherited: true, confidence: MirrorJS.Confidence.Prototype };
+                        case MirrorJS.Confidence.InstanceWithSibling:
+                        case MirrorJS.Confidence.InstanceWithBase:
+                        case MirrorJS.Confidence.InstanceWithoutBase:
+                            return { isInherited: true, confidence: MirrorJS.Confidence.InstanceWithBase };
                         default:
                             console.assert(false);
                             return undefined;
@@ -246,12 +249,12 @@ var MirrorJS;
             }
             if (this.instanceHasProperty(baseType, propertyName)) {
                 console.assert(MirrorJS.Utils.workaroundChromium43394() && baseType === "Error" && propertyName === "stack", "Properties on the base instance must be discovered by walking the memoized ancestor property models.");
-                return { isInherited: true, confidence: 3 /* InstanceWithBase */ };
+                return { isInherited: true, confidence: MirrorJS.Confidence.InstanceWithBase };
             }
             // If we are able to create an instance of the base type, and we known that we didn't find the
             // property on the base type, then the property can not be inherited.
             if (this.getInstance(baseType) !== undefined) {
-                return { isInherited: false, confidence: 3 /* InstanceWithBase */ };
+                return { isInherited: false, confidence: MirrorJS.Confidence.InstanceWithBase };
             }
             // Finally, recursively search sibblings that inherit from the same base type.  If we can
             // determine that any of these are missing the property, it must not be inherited.
@@ -262,9 +265,9 @@ var MirrorJS;
                 return _this.allDerivedInstancesHaveProperty(derivedName, propertyName);
             }, true);
             if (!appearsOnAllPeerTypes) {
-                return { isInherited: false, confidence: 2 /* InstanceWithSibling */ };
+                return { isInherited: false, confidence: MirrorJS.Confidence.InstanceWithSibling };
             }
-            return { isInherited: false, confidence: 1 /* InstanceWithoutBase */ };
+            return { isInherited: false, confidence: MirrorJS.Confidence.InstanceWithoutBase };
         };
         TypeContext.prototype.getCtor = function (typeName) {
             var ctor = this.root[typeName];
@@ -321,10 +324,9 @@ var MirrorJS;
 
             The hueristics seem to work pretty well on Chrome, IE, and FireFox. */
         TypeContext.prototype.getIsConstructor = function (propertyName) {
-            var _this = this;
             // By convention, the names of constructors begin with an upper-case letter.
             var firstChar = propertyName[0];
-            if ((!_this.startsWith(propertyName, 'webkit') && (firstChar.toLowerCase() === firstChar))) {
+            if ((!this.startsWith(propertyName, 'webkit') && (firstChar.toLowerCase() === firstChar))) {
                 // Begins with a lower-case character.  Exclude it.
                 return false;
             }
@@ -335,10 +337,11 @@ var MirrorJS;
             var isObject = (typeof propertyValue) === "object";
             if (isFunction || isObject) {
                 // Skip "static" types 'CSS', 'Debug', 'Intl', 'JSON', 'Math'
-                try{
-                    var prototype = propertyValue.prototype;
+                var prototype;
+                try {
+                    prototype = propertyValue.prototype;
                 }
-                catch(e){
+                catch (e) {
                     return false;
                 }
                 if (!prototype && propertyName === "MirrorJS") {
@@ -369,7 +372,7 @@ var MirrorJS;
         TypeContext.prototype.getConfidence = function (typeName) {
             // Chromium #43394: DOM attributes are missing from object prototypes.
             if (!MirrorJS.Utils.workaroundChromium43394()) {
-                return 4 /* Prototype */;
+                return MirrorJS.Confidence.Prototype;
             }
             // True if we can construct an instance of the requested type.
             var canConstruct = this.getInstance(typeName) !== undefined;
@@ -378,11 +381,11 @@ var MirrorJS;
             var canConstructBase = this.getInstance(baseType) !== undefined;
             if (canConstruct) {
                 if (canConstructBase) {
-                    return 3 /* InstanceWithBase */;
+                    return MirrorJS.Confidence.InstanceWithBase;
                 }
-                return 1 /* InstanceWithoutBase */;
+                return MirrorJS.Confidence.InstanceWithoutBase;
             }
-            return 0 /* None */;
+            return MirrorJS.Confidence.None;
         };
         return TypeContext;
     })();
