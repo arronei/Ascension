@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{176F8C5D-7AE3-4077-8B10-C5F2A3C8BAFF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MS.Internal</RootNamespace>
+    <AssemblyName>APICatalogBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Utility\Utility\Utility.csproj">
+      <Project>{05dc003d-7388-43ab-bb6d-c5dec78956cc}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Generator\Core\Generator.Core.csproj">
+      <Project>{a7b5d937-13ee-4ccb-8153-8becd5abc538}</Project>
+      <Name>Generator.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Generator\SpecificationList\Generator.SpecificationList.csproj">
+      <Project>{0BD225B1-CE7A-4737-8CA0-6A420F657E82}</Project>
+      <Name>Generator.SpecificationList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Generator\Venn\Generator.Venn.csproj">
+      <Project>{73836c1c-50e8-4fa0-b28c-c909a0817c24}</Project>
+      <Name>Generator.Venn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeSystem\Core\TypeSystem.Data.Core.csproj">
+      <Project>{D99645F1-5D6D-4BF2-BC57-652E1883512B}</Project>
+      <Name>TypeSystem.Data.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeSystem\Data\ApiCatalog\TypeSystem.Data.ApiCatalog.csproj">
+      <Project>{FD4AB226-53DA-44EA-BB71-663C22A1893C}</Project>
+      <Name>TypeSystem.Data.ApiCatalog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeSystem\Data\Browser\TypeSystem.Data.Browser.csproj">
+      <Project>{bba6c046-9ee0-4622-a704-68dc9018bd16}</Project>
+      <Name>TypeSystem.Data.Browser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeSystem\Data\SpecRef\TypeSystem.Data.SpecRef.csproj">
+      <Project>{B256ECB5-FCE7-4CA4-A337-F336F6758E70}</Project>
+      <Name>TypeSystem.Data.SpecRef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeSystem\Data\TypeMirror\TypeSystem.Data.TypeMirror.csproj">
+      <Project>{1179F94F-55A7-4B98-AFDD-AA9986881728}</Project>
+      <Name>TypeSystem.Data.TypeMirror</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataFiles\VennTemplate.htm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
