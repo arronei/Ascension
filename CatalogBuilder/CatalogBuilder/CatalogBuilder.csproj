@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MS.Internal</RootNamespace>
     <AssemblyName>CatalogBuilder</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -100,6 +100,10 @@
     <ProjectReference Include="..\Generator\Core\Generator.Core.csproj">
       <Project>{6BA9D658-C668-433F-8C14-910F98700673}</Project>
       <Name>Generator.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Generator\Venn\Generator.Venn.csproj">
+      <Project>{92AB883D-BC91-4A48-BB77-4C72FD91F554}</Project>
+      <Name>Generator.Venn</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

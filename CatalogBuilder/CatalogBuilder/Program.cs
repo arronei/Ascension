@@ -23,21 +23,21 @@ namespace MS.Internal
 
             //var config = new ConfigurationBuilder();
 
-            //var builder = new ContainerBuilder();
+            var builder = new ContainerBuilder();
 
-            //builder.RegisterType<VennDataGenerator>().As<BaseGenerator>();
+            builder.RegisterType<Generator.Venn.Generator>().As<BaseGenerator>();
 
 
-            //Container = builder.Build();
+            Container = builder.Build();
 
             //var fileName = "";
 
-            //using (var scope = Container.BeginLifetimeScope())
-            //{
-            //    var de = scope.Resolve<BaseGenerator>();
+            using (var scope = Container.BeginLifetimeScope())
+            {
+                var de = scope.Resolve<BaseGenerator>();
 
             //    var s = de.DeserializeJsonDataFile<RootObject>(fileName);
-            //}
+            }
         }
 
         private static void RegisterModules(ContainerBuilder builder)

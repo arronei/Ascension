@@ -1,8 +1,7 @@
 ﻿using Autofac;
 using MS.Internal.Generator.Core;
-using MS.Internal.Generator.Venn;
 
-namespace Venn
+namespace MS.Internal.Generator.Venn
 {
     public class VennModule : Module
     {
