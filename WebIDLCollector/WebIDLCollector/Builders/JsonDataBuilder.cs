@@ -76,6 +76,9 @@ namespace WebIDLCollector.Builders
                     BuilderHelpers.AddNameLengthProto(tmType, mem);
                 }
 
+                BuilderHelpers.AddSymbols(tmType, mem);
+                BuilderHelpers.AddSpecialMembers(tmType, mem);
+
                 foreach (var tmProperty in mem)
                 {
                     if (BuilderHelpers.AddIterable(tmProperty, tmType, mem)) { continue; }
@@ -126,7 +129,7 @@ namespace WebIDLCollector.Builders
                         var originItem = finalList[originatorItem];
 
                         //merge Specs
-                        //finalList[destinationItem].SpecNames = finalList[destinationItem].SpecNames.Union(originItem.SpecNames).OrderBy(a => a);
+                        finalList[destinationItem].SpecNames = finalList[destinationItem].SpecNames.Union(originItem.SpecNames).OrderBy(a => a);
 
                         if (originItem.NoInterfaceObject || originItem.IsMixin)
                         {

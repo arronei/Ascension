@@ -38,134 +38,62 @@
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/box.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/box.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/visuren.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/visuren.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/visudet.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/visudet.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/visufx.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/visufx.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/generate.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/generate.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/page.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/page.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/colors.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/colors.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/fonts.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/fonts.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/text.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/text.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/tables.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/tables.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/ui.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/ui.html"
   },
   {
     "name": "css22",
     "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2)",
-    "url": "http://www.w3.org/TR/CSS22/aural.html",
-    "identification": [
-      {
-        "selector": "div.propdef",
-        "type": "css"
-      }
-    ]
+    "url": "http://www.w3.org/TR/CSS22/aural.html"
   },
   {
     "name": "css-align-3",
@@ -1020,7 +948,7 @@
   },
   {
     "name": "fileapi",
-    "url": "http://www.w3.org/TR/FileAPI/",
+    "url": "http://www.w3.org/TR/FileAPI/"
   },
   {
     "name": "fileapi",
@@ -1657,11 +1585,14 @@
     "name": "findtext",
     "url": "http://w3c.github.io/findtext/"
   },
-  //{
-  //  "name": "intersection",
-  //  "title": "Intersection Observer",
-  //  "url": "https://wicg.github.io/IntersectionObserver/"
-  //},
+  {
+    "name": "intersection-observer",
+    "url": "https://www.w3.org/TR/intersection-observer/"
+  },
+  {
+    "name": "intersection-observer",
+    "url": "https://w3c.github.io/IntersectionObserver/"
+  },
   {
     "name": "whatwg-html",
     "title": "HTML Living Standard",
@@ -1761,7 +1692,35 @@
     "url": "https://heycam.github.io/webidl/"
   },
   {
-    "name": "Network Information API",
+    "name": "netinfo",
     "url": "http://wicg.github.io/netinfo/"
+  },
+  {
+    "name": "orientation-sensor",
+    "url": "https://www.w3.org/TR/orientation-sensor/"
+  },
+  {
+    "name": "orientation-sensor",
+    "url": "https://w3c.github.io/orientation-sensor/"
+  },
+  {
+    "name": "aom",
+    "url": "https://wicg.github.io/aom/spec/"
+  },
+  {
+    "name": "web-animations-1",
+    "url": "https://www.w3.org/TR/web-animations-1/"
+  },
+  {
+    "name": "web-animations",
+    "url": "https://w3c.github.io/web-animations/"
+  },
+  {
+    "name": "background-fetch",
+    "url": "https://wicg.github.io/background-fetch/"
+  },
+  {
+    "name": "budget-api",
+    "url": "https://wicg.github.io/budget-api/"
   }
 ]

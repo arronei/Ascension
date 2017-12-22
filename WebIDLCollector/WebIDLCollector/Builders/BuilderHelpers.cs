@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using WebIDLCollector.IDLTypes;
 using WebIDLCollector.TypeMirrorTypes;
 
@@ -95,6 +96,157 @@ namespace WebIDLCollector.Builders
                 if (!tmType.Properties.Contains(item)) { tmType.Properties.Add(item); }
             }
             return true;
+        }
+
+        internal static void AddSymbols(TypeMirrorType tmType, List<Member> mem)
+        {
+            if (!mem.Exists(a => a.Name.Equals("@@toStringTag", StringComparison.OrdinalIgnoreCase)))
+            {
+                var toStringTag = new TypeMirrorProperty
+                {
+                    Name = "@@toStringTag",
+                    Type = "DOMString",
+                    Confidence = 4,
+                    HasGet = true,
+                    IsConfigurable = false,
+                    IsEnumerable = false,
+                    IsWritable = false,
+                    SpecNames = tmType.SpecNames
+                };
+
+                if (!tmType.Properties.Contains(toStringTag)) { tmType.Properties.Add(toStringTag); }
+            }
+
+            if (tmType.TypeName == "RegExp")
+            {
+                if (!mem.Exists(a => a.Name.Equals("@@match", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var matchSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@match",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = false,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(matchSymbol)) { tmType.Properties.Add(matchSymbol); }
+                }
+
+                if (!mem.Exists(a => a.Name.Equals("@@replace", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var replaceSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@replace",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = false,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(replaceSymbol)) { tmType.Properties.Add(replaceSymbol); }
+                }
+
+                if (!mem.Exists(a => a.Name.Equals("@@search", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var searchSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@search",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = false,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(searchSymbol)) { tmType.Properties.Add(searchSymbol); }
+                }
+
+                if (!mem.Exists(a => a.Name.Equals("@@split", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var splitSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@split",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = false,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(splitSymbol)) { tmType.Properties.Add(splitSymbol); }
+                }
+            }
+
+            if ((tmType.TypeName == "Symbol") || (tmType.TypeName == "Date"))
+            {
+                if (!mem.Exists(a => a.Name.Equals("@@toPrimitive", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var toPrimitiveSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@toPrimitive",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = false,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(toPrimitiveSymbol)) { tmType.Properties.Add(toPrimitiveSymbol); }
+                }
+            }
+
+            if (mem.Any(a=>a.Unscopable))
+            {
+                if (!mem.Exists(a => a.Name.Equals("@@unscopable", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var unscopableSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@unscopable",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = true,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(unscopableSymbol)) { tmType.Properties.Add(unscopableSymbol); }
+                }
+            }
+
+            if (tmType.TypeName == "Function")
+            {
+                if (!mem.Exists(a => a.Name.Equals("@@hasInstance", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var hasInstanceSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@hasInstance",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = true,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(hasInstanceSymbol)) { tmType.Properties.Add(hasInstanceSymbol); }
+                }
+            }
         }
 
         public static bool AddSetlike(Member tmProperty, TypeMirrorType tmType, List<Member> mem)
@@ -205,6 +357,23 @@ namespace WebIDLCollector.Builders
                 };
 
                 if (!tmType.Properties.Contains(size)) { tmType.Properties.Add(size); }
+            }
+
+            if (!mem.Exists(a => a.Name.Equals("@@iterator", StringComparison.OrdinalIgnoreCase)))
+            {
+                var iteratorSymbol = new TypeMirrorProperty
+                {
+                    Name = "@@iterator",
+                    Type = "DOMString",
+                    Confidence = 4,
+                    HasGet = true,
+                    IsConfigurable = false,
+                    IsEnumerable = false,
+                    IsWritable = false,
+                    SpecNames = tmType.SpecNames
+                };
+
+                if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }
             }
 
             if (tmProperty.Readonly) { return true; }
@@ -434,6 +603,23 @@ namespace WebIDLCollector.Builders
                 if (!tmType.Properties.Contains(length)) { tmType.Properties.Add(length); }
             }
 
+            if (!mem.Exists(a => a.Name.Equals("@@iterator", StringComparison.OrdinalIgnoreCase)))
+            {
+                var iteratorSymbol = new TypeMirrorProperty
+                {
+                    Name = "@@iterator",
+                    Type = "DOMString",
+                    Confidence = 4,
+                    HasGet = true,
+                    IsConfigurable = false,
+                    IsEnumerable = false,
+                    IsWritable = false,
+                    SpecNames = tmType.SpecNames
+                };
+
+                if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }
+            }
+
             if (tmProperty.Readonly) { return true; }
 
             if (!mem.Exists(a => a.Name.Equals("clear", StringComparison.OrdinalIgnoreCase)))
@@ -495,6 +681,8 @@ namespace WebIDLCollector.Builders
 
         public static bool AddIterable(Member tmProperty, TypeMirrorType tmType, List<Member> mem)
         {
+            if (mem.All(a => a.Name == "length") && mem.Any(a => a.Getter)) { tmProperty.Iterable = true; }
+
             if (!tmProperty.Iterable) { return false; }
 
             if (!mem.Exists(a => a.Name.Equals("entries", StringComparison.OrdinalIgnoreCase)))
@@ -567,7 +755,78 @@ namespace WebIDLCollector.Builders
                 if (!tmType.Properties.Contains(length)) { tmType.Properties.Add(length); }
             }
 
+            if (!mem.Exists(a => a.Name.Equals("@@iterator", StringComparison.OrdinalIgnoreCase)))
+            {
+                var iteratorSymbol = new TypeMirrorProperty
+                {
+                    Name = "@@iterator",
+                    Type = "DOMString",
+                    Confidence = 4,
+                    HasGet = true,
+                    IsConfigurable = false,
+                    IsEnumerable = false,
+                    IsWritable = false,
+                    SpecNames = tmType.SpecNames
+                };
+
+                if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }
+            }
+
             return true;
+        }
+
+        public static void AddSpecialMembers(TypeMirrorType tmType, List<Member> mem)
+        {
+            if (!mem.Exists(a => a.Name.Equals("caller", StringComparison.OrdinalIgnoreCase)))
+            {
+                var callerMember = new TypeMirrorProperty
+                {
+                    Name = "caller",
+                    Type = "object",
+                    Confidence = 4,
+                    HasGet = false,
+                    HasSet = false,
+                    IsConfigurable = true,
+                    IsEnumerable = false,
+                    SpecNames = tmType.SpecNames
+                };
+
+                if (!tmType.Properties.Contains(callerMember)) { tmType.Properties.Add(callerMember); }
+            }
+
+            if (!mem.Exists(a => a.Name.Equals("arguments", StringComparison.OrdinalIgnoreCase)))
+            {
+                var argumentsMember = new TypeMirrorProperty
+                {
+                    Name = "arguments",
+                    Type = "object",
+                    Confidence = 4,
+                    HasGet = false,
+                    HasSet = false,
+                    IsConfigurable = true,
+                    IsEnumerable = false,
+                    SpecNames = tmType.SpecNames
+                };
+
+                if (!tmType.Properties.Contains(argumentsMember)) { tmType.Properties.Add(argumentsMember); }
+            }
+
+            if (!mem.Exists(a => a.Name.Equals("name", StringComparison.OrdinalIgnoreCase)))
+            {
+                var nameMember = new TypeMirrorProperty
+                {
+                    Name = "name",
+                    Type = "DOMString",
+                    Confidence = 4,
+                    HasGet = false,
+                    HasSet = false,
+                    IsConfigurable = true,
+                    IsEnumerable = false,
+                    SpecNames = tmType.SpecNames
+                };
+
+                if (!tmType.Properties.Contains(nameMember)) { tmType.Properties.Add(nameMember); }
+            }
         }
     }
 }

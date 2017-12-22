@@ -1,11 +1,11 @@
-﻿using System;
+﻿using AngleSharp;
+using AngleSharp.Dom;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using AngleSharp;
-using AngleSharp.Dom;
-using Newtonsoft.Json;
 using WebIDLCollector.Builders;
 using WebIDLCollector.Process;
 
