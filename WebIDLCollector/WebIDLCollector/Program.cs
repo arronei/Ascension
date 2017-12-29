@@ -55,10 +55,10 @@ namespace WebIDLCollector
 
             var mergedSpecData = MergeProcessor.MergeSpecData(allSpecData, "Edge");
             var allWebIdl = new WebIdlBuilder(mergedSpecData);
-            allWebIdl.GenerateFile("EdgeRS2");
+            allWebIdl.GenerateFile("EdgeRS4");
 
             var jsonDataBuilder = new JsonDataBuilder(mergedSpecData);
-            jsonDataBuilder.GenerateFile("EdgeRS2");
+            jsonDataBuilder.GenerateFile("EdgeRS4");
 
             Reporting();
 

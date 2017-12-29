@@ -1,0 +1,44 @@
+﻿body {
+    margin: 50px;
+}
+
+.venntooltip {
+    position: absolute;
+    text-align: center;
+    width: 128px;
+    height: 16px;
+    background: #333;
+    color: #ddd;
+    padding: 2px;
+    border-radius: 8px;
+    opacity: 0
+}
+
+.controls {
+    float: left;
+    padding: 10px;
+    width: 100%
+}
+
+.controls div {
+    float: left;
+    margin-right: 30px
+}
+
+.controls img {
+    height: 16px;
+    vertical-align: baseline;
+    width: 16px
+}
+
+.controls input:enabled, .enabled {
+    cursor: pointer;
+    -webkit-filter: none;
+    filter: none
+}
+
+.controls input:not(:enabled), .disabled {
+    cursor: not-allowed;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}

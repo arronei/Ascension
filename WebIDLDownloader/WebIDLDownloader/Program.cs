@@ -24,9 +24,9 @@ namespace WebIDLDownloader
         private static void DownloadAllWebIdls()
         {
             DownloadBlinkWebIdl();
-            //DownloadGeckoWebIdl();
-            //DownloadWebkitWebIdl();
-            //DownloadEdgeWebIdl();
+            DownloadGeckoWebIdl();
+            DownloadWebkitWebIdl();
+            DownloadEdgeWebIdl();
         }
 
         private static void DownloadBlinkWebIdl()
@@ -71,7 +71,7 @@ namespace WebIDLDownloader
             var startInfo = new ProcessStartInfo
             {
                 //WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-                WorkingDirectory = @"F:\GitHub\Browsers\" + platform,
+                WorkingDirectory = @"D:\GitHub\Browsers\" + platform,
                 FileName = "cmd.exe",
                 Arguments = "/K git pull --ff-only"
             };
