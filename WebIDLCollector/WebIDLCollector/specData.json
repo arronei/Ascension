@@ -475,13 +475,7 @@
   {
     "name": "css-transitions-1",
     "title": "CSS Transitions Level 1",
-    "url": "https://www.w3.org/TR/css3-transitions/",
-    "identification": [
-      {
-        "selector": "div.idl-code",
-        "type": "idl"
-      }
-    ]
+    "url": "https://www.w3.org/TR/css-transitions-1/"
   },
   {
     "name": "css-transitions-1",
@@ -562,11 +556,11 @@
     "title": "CSS Typed OM Level 1",
     "url": "https://drafts.css-houdini.org/css-typed-om/"
   },
-  //{
-  //    "name": "font-metrics-api-1",
-  //    "title": "Font Metrics API Level 1",
-  //    "url": "https://drafts.css-houdini.org/font-metrics-api/"
-  //},
+  {
+    "name": "font-metrics-api-1",
+    "title": "Font Metrics API Level 1",
+    "url": "https://drafts.css-houdini.org/font-metrics-api/"
+  },
   {
     "name": "worklets-1",
     "title": "Worklets Level 1",
@@ -586,7 +580,7 @@
   },
   {
     "name": "web-animations-1",
-    "url": "https://w3c.github.io/web-animations/"
+    "url": "https://drafts.csswg.org/web-animations/"
   },
   {
     "name": "ambient-light",
@@ -629,12 +623,7 @@
     "url": "https://w3c.github.io/vibration/"
   },
   {
-    "name": "orientation-event",
-    "url": "https://www.w3.org/TR/2016/CR-orientation-event-20160818/",
-    "file": "orientation-event.webidl"
-  },
-  {
-    "name": "orientation-event",
+    "name": "deviceorientation",
     "url": "https://w3c.github.io/deviceorientation/spec-source-orientation.html"
   },
   {
@@ -891,10 +880,6 @@
     "file": "telephony-bugfix.webidl"
   },
   {
-    "name": "telephony",
-    "url": "http://telephony.sysapps.org/"
-  },
-  {
     "name": "webvtt1",
     "url": "http://www.w3.org/TR/webvtt1/"
   },
@@ -961,6 +946,10 @@
   {
     "name": "gamepad",
     "url": "https://w3c.github.io/gamepad/"
+  },
+  {
+    "name": "gamepad-extensions",
+    "url": "https://w3c.github.io/gamepad/extensions.html"
   },
   {
     "name": "indexeddb",
@@ -1136,14 +1125,14 @@
     "name": "navigation-timing-2",
     "url": "https://w3c.github.io/navigation-timing/"
   },
-  {
-    "name": "resource-hints",
-    "url": "http://www.w3.org/TR/resource-hints/"
-  },
-  {
-    "name": "resource-hints",
-    "url": "https://w3c.github.io/resource-hints/"
-  },
+  //{
+  //  "name": "resource-hints",
+  //  "url": "http://www.w3.org/TR/resource-hints/"
+  //},
+  //{
+  //  "name": "resource-hints",
+  //  "url": "https://w3c.github.io/resource-hints/"
+  //},
   {
     "name": "resource-timing",
     "url": "http://www.w3.org/TR/resource-timing/"
@@ -1446,7 +1435,12 @@
   {
     "name": "webvr",
     "title": "WebVR",
-    "url": "https://w3c.github.io/webvr/spec/latest/"
+    "url": "https://immersive-web.github.io/webvr/spec/1.1/"
+  },
+  {
+    "name": "webxr",
+    "title": "WebXR Device API",
+    "url": "https://immersive-web.github.io/webxr/spec/latest/"
   },
   {
     "name": "filesystemapi",
@@ -1713,7 +1707,7 @@
   },
   {
     "name": "web-animations",
-    "url": "https://w3c.github.io/web-animations/"
+    "url": "https://drafts.csswg.org/web-animations/"
   },
   {
     "name": "background-fetch",
@@ -1722,5 +1716,69 @@
   {
     "name": "budget-api",
     "url": "https://wicg.github.io/budget-api/"
+  },
+  {
+    "name": "shape-detection-api",
+    "url": "https://wicg.github.io/shape-detection-api/"
+  },
+  {
+    "name": "gyroscope",
+    "url": "https://www.w3.org/TR/gyroscope/"
+  },
+  {
+    "name": "gyroscope",
+    "url": "https://w3c.github.io/gyroscope/"
+  },
+  {
+    "name": "accelerometer",
+    "url": "https://www.w3.org/TR/accelerometer/"
+  },
+  {
+    "name": "accelerometer",
+    "url": "https://w3c.github.io/accelerometer/"
+  },
+  {
+    "name": "magnetometer",
+    "url": "https://www.w3.org/TR/magnetometer/"
+  },
+  {
+    "name": "magnetometer",
+    "url": "https://w3c.github.io/magnetometer/"
+  },
+  {
+    "name": "media-capabilities",
+    "url": "https://wicg.github.io/media-capabilities/"
+  },
+  {
+    "name": "payment-handler",
+    "url": "https://www.w3.org/TR/payment-handler/"
+  },
+  {
+    "name": "payment-handler",
+    "url": "https://w3c.github.io/payment-handler/"
+  },
+  {
+    "name": "resizeobserver",
+    "url": "https://wicg.github.io/ResizeObserver/"
+  },
+  {
+    "name": "scroll-animations",
+    "url": "https://wicg.github.io/scroll-animations/"
+  },
+  {
+    "name": "staticrange",
+    "url": "https://w3c.github.io/staticrange/"
+  },
+  {
+    "name": "longtasks",
+    "url": "https://www.w3.org/TR/longtasks/"
+  },
+  {
+    "name": "longtasks",
+    "url": "https://w3c.github.io/longtasks/"
+  },
+  {
+    "name": "webusb",
+    "url": "https://wicg.github.io/webusb/"
   }
 ]

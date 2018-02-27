@@ -517,4 +517,4 @@ partial interface Window {
     static attribute float Infinity;
     static attribute any NaN;
     static attribute any undefined;
-}
+};

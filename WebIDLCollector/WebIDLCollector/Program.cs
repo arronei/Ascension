@@ -1,11 +1,14 @@
 ﻿using AngleSharp;
 using AngleSharp.Dom;
+using AngleSharp.Parser.Html;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text.RegularExpressions;
+using AngleSharp.Dom.Html;
 using WebIDLCollector.Builders;
 using WebIDLCollector.Process;
 
@@ -111,8 +114,8 @@ namespace WebIDLCollector
                 //{
                 //    new SpecData
                 //    {
-                //        Name = "dom",
-                //        Url = "https://dom.spec.whatwg.org/",
+                //        Name = "payment-request",
+                //        Url = "https://w3c.github.io/payment-request/",
                 //        // File = "navigatorcores.webidl"
                 //    }
                 //};
@@ -191,8 +194,31 @@ namespace WebIDLCollector
             var specUrl = specData.Url;
             var specFile = specData.File;
 
-            var config = Configuration.Default.WithDefaultLoader();
-            var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
+            var config = Configuration.Default.WithJavaScript();
+            //var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
+
+            var parser = new HtmlParser(config);
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
+            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+            var request = (HttpWebRequest)WebRequest.Create(specUrl);
+
+            IHtmlDocument document;
+            try
+            {
+                var response = request.GetResponse();
+                var dataStream = response.GetResponseStream();
+                var reader = new StreamReader(dataStream);
+                var source = reader.ReadToEnd();
+                document = parser.Parse(source);
+            }
+            catch (Exception)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Unable to load document");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Errors.Add(specUrl);
+                return false;
+            }
 
             specData.Identification = AutoDetectSpecDataIdentification(specData, document);
             if (!specData.Identification.Any() && string.IsNullOrWhiteSpace(specFile))

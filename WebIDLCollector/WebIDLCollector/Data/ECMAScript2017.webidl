@@ -343,7 +343,6 @@ interface RangeError : Error {
 interface ReferenceError : Error {
 };
 
-[Constructor(object target, sequence<any> argumentList, optional object target)]
 interface Reflect {
     static object apply(object target, any thisArgument, sequence<any> argumentList);
     static object defineProperty(object target, DOMString propertyKey, sequence<any> argumentList);
@@ -546,4 +545,4 @@ partial interface Window {
     static attribute float Infinity;
     static attribute any NaN;
     static attribute any undefined;
-}
+};

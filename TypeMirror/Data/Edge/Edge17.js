@@ -1,6 +1,6 @@
 {
   "browserVersion": "Edge 17",
-  "timestamp": "2017-11-14T22:32:24.215Z",
+  "timestamp": "2018-02-23T16:07:30.945Z",
   "types": {
     "ANGLE_instanced_arrays": {
       "typeName": "ANGLE_instanced_arrays",
@@ -76,7 +76,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -98,7 +97,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -109,7 +107,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -139,7 +136,6 @@
         },
         "signal": {
           "confidence": 4,
-          "type": "AbortSignal",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -171,7 +167,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -193,7 +188,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -204,7 +198,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -263,7 +256,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -285,7 +277,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -296,7 +287,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -326,7 +316,6 @@
         },
         "fftSize": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -336,7 +325,6 @@
         },
         "frequencyBinCount": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -346,7 +334,6 @@
         },
         "maxDecibels": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -356,7 +343,6 @@
         },
         "minDecibels": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -366,7 +352,6 @@
         },
         "smoothingTimeConstant": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -431,7 +416,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -453,7 +437,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -464,7 +447,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -494,7 +476,6 @@
         },
         "animationName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -504,7 +485,6 @@
         },
         "elapsedTime": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -547,7 +527,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -558,7 +537,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -588,7 +566,6 @@
         },
         "oncached": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -598,7 +575,6 @@
         },
         "onchecking": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -608,7 +584,6 @@
         },
         "ondownloading": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -618,7 +593,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -628,7 +602,6 @@
         },
         "onnoupdate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -638,7 +611,6 @@
         },
         "onobsolete": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -648,7 +620,6 @@
         },
         "onprogress": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -658,7 +629,6 @@
         },
         "onupdateready": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -668,7 +638,6 @@
         },
         "status": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -755,7 +724,6 @@
         },
         "UNCACHED": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -788,7 +756,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -810,7 +777,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -821,7 +787,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1126,17 +1091,6 @@
           "isEnumerable": false,
           "isWritable": true
         },
-        "entries": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
         "keys": {
           "confidence": 4,
           "type": "function",
@@ -1149,6 +1103,17 @@
           "isWritable": true
         },
         "values": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "entries": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -1194,7 +1159,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1260,7 +1224,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1271,7 +1234,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1376,7 +1338,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1387,7 +1348,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1395,145 +1355,6 @@
           "isConfigurable": false,
           "isEnumerable": false,
           "isWritable": false
-        }
-      }
-    },
-    "Atomics": {
-      "typeName": "Atomics",
-      "derivedTypes": [],
-      "confidence": 4,
-      "properties": {
-        "add": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "and": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "compareExchange": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "exchange": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "isLockFree": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "load": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "or": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "store": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "sub": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "wait": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "wake": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "xor": {
-          "confidence": 3,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
         }
       }
     },
@@ -1556,7 +1377,6 @@
         },
         "localName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1566,7 +1386,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1576,7 +1395,6 @@
         },
         "namespaceURI": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1586,7 +1404,6 @@
         },
         "ownerElement": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1596,7 +1413,6 @@
         },
         "prefix": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1606,7 +1422,6 @@
         },
         "specified": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1616,7 +1431,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1637,7 +1451,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1648,7 +1461,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1659,7 +1471,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1700,7 +1511,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1722,7 +1532,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1733,7 +1542,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1763,7 +1571,6 @@
         },
         "duration": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1773,7 +1580,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1783,7 +1589,6 @@
         },
         "numberOfChannels": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1793,7 +1598,6 @@
         },
         "sampleRate": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1858,7 +1662,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1869,7 +1672,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -1899,7 +1701,6 @@
         },
         "buffer": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1909,7 +1710,6 @@
         },
         "detune": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1919,7 +1719,6 @@
         },
         "loop": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1929,7 +1728,6 @@
         },
         "loopEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1939,7 +1737,6 @@
         },
         "loopStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1949,7 +1746,6 @@
         },
         "onended": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -1959,7 +1755,6 @@
         },
         "playbackRate": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2002,7 +1797,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2024,7 +1818,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2035,7 +1828,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2067,7 +1859,6 @@
         },
         "currentTime": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2077,7 +1868,6 @@
         },
         "destination": {
           "confidence": 4,
-          "type": "AudioDestinationNode",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2087,7 +1877,6 @@
         },
         "listener": {
           "confidence": 4,
-          "type": "AudioListener",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2097,7 +1886,6 @@
         },
         "onstatechange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2107,7 +1895,6 @@
         },
         "sampleRate": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2117,7 +1904,6 @@
         },
         "state": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2391,7 +2177,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2413,7 +2198,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2424,7 +2208,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2454,7 +2237,6 @@
         },
         "maxChannelCount": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2475,7 +2257,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2497,7 +2278,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2508,7 +2288,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2538,7 +2317,6 @@
         },
         "dopplerFactor": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2548,7 +2326,6 @@
         },
         "speedOfSound": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2602,7 +2379,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2624,7 +2400,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2635,7 +2410,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2771,7 +2545,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2793,7 +2566,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2804,7 +2576,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2834,7 +2605,6 @@
         },
         "defaultValue": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2844,7 +2614,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -2931,7 +2700,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2953,7 +2721,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -2964,7 +2731,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3032,7 +2798,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3054,7 +2819,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3065,7 +2829,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3160,7 +2923,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3182,7 +2944,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3193,7 +2954,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3223,7 +2983,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3304,7 +3063,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3315,7 +3073,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3345,7 +3102,6 @@
         },
         "visible": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3366,7 +3122,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3388,7 +3143,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3399,7 +3153,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3449,7 +3202,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3471,7 +3223,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3482,7 +3233,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3554,7 +3304,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3576,7 +3325,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3587,7 +3335,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3617,7 +3364,6 @@
         },
         "Q": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3627,7 +3373,6 @@
         },
         "detune": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3637,7 +3382,6 @@
         },
         "frequency": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3647,7 +3391,6 @@
         },
         "gain": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3657,7 +3400,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3689,7 +3431,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3711,7 +3452,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3722,7 +3462,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3754,7 +3493,6 @@
         },
         "size": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3764,7 +3502,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -3807,7 +3544,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3829,7 +3565,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3840,7 +3575,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3925,7 +3659,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -3936,7 +3669,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4019,7 +3751,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4030,7 +3761,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4071,7 +3801,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4093,7 +3822,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4104,7 +3832,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4144,7 +3871,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4155,7 +3881,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4208,7 +3933,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4230,7 +3954,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4241,7 +3964,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4291,7 +4013,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4313,7 +4034,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4324,7 +4044,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4398,7 +4117,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4420,7 +4138,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4431,7 +4148,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4499,7 +4215,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4521,7 +4236,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4532,7 +4246,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4591,7 +4304,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4613,7 +4325,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4624,7 +4335,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4663,7 +4373,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -4717,7 +4426,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4728,7 +4436,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4739,7 +4446,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4789,7 +4495,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4811,7 +4516,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4822,7 +4526,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4881,7 +4584,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4903,7 +4605,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4914,7 +4615,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4973,7 +4673,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -4995,7 +4694,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5006,7 +4704,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5191,7 +4888,6 @@
         },
         "UNKNOWN_RULE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5224,7 +4920,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5246,7 +4941,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5257,7 +4951,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5287,7 +4980,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5330,7 +5022,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5341,7 +5032,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -5371,7 +5061,6 @@
         },
         "alignContent": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5381,7 +5070,6 @@
         },
         "alignItems": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5391,7 +5079,6 @@
         },
         "alignSelf": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5401,7 +5088,6 @@
         },
         "alignmentBaseline": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5411,7 +5097,6 @@
         },
         "animation": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5421,7 +5106,6 @@
         },
         "animationDelay": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5431,7 +5115,6 @@
         },
         "animationDirection": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5441,7 +5124,6 @@
         },
         "animationDuration": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5451,7 +5133,6 @@
         },
         "animationFillMode": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5461,7 +5142,6 @@
         },
         "animationIterationCount": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5471,7 +5151,6 @@
         },
         "animationName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5481,7 +5160,6 @@
         },
         "animationPlayState": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5491,7 +5169,6 @@
         },
         "animationTimingFunction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5501,7 +5178,6 @@
         },
         "backfaceVisibility": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5511,7 +5187,6 @@
         },
         "background": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5521,7 +5196,6 @@
         },
         "backgroundAttachment": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5531,7 +5205,6 @@
         },
         "backgroundClip": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5541,7 +5214,6 @@
         },
         "backgroundColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5551,7 +5223,6 @@
         },
         "backgroundImage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5561,7 +5232,6 @@
         },
         "backgroundOrigin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5571,7 +5241,6 @@
         },
         "backgroundPosition": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5581,7 +5250,6 @@
         },
         "backgroundPositionX": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5591,7 +5259,6 @@
         },
         "backgroundPositionY": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5601,7 +5268,6 @@
         },
         "backgroundRepeat": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5611,7 +5277,6 @@
         },
         "backgroundSize": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5621,7 +5286,6 @@
         },
         "baselineShift": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5631,7 +5295,6 @@
         },
         "border": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5641,7 +5304,6 @@
         },
         "borderBottom": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5651,7 +5313,6 @@
         },
         "borderBottomColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5661,7 +5322,6 @@
         },
         "borderBottomLeftRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5671,7 +5331,6 @@
         },
         "borderBottomRightRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5681,7 +5340,6 @@
         },
         "borderBottomStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5691,7 +5349,6 @@
         },
         "borderBottomWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5701,7 +5358,6 @@
         },
         "borderCollapse": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5711,7 +5367,6 @@
         },
         "borderColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5721,7 +5376,6 @@
         },
         "borderImage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5731,7 +5385,6 @@
         },
         "borderImageOutset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5741,7 +5394,6 @@
         },
         "borderImageRepeat": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5751,7 +5403,6 @@
         },
         "borderImageSlice": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5761,7 +5412,6 @@
         },
         "borderImageSource": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5771,7 +5421,6 @@
         },
         "borderImageWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5781,7 +5430,6 @@
         },
         "borderLeft": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5791,7 +5439,6 @@
         },
         "borderLeftColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5801,7 +5448,6 @@
         },
         "borderLeftStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5811,7 +5457,6 @@
         },
         "borderLeftWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5821,7 +5466,6 @@
         },
         "borderRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5831,7 +5475,6 @@
         },
         "borderRight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5841,7 +5484,6 @@
         },
         "borderRightColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5851,7 +5493,6 @@
         },
         "borderRightStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5861,7 +5502,6 @@
         },
         "borderRightWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5871,7 +5511,6 @@
         },
         "borderSpacing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5881,7 +5520,6 @@
         },
         "borderStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5891,7 +5529,6 @@
         },
         "borderTop": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5901,7 +5538,6 @@
         },
         "borderTopColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5911,7 +5547,6 @@
         },
         "borderTopLeftRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5921,7 +5556,6 @@
         },
         "borderTopRightRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5931,7 +5565,6 @@
         },
         "borderTopStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5941,7 +5574,6 @@
         },
         "borderTopWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5951,7 +5583,6 @@
         },
         "borderWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5961,7 +5592,6 @@
         },
         "bottom": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5971,7 +5601,6 @@
         },
         "boxShadow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5981,7 +5610,6 @@
         },
         "boxSizing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -5991,7 +5619,6 @@
         },
         "breakAfter": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6001,7 +5628,6 @@
         },
         "breakBefore": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6011,7 +5637,6 @@
         },
         "breakInside": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6021,7 +5646,6 @@
         },
         "captionSide": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6031,7 +5655,6 @@
         },
         "clear": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6041,7 +5664,6 @@
         },
         "clip": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6051,7 +5673,6 @@
         },
         "clipPath": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6061,7 +5682,6 @@
         },
         "clipRule": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6071,7 +5691,6 @@
         },
         "color": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6081,7 +5700,6 @@
         },
         "colorInterpolationFilters": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6091,7 +5709,6 @@
         },
         "columnCount": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6101,7 +5718,6 @@
         },
         "columnFill": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6111,7 +5727,6 @@
         },
         "columnGap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6121,7 +5736,6 @@
         },
         "columnRule": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6131,7 +5745,6 @@
         },
         "columnRuleColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6141,7 +5754,6 @@
         },
         "columnRuleStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6151,7 +5763,6 @@
         },
         "columnRuleWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6161,7 +5772,6 @@
         },
         "columnSpan": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6171,7 +5781,6 @@
         },
         "columnWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6181,7 +5790,6 @@
         },
         "columns": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6191,7 +5799,6 @@
         },
         "content": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6201,7 +5808,6 @@
         },
         "counterIncrement": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6211,7 +5817,6 @@
         },
         "counterReset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6221,7 +5826,6 @@
         },
         "cssFloat": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6231,7 +5835,6 @@
         },
         "cssText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6241,7 +5844,6 @@
         },
         "cursor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6251,7 +5853,6 @@
         },
         "direction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6261,7 +5862,6 @@
         },
         "display": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6271,7 +5871,6 @@
         },
         "dominantBaseline": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6281,17 +5880,6 @@
         },
         "emptyCells": {
           "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "enableBackground": {
-          "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6301,7 +5889,6 @@
         },
         "fill": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6311,7 +5898,6 @@
         },
         "fillOpacity": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6321,7 +5907,6 @@
         },
         "fillRule": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6331,7 +5916,6 @@
         },
         "filter": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6341,7 +5925,6 @@
         },
         "flex": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6351,7 +5934,6 @@
         },
         "flexBasis": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6361,7 +5943,6 @@
         },
         "flexDirection": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6371,7 +5952,6 @@
         },
         "flexFlow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6381,7 +5961,6 @@
         },
         "flexGrow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6391,7 +5970,6 @@
         },
         "flexShrink": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6401,7 +5979,6 @@
         },
         "flexWrap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6411,7 +5988,6 @@
         },
         "floodColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6421,7 +5997,6 @@
         },
         "floodOpacity": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6431,7 +6006,6 @@
         },
         "font": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6441,7 +6015,6 @@
         },
         "fontFamily": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6451,7 +6024,6 @@
         },
         "fontFeatureSettings": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6461,7 +6033,6 @@
         },
         "fontOpticalSizing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6471,7 +6042,6 @@
         },
         "fontSize": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6481,7 +6051,6 @@
         },
         "fontSizeAdjust": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6491,7 +6060,6 @@
         },
         "fontStretch": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6501,7 +6069,6 @@
         },
         "fontStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6511,7 +6078,6 @@
         },
         "fontVariant": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6521,7 +6087,6 @@
         },
         "fontVariationSettings": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6531,7 +6096,6 @@
         },
         "fontWeight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6541,7 +6105,6 @@
         },
         "gap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6551,7 +6114,6 @@
         },
         "glyphOrientationHorizontal": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6561,7 +6123,6 @@
         },
         "glyphOrientationVertical": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6571,7 +6132,6 @@
         },
         "grid": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6581,7 +6141,6 @@
         },
         "gridArea": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6591,7 +6150,6 @@
         },
         "gridAutoColumns": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6601,7 +6159,6 @@
         },
         "gridAutoFlow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6611,7 +6168,6 @@
         },
         "gridAutoRows": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6621,7 +6177,6 @@
         },
         "gridColumn": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6631,7 +6186,6 @@
         },
         "gridColumnEnd": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6641,7 +6195,6 @@
         },
         "gridColumnGap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6651,7 +6204,6 @@
         },
         "gridColumnStart": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6661,7 +6213,6 @@
         },
         "gridGap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6671,7 +6222,6 @@
         },
         "gridRow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6681,7 +6231,6 @@
         },
         "gridRowEnd": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6691,7 +6240,6 @@
         },
         "gridRowGap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6701,7 +6249,6 @@
         },
         "gridRowStart": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6711,7 +6258,6 @@
         },
         "gridTemplate": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6721,7 +6267,6 @@
         },
         "gridTemplateAreas": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6731,7 +6276,6 @@
         },
         "gridTemplateColumns": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6741,7 +6285,6 @@
         },
         "gridTemplateRows": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6751,7 +6294,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6761,7 +6303,6 @@
         },
         "imeMode": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6771,7 +6312,6 @@
         },
         "justifyContent": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6781,7 +6321,6 @@
         },
         "justifyItems": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6791,7 +6330,6 @@
         },
         "justifySelf": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6801,7 +6339,6 @@
         },
         "kerning": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6811,7 +6348,6 @@
         },
         "layoutGrid": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6821,7 +6357,6 @@
         },
         "layoutGridChar": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6831,7 +6366,6 @@
         },
         "layoutGridLine": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6841,7 +6375,6 @@
         },
         "layoutGridMode": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6851,7 +6384,6 @@
         },
         "layoutGridType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6861,7 +6393,6 @@
         },
         "left": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6871,7 +6402,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6881,7 +6411,6 @@
         },
         "letterSpacing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6891,7 +6420,6 @@
         },
         "lightingColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6901,7 +6429,6 @@
         },
         "lineBreak": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6911,7 +6438,6 @@
         },
         "lineHeight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6921,7 +6447,6 @@
         },
         "listStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6931,7 +6456,6 @@
         },
         "listStyleImage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6941,7 +6465,6 @@
         },
         "listStylePosition": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6951,7 +6474,6 @@
         },
         "listStyleType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6961,7 +6483,6 @@
         },
         "margin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6971,7 +6492,6 @@
         },
         "marginBottom": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6981,7 +6501,6 @@
         },
         "marginLeft": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -6991,7 +6510,6 @@
         },
         "marginRight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7001,7 +6519,6 @@
         },
         "marginTop": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7011,7 +6528,6 @@
         },
         "marker": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7021,7 +6537,6 @@
         },
         "markerEnd": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7031,7 +6546,6 @@
         },
         "markerMid": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7041,7 +6555,6 @@
         },
         "markerStart": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7051,7 +6564,6 @@
         },
         "mask": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7061,7 +6573,6 @@
         },
         "maskImage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7071,7 +6582,6 @@
         },
         "maskSize": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7081,7 +6591,6 @@
         },
         "maxHeight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7091,7 +6600,6 @@
         },
         "maxWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7101,7 +6609,6 @@
         },
         "minHeight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7111,7 +6618,6 @@
         },
         "minWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7121,7 +6627,6 @@
         },
         "msContentZoomChaining": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7131,7 +6636,6 @@
         },
         "msContentZoomLimit": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7141,7 +6645,6 @@
         },
         "msContentZoomLimitMax": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7151,7 +6654,6 @@
         },
         "msContentZoomLimitMin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7161,7 +6663,6 @@
         },
         "msContentZoomSnap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7171,7 +6672,6 @@
         },
         "msContentZoomSnapPoints": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7181,7 +6681,6 @@
         },
         "msContentZoomSnapType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7191,7 +6690,6 @@
         },
         "msContentZooming": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7201,7 +6699,6 @@
         },
         "msFlowFrom": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7211,7 +6708,6 @@
         },
         "msFlowInto": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7221,7 +6717,6 @@
         },
         "msFontFeatureSettings": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7231,7 +6726,6 @@
         },
         "msGridColumn": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7241,7 +6735,6 @@
         },
         "msGridColumnAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7251,7 +6744,6 @@
         },
         "msGridColumnSpan": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7261,7 +6753,6 @@
         },
         "msGridColumns": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7271,7 +6762,6 @@
         },
         "msGridRow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7281,7 +6771,6 @@
         },
         "msGridRowAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7291,7 +6780,6 @@
         },
         "msGridRowSpan": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7301,7 +6789,6 @@
         },
         "msGridRows": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7311,7 +6798,6 @@
         },
         "msHighContrastAdjust": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7321,7 +6807,6 @@
         },
         "msHyphenateLimitChars": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7331,7 +6816,6 @@
         },
         "msHyphenateLimitLines": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7341,7 +6825,6 @@
         },
         "msHyphenateLimitZone": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7351,7 +6834,6 @@
         },
         "msHyphens": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7361,7 +6843,6 @@
         },
         "msImeAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7371,7 +6852,6 @@
         },
         "msOverflowStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7381,7 +6861,6 @@
         },
         "msScrollChaining": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7391,7 +6870,6 @@
         },
         "msScrollLimit": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7401,7 +6879,6 @@
         },
         "msScrollLimitXMax": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7411,7 +6888,6 @@
         },
         "msScrollLimitXMin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7421,7 +6897,6 @@
         },
         "msScrollLimitYMax": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7431,7 +6906,6 @@
         },
         "msScrollLimitYMin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7441,7 +6915,6 @@
         },
         "msScrollRails": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7451,7 +6924,6 @@
         },
         "msScrollSnapPointsX": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7461,7 +6933,6 @@
         },
         "msScrollSnapPointsY": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7471,7 +6942,6 @@
         },
         "msScrollSnapType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7481,7 +6951,6 @@
         },
         "msScrollSnapX": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7491,7 +6960,6 @@
         },
         "msScrollSnapY": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7501,7 +6969,6 @@
         },
         "msScrollTranslation": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7511,7 +6978,6 @@
         },
         "msTextCombineHorizontal": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7521,7 +6987,15 @@
         },
         "msTextSizeAdjust": {
           "confidence": 4,
-          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "msTouchAction": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7531,7 +7005,6 @@
         },
         "msTouchSelect": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7541,7 +7014,6 @@
         },
         "msUserSelect": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7551,7 +7023,6 @@
         },
         "msWrapFlow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7561,7 +7032,6 @@
         },
         "msWrapMargin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7571,7 +7041,6 @@
         },
         "msWrapThrough": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7581,7 +7050,6 @@
         },
         "objectFit": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7591,7 +7059,6 @@
         },
         "objectPosition": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7601,7 +7068,6 @@
         },
         "opacity": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7611,7 +7077,6 @@
         },
         "order": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7621,7 +7086,6 @@
         },
         "orphans": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7631,7 +7095,6 @@
         },
         "outline": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7641,7 +7104,6 @@
         },
         "outlineColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7651,7 +7113,6 @@
         },
         "outlineOffset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7661,7 +7122,6 @@
         },
         "outlineStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7671,7 +7131,6 @@
         },
         "outlineWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7681,7 +7140,6 @@
         },
         "overflow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7691,7 +7149,6 @@
         },
         "overflowX": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7701,7 +7158,6 @@
         },
         "overflowY": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7711,7 +7167,6 @@
         },
         "padding": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7721,7 +7176,6 @@
         },
         "paddingBottom": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7731,7 +7185,6 @@
         },
         "paddingLeft": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7741,7 +7194,6 @@
         },
         "paddingRight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7751,7 +7203,6 @@
         },
         "paddingTop": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7761,7 +7212,6 @@
         },
         "pageBreakAfter": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7771,7 +7221,6 @@
         },
         "pageBreakBefore": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7781,7 +7230,15 @@
         },
         "pageBreakInside": {
           "confidence": 4,
-          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "paintOrder": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7791,7 +7248,6 @@
         },
         "parentRule": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7801,7 +7257,6 @@
         },
         "penAction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7811,7 +7266,6 @@
         },
         "perspective": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7821,7 +7275,6 @@
         },
         "perspectiveOrigin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7831,7 +7284,6 @@
         },
         "pointerEvents": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7841,7 +7293,6 @@
         },
         "position": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7851,7 +7302,6 @@
         },
         "quotes": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7861,7 +7311,6 @@
         },
         "right": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7871,7 +7320,6 @@
         },
         "rotate": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7881,7 +7329,6 @@
         },
         "rowGap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7891,7 +7338,6 @@
         },
         "rubyAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7901,7 +7347,6 @@
         },
         "rubyOverhang": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7911,7 +7356,6 @@
         },
         "rubyPosition": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7921,7 +7365,6 @@
         },
         "scale": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7931,7 +7374,6 @@
         },
         "stopColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7941,7 +7383,6 @@
         },
         "stopOpacity": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7951,7 +7392,6 @@
         },
         "stroke": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7961,7 +7401,6 @@
         },
         "strokeDasharray": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7971,7 +7410,6 @@
         },
         "strokeDashoffset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7981,7 +7419,6 @@
         },
         "strokeLinecap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -7991,7 +7428,6 @@
         },
         "strokeLinejoin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8001,7 +7437,6 @@
         },
         "strokeMiterlimit": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8011,7 +7446,6 @@
         },
         "strokeOpacity": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8021,7 +7455,6 @@
         },
         "strokeWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8031,7 +7464,6 @@
         },
         "tableLayout": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8041,7 +7473,6 @@
         },
         "textAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8051,7 +7482,6 @@
         },
         "textAlignLast": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8061,7 +7491,6 @@
         },
         "textAnchor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8071,7 +7500,6 @@
         },
         "textCombineUpright": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8081,7 +7509,6 @@
         },
         "textDecoration": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8091,7 +7518,6 @@
         },
         "textIndent": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8101,7 +7527,6 @@
         },
         "textJustify": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8111,7 +7536,6 @@
         },
         "textKashida": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8121,7 +7545,6 @@
         },
         "textKashidaSpace": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8131,7 +7554,6 @@
         },
         "textOverflow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8141,7 +7563,6 @@
         },
         "textShadow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8151,7 +7572,6 @@
         },
         "textTransform": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8161,7 +7581,6 @@
         },
         "textUnderlinePosition": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8171,7 +7590,6 @@
         },
         "top": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8181,7 +7599,6 @@
         },
         "touchAction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8191,7 +7608,6 @@
         },
         "transform": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8201,7 +7617,6 @@
         },
         "transformOrigin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8211,7 +7626,6 @@
         },
         "transformStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8221,7 +7635,6 @@
         },
         "transition": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8231,7 +7644,6 @@
         },
         "transitionDelay": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8241,7 +7653,6 @@
         },
         "transitionDuration": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8251,7 +7662,6 @@
         },
         "transitionProperty": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8261,7 +7671,6 @@
         },
         "transitionTimingFunction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8271,7 +7680,6 @@
         },
         "translate": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8281,7 +7689,6 @@
         },
         "unicodeBidi": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8291,7 +7698,6 @@
         },
         "verticalAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8301,7 +7707,6 @@
         },
         "visibility": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8311,7 +7716,6 @@
         },
         "webkitAlignContent": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8321,7 +7725,6 @@
         },
         "webkitAlignItems": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8331,7 +7734,6 @@
         },
         "webkitAlignSelf": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8341,7 +7743,6 @@
         },
         "webkitAnimation": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8351,7 +7752,6 @@
         },
         "webkitAnimationDelay": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8361,7 +7761,6 @@
         },
         "webkitAnimationDirection": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8371,7 +7770,6 @@
         },
         "webkitAnimationDuration": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8381,7 +7779,6 @@
         },
         "webkitAnimationFillMode": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8391,7 +7788,6 @@
         },
         "webkitAnimationIterationCount": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8401,7 +7797,6 @@
         },
         "webkitAnimationName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8411,7 +7806,6 @@
         },
         "webkitAnimationPlayState": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8421,7 +7815,6 @@
         },
         "webkitAnimationTimingFunction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8431,7 +7824,6 @@
         },
         "webkitAppearance": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8441,7 +7833,6 @@
         },
         "webkitBackdropFilter": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8451,7 +7842,6 @@
         },
         "webkitBackfaceVisibility": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8461,7 +7851,6 @@
         },
         "webkitBackgroundClip": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8471,7 +7860,6 @@
         },
         "webkitBackgroundOrigin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8481,7 +7869,6 @@
         },
         "webkitBackgroundSize": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8491,7 +7878,6 @@
         },
         "webkitBorderBottomLeftRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8501,7 +7887,6 @@
         },
         "webkitBorderBottomRightRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8511,7 +7896,6 @@
         },
         "webkitBorderImage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8521,7 +7905,6 @@
         },
         "webkitBorderRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8531,7 +7914,6 @@
         },
         "webkitBorderTopLeftRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8541,7 +7923,6 @@
         },
         "webkitBorderTopRightRadius": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8551,7 +7932,6 @@
         },
         "webkitBoxAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8561,7 +7941,6 @@
         },
         "webkitBoxDirection": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8571,7 +7950,6 @@
         },
         "webkitBoxFlex": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8581,7 +7959,6 @@
         },
         "webkitBoxOrdinalGroup": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8591,7 +7968,6 @@
         },
         "webkitBoxOrient": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8601,7 +7977,6 @@
         },
         "webkitBoxPack": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8611,7 +7986,6 @@
         },
         "webkitBoxSizing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8621,7 +7995,6 @@
         },
         "webkitColumnBreakAfter": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8631,7 +8004,6 @@
         },
         "webkitColumnBreakBefore": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8641,7 +8013,6 @@
         },
         "webkitColumnBreakInside": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8651,7 +8022,6 @@
         },
         "webkitColumnCount": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8661,7 +8031,6 @@
         },
         "webkitColumnGap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8671,7 +8040,6 @@
         },
         "webkitColumnRule": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8681,7 +8049,6 @@
         },
         "webkitColumnRuleColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8691,7 +8058,6 @@
         },
         "webkitColumnRuleStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8701,7 +8067,6 @@
         },
         "webkitColumnRuleWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8711,7 +8076,6 @@
         },
         "webkitColumnSpan": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8721,7 +8085,6 @@
         },
         "webkitColumnWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8731,7 +8094,6 @@
         },
         "webkitColumns": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8741,7 +8103,6 @@
         },
         "webkitFilter": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8751,7 +8112,6 @@
         },
         "webkitFlex": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8761,7 +8121,6 @@
         },
         "webkitFlexBasis": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8771,7 +8130,6 @@
         },
         "webkitFlexDirection": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8781,7 +8139,6 @@
         },
         "webkitFlexFlow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8791,7 +8148,6 @@
         },
         "webkitFlexGrow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8801,7 +8157,6 @@
         },
         "webkitFlexShrink": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8811,7 +8166,6 @@
         },
         "webkitFlexWrap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8821,7 +8175,15 @@
         },
         "webkitJustifyContent": {
           "confidence": 4,
-          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitLineClamp": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8831,7 +8193,6 @@
         },
         "webkitOrder": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8841,7 +8202,6 @@
         },
         "webkitPerspective": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8851,7 +8211,6 @@
         },
         "webkitPerspectiveOrigin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8861,7 +8220,6 @@
         },
         "webkitTapHighlightColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8871,7 +8229,6 @@
         },
         "webkitTextFillColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8881,7 +8238,6 @@
         },
         "webkitTextSizeAdjust": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8891,7 +8247,6 @@
         },
         "webkitTextStroke": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8901,7 +8256,6 @@
         },
         "webkitTextStrokeColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8911,7 +8265,6 @@
         },
         "webkitTextStrokeWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8921,7 +8274,6 @@
         },
         "webkitTransform": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8931,7 +8283,6 @@
         },
         "webkitTransformOrigin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8941,7 +8292,6 @@
         },
         "webkitTransformStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8951,7 +8301,6 @@
         },
         "webkitTransition": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8961,7 +8310,6 @@
         },
         "webkitTransitionDelay": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8971,7 +8319,6 @@
         },
         "webkitTransitionDuration": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8981,7 +8328,6 @@
         },
         "webkitTransitionProperty": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -8991,7 +8337,6 @@
         },
         "webkitTransitionTimingFunction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9001,7 +8346,6 @@
         },
         "webkitUserModify": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9011,7 +8355,6 @@
         },
         "webkitUserSelect": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9021,7 +8364,6 @@
         },
         "webkitWritingMode": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9031,7 +8373,6 @@
         },
         "whiteSpace": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9041,7 +8382,6 @@
         },
         "widows": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9051,7 +8391,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9061,7 +8400,6 @@
         },
         "wordBreak": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9071,7 +8409,6 @@
         },
         "wordSpacing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9081,7 +8418,6 @@
         },
         "wordWrap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9091,7 +8427,6 @@
         },
         "writingMode": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9101,7 +8436,6 @@
         },
         "zIndex": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9111,7 +8445,6 @@
         },
         "zoom": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9198,7 +8531,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9209,7 +8541,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9220,7 +8551,6 @@
         },
         "WebkitAnimation": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9279,7 +8609,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9301,7 +8630,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9312,7 +8640,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9342,7 +8669,6 @@
         },
         "cssRules": {
           "confidence": 4,
-          "type": "CSSRuleList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9352,7 +8678,6 @@
         },
         "cssText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9362,7 +8687,6 @@
         },
         "id": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9372,7 +8696,6 @@
         },
         "imports": {
           "confidence": 4,
-          "type": "StyleSheetList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9382,7 +8705,6 @@
         },
         "isAlternate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9392,7 +8714,6 @@
         },
         "isPrefAlternate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9402,7 +8723,6 @@
         },
         "ownerRule": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9412,7 +8732,6 @@
         },
         "owningElement": {
           "confidence": 4,
-          "type": "HTMLLinkElement",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9422,7 +8741,6 @@
         },
         "pages": {
           "confidence": 4,
-          "type": "StyleSheetPageList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9432,7 +8750,6 @@
         },
         "readOnly": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9442,7 +8759,6 @@
         },
         "rules": {
           "confidence": 4,
-          "type": "CSSRuleList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -9540,7 +8856,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9562,7 +8877,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9573,7 +8887,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9614,7 +8927,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9636,7 +8948,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9647,287 +8958,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "Cache": {
-      "typeName": "Cache",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "add": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "addAll": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "delete": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "keys": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "match": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "matchAll": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "put": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "CachePrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "CacheStorage": {
-      "typeName": "CacheStorage",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "delete": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "has": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "keys": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "match": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "open": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "CacheStoragePrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -9979,7 +9009,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10001,7 +9030,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10012,7 +9040,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10053,7 +9080,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10075,7 +9101,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10086,7 +9111,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10116,7 +9140,6 @@
         },
         "canvas": {
           "confidence": 4,
-          "type": "HTMLCanvasElement",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10126,7 +9149,6 @@
         },
         "fillStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10136,7 +9158,6 @@
         },
         "font": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10146,7 +9167,6 @@
         },
         "globalAlpha": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10156,7 +9176,6 @@
         },
         "globalCompositeOperation": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10166,7 +9185,6 @@
         },
         "imageSmoothingEnabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10176,7 +9194,6 @@
         },
         "lineCap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10186,7 +9203,6 @@
         },
         "lineDashOffset": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10196,7 +9212,6 @@
         },
         "lineJoin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10206,7 +9221,6 @@
         },
         "lineWidth": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10216,7 +9230,6 @@
         },
         "miterLimit": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10226,7 +9239,6 @@
         },
         "msFillRule": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10236,7 +9248,6 @@
         },
         "shadowBlur": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10246,7 +9257,6 @@
         },
         "shadowColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10256,7 +9266,6 @@
         },
         "shadowOffsetX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10266,7 +9275,6 @@
         },
         "shadowOffsetY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10276,7 +9284,6 @@
         },
         "strokeStyle": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10286,7 +9293,6 @@
         },
         "textAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10296,7 +9302,6 @@
         },
         "textBaseline": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10724,7 +9729,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10746,7 +9750,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10757,7 +9760,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10798,7 +9800,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10820,7 +9821,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10831,7 +9831,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10872,7 +9871,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10894,7 +9892,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10905,7 +9902,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -10926,6 +9922,18 @@
       "baseType": "Node",
       "confidence": 4,
       "properties": {
+        "@@unscopables": {
+          "confidence": 4,
+          "type": "Object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false,
+          "extraData": "{ \"after\": true, \"before\": true, \"remove\": true, \"replaceWith\": true }"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -10948,7 +9956,24 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "nextElementSibling": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "previousElementSibling": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11079,7 +10104,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11090,7 +10114,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11120,7 +10143,6 @@
         },
         "bottom": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11130,7 +10152,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11140,7 +10161,6 @@
         },
         "left": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11150,7 +10170,6 @@
         },
         "right": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11160,7 +10179,6 @@
         },
         "top": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11170,7 +10188,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11191,7 +10208,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11213,7 +10229,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11224,7 +10239,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11254,7 +10268,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11297,7 +10310,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11308,7 +10320,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11380,7 +10391,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11391,7 +10401,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11421,7 +10430,6 @@
         },
         "code": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11431,7 +10439,6 @@
         },
         "reason": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11441,7 +10448,6 @@
         },
         "wasClean": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11495,7 +10501,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11506,7 +10511,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11524,7 +10528,6 @@
       "properties": {
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11546,7 +10549,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11557,7 +10559,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11587,7 +10588,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11608,7 +10608,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11630,7 +10629,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11641,7 +10639,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11671,7 +10668,6 @@
         },
         "data": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11681,7 +10677,6 @@
         },
         "locale": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -11735,7 +10730,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11746,7 +10740,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -11776,7 +10769,6 @@
         },
         "memory": {
           "confidence": 4,
-          "type": "Object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12072,7 +11064,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12094,7 +11085,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12105,7 +11095,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12135,7 +11124,6 @@
         },
         "buffer": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12145,7 +11133,6 @@
         },
         "normalize": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12166,7 +11153,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12188,7 +11174,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12199,7 +11184,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12303,7 +11287,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12325,7 +11308,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12336,7 +11318,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12419,7 +11400,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12430,7 +11410,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12491,7 +11470,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12513,7 +11491,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12524,7 +11501,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12601,7 +11577,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12623,7 +11598,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12634,7 +11608,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12693,7 +11666,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12715,7 +11687,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12726,7 +11697,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12756,7 +11726,6 @@
         },
         "detail": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12810,7 +11779,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12821,7 +11789,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12851,7 +11818,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12883,7 +11849,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12894,7 +11859,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12905,7 +11869,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -12935,7 +11898,6 @@
         },
         "code": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12945,7 +11907,6 @@
         },
         "message": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -12955,7 +11916,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -13284,7 +12244,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13295,7 +12254,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13306,7 +12264,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13391,7 +12348,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13413,7 +12369,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13424,7 +12379,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13476,7 +12430,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13498,7 +12451,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13509,7 +12461,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13539,7 +12490,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -13593,7 +12543,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13604,7 +12553,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13645,7 +12593,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13667,7 +12614,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13678,7 +12624,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13720,7 +12665,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -13730,7 +12674,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -13772,6 +12715,28 @@
           "isWritable": true
         },
         "remove": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "replace": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "supports": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -13872,7 +12837,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13883,7 +12847,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13933,7 +12896,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13955,7 +12917,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13966,7 +12927,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -13996,7 +12956,6 @@
         },
         "dropEffect": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -14006,7 +12965,6 @@
         },
         "effectAllowed": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -14016,7 +12974,6 @@
         },
         "files": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -14026,7 +12983,6 @@
         },
         "items": {
           "confidence": 4,
-          "type": "DataTransferItemList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -14036,7 +12992,6 @@
         },
         "types": {
           "confidence": 4,
-          "type": "DOMStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -14090,7 +13045,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14112,7 +13066,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14123,7 +13076,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14215,7 +13167,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14237,7 +13188,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14248,7 +13198,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14278,7 +13227,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -14354,7 +13302,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14365,7 +13312,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14642,7 +13588,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -14653,7 +13598,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15277,7 +14221,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15288,7 +14231,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15328,7 +14270,6 @@
         },
         "setNonUserCodeExceptions": {
           "confidence": 3,
-          "type": "undefined",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15338,7 +14279,6 @@
         },
         "debuggerEnabled": {
           "confidence": 3,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15381,7 +14321,6 @@
         },
         "MS_ASYNC_CALLBACK_STATUS_ASSIGN_DELEGATE": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15510,7 +14449,6 @@
         },
         "delayTime": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15531,7 +14469,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15553,7 +14490,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15564,7 +14500,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15632,7 +14567,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15654,7 +14588,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15665,7 +14598,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15737,7 +14669,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15748,7 +14679,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15778,7 +14708,6 @@
         },
         "acceleration": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15788,7 +14717,6 @@
         },
         "accelerationIncludingGravity": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15798,7 +14726,6 @@
         },
         "interval": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15808,7 +14735,6 @@
         },
         "rotationRate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15862,7 +14788,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15873,7 +14798,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15903,7 +14827,6 @@
         },
         "absolute": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15913,7 +14836,6 @@
         },
         "alpha": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15923,7 +14845,6 @@
         },
         "beta": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15933,7 +14854,6 @@
         },
         "gamma": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -15987,7 +14907,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -15998,7 +14917,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -16066,7 +14984,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -16088,7 +15005,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -16099,7 +15015,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -16119,6 +15034,18 @@
       "baseType": "Node",
       "confidence": 4,
       "properties": {
+        "@@unscopables": {
+          "confidence": 4,
+          "type": "Object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false,
+          "extraData": "{ \"append\": true, \"prepend\": true }"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -16136,7 +15063,7 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
-          "isConfigurable": false,
+          "isConfigurable": true,
           "isEnumerable": true
         },
         "URLUnencoded": {
@@ -16247,6 +15174,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "contentType": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "cookie": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -16310,13 +15246,22 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "documentURI": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "domain": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": true,
-          "isConfigurable": false,
+          "isConfigurable": true,
           "isEnumerable": true
         },
         "embeds": {
@@ -16360,7 +15305,7 @@
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
-          "hasSet": false,
+          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -16369,7 +15314,7 @@
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
-          "hasSet": false,
+          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -16760,6 +15705,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "ongotpointercapture": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "oninput": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -16841,7 +15795,34 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "onlostpointercapture": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "onmousedown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmouseenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmouseleave": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -16968,6 +15949,78 @@
           "isEnumerable": true
         },
         "onmsmanipulationstatechanged": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointercancel": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerdown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerleave": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointermove": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerout": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerover": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerup": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -17369,7 +16422,7 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
-          "isConfigurable": false,
+          "isConfigurable": true,
           "isEnumerable": true
         },
         "rootElement": {
@@ -18100,7 +17153,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18122,7 +17174,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18133,7 +17184,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18150,6 +17200,18 @@
       "baseType": "Node",
       "confidence": 4,
       "properties": {
+        "@@unscopables": {
+          "confidence": 4,
+          "type": "Object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false,
+          "extraData": "{ \"append\": true, \"prepend\": true }"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -18265,7 +17327,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18287,7 +17348,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18298,7 +17358,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18315,6 +17374,18 @@
       "baseType": "Node",
       "confidence": 4,
       "properties": {
+        "@@unscopables": {
+          "confidence": 4,
+          "type": "Object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false,
+          "extraData": "{ \"after\": true, \"before\": true, \"remove\": true, \"replaceWith\": true }"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -18328,7 +17399,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18338,7 +17408,6 @@
         },
         "publicId": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18348,7 +17417,6 @@
         },
         "systemId": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18413,7 +17481,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18424,7 +17491,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18435,7 +17501,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18465,7 +17530,6 @@
         },
         "dataTransfer": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18508,7 +17572,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18530,7 +17593,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18541,7 +17603,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18571,7 +17632,6 @@
         },
         "attack": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18581,7 +17641,6 @@
         },
         "knee": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18591,7 +17650,6 @@
         },
         "ratio": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18601,7 +17659,6 @@
         },
         "reduction": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18611,7 +17668,6 @@
         },
         "release": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18621,7 +17677,6 @@
         },
         "threshold": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -18642,7 +17697,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18664,7 +17718,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18675,7 +17728,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18760,7 +17812,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18782,7 +17833,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18793,7 +17843,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18834,7 +17883,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18856,7 +17904,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18867,7 +17914,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18908,7 +17954,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18930,7 +17975,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -18941,7 +17985,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -19004,7 +18047,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -19026,7 +18068,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -19037,7 +18078,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -19057,6 +18097,18 @@
       "baseType": "Node",
       "confidence": 4,
       "properties": {
+        "@@unscopables": {
+          "confidence": 4,
+          "type": "Object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false,
+          "extraData": "{ \"after\": true, \"append\": true, \"before\": true, \"prepend\": true, \"remove\": true, \"replaceWith\": true }"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -19070,7 +18122,6 @@
         },
         "attributes": {
           "confidence": 4,
-          "type": "NamedNodeMap",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19080,7 +18131,6 @@
         },
         "childElementCount": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19090,7 +18140,6 @@
         },
         "children": {
           "confidence": 4,
-          "type": "HTMLCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19100,7 +18149,6 @@
         },
         "classList": {
           "confidence": 4,
-          "type": "DOMTokenList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19110,7 +18158,6 @@
         },
         "className": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19120,7 +18167,6 @@
         },
         "clientHeight": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19130,7 +18176,6 @@
         },
         "clientLeft": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19140,7 +18185,6 @@
         },
         "clientTop": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19150,7 +18194,6 @@
         },
         "clientWidth": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19160,7 +18203,6 @@
         },
         "firstElementChild": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19170,7 +18212,6 @@
         },
         "id": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19180,7 +18221,6 @@
         },
         "innerHTML": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19190,7 +18230,6 @@
         },
         "lastElementChild": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19200,7 +18239,6 @@
         },
         "localName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19210,7 +18248,6 @@
         },
         "msContentZoomFactor": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19220,7 +18257,6 @@
         },
         "msRegionOverflow": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19230,7 +18266,6 @@
         },
         "namespaceURI": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19240,7 +18275,6 @@
         },
         "nextElementSibling": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19248,9 +18282,8 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "ongotpointercapture": {
+        "onmsgotpointercapture": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19258,159 +18291,8 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "onlostpointercapture": {
+        "onmslostpointercapture": {
           "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmsgesturechange": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmsgesturedoubletap": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmsgestureend": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmsgesturehold": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmsgesturestart": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmsgesturetap": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmsinertiastart": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointercancel": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointerdown": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointerenter": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointerleave": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointermove": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointerout": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointerover": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onpointerup": {
-          "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19420,7 +18302,6 @@
         },
         "ontouchcancel": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19430,7 +18311,6 @@
         },
         "ontouchend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19440,7 +18320,6 @@
         },
         "ontouchmove": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19450,7 +18329,6 @@
         },
         "ontouchstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19460,7 +18338,6 @@
         },
         "onwebkitfullscreenchange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19470,17 +18347,6 @@
         },
         "onwebkitfullscreenerror": {
           "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onwheel": {
-          "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19490,7 +18356,6 @@
         },
         "outerHTML": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19500,7 +18365,6 @@
         },
         "prefix": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19510,7 +18374,6 @@
         },
         "previousElementSibling": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19520,7 +18383,6 @@
         },
         "scrollHeight": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19530,7 +18392,6 @@
         },
         "scrollLeft": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19540,7 +18401,6 @@
         },
         "scrollTop": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19550,7 +18410,6 @@
         },
         "scrollWidth": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19560,7 +18419,6 @@
         },
         "tagName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -19821,6 +18679,28 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "msReleasePointerCapture": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "msSetPointerCapture": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "msZoomTo": {
           "confidence": 4,
           "type": "function",
@@ -20065,7 +18945,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20087,7 +18966,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20098,7 +18976,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20200,7 +19077,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20211,7 +19087,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20241,7 +19116,6 @@
         },
         "colno": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20251,7 +19125,6 @@
         },
         "error": {
           "confidence": 4,
-          "type": "undefined",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20261,7 +19134,6 @@
         },
         "filename": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20271,7 +19143,6 @@
         },
         "lineno": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20281,7 +19152,6 @@
         },
         "message": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20335,7 +19205,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20346,7 +19215,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20430,7 +19298,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20441,7 +19308,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20470,7 +19336,6 @@
         "IDBVersionChangeEvent",
         "MSDCCEvent",
         "MSDSHEvent",
-        "MSHTMLWindowsComponentDetachedEvent",
         "MSMediaKeyMessageEvent",
         "MSMediaKeyNeededEvent",
         "MSQualityEvent",
@@ -20520,7 +19385,6 @@
         },
         "bubbles": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20530,7 +19394,6 @@
         },
         "cancelBubble": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20540,7 +19403,6 @@
         },
         "cancelable": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20550,7 +19412,6 @@
         },
         "currentTarget": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20560,7 +19421,6 @@
         },
         "defaultPrevented": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20570,7 +19430,6 @@
         },
         "eventPhase": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20580,7 +19439,6 @@
         },
         "isTrusted": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20590,7 +19448,6 @@
         },
         "returnValue": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20600,7 +19457,6 @@
         },
         "srcElement": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20610,7 +19466,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20620,7 +19475,6 @@
         },
         "timeStamp": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20630,7 +19484,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -20717,7 +19570,6 @@
         },
         "NONE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20761,7 +19613,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20772,7 +19623,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20812,9 +19662,6 @@
         "RTCStatsProvider",
         "SVGElementInstance",
         "Screen",
-        "ServiceWorker",
-        "ServiceWorkerContainer",
-        "ServiceWorkerRegistration",
         "SourceBuffer",
         "SourceBufferList",
         "SpeechSynthesis",
@@ -20890,7 +19737,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20912,7 +19758,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20923,7 +19768,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20964,7 +19808,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20986,7 +19829,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -20997,7 +19839,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21036,7 +19877,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21066,7 +19906,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21077,7 +19916,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21088,7 +19926,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21118,7 +19955,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21161,7 +19997,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21172,7 +20007,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21202,7 +20036,6 @@
         },
         "error": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21212,7 +20045,6 @@
         },
         "onabort": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21222,7 +20054,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21232,7 +20063,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21242,7 +20072,6 @@
         },
         "onloadend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21252,7 +20081,6 @@
         },
         "onloadstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21262,7 +20090,6 @@
         },
         "onprogress": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21272,7 +20099,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21282,7 +20108,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21358,7 +20183,6 @@
         },
         "EMPTY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21391,7 +20215,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21413,7 +20236,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21424,7 +20246,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21498,7 +20319,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21509,7 +20329,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21583,7 +20402,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21594,7 +20412,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21624,7 +20441,6 @@
         },
         "relatedTarget": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21678,7 +20494,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21689,7 +20504,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21741,7 +20555,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21763,7 +20576,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21774,7 +20586,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21815,7 +20626,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21826,7 +20636,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21881,7 +20690,6 @@
         },
         "caller": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21891,7 +20699,6 @@
         },
         "arguments": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21931,7 +20738,6 @@
         },
         "gain": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -21952,7 +20758,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21974,7 +20779,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -21985,7 +20789,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22125,7 +20928,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22147,7 +20949,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22158,7 +20959,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22226,7 +21026,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22248,7 +21047,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22259,7 +21057,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22331,7 +21128,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22342,7 +21138,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22403,7 +21198,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22425,7 +21219,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22436,7 +21229,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22549,7 +21341,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22571,7 +21362,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22582,7 +21372,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22656,7 +21445,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22678,7 +21466,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22689,7 +21476,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22719,7 +21505,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22746,7 +21531,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": true,
+          "isEnumerable": false,
           "isWritable": true
         },
         "prototype": {
@@ -22773,7 +21558,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22784,7 +21568,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -22814,7 +21597,6 @@
         },
         "Methods": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22824,7 +21606,6 @@
         },
         "charset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22834,7 +21615,6 @@
         },
         "coords": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22844,7 +21624,6 @@
         },
         "download": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22854,7 +21633,6 @@
         },
         "hash": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22864,7 +21642,6 @@
         },
         "host": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22874,7 +21651,6 @@
         },
         "hostname": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22884,7 +21660,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22894,7 +21669,6 @@
         },
         "hreflang": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22904,7 +21678,6 @@
         },
         "mimeType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22914,7 +21687,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22924,7 +21696,6 @@
         },
         "nameProp": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22934,7 +21705,6 @@
         },
         "origin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22944,7 +21714,15 @@
         },
         "pathname": {
           "confidence": 4,
-          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ping": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22954,7 +21732,6 @@
         },
         "port": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22964,7 +21741,6 @@
         },
         "protocol": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22974,7 +21750,6 @@
         },
         "protocolLong": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22984,7 +21759,6 @@
         },
         "rel": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -22994,7 +21768,6 @@
         },
         "rev": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23004,7 +21777,6 @@
         },
         "search": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23014,7 +21786,6 @@
         },
         "shape": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23024,7 +21795,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23034,7 +21804,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23044,7 +21813,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23054,7 +21822,6 @@
         },
         "urn": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23086,7 +21853,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23097,7 +21863,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23108,7 +21873,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23138,7 +21902,6 @@
         },
         "alt": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23148,7 +21911,6 @@
         },
         "coords": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23158,7 +21920,6 @@
         },
         "download": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23168,7 +21929,6 @@
         },
         "hash": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23178,7 +21938,6 @@
         },
         "host": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23188,7 +21947,6 @@
         },
         "hostname": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23198,7 +21956,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23208,7 +21965,6 @@
         },
         "noHref": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23218,7 +21974,6 @@
         },
         "origin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23228,7 +21983,15 @@
         },
         "pathname": {
           "confidence": 4,
-          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ping": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23238,7 +22001,6 @@
         },
         "port": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23248,7 +22010,6 @@
         },
         "protocol": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23258,7 +22019,6 @@
         },
         "rel": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23268,7 +22028,6 @@
         },
         "search": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23278,7 +22037,6 @@
         },
         "shape": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23288,7 +22046,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23320,7 +22077,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23342,7 +22098,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23353,7 +22108,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23394,7 +22148,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23416,7 +22169,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23427,7 +22179,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23468,7 +22219,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23490,7 +22240,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23501,7 +22250,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23531,7 +22279,6 @@
         },
         "clear": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23552,7 +22299,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23574,7 +22320,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23585,7 +22330,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23615,7 +22359,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23625,7 +22368,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23646,7 +22388,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23668,7 +22409,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23679,7 +22419,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23709,7 +22448,6 @@
         },
         "color": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23719,7 +22457,6 @@
         },
         "face": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23729,7 +22466,6 @@
         },
         "size": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23750,7 +22486,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23772,7 +22507,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23783,7 +22517,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -23813,7 +22546,6 @@
         },
         "aLink": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23823,7 +22555,6 @@
         },
         "background": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23833,7 +22564,6 @@
         },
         "bgColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23843,7 +22573,6 @@
         },
         "bgProperties": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23853,7 +22582,6 @@
         },
         "link": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23863,7 +22591,6 @@
         },
         "noWrap": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23873,7 +22600,6 @@
         },
         "onafterprint": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23883,7 +22609,6 @@
         },
         "onbeforeprint": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23893,7 +22618,6 @@
         },
         "onbeforeunload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23903,7 +22627,6 @@
         },
         "onblur": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23913,7 +22636,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23923,7 +22645,6 @@
         },
         "onfocus": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23933,7 +22654,6 @@
         },
         "onhashchange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23943,7 +22663,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23953,7 +22672,6 @@
         },
         "onmessage": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23963,7 +22681,6 @@
         },
         "onoffline": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23973,7 +22690,6 @@
         },
         "ononline": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23983,7 +22699,6 @@
         },
         "onpagehide": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -23993,7 +22708,6 @@
         },
         "onpageshow": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24003,7 +22717,6 @@
         },
         "onpopstate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24013,7 +22726,6 @@
         },
         "onresize": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24023,7 +22735,6 @@
         },
         "onscroll": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24033,7 +22744,6 @@
         },
         "onstorage": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24043,7 +22753,6 @@
         },
         "onunload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24053,7 +22762,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24063,7 +22771,6 @@
         },
         "vLink": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24084,7 +22791,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24106,7 +22812,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24117,7 +22822,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24147,7 +22851,6 @@
         },
         "autofocus": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24157,7 +22860,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24167,7 +22869,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24177,7 +22878,6 @@
         },
         "formAction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24187,7 +22887,6 @@
         },
         "formEnctype": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24197,7 +22896,6 @@
         },
         "formMethod": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24207,7 +22905,6 @@
         },
         "formNoValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24217,7 +22914,6 @@
         },
         "formTarget": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24227,7 +22923,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24237,7 +22932,6 @@
         },
         "status": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24247,7 +22941,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24257,7 +22950,6 @@
         },
         "validationMessage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24267,7 +22959,6 @@
         },
         "validity": {
           "confidence": 4,
-          "type": "ValidityState",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24277,7 +22968,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24287,7 +22977,6 @@
         },
         "willValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24296,6 +22985,17 @@
           "isEnumerable": true
         },
         "checkValidity": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "reportValidity": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -24330,7 +23030,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24341,7 +23040,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24352,7 +23050,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24382,7 +23079,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24392,7 +23088,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24446,7 +23141,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24468,7 +23162,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24479,7 +23172,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24513,7 +23205,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24540,7 +23231,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": true,
+          "isEnumerable": false,
           "isWritable": true
         },
         "prototype": {
@@ -24567,7 +23258,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24578,7 +23268,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24608,7 +23297,6 @@
         },
         "compact": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24629,7 +23317,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24651,7 +23338,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24662,7 +23348,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24712,7 +23397,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24734,7 +23418,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24745,7 +23428,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24795,7 +23477,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24817,7 +23498,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24828,7 +23508,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24858,7 +23537,6 @@
         },
         "compact": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24879,7 +23557,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24901,7 +23578,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24912,7 +23588,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24942,7 +23617,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24952,7 +23626,6 @@
         },
         "noWrap": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -24973,7 +23646,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24995,7 +23667,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -25006,7 +23677,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -25047,7 +23717,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -25069,7 +23738,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -25080,7 +23748,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -25179,7 +23846,6 @@
         },
         "accessKey": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25189,7 +23855,6 @@
         },
         "contentEditable": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25199,7 +23864,6 @@
         },
         "dataset": {
           "confidence": 4,
-          "type": "DOMStringMap",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25209,7 +23873,6 @@
         },
         "dir": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25219,7 +23882,6 @@
         },
         "draggable": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25229,7 +23891,6 @@
         },
         "hidden": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25239,7 +23900,6 @@
         },
         "hideFocus": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25249,7 +23909,6 @@
         },
         "innerText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25259,7 +23918,6 @@
         },
         "isContentEditable": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25269,7 +23927,6 @@
         },
         "lang": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25279,7 +23936,6 @@
         },
         "offsetHeight": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25289,7 +23945,6 @@
         },
         "offsetLeft": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25299,7 +23954,6 @@
         },
         "offsetParent": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25309,7 +23963,6 @@
         },
         "offsetTop": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25319,7 +23972,6 @@
         },
         "offsetWidth": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25329,7 +23981,6 @@
         },
         "onabort": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25339,7 +23990,6 @@
         },
         "onactivate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25349,7 +23999,6 @@
         },
         "onbeforeactivate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25359,7 +24008,6 @@
         },
         "onbeforecopy": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25369,7 +24017,6 @@
         },
         "onbeforecut": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25379,7 +24026,6 @@
         },
         "onbeforedeactivate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25389,7 +24035,6 @@
         },
         "onbeforepaste": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25399,7 +24044,6 @@
         },
         "onblur": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25409,7 +24053,6 @@
         },
         "oncanplay": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25419,7 +24062,6 @@
         },
         "oncanplaythrough": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25429,7 +24071,6 @@
         },
         "onchange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25439,7 +24080,6 @@
         },
         "onclick": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25449,7 +24089,6 @@
         },
         "oncontextmenu": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25459,7 +24098,6 @@
         },
         "oncopy": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25469,7 +24107,6 @@
         },
         "oncuechange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25479,7 +24116,6 @@
         },
         "oncut": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25489,7 +24125,6 @@
         },
         "ondblclick": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25499,7 +24134,6 @@
         },
         "ondeactivate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25509,7 +24143,6 @@
         },
         "ondrag": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25519,7 +24152,6 @@
         },
         "ondragend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25529,7 +24161,6 @@
         },
         "ondragenter": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25539,7 +24170,6 @@
         },
         "ondragleave": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25549,7 +24179,6 @@
         },
         "ondragover": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25559,7 +24188,6 @@
         },
         "ondragstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25569,7 +24197,6 @@
         },
         "ondrop": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25579,7 +24206,6 @@
         },
         "ondurationchange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25589,7 +24215,6 @@
         },
         "onemptied": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25599,7 +24224,6 @@
         },
         "onended": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25609,7 +24233,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25619,7 +24242,15 @@
         },
         "onfocus": {
           "confidence": 4,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ongotpointercapture": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25629,7 +24260,6 @@
         },
         "oninput": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25639,7 +24269,6 @@
         },
         "oninvalid": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25649,7 +24278,6 @@
         },
         "onkeydown": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25659,7 +24287,6 @@
         },
         "onkeypress": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25669,7 +24296,6 @@
         },
         "onkeyup": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25679,7 +24305,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25689,7 +24314,6 @@
         },
         "onloadeddata": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25699,7 +24323,6 @@
         },
         "onloadedmetadata": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25709,7 +24332,15 @@
         },
         "onloadstart": {
           "confidence": 4,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onlostpointercapture": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25719,7 +24350,6 @@
         },
         "onmousedown": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25729,7 +24359,6 @@
         },
         "onmouseenter": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25739,7 +24368,6 @@
         },
         "onmouseleave": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25749,7 +24377,6 @@
         },
         "onmousemove": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25759,7 +24386,6 @@
         },
         "onmouseout": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25769,7 +24395,6 @@
         },
         "onmouseover": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25779,7 +24404,6 @@
         },
         "onmouseup": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25789,7 +24413,6 @@
         },
         "onmousewheel": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25799,7 +24422,69 @@
         },
         "onmscontentzoom": {
           "confidence": 4,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturechange": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturedoubletap": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgestureend": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturehold": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturestart": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturetap": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsinertiastart": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25809,7 +24494,78 @@
         },
         "onmsmanipulationstatechanged": {
           "confidence": 4,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointercancel": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerdown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerleave": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointermove": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerout": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerover": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerup": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25819,7 +24575,6 @@
         },
         "onpaste": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25829,7 +24584,6 @@
         },
         "onpause": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25839,7 +24593,6 @@
         },
         "onplay": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25849,7 +24602,78 @@
         },
         "onplaying": {
           "confidence": 4,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointercancel": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerdown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerleave": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointermove": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerout": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerover": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerup": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25859,7 +24683,6 @@
         },
         "onprogress": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25869,7 +24692,6 @@
         },
         "onratechange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25879,7 +24701,6 @@
         },
         "onreset": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25889,7 +24710,6 @@
         },
         "onscroll": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25899,7 +24719,6 @@
         },
         "onseeked": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25909,7 +24728,6 @@
         },
         "onseeking": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25919,7 +24737,6 @@
         },
         "onselect": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25929,7 +24746,6 @@
         },
         "onselectstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25939,7 +24755,6 @@
         },
         "onstalled": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25949,7 +24764,6 @@
         },
         "onsubmit": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25959,7 +24773,6 @@
         },
         "onsuspend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25969,7 +24782,6 @@
         },
         "ontimeupdate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25979,7 +24791,6 @@
         },
         "onvolumechange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25989,7 +24800,15 @@
         },
         "onwaiting": {
           "confidence": 4,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onwheel": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -25999,7 +24818,6 @@
         },
         "outerText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26009,7 +24827,6 @@
         },
         "spellcheck": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26019,7 +24836,6 @@
         },
         "style": {
           "confidence": 4,
-          "type": "CSSStyleDeclaration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26029,7 +24845,6 @@
         },
         "tabIndex": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26039,7 +24854,6 @@
         },
         "title": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26104,7 +24918,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26126,7 +24939,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26137,7 +24949,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26167,7 +24978,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26177,7 +24987,6 @@
         },
         "hidden": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26187,7 +24996,6 @@
         },
         "msPlayToDisabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26197,7 +25005,6 @@
         },
         "msPlayToPreferredSourceUri": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26207,7 +25014,6 @@
         },
         "msPlayToPrimary": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26217,7 +25023,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26227,7 +25032,6 @@
         },
         "palette": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26237,7 +25041,6 @@
         },
         "pluginspage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26247,7 +25050,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26257,7 +25059,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26267,7 +25068,6 @@
         },
         "units": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26277,7 +25077,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26309,7 +25108,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26320,7 +25118,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26331,7 +25128,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26361,7 +25157,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26371,7 +25166,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26381,7 +25175,6 @@
         },
         "elements": {
           "confidence": 4,
-          "type": "HTMLCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26391,7 +25184,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26401,7 +25193,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26411,7 +25202,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26421,7 +25211,6 @@
         },
         "validationMessage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26431,7 +25220,6 @@
         },
         "validity": {
           "confidence": 4,
-          "type": "ValidityState",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26441,7 +25229,6 @@
         },
         "willValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26450,6 +25237,17 @@
           "isEnumerable": true
         },
         "checkValidity": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "reportValidity": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -26484,7 +25282,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26495,7 +25292,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26506,7 +25302,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26536,7 +25331,6 @@
         },
         "color": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26546,7 +25340,6 @@
         },
         "face": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26556,7 +25349,6 @@
         },
         "size": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26577,7 +25369,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26599,7 +25390,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26610,7 +25400,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26662,7 +25451,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26684,7 +25472,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26695,7 +25482,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26725,7 +25511,6 @@
         },
         "acceptCharset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26735,7 +25520,6 @@
         },
         "action": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26745,7 +25529,6 @@
         },
         "autocomplete": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26755,7 +25538,6 @@
         },
         "elements": {
           "confidence": 4,
-          "type": "HTMLFormControlsCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26765,7 +25547,6 @@
         },
         "encoding": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26775,7 +25556,6 @@
         },
         "enctype": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26785,7 +25565,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26795,7 +25574,6 @@
         },
         "method": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26805,7 +25583,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26815,7 +25592,6 @@
         },
         "noValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26825,7 +25601,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26856,6 +25631,17 @@
           "isWritable": true
         },
         "namedItem": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "reportValidity": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -26901,7 +25687,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26912,7 +25697,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -26942,7 +25726,6 @@
         },
         "border": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26952,7 +25735,6 @@
         },
         "borderColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26962,7 +25744,6 @@
         },
         "contentDocument": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26972,7 +25753,6 @@
         },
         "contentWindow": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26982,7 +25762,6 @@
         },
         "frameBorder": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -26992,7 +25771,6 @@
         },
         "frameSpacing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27002,7 +25780,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27012,7 +25789,6 @@
         },
         "longDesc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27022,7 +25798,6 @@
         },
         "marginHeight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27032,7 +25807,6 @@
         },
         "marginWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27042,7 +25816,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27052,7 +25825,6 @@
         },
         "noResize": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27062,7 +25834,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27072,7 +25843,6 @@
         },
         "scrolling": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27082,7 +25852,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27092,7 +25861,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27124,7 +25892,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27135,7 +25902,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27146,7 +25912,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27176,7 +25941,6 @@
         },
         "cols": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27186,7 +25950,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27196,7 +25959,6 @@
         },
         "onafterprint": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27206,7 +25968,6 @@
         },
         "onbeforeprint": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27216,7 +25977,6 @@
         },
         "onbeforeunload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27226,7 +25986,6 @@
         },
         "onblur": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27236,7 +25995,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27246,7 +26004,6 @@
         },
         "onfocus": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27256,7 +26013,6 @@
         },
         "onhashchange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27266,7 +26022,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27276,7 +26031,6 @@
         },
         "onmessage": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27286,7 +26040,6 @@
         },
         "onoffline": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27296,7 +26049,6 @@
         },
         "ononline": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27306,7 +26058,6 @@
         },
         "onpagehide": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27316,7 +26067,6 @@
         },
         "onpageshow": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27326,7 +26076,6 @@
         },
         "onpopstate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27336,7 +26085,6 @@
         },
         "onresize": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27346,7 +26094,6 @@
         },
         "onscroll": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27356,7 +26103,6 @@
         },
         "onstorage": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27366,7 +26112,6 @@
         },
         "onunload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27376,7 +26121,6 @@
         },
         "rows": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27397,7 +26141,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27408,7 +26151,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27419,7 +26161,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27449,7 +26190,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27459,7 +26199,6 @@
         },
         "color": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27469,7 +26208,6 @@
         },
         "noShade": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27479,7 +26217,6 @@
         },
         "size": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27489,7 +26226,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27510,7 +26246,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27532,7 +26267,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27543,7 +26277,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27573,7 +26306,6 @@
         },
         "profile": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27594,7 +26326,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27616,7 +26347,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27627,7 +26357,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27657,7 +26386,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27678,7 +26406,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27700,7 +26427,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27711,7 +26437,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27741,7 +26466,6 @@
         },
         "version": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27762,7 +26486,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27784,7 +26507,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27795,7 +26517,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -27825,7 +26546,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27835,7 +26555,6 @@
         },
         "allowFullscreen": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27845,7 +26564,6 @@
         },
         "allowPaymentRequest": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27855,7 +26573,6 @@
         },
         "contentDocument": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27865,7 +26582,6 @@
         },
         "contentWindow": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27875,7 +26591,6 @@
         },
         "frameBorder": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27885,7 +26600,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27895,7 +26609,6 @@
         },
         "longDesc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27905,7 +26618,6 @@
         },
         "marginHeight": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27915,7 +26627,6 @@
         },
         "marginWidth": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27925,7 +26636,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27935,7 +26645,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27945,7 +26654,6 @@
         },
         "sandbox": {
           "confidence": 4,
-          "type": "DOMTokenList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27955,7 +26663,6 @@
         },
         "scrolling": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27965,7 +26672,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -27975,7 +26681,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28007,7 +26712,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28018,7 +26722,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28029,7 +26732,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28059,7 +26761,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28069,7 +26770,6 @@
         },
         "alt": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28079,7 +26779,6 @@
         },
         "border": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28089,7 +26788,6 @@
         },
         "complete": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28099,7 +26797,6 @@
         },
         "crossOrigin": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28109,7 +26806,6 @@
         },
         "currentSrc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28119,7 +26815,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28129,7 +26824,6 @@
         },
         "hspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28139,7 +26833,6 @@
         },
         "isMap": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28149,7 +26842,6 @@
         },
         "longDesc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28159,7 +26851,6 @@
         },
         "lowsrc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28169,7 +26860,6 @@
         },
         "msPlayToDisabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28179,7 +26869,6 @@
         },
         "msPlayToPreferredSourceUri": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28189,7 +26878,6 @@
         },
         "msPlayToPrimary": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28199,7 +26887,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28209,7 +26896,6 @@
         },
         "naturalHeight": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28219,7 +26905,6 @@
         },
         "naturalWidth": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28229,7 +26914,6 @@
         },
         "sizes": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28239,7 +26923,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28249,7 +26932,6 @@
         },
         "srcset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28259,7 +26941,6 @@
         },
         "useMap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28269,7 +26950,6 @@
         },
         "vspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28279,7 +26959,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28289,7 +26968,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28299,7 +26977,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28320,7 +26997,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28331,7 +27007,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28342,7 +27017,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28372,7 +27046,6 @@
         },
         "accept": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28382,7 +27055,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28392,7 +27064,6 @@
         },
         "alt": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28402,7 +27073,6 @@
         },
         "autocomplete": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28412,7 +27082,6 @@
         },
         "autofocus": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28422,7 +27091,6 @@
         },
         "checked": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28432,7 +27100,6 @@
         },
         "defaultChecked": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28442,7 +27109,6 @@
         },
         "defaultValue": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28452,7 +27118,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28462,7 +27127,6 @@
         },
         "files": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28472,7 +27136,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28482,7 +27145,6 @@
         },
         "formAction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28492,7 +27154,6 @@
         },
         "formEnctype": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28502,7 +27163,6 @@
         },
         "formMethod": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28512,7 +27172,6 @@
         },
         "formNoValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28522,7 +27181,6 @@
         },
         "formTarget": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28532,7 +27190,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28542,7 +27199,6 @@
         },
         "indeterminate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28552,7 +27208,6 @@
         },
         "list": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28562,7 +27217,6 @@
         },
         "max": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28572,7 +27226,6 @@
         },
         "maxLength": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28582,7 +27235,6 @@
         },
         "min": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28592,7 +27244,6 @@
         },
         "minLength": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28602,7 +27253,6 @@
         },
         "multiple": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28612,7 +27262,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28622,7 +27271,6 @@
         },
         "pattern": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28632,7 +27280,6 @@
         },
         "placeholder": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28642,7 +27289,6 @@
         },
         "readOnly": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28652,7 +27298,6 @@
         },
         "required": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28662,7 +27307,6 @@
         },
         "selectionDirection": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28672,7 +27316,6 @@
         },
         "selectionEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28682,7 +27325,6 @@
         },
         "selectionStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28692,7 +27334,6 @@
         },
         "size": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28702,7 +27343,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28712,7 +27352,6 @@
         },
         "step": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28722,7 +27361,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28732,7 +27370,6 @@
         },
         "useMap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28742,7 +27379,6 @@
         },
         "validationMessage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28752,7 +27388,6 @@
         },
         "validity": {
           "confidence": 4,
-          "type": "ValidityState",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28762,7 +27397,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28772,7 +27406,6 @@
         },
         "valueAsDate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28782,7 +27415,6 @@
         },
         "valueAsNumber": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28792,7 +27424,6 @@
         },
         "webkitdirectory": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28802,7 +27433,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28812,7 +27442,6 @@
         },
         "willValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28821,6 +27450,17 @@
           "isEnumerable": true
         },
         "checkValidity": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "reportValidity": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -28899,7 +27539,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28910,7 +27549,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28921,7 +27559,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -28951,7 +27588,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28961,7 +27597,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -28982,7 +27617,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29004,7 +27638,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29015,7 +27648,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29045,7 +27677,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29055,7 +27686,6 @@
         },
         "htmlFor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29076,7 +27706,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29098,7 +27727,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29109,7 +27737,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29139,7 +27766,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29149,7 +27775,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29170,7 +27795,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29192,7 +27816,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29203,7 +27826,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29231,9 +27853,17 @@
           "isEnumerable": false,
           "isWritable": true
         },
+        "as": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "charset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29243,7 +27873,6 @@
         },
         "crossOrigin": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29253,7 +27882,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29263,7 +27891,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29273,7 +27900,6 @@
         },
         "hreflang": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29283,7 +27909,6 @@
         },
         "integrity": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29293,7 +27918,6 @@
         },
         "media": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29303,7 +27927,15 @@
         },
         "rel": {
           "confidence": 4,
-          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "relList": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29313,7 +27945,6 @@
         },
         "rev": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29323,7 +27954,6 @@
         },
         "sheet": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29333,7 +27963,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29343,7 +27972,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29364,7 +27992,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29386,7 +28013,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29397,7 +28023,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29427,7 +28052,6 @@
         },
         "areas": {
           "confidence": 4,
-          "type": "HTMLAreasCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29437,7 +28061,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29458,7 +28081,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29469,7 +28091,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29480,7 +28101,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29510,7 +28130,6 @@
         },
         "behavior": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29520,7 +28139,6 @@
         },
         "bgColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29530,7 +28148,6 @@
         },
         "direction": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29540,7 +28157,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29550,7 +28166,6 @@
         },
         "hspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29560,7 +28175,6 @@
         },
         "loop": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29570,7 +28184,6 @@
         },
         "onbounce": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29580,7 +28193,6 @@
         },
         "onfinish": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29590,7 +28202,6 @@
         },
         "onstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29600,7 +28211,6 @@
         },
         "scrollAmount": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29610,7 +28220,6 @@
         },
         "scrollDelay": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29620,7 +28229,6 @@
         },
         "trueSpeed": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29630,7 +28238,6 @@
         },
         "vspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29640,7 +28247,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -29683,7 +28289,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29705,7 +28310,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -29716,7 +28320,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30206,7 +28809,6 @@
         },
         "HAVE_NOTHING": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30217,7 +28819,6 @@
         },
         "NETWORK_EMPTY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30272,7 +28873,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30294,7 +28894,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30305,7 +28904,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30335,7 +28933,6 @@
         },
         "compact": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30356,7 +28953,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30378,7 +28974,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30389,7 +28984,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30419,7 +29013,6 @@
         },
         "charset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30429,7 +29022,6 @@
         },
         "content": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30439,7 +29031,6 @@
         },
         "httpEquiv": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30449,7 +29040,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30459,7 +29049,6 @@
         },
         "scheme": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30469,7 +29058,6 @@
         },
         "url": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30490,7 +29078,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30501,7 +29088,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30512,7 +29098,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30607,7 +29192,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30629,7 +29213,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30640,7 +29223,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30670,7 +29252,6 @@
         },
         "cite": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30680,7 +29261,6 @@
         },
         "dateTime": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30701,7 +29281,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30723,7 +29302,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30734,7 +29312,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30764,7 +29341,6 @@
         },
         "compact": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30774,7 +29350,6 @@
         },
         "start": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30784,7 +29359,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30805,7 +29379,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30827,7 +29400,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30838,7 +29410,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -30868,7 +29439,6 @@
         },
         "BaseHref": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30878,7 +29448,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30888,7 +29457,6 @@
         },
         "archive": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30898,7 +29466,6 @@
         },
         "border": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30908,7 +29475,6 @@
         },
         "code": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30918,7 +29484,6 @@
         },
         "codeBase": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30928,7 +29493,6 @@
         },
         "codeType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30938,7 +29502,6 @@
         },
         "contentDocument": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30948,7 +29511,6 @@
         },
         "contentWindow": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30958,7 +29520,6 @@
         },
         "data": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30968,7 +29529,6 @@
         },
         "declare": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30978,7 +29538,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30988,7 +29547,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -30998,7 +29556,6 @@
         },
         "hspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31008,7 +29565,6 @@
         },
         "msPlayToDisabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31018,7 +29574,6 @@
         },
         "msPlayToPreferredSourceUri": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31028,7 +29583,6 @@
         },
         "msPlayToPrimary": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31038,7 +29592,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31048,7 +29601,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31058,7 +29610,6 @@
         },
         "standby": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31068,7 +29619,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31078,7 +29628,6 @@
         },
         "useMap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31088,7 +29637,6 @@
         },
         "validationMessage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31098,7 +29646,6 @@
         },
         "validity": {
           "confidence": 4,
-          "type": "ValidityState",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31108,7 +29655,6 @@
         },
         "vspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31118,7 +29664,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31128,7 +29673,6 @@
         },
         "willValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31182,7 +29726,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31193,7 +29736,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31204,7 +29746,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31234,7 +29775,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31244,7 +29784,6 @@
         },
         "label": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31265,7 +29804,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31287,7 +29825,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31298,7 +29835,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31328,7 +29864,6 @@
         },
         "defaultSelected": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31338,7 +29873,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31348,7 +29882,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31358,7 +29891,6 @@
         },
         "index": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31368,7 +29900,6 @@
         },
         "label": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31378,7 +29909,6 @@
         },
         "selected": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31388,7 +29918,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31398,7 +29927,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31419,7 +29947,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31441,7 +29968,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31452,7 +29978,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31482,7 +30007,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31492,7 +30016,6 @@
         },
         "selectedIndex": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31546,7 +30069,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31557,7 +30079,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31614,7 +30135,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31713,7 +30233,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31724,7 +30243,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31735,7 +30253,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31765,7 +30282,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31775,7 +30291,6 @@
         },
         "clear": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31796,7 +30311,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31818,7 +30332,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31829,7 +30342,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31859,7 +30371,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31869,7 +30380,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31879,7 +30389,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31889,7 +30398,6 @@
         },
         "valueType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -31910,7 +30418,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31921,7 +30428,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31932,7 +30438,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31973,7 +30478,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -31995,7 +30499,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32006,7 +30509,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32036,7 +30538,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32057,7 +30558,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32079,7 +30579,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32090,7 +30589,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32120,7 +30618,6 @@
         },
         "max": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32130,7 +30627,6 @@
         },
         "position": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32140,7 +30636,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32161,7 +30656,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32183,7 +30677,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32194,7 +30687,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32224,7 +30716,6 @@
         },
         "cite": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32245,7 +30736,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32267,7 +30757,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32278,7 +30767,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32308,7 +30796,6 @@
         },
         "async": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32318,7 +30805,6 @@
         },
         "charset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32328,7 +30814,6 @@
         },
         "crossOrigin": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32338,7 +30823,6 @@
         },
         "defer": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32348,7 +30832,6 @@
         },
         "event": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32358,7 +30841,6 @@
         },
         "htmlFor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32368,7 +30850,6 @@
         },
         "integrity": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32378,7 +30859,6 @@
         },
         "noModule": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32388,7 +30868,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32398,7 +30877,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32408,7 +30886,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32429,7 +30906,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32451,7 +30927,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32462,7 +30937,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32492,7 +30966,6 @@
         },
         "autofocus": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32502,7 +30975,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32512,7 +30984,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32522,7 +30993,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32532,7 +31002,6 @@
         },
         "multiple": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32542,7 +31011,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32552,7 +31020,6 @@
         },
         "options": {
           "confidence": 4,
-          "type": "HTMLOptionsCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32562,7 +31029,6 @@
         },
         "required": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32572,7 +31038,6 @@
         },
         "selectedIndex": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32582,7 +31047,6 @@
         },
         "selectedOptions": {
           "confidence": 4,
-          "type": "HTMLCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32592,7 +31056,6 @@
         },
         "size": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32602,7 +31065,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32612,7 +31074,6 @@
         },
         "validationMessage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32622,7 +31083,6 @@
         },
         "validity": {
           "confidence": 4,
-          "type": "ValidityState",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32632,7 +31092,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32642,7 +31101,6 @@
         },
         "willValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32705,6 +31163,17 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "reportValidity": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "setCustomValidity": {
           "confidence": 4,
           "type": "function",
@@ -32729,7 +31198,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32740,7 +31208,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32770,7 +31237,6 @@
         },
         "media": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32780,7 +31246,6 @@
         },
         "msKeySystem": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32790,7 +31255,6 @@
         },
         "sizes": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32800,7 +31264,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32810,7 +31273,6 @@
         },
         "srcset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32820,7 +31282,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32841,7 +31302,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32863,7 +31323,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32874,7 +31333,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32915,7 +31373,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32937,7 +31394,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32948,7 +31404,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -32978,7 +31433,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32988,7 +31442,6 @@
         },
         "media": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -32998,7 +31451,6 @@
         },
         "sheet": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33008,7 +31460,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33029,7 +31480,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33051,7 +31501,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33062,7 +31511,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33092,7 +31540,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33113,7 +31560,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33135,7 +31581,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33146,7 +31591,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33322,7 +31766,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33344,7 +31787,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33355,7 +31797,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33385,7 +31826,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33395,7 +31835,6 @@
         },
         "ch": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33405,7 +31844,6 @@
         },
         "chOff": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33415,7 +31853,6 @@
         },
         "span": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33425,7 +31862,6 @@
         },
         "vAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33435,7 +31871,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33456,7 +31891,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33478,7 +31912,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33489,7 +31922,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33519,7 +31951,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33529,7 +31960,6 @@
         },
         "bgColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33539,7 +31969,6 @@
         },
         "border": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33549,7 +31978,6 @@
         },
         "caption": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33559,7 +31987,6 @@
         },
         "cellPadding": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33569,7 +31996,6 @@
         },
         "cellSpacing": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33579,7 +32005,6 @@
         },
         "frame": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33589,7 +32014,6 @@
         },
         "rows": {
           "confidence": 4,
-          "type": "HTMLCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33599,7 +32023,6 @@
         },
         "rules": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33609,7 +32032,6 @@
         },
         "summary": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33619,7 +32041,6 @@
         },
         "tBodies": {
           "confidence": 4,
-          "type": "HTMLCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33629,7 +32050,6 @@
         },
         "tFoot": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33639,7 +32059,6 @@
         },
         "tHead": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33649,7 +32068,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33769,7 +32187,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33791,7 +32208,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33802,7 +32218,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33832,7 +32247,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33842,7 +32256,6 @@
         },
         "bgColor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33852,7 +32265,6 @@
         },
         "cells": {
           "confidence": 4,
-          "type": "HTMLCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33862,7 +32274,6 @@
         },
         "ch": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33872,7 +32283,6 @@
         },
         "chOff": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33882,7 +32292,6 @@
         },
         "rowIndex": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33892,7 +32301,6 @@
         },
         "sectionRowIndex": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33902,7 +32310,6 @@
         },
         "vAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -33945,7 +32352,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33967,7 +32373,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -33978,7 +32383,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34008,7 +32412,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34018,7 +32421,6 @@
         },
         "ch": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34028,7 +32430,6 @@
         },
         "chOff": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34038,7 +32439,6 @@
         },
         "rows": {
           "confidence": 4,
-          "type": "HTMLCollection",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34048,7 +32448,6 @@
         },
         "vAlign": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34091,7 +32490,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34113,7 +32511,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34124,7 +32521,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34174,7 +32570,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34196,7 +32591,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34207,7 +32601,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34237,7 +32630,6 @@
         },
         "autofocus": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34247,7 +32639,6 @@
         },
         "cols": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34257,7 +32648,6 @@
         },
         "defaultValue": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34267,7 +32657,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34277,7 +32666,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34287,7 +32675,6 @@
         },
         "maxLength": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34297,7 +32684,6 @@
         },
         "minLength": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34307,7 +32693,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34317,7 +32702,6 @@
         },
         "placeholder": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34327,7 +32711,6 @@
         },
         "readOnly": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34337,7 +32720,6 @@
         },
         "required": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34347,7 +32729,6 @@
         },
         "rows": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34357,7 +32738,6 @@
         },
         "selectionEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34367,7 +32747,6 @@
         },
         "selectionStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34377,7 +32756,6 @@
         },
         "textLength": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34387,7 +32765,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34397,7 +32774,6 @@
         },
         "validationMessage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34407,7 +32783,6 @@
         },
         "validity": {
           "confidence": 4,
-          "type": "ValidityState",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34417,7 +32792,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34427,7 +32801,6 @@
         },
         "willValidate": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34437,7 +32810,6 @@
         },
         "wrap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34446,6 +32818,17 @@
           "isEnumerable": true
         },
         "checkValidity": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "reportValidity": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -34502,7 +32885,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34513,7 +32895,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34524,7 +32905,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34574,7 +32954,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34596,7 +32975,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34607,7 +32985,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34637,7 +33014,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34658,7 +33034,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34680,7 +33055,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34691,7 +33065,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34721,7 +33094,6 @@
         },
         "default": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34731,7 +33103,6 @@
         },
         "kind": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34741,7 +33112,6 @@
         },
         "label": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34751,7 +33121,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34761,7 +33130,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34771,7 +33139,6 @@
         },
         "srclang": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34781,7 +33148,6 @@
         },
         "track": {
           "confidence": 4,
-          "type": "TextTrack",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34824,7 +33190,6 @@
         },
         "NONE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34846,7 +33211,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34868,7 +33232,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34879,7 +33242,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34909,7 +33271,6 @@
         },
         "compact": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34919,7 +33280,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -34940,7 +33300,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34962,7 +33321,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34973,7 +33331,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35014,7 +33371,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35036,7 +33392,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35047,7 +33402,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35077,7 +33431,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35087,7 +33440,6 @@
         },
         "msZoom": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35097,7 +33449,6 @@
         },
         "poster": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35107,7 +33458,6 @@
         },
         "videoHeight": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35117,7 +33467,6 @@
         },
         "videoWidth": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35127,7 +33476,6 @@
         },
         "webkitDisplayingFullscreen": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35137,7 +33485,6 @@
         },
         "webkitSupportsFullscreen": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35147,7 +33494,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35223,7 +33569,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35245,7 +33590,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35256,7 +33600,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35286,7 +33629,6 @@
         },
         "newURL": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35296,7 +33638,6 @@
         },
         "oldURL": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35339,7 +33680,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35350,7 +33690,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35502,7 +33841,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35524,7 +33862,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35535,7 +33872,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35587,7 +33923,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35609,7 +33944,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35620,7 +33954,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35650,7 +33983,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35660,7 +33992,6 @@
         },
         "state": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -35747,7 +34078,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35758,7 +34088,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35925,7 +34254,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35947,7 +34275,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -35958,7 +34285,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36008,7 +34334,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36030,7 +34355,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36041,7 +34365,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36071,7 +34394,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -36172,7 +34494,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36183,7 +34504,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36194,7 +34514,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36244,17 +34563,6 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "getDatabaseNames": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
         "open": {
           "confidence": 4,
           "type": "function",
@@ -36279,7 +34587,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36301,7 +34608,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36312,7 +34618,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36351,7 +34656,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -36445,7 +34749,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36456,7 +34759,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36467,7 +34769,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36544,7 +34845,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36610,7 +34910,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36621,7 +34920,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36669,7 +34967,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -36809,7 +35106,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36820,7 +35116,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36831,7 +35126,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36890,7 +35184,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36912,7 +35205,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -36923,7 +35215,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37029,7 +35320,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37051,7 +35341,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37062,7 +35351,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37212,7 +35500,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37234,7 +35521,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37245,7 +35531,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37275,7 +35560,6 @@
         },
         "newVersion": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37285,7 +35569,6 @@
         },
         "oldVersion": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37306,7 +35589,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37328,7 +35610,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37339,7 +35620,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37391,7 +35671,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37413,7 +35692,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37424,7 +35702,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37454,7 +35731,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37464,7 +35740,6 @@
         },
         "alt": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37474,7 +35749,6 @@
         },
         "border": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37484,7 +35758,6 @@
         },
         "complete": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37494,7 +35767,6 @@
         },
         "crossOrigin": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37504,7 +35776,6 @@
         },
         "currentSrc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37514,7 +35785,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37524,7 +35794,6 @@
         },
         "hspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37534,7 +35803,6 @@
         },
         "isMap": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37544,7 +35812,6 @@
         },
         "longDesc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37554,7 +35821,6 @@
         },
         "lowsrc": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37564,7 +35830,6 @@
         },
         "msPlayToDisabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37574,7 +35839,6 @@
         },
         "msPlayToPreferredSourceUri": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37584,7 +35848,6 @@
         },
         "msPlayToPrimary": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37594,7 +35857,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37604,7 +35866,6 @@
         },
         "naturalHeight": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37614,7 +35875,6 @@
         },
         "naturalWidth": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37624,7 +35884,6 @@
         },
         "sizes": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37634,7 +35893,6 @@
         },
         "src": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37644,7 +35902,6 @@
         },
         "srcset": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37654,7 +35911,6 @@
         },
         "useMap": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37664,7 +35920,6 @@
         },
         "vspace": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37674,7 +35929,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37684,7 +35938,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37694,7 +35947,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -37715,7 +35967,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37726,7 +35977,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37737,7 +35987,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37827,7 +36076,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37838,7 +36086,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37912,7 +36159,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37923,7 +36169,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37997,7 +36242,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38008,7 +36252,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38082,7 +36325,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38093,7 +36335,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38227,7 +36468,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38238,7 +36478,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38364,7 +36603,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38375,7 +36613,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38485,7 +36722,6 @@
         },
         "altKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38495,7 +36731,6 @@
         },
         "charCode": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38505,7 +36740,6 @@
         },
         "ctrlKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38515,7 +36749,6 @@
         },
         "key": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38525,7 +36758,6 @@
         },
         "keyCode": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38535,7 +36767,6 @@
         },
         "location": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38545,7 +36776,6 @@
         },
         "metaKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38555,7 +36785,6 @@
         },
         "repeat": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38565,7 +36794,6 @@
         },
         "shiftKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38575,7 +36803,6 @@
         },
         "which": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38662,7 +36889,6 @@
         },
         "DOM_KEY_LOCATION_STANDARD": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38706,7 +36932,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38717,7 +36942,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38747,7 +36971,6 @@
         },
         "hash": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38757,7 +36980,6 @@
         },
         "host": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38767,7 +36989,6 @@
         },
         "hostname": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38777,7 +36998,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38787,7 +37007,6 @@
         },
         "origin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38797,7 +37016,6 @@
         },
         "pathname": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38807,7 +37025,6 @@
         },
         "port": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38817,7 +37034,6 @@
         },
         "protocol": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38827,7 +37043,6 @@
         },
         "search": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -38892,7 +37107,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38914,7 +37128,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38925,7 +37138,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -38987,7 +37199,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39009,7 +37220,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39020,7 +37230,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39083,7 +37292,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39105,7 +37313,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39116,7 +37323,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39179,7 +37385,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39201,7 +37406,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39212,7 +37416,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39293,7 +37496,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39304,7 +37506,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39385,7 +37586,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39396,7 +37596,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39473,7 +37672,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39495,7 +37693,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39506,7 +37703,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39574,7 +37770,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39596,7 +37791,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39607,7 +37801,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39657,7 +37850,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39679,7 +37871,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39690,7 +37881,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39720,7 +37910,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39763,7 +37952,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39785,7 +37973,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39796,7 +37983,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -39826,7 +38012,6 @@
         },
         "clientX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39836,7 +38021,6 @@
         },
         "clientY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39846,7 +38030,6 @@
         },
         "expansion": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39865,7 +38048,6 @@
         },
         "hwTimestamp": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39875,7 +38057,6 @@
         },
         "offsetX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39885,7 +38066,6 @@
         },
         "offsetY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39895,7 +38075,6 @@
         },
         "rotation": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39905,7 +38084,6 @@
         },
         "scale": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39915,7 +38093,6 @@
         },
         "screenX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39925,7 +38102,6 @@
         },
         "screenY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39935,7 +38111,6 @@
         },
         "translationX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39945,7 +38120,6 @@
         },
         "translationY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39955,7 +38129,6 @@
         },
         "velocityAngular": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39965,7 +38138,6 @@
         },
         "velocityExpansion": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39975,7 +38147,6 @@
         },
         "velocityX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -39985,7 +38156,6 @@
         },
         "velocityY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -40050,7 +38220,6 @@
         },
         "MSGESTURE_FLAG_NONE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40072,7 +38241,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40094,7 +38262,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40105,7 +38272,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40164,7 +38330,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40186,7 +38351,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40197,99 +38361,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "MSHTMLWindowsComponentDetachedEvent": {
-      "typeName": "MSHTMLWindowsComponentDetachedEvent",
-      "derivedTypes": [],
-      "baseType": "Event",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "error": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "reason": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "MSHTMLWindowsComponentDetachedEventPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40443,7 +38514,6 @@
         },
         "MS_MANIPULATION_STATE_STOPPED": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40465,7 +38535,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40487,7 +38556,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40498,7 +38566,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40623,7 +38690,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40645,7 +38711,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40656,7 +38721,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40715,7 +38779,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40737,7 +38800,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40748,7 +38810,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40798,7 +38859,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40820,7 +38880,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40831,7 +38890,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40921,7 +38979,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40943,7 +39000,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -40954,7 +39010,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41059,7 +39114,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41070,7 +39124,179 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "MSPointerEvent": {
+      "typeName": "MSPointerEvent",
+      "derivedTypes": [],
+      "baseType": "MouseEvent",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "height": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "hwTimestamp": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "isPrimary": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "pointerId": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "pointerType": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "pressure": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "rotation": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "tiltX": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "tiltY": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "width": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "initPointerEvent": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "MSPointerEventPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "caller": {
+          "confidence": 3,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "arguments": {
+          "confidence": 3,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41142,7 +39368,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41153,7 +39378,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41183,7 +39407,6 @@
         },
         "onmsvideoreceivers": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41204,7 +39427,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41226,7 +39448,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41237,7 +39458,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41267,7 +39487,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41310,7 +39529,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41321,7 +39539,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41380,7 +39597,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41402,7 +39618,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41413,7 +39628,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41474,7 +39688,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41496,7 +39709,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41507,7 +39719,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41537,7 +39748,6 @@
         },
         "error": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41547,7 +39757,6 @@
         },
         "onabort": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41557,7 +39766,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41567,7 +39775,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41577,7 +39784,6 @@
         },
         "onloadend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41587,7 +39793,6 @@
         },
         "onloadstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41597,7 +39802,6 @@
         },
         "onprogress": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41607,7 +39811,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41617,7 +39820,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -41704,7 +39906,6 @@
         },
         "EMPTY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41737,7 +39938,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41759,7 +39959,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41770,7 +39969,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41842,7 +40040,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -41853,7 +40050,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42014,7 +40210,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42047,7 +40242,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42058,7 +40252,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42615,7 +40808,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42637,7 +40829,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42648,7 +40839,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42731,7 +40921,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42753,7 +40942,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42764,7 +40952,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42805,7 +40992,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42827,7 +41013,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42838,7 +41023,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42919,7 +41103,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -42930,7 +41113,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43044,7 +41226,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43066,7 +41247,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43077,7 +41257,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43158,7 +41337,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43169,7 +41347,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43301,7 +41478,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43323,7 +41499,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43334,7 +41509,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43462,7 +41636,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43484,7 +41657,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43495,7 +41667,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43547,7 +41718,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43569,7 +41739,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43580,7 +41749,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43652,7 +41820,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43674,7 +41841,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43685,7 +41851,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43748,7 +41913,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43770,7 +41934,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43781,7 +41944,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43811,7 +41973,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -43896,7 +42057,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43907,7 +42067,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -43988,7 +42147,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44010,7 +42168,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44021,7 +42178,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44051,7 +42207,6 @@
         },
         "activeSourceBuffers": {
           "confidence": 4,
-          "type": "SourceBufferList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44061,7 +42216,6 @@
         },
         "duration": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44071,7 +42225,6 @@
         },
         "onsourceclose": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44081,7 +42234,6 @@
         },
         "onsourceended": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44091,7 +42243,6 @@
         },
         "onsourceopen": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44101,7 +42252,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44111,7 +42261,6 @@
         },
         "sourceBuffers": {
           "confidence": 4,
-          "type": "SourceBufferList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44187,7 +42336,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44220,7 +42368,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44231,7 +42378,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44261,7 +42407,6 @@
         },
         "active": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44271,7 +42416,6 @@
         },
         "id": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44281,7 +42425,6 @@
         },
         "onactive": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44291,7 +42434,6 @@
         },
         "onaddtrack": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44301,7 +42443,6 @@
         },
         "oninactive": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44311,7 +42452,6 @@
         },
         "onremovetrack": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44420,7 +42560,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44442,7 +42581,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44453,7 +42591,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44494,7 +42631,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44516,7 +42652,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44527,7 +42662,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44575,7 +42709,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -44596,7 +42729,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44607,7 +42739,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44618,7 +42749,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44690,7 +42820,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44701,7 +42830,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44773,7 +42901,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44784,7 +42911,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -44999,7 +43125,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45021,7 +43146,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45032,7 +43156,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45104,7 +43227,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45115,7 +43237,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45145,7 +43266,6 @@
         },
         "port1": {
           "confidence": 4,
-          "type": "MessagePort",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45155,7 +43275,6 @@
         },
         "port2": {
           "confidence": 4,
-          "type": "MessagePort",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45176,7 +43295,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45198,7 +43316,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45209,7 +43326,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45239,7 +43355,6 @@
         },
         "data": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45249,7 +43364,6 @@
         },
         "lastEventId": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45259,7 +43373,6 @@
         },
         "origin": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45269,7 +43382,6 @@
         },
         "ports": {
           "confidence": 4,
-          "type": "Array",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45279,7 +43391,6 @@
         },
         "source": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45333,7 +43444,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45344,7 +43454,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45374,7 +43483,6 @@
         },
         "onmessage": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45428,7 +43536,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45450,7 +43557,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45461,7 +43567,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45538,7 +43643,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45560,7 +43664,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45571,7 +43674,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45601,7 +43703,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45628,7 +43729,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": true,
+          "isEnumerable": false,
           "isWritable": true
         },
         "prototype": {
@@ -45655,7 +43756,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45666,7 +43766,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -45681,6 +43780,7 @@
       "typeName": "MouseEvent",
       "derivedTypes": [
         "DragEvent",
+        "MSPointerEvent",
         "PointerEvent",
         "WheelEvent"
       ],
@@ -45700,7 +43800,6 @@
         },
         "altKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45710,7 +43809,6 @@
         },
         "button": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45720,7 +43818,6 @@
         },
         "buttons": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45730,7 +43827,6 @@
         },
         "clientX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45740,7 +43836,6 @@
         },
         "clientY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45750,7 +43845,6 @@
         },
         "ctrlKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45760,7 +43854,6 @@
         },
         "fromElement": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45770,7 +43863,6 @@
         },
         "layerX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45780,7 +43872,6 @@
         },
         "layerY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45790,7 +43881,6 @@
         },
         "metaKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45800,7 +43890,6 @@
         },
         "movementX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45810,7 +43899,6 @@
         },
         "movementY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45820,7 +43908,6 @@
         },
         "offsetX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45830,7 +43917,6 @@
         },
         "offsetY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45840,7 +43926,6 @@
         },
         "pageX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45850,7 +43935,6 @@
         },
         "pageY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45860,7 +43944,6 @@
         },
         "relatedTarget": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45870,7 +43953,6 @@
         },
         "screenX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45880,7 +43962,6 @@
         },
         "screenY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45890,7 +43971,6 @@
         },
         "shiftKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45900,7 +43980,6 @@
         },
         "toElement": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45910,7 +43989,6 @@
         },
         "which": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45920,7 +43998,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45930,7 +44007,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -45995,7 +44071,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46006,7 +44081,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46056,7 +44130,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46078,7 +44151,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46089,7 +44161,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46119,7 +44190,6 @@
         },
         "attrChange": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46129,7 +44199,6 @@
         },
         "attrName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46139,7 +44208,6 @@
         },
         "newValue": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46149,7 +44217,6 @@
         },
         "prevValue": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46159,7 +44226,6 @@
         },
         "relatedNode": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46224,7 +44290,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46246,7 +44311,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46257,7 +44321,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46353,7 +44416,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46364,7 +44426,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46486,7 +44547,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46508,7 +44568,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46519,7 +44578,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46549,7 +44607,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46565,7 +44622,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": true,
+          "isEnumerable": false,
           "isWritable": true
         },
         "getNamedItemNS": {
@@ -46658,7 +44715,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46669,7 +44725,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -46699,7 +44754,6 @@
         },
         "activeVRDisplays": {
           "confidence": 4,
-          "type": "Array",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46709,7 +44763,6 @@
         },
         "appCodeName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46719,7 +44772,6 @@
         },
         "appName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46729,7 +44781,6 @@
         },
         "appVersion": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46739,7 +44790,6 @@
         },
         "authentication": {
           "confidence": 4,
-          "type": "WebAuthentication",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46749,7 +44799,6 @@
         },
         "cookieEnabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46759,7 +44808,6 @@
         },
         "doNotTrack": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46769,7 +44817,6 @@
         },
         "geolocation": {
           "confidence": 4,
-          "type": "Geolocation",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46779,7 +44826,6 @@
         },
         "hardwareConcurrency": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46789,7 +44835,6 @@
         },
         "language": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46799,7 +44844,6 @@
         },
         "languages": {
           "confidence": 4,
-          "type": "Array",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46809,7 +44853,6 @@
         },
         "maxTouchPoints": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46819,7 +44862,6 @@
         },
         "mediaDevices": {
           "confidence": 4,
-          "type": "MediaDevices",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46829,7 +44871,6 @@
         },
         "mimeTypes": {
           "confidence": 4,
-          "type": "MimeTypeArray",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46839,7 +44880,24 @@
         },
         "msManipulationViewsEnabled": {
           "confidence": 4,
-          "type": "boolean",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "msMaxTouchPoints": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "msPointerEnabled": {
+          "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46849,7 +44907,6 @@
         },
         "onLine": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46859,7 +44916,6 @@
         },
         "platform": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46869,7 +44925,6 @@
         },
         "plugins": {
           "confidence": 4,
-          "type": "PluginArray",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46879,7 +44934,6 @@
         },
         "product": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46889,17 +44943,6 @@
         },
         "productSub": {
           "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "serviceWorker": {
-          "confidence": 4,
-          "type": "ServiceWorkerContainer",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46909,7 +44952,6 @@
         },
         "userAgent": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46919,7 +44961,6 @@
         },
         "vendor": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46929,7 +44970,6 @@
         },
         "vendorSub": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -46939,7 +44979,6 @@
         },
         "webdriver": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -47136,7 +45175,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -47158,7 +45196,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -47169,7 +45206,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -47686,7 +45722,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -47708,7 +45743,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -47719,7 +45753,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -47924,7 +45957,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -47935,7 +45967,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48063,7 +46094,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48085,7 +46115,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48096,7 +46125,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48138,7 +46166,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -48225,7 +46252,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48236,7 +46262,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48425,7 +46450,6 @@
         },
         "permission": {
           "confidence": 2,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -48457,7 +46481,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48468,7 +46491,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48619,7 +46641,6 @@
         },
         "NaN": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48751,7 +46772,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48762,7 +46782,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48803,7 +46822,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48825,7 +46843,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48836,7 +46853,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48888,7 +46904,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48910,7 +46925,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48921,7 +46935,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48962,7 +46975,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48984,7 +46996,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48995,7 +47006,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49036,7 +47046,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49058,7 +47067,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49069,7 +47077,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49121,7 +47128,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49143,7 +47149,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49154,7 +47159,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49195,7 +47199,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49217,7 +47220,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49228,7 +47230,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49258,8 +47259,6 @@
         "CSSRule",
         "CSSRuleList",
         "CSSStyleDeclaration",
-        "Cache",
-        "CacheStorage",
         "CanvasGradient",
         "CanvasPattern",
         "CanvasRenderingContext2D",
@@ -49366,9 +47365,6 @@
         "Position",
         "PositionError",
         "Promise",
-        "PushManager",
-        "PushSubscription",
-        "PushSubscriptionOptions",
         "RTCIceCandidate",
         "RTCSessionDescription",
         "Range",
@@ -49404,15 +47400,12 @@
         "SVGRect",
         "SVGStringList",
         "SVGTransform",
-        "SVGTransformEx",
         "SVGTransformList",
-        "SVGTransformListEx",
         "SVGUnitTypes",
         "ScopedCredential",
         "ScopedCredentialInfo",
         "Selection",
         "Set",
-        "SharedArrayBuffer",
         "SpeechSynthesisVoice",
         "Storage",
         "String",
@@ -49850,7 +47843,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49861,7 +47853,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49911,7 +47902,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49933,7 +47923,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49944,7 +47933,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -49974,7 +47962,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50037,7 +48024,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50048,7 +48034,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50078,7 +48063,6 @@
         },
         "defaultSelected": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50088,7 +48072,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50098,7 +48081,6 @@
         },
         "form": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50108,7 +48090,6 @@
         },
         "index": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50118,7 +48099,6 @@
         },
         "label": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50128,7 +48108,6 @@
         },
         "selected": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50138,7 +48117,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50148,7 +48126,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50169,7 +48146,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50191,7 +48167,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50202,7 +48177,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50232,7 +48206,6 @@
         },
         "detune": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50242,7 +48215,6 @@
         },
         "frequency": {
           "confidence": 4,
-          "type": "AudioParam",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50252,7 +48224,6 @@
         },
         "onended": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50262,7 +48233,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50316,7 +48286,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50338,7 +48307,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50349,141 +48317,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "OverflowEvent": {
-      "typeName": "OverflowEvent",
-      "derivedTypes": [],
-      "baseType": "UIEvent",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "horizontalOverflow": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "orient": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "verticalOverflow": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "BOTH": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "HORIZONTAL": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "VERTICAL": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "OverflowEventPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50513,7 +48346,6 @@
         },
         "persisted": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50534,7 +48366,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50556,7 +48387,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50567,7 +48397,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50597,7 +48426,6 @@
         },
         "coneInnerAngle": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50607,7 +48435,6 @@
         },
         "coneOuterAngle": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50617,7 +48444,6 @@
         },
         "coneOuterGain": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50627,7 +48453,6 @@
         },
         "distanceModel": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50637,7 +48462,6 @@
         },
         "maxDistance": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50647,7 +48471,6 @@
         },
         "panningModel": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50657,7 +48480,6 @@
         },
         "refDistance": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50667,7 +48489,6 @@
         },
         "rolloffFactor": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50721,7 +48542,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50743,7 +48563,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50754,7 +48573,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50894,7 +48712,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50916,7 +48733,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -50927,7 +48743,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51078,7 +48893,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51100,7 +48914,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51111,7 +48924,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51261,7 +49073,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51272,7 +49083,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51346,7 +49156,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51357,7 +49166,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51492,7 +49300,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51514,7 +49321,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51525,7 +49331,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51555,7 +49360,6 @@
         },
         "navigation": {
           "confidence": 4,
-          "type": "PerformanceNavigation",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -51565,7 +49369,6 @@
         },
         "timeOrigin": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -51575,7 +49378,6 @@
         },
         "timing": {
           "confidence": 4,
-          "type": "PerformanceTiming",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -51739,7 +49541,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51761,7 +49562,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51772,7 +49572,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51825,7 +49624,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -51866,7 +49664,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51877,7 +49674,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51888,7 +49684,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51929,7 +49724,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51951,7 +49745,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -51962,7 +49755,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52003,7 +49795,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52025,7 +49816,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52036,7 +49826,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52066,7 +49855,6 @@
         },
         "redirectCount": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52076,7 +49864,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52108,7 +49895,6 @@
         },
         "TYPE_NAVIGATE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52152,7 +49938,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52174,7 +49959,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52185,7 +49969,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52215,7 +49998,6 @@
         },
         "connectEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52225,7 +50007,6 @@
         },
         "connectStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52235,7 +50016,6 @@
         },
         "domComplete": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52245,7 +50025,6 @@
         },
         "domContentLoadedEventEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52255,7 +50034,6 @@
         },
         "domContentLoadedEventStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52265,7 +50043,6 @@
         },
         "domInteractive": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52275,7 +50052,6 @@
         },
         "domLoading": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52285,7 +50061,6 @@
         },
         "domainLookupEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52295,7 +50070,6 @@
         },
         "domainLookupStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52305,7 +50079,6 @@
         },
         "fetchStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52315,7 +50088,6 @@
         },
         "loadEventEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52325,7 +50097,6 @@
         },
         "loadEventStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52335,7 +50106,6 @@
         },
         "navigationStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52345,7 +50115,6 @@
         },
         "redirectCount": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52355,7 +50124,6 @@
         },
         "redirectEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52365,7 +50133,6 @@
         },
         "redirectStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52375,7 +50142,6 @@
         },
         "requestStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52385,7 +50151,6 @@
         },
         "responseEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52395,7 +50160,6 @@
         },
         "responseStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52405,7 +50169,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52415,7 +50178,6 @@
         },
         "unloadEventEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52425,7 +50187,6 @@
         },
         "unloadEventStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52435,7 +50196,6 @@
         },
         "workerStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52456,7 +50216,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52478,7 +50237,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52489,7 +50247,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52519,7 +50276,6 @@
         },
         "connectEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52529,7 +50285,6 @@
         },
         "connectStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52539,7 +50294,6 @@
         },
         "domainLookupEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52549,7 +50303,6 @@
         },
         "domainLookupStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52559,7 +50312,6 @@
         },
         "fetchStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52569,7 +50321,6 @@
         },
         "initiatorType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52579,7 +50330,6 @@
         },
         "nextHopProtocol": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52589,7 +50339,6 @@
         },
         "redirectEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52599,7 +50348,6 @@
         },
         "redirectStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52609,7 +50357,6 @@
         },
         "requestStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52619,7 +50366,6 @@
         },
         "responseEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52629,7 +50375,6 @@
         },
         "responseStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52639,7 +50384,6 @@
         },
         "workerStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52660,7 +50404,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52682,7 +50425,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52693,7 +50435,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52723,7 +50464,6 @@
         },
         "connectEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52733,7 +50473,6 @@
         },
         "connectStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52743,7 +50482,6 @@
         },
         "domComplete": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52753,7 +50491,6 @@
         },
         "domContentLoadedEventEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52763,7 +50500,6 @@
         },
         "domContentLoadedEventStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52773,7 +50509,6 @@
         },
         "domInteractive": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52783,7 +50518,6 @@
         },
         "domLoading": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52793,7 +50527,6 @@
         },
         "domainLookupEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52803,7 +50536,6 @@
         },
         "domainLookupStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52813,7 +50545,6 @@
         },
         "fetchStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52823,7 +50554,6 @@
         },
         "loadEventEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52833,7 +50563,6 @@
         },
         "loadEventStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52843,7 +50572,6 @@
         },
         "msFirstPaint": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52853,7 +50581,6 @@
         },
         "navigationStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52863,7 +50590,6 @@
         },
         "redirectEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52873,7 +50599,6 @@
         },
         "redirectStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52883,7 +50608,6 @@
         },
         "requestStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52893,7 +50617,6 @@
         },
         "responseEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52903,7 +50626,6 @@
         },
         "responseStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52913,7 +50635,6 @@
         },
         "unloadEventEnd": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52923,7 +50644,6 @@
         },
         "unloadEventStart": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -52955,7 +50675,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52977,7 +50696,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -52988,7 +50706,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53029,7 +50746,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53051,7 +50767,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53062,7 +50777,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53110,7 +50824,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53120,7 +50833,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53156,7 +50868,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": true,
+          "isEnumerable": false,
           "isWritable": true
         },
         "prototype": {
@@ -53172,7 +50884,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53183,7 +50894,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53213,7 +50923,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53240,7 +50949,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": true,
+          "isEnumerable": false,
           "isWritable": true
         },
         "refresh": {
@@ -53278,7 +50987,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53289,7 +50997,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53319,7 +51026,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53329,7 +51035,6 @@
         },
         "hwTimestamp": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53339,7 +51044,6 @@
         },
         "isPrimary": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53349,7 +51053,6 @@
         },
         "pointerId": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53359,7 +51062,6 @@
         },
         "pointerType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53369,7 +51071,6 @@
         },
         "pressure": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53379,7 +51080,6 @@
         },
         "rotation": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53389,7 +51089,6 @@
         },
         "tiltX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53399,7 +51098,6 @@
         },
         "tiltY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53409,7 +51107,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53463,7 +51160,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53474,7 +51170,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53504,7 +51199,6 @@
         },
         "state": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53547,7 +51241,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53558,7 +51251,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53617,7 +51309,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53639,7 +51330,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53650,7 +51340,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53742,7 +51431,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53764,7 +51452,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53775,7 +51462,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53825,7 +51511,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53847,7 +51532,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53858,7 +51542,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53888,7 +51571,6 @@
         },
         "lengthComputable": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53898,7 +51580,6 @@
         },
         "loaded": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53908,7 +51589,6 @@
         },
         "total": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -53962,7 +51642,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -53973,7 +51652,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54113,7 +51791,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54124,7 +51801,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54175,7 +51851,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54186,350 +51861,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "PushManager": {
-      "typeName": "PushManager",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "getSubscription": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "permissionState": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "subscribe": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "PushManagerPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "supportedContentEncodings": {
-          "confidence": 3,
-          "type": "Array",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "PushSubscription": {
-      "typeName": "PushSubscription",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "endpoint": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "expirationTime": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "options": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "getKey": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "toJSON": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "unsubscribe": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "PushSubscriptionPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "PushSubscriptionOptions": {
-      "typeName": "PushSubscriptionOptions",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "applicationServerKey": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "userVisibleOnly": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "PushSubscriptionOptionsPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54601,7 +51932,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54612,7 +51942,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54766,7 +52095,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54777,7 +52105,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54827,7 +52154,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54849,7 +52175,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54860,7 +52185,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54988,7 +52312,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -54999,7 +52322,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55029,7 +52351,6 @@
         },
         "candidate": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55039,7 +52360,6 @@
         },
         "sdpMLineIndex": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55049,7 +52369,6 @@
         },
         "sdpMid": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55081,7 +52400,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55103,7 +52421,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55114,7 +52431,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55164,7 +52480,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55186,7 +52501,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55197,7 +52511,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55320,7 +52633,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55331,7 +52643,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55381,7 +52692,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55403,7 +52713,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55414,7 +52723,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55444,7 +52752,6 @@
         },
         "component": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55454,7 +52761,6 @@
         },
         "iceGatherer": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55464,7 +52770,6 @@
         },
         "oncandidatepairchange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55474,7 +52779,6 @@
         },
         "onicestatechange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55484,7 +52788,6 @@
         },
         "role": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55494,7 +52797,6 @@
         },
         "state": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -55603,7 +52905,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55625,7 +52926,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55636,7 +52936,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55686,7 +52985,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55708,7 +53006,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -55719,7 +53016,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56044,7 +53340,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56055,7 +53350,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56127,7 +53421,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56138,7 +53431,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56341,7 +53633,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56352,7 +53643,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56535,7 +53825,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56546,7 +53835,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56576,7 +53864,6 @@
         },
         "sdp": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -56586,7 +53873,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -56618,7 +53904,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56640,7 +53925,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56651,7 +53935,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56743,7 +54026,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56754,7 +54036,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56804,7 +54085,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56826,7 +54106,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56837,7 +54116,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56906,7 +54184,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56928,7 +54205,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56939,7 +54215,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -56969,7 +54244,6 @@
         },
         "collapsed": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -56979,7 +54253,6 @@
         },
         "commonAncestorContainer": {
           "confidence": 4,
-          "type": "HTMLDocument",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -56989,7 +54262,6 @@
         },
         "endContainer": {
           "confidence": 4,
-          "type": "HTMLDocument",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -56999,7 +54271,6 @@
         },
         "endOffset": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -57009,7 +54280,6 @@
         },
         "startContainer": {
           "confidence": 4,
-          "type": "HTMLDocument",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -57019,7 +54289,6 @@
         },
         "startOffset": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -57061,6 +54330,17 @@
           "isWritable": true
         },
         "compareBoundaryPoints": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "comparePoint": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -57149,6 +54429,17 @@
           "isWritable": true
         },
         "insertNode": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "intersectsNode": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -57315,7 +54606,6 @@
         },
         "START_TO_START": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57337,7 +54627,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57359,7 +54648,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57370,7 +54658,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57454,7 +54741,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57465,7 +54751,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57537,7 +54822,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57559,7 +54843,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57570,7 +54853,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57644,7 +54926,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57666,7 +54947,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57677,7 +54957,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57761,7 +55040,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -57772,7 +55050,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58099,7 +55376,6 @@
         },
         "$3": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58110,7 +55386,6 @@
         },
         "$4": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58121,7 +55396,6 @@
         },
         "$5": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58132,7 +55406,6 @@
         },
         "$6": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58143,7 +55416,6 @@
         },
         "$7": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58154,7 +55426,6 @@
         },
         "$8": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58165,7 +55436,6 @@
         },
         "$9": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58187,7 +55457,6 @@
         },
         "rightContext": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58297,7 +55566,6 @@
         },
         "$`": {
           "confidence": 3,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58319,7 +55587,6 @@
         },
         "index": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58572,7 +55839,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58583,7 +55849,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58613,7 +55878,6 @@
         },
         "body": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58623,7 +55887,6 @@
         },
         "bodyUsed": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58633,7 +55896,6 @@
         },
         "headers": {
           "confidence": 4,
-          "type": "Headers",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58643,7 +55905,6 @@
         },
         "ok": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58653,7 +55914,6 @@
         },
         "redirected": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58663,7 +55923,6 @@
         },
         "status": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58673,7 +55932,6 @@
         },
         "statusText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58683,7 +55941,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58693,7 +55950,6 @@
         },
         "url": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58769,7 +56025,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58813,7 +56068,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58824,7 +56078,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58854,7 +56107,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58864,7 +56116,6 @@
         },
         "target": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58885,7 +56136,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58907,7 +56157,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58918,7 +56167,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -58948,7 +56196,6 @@
         },
         "unitType": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58958,7 +56205,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58968,7 +56214,6 @@
         },
         "valueAsString": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -58978,7 +56223,6 @@
         },
         "valueInSpecifiedUnits": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59043,7 +56287,6 @@
         },
         "SVG_ANGLETYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59076,7 +56319,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59098,7 +56340,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59109,7 +56350,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59139,7 +56379,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "SVGAngle",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59149,7 +56388,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "SVGAngle",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59170,7 +56408,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59192,7 +56429,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59203,7 +56439,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59233,7 +56468,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59243,7 +56477,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59264,7 +56497,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59286,7 +56518,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59297,7 +56528,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59327,7 +56557,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59337,7 +56566,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59358,7 +56586,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59380,7 +56607,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59391,7 +56617,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59421,7 +56646,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59431,7 +56655,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59452,7 +56675,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59474,7 +56696,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59485,7 +56706,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59515,7 +56735,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "SVGLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59525,7 +56744,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "SVGLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59546,7 +56764,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59568,7 +56785,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59579,7 +56795,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59609,7 +56824,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "SVGLengthList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59619,7 +56833,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "SVGLengthList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59640,7 +56853,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59662,7 +56874,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59673,7 +56884,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59703,7 +56913,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59713,7 +56922,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59734,7 +56942,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59756,7 +56963,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59767,7 +56973,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59797,7 +57002,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "SVGNumberList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59807,7 +57011,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "SVGNumberList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59828,7 +57031,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59850,7 +57052,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59861,7 +57062,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59891,7 +57091,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "SVGPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59901,7 +57100,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "SVGPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59922,7 +57120,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59944,7 +57141,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59955,7 +57151,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -59985,7 +57180,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "SVGRect",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -59995,7 +57189,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "SVGRect",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60016,7 +57209,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60038,7 +57230,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60049,7 +57240,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60079,7 +57269,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60089,7 +57278,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60110,7 +57298,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60132,7 +57319,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60143,7 +57329,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60173,7 +57358,6 @@
         },
         "animVal": {
           "confidence": 4,
-          "type": "SVGTransformList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60183,7 +57367,6 @@
         },
         "baseVal": {
           "confidence": 4,
-          "type": "SVGTransformList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60204,7 +57387,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60226,7 +57408,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60237,7 +57418,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60267,7 +57447,6 @@
         },
         "cx": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60277,7 +57456,6 @@
         },
         "cy": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60287,7 +57465,6 @@
         },
         "r": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60308,7 +57485,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60330,7 +57506,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60341,7 +57516,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60371,7 +57545,6 @@
         },
         "clipPathUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60392,7 +57565,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60414,7 +57586,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60425,7 +57596,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60578,7 +57748,6 @@
         },
         "SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60600,7 +57769,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60622,7 +57790,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60633,7 +57800,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60674,7 +57840,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60696,7 +57861,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60707,7 +57871,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60748,7 +57911,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60770,7 +57932,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60781,7 +57942,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -60847,7 +58007,6 @@
         },
         "className": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -60864,7 +58023,61 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "onabort": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onblur": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "oncanplay": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "oncanplaythrough": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onchange": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "onclick": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "oncontextmenu": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -60882,7 +58095,7 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "onfocusin": {
+        "ondrag": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -60891,7 +58104,151 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "onfocusout": {
+        "ondragend": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ondragenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ondragleave": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ondragover": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ondragstart": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ondrop": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ondurationchange": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onemptied": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onended": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onerror": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onfocus": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ongotpointercapture": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "oninput": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "oninvalid": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onkeydown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onkeypress": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onkeyup": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -60909,7 +58266,61 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "onloadeddata": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onloadedmetadata": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onloadstart": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onlostpointercapture": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "onmousedown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmouseenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmouseleave": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -60946,6 +58357,375 @@
           "isEnumerable": true
         },
         "onmouseup": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturechange": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturedoubletap": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgestureend": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturehold": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturestart": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsgesturetap": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmsinertiastart": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointercancel": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerdown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerleave": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointermove": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerout": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerover": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerup": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpause": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onplay": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onplaying": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointercancel": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerdown": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerenter": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerleave": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointermove": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerout": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerover": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onpointerup": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onprogress": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onratechange": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onreset": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onscroll": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onseeked": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onseeking": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onselect": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onselectstart": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onstalled": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onsubmit": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onsuspend": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ontimeupdate": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onvolumechange": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onwaiting": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onwheel": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -61034,7 +58814,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61056,7 +58835,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61067,7 +58845,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61180,7 +58957,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61202,7 +58978,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61213,7 +58988,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61243,7 +59017,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61286,7 +59059,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61297,7 +59069,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61327,7 +59098,6 @@
         },
         "cx": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61337,7 +59107,6 @@
         },
         "cy": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61347,7 +59116,6 @@
         },
         "rx": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61357,7 +59125,6 @@
         },
         "ry": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61378,7 +59145,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61400,7 +59166,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61411,7 +59176,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61441,7 +59205,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61451,7 +59214,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61461,7 +59223,6 @@
         },
         "in2": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61471,7 +59232,6 @@
         },
         "mode": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61481,7 +59241,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61491,7 +59250,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61501,7 +59259,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61511,7 +59268,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61697,7 +59453,6 @@
         },
         "SVG_FEBLEND_MODE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61719,7 +59474,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61741,7 +59495,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61752,7 +59505,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61782,7 +59534,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61792,7 +59543,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61802,7 +59552,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61812,7 +59561,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61822,7 +59570,6 @@
         },
         "values": {
           "confidence": 4,
-          "type": "SVGAnimatedNumberList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61832,7 +59579,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61842,7 +59588,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61852,7 +59597,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -61906,7 +59650,6 @@
         },
         "SVG_FECOLORMATRIX_TYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61928,7 +59671,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61950,7 +59692,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61961,7 +59702,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -61991,7 +59731,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62001,7 +59740,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62011,7 +59749,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62021,7 +59758,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62031,7 +59767,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62041,7 +59776,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62062,7 +59796,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62084,7 +59817,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62095,7 +59827,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62125,7 +59856,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62135,7 +59865,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62145,7 +59874,6 @@
         },
         "in2": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62155,7 +59883,6 @@
         },
         "k1": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62165,7 +59892,6 @@
         },
         "k2": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62175,7 +59901,6 @@
         },
         "k3": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62185,7 +59910,6 @@
         },
         "k4": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62195,7 +59919,6 @@
         },
         "operator": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62205,7 +59928,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62215,7 +59937,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62225,7 +59946,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62235,7 +59955,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62300,7 +60019,6 @@
         },
         "SVG_FECOMPOSITE_OPERATOR_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62333,7 +60051,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62355,7 +60072,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62366,7 +60082,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62396,7 +60111,6 @@
         },
         "bias": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62406,7 +60120,6 @@
         },
         "divisor": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62416,7 +60129,6 @@
         },
         "edgeMode": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62426,7 +60138,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62436,7 +60147,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62446,7 +60156,6 @@
         },
         "kernelMatrix": {
           "confidence": 4,
-          "type": "SVGAnimatedNumberList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62456,7 +60165,6 @@
         },
         "kernelUnitLengthX": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62466,7 +60174,6 @@
         },
         "kernelUnitLengthY": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62476,7 +60183,6 @@
         },
         "orderX": {
           "confidence": 4,
-          "type": "SVGAnimatedInteger",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62486,7 +60192,6 @@
         },
         "orderY": {
           "confidence": 4,
-          "type": "SVGAnimatedInteger",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62496,7 +60201,6 @@
         },
         "preserveAlpha": {
           "confidence": 4,
-          "type": "SVGAnimatedBoolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62506,7 +60210,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62516,7 +60219,6 @@
         },
         "targetX": {
           "confidence": 4,
-          "type": "SVGAnimatedInteger",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62526,7 +60228,6 @@
         },
         "targetY": {
           "confidence": 4,
-          "type": "SVGAnimatedInteger",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62536,7 +60237,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62546,7 +60246,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62556,7 +60255,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62588,7 +60286,6 @@
         },
         "SVG_EDGEMODE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62621,7 +60318,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62643,7 +60339,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62654,7 +60349,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62684,7 +60378,6 @@
         },
         "diffuseConstant": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62694,7 +60387,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62704,7 +60396,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62714,7 +60405,6 @@
         },
         "kernelUnitLengthX": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62724,7 +60414,6 @@
         },
         "kernelUnitLengthY": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62734,7 +60423,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62744,7 +60432,6 @@
         },
         "surfaceScale": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62754,7 +60441,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62764,7 +60450,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62774,7 +60459,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62795,7 +60479,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62817,7 +60500,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62828,7 +60510,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -62858,7 +60539,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62868,7 +60548,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62878,7 +60557,6 @@
         },
         "in2": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62888,7 +60566,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62898,7 +60575,6 @@
         },
         "scale": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62908,7 +60584,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62918,7 +60593,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62928,7 +60602,6 @@
         },
         "xChannelSelector": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62938,7 +60611,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -62948,7 +60620,6 @@
         },
         "yChannelSelector": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63002,7 +60673,6 @@
         },
         "SVG_CHANNEL_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63024,7 +60694,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63046,7 +60715,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63057,7 +60725,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63087,7 +60754,6 @@
         },
         "azimuth": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63097,7 +60763,6 @@
         },
         "elevation": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63118,7 +60783,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63140,7 +60804,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63151,7 +60814,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63181,7 +60843,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63191,7 +60852,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63201,7 +60861,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63211,7 +60870,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63221,7 +60879,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63242,7 +60899,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63264,7 +60920,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63275,7 +60930,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63316,7 +60970,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63338,7 +60991,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63349,7 +61001,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63390,7 +61041,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63412,7 +61062,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63423,7 +61072,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63464,7 +61112,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63486,7 +61133,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63497,7 +61143,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63538,7 +61183,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63560,7 +61204,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63571,7 +61214,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63601,7 +61243,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63611,7 +61252,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63621,7 +61261,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63631,7 +61270,6 @@
         },
         "stdDeviationX": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63641,7 +61279,6 @@
         },
         "stdDeviationY": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63651,7 +61288,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63661,7 +61297,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63671,7 +61306,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63703,7 +61337,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63725,7 +61358,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63736,7 +61368,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63766,7 +61397,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63776,7 +61406,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63786,7 +61415,6 @@
         },
         "preserveAspectRatio": {
           "confidence": 4,
-          "type": "SVGAnimatedPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63796,7 +61424,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63806,7 +61433,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63816,7 +61442,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63826,7 +61451,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63847,7 +61471,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63869,7 +61492,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63880,7 +61502,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63910,7 +61531,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63920,7 +61540,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63930,7 +61549,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63940,7 +61558,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63950,7 +61567,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -63971,7 +61587,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -63993,7 +61608,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64004,7 +61618,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64034,7 +61647,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64055,7 +61667,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64077,7 +61688,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64088,7 +61698,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64118,7 +61727,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64128,7 +61736,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64138,7 +61745,6 @@
         },
         "operator": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64148,7 +61754,6 @@
         },
         "radiusX": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64158,7 +61763,6 @@
         },
         "radiusY": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64168,7 +61772,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64178,7 +61781,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64188,7 +61790,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64198,7 +61799,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64230,7 +61830,6 @@
         },
         "SVG_MORPHOLOGY_OPERATOR_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64252,7 +61851,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64274,7 +61872,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64285,7 +61882,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64315,7 +61911,6 @@
         },
         "dx": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64325,7 +61920,6 @@
         },
         "dy": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64335,7 +61929,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64345,7 +61938,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64355,7 +61947,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64365,7 +61956,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64375,7 +61965,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64385,7 +61974,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64406,7 +61994,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64428,7 +62015,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64439,7 +62025,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64469,7 +62054,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64479,7 +62063,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64489,7 +62072,6 @@
         },
         "z": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64510,7 +62092,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64532,7 +62113,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64543,7 +62123,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64573,7 +62152,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64583,7 +62161,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64593,7 +62170,6 @@
         },
         "kernelUnitLengthX": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64603,7 +62179,6 @@
         },
         "kernelUnitLengthY": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64613,7 +62188,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64623,7 +62197,6 @@
         },
         "specularConstant": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64633,7 +62206,6 @@
         },
         "specularExponent": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64643,7 +62215,6 @@
         },
         "surfaceScale": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64653,7 +62224,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64663,7 +62233,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64673,7 +62242,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64694,7 +62262,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64716,7 +62283,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64727,7 +62293,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64757,7 +62322,6 @@
         },
         "limitingConeAngle": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64767,7 +62331,6 @@
         },
         "pointsAtX": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64777,7 +62340,6 @@
         },
         "pointsAtY": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64787,7 +62349,6 @@
         },
         "pointsAtZ": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64797,7 +62358,6 @@
         },
         "specularExponent": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64807,7 +62367,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64817,7 +62376,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64827,7 +62385,6 @@
         },
         "z": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64848,7 +62405,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64870,7 +62426,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64881,7 +62436,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -64911,7 +62465,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64921,7 +62474,6 @@
         },
         "in1": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64931,7 +62483,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64941,7 +62492,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64951,7 +62501,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64961,7 +62510,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -64982,7 +62530,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65004,7 +62551,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65015,7 +62561,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65045,7 +62590,6 @@
         },
         "baseFrequencyX": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65055,7 +62599,6 @@
         },
         "baseFrequencyY": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65065,7 +62608,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65075,7 +62617,6 @@
         },
         "numOctaves": {
           "confidence": 4,
-          "type": "SVGAnimatedInteger",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65085,7 +62626,6 @@
         },
         "result": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65095,7 +62635,6 @@
         },
         "seed": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65105,7 +62644,6 @@
         },
         "stitchTiles": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65115,7 +62653,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65125,7 +62662,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65135,7 +62671,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65145,7 +62680,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65177,7 +62711,6 @@
         },
         "SVG_STITCHTYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65210,7 +62743,6 @@
         },
         "SVG_TURBULENCE_TYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65232,7 +62764,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65254,7 +62785,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65265,7 +62795,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65295,7 +62824,6 @@
         },
         "filterResX": {
           "confidence": 4,
-          "type": "SVGAnimatedInteger",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65305,7 +62833,6 @@
         },
         "filterResY": {
           "confidence": 4,
-          "type": "SVGAnimatedInteger",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65315,7 +62842,6 @@
         },
         "filterUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65325,7 +62851,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65335,7 +62860,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65345,7 +62869,6 @@
         },
         "primitiveUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65355,7 +62878,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65365,7 +62887,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65375,7 +62896,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65407,7 +62927,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65429,7 +62948,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65440,7 +62958,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65470,7 +62987,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65480,7 +62996,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65490,7 +63005,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65500,7 +63014,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -65521,7 +63034,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65543,7 +63055,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65554,7 +63065,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65595,7 +63105,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65617,7 +63126,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65628,7 +63136,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65730,7 +63237,6 @@
         },
         "SVG_SPREADMETHOD_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65752,7 +63258,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65774,7 +63279,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65785,7 +63289,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65953,7 +63456,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65975,7 +63477,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -65986,7 +63487,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66016,7 +63516,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66026,7 +63525,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66036,7 +63534,6 @@
         },
         "preserveAspectRatio": {
           "confidence": 4,
-          "type": "SVGAnimatedPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66046,7 +63543,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66056,7 +63552,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66066,7 +63561,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66087,7 +63581,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66109,7 +63602,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66120,7 +63612,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66150,7 +63641,6 @@
         },
         "unitType": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66160,7 +63650,6 @@
         },
         "value": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66170,7 +63659,6 @@
         },
         "valueAsString": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66180,7 +63668,6 @@
         },
         "valueInSpecifiedUnits": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66322,7 +63809,6 @@
         },
         "SVG_LENGTHTYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66344,7 +63830,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66366,7 +63851,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66377,7 +63861,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66407,7 +63890,6 @@
         },
         "numberOfItems": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66505,7 +63987,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66527,7 +64008,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66538,7 +64018,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66568,7 +64047,6 @@
         },
         "x1": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66578,7 +64056,6 @@
         },
         "x2": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66588,7 +64065,6 @@
         },
         "y1": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66598,7 +64074,6 @@
         },
         "y2": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66619,7 +64094,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66641,7 +64115,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66652,7 +64125,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66682,7 +64154,6 @@
         },
         "x1": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66692,7 +64163,6 @@
         },
         "x2": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66702,7 +64172,6 @@
         },
         "y1": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66712,7 +64181,6 @@
         },
         "y2": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66733,7 +64201,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66755,7 +64222,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66766,7 +64232,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66796,7 +64261,6 @@
         },
         "markerHeight": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66806,7 +64270,6 @@
         },
         "markerUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66816,7 +64279,6 @@
         },
         "markerWidth": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66826,7 +64288,6 @@
         },
         "orientAngle": {
           "confidence": 4,
-          "type": "SVGAnimatedAngle",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66836,7 +64297,6 @@
         },
         "orientType": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66846,7 +64306,6 @@
         },
         "preserveAspectRatio": {
           "confidence": 4,
-          "type": "SVGAnimatedPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66856,7 +64315,6 @@
         },
         "refX": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66866,7 +64324,6 @@
         },
         "refY": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66876,7 +64333,6 @@
         },
         "viewBox": {
           "confidence": 4,
-          "type": "SVGAnimatedRect",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -66919,7 +64375,6 @@
         },
         "SVG_MARKERUNITS_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66963,7 +64418,6 @@
         },
         "SVG_MARKER_ORIENT_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -66985,7 +64439,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67007,7 +64460,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67018,7 +64470,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67048,7 +64499,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67058,7 +64508,6 @@
         },
         "maskContentUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67068,7 +64517,6 @@
         },
         "maskUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67078,7 +64526,6 @@
         },
         "requiredExtensions": {
           "confidence": 4,
-          "type": "SVGStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67088,7 +64535,6 @@
         },
         "requiredFeatures": {
           "confidence": 4,
-          "type": "SVGStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67098,7 +64544,6 @@
         },
         "systemLanguage": {
           "confidence": 4,
-          "type": "SVGStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67108,7 +64553,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67118,7 +64562,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67128,7 +64571,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67160,7 +64602,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67182,7 +64623,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67193,7 +64633,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67223,7 +64662,6 @@
         },
         "a": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67233,7 +64671,6 @@
         },
         "b": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67243,7 +64680,6 @@
         },
         "c": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67253,7 +64689,6 @@
         },
         "d": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67263,7 +64698,6 @@
         },
         "e": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67273,7 +64707,6 @@
         },
         "f": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67415,7 +64848,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67437,7 +64869,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67448,7 +64879,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67489,7 +64919,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67511,7 +64940,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67522,7 +64950,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67572,7 +64999,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67594,7 +65020,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67605,7 +65030,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67635,7 +65059,6 @@
         },
         "numberOfItems": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -67733,7 +65156,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67755,7 +65177,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67766,7 +65187,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -67796,7 +65216,6 @@
         },
         "pathSegList": {
           "confidence": 4,
-          "type": "SVGPathSegList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -68059,7 +65478,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68081,7 +65499,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68092,7 +65509,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68369,7 +65785,6 @@
         },
         "PATHSEG_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68391,7 +65806,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68413,7 +65827,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68424,7 +65837,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68528,7 +65940,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68550,7 +65961,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68561,7 +65971,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68665,7 +66074,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68687,7 +66095,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68698,7 +66105,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68739,7 +66145,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68761,7 +66166,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68772,7 +66176,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68867,7 +66270,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68889,7 +66291,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68900,7 +66301,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -68995,7 +66395,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69017,7 +66416,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69028,7 +66426,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69105,7 +66502,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69127,7 +66523,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69138,7 +66533,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69215,7 +66609,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69237,7 +66630,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69248,7 +66640,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69325,7 +66716,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69347,7 +66737,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69358,7 +66747,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69435,7 +66823,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69457,7 +66844,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69468,7 +66854,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69527,7 +66912,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69549,7 +66933,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69560,7 +66943,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69619,7 +67001,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69641,7 +67022,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69652,7 +67032,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69711,7 +67090,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69733,7 +67111,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69744,7 +67121,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69794,7 +67170,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69816,7 +67191,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69827,7 +67201,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69877,7 +67250,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69899,7 +67271,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69910,7 +67281,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69969,7 +67339,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -69991,7 +67360,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70002,7 +67370,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70052,7 +67419,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70074,7 +67440,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70085,7 +67450,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70135,7 +67499,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70157,7 +67520,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70168,7 +67530,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70198,7 +67559,6 @@
         },
         "numberOfItems": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70296,7 +67656,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70318,7 +67677,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70329,7 +67687,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70388,7 +67745,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70410,7 +67766,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70421,7 +67776,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70480,7 +67834,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70502,7 +67855,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70513,7 +67865,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70543,7 +67894,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70553,7 +67903,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70563,7 +67912,6 @@
         },
         "patternContentUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70573,7 +67921,6 @@
         },
         "patternTransform": {
           "confidence": 4,
-          "type": "SVGAnimatedTransformList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70583,7 +67930,6 @@
         },
         "patternUnits": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70593,7 +67939,6 @@
         },
         "preserveAspectRatio": {
           "confidence": 4,
-          "type": "SVGAnimatedPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70603,7 +67948,6 @@
         },
         "requiredExtensions": {
           "confidence": 4,
-          "type": "SVGStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70613,7 +67957,6 @@
         },
         "requiredFeatures": {
           "confidence": 4,
-          "type": "SVGStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70623,7 +67966,6 @@
         },
         "systemLanguage": {
           "confidence": 4,
-          "type": "SVGStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70633,7 +67975,6 @@
         },
         "viewBox": {
           "confidence": 4,
-          "type": "SVGAnimatedRect",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70643,7 +67984,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70653,7 +67993,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70663,7 +68002,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70695,7 +68033,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70717,7 +68054,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70728,7 +68064,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70758,7 +68093,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70768,7 +68102,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70800,7 +68133,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70822,7 +68154,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70833,7 +68164,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70863,7 +68193,6 @@
         },
         "numberOfItems": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -70961,7 +68290,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70983,7 +68311,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -70994,7 +68321,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71024,7 +68350,6 @@
         },
         "animatedPoints": {
           "confidence": 4,
-          "type": "SVGPointList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71034,7 +68359,6 @@
         },
         "points": {
           "confidence": 4,
-          "type": "SVGPointList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71055,7 +68379,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71077,7 +68400,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71088,7 +68410,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71118,7 +68439,6 @@
         },
         "animatedPoints": {
           "confidence": 4,
-          "type": "SVGPointList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71128,7 +68448,6 @@
         },
         "points": {
           "confidence": 4,
-          "type": "SVGPointList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71149,7 +68468,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71171,7 +68489,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71182,7 +68499,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71212,7 +68528,6 @@
         },
         "align": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71222,7 +68537,6 @@
         },
         "meetOrSlice": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71254,7 +68568,6 @@
         },
         "SVG_MEETORSLICE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71276,7 +68589,6 @@
         },
         "SVG_PRESERVEASPECTRATIO_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71397,7 +68709,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71419,7 +68730,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71430,7 +68740,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71460,7 +68769,6 @@
         },
         "cx": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71470,7 +68778,6 @@
         },
         "cy": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71480,7 +68787,6 @@
         },
         "fx": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71490,7 +68796,6 @@
         },
         "fy": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71500,7 +68805,6 @@
         },
         "r": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71521,7 +68825,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71543,7 +68846,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71554,7 +68856,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71631,7 +68932,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71653,7 +68953,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71664,7 +68963,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71694,7 +68992,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71704,7 +69001,6 @@
         },
         "rx": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71714,7 +69010,6 @@
         },
         "ry": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71724,7 +69019,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71734,7 +69028,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71744,7 +69037,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71765,7 +69057,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71787,7 +69078,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71798,7 +69088,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -71828,7 +69117,6 @@
         },
         "contentScriptType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71838,7 +69126,6 @@
         },
         "contentStyleType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71848,7 +69135,6 @@
         },
         "currentScale": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71858,7 +69144,6 @@
         },
         "currentTranslate": {
           "confidence": 4,
-          "type": "SVGPoint",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71868,7 +69153,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71878,7 +69162,6 @@
         },
         "onabort": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71888,7 +69171,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71898,7 +69180,6 @@
         },
         "onresize": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71908,7 +69189,6 @@
         },
         "onscroll": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71918,7 +69198,6 @@
         },
         "onunload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71928,7 +69207,6 @@
         },
         "onzoom": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71938,7 +69216,6 @@
         },
         "pixelUnitToMillimeterX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71948,7 +69225,6 @@
         },
         "pixelUnitToMillimeterY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71958,7 +69234,6 @@
         },
         "preserveAspectRatio": {
           "confidence": 4,
-          "type": "SVGAnimatedPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71968,7 +69243,6 @@
         },
         "screenPixelToMillimeterX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71978,7 +69252,6 @@
         },
         "screenPixelToMillimeterY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -71988,7 +69261,6 @@
         },
         "viewBox": {
           "confidence": 4,
-          "type": "SVGAnimatedRect",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72007,7 +69279,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72017,7 +69288,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72027,7 +69297,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72037,7 +69306,6 @@
         },
         "zoomAndPan": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72322,7 +69590,6 @@
         },
         "SVG_ZOOMANDPAN_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72344,7 +69611,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72366,7 +69632,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72377,7 +69642,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72407,7 +69671,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72417,7 +69680,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72438,7 +69700,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72460,7 +69721,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72471,7 +69731,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72501,7 +69760,6 @@
         },
         "offset": {
           "confidence": 4,
-          "type": "SVGAnimatedNumber",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72522,7 +69780,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72544,7 +69801,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72555,7 +69811,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72585,7 +69840,6 @@
         },
         "numberOfItems": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72683,7 +69937,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72705,7 +69958,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72716,7 +69968,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72746,7 +69997,6 @@
         },
         "disabled": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72756,7 +70006,6 @@
         },
         "media": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72766,7 +70015,6 @@
         },
         "title": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72776,7 +70024,6 @@
         },
         "type": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72797,7 +70044,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72819,7 +70065,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72830,7 +70075,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72871,7 +70115,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72893,7 +70136,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72904,7 +70146,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72934,7 +70175,6 @@
         },
         "preserveAspectRatio": {
           "confidence": 4,
-          "type": "SVGAnimatedPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72944,7 +70184,6 @@
         },
         "viewBox": {
           "confidence": 4,
-          "type": "SVGAnimatedRect",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -72965,7 +70204,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72987,7 +70225,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -72998,7 +70235,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73039,7 +70275,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73061,7 +70296,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73072,7 +70306,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73244,7 +70477,6 @@
         },
         "LENGTHADJUST_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73266,7 +70498,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73288,7 +70519,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73299,7 +70529,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73340,7 +70569,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73362,7 +70590,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73373,7 +70600,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73403,7 +70629,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -73413,7 +70638,6 @@
         },
         "method": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -73423,7 +70647,6 @@
         },
         "spacing": {
           "confidence": 4,
-          "type": "SVGAnimatedEnumeration",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -73433,7 +70656,6 @@
         },
         "startOffset": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -73465,7 +70687,6 @@
         },
         "TEXTPATH_METHODTYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73498,7 +70719,6 @@
         },
         "TEXTPATH_SPACINGTYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73520,7 +70740,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73542,7 +70761,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73553,7 +70771,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73642,7 +70859,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73664,7 +70880,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73675,7 +70890,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73716,7 +70930,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73738,7 +70951,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73749,7 +70961,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73938,7 +71149,6 @@
         },
         "SVG_TRANSFORM_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73960,7 +71170,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73982,7 +71191,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -73993,251 +71201,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "SVGTransformEx": {
-      "typeName": "SVGTransformEx",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "angle": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "matrix": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "type": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "setMatrix": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "setRotate": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "setScale": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "setSkewX": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "setSkewY": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "setTranslate": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "SVG_TRANSFORM_MATRIX": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "SVG_TRANSFORM_ROTATE": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "SVG_TRANSFORM_SCALE": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "SVG_TRANSFORM_SKEWX": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "SVG_TRANSFORM_SKEWY": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "SVG_TRANSFORM_TRANSLATE": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "SVG_TRANSFORM_UNKNOWN": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": true,
-          "isWritable": false
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "SVGTransformExPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74267,7 +71230,6 @@
         },
         "numberOfItems": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74387,7 +71349,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74409,7 +71370,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74420,189 +71380,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "SVGTransformListEx": {
-      "typeName": "SVGTransformListEx",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "numberOfItems": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "appendItem": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "clear": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "consolidate": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "createSVGTransformFromMatrix": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "getItem": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "initialize": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "insertItemBefore": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "removeItem": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "replaceItem": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "SVGTransformListExPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74643,7 +71420,6 @@
         },
         "SVG_UNIT_TYPE_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74676,7 +71452,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74698,7 +71473,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74709,7 +71483,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74739,7 +71512,6 @@
         },
         "animatedInstanceRoot": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74749,7 +71521,6 @@
         },
         "height": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74759,7 +71530,6 @@
         },
         "href": {
           "confidence": 4,
-          "type": "SVGAnimatedString",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74769,7 +71539,6 @@
         },
         "instanceRoot": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74779,7 +71548,6 @@
         },
         "width": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74789,7 +71557,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74799,7 +71566,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "SVGAnimatedLength",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74820,7 +71586,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74842,7 +71607,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74853,7 +71617,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74883,7 +71646,6 @@
         },
         "preserveAspectRatio": {
           "confidence": 4,
-          "type": "SVGAnimatedPreserveAspectRatio",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74893,7 +71655,6 @@
         },
         "viewBox": {
           "confidence": 4,
-          "type": "SVGAnimatedRect",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74903,7 +71664,6 @@
         },
         "viewTarget": {
           "confidence": 4,
-          "type": "SVGStringList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74913,7 +71673,6 @@
         },
         "zoomAndPan": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -74945,7 +71704,6 @@
         },
         "SVG_ZOOMANDPAN_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74967,7 +71725,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -74989,7 +71746,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75000,7 +71756,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75086,7 +71841,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75108,7 +71862,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75119,7 +71872,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75178,7 +71930,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75200,7 +71951,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75211,7 +71961,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75270,7 +72019,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75292,7 +72040,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75303,7 +72050,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75510,7 +72256,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75532,7 +72277,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75543,7 +72287,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75573,7 +72316,6 @@
         },
         "bufferSize": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -75583,7 +72325,6 @@
         },
         "onaudioprocess": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -75604,7 +72345,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75626,7 +72366,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75637,7 +72376,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75790,7 +72528,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -75801,7 +72538,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -76106,7 +72842,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -76128,7 +72863,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -76139,457 +72873,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "ServiceWorker": {
-      "typeName": "ServiceWorker",
-      "derivedTypes": [],
-      "baseType": "EventTarget",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "onerror": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onstatechange": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "scriptURL": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "state": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "postMessage": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "ServiceWorkerPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "ServiceWorkerContainer": {
-      "typeName": "ServiceWorkerContainer",
-      "derivedTypes": [],
-      "baseType": "EventTarget",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "controller": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "oncontrollerchange": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmessage": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onmessageerror": {
-          "confidence": 4,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "ready": {
-          "confidence": 4,
-          "type": "Promise",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "getRegistration": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "getRegistrations": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "register": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "ServiceWorkerContainerPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "ServiceWorkerRegistration": {
-      "typeName": "ServiceWorkerRegistration",
-      "derivedTypes": [],
-      "baseType": "EventTarget",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "active": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "installing": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "onupdatefound": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "pushManager": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "scope": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "waiting": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "getNotifications": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "showNotification": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "unregister": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "update": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "ServiceWorkerRegistrationPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -76739,7 +73022,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -76772,7 +73054,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -76783,112 +73064,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "SharedArrayBuffer": {
-      "typeName": "SharedArrayBuffer",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "@@toStringTag": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "slice": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "byteLength": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "SharedArrayBuffer",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "caller": {
-          "confidence": 3,
-          "type": "object",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "arguments": {
-          "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77090,7 +73265,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77112,7 +73286,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77123,7 +73296,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77153,7 +73325,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77214,7 +73385,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77225,7 +73395,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77357,7 +73526,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77379,7 +73547,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77390,7 +73557,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77447,7 +73613,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77488,7 +73653,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77499,7 +73663,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77529,7 +73692,6 @@
         },
         "lang": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77539,7 +73701,6 @@
         },
         "onboundary": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77549,7 +73710,6 @@
         },
         "onend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77559,7 +73719,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77569,7 +73728,6 @@
         },
         "onmark": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77579,7 +73737,6 @@
         },
         "onpause": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77589,7 +73746,6 @@
         },
         "onresume": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77599,7 +73755,6 @@
         },
         "onstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77609,7 +73764,6 @@
         },
         "pitch": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77619,7 +73773,6 @@
         },
         "rate": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77629,7 +73782,6 @@
         },
         "text": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77639,7 +73791,6 @@
         },
         "voice": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77649,7 +73800,6 @@
         },
         "volume": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77670,7 +73820,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77692,7 +73841,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77703,7 +73851,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77760,7 +73907,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -77790,7 +73936,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77801,7 +73946,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77812,7 +73956,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77862,7 +74005,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77884,7 +74026,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77895,7 +74036,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -77925,13 +74065,12 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false
+          "isEnumerable": true
         },
         "clear": {
           "confidence": 4,
@@ -77941,7 +74080,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false,
+          "isEnumerable": true,
           "isWritable": true
         },
         "getItem": {
@@ -77952,7 +74091,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false,
+          "isEnumerable": true,
           "isWritable": true
         },
         "key": {
@@ -77963,7 +74102,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false,
+          "isEnumerable": true,
           "isWritable": true
         },
         "removeItem": {
@@ -77974,7 +74113,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false,
+          "isEnumerable": true,
           "isWritable": true
         },
         "setItem": {
@@ -77985,7 +74124,7 @@
           "hasGet": false,
           "hasSet": false,
           "isConfigurable": true,
-          "isEnumerable": false,
+          "isEnumerable": true,
           "isWritable": true
         },
         "prototype": {
@@ -78012,7 +74151,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78023,7 +74161,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78053,7 +74190,6 @@
         },
         "key": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -78063,7 +74199,6 @@
         },
         "newValue": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -78073,7 +74208,6 @@
         },
         "oldValue": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -78083,7 +74217,6 @@
         },
         "storageArea": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -78093,7 +74226,6 @@
         },
         "url": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -78147,7 +74279,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78158,7 +74289,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78673,7 +74803,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78739,7 +74868,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78750,7 +74878,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78811,7 +74938,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78833,7 +74959,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78844,7 +74969,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78950,7 +75074,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78972,7 +75095,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -78983,7 +75105,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79013,7 +75134,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -79056,7 +75176,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79067,7 +75186,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79097,7 +75215,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -79140,7 +75257,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79151,7 +75267,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79324,7 +75439,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79346,7 +75460,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79357,7 +75470,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79431,7 +75543,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79563,7 +75674,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79574,7 +75684,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79658,7 +75767,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79669,7 +75777,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79701,7 +75808,6 @@
         },
         "wholeText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -79733,7 +75839,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79755,7 +75860,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79766,7 +75870,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79796,7 +75899,6 @@
         },
         "data": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -79905,7 +76007,6 @@
         },
         "DOM_INPUT_METHOD_UNKNOWN": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79938,7 +76039,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79960,7 +76060,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -79971,7 +76070,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80021,7 +76119,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80043,7 +76140,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80054,7 +76150,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80084,7 +76179,6 @@
         },
         "activeCues": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80094,7 +76188,6 @@
         },
         "cues": {
           "confidence": 4,
-          "type": "TextTrackCueList",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80104,7 +76197,6 @@
         },
         "inBandMetadataTrackDispatchType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80114,7 +76206,6 @@
         },
         "kind": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80124,7 +76215,6 @@
         },
         "label": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80134,7 +76224,6 @@
         },
         "language": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80144,7 +76233,6 @@
         },
         "mode": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80154,7 +76242,6 @@
         },
         "oncuechange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80164,7 +76251,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80174,7 +76260,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80184,7 +76269,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80216,7 +76300,6 @@
         },
         "DISABLED": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80271,7 +76354,6 @@
         },
         "NONE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80304,7 +76386,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80326,7 +76407,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80337,7 +76417,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80485,7 +76564,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80496,7 +76574,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80526,7 +76603,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80580,7 +76656,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80591,7 +76666,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80621,7 +76695,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80631,7 +76704,6 @@
         },
         "onaddtrack": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80674,7 +76746,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80685,7 +76756,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80715,7 +76785,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80769,7 +76838,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80780,7 +76848,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80893,7 +76960,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80915,7 +76981,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80926,7 +76991,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -80956,7 +77020,6 @@
         },
         "altKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80966,7 +77029,6 @@
         },
         "changedTouches": {
           "confidence": 4,
-          "type": "undefined",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80976,7 +77038,6 @@
         },
         "charCode": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80986,7 +77047,6 @@
         },
         "ctrlKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -80996,7 +77056,6 @@
         },
         "keyCode": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81006,7 +77065,6 @@
         },
         "metaKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81016,7 +77074,6 @@
         },
         "shiftKey": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81026,7 +77083,6 @@
         },
         "targetTouches": {
           "confidence": 4,
-          "type": "undefined",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81036,7 +77092,6 @@
         },
         "touches": {
           "confidence": 4,
-          "type": "undefined",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81046,7 +77101,6 @@
         },
         "which": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81067,7 +77121,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81089,7 +77142,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81100,7 +77152,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81130,7 +77181,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81173,7 +77223,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81184,7 +77233,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81214,7 +77262,6 @@
         },
         "track": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81257,7 +77304,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81268,7 +77314,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81298,7 +77343,6 @@
         },
         "elapsedTime": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81308,7 +77352,6 @@
         },
         "propertyName": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81362,7 +77405,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81373,7 +77415,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81536,7 +77577,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81558,7 +77598,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81569,7 +77608,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81653,7 +77691,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81664,7 +77701,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81684,7 +77720,6 @@
         "MSGestureEvent",
         "MSManipulationEvent",
         "MouseEvent",
-        "OverflowEvent",
         "SVGZoomEvent",
         "TextEvent",
         "TouchEvent"
@@ -81705,7 +77740,6 @@
         },
         "detail": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81715,7 +77749,6 @@
         },
         "view": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -81769,7 +77802,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81780,7 +77812,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81864,7 +77895,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -81875,7 +77905,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82090,7 +78119,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82101,7 +78129,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82286,7 +78313,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82308,7 +78334,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82319,7 +78344,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82371,7 +78395,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82393,7 +78416,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82404,7 +78426,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82478,7 +78499,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82489,7 +78509,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82563,7 +78582,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82574,7 +78592,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82648,7 +78665,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82659,7 +78675,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82733,7 +78748,6 @@
         },
         "caller": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82744,7 +78758,6 @@
         },
         "arguments": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82967,7 +78980,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -82989,7 +79001,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83000,7 +79011,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83086,7 +79096,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83108,7 +79117,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83119,7 +79127,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83200,7 +79207,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83211,7 +79217,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83288,7 +79293,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83310,7 +79314,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83321,7 +79324,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83398,7 +79400,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83420,7 +79421,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83431,7 +79431,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83461,7 +79460,6 @@
         },
         "leftProjectionMatrix": {
           "confidence": 4,
-          "type": "Float32Array",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83471,7 +79469,6 @@
         },
         "leftViewMatrix": {
           "confidence": 4,
-          "type": "Float32Array",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83481,7 +79478,6 @@
         },
         "pose": {
           "confidence": 4,
-          "type": "VRPose",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83491,7 +79487,6 @@
         },
         "rightProjectionMatrix": {
           "confidence": 4,
-          "type": "Float32Array",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83501,7 +79496,6 @@
         },
         "rightViewMatrix": {
           "confidence": 4,
-          "type": "Float32Array",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83511,7 +79505,6 @@
         },
         "timestamp": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83532,7 +79525,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83554,7 +79546,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83565,7 +79556,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83669,7 +79659,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83691,7 +79680,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83702,7 +79690,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83732,7 +79719,6 @@
         },
         "badInput": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83742,7 +79728,6 @@
         },
         "customError": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83752,7 +79737,6 @@
         },
         "patternMismatch": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83762,7 +79746,6 @@
         },
         "rangeOverflow": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83772,7 +79755,6 @@
         },
         "rangeUnderflow": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83782,7 +79764,6 @@
         },
         "stepMismatch": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83792,7 +79773,6 @@
         },
         "tooLong": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83802,7 +79782,6 @@
         },
         "tooShort": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83812,7 +79791,6 @@
         },
         "typeMismatch": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83822,7 +79800,6 @@
         },
         "valid": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83832,7 +79809,6 @@
         },
         "valueMissing": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -83853,7 +79829,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83875,7 +79850,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83886,7 +79860,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83972,7 +79945,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -83994,7 +79966,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84005,7 +79976,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84100,7 +80070,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84122,7 +80091,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84133,7 +80101,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84163,7 +80130,6 @@
         },
         "length": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -84253,7 +80219,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84264,7 +80229,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84338,7 +80302,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84360,7 +80323,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84371,7 +80333,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84456,7 +80417,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84478,7 +80438,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84489,7 +80448,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84552,7 +80510,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84574,7 +80531,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84585,7 +80541,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84637,7 +80592,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84659,7 +80613,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84670,7 +80623,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84700,7 +80652,6 @@
         },
         "curve": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -84710,7 +80661,6 @@
         },
         "oversample": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -84731,7 +80681,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84753,7 +80702,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84764,7 +80712,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84849,7 +80796,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84882,7 +80828,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84893,7 +80838,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -84967,7 +80911,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85000,7 +80943,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85011,7 +80953,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85213,7 +81154,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85235,7 +81175,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85246,7 +81185,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85323,7 +81261,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85345,7 +81282,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85356,7 +81292,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85386,7 +81321,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -85425,7 +81359,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85436,7 +81369,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85447,7 +81379,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85488,7 +81419,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85510,7 +81440,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85521,7 +81450,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85551,7 +81479,6 @@
         },
         "statusMessage": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -85594,7 +81521,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85605,7 +81531,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85646,7 +81571,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85668,7 +81592,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85679,7 +81602,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85727,7 +81649,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85749,7 +81670,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85760,7 +81680,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85801,7 +81720,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85823,7 +81741,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85834,7 +81751,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85875,7 +81791,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85897,7 +81812,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -85908,7 +81822,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -89089,7 +85002,6 @@
         },
         "NONE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -89111,7 +85023,6 @@
         },
         "NO_ERROR": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -89221,7 +85132,6 @@
         },
         "POINTS": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90706,7 +86616,6 @@
         },
         "ZERO": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90728,7 +86637,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90750,7 +86658,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90761,7 +86668,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90802,7 +86708,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90824,7 +86729,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90835,7 +86739,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90903,7 +86806,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90925,7 +86827,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90936,7 +86837,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90977,7 +86877,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -90999,7 +86898,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91010,7 +86908,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91051,7 +86948,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91073,7 +86969,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91084,7 +86979,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91114,7 +87008,6 @@
         },
         "a": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91124,7 +87017,6 @@
         },
         "b": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91134,7 +87026,6 @@
         },
         "c": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91144,7 +87035,6 @@
         },
         "d": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91154,7 +87044,6 @@
         },
         "e": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91164,7 +87053,6 @@
         },
         "f": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91174,7 +87062,6 @@
         },
         "m11": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91184,7 +87071,6 @@
         },
         "m12": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91194,7 +87080,6 @@
         },
         "m13": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91204,7 +87089,6 @@
         },
         "m14": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91214,7 +87098,6 @@
         },
         "m21": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91224,7 +87107,6 @@
         },
         "m22": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91234,7 +87116,6 @@
         },
         "m23": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91244,7 +87125,6 @@
         },
         "m24": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91254,7 +87134,6 @@
         },
         "m31": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91264,7 +87143,6 @@
         },
         "m32": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91274,7 +87152,6 @@
         },
         "m33": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91284,7 +87161,6 @@
         },
         "m34": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91294,7 +87170,6 @@
         },
         "m41": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91304,7 +87179,6 @@
         },
         "m42": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91314,7 +87188,6 @@
         },
         "m43": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91324,7 +87197,6 @@
         },
         "m44": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91455,7 +87327,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91477,7 +87348,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91488,7 +87358,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91540,7 +87409,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91562,7 +87430,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91573,7 +87440,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91625,7 +87491,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91647,7 +87512,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91658,7 +87522,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91727,7 +87590,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91748,7 +87610,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91759,7 +87620,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91770,7 +87630,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91822,7 +87681,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91844,7 +87702,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91855,7 +87712,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91885,7 +87741,6 @@
         },
         "name": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91915,7 +87770,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91926,7 +87780,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91937,7 +87790,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -91967,7 +87819,6 @@
         },
         "x": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91977,7 +87828,6 @@
         },
         "y": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -91998,7 +87848,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92020,7 +87869,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92031,7 +87879,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92195,7 +88042,6 @@
         },
         "CONNECTING": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92250,7 +88096,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92261,7 +88106,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92291,7 +88135,6 @@
         },
         "deltaMode": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92301,7 +88144,6 @@
         },
         "deltaX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92311,7 +88153,6 @@
         },
         "deltaY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92321,7 +88162,6 @@
         },
         "deltaZ": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92331,7 +88171,6 @@
         },
         "wheelDelta": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92341,7 +88180,6 @@
         },
         "wheelDeltaX": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92351,7 +88189,6 @@
         },
         "wheelDeltaY": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92394,7 +88231,6 @@
         },
         "DOM_DELTA_PIXEL": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92438,7 +88274,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92449,7 +88284,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92490,7 +88324,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92512,7 +88345,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92523,7 +88355,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -92543,30 +88374,8 @@
           "isEnumerable": true,
           "isWritable": true
         },
-        "webkitURL": {
-          "confidence": 2,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
         "applicationCache": {
           "confidence": 2,
-          "type": "ApplicationCache",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "caches": {
-          "confidence": 2,
-          "type": "CacheStorage",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92576,7 +88385,6 @@
         },
         "clientInformation": {
           "confidence": 2,
-          "type": "Navigator",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92586,7 +88394,6 @@
         },
         "closed": {
           "confidence": 2,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92596,7 +88403,6 @@
         },
         "console": {
           "confidence": 2,
-          "type": "Console",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92606,7 +88412,6 @@
         },
         "crypto": {
           "confidence": 2,
-          "type": "Crypto",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92616,7 +88421,6 @@
         },
         "defaultStatus": {
           "confidence": 2,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92626,7 +88430,6 @@
         },
         "devicePixelRatio": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92636,7 +88439,6 @@
         },
         "document": {
           "confidence": 2,
-          "type": "HTMLDocument",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92646,7 +88448,6 @@
         },
         "event": {
           "confidence": 2,
-          "type": "PointerEvent",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92656,7 +88457,6 @@
         },
         "external": {
           "confidence": 2,
-          "type": "External",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92666,7 +88466,6 @@
         },
         "frameElement": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92676,7 +88475,6 @@
         },
         "frames": {
           "confidence": 2,
-          "type": "Window",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92686,7 +88484,6 @@
         },
         "history": {
           "confidence": 2,
-          "type": "History",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92696,7 +88493,6 @@
         },
         "indexedDB": {
           "confidence": 2,
-          "type": "IDBFactory",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92706,7 +88502,6 @@
         },
         "innerHeight": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92716,7 +88511,6 @@
         },
         "innerWidth": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92726,7 +88520,6 @@
         },
         "isSecureContext": {
           "confidence": 2,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92736,7 +88529,6 @@
         },
         "localStorage": {
           "confidence": 2,
-          "type": "Storage",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92746,7 +88538,6 @@
         },
         "location": {
           "confidence": 2,
-          "type": "Object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92756,7 +88547,6 @@
         },
         "locationbar": {
           "confidence": 2,
-          "type": "BarProp",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92766,7 +88556,6 @@
         },
         "menubar": {
           "confidence": 2,
-          "type": "BarProp",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92776,7 +88565,6 @@
         },
         "msCredentials": {
           "confidence": 2,
-          "type": "MSCredentials",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92786,7 +88574,6 @@
         },
         "navigator": {
           "confidence": 2,
-          "type": "Navigator",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92796,7 +88583,6 @@
         },
         "offscreenBuffering": {
           "confidence": 2,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92806,7 +88592,6 @@
         },
         "onabort": {
           "confidence": 1,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92816,7 +88601,6 @@
         },
         "onafterprint": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92826,7 +88610,6 @@
         },
         "onbeforeprint": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92836,7 +88619,6 @@
         },
         "onbeforeunload": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92846,7 +88628,6 @@
         },
         "onblur": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92856,7 +88637,6 @@
         },
         "oncanplay": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92866,7 +88646,6 @@
         },
         "oncanplaythrough": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92876,7 +88655,6 @@
         },
         "onchange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92886,7 +88664,6 @@
         },
         "onclick": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92896,7 +88673,6 @@
         },
         "oncompassneedscalibration": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92906,7 +88682,6 @@
         },
         "oncontextmenu": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92916,7 +88691,6 @@
         },
         "ondblclick": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92926,7 +88700,6 @@
         },
         "ondevicelight": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92936,7 +88709,6 @@
         },
         "ondevicemotion": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92946,7 +88718,6 @@
         },
         "ondeviceorientation": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92956,7 +88727,6 @@
         },
         "ondrag": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92966,7 +88736,6 @@
         },
         "ondragend": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92976,7 +88745,6 @@
         },
         "ondragenter": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92986,7 +88754,6 @@
         },
         "ondragleave": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -92996,7 +88763,6 @@
         },
         "ondragover": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93006,7 +88772,6 @@
         },
         "ondragstart": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93016,7 +88781,6 @@
         },
         "ondrop": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93026,7 +88790,6 @@
         },
         "ondurationchange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93036,7 +88799,6 @@
         },
         "onemptied": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93046,7 +88808,6 @@
         },
         "onended": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93056,7 +88817,6 @@
         },
         "onerror": {
           "confidence": 1,
-          "type": "function",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93066,7 +88826,15 @@
         },
         "onfocus": {
           "confidence": 2,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "ongotpointercapture": {
+          "confidence": 2,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93076,7 +88844,6 @@
         },
         "onhashchange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93086,7 +88853,6 @@
         },
         "oninput": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93096,7 +88862,6 @@
         },
         "oninvalid": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93106,7 +88871,6 @@
         },
         "onkeydown": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93116,7 +88880,6 @@
         },
         "onkeypress": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93126,7 +88889,6 @@
         },
         "onkeyup": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93136,7 +88898,6 @@
         },
         "onload": {
           "confidence": 1,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93146,7 +88907,6 @@
         },
         "onloadeddata": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93156,7 +88916,6 @@
         },
         "onloadedmetadata": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93166,7 +88925,15 @@
         },
         "onloadstart": {
           "confidence": 1,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onlostpointercapture": {
+          "confidence": 2,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93176,7 +88943,6 @@
         },
         "onmessage": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93186,7 +88952,6 @@
         },
         "onmousedown": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93196,7 +88961,6 @@
         },
         "onmouseenter": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93206,7 +88970,6 @@
         },
         "onmouseleave": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93216,7 +88979,6 @@
         },
         "onmousemove": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93226,7 +88988,6 @@
         },
         "onmouseout": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93236,7 +88997,6 @@
         },
         "onmouseover": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93246,7 +89006,6 @@
         },
         "onmouseup": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93256,7 +89015,6 @@
         },
         "onmousewheel": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93266,7 +89024,6 @@
         },
         "onmsgesturechange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93276,7 +89033,6 @@
         },
         "onmsgesturedoubletap": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93286,7 +89042,6 @@
         },
         "onmsgestureend": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93296,7 +89051,6 @@
         },
         "onmsgesturehold": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93306,7 +89060,6 @@
         },
         "onmsgesturestart": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93316,7 +89069,6 @@
         },
         "onmsgesturetap": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93326,7 +89078,78 @@
         },
         "onmsinertiastart": {
           "confidence": 2,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointercancel": {
+          "confidence": 2,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerdown": {
+          "confidence": 2,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerenter": {
+          "confidence": 2,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerleave": {
+          "confidence": 2,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointermove": {
+          "confidence": 2,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerout": {
+          "confidence": 2,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerover": {
+          "confidence": 2,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onmspointerup": {
+          "confidence": 2,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93336,7 +89159,6 @@
         },
         "onoffline": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93346,7 +89168,6 @@
         },
         "ononline": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93356,7 +89177,6 @@
         },
         "onpagehide": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93366,7 +89186,6 @@
         },
         "onpageshow": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93376,7 +89195,6 @@
         },
         "onpause": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93386,7 +89204,6 @@
         },
         "onplay": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93396,7 +89213,6 @@
         },
         "onplaying": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93406,7 +89222,6 @@
         },
         "onpointercancel": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93416,7 +89231,6 @@
         },
         "onpointerdown": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93426,7 +89240,6 @@
         },
         "onpointerenter": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93436,7 +89249,6 @@
         },
         "onpointerleave": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93446,7 +89258,6 @@
         },
         "onpointermove": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93456,7 +89267,6 @@
         },
         "onpointerout": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93466,7 +89276,6 @@
         },
         "onpointerover": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93476,7 +89285,6 @@
         },
         "onpointerup": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93486,7 +89294,6 @@
         },
         "onpopstate": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93496,7 +89303,6 @@
         },
         "onprogress": {
           "confidence": 1,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93506,7 +89312,6 @@
         },
         "onratechange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93516,7 +89321,6 @@
         },
         "onreadystatechange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93526,7 +89330,6 @@
         },
         "onreset": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93536,7 +89339,6 @@
         },
         "onresize": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93546,7 +89348,6 @@
         },
         "onscroll": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93556,7 +89357,6 @@
         },
         "onseeked": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93566,7 +89366,6 @@
         },
         "onseeking": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93576,7 +89375,15 @@
         },
         "onselect": {
           "confidence": 2,
-          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onselectstart": {
+          "confidence": 2,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93586,7 +89393,6 @@
         },
         "onstalled": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93596,7 +89402,6 @@
         },
         "onstorage": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93606,7 +89411,6 @@
         },
         "onsubmit": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93616,7 +89420,6 @@
         },
         "onsuspend": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93626,7 +89429,6 @@
         },
         "ontimeupdate": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93636,7 +89438,6 @@
         },
         "ontouchcancel": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93646,7 +89447,6 @@
         },
         "ontouchend": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93656,7 +89456,6 @@
         },
         "ontouchmove": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93666,7 +89465,6 @@
         },
         "ontouchstart": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93676,7 +89474,6 @@
         },
         "onunload": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93686,7 +89483,6 @@
         },
         "onvolumechange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93696,7 +89492,6 @@
         },
         "onvrdisplayactivate": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93706,7 +89501,6 @@
         },
         "onvrdisplayblur": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93716,7 +89510,6 @@
         },
         "onvrdisplayconnect": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93726,7 +89519,6 @@
         },
         "onvrdisplaydeactivate": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93736,7 +89528,6 @@
         },
         "onvrdisplaydisconnect": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93746,7 +89537,6 @@
         },
         "onvrdisplayfocus": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93756,7 +89546,6 @@
         },
         "onvrdisplaypointerrestricted": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93766,7 +89555,6 @@
         },
         "onvrdisplaypointerunrestricted": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93776,7 +89564,6 @@
         },
         "onvrdisplaypresentchange": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93786,7 +89573,6 @@
         },
         "onwaiting": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93796,7 +89582,6 @@
         },
         "onwheel": {
           "confidence": 2,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93806,7 +89591,6 @@
         },
         "opener": {
           "confidence": 2,
-          "type": "undefined",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93816,7 +89600,6 @@
         },
         "outerHeight": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93826,7 +89609,6 @@
         },
         "outerWidth": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93836,7 +89618,6 @@
         },
         "pageXOffset": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93846,7 +89627,6 @@
         },
         "pageYOffset": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93856,7 +89636,6 @@
         },
         "parent": {
           "confidence": 2,
-          "type": "Window",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93866,7 +89645,6 @@
         },
         "performance": {
           "confidence": 2,
-          "type": "Performance",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93876,7 +89654,6 @@
         },
         "personalbar": {
           "confidence": 2,
-          "type": "BarProp",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93886,7 +89663,6 @@
         },
         "screen": {
           "confidence": 2,
-          "type": "Screen",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93896,7 +89672,6 @@
         },
         "screenLeft": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93906,7 +89681,6 @@
         },
         "screenTop": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93916,7 +89690,6 @@
         },
         "screenX": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93926,7 +89699,6 @@
         },
         "screenY": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93936,7 +89708,6 @@
         },
         "scrollX": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93946,7 +89717,6 @@
         },
         "scrollY": {
           "confidence": 2,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93956,7 +89726,6 @@
         },
         "scrollbars": {
           "confidence": 2,
-          "type": "BarProp",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93966,7 +89735,6 @@
         },
         "self": {
           "confidence": 2,
-          "type": "Window",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93976,7 +89744,6 @@
         },
         "sessionStorage": {
           "confidence": 2,
-          "type": "Storage",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93986,7 +89753,6 @@
         },
         "speechSynthesis": {
           "confidence": 2,
-          "type": "SpeechSynthesis",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -93996,7 +89762,6 @@
         },
         "status": {
           "confidence": 2,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -94006,7 +89771,6 @@
         },
         "statusbar": {
           "confidence": 2,
-          "type": "BarProp",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -94016,7 +89780,6 @@
         },
         "styleMedia": {
           "confidence": 2,
-          "type": "StyleMedia",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -94026,7 +89789,6 @@
         },
         "toolbar": {
           "confidence": 2,
-          "type": "BarProp",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -94036,7 +89798,6 @@
         },
         "top": {
           "confidence": 2,
-          "type": "Window",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -94046,7 +89807,6 @@
         },
         "window": {
           "confidence": 2,
-          "type": "Window",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -94588,7 +90348,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94599,7 +90358,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94629,7 +90387,6 @@
         },
         "locked": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -94672,7 +90429,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94694,7 +90450,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94705,7 +90460,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94757,7 +90511,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94779,7 +90532,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94790,7 +90542,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94902,7 +90653,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94924,7 +90674,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94935,7 +90684,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94976,7 +90724,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -94998,7 +90745,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95009,7 +90755,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95039,7 +90784,6 @@
         },
         "msCaching": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95049,7 +90793,6 @@
         },
         "onabort": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95059,7 +90802,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95069,7 +90811,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95079,7 +90820,6 @@
         },
         "onloadend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95089,7 +90829,6 @@
         },
         "onloadstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95099,7 +90838,6 @@
         },
         "onprogress": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95109,7 +90847,6 @@
         },
         "onreadystatechange": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95119,7 +90856,6 @@
         },
         "ontimeout": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95129,7 +90865,6 @@
         },
         "readyState": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95139,7 +90874,6 @@
         },
         "response": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95149,7 +90883,6 @@
         },
         "responseText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95159,7 +90892,6 @@
         },
         "responseType": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95169,7 +90901,6 @@
         },
         "responseURL": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95179,7 +90910,6 @@
         },
         "responseXML": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95189,7 +90919,6 @@
         },
         "status": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95199,7 +90928,6 @@
         },
         "statusText": {
           "confidence": 4,
-          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95209,7 +90937,6 @@
         },
         "timeout": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95219,7 +90946,6 @@
         },
         "upload": {
           "confidence": 4,
-          "type": "XMLHttpRequestUpload",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95229,7 +90955,6 @@
         },
         "withCredentials": {
           "confidence": 4,
-          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95371,7 +91096,6 @@
         },
         "UNSENT": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95393,7 +91117,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95415,7 +91138,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95426,7 +91148,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95456,7 +91177,6 @@
         },
         "onabort": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95466,7 +91186,6 @@
         },
         "onerror": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95476,7 +91195,6 @@
         },
         "onload": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95486,7 +91204,6 @@
         },
         "onloadend": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95496,7 +91213,6 @@
         },
         "onloadstart": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95506,7 +91222,6 @@
         },
         "onprogress": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95516,7 +91231,6 @@
         },
         "ontimeout": {
           "confidence": 4,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -95537,7 +91251,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95559,7 +91272,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95570,7 +91282,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95622,7 +91333,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95644,7 +91354,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95655,7 +91364,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95729,7 +91437,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95751,7 +91458,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95762,7 +91468,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95814,7 +91519,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95836,7 +91540,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95847,7 +91550,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95899,7 +91601,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95921,7 +91622,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -95932,7 +91632,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96047,7 +91746,6 @@
         },
         "ANY_TYPE": {
           "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96168,7 +91866,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96190,7 +91887,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96201,7 +91897,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96330,7 +92025,6 @@
         },
         "length": {
           "confidence": 3,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96352,7 +92046,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96363,7 +92056,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96426,7 +92118,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96437,7 +92128,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96500,7 +92190,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96511,7 +92200,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96574,7 +92262,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96585,7 +92272,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96648,7 +92334,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96659,7 +92344,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96722,7 +92406,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96733,7 +92416,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96948,7 +92630,6 @@
         },
         "caller": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -96959,7 +92640,6 @@
         },
         "arguments": {
           "confidence": 3,
-          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
