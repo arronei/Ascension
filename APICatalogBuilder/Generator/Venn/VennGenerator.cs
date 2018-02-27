@@ -1,6 +1,6 @@
-﻿using System.Linq;
+﻿using Generator.Core;
+using System.Linq;
 using System.Text;
-using Generator.Core;
 using TypeSystem.Data.ApiCatalog;
 
 namespace Generator.Venn
@@ -12,13 +12,28 @@ namespace Generator.Venn
             return GenerateVenn(dataObject, null);
         }
 
-        public void WriteAllSpectifications(CatalogObject dataObject, string path)
+        public void WriteAllSpecifications(CatalogObject dataObject, string path, string templateFile)
         {
+            path = FixPath(path);
             foreach (var specShortName in dataObject.Specifications.Keys)
             {
                 var specVenn = GenerateVenn(dataObject, specShortName);
-                Write($"{path}{specShortName}.json", specVenn);
+                Write($"{path}data\\{specShortName}.json", specVenn);
+
+                var vennPage = GenerateVenPageFromTemplate(specShortName, templateFile);
+                Write($"{path}pages\\{specShortName}.htm", vennPage);
             }
+        }
+
+        private static string GenerateVenPageFromTemplate(string specShortName, string templateFile)
+        {
+
+            return "";
+        }
+
+        private static string FixPath(string path)
+        {
+            return path[path.Length-1] == '\\' ? path : path + "\\";
         }
 
         private static string GenerateVenn(CatalogObject dataObject, string specName)

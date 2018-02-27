@@ -33,7 +33,7 @@ namespace TypeSystem.Data.Browser
 
         public string GetFullName()
         {
-            return $"{Name}" + (!Name.Equals("Specifications")? $"{Version}" : string.Empty) + (string.IsNullOrWhiteSpace(Release) || !Name.Contains("Edge") ? string.Empty : $" ({Release})");
+            return $"{Name}" + (!Name.Equals("Specifications")? $" {Version}" : string.Empty) + (string.IsNullOrWhiteSpace(Release) || !Name.Contains("Edge") ? string.Empty : $" ({Release})");
         }
 
         public string GetFilePath()

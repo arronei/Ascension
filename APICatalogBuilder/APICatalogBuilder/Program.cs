@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Generator.SpecificationList;
+using Generator.Venn;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
-using Generator.SpecificationList;
-using Generator.Venn;
 using TypeSystem.Data.ApiCatalog;
 using TypeSystem.Data.Browser;
 using TypeSystem.Data.Core;
@@ -26,6 +26,8 @@ namespace MS.Internal
 
         private static readonly string SpecRefExtra = ConfigurationManager.AppSettings["specRefExtra"] ?? @".\DataFiles\SpecRefMissingList.json";
 
+        private static readonly string VennTemplateFile = ConfigurationManager.AppSettings["vennTemplateFile"] ?? @".\DataFiles\vennTemplate.htm";
+
         private static BrowsersCollection _fullBrowserReleaseList;
 
         private static string[] _fileList;
@@ -46,7 +48,7 @@ namespace MS.Internal
             specListObject.Write(@".\output\specifications.json", specListToWrite);
 
             var venn = new VennGenerator();
-            venn.WriteAllSpectifications(CatalogDataObject, @".\output\vennData\");
+            venn.WriteAllSpecifications(CatalogDataObject, @".\output\venn\", VennTemplateFile);
             //var t = venn.GenerateSpecificDataObject(CatalogDataObject);
             //venn.Write(@".\output\vennData\vennData.json", t);
 
