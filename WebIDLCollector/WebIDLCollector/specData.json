@@ -1009,10 +1009,10 @@
     "name": "eventsource",
     "url": "http://www.w3.org/TR/eventsource/"
   },
-  {
-    "name": "shadow-dom",
-    "url": "https://www.w3.org/TR/shadow-dom/"
-  },
+  //{
+  //  "name": "shadow-dom",
+  //  "url": "https://www.w3.org/TR/shadow-dom/"
+  //},
   {
     "name": "shadow-dom",
     "url": "http://w3c.github.io/webcomponents/spec/shadow/"

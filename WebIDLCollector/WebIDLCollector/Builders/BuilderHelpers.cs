@@ -210,11 +210,11 @@ namespace WebIDLCollector.Builders
 
             if (mem.Any(a=>a.Unscopable))
             {
-                if (!mem.Exists(a => a.Name.Equals("@@unscopable", StringComparison.OrdinalIgnoreCase)))
+                if (!mem.Exists(a => a.Name.Equals("@@unscopables", StringComparison.OrdinalIgnoreCase)))
                 {
                     var unscopableSymbol = new TypeMirrorProperty
                     {
-                        Name = "@@unscopable",
+                        Name = "@@unscopables",
                         Type = "DOMString",
                         Confidence = 4,
                         HasGet = true,
@@ -225,6 +225,26 @@ namespace WebIDLCollector.Builders
                     };
 
                     if (!tmType.Properties.Contains(unscopableSymbol)) { tmType.Properties.Add(unscopableSymbol); }
+                }
+            }
+
+            if (mem.Any(a => a.Name == "length") && mem.Any(a => a.Getter))
+            {
+                if (!mem.Exists(a => a.Name.Equals("@@iterator", StringComparison.OrdinalIgnoreCase)))
+                {
+                    var iteratorSymbol = new TypeMirrorProperty
+                    {
+                        Name = "@@iterator",
+                        Type = "DOMString",
+                        Confidence = 4,
+                        HasGet = true,
+                        IsConfigurable = false,
+                        IsEnumerable = false,
+                        IsWritable = false,
+                        SpecNames = tmType.SpecNames
+                    };
+
+                    if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }
                 }
             }
 
@@ -681,8 +701,6 @@ namespace WebIDLCollector.Builders
 
         public static bool AddIterable(Member tmProperty, TypeMirrorType tmType, List<Member> mem)
         {
-            if (mem.All(a => a.Name == "length") && mem.Any(a => a.Getter)) { tmProperty.Iterable = true; }
-
             if (!tmProperty.Iterable) { return false; }
 
             if (!mem.Exists(a => a.Name.Equals("entries", StringComparison.OrdinalIgnoreCase)))
