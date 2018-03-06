@@ -33,12 +33,14 @@ var MirrorJS;
             if (result) {
                 return MirrorJS.Utils.assertType(result, typeName);
             }
+            // Next, try document.createEvent.
             try {
                 result = document.createEvent(typeName);
                 return MirrorJS.Utils.assertType(result, typeName);
             }
             catch (ignored) {
             }
+            // Finally, try invoking the constructor.
             try {
                 result = new window[typeName]();
                 return MirrorJS.Utils.assertType(result, typeName);
@@ -84,204 +86,79 @@ var MirrorJS;
         /** Maps type names to an instance. */
         Instances.typesToFactories = {
             // Web Audio
-            "AudioBuffer": function () {
-                return Instances.getAudioContext().createBuffer(1, 512, 44000);
-            },
-            "AudioBufferSourceNode": function () {
-                return Instances.getAudioContext().createBufferSource();
-            },
-            "AudioDestinationNode": function () {
-                return Instances.getAudioContext().destination;
-            },
-            "AudioListener": function () {
-                return Instances.getAudioContext().listener;
-            },
-            "AudioParam": function () {
-                return Instances.getAudioContext().createGain().gain;
-            },
-            "MediaStreamAudioDestinationNode": function () {
-                return Instances.getAudioContext().createMediaStreamDestination();
-            },
-            "AudioWorkerNode": function () {
-                return Instances.getAudioContext().createAudioWorker("script.js");
-            },
-            "ScriptProcessorNode": function () {
-                return Instances.getAudioContext().createScriptProcessor();
-            },
-            "AnalyserNode": function () {
-                return Instances.getAudioContext().createAnalyser();
-            },
-            "GainNode": function () {
-                return Instances.getAudioContext().createGain();
-            },
-            "DelayNode": function () {
-                return Instances.getAudioContext().createDelay();
-            },
-            "BiquadFilterNode": function () {
-                return Instances.getAudioContext().createBiquadFilter();
-            },
-            "WaveShaperNode": function () {
-                return Instances.getAudioContext().createWaveShaper();
-            },
-            "PannerNode": function () {
-                return Instances.getAudioContext().createPanner();
-            },
-            "ConvolverNode": function () {
-                return Instances.getAudioContext().createConvolver();
-            },
-            "ChannelSplitterNode": function () {
-                return Instances.getAudioContext().createChannelSplitter(2);
-            },
-            "ChannelMergerNode": function () {
-                return Instances.getAudioContext().createChannelMerger(2);
-            },
-            "DynamicsCompressorNode": function () {
-                return Instances.getAudioContext().createDynamicsCompressor();
-            },
-            "OscillatorNode": function () {
-                return Instances.getAudioContext().createOscillator();
-            },
-            "PeriodicWave": function () {
-                return Instances.getAudioContext().createPeriodicWave(new Float32Array(1), new Float32Array(1));
-            },
+            "AudioBuffer": function () { return Instances.getAudioContext().createBuffer(1, 512, 44000); },
+            "AudioBufferSourceNode": function () { return Instances.getAudioContext().createBufferSource(); },
+            "AudioDestinationNode": function () { return Instances.getAudioContext().destination; },
+            "AudioListener": function () { return Instances.getAudioContext().listener; },
+            "AudioParam": function () { return Instances.getAudioContext().createGain().gain; },
+            "MediaStreamAudioDestinationNode": function () { return Instances.getAudioContext().createMediaStreamDestination(); },
+            "AudioWorkerNode": function () { return Instances.getAudioContext().createAudioWorker("script.js"); },
+            "ScriptProcessorNode": function () { return Instances.getAudioContext().createScriptProcessor(); },
+            "AnalyserNode": function () { return Instances.getAudioContext().createAnalyser(); },
+            "GainNode": function () { return Instances.getAudioContext().createGain(); },
+            "DelayNode": function () { return Instances.getAudioContext().createDelay(); },
+            "BiquadFilterNode": function () { return Instances.getAudioContext().createBiquadFilter(); },
+            "WaveShaperNode": function () { return Instances.getAudioContext().createWaveShaper(); },
+            "PannerNode": function () { return Instances.getAudioContext().createPanner(); },
+            "ConvolverNode": function () { return Instances.getAudioContext().createConvolver(); },
+            "ChannelSplitterNode": function () { return Instances.getAudioContext().createChannelSplitter(2); },
+            "ChannelMergerNode": function () { return Instances.getAudioContext().createChannelMerger(2); },
+            "DynamicsCompressorNode": function () { return Instances.getAudioContext().createDynamicsCompressor(); },
+            "OscillatorNode": function () { return Instances.getAudioContext().createOscillator(); },
+            "PeriodicWave": function () { return Instances.getAudioContext().createPeriodicWave(new Float32Array(1), new Float32Array(1)); },
             // DOM
-            "Attr": function () {
-                return document.createAttribute("unknown-attribute");
-            },
-            "CanvasRenderingContext2D": function () {
-                return Instances.getCanvas().getContext("2d");
-            },
+            "Attr": function () { return document.createAttribute("unknown-attribute"); },
+            "CanvasRenderingContext2D": function () { return Instances.getCanvas().getContext("2d"); },
             "CDATASection": function () {
                 var dt = document.implementation.createDocumentType("unknown", "unknown", "unknown");
                 var doc = document.implementation.createDocument("unknownQualifier", "unknownName", dt);
                 return doc.createCDATASection("");
             },
-            "ClientRect": function () {
-                return document.body.getClientRects()[0];
-            },
-            "ClientRectList": function () {
-                return document.body.getClientRects();
-            },
-            "Console": function () {
-                return window.console;
-            },
-            "Comment": function () {
-                return document.createComment("unknown comment");
-            },
-            "CSSStyleDeclaration": function () {
-                return window.getComputedStyle(document.body);
-            },
-            "DocumentType": function () {
-                return document.implementation.createDocumentType("unknown", "unknown", "unknown");
-            },
-            "DOMException": Instances._catch(function () {
-                return document.body.removeChild(document.body);
-            }),
-            "DOMImplementation": function () {
-                return document.implementation;
-            },
-            "Element": function () {
-                return document.createElementNS("someUnknownNamespace", "someUnknownElement");
-            },
-            "HTMLDocument": function () {
-                return document;
-            },
-            "HTMLUnknownElement": function () {
-                return document.createElementNS("http://www.w3.org/1999/xhtml", "someUnknownElement");
-            },
-            "Location": function () {
-                return window.location;
-            },
+            "ClientRect": function () { return document.body.getClientRects()[0]; },
+            "ClientRectList": function () { return document.body.getClientRects(); },
+            "Comment": function () { return document.createComment("unknown comment"); },
+            "CSSStyleDeclaration": function () { return window.getComputedStyle(document.body); },
+            "DocumentType": function () { return document.implementation.createDocumentType("unknown", "unknown", "unknown"); },
+            "DOMException": Instances._catch(function () { return document.body.removeChild(document.body); }),
+            "DOMImplementation": function () { return document.implementation; },
+            "Element": function () { return document.createElementNS("someUnknownNamespace", "someUnknownElement"); },
+            "HTMLDocument": function () { return document; },
+            "HTMLUnknownElement": function () { return document.createElementNS("http://www.w3.org/1999/xhtml", "someUnknownElement"); },
+            "Location": function () { return window.location; },
             "XMLDocument": function () {
                 var dt = document.implementation.createDocumentType("unknown", "unknown", "unknown");
                 return document.implementation.createDocument("unknownQualifier", "unknownName", dt);
             },
-            "Window": function () {
-                return window;
-            },
-            "DOMSettableTokenList": function () {
-                return Instances.getInstance("HTMLLinkElement").sizes;
-            },
-            "DOMStringList": function () {
-                return Instances.getInstance("Location").ancestorOrigins;
-            },
-            "DOMStringMap": function () {
-                return Instances.getInstance("Element").dataset;
-            },
-            "DOMTokenList": function () {
-                return Instances.getInstance("Element").classList;
-            },
-            "HTMLCollection": function () {
-                return Instances.getInstance("HTMLDocument").children;
-            },
-            "HTMLFormControlsCollection": function () {
-                return Instances.getInstance("HTMLFormElement").elements;
-            },
-            "HTMLOptionsCollection": function () {
-                return Instances.getInstance("HTMLSelectElement").options;
-            },
-            "History": function () {
-                return Instances.getInstance("Window").history;
-            },
-            "IDBFactory": function () {
-                return Instances.getInstance("Window").indexedDB;
-            },
-            "MessagePort": function () {
-                return Instances.getInstance("MessageChannel").port1;
-            },
-            "NamedNodeMap": function () {
-                return Instances.getInstance("Element").attributes;
-            },
-            "Navigator": function () {
-                return Instances.getInstance("Window").navigator;
-            },
-            "NodeList": function () {
-                return Instances.getInstance("HTMLDocument").childNodes;
-            },
-            "Storage": function () {
-                return Instances.getInstance("Window").localStorage;
-            },
-            "StyleSheetList": function () {
-                return Instances.getInstance("HTMLDocument").styleSheets;
-            },
-            "TextTrack": function () {
-                return Instances.getInstance("HTMLTrackElement").track;
-            },
-            "TextTrackList": function () {
-                return Instances.getInstance("HTMLVideoElement").textTracks;
-            },
-            "TimeRanges": function () {
-                return Instances.getInstance("HTMLVideoElement").played;
-            },
-            "ValidityState": function () {
-                return Instances.getInstance("HTMLInputElement").validity;
-            },
-            "XMLHttpRequestUpload": function () {
-                return Instances.getInstance("XMLHttpRequest").upload;
-            },
-            "CSSStyleSheet": function () {
-                return Instances.getInstance("StyleSheetList")[0];
-            },
-            "MimeTypeArray": function () {
-                return Instances.getInstance("Navigator").mimeTypes;
-            },
-            "PluginArray": function () {
-                return Instances.getInstance("Navigator").plugins;
-            },
-            "ServiceWorkerContainer": function () {
-                return Instances.getInstance("Navigator").serviceWorker;
-            },
+            "Window": function () { return window; },
+            "DOMSettableTokenList": function () { return Instances.getInstance("HTMLLinkElement").sizes; },
+            "DOMStringList": function () { return Instances.getInstance("Location").ancestorOrigins; },
+            "DOMStringMap": function () { return Instances.getInstance("Element").dataset; },
+            "DOMTokenList": function () { return Instances.getInstance("Element").classList; },
+            "HTMLCollection": function () { return Instances.getInstance("HTMLDocument").children; },
+            "HTMLFormControlsCollection": function () { return Instances.getInstance("HTMLFormElement").elements; },
+            "HTMLOptionsCollection": function () { return Instances.getInstance("HTMLSelectElement").options; },
+            "History": function () { return Instances.getInstance("Window").history; },
+            "IDBFactory": function () { return Instances.getInstance("Window").indexedDB; },
+            "MessagePort": function () { return Instances.getInstance("MessageChannel").port1; },
+            "NamedNodeMap": function () { return Instances.getInstance("Element").attributes; },
+            "Navigator": function () { return Instances.getInstance("Window").navigator; },
+            "NodeList": function () { return Instances.getInstance("HTMLDocument").childNodes; },
+            "Storage": function () { return Instances.getInstance("Window").localStorage; },
+            "StyleSheetList": function () { return Instances.getInstance("HTMLDocument").styleSheets; },
+            "TextTrack": function () { return Instances.getInstance("HTMLTrackElement").track; },
+            "TextTrackList": function () { return Instances.getInstance("HTMLVideoElement").textTracks; },
+            "TimeRanges": function () { return Instances.getInstance("HTMLVideoElement").played; },
+            "ValidityState": function () { return Instances.getInstance("HTMLInputElement").validity; },
+            "XMLHttpRequestUpload": function () { return Instances.getInstance("XMLHttpRequest").upload; },
+            "CSSStyleSheet": function () { return Instances.getInstance("StyleSheetList")[0]; },
+            "MimeTypeArray": function () { return Instances.getInstance("Navigator").mimeTypes; },
+            "PluginArray": function () { return Instances.getInstance("Navigator").plugins; },
+            "ServiceWorkerContainer": function () { return Instances.getInstance("Navigator").serviceWorker; },
             // Unsorted:
-            "ApplicationCache": function () {
-                return window.applicationCache;
-            },
-            "BarProp": function () {
-                return window["locationbar"];
-            },
+            "ApplicationCache": function () { return window.applicationCache; },
+            "BarProp": function () { return window["locationbar"]; },
             // Performance
-            "Performance": function () {
-                return window.performance;
-            },
+            "Performance": function () { return window.performance; },
             "PerformanceMark": function () {
                 window.performance.mark("__dumptypes_mark__");
                 return window.performance.getEntriesByName("__dumptypes_mark__")[0];
@@ -292,9 +169,7 @@ var MirrorJS;
                 window.performance.measure("__dumptypes_measure__", "__dumptypes_start__", "__dumptypes_end__");
                 return window.performance.getEntriesByName("__dumptypes_measure__")[0];
             },
-            "PerformanceNavigation": function () {
-                return performance.navigation;
-            },
+            "PerformanceNavigation": function () { return performance.navigation; },
             "PerformanceNavigationTiming": function () {
                 try {
                     return performance.getEntriesByType("navigation")[0];
@@ -313,90 +188,38 @@ var MirrorJS;
                     return undefined;
                 }
             },
-            "PerformanceTiming": function () {
-                return performance.timing;
-            },
+            "PerformanceTiming": function () { return performance.timing; },
             // SVG
-            "SVGElement": function () {
-                return document.createElementNS("http://www.w3.org/2000/svg", "someUnknownSVGElement");
-            },
+            "SVGElement": function () { return document.createElementNS("http://www.w3.org/2000/svg", "someUnknownSVGElement"); },
             "SVGException": Instances._catch(function () {
                 var m = document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGMatrix();
                 m.d = 0;
                 m.inverse();
             }),
-            "SVGMatrix": function () {
-                return document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGMatrix();
-            },
-            "SVGAnimatedAngle": function () {
-                return Instances.getInstance("SVGMarkerElement").orientAngle;
-            },
-            "SVGAnimatedBoolean": function () {
-                return Instances.getInstance("SVGFEConvolveMatrixElement").preserveAlpha;
-            },
-            "SVGAnimatedEnumeration": function () {
-                return Instances.getInstance("SVGTextElement").lengthAdjust;
-            },
-            "SVGAnimatedInteger": function () {
-                return Instances.getInstance("SVGFilterElement").filterResX;
-            },
-            "SVGAnimatedLength": function () {
-                return Instances.getInstance("SVGFEImageElement").x;
-            },
-            "SVGAnimatedLengthList": function () {
-                return Instances.getInstance("SVGTextElement").x;
-            },
-            "SVGAnimatedNumber": function () {
-                return Instances.getInstance("SVGStopElement").offset;
-            },
-            "SVGAnimatedNumberList": function () {
-                return Instances.getInstance("SVGTextElement").rotate;
-            },
-            "SVGAnimatedPreserveAspectRatio": function () {
-                return Instances.getInstance("SVGFEImageElement").preserveAspectRatio;
-            },
-            "SVGAnimatedRect": function () {
-                return Instances.getInstance("SVGSVGElement").viewBox;
-            },
-            "SVGAnimatedString": function () {
-                return Instances.getInstance("SVGFEImageElement").href;
-            },
-            "SVGAnimatedTransformList": function () {
-                return Instances.getInstance("SVGImageElement").transform;
-            },
-            "SVGPathSegList": function () {
-                return Instances.getInstance("SVGPathElement").pathSegList;
-            },
-            "SVGPoint": function () {
-                return Instances.getInstance("SVGSVGElement").currentTranslate;
-            },
-            "SVGPointList": function () {
-                return Instances.getInstance("SVGPolygonElement").points;
-            },
-            "SVGStringList": function () {
-                return Instances.getInstance("SVGTextElement").systemLanguage;
-            },
-            "SVGViewSpec": function () {
-                return Instances.getInstance("SVGSVGElement").currentView;
-            },
-            "SVGAngle": function () {
-                return Instances.getInstance("SVGAnimatedAngle").baseVal;
-            },
-            "SVGLength": function () {
-                return Instances.getInstance("SVGAnimatedLength").baseVal;
-            },
-            "SVGLengthList": function () {
-                return Instances.getInstance("SVGAnimatedLengthList").baseVal;
-            },
-            "SVGNumberList": function () {
-                return Instances.getInstance("SVGAnimatedNumberList").baseVal;
-            },
-            "SVGPreserveAspectRatio": function () {
-                return Instances.getInstance("SVGAnimatedPreserveAspectRatio").baseVal;
-            },
-            "SVGTransformList": function () {
-                return Instances.getInstance("SVGAnimatedTransformList").baseVal;
-            },
+            "SVGMatrix": function () { return document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGMatrix(); },
+            "SVGAnimatedAngle": function () { return Instances.getInstance("SVGMarkerElement").orientAngle; },
+            "SVGAnimatedBoolean": function () { return Instances.getInstance("SVGFEConvolveMatrixElement").preserveAlpha; },
+            "SVGAnimatedEnumeration": function () { return Instances.getInstance("SVGTextElement").lengthAdjust; },
+            "SVGAnimatedInteger": function () { return Instances.getInstance("SVGFilterElement").filterResX; },
+            "SVGAnimatedLength": function () { return Instances.getInstance("SVGFEImageElement").x; },
+            "SVGAnimatedLengthList": function () { return Instances.getInstance("SVGTextElement").x; },
+            "SVGAnimatedNumber": function () { return Instances.getInstance("SVGStopElement").offset; },
+            "SVGAnimatedNumberList": function () { return Instances.getInstance("SVGTextElement").rotate; },
+            "SVGAnimatedPreserveAspectRatio": function () { return Instances.getInstance("SVGFEImageElement").preserveAspectRatio; },
+            "SVGAnimatedRect": function () { return Instances.getInstance("SVGSVGElement").viewBox; },
+            "SVGAnimatedString": function () { return Instances.getInstance("SVGFEImageElement").href; },
+            "SVGAnimatedTransformList": function () { return Instances.getInstance("SVGImageElement").transform; },
+            "SVGPathSegList": function () { return Instances.getInstance("SVGPathElement").pathSegList; },
+            "SVGPoint": function () { return Instances.getInstance("SVGSVGElement").currentTranslate; },
+            "SVGPointList": function () { return Instances.getInstance("SVGPolygonElement").points; },
+            "SVGStringList": function () { return Instances.getInstance("SVGTextElement").systemLanguage; },
+            "SVGViewSpec": function () { return Instances.getInstance("SVGSVGElement").currentView; },
+            "SVGAngle": function () { return Instances.getInstance("SVGAnimatedAngle").baseVal; },
+            "SVGLength": function () { return Instances.getInstance("SVGAnimatedLength").baseVal; },
+            "SVGLengthList": function () { return Instances.getInstance("SVGAnimatedLengthList").baseVal; },
+            "SVGNumberList": function () { return Instances.getInstance("SVGAnimatedNumberList").baseVal; },
+            "SVGPreserveAspectRatio": function () { return Instances.getInstance("SVGAnimatedPreserveAspectRatio").baseVal; },
+            "SVGTransformList": function () { return Instances.getInstance("SVGAnimatedTransformList").baseVal; },
         };
         /** Maps type names to information about the HTML or SVG tag they represent. */
         Instances.typesToTags = {
@@ -847,7 +670,7 @@ var MirrorJS;
             ],
         };
         return Instances;
-    })();
+    }());
     MirrorJS.Instances = Instances;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=Instances.js.map

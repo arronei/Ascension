@@ -44,14 +44,17 @@ var MirrorJS;
                 var candidates = Object.keys(derivedModel.properties).sort();
                 // Skip any properties for which we already definitively know owner, either because they
                 // were discovered via the prototype, or because we were able to compare
-                candidates = candidates.filter(function (propertyName, index, array) {
+                candidates = candidates
+                    .filter(function (propertyName, index, array) {
                     var propertyModel = derivedModel.properties[propertyName];
                     console.assert(!propertyModel.isPlausiblyInherited);
                     switch (propertyModel.confidence) {
-                        case 1 /* InstanceWithoutBase */:
+                        case MirrorJS.Confidence.InstanceWithoutBase:
                             return true;
                         default:
-                            console.assert(propertyModel.confidence === 4 /* Prototype */ || propertyModel.confidence === 3 /* InstanceWithBase */ || propertyModel.confidence === 2 /* InstanceWithSibling */);
+                            console.assert(propertyModel.confidence === MirrorJS.Confidence.Prototype
+                                || propertyModel.confidence === MirrorJS.Confidence.InstanceWithBase
+                                || propertyModel.confidence === MirrorJS.Confidence.InstanceWithSibling);
                             return false;
                     }
                 });
@@ -67,7 +70,8 @@ var MirrorJS;
                 // For each subsequent derived types, we filter our initial guess.
                 var newCommon = {};
                 var bothSources = (1 << 1) && (1 << 2);
-                new MirrorJS.MergeIterator([Object.keys(common).sort(), candidates]).forEach(function (candidateName, sources) {
+                new MirrorJS.MergeIterator([Object.keys(common).sort(), candidates])
+                    .forEach(function (candidateName, sources) {
                     if (sources === bothSources) {
                         newCommon[candidateName] = common[candidateName];
                     }
@@ -78,7 +82,7 @@ var MirrorJS;
             return common || {};
         };
         return ExportedReflection;
-    })();
+    }());
     MirrorJS.ExportedReflection = ExportedReflection;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=ExportedTypes.js.map

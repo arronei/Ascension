@@ -17,7 +17,8 @@ var MirrorJS;
             if (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope) {
                 if (typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope) {
                     self.port.postMessage({ type: "log", text: text });
-                } else {
+                }
+                else {
                     self.postMessage({ type: "log", text: text });
                 }
             }
@@ -36,7 +37,8 @@ var MirrorJS;
             if (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope) {
                 if (typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope) {
                     self.port.postMessage({ type: "log", text: text });
-                } else {
+                }
+                else {
                     self.postMessage({ type: "error", text: text, "errorType": errorType });
                 }
             }
@@ -65,22 +67,23 @@ var MirrorJS;
                 }
                 done(undefined);
             };
-
             if (typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope) {
-                fetch(url + cacheWorkaround, {'method': method, 'body': (data || null)}).then(function(response) {
+                fetch(url + cacheWorkaround, { 'method': method, 'body': (data || null) }).then(function (response) {
                     if (response.status === 200) {
                         response.text().then(done);
                     }
                     else {
-                        response.text().then(function(text) {
+                        response.text().then(function (text) {
                             errorHandler(response.statusText, text, done);
                         });
-                    }}).catch(function(response) {
-                        response.text().then(function(text) {
-                            errorHandler(response.statusText, text, done);
-                        });
+                    }
+                }).catch(function (response) {
+                    response.text().then(function (text) {
+                        errorHandler(response.statusText, text, done);
                     });
-            } else {
+                });
+            }
+            else {
                 var xhr = new XMLHttpRequest();
                 xhr.open(method, url + cacheWorkaround, true);
                 xhr.onload = function (e) {
@@ -173,6 +176,7 @@ var MirrorJS;
                 return name;
             }
             var stringifiedFn;
+            // Otherwise, stringify the function and scrape its name using a regex.
             try {
                 stringifiedFn = Function.prototype.toString.apply(fn);
             }
@@ -194,16 +198,12 @@ var MirrorJS;
         /** Returns a function that memoizes the result of the given no-argument function 'fn' */
         Utils.memoize0 = function (map, fn) {
             return function () {
-                return Utils.memoizeBody(map, Utils.noArgSentinel, function (unused) {
-                    return fn();
-                });
+                return Utils.memoizeBody(map, Utils.noArgSentinel, function (unused) { return fn(); });
             };
         };
         /** Returns a function that memoizes the result of the given single argument function 'fn' */
         Utils.memoize1 = function (map, fn) {
-            return function (arg) {
-                return Utils.memoizeBody(map, arg, fn);
-            };
+            return function (arg) { return Utils.memoizeBody(map, arg, fn); };
         };
         /** Common lambda implementation for memoize0 and memoize1. */
         Utils.memoizeBody = function (map, arg, fn) {
@@ -253,7 +253,9 @@ var MirrorJS;
             return matches.join(' ');
         };
         Utils.getExportFilename = function (context) {
-            if (!context) { context = ""; }
+            if (!context) {
+                context = "";
+            }
             return Utils.detectBrowser().split(" ").join("").concat(context + ".js");
         };
         Utils.getParameterByName = function (name) {
@@ -287,7 +289,7 @@ var MirrorJS;
         /** A sentinel value used to cache the value "undefined" when interning. */
         Utils.undefinedSentinel = {};
         return Utils;
-    })();
+    }());
     MirrorJS.Utils = Utils;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=Utils.js.map

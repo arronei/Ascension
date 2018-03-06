@@ -41,10 +41,11 @@ var MirrorJS;
                                 }
                                 else if (symbolName === "@@unscopables") {
                                     var entries = [];
-                                    for (var key of Object.keys(descriptor.value)) {
-                                        entries.push(`"${key}": ${descriptor.value[key]}`);
+                                    for (var _i = 0, _a = Object.keys(descriptor.value); _i < _a.length; _i++) {
+                                        var key = _a[_i];
+                                        entries.push("\"" + key + "\": " + descriptor.value[key]);
                                     }
-                                    nameToModel[symbolName].extraData = `{ ${entries.join(", ")} }`;
+                                    nameToModel[symbolName].extraData = "{ " + entries.join(", ") + " }";
                                 }
                             });
                         }
@@ -81,7 +82,7 @@ var MirrorJS;
                             nameToModel[propertyName] = model;
                         }
                         try {
-                            if (!nameToModel[propertyName].type && !this.preventAV(typeName, propertyName)) {
+                            if (!nameToModel[propertyName].type && !_this.preventAV(typeName, propertyName)) {
                                 nameToModel[propertyName].type = MirrorJS.Utils.getTypeNameFromInstance(ctor[propertyName]);
                             }
                         }
@@ -123,7 +124,7 @@ var MirrorJS;
                             }
                         }
                         try {
-                            if (!nameToModel[propertyName].type && !this.preventAV(typeName, propertyName)) {
+                            if (!nameToModel[propertyName].type && !_this.preventAV(typeName, propertyName)) {
                                 nameToModel[propertyName].type = MirrorJS.Utils.getTypeNameFromInstance(instance[propertyName]);
                             }
                         }
@@ -149,7 +150,8 @@ var MirrorJS;
                 // Iterate through each property of the root object.
                 var propertyNames = Object.getOwnPropertyNames(_this.root);
                 // Exclude those that our heuristics tell us do not appear to be ctors.
-                var ctors = propertyNames.filter(function (propertyName, index, array) {
+                var ctors = propertyNames
+                    .filter(function (propertyName, index, array) {
                     return _this.getIsConstructor(propertyName);
                 });
                 // Sort and return the remaining names.
@@ -326,7 +328,7 @@ var MirrorJS;
         TypeContext.prototype.getIsConstructor = function (propertyName) {
             // By convention, the names of constructors begin with an upper-case letter.
             var firstChar = propertyName[0];
-            if ((!this.startsWith(propertyName, 'webkit') && (firstChar.toLowerCase() === firstChar))) {
+            if ((!this.startsWith(propertyName, 'webkit') && propertyName != "console" && (firstChar.toLowerCase() === firstChar))) {
                 // Begins with a lower-case character.  Exclude it.
                 return false;
             }
@@ -388,7 +390,7 @@ var MirrorJS;
             return MirrorJS.Confidence.None;
         };
         return TypeContext;
-    })();
+    }());
     MirrorJS.TypeContext = TypeContext;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=TypeContext.js.map

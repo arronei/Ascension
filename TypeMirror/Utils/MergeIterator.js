@@ -75,8 +75,7 @@ var MirrorJS;
             var candidate = this.unfilteredNext();
             // If a filter was specified, fast-forward past any items that fail the filter.
             if (this.filter) {
-                for (; candidate && !this.filter(candidate.value, candidate.sourcesMask); candidate = this.unfilteredNext()) {
-                }
+                for (; candidate && !this.filter(candidate.value, candidate.sourcesMask); candidate = this.unfilteredNext()) { }
             }
             return candidate;
         };
@@ -88,6 +87,7 @@ var MirrorJS;
             if (nextItem === undefined) {
                 return true;
             }
+            // Rewind the iterator to just before the current item.
             for (var sourceIndex = 0; sourceIndex < this.positions.length; sourceIndex++) {
                 if (nextItem.sourcesMask & (1 << sourceIndex)) {
                     this.positions[sourceIndex]--;
@@ -99,8 +99,7 @@ var MirrorJS;
             indicating which sources contained the current value. (e.g., sources = 3 means sources 0 and 1
             contained the item, but not 2, 3, etc.) */
         MergeIterator.prototype.forEach = function (callback) {
-            for (var next = this.next(); next && callback(next.value, next.sourcesMask); next = this.next()) {
-            }
+            for (var next = this.next(); next && callback(next.value, next.sourcesMask); next = this.next()) { }
         };
         MergeIterator.prototype.toArray = function () {
             var array = [];
@@ -110,7 +109,7 @@ var MirrorJS;
             });
         };
         return MergeIterator;
-    })();
+    }());
     MirrorJS.MergeIterator = MergeIterator;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=MergeIterator.js.map

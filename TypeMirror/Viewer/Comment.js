@@ -16,7 +16,7 @@ var MirrorJS;
             MirrorJS.Html.addSpan(this.output, "").innerHTML = comment;
         };
         return Comment;
-    })();
+    }());
     MirrorJS.Comment = Comment;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=Comment.js.map

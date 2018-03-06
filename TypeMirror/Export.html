@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Exporter</title>
-  <link rel="stylesheet" href="app.css" type="text/css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Exporter</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
 
-  <script src="External/FileSaver.js"></script>
-  <script src="Utils/Utils.js"></script>
-  <script src="Utils/MergeIterator.js"></script>
-  <script src="Utils/Html.js"></script>
-  <script src="TypeSystem/Confidence.js"></script>
-  <script src="TypeSystem/PropertyModel.js"></script>
-  <script src="TypeSystem/TypeModel.js"></script>
-  <script src="TypeSystem/ExportedTypes.js"></script>
-  <script src="TypeSystem/Instances.js"></script>
-  <script src="TypeSystem/TypeContext.js"></script>
-  <script src="Exporter/Exporter.js"></script>
+    <script src="External/FileSaver.js"></script>
+    <script src="Utils/Utils.js"></script>
+    <script src="Utils/MergeIterator.js"></script>
+    <script src="Utils/Html.js"></script>
+    <script src="TypeSystem/Confidence.js"></script>
+    <script src="TypeSystem/PropertyModel.js"></script>
+    <script src="TypeSystem/TypeModel.js"></script>
+    <script src="TypeSystem/ExportedTypes.js"></script>
+    <script src="TypeSystem/Instances.js"></script>
+    <script src="TypeSystem/TypeContext.js"></script>
+    <script src="Exporter/Exporter.js"></script>
 </head>
 <body>
-  <input id="filenameBox" />
-  <button onclick="MirrorJS.Exporter.uploadModel(document.getElementById('filenameBox').value)">Upload</button>
-  <button onclick="MirrorJS.Exporter.downloadModel(document.getElementById('filenameBox').value)">Download</button>
-  <div id="log"></div>
-  <script>
-      MirrorJS.Utils.setupErrorHandler();
-      document.getElementById('filenameBox').value = MirrorJS.Utils.getExportFilename();
-  </script>
+    <input id="filenameBox" />
+    <button onclick="MirrorJS.Exporter.uploadModel(document.getElementById('filenameBox').value)">Upload</button>
+    <button onclick="MirrorJS.Exporter.downloadModel(document.getElementById('filenameBox').value)">Download</button>
+    <div id="log"></div>
+    <script>
+        MirrorJS.Utils.setupErrorHandler();
+        document.getElementById('filenameBox').value = MirrorJS.Utils.getExportFilename();
+    </script>
 </body>
 </html>

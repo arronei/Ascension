@@ -13,7 +13,7 @@ body,
 }
 
 #log {
-    font-size:x-small;
+    font-size: x-small;
 }
 
 .tools {
@@ -40,8 +40,7 @@ body,
 }
 
 .sources6 /* chrome | firefox */,
-.sources2 /* chrome */
-{
+.sources2 /* chrome */ {
     background-color: #FFFFB4;
 }
 
@@ -87,6 +86,10 @@ body,
 
 .identifier {
     color: #2B91AF;
+}
+
+.comment {
+    color: green;
 }
 
 .fromPrototype {

@@ -25,7 +25,7 @@ var MirrorJS;
             }
         };
         return Viewer;
-    })();
+    }());
     MirrorJS.Viewer = Viewer;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=Viewer.js.map

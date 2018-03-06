@@ -27,11 +27,11 @@ var MirrorJS;
         /** True if the type may be missing properties. */
         TypeModel.mayBeMissingProperties = function (self) {
             switch (self.confidence) {
-                case 0 /* None */:
+                case MirrorJS.Confidence.None:
                     return true;
-                case 4 /* Prototype */:
-                case 3 /* InstanceWithBase */:
-                case 1 /* InstanceWithoutBase */:
+                case MirrorJS.Confidence.Prototype:
+                case MirrorJS.Confidence.InstanceWithBase:
+                case MirrorJS.Confidence.InstanceWithoutBase:
                     return false;
                 default:
                     console.assert(false);
@@ -40,28 +40,28 @@ var MirrorJS;
         /** True if the type may report properties as its own that it actually inherited. */
         TypeModel.mayReportInheritedPropertiesAsOwn = function (self) {
             switch (self.confidence) {
-                case 0 /* None */:
-                case 1 /* InstanceWithoutBase */:
+                case MirrorJS.Confidence.None:
+                case MirrorJS.Confidence.InstanceWithoutBase:
                     return Object.keys(self.properties).reduce(function (previous, propertyName, index, array) {
                         var propertyModel = self.properties[propertyName];
                         switch (propertyModel.confidence) {
-                            case 3 /* InstanceWithBase */:
-                            case 2 /* InstanceWithSibling */:
-                            case 4 /* Prototype */:
+                            case MirrorJS.Confidence.InstanceWithBase:
+                            case MirrorJS.Confidence.InstanceWithSibling:
+                            case MirrorJS.Confidence.Prototype:
                                 return previous;
-                            case 1 /* InstanceWithoutBase */:
+                            case MirrorJS.Confidence.InstanceWithoutBase:
                                 return true;
                         }
                     }, false);
-                case 4 /* Prototype */:
-                case 3 /* InstanceWithBase */:
+                case MirrorJS.Confidence.Prototype:
+                case MirrorJS.Confidence.InstanceWithBase:
                     return false;
                 default:
                     console.assert(false);
             }
         };
         return TypeModel;
-    })();
+    }());
     MirrorJS.TypeModel = TypeModel;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=TypeModel.js.map

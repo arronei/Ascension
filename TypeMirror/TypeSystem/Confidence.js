@@ -3,6 +3,7 @@ var MirrorJS;
 (function (MirrorJS) {
     /** Records how getOwnProperties() discovered a property.  This tells us how "confident" we are
        that the property is owned by the type being enumerated. */
+    var Confidence;
     (function (Confidence) {
         /** We have little confidence in the information about the type or property. */
         Confidence[Confidence["None"] = 0] = "None";
@@ -17,7 +18,6 @@ var MirrorJS;
         Confidence[Confidence["InstanceWithBase"] = 3] = "InstanceWithBase";
         /** The property was discovered via the prototype (highly confident). */
         Confidence[Confidence["Prototype"] = 4] = "Prototype";
-    })(MirrorJS.Confidence || (MirrorJS.Confidence = {}));
-    var Confidence = MirrorJS.Confidence;
+    })(Confidence = MirrorJS.Confidence || (MirrorJS.Confidence = {}));
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=Confidence.js.map

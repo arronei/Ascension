@@ -80,7 +80,7 @@ var MirrorJS;
         };
         Html.linkifyRegex = /(\bhttps?:\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
         return Html;
-    })();
+    }());
     MirrorJS.Html = Html;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=Html.js.map

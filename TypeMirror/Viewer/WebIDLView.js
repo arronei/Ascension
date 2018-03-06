@@ -142,9 +142,7 @@ var MirrorJS;
                 return;
             }
             var iterator = this.report.mergeProperty(typeName, propertyName, function (property) {
-                return [JSON.stringify({
-                    confidence: property.confidence
-                })];
+                return [JSON.stringify({ confidence: property.confidence })];
             });
             iterator.forEach(function (json, sources) {
                 var flags = JSON.parse(json);
@@ -175,45 +173,32 @@ var MirrorJS;
             });
         };
         WebIDLView.prototype.addWritableModifier = function (parent, typeName, propertyName) {
-            this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.isWritable ? ["writable"] : [];
-            }, "keyword");
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.isWritable ? ["writable"] : []; }, "keyword");
         };
         WebIDLView.prototype.addEnumerableModifier = function (parent, typeName, propertyName) {
-            this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.isEnumerable ? ["enumerable"] : [];
-            }, "keyword");
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.isEnumerable ? ["enumerable"] : []; }, "keyword");
         };
         WebIDLView.prototype.addConfigurableModifier = function (parent, typeName, propertyName) {
-            this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.isConfigurable ? ["configurable"] : [];
-            }, "keyword");
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.isConfigurable ? ["configurable"] : []; }, "keyword");
         };
         WebIDLView.prototype.addOpenBrace = function (parent, typeName, propertyName) {
-            this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.hasGet || property.hasSet ? [" {"] : [];
-            }, "");
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.hasGet || property.hasSet ? [" {"] : []; }, "");
         };
         WebIDLView.prototype.addGetAccessor = function (parent, typeName, propertyName) {
-            this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.hasGet ? ["get;"] : [];
-            }, "");
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.hasGet ? ["get;"] : []; }, "");
         };
         WebIDLView.prototype.addSetAccessor = function (parent, typeName, propertyName) {
-            this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.hasSet ? ["set;"] : [];
-            }, "");
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.hasSet ? ["set;"] : []; }, "");
         };
         WebIDLView.prototype.addCloseBrace = function (parent, typeName, propertyName) {
-            this.mergeFragment(parent, typeName, propertyName, function (property) {
-                return property.hasGet || property.hasSet ? ["}"] : [];
-            }, "");
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.hasGet || property.hasSet ? ["}"] : []; }, "");
+        };
+        WebIDLView.prototype.addExtraData = function (parent, typeName, propertyName) {
+            this.mergeFragment(parent, typeName, propertyName, function (property) { return property.extraData ? [" // " + property.extraData] : []; }, "comment");
         };
         WebIDLView.prototype.addPropertyType = function (parent, typeName, propertyName) {
             var _this = this;
-            var iterator = this.report.mergeProperty(typeName, propertyName, function (property) {
-                return property.type ? [property.type] : [];
-            });
+            var iterator = this.report.mergeProperty(typeName, propertyName, function (property) { return property.type ? [property.type] : []; });
             iterator.forEach(function (typeName, sources) {
                 var outer = MirrorJS.Html.addSpan(parent, "");
                 outer.className = _this.mapSourcesToStyle(sources);
@@ -269,6 +254,7 @@ var MirrorJS;
             this.addGetAccessor(span, typeName, propertyName);
             this.addSetAccessor(span, typeName, propertyName);
             this.addCloseBrace(span, typeName, propertyName);
+            this.addExtraData(span, typeName, propertyName);
             parent.appendChild(span);
             // Add a space and CRLF as a separate span with the non-highligthed style so that annotations
             // typed after this has been copied & pasted into an email appear non-highligted.
@@ -422,7 +408,7 @@ var MirrorJS;
             this.update();
         };
         return WebIDLView;
-    })();
+    }());
     MirrorJS.WebIDLView = WebIDLView;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=WebIDLView.js.map

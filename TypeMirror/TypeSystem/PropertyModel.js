@@ -36,7 +36,7 @@ var MirrorJS;
             }
         };
         return PropertyModel;
-    })();
+    }());
     MirrorJS.PropertyModel = PropertyModel;
 })(MirrorJS || (MirrorJS = {}));
 //# sourceMappingURL=PropertyModel.js.map
