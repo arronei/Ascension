@@ -19,7 +19,7 @@ namespace WebIDLCollector.Builders
                     Confidence = 4,
                     HasGet = true,
                     IsConfigurable = true,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(length)) { tmType.Properties.Add(length); }
@@ -35,7 +35,7 @@ namespace WebIDLCollector.Builders
                     HasGet = true,
                     HasSet = true,
                     IsConfigurable = true,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(name)) { tmType.Properties.Add(name); }
@@ -50,7 +50,7 @@ namespace WebIDLCollector.Builders
                     Confidence = 4,
                     HasGet = true,
                     HasSet = true,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(prototype)) { tmType.Properties.Add(prototype); }
@@ -73,7 +73,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(toString)) { tmType.Properties.Add(toString); }
@@ -111,7 +111,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = false,
                     IsEnumerable = false,
                     IsWritable = false,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(toStringTag)) { tmType.Properties.Add(toStringTag); }
@@ -130,7 +130,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
                     };
 
                     if (!tmType.Properties.Contains(matchSymbol)) { tmType.Properties.Add(matchSymbol); }
@@ -147,7 +147,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
                     };
 
                     if (!tmType.Properties.Contains(replaceSymbol)) { tmType.Properties.Add(replaceSymbol); }
@@ -164,7 +164,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
                     };
 
                     if (!tmType.Properties.Contains(searchSymbol)) { tmType.Properties.Add(searchSymbol); }
@@ -181,7 +181,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
                     };
 
                     if (!tmType.Properties.Contains(splitSymbol)) { tmType.Properties.Add(splitSymbol); }
@@ -201,7 +201,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
                     };
 
                     if (!tmType.Properties.Contains(toPrimitiveSymbol)) { tmType.Properties.Add(toPrimitiveSymbol); }
@@ -221,7 +221,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = true,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "webidl" }
                     };
 
                     if (!tmType.Properties.Contains(unscopableSymbol)) { tmType.Properties.Add(unscopableSymbol); }
@@ -241,7 +241,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "webidl" }
                     };
 
                     if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }
@@ -261,7 +261,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = true,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = tmType.SpecNames
+                        SpecNames = new List<string> { "es6","es2017","es2018" }
                     };
 
                     if (!tmType.Properties.Contains(hasInstanceSymbol)) { tmType.Properties.Add(hasInstanceSymbol); }
@@ -284,7 +284,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(entries)) { tmType.Properties.Add(entries); }
@@ -302,7 +302,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(forEach)) { tmType.Properties.Add(forEach); }
@@ -320,7 +320,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(has)) { tmType.Properties.Add(has); }
@@ -338,7 +338,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(keys)) { tmType.Properties.Add(keys); }
@@ -356,7 +356,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(values)) { tmType.Properties.Add(values); }
@@ -373,7 +373,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(size)) { tmType.Properties.Add(size); }
@@ -390,7 +390,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = false,
                     IsEnumerable = false,
                     IsWritable = false,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }
@@ -410,7 +410,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(clear)) { tmType.Properties.Add(clear); }
@@ -428,7 +428,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(delete)) { tmType.Properties.Add(delete); }
@@ -446,7 +446,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(add)) { tmType.Properties.Add(add); }
@@ -471,7 +471,7 @@ namespace WebIDLCollector.Builders
                 IsConfigurable = true,
                 IsEnumerable = true,
                 IsWritable = true,
-                SpecNames = tmProperty.SpecNames
+                SpecNames = new List<string> { "webidl" }
             };
 
             if (!tmType.Properties.Contains(toJson)) { tmType.Properties.Add(toJson); }
@@ -494,7 +494,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(entries)) { tmType.Properties.Add(entries); }
@@ -512,7 +512,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(forEach)) { tmType.Properties.Add(forEach); }
@@ -530,7 +530,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(get)) { tmType.Properties.Add(get); }
@@ -548,7 +548,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(has)) { tmType.Properties.Add(has); }
@@ -566,7 +566,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(keys)) { tmType.Properties.Add(keys); }
@@ -584,7 +584,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(values)) { tmType.Properties.Add(values); }
@@ -601,7 +601,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(size)) { tmType.Properties.Add(size); }
@@ -617,7 +617,7 @@ namespace WebIDLCollector.Builders
                     HasGet = tmProperty.HasGet,
                     HasSet = tmProperty.HasSet,
                     IsConfigurable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(length)) { tmType.Properties.Add(length); }
@@ -634,7 +634,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = false,
                     IsEnumerable = false,
                     IsWritable = false,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }
@@ -654,7 +654,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(clear)) { tmType.Properties.Add(clear); }
@@ -672,7 +672,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(delete)) { tmType.Properties.Add(delete); }
@@ -690,7 +690,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(set)) { tmType.Properties.Add(set); }
@@ -715,7 +715,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(entries)) { tmType.Properties.Add(entries); }
@@ -733,7 +733,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(keys)) { tmType.Properties.Add(keys); }
@@ -751,7 +751,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = true,
                     IsEnumerable = true,
                     IsWritable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(values)) { tmType.Properties.Add(values); }
@@ -767,7 +767,7 @@ namespace WebIDLCollector.Builders
                     HasGet = tmProperty.HasGet,
                     HasSet = tmProperty.HasSet,
                     IsConfigurable = true,
-                    SpecNames = tmProperty.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(length)) { tmType.Properties.Add(length); }
@@ -784,7 +784,7 @@ namespace WebIDLCollector.Builders
                     IsConfigurable = false,
                     IsEnumerable = false,
                     IsWritable = false,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "webidl" }
                 };
 
                 if (!tmType.Properties.Contains(iteratorSymbol)) { tmType.Properties.Add(iteratorSymbol); }

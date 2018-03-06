@@ -70,8 +70,10 @@
   { "name": "Google Chrome", "version": 60, "releaseDate": "2017-07-25", "release": "" },
   { "name": "Google Chrome", "version": 61, "releaseDate": "2017-09-05", "release": "" },
   { "name": "Google Chrome", "version": 62, "releaseDate": "2017-10-17", "release": "RS3" },
+  { "name": "Google Chrome", "version": 63, "releaseDate": "", "release": "" },
   { "name": "Google Chrome", "version": 64, "releaseDate": "", "release": "" },
   { "name": "Google Chrome", "version": 65, "releaseDate": "", "release": "" },
+  { "name": "Google Chrome", "version": 66, "releaseDate": "", "release": "" },
 
 // Mozilla Firefox
   { "name": "Mozilla Firefox", "version": 1,  "releaseDate": "2004-11-09", "release": "" },

@@ -1780,5 +1780,21 @@
   {
     "name": "webusb",
     "url": "https://wicg.github.io/webusb/"
+  },
+  {
+    "name": "wasm-js-api-1",
+    "url": "https://www.w3.org/TR/wasm-js-api-1/"
+  },
+  {
+    "name": "wasm-js-api-1",
+    "url": "http://webassembly.github.io/spec/js-api/"
+  },
+  {
+    "name": "wasm-web-api-1",
+    "url": "https://www.w3.org/TR/wasm-web-api-1/"
+  },
+  {
+    "name": "wasm-web-api-1",
+    "url": "http://webassembly.github.io/spec/web-api/"
   }
 ]
