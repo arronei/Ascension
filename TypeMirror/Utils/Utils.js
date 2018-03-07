@@ -34,16 +34,16 @@ var MirrorJS;
         /** Helper that adds HTML displaying "{errorType}: {text}" and scrolls the window to ensure it is visible.
             If errorType is ommitted, it defaults to 'Script Error' */
         Utils.logError = function (text, errorType) {
+            errorType = errorType || "Script Error";
             if (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope) {
                 if (typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope) {
-                    self.port.postMessage({ type: "log", text: text });
+                    self.port.postMessage({ type: "error", text: text, "errorType": errorType });
                 }
                 else {
                     self.postMessage({ type: "error", text: text, "errorType": errorType });
                 }
             }
             else {
-                errorType = errorType || "Script Error";
                 var log = Utils.getLog(true);
                 var div = MirrorJS.Html.addDiv(log);
                 var labelSpan = MirrorJS.Html.addSpan(div, errorType + ": ");
