@@ -20,21 +20,18 @@ namespace Generator.Venn
                 var specVenn = GenerateVenn(dataObject, specShortName);
                 Write($"{path}data\\{specShortName}.json", specVenn);
 
-                var vennPage = GenerateVenPageFromTemplate(specShortName, templateFile);
+                var vennPage = GenerateVennPageFromTemplate(specShortName, templateFile);
                 Write($"{path}pages\\{specShortName}.htm", vennPage);
             }
         }
 
-        private static string GenerateVenPageFromTemplate(string specShortName, string templateFile)
+        private static string GenerateVennPageFromTemplate(string specShortName, string templateFile)
         {
 
             return "";
         }
 
-        private static string FixPath(string path)
-        {
-            return path[path.Length-1] == '\\' ? path : path + "\\";
-        }
+        private static string FixPath(string path) => path[path.Length - 1] == '\\' ? path : $"{path}\\";
 
         private static string GenerateVenn(CatalogObject dataObject, string specName)
         {

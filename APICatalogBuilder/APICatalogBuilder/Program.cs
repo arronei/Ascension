@@ -133,7 +133,7 @@ namespace MS.Internal
                     var finalVersion = versionRange.Max;
                     while (true)
                     {
-                        Console.WriteLine($"Enter an {browserName} version between ({versionRange.Min} and {versionRange.Max}):");
+                        Console.WriteLine($"Enter a version of {browserName} between ({versionRange.Min} and {versionRange.Max}):");
                         var browserVersion = Console.ReadLine();
                         if (string.IsNullOrWhiteSpace(browserVersion))
                         {
