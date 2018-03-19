@@ -21,6 +21,7 @@ namespace WebIDLCollector
         public string Title { get; set; }
         public string Url { get; set; }
         public string File { get; set; }
+        public bool Rec { get; set; }
 
         public List<SpecIdentification> Identification { get; set; }
 

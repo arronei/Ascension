@@ -600,7 +600,9 @@
   },
   {
     "name": "html-media-capture",
-    "url": "http://www.w3.org/TR/html-media-capture/"
+    "url": "http://www.w3.org/TR/html-media-capture/",
+    "file": "html-media-capture.webidl",
+    "rec": true
   },
   {
     "name": "html-media-capture",
@@ -634,7 +636,9 @@
         "selector": ".idl-code pre",
         "type": "idl"
       }
-    ]
+    ],
+    "file": "elementtraversal.webidl",
+    "rec": true
   },
   {
     "name": "dom-level-1",
@@ -1796,5 +1800,21 @@
   {
     "name": "wasm-web-api-1",
     "url": "http://webassembly.github.io/spec/web-api/"
+  },
+  {
+    "name": "permissions",
+    "url": "https://www.w3.org/TR/permissions/"
+  },
+  {
+    "name": "permissions",
+    "url": "https://w3c.github.io/permissions/"
+  },
+  {
+    "name": "storage",
+    "url": "https://storage.spec.whatwg.org/"
+  },
+  {
+    "name": "overscroll-behavior",
+    "url": "https://wicg.github.io/overscroll-behavior/"
   }
 ]

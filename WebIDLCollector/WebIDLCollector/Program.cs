@@ -1,5 +1,6 @@
 ﻿using AngleSharp;
 using AngleSharp.Dom;
+using AngleSharp.Dom.Html;
 using AngleSharp.Parser.Html;
 using Newtonsoft.Json;
 using System;
@@ -8,7 +9,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
-using AngleSharp.Dom.Html;
 using WebIDLCollector.Builders;
 using WebIDLCollector.Process;
 
@@ -192,76 +192,81 @@ namespace WebIDLCollector
             //var specShortName = specData.Name;
             //var specTitle = specData.Title;
             var specUrl = specData.Url;
+            var specRec = specData.Rec;
             var specFile = specData.File;
 
-            var config = Configuration.Default.WithJavaScript();
-            //var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
-
-            var parser = new HtmlParser(config);
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
-            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
-            var request = (HttpWebRequest)WebRequest.Create(specUrl);
-
-            IHtmlDocument document;
-            try
+            if (!specRec)
             {
-                var response = request.GetResponse();
-                var dataStream = response.GetResponseStream();
-                var reader = new StreamReader(dataStream);
-                var source = reader.ReadToEnd();
-                document = parser.Parse(source);
-            }
-            catch (Exception)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Unable to load document");
-                Console.ForegroundColor = ConsoleColor.Gray;
-                Errors.Add(specUrl);
-                return false;
-            }
+                var config = Configuration.Default.WithJavaScript();
+                //var document = BrowsingContext.New(config).OpenAsync(specUrl).Result;
 
-            specData.Identification = AutoDetectSpecDataIdentification(specData, document);
-            if (!specData.Identification.Any() && string.IsNullOrWhiteSpace(specFile))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Unable to determine what to parse");
-                Console.ForegroundColor = ConsoleColor.Gray;
-                Errors.Add(specUrl);
-                return false;
-            }
+                var parser = new HtmlParser(config);
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
+                ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+                var request = (HttpWebRequest)WebRequest.Create(specUrl);
 
-            foreach (var specIdentification in specData.Identification)
-            {
-                switch (specIdentification.Type)
+                IHtmlDocument document;
+                try
                 {
-                    case "css":
-                        var cssItems = document.QuerySelectorAll(specIdentification.Selector);
-                        ProcessSpecs.ProcessCss(cssItems, specData);
-                        break;
-                    case "svgcss":
-                        var svgCssItems = document.QuerySelector(specIdentification.Selector);
-                        ProcessSpecs.ProcessSvGCss(svgCssItems, specData);
-                        break;
-                    case "bikeshed":
-                        var bikeshedItems = document.QuerySelectorAll(specIdentification.Selector);
-                        ProcessSpecs.ProcessBikeshed(bikeshedItems, specData);
-                        break;
-                    case "respec":
-                        var respecItems = document.QuerySelectorAll(specIdentification.Selector);
-                        ProcessSpecs.ProcessRespec(respecItems, specIdentification.Selector, specData);
-                        break;
-                    case "idl":
-                        var idlItems = document.QuerySelectorAll(specIdentification.Selector);
-                        ProcessSpecs.ProcessIdl(idlItems, specData);
-                        break;
-                    default:
-                        throw new NotImplementedException();
+                    var response = request.GetResponse();
+                    var dataStream = response.GetResponseStream();
+                    var reader = new StreamReader(dataStream);
+                    var source = reader.ReadToEnd();
+                    document = parser.Parse(source);
+                }
+                catch (Exception)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Unable to load document");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Errors.Add(specUrl);
+                    return false;
+                }
+
+                specData.Identification = AutoDetectSpecDataIdentification(specData, document);
+                if (!specData.Identification.Any() && string.IsNullOrWhiteSpace(specFile))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Unable to determine what to parse");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Errors.Add(specUrl);
+                    return false;
+                }
+
+                foreach (var specIdentification in specData.Identification)
+                {
+                    switch (specIdentification.Type)
+                    {
+                        case "css":
+                            var cssItems = document.QuerySelectorAll(specIdentification.Selector);
+                            ProcessSpecs.ProcessCss(cssItems, specData);
+                            break;
+                        case "svgcss":
+                            var svgCssItems = document.QuerySelector(specIdentification.Selector);
+                            ProcessSpecs.ProcessSvGCss(svgCssItems, specData);
+                            break;
+                        case "bikeshed":
+                            var bikeshedItems = document.QuerySelectorAll(specIdentification.Selector);
+                            ProcessSpecs.ProcessBikeshed(bikeshedItems, specData);
+                            break;
+                        case "respec":
+                            var respecItems = document.QuerySelectorAll(specIdentification.Selector);
+                            ProcessSpecs.ProcessRespec(respecItems, specIdentification.Selector, specData);
+                            break;
+                        case "idl":
+                            var idlItems = document.QuerySelectorAll(specIdentification.Selector);
+                            ProcessSpecs.ProcessIdl(idlItems, specData);
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                    }
                 }
             }
 
             if (!string.IsNullOrWhiteSpace(specFile))
             {
-                var fileItems = File.ReadAllText("data/" + specFile);
+                var recPath = specRec ? "rec/" : string.Empty;
+                var fileItems = File.ReadAllText($"data/{recPath}{specFile}");
                 ProcessSpecs.ProcessFile(fileItems, specData);
             }
 
