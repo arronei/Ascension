@@ -5,7 +5,7 @@
   { "name": "Microsoft Edge", "version": 14, "releaseDate": "2016-08-02", "release": "RS1" },
   { "name": "Microsoft Edge", "version": 15, "releaseDate": "2017-04-05", "release": "RS2" },
   { "name": "Microsoft Edge", "version": 16, "releaseDate": "2017-10-17", "release": "RS3" },
-  { "name": "Microsoft Edge", "version": 17, "releaseDate": "", "release": "RS4" },
+  { "name": "Microsoft Edge", "version": 17, "releaseDate": "2018-04-30", "release": "RS4" },
   { "name": "Microsoft Edge", "version": 18, "releaseDate": "", "release": "RS5" },
 
 // Google Chrome
@@ -74,8 +74,10 @@
   { "name": "Google Chrome", "version": 63, "releaseDate": "2017-12-06", "release": "" },
   { "name": "Google Chrome", "version": 64, "releaseDate": "2018-01-24", "release": "" },
   { "name": "Google Chrome", "version": 65, "releaseDate": "2018-03-06", "release": "" },
-  { "name": "Google Chrome", "version": 66, "releaseDate": "", "release": "RS4" },
+  { "name": "Google Chrome", "version": 66, "releaseDate": "2018-04-18", "release": "RS4" },
   { "name": "Google Chrome", "version": 67, "releaseDate": "", "release": "" },
+  { "name": "Google Chrome", "version": 68, "releaseDate": "", "release": "" },
+  { "name": "Google Chrome", "version": 69, "releaseDate": "", "release": "" },
 
 // Mozilla Firefox
   { "name": "Mozilla Firefox", "version": 1,  "releaseDate": "2004-11-09", "release": "" },
@@ -136,8 +138,10 @@
   { "name": "Mozilla Firefox", "version": 56, "releaseDate": "2017-09-28", "release": "RS3" },
   { "name": "Mozilla Firefox", "version": 57, "releaseDate": "2017-11-14", "release": "" },
   { "name": "Mozilla Firefox", "version": 58, "releaseDate": "2018-01-23", "release": "" },
-  { "name": "Mozilla Firefox", "version": 59, "releaseDate": "", "release": "RS4" },
+  { "name": "Mozilla Firefox", "version": 59, "releaseDate": "2018-05-26", "release": "RS4" },
   { "name": "Mozilla Firefox", "version": 60, "releaseDate": "", "release": "" },
+  { "name": "Mozilla Firefox", "version": 61, "releaseDate": "", "release": "" },
+  { "name": "Mozilla Firefox", "version": 62, "releaseDate": "", "release": "" },
 
 // Apple Safari
   { "name": "Apple Safari", "version": 1,  "releaseDate": "2003-06-23", "release": "" },

@@ -8,7 +8,7 @@ namespace WebIDLCollector.GetData
 {
     public static partial class DataCollectors
     {
-        private static readonly Regex TypeDefParser = new Regex(@"typedef\s+(?<type>[^;]+)\s+(?<item>[^;]+);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        private static readonly Regex TypeDefParser = new Regex(@"typedef(\s*(?<uniontype>\(.+?\)+\??)\s*|(\s*\[(?<typeextended>[^\]]+)]\s*|\s+)((?<recordtype>.+>+\??)\s*|(dom\s*::\s*)?(?<type>[^\s:\(\)<>]+?)\s+))(?<item>[^;]+);?", RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
         public static IEnumerable<TypeDefType> GetAllTypeDefs(string typeDefData, SpecData specificationData)
         {

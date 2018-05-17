@@ -29,7 +29,7 @@
   },
   {
     "name": "webdriver",
-    "url": "https://w3c.github.io/webdriver/webdriver-spec.html"
+    "url": "https://w3c.github.io/webdriver/"
   },
   {
     "name": "console",
@@ -1081,7 +1081,7 @@
   },
   {
     "name": "webcryptoapi",
-    "url": "https://w3c.github.io/webcrypto/Overview.html",
+    "url": "https://w3c.github.io/webcrypto/",
     "identification": [
       {
         "selector": "code.idl-code",
@@ -1268,10 +1268,10 @@
     "name": "page-visibility",
     "url": "http://w3c.github.io/page-visibility/"
   },
-  {
-    "name": "custom-elements",
-    "url": "http://www.w3.org/TR/custom-elements/"
-  },
+  //{
+  //  "name": "custom-elements",
+  //  "url": "http://www.w3.org/TR/custom-elements/"
+  //},
   {
     "name": "custom-elements",
     "url": "https://w3c.github.io/webcomponents/spec/custom/"
@@ -1346,7 +1346,8 @@
     "name": "es6",
     "title": "ECMAScript 2015",
     "url": "http://www.ecma-international.org/ecma-262/6.0/",
-    "file": "ECMAScript2015.webidl"
+    "file": "ECMAScript2015.webidl",
+    "rec": true
   },
   //{
   //  "name": "es2016",
@@ -1358,7 +1359,14 @@
     "name": "es2017",
     "title": "ECMAScript 2017",
     "url": "http://www.ecma-international.org/ecma-262/8.0/",
-    "file": "ECMAScript2017.webidl"
+    "file": "ECMAScript2017.webidl",
+    "rec": true
+  },
+  {
+    "name": "es2019",
+    "title": "ECMAScript 2019",
+    "url": "https://tc39.github.io/ecma262/",
+    "file": "ECMAScript2019.webidl"
   },
   {
     "name": "tracking-dnt",
@@ -1444,7 +1452,7 @@
   {
     "name": "webxr",
     "title": "WebXR Device API",
-    "url": "https://immersive-web.github.io/webxr/spec/latest/"
+    "url": "https://immersive-web.github.io/webxr/"
   },
   {
     "name": "filesystemapi",
@@ -1453,127 +1461,183 @@
   },
   {
     "name": "webgl",
+    "number": 1,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
   },
   {
     "name": "webgl",
+    "number": 2,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
   },
   {
     "name": "webgl",
+    "number": 3,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
   },
   {
     "name": "webgl",
+    "number": 4,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
   },
   {
     "name": "webgl",
+    "number": 5,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
   },
   {
     "name": "webgl",
+    "number": 6,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
   },
   {
     "name": "webgl",
+    "number": 7,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
   },
   {
     "name": "webgl",
+    "number": 8,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
   },
   {
     "name": "webgl",
+    "number": 9,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
   },
   {
     "name": "webgl",
+    "number": 10,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
   },
   {
     "name": "webgl",
+    "number": 11,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
   },
   {
     "name": "webgl",
-    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_atc/"
+    "number": 12,
+    "url": "https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_compressed_texture_atc/"
   },
   {
     "name": "webgl",
+    "number": 13,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
   },
   {
     "name": "webgl",
+    "number": 14,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
   },
   {
     "name": "webgl",
+    "number": 15,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
   },
   {
     "name": "webgl",
+    "number": 16,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
   },
   {
     "name": "webgl",
+    "number": 17,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
   },
   {
     "name": "webgl",
+    "number": 18,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
   },
   {
     "name": "webgl",
+    "number": 19,
     "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
   },
   {
     "name": "webgl",
+    "number": 20,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
   },
   {
     "name": "webgl",
+    "number": 21,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
   },
   {
     "name": "webgl",
-    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_shared_resources/"
+    "number": 22,
+    "url": "https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_shared_resources/"
   },
   {
     "name": "webgl",
+    "number": 23,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_security_sensitive_resources/"
   },
   {
     "name": "webgl",
+    "number": 24,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
   },
   {
     "name": "webgl",
+    "number": 25,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
   },
   {
     "name": "webgl",
+    "number": 26,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
   },
   {
     "name": "webgl",
+    "number": 27,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
   },
   {
     "name": "webgl",
+    "number": 28,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
   },
   {
     "name": "webgl",
+    "number": 29,
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/"
+  },
+  {
+    "name": "webgl",
+    "number": 30,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
   },
   {
     "name": "webgl",
+    "number": 31,
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
+  },
+  {
+    "name": "webgl",
+    "number": 32,
     "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
   },
   {
     "name": "webgl",
-    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
+    "number": 33,
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
+  },
+  {
+    "name": "webgl",
+    "number": 34,
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_get_buffer_sub_data_async/"
+  },
+  {
+    "name": "webgl",
+    "number": 35,
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/"
+  },
+  {
+    "name": "webgl",
+    "number": 36,
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multiview/"
   },
   {
     "name": "findtext",
@@ -1683,7 +1747,8 @@
   {
     "name": "webidl-1",
     "url": "https://www.w3.org/TR/WebIDL-1/",
-    "file": "webidl-1.webidl"
+    "file": "webidl-1.webidl",
+    "rec": true
   },
   {
     "name": "webidl",
@@ -1814,7 +1879,28 @@
     "url": "https://storage.spec.whatwg.org/"
   },
   {
-    "name": "overscroll-behavior",
+    "name": "css-overscroll-behavior",
     "url": "https://wicg.github.io/overscroll-behavior/"
+  },
+  {
+    "name": "input-events-2",
+    "url": "https://www.w3.org/TR/input-events-2/"
+  },
+  {
+    "name": "input-events",
+    "url": "https://w3c.github.io/input-events/"
+  },
+  {
+    "name": "contentEditable",
+    "url": "https://w3c.github.io/editing/contentEditable.html"
+  },
+  {
+    "name": "streams-api",
+    "url": "https://streams.spec.whatwg.org/",
+    "file": "streams-api.webidl"
+  },
+  {
+    "name": "picture-in-picture",
+    "url": "https://wicg.github.io/picture-in-picture/"
   }
 ]

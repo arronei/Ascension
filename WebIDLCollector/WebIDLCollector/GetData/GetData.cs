@@ -12,20 +12,15 @@ namespace WebIDLCollector.GetData
         private static readonly Regex ArgumentParser = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
         ((?<in>in)\s+)?
         ((?<optional>optional)\s+)?
-        (?<type>[^\.=]+)
-        (\s*(?<ellipsis>\.\.\.))?\s+
-        ((?<name>[^=\s]+)
+        (dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)
+        (\s*(?<ellipsis>\.\.\.)\s*)?
+        ((?<name>[^(=\s]+)
         (\s*=\s*(?<value>.+?))?))$", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
         private static readonly Regex ArgumentExtendedParser = new Regex(@"(?<allowshared>allowshared)(,|$)|
         (?<clamp>clamp)(,|$)|
         (?<enforcerange>enforcerange)(,|$)|
         (treatnullas(\s*=\s*(?<treatnullas>[^\s,\]]+)))(,|$)|
-
-        (?<mspassbyvariant>mspassbyvariant)(,|$)|
-        (?<mscallersecurity>mscallersecurity)(,|$)|
-        (?<mspdldefaultvalue>mspdldefaultvalue)(,|$)|
-        (msoverridetype(\s*=\s*(?<msoverridetype>[^\s,\]]+)))(,|$)|
 
         (treatundefinedas(\s*=\s*(?<treatundefinedas>[^\s,\]]+)))(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
@@ -75,7 +70,7 @@ namespace WebIDLCollector.GetData
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Invalid argument- " + argument);
+                    Console.WriteLine($"Invalid argument- {argument}");
                     Console.ForegroundColor = ConsoleColor.Gray;
                     throw new ArgumentException();
                 }

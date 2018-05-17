@@ -1,21 +1,21 @@
-[Constructor, Constructor(unsigned long len), Constructor(any... args)]
+[Constructor, Constructor(unsigned long len), Constructor(any... items)]
 interface Array {
     static Array from(any items, optional object mapfn, optional any thisArg);
     static boolean isArray(any arg);
     static Array of(any... items);
     Array concat(any... arguments);
-    object copyWithin(long target, optional long start, optional long end);
-    object entries();
+    [Unscopable] object copyWithin(long target, optional long start, optional long end);
+    [Unscopable] object entries();
     boolean every(object callbackfn, optional any thisArg);
-    object fill(object value, optional long start, optional long end);
+    [Unscopable] object fill(object value, optional long start, optional long end);
     Array filter(object callbackfn, optional any thisArg);
-    void find(object predicate, optional any thisArg);
-    long findIndex(object predicate, optional any thisArg);
+    [Unscopable] void find(object predicate, optional any thisArg);
+    [Unscopable] long findIndex(object predicate, optional any thisArg);
     void forEach(object callbackfn, optional any thisArg);
-    boolean includes(any searchElement, unsigned long fromIndex);
+    [Unscopable] boolean includes(any searchElement, unsigned long fromIndex);
     long indexOf(any searchElement, optional long fromIndex);
     DOMString join(DOMString separator);
-    object keys();
+    [Unscopable] object keys();
     long lastIndexOf(any searchElement, optional long fromIndex);
     Array map(object callbackfn, optional any thisArg);
     object pop();
@@ -31,7 +31,7 @@ interface Array {
     DOMString toLocaleString(optional locales, optional options);
     DOMString toString();
     unsigned long unshift(any... items);
-    object values();
+    [Unscopable] object values();
     attribute unsigned long length;
 };
 
@@ -164,8 +164,6 @@ interface Function {
     Function bind(Function thisArg, any... args);
     any call(Function thisArg, any... args);
     DOMString toString();
-    attribute DOMString name;
-    attribute unsigned long length;
 };
 
 [Constructor, Constructor(any... argList), Constructor(unsigned long length), Constructor(Int8Array array), Constructor(object obj), Constructor(object buffer, optional long byteOffset, optional unsigned long byteLength)]
@@ -198,7 +196,7 @@ interface Map {
     boolean has(any key);
     object keys();
     Map set(any key, any value);
-    attribute unsigned long size;
+    readonly attribute unsigned long size;
     object values();
 };
 
@@ -274,7 +272,6 @@ interface Number {
 
 [Constructor(optional any value)]
 interface Object {
-    static attribute unsigned long length;
     static object assign(any target, optional any... sources);
     static object create(object obj, optional PropertyDescriptors properties);
     static object defineProperties(object obj, optional PropertyDescriptors properties);
@@ -327,10 +324,11 @@ interface Promise {
     static Promise reject(object r);
     static Promise resolve(object x);
     object catch(object onRejected);
+    Promise finally(object onFinally);
     Promise then(object onFulfilled, object onReject);
 };
 
-[Constructor(target, handler)]
+[Constructor(any target, any handler)]
 interface Proxy {
     static object revocable(object target, object handler);
 };
@@ -345,6 +343,7 @@ interface ReferenceError : Error {
 
 interface Reflect {
     static object apply(object target, any thisArgument, sequence<any> argumentList);
+    static object construct(object target, sequence<any> argumentList, optional object newTarget);
     static object defineProperty(object target, DOMString propertyKey, sequence<any> argumentList);
     static object deleteProperty(object target, DOMString propertyKey);
     static object get(object target, DOMString propertyKey, optional object reciever);
@@ -361,15 +360,16 @@ interface Reflect {
 [Constructor(object pattern, DOMString flags)]
 interface RegExp {
     Array exec(DOMString string);
-    attribute DOMString flags;
-    attribute boolean global;
-    attribute boolean ignoreCase;
-    attribute boolean multiline;
-    attribute DOMString source;
-    attribute boolean sticky;
+    readonly attribute boolean dotAll;
+    readonly attribute DOMString flags;
+    readonly attribute boolean global;
+    readonly attribute boolean ignoreCase;
+    readonly attribute boolean multiline;
+    readonly attribute DOMString source;
+    readonly attribute boolean sticky;
     boolean test(DOMString s);
     DOMString toString();
-    attribute boolean unicode;
+    readonly attribute boolean unicode;
 };
 
 [Constructor(optional iterable)]
@@ -381,13 +381,13 @@ interface Set {
     void forEach(object callbackfn, optional any thisArg);
     boolean has(any value);
     object keys();
-    attribute unsigned long long size;
+    readonly attribute unsigned long long size;
     object values();
 };
 
 [Constructor(unsigned long length)]
 interface SharedArrayBuffer {
-    attribute unsigned long byteLength;
+    readonly attribute unsigned long byteLength;
     SharedArrayBuffer slice(unsigned long start, unsigned long end);
 };
 
@@ -427,6 +427,7 @@ interface String {
 
 [Constructor(optional DOMString description)]
 interface Symbol {
+    static attribute Symbol asyncIterator;
     static Symbol for(DOMString key);
     static attribute boolean hasInstance;
     static attribute booean isConcatSpreadable;
@@ -532,6 +533,7 @@ interface Intl {
     static attribute object Collator;
     static attribute object DateTimeFormat;
     static attribute object NumberFormat;
+    static object getCanonicalLocales(any locales);
 };
 
 partial interface Window {
@@ -542,6 +544,10 @@ partial interface Window {
     static DOMString escape(DOMString value);
     static DOMString unescape(DOMString value);
     static object eval(DOMString value);
+    //static attribute boolean isFinite;
+    //static attribute boolean isNaN;
+    //static float parseFloat(DOMString str);
+    //static long parseInt(DOMString str, unsigned long radix);
     static attribute float Infinity;
     static attribute any NaN;
     static attribute any undefined;

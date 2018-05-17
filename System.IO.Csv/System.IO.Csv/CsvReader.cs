@@ -35,39 +35,6 @@ namespace System.IO.Csv
         #region Settings
         /// <summary>Contains the <see cref="T:TextReader"/> pointing to the CSV file.</summary>
         private TextReader _reader;
-
-        /// <summary>Contains the buffer size.</summary>
-        private int _bufferSize;
-
-        /// <summary>Contains the comment character indicating that a line is commented out.</summary>
-        private char _comment;
-
-        /// <summary>Contains the escape character letting insert quotation characters inside a quoted field.</summary>
-        private char _escape;
-
-        /// <summary>Contains the delimiter character separating each field.</summary>
-        private char _delimiter;
-
-        /// <summary>Contains the quotation character wrapping every field.</summary>
-        private char _quote;
-
-        /// <summary>Determines which values should be trimmed.</summary>
-        private ValueTrimmingOptions _trimmingOptions;
-
-        /// <summary>Indicates if field names are located on the first non commented line.</summary>
-        private bool _hasHeaders;
-
-        /// <summary>Contains the default action to take when a parsing error has occured.</summary>
-        private ParseErrorAction _defaultParseErrorAction;
-
-        /// <summary>Contains the action to take when a field is missing.</summary>
-        private MissingFieldAction _missingFieldAction;
-
-        /// <summary>Indicates if the reader supports multiline.</summary>
-        private bool _supportsMultiline;
-
-        /// <summary>Indicates if the reader will skip empty lines.</summary>
-        private bool _skipEmptyLines;
         #endregion
 
         #region State
@@ -120,18 +87,6 @@ namespace System.IO.Csv
         /// because one record must be read to get the field count automatically
         /// </summary>
         private bool _firstRecordInCache;
-
-        /// <summary>
-        /// Indicates if one or more field are missing for the current record.
-        /// Resets after each successful record read.
-        /// </summary>
-        private bool _missingFieldFlag;
-
-        /// <summary>
-        /// Indicates if a parse error occured for the current record.
-        /// Resets after each successful record read.
-        /// </summary>
-        private bool _parseErrorFlag;
         #endregion
         #endregion
 
@@ -223,7 +178,7 @@ namespace System.IO.Csv
                 throw new ArgumentOutOfRangeException("bufferSize", bufferSize, ExceptionMessage.BufferSizeTooSmall);
             }
 
-            _bufferSize = bufferSize;
+            BufferSize = bufferSize;
 
             if (reader is StreamReader)
             {
@@ -234,25 +189,25 @@ namespace System.IO.Csv
                     // Handle bad implementations returning 0 or less
                     if (stream.Length > 0)
                     {
-                        _bufferSize = (int)Math.Min(bufferSize, stream.Length);
+                        BufferSize = (int)Math.Min(bufferSize, stream.Length);
                     }
                 }
             }
 
             _reader = reader;
-            _delimiter = delimiter;
-            _quote = quote;
-            _escape = escape;
-            _comment = comment;
+            Delimiter = delimiter;
+            Quote = quote;
+            Escape = escape;
+            Comment = comment;
 
-            _hasHeaders = hasHeaders;
-            _trimmingOptions = trimmingOptions;
-            _supportsMultiline = true;
-            _skipEmptyLines = true;
+            HasHeaders = hasHeaders;
+            TrimmingOption = trimmingOptions;
+            SupportsMultiline = true;
+            SkipEmptyLines = true;
             this.DefaultHeaderName = "Column";
 
             _currentRecordIndex = -1;
-            _defaultParseErrorAction = ParseErrorAction.RaiseEvent;
+            DefaultParseErrorAction = ParseErrorAction.RaiseEvent;
         }
         #endregion
 
@@ -277,128 +232,46 @@ namespace System.IO.Csv
         #region Settings
         /// <summary>Gets the comment character indicating that a line is commented out.</summary>
         /// <value>The comment character indicating that a line is commented out.</value>
-        public char Comment
-        {
-            get
-            {
-                return _comment;
-            }
-        }
+        public char Comment { get; }
 
         /// <summary>Gets the escape character letting insert quotation characters inside a quoted field.</summary>
         /// <value>The escape character letting insert quotation characters inside a quoted field.</value>
-        public char Escape
-        {
-            get
-            {
-                return _escape;
-            }
-        }
+        public char Escape { get; }
 
         /// <summary>Gets the delimiter character separating each field.</summary>
         /// <value>The delimiter character separating each field.</value>
-        public char Delimiter
-        {
-            get
-            {
-                return _delimiter;
-            }
-        }
+        public char Delimiter { get; }
 
         /// <summary>Gets the quotation character wrapping every field.</summary>
         /// <value>The quotation character wrapping every field.</value>
-        public char Quote
-        {
-            get
-            {
-                return _quote;
-            }
-        }
+        public char Quote { get; }
 
         /// <summary>Indicates if field names are located on the first non commented line.</summary>
         /// <value><see langword="true"/> if field names are located on the first non commented line, otherwise, <see langword="false"/>.</value>
-        public bool HasHeaders
-        {
-            get
-            {
-                return _hasHeaders;
-            }
-        }
+        public bool HasHeaders { get; }
 
         /// <summary>Indicates if spaces at the start and end of a field are trimmed.</summary>
         /// <value><see langword="true"/> if spaces at the start and end of a field are trimmed, otherwise, <see langword="false"/>.</value>
-        public ValueTrimmingOptions TrimmingOption
-        {
-            get
-            {
-                return _trimmingOptions;
-            }
-        }
+        public ValueTrimmingOptions TrimmingOption { get; }
 
         /// <summary>Gets the buffer size.</summary>
-        public int BufferSize
-        {
-            get
-            {
-                return _bufferSize;
-            }
-        }
+        public int BufferSize { get; }
 
         /// <summary>Gets or sets the default action to take when a parsing error has occured.</summary>
         /// <value>The default action to take when a parsing error has occured.</value>
-        public ParseErrorAction DefaultParseErrorAction
-        {
-            get
-            {
-                return _defaultParseErrorAction;
-            }
-            set
-            {
-                _defaultParseErrorAction = value;
-            }
-        }
+        public ParseErrorAction DefaultParseErrorAction { get; set; }
 
         /// <summary>Gets or sets the action to take when a field is missing.</summary>
         /// <value>The action to take when a field is missing.</value>
-        public MissingFieldAction MissingFieldAction
-        {
-            get
-            {
-                return _missingFieldAction;
-            }
-            set
-            {
-                _missingFieldAction = value;
-            }
-        }
+        public MissingFieldAction MissingFieldAction { get; set; }
 
         /// <summary>Gets or sets a value indicating if the reader supports multiline fields.</summary>
         /// <value>A value indicating if the reader supports multiline field.</value>
-        public bool SupportsMultiline
-        {
-            get
-            {
-                return _supportsMultiline;
-            }
-            set
-            {
-                _supportsMultiline = value;
-            }
-        }
+        public bool SupportsMultiline { get; set; }
 
         /// <summary>Gets or sets a value indicating if the reader will skip empty lines.</summary>
         /// <value>A value indicating if the reader will skip empty lines.</value>
-        public bool SkipEmptyLines
-        {
-            get
-            {
-                return _skipEmptyLines;
-            }
-            set
-            {
-                _skipEmptyLines = value;
-            }
-        }
+        public bool SkipEmptyLines { get; set; }
 
         /// <summary>
         /// Gets or sets the default header name when it is an empty string or only whitespaces.
@@ -423,13 +296,7 @@ namespace System.IO.Csv
 
         /// <summary>Gets a value that indicates whether the current stream position is at the end of the stream.</summary>
         /// <value><see langword="true"/> if the current stream position is at the end of the stream; otherwise <see langword="false"/>.</value>
-        public virtual bool EndOfStream
-        {
-            get
-            {
-                return _eof;
-            }
-        }
+        public virtual bool EndOfStream => _eof;
 
         /// <summary>Gets the field headers.</summary>
         /// <returns>The field headers or an empty array if headers are not supported.</returns>
@@ -449,31 +316,19 @@ namespace System.IO.Csv
 
         /// <summary>Gets the current record index in the CSV file.</summary>
         /// <value>The current record index in the CSV file.</value>
-        public virtual long CurrentRecordIndex
-        {
-            get
-            {
-                return _currentRecordIndex;
-            }
-        }
+        public virtual long CurrentRecordIndex => _currentRecordIndex;
 
         /// <summary>
         /// Indicates if one or more field are missing for the current record.
         /// Resets after each successful record read.
         /// </summary>
-        public bool MissingFieldFlag
-        {
-            get { return _missingFieldFlag; }
-        }
+        public bool MissingFieldFlag { get; private set; }
 
         /// <summary>
         /// Indicates if a parse error occured for the current record.
         /// Resets after each successful record read.
         /// </summary>
-        public bool ParseErrorFlag
-        {
-            get { return _parseErrorFlag; }
-        }
+        public bool ParseErrorFlag { get; private set; }
         #endregion
         #endregion
 
@@ -541,7 +396,7 @@ namespace System.IO.Csv
                     throw new ArgumentNullException("field");
                 }
 
-                if (!_hasHeaders)
+                if (!HasHeaders)
                 {
                     throw new InvalidOperationException(ExceptionMessage.NoHeaders);
                 }
@@ -563,13 +418,7 @@ namespace System.IO.Csv
         /// <exception cref="T:InvalidOperationException">No record read yet. Call ReadLine() first.</exception>
         /// <exception cref="T:MalformedCsvException">The CSV appears to be corrupt at the current position.</exception>
         /// <exception cref="T:System.ComponentModel.ObjectDisposedException">The instance has been disposed of.</exception>
-        public virtual string this[int field]
-        {
-            get
-            {
-                return ReadField(field, false, false);
-            }
-        }
+        public virtual string this[int field] => ReadField(field, false, false);
         #endregion
 
         #region Methods
@@ -596,9 +445,7 @@ namespace System.IO.Csv
         {
             EnsureInitialize();
 
-            int index;
-
-            if (_fieldHeaderIndexes != null && _fieldHeaderIndexes.TryGetValue(header, out index))
+            if (_fieldHeaderIndexes != null && _fieldHeaderIndexes.TryGetValue(header, out int index))
             {
                 return index;
             }
@@ -614,10 +461,7 @@ namespace System.IO.Csv
         /// <param name="array"> The one-dimensional <see cref="T:Array"/> that is the destination of the fields of the current record.</param>
         /// <exception cref="T:ArgumentNullException"><paramref name="array"/> is <see langword="null"/>.</exception>
         /// <exception cref="ArgumentException">The number of fields in the record is greater than the available space from <paramref name="index"/> to the end of <paramref name="array"/>.</exception>
-        public void CopyCurrentRecordTo(string[] array)
-        {
-            CopyCurrentRecordTo(array, 0);
-        }
+        public void CopyCurrentRecordTo(string[] array) => CopyCurrentRecordTo(array, 0);
 
         /// <summary>Copies the field array of the current record to a one-dimensional array, starting at the beginning of the target array.</summary>
         /// <param name="array"> The one-dimensional <see cref="T:Array"/> that is the destination of the fields of the current record.</param>
@@ -650,7 +494,7 @@ namespace System.IO.Csv
 
             for (int i = 0; i < _fieldCount; i++)
             {
-                if (_parseErrorFlag)
+                if (ParseErrorFlag)
                 {
                     array[index + i] = null;
                 }
@@ -686,7 +530,7 @@ namespace System.IO.Csv
         private bool IsWhiteSpace(char c)
         {
             // Handle cases where the delimiter is a whitespace (e.g. tab)
-            if (c == _delimiter)
+            if (c == Delimiter)
             {
                 return false;
             }
@@ -757,7 +601,7 @@ namespace System.IO.Csv
             char c = _buffer[pos];
 
             // Treat \r as new line only if it's not the delimiter
-            if (c == '\r' && _delimiter != '\r')
+            if (c == '\r' && Delimiter != '\r')
             {
                 pos++;
 
@@ -821,7 +665,7 @@ namespace System.IO.Csv
             {
                 return true;
             }
-            else if (c == '\r' && _delimiter != '\r')
+            else if (c == '\r' && Delimiter != '\r')
             {
                 return true;
             }
@@ -845,7 +689,7 @@ namespace System.IO.Csv
 
             CheckDisposed();
 
-            _bufferLength = _reader.Read(_buffer, 0, _bufferSize);
+            _bufferLength = _reader.Read(_buffer, 0, BufferSize);
 
             if (_bufferLength > 0)
             {
@@ -891,7 +735,7 @@ namespace System.IO.Csv
                 {
                     return _fields[field];
                 }
-                else if (_missingFieldFlag)
+                else if (MissingFieldFlag)
                 {
                     return HandleMissingField(null, field, ref _nextFieldStart);
                 }
@@ -915,7 +759,7 @@ namespace System.IO.Csv
 
                 string value = null;
 
-                if (_missingFieldFlag)
+                if (MissingFieldFlag)
                 {
                     value = HandleMissingField(value, index, ref _nextFieldStart);
                 }
@@ -933,7 +777,7 @@ namespace System.IO.Csv
                             _fields[index] = value;
                         }
 
-                        _missingFieldFlag = true;
+                        MissingFieldFlag = true;
                     }
                     else
                     {
@@ -943,7 +787,7 @@ namespace System.IO.Csv
                 else
                 {
                     // Trim spaces at start
-                    if ((_trimmingOptions & ValueTrimmingOptions.UnquotedOnly) != 0)
+                    if ((TrimmingOption & ValueTrimmingOptions.UnquotedOnly) != 0)
                     {
                         SkipWhiteSpaces(ref _nextFieldStart);
                     }
@@ -955,10 +799,10 @@ namespace System.IO.Csv
 
                         if (field < _fieldCount)
                         {
-                            _missingFieldFlag = true;
+                            MissingFieldFlag = true;
                         }
                     }
-                    else if (_buffer[_nextFieldStart] != _quote)
+                    else if (_buffer[_nextFieldStart] != Quote)
                     {
                         // Non-quoted field
                         int start = _nextFieldStart;
@@ -970,7 +814,7 @@ namespace System.IO.Csv
                             {
                                 char c = _buffer[pos];
 
-                                if (c == _delimiter)
+                                if (c == Delimiter)
                                 {
                                     _nextFieldStart = pos + 1;
 
@@ -1013,7 +857,7 @@ namespace System.IO.Csv
 
                         if (!discardValue)
                         {
-                            if ((_trimmingOptions & ValueTrimmingOptions.UnquotedOnly) == 0)
+                            if ((TrimmingOption & ValueTrimmingOptions.UnquotedOnly) == 0)
                             {
                                 if (!_eof && pos > start)
                                 {
@@ -1101,7 +945,7 @@ namespace System.IO.Csv
                         bool quoted = true;
                         bool escaped = false;
 
-                        if ((_trimmingOptions & ValueTrimmingOptions.QuotedOnly) != 0)
+                        if ((TrimmingOption & ValueTrimmingOptions.QuotedOnly) != 0)
                         {
                             SkipWhiteSpaces(ref start);
                             pos = start;
@@ -1119,7 +963,7 @@ namespace System.IO.Csv
                                     start = pos;
                                 }
                                 // IF current char is escape AND (escape and quote are different OR next char is a quote)
-                                else if (c == _escape && (_escape != _quote || (pos + 1 < _bufferLength && _buffer[pos + 1] == _quote) || (pos + 1 == _bufferLength && _reader.Peek() == _quote)))
+                                else if (c == Escape && (Escape != Quote || (pos + 1 < _bufferLength && _buffer[pos + 1] == Quote) || (pos + 1 == _bufferLength && _reader.Peek() == Quote)))
                                 {
                                     if (!discardValue)
                                     {
@@ -1128,7 +972,7 @@ namespace System.IO.Csv
 
                                     escaped = true;
                                 }
-                                else if (c == _quote)
+                                else if (c == Quote)
                                 {
                                     quoted = false;
                                     break;
@@ -1168,7 +1012,7 @@ namespace System.IO.Csv
                                 value += new string(_buffer, start, pos - start);
                             }
 
-                            if (!discardValue && value != null && (_trimmingOptions & ValueTrimmingOptions.QuotedOnly) != 0)
+                            if (!discardValue && value != null && (TrimmingOption & ValueTrimmingOptions.QuotedOnly) != 0)
                             {
                                 int newLength = value.Length;
                                 while (newLength > 0 && IsWhiteSpace(value[newLength - 1]))
@@ -1190,7 +1034,7 @@ namespace System.IO.Csv
 
                             // Skip delimiter
                             bool delimiterSkipped;
-                            if (_nextFieldStart < _bufferLength && _buffer[_nextFieldStart] == _delimiter)
+                            if (_nextFieldStart < _bufferLength && _buffer[_nextFieldStart] == Delimiter)
                             {
                                 _nextFieldStart++;
                                 delimiterSkipped = true;
@@ -1292,7 +1136,7 @@ namespace System.IO.Csv
 
             if (!_initialized)
             {
-                _buffer = new char[_bufferSize];
+                _buffer = new char[BufferSize];
 
                 // will be replaced if and when headers are read
                 _fieldHeaders = new string[0];
@@ -1315,11 +1159,11 @@ namespace System.IO.Csv
 
                 while (ReadField(_fieldCount, true, false) != null)
                 {
-                    if (_parseErrorFlag)
+                    if (ParseErrorFlag)
                     {
                         _fieldCount = 0;
                         Array.Clear(_fields, 0, _fields.Length);
-                        _parseErrorFlag = false;
+                        ParseErrorFlag = false;
                         _nextFieldIndex = 0;
                     }
                     else
@@ -1345,7 +1189,7 @@ namespace System.IO.Csv
                 _initialized = true;
 
                 // If headers are present, call ReadNextRecord again
-                if (_hasHeaders)
+                if (HasHeaders)
                 {
                     // Don't count first record as it was the headers
                     _currentRecordIndex = -1;
@@ -1407,12 +1251,12 @@ namespace System.IO.Csv
                 {
                     SkipToNextLine(ref _nextFieldStart);
                 }
-                else if (_currentRecordIndex > -1 && !_missingFieldFlag)
+                else if (_currentRecordIndex > -1 && !MissingFieldFlag)
                 {
                     // If not already at end of record, move there
                     if (!_eol && !_eof)
                     {
-                        if (!_supportsMultiline)
+                        if (!SupportsMultiline)
                         {
                             SkipToNextLine(ref _nextFieldStart);
                         }
@@ -1431,7 +1275,7 @@ namespace System.IO.Csv
                     return false;
                 }
 
-                if (_hasHeaders || !_firstRecordInCache)
+                if (HasHeaders || !_firstRecordInCache)
                 {
                     _eol = false;
                 }
@@ -1449,8 +1293,8 @@ namespace System.IO.Csv
                     _nextFieldIndex = 0;
                 }
 
-                _missingFieldFlag = false;
-                _parseErrorFlag = false;
+                MissingFieldFlag = false;
+                ParseErrorFlag = false;
                 _currentRecordIndex++;
             }
 
@@ -1493,12 +1337,12 @@ namespace System.IO.Csv
         {
             while (pos < _bufferLength)
             {
-                if (_buffer[pos] == _comment)
+                if (_buffer[pos] == Comment)
                 {
                     pos++;
                     SkipToNextLine(ref pos);
                 }
-                else if (_skipEmptyLines && ParseNewLine(ref pos))
+                else if (SkipEmptyLines && ParseNewLine(ref pos))
                 {
                     continue;
                 }
@@ -1572,9 +1416,9 @@ namespace System.IO.Csv
                 throw new ArgumentNullException("error");
             }
 
-            _parseErrorFlag = true;
+            ParseErrorFlag = true;
 
-            switch (_defaultParseErrorAction)
+            switch (DefaultParseErrorAction)
             {
                 case ParseErrorAction.ThrowException:
                     throw error;
@@ -1590,7 +1434,7 @@ namespace System.IO.Csv
                             throw new InvalidOperationException(string.Format(CultureInfo.InvariantCulture, ExceptionMessage.ParseErrorActionInvalidInsideParseErrorEvent, e.Action), e.Error);
                         case ParseErrorAction.AdvanceToNextLine:
                             // already at EOL when fields are missing, so don't skip to next line in that case
-                            if (!_missingFieldFlag && pos >= 0)
+                            if (!MissingFieldFlag && pos >= 0)
                             {
                                 SkipToNextLine(ref pos);
                             }
@@ -1601,14 +1445,14 @@ namespace System.IO.Csv
                     break;
                 case ParseErrorAction.AdvanceToNextLine:
                     // already at EOL when fields are missing, so don't skip to next line in that case
-                    if (!_missingFieldFlag && pos >= 0)
+                    if (!MissingFieldFlag && pos >= 0)
                     {
                         SkipToNextLine(ref pos);
                     }
                     break;
 
                 default:
-                    throw new NotSupportedException(string.Format(CultureInfo.InvariantCulture, ExceptionMessage.ParseErrorActionNotSupported, _defaultParseErrorAction), error);
+                    throw new NotSupportedException(string.Format(CultureInfo.InvariantCulture, ExceptionMessage.ParseErrorActionNotSupported, DefaultParseErrorAction), error);
             }
         }
         #endregion
@@ -1630,7 +1474,7 @@ namespace System.IO.Csv
                 throw new ArgumentOutOfRangeException("fieldIndex", fieldIndex, string.Format(CultureInfo.InvariantCulture, ExceptionMessage.FieldIndexOutOfRange, fieldIndex));
             }
 
-            _missingFieldFlag = true;
+            MissingFieldFlag = true;
 
             for (int i = fieldIndex + 1; i < _fieldCount; i++)
             {
@@ -1643,7 +1487,7 @@ namespace System.IO.Csv
             }
             else
             {
-                switch (_missingFieldAction)
+                switch (MissingFieldAction)
                 {
                     case MissingFieldAction.ParseError:
                         HandleParseError(new MissingFieldCsvException(GetCurrentRawData(), currentPosition, Math.Max(0, _currentRecordIndex), fieldIndex), ref currentPosition);
@@ -1653,7 +1497,7 @@ namespace System.IO.Csv
                     case MissingFieldAction.ReplaceByNull:
                         return null;
                     default:
-                        throw new NotSupportedException(string.Format(CultureInfo.InvariantCulture, ExceptionMessage.MissingFieldActionNotSupported, _missingFieldAction));
+                        throw new NotSupportedException(string.Format(CultureInfo.InvariantCulture, ExceptionMessage.MissingFieldActionNotSupported, MissingFieldAction));
                 }
             }
         }
@@ -1672,7 +1516,7 @@ namespace System.IO.Csv
                 throw new InvalidOperationException(ExceptionMessage.NoCurrentRecord);
             }
 
-            if ((validations & DataReaderValidations.IsNotClosed) != 0 && _isDisposed)
+            if ((validations & DataReaderValidations.IsNotClosed) != 0 && IsDisposed)
             {
                 throw new InvalidOperationException(ExceptionMessage.ReaderClosed);
             }
@@ -1819,7 +1663,7 @@ namespace System.IO.Csv
 
             string[] columnNames;
 
-            if (_hasHeaders)
+            if (HasHeaders)
             {
                 columnNames = _fieldHeaders;
             }
@@ -1976,7 +1820,7 @@ namespace System.IO.Csv
                 throw new ArgumentOutOfRangeException("i", i, string.Format(CultureInfo.InvariantCulture, ExceptionMessage.FieldIndexOutOfRange, i));
             }
 
-            if (_hasHeaders)
+            if (HasHeaders)
             {
                 return _fieldHeaders[i];
             }
@@ -2127,10 +1971,8 @@ namespace System.IO.Csv
 #if DEBUG
         /// <summary>Contains the stack when the object was allocated.</summary>
         private System.Diagnostics.StackTrace _allocStack;
-#endif
 
-        /// <summary>Contains the disposed status flag.</summary>
-        private bool _isDisposed = false;
+#endif
 
         /// <summary>Contains the locking object for multi-threading purpose.</summary>
         private readonly object _lock = new object();
@@ -2141,26 +1983,20 @@ namespace System.IO.Csv
         /// <summary>Gets a value indicating whether the instance has been disposed of.</summary>
         /// <value><see langword="true"/> if the instance has been disposed of; otherwise, <see langword="false"/>.</value>
         [System.ComponentModel.Browsable(false)]
-        public bool IsDisposed
-        {
-            get { return _isDisposed; }
-        }
+        public bool IsDisposed { get; private set; } = false;
 
         /// <summary>Raises the <see cref="M:Disposed"/> event.</summary>
         /// <param name="e">A <see cref="T:System.EventArgs"/> that contains the event data.</param>
-        protected virtual void OnDisposed(EventArgs e)
-        {
-            Disposed?.Invoke(this, e);
-        }
+        protected virtual void OnDisposed(EventArgs e) => Disposed?.Invoke(this, e);
 
         /// <summary>Checks if the instance has been disposed of, and if it has, throws an <see cref="T:System.ComponentModel.ObjectDisposedException"/>; otherwise, does nothing.</summary>
         /// <exception cref="T:System.ComponentModel.ObjectDisposedException">The instance has been disposed of.</exception>
         /// <remarks>Derived classes should call this method at the start of all methods and properties that should not be accessed after a call to <see cref="M:Dispose()"/>.</remarks>
         protected void CheckDisposed()
         {
-            if (_isDisposed)
+            if (IsDisposed)
             {
-                throw new ObjectDisposedException(this.GetType().FullName);
+                throw new ObjectDisposedException(GetType().FullName);
             }
         }
 
@@ -2168,7 +2004,7 @@ namespace System.IO.Csv
         /// <remarks>Calls <see cref="M:Dispose(Boolean)"/> with the disposing parameter set to <see langword="true"/> to free unmanaged and managed resources.</remarks>
         public void Dispose()
         {
-            if (!_isDisposed)
+            if (!IsDisposed)
             {
                 Dispose(true);
                 GC.SuppressFinalize(this);
@@ -2181,7 +2017,7 @@ namespace System.IO.Csv
         {
             // No exception should ever be thrown except in critical scenarios.
             // Unhandled exceptions during finalization will tear down the process.
-            if (!_isDisposed)
+            if (!IsDisposed)
             {
                 try
                 {
@@ -2215,7 +2051,7 @@ namespace System.IO.Csv
                 finally
                 {
                     // Ensure that the flag is set
-                    _isDisposed = true;
+                    IsDisposed = true;
 
                     // Catch any issues about firing an event on an already disposed object.
                     try

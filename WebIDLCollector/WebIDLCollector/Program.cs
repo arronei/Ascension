@@ -144,7 +144,7 @@ namespace WebIDLCollector
 
         private static SpecData ProcessWebIdl(string path)
         {
-            Console.WriteLine("Processing (" + path + ")");
+            Console.WriteLine($"Processing ({path})");
 
             if (!Directory.Exists(path))
             {
@@ -171,13 +171,13 @@ namespace WebIDLCollector
                 Warnings.Add(path);
             }
 
-            Console.Write("Enumerations: " + specData.Enumerations.Count + ", ");
-            Console.Write("Implements: " + specData.Implements.Count + ", ");
-            Console.Write("Dictionaries: " + specData.Dictionaries.Count + ", ");
-            Console.Write("Namespaces: " + specData.Namespaces.Count + ", ");
-            Console.Write("Interfaces: " + specData.Interfaces.Count + ", ");
-            Console.Write("TypeDefs: " + specData.TypeDefs.Count + ", ");
-            Console.WriteLine("Callbacks: " + specData.Callbacks.Count);
+            Console.Write($"Enumerations: {specData.Enumerations.Count}, ");
+            Console.Write($"Implements: {specData.Implements.Count}, ");
+            Console.Write($"Dictionaries: {specData.Dictionaries.Count}, ");
+            Console.Write($"Namespaces: {specData.Namespaces.Count}, ");
+            Console.Write($"Interfaces: {specData.Interfaces.Count}, ");
+            Console.Write($"TypeDefs: {specData.TypeDefs.Count}, ");
+            Console.WriteLine($"Callbacks: {specData.Callbacks.Count}");
 
             Console.ForegroundColor = ConsoleColor.Gray;
 

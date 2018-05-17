@@ -21,17 +21,18 @@ namespace WebIDLCollector.Builders
         {
             const string webidlDirectory = "webidl";
             fileName = fileName ?? _specData.Name;
-            var webidlFile = webidlDirectory + "/" + fileName + ".webidl";
+            var webidlFile = $"{webidlDirectory}/{fileName}.webidl";
             if (!Directory.Exists(webidlDirectory))
             {
                 Directory.CreateDirectory(webidlDirectory);
             }
 
-            Console.WriteLine("Generating WebIdl - " + _specData.Name);
+            Console.WriteLine($"Generating WebIdl - {_specData.Name}");
             var webidlString = CreateWebIdl(_specData);
             using (var file = new StreamWriter(webidlFile, true))
             {
-                file.WriteLine("// Last Generated: " + "\"" + DateTime.Now + "\",");
+                file.WriteLine($"// Last Generated: \"{DateTime.Now}\",");
+                file.WriteLine($"// \"{_specData.Url}\"");
                 file.Write(webidlString);
             }
         }

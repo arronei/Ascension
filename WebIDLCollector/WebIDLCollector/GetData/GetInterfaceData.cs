@@ -30,10 +30,23 @@ namespace WebIDLCollector.GetData
         (?<securecontext>securecontext)(,|$)|
         (?<unforgeable>unforgeable)(,|$))+", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
+
+        private const string extended = @"(\[(?<extended>[^\]]+)]\s*)?";
+
+        private const string type = @"(\s*(?<uniontype>\(.+?\)+\??)\s*|(\s*\[(?<typeextended>[^\]]+)]\s*|\s+)((?<recordtype>.+>+\??)\s*|(dom\s*::\s*)?(?<type>[^\s:\(\)<>]+?)\s+))";
+
+        private const string specialOperations = @"(((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))(?(?![\[\(])\s+)){1,5}" + type + @"(?<item>\w+)?\s*(?<function>\((?<args>.*)\))|";
+        private const string constant = @"(?<const>const)" + type + @"(?<item>\w+?)\s*=\s*(?<value>.+?)|";
+        //private const string serializer = @"(?<serializer>serializer)(" + type + @"((?< item >\w+?)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>((?<curly>\{)|(?<square>\[)))?\s*(?<value>[^;}\]\)]*)\s*(?(curly)\}|(?(square)\])))?|";
+        private const string stringifier = @"(?<stringifier>stringifier)((\s+(?<readonly>readonly))?\s+(?<attribute>attribute)" + type + @"((?<required>required)\s+)?(?<item>\w+)|" + type + @"(?<item>\w+)?(?<function>\((?<args>.*)\)))?|";
+
+
+
         private static readonly Regex IndividualInterfaceMember = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
-        ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(?<type>.+)\s+(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
-        (?<const>const)\s+(?<type>.+)\s+(?<item>.+?)\s*=\s*(?<value>.+?)|
-        (?<serializer>serializer)\s*((?<type>.+)\s+((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
+        ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
+        (?<const>const)\s+(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)(?<item>.+?)\s*=\s*(?<value>.+?)|
+        (?<serializer>serializer)(\s+(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
+
         (?<stringifier>stringifier)((\s+((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)(\s+(?<required>required))?(\s+(?<item>[^;]+)))|(\s+(?<type>.+))(\s+(?<item>.+))?(?<function>\((?<args>.*)\)))?$|
         (?<static>static)\s+(((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<type>.+?)\s*((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\)))|
         ((?<iterable>iterable)|(?<legacyiterable>legacyiterable))\s*<(?<type>.+)>|
@@ -64,12 +77,7 @@ namespace WebIDLCollector.GetData
         (?<unscopable>unscopable)(,|$)|
         (?<pure>pure)(,|$)|
         (?<constant>constant)(,|$)|
-        
-        (?<mspassbyvariant>mspassbyvariant)(,|$)|
-        (?<mspdldefaultvalue>mspdldefaultvalue)(,|$)|
-        (msinternaldisablekey(\s*=\s*(?<msinternaldisablekey>[^\s,\]]+)))(,|$)|
-        (msoverridetype(\s*=\s*(?<msoverridetype>[^\s,\]]+)))(,|$)|
-        (msinternalpdlbinding(\s*=\s*(?<msinternalpdlbinding>[^\s,\]]+)))(,|$)|
+        (internalbinding(\s*=\s*(?<internalbinding>[^\s,\]]+)))(,|$)|
 
         (storeinslot(\s*=\s*(?<storeinslot>[^\s,\]]+)))(,|$)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.IgnorePatternWhitespace);
 
@@ -165,7 +173,7 @@ namespace WebIDLCollector.GetData
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Duplicate interface: " + interfaceDefinition.Name);
+                    Console.WriteLine($"Duplicate interface: {interfaceDefinition.Name}");
                     Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
@@ -272,7 +280,7 @@ namespace WebIDLCollector.GetData
                     catch (ArgumentException)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Fail argument for member- " + item);
+                        Console.WriteLine($"Fail argument for member- {item}");
                         Console.ForegroundColor = ConsoleColor.Gray;
                         continue;
                     }
@@ -298,7 +306,7 @@ namespace WebIDLCollector.GetData
                     }
 
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Fail member- " + item);
+                    Console.WriteLine($"Fail member- {item}");
                     Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }

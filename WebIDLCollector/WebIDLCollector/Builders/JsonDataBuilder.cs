@@ -21,7 +21,7 @@ namespace WebIDLCollector.Builders
         {
             const string typeMirrorOutputDirectory = @"F:\GitHub\Project-Parity\PropertyDiffer\PropertyDiffer\TypeMirrorJsonFiles\";
             fileName = fileName ?? "SpecMirror";
-            var typeMirrorFile = typeMirrorOutputDirectory + fileName + ".js";
+            var typeMirrorFile = $"{typeMirrorOutputDirectory}{fileName}.js";
             Console.WriteLine("Creating JsonObject");
             var jsonString = CreateJsonObject();
             if (File.Exists(typeMirrorFile))
@@ -32,7 +32,7 @@ namespace WebIDLCollector.Builders
             {
                 file.WriteLine("{");
                 file.WriteLine("\"browserVersion\": \"Specifications\",");
-                file.WriteLine("\"timestamp\": " + "\"" + DateTime.Now + "\",");
+                file.WriteLine($"\"timestamp\": \"{DateTime.Now}\",");
                 file.WriteLine("\"types\": {");
                 file.WriteLine(jsonString);
                 file.WriteLine("}");
@@ -60,12 +60,12 @@ namespace WebIDLCollector.Builders
 
                 var mem = interfaceType.Members.ToList();
 
-                if (!interfaceType.NoInterfaceObject && !interfaceType.IsMixin && (interfaceType.Constructors.Any() || interfaceType.HtmlConstructor))
+                if (!interfaceType.NoInterfaceObject && !interfaceType.IsMixin)
                 {
                     var constructor = new TypeMirrorProperty
                     {
                         Name = "constructor",
-                        SpecNames = interfaceType.SpecNames,
+                        SpecNames = (interfaceType.Constructors.Any() || interfaceType.HtmlConstructor) ? interfaceType.SpecNames : new List<string> { "webidl" },
                         Confidence = 4,
                         IsConfigurable = true,
                         IsWritable = true,
@@ -164,14 +164,14 @@ namespace WebIDLCollector.Builders
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Originator - " + originatorItem + " // " + string.Join(", ", implementsSpec));
+                        Console.WriteLine($"Originator - {originatorItem} // {string.Join(", ", implementsSpec)}");
                         Console.ForegroundColor = ConsoleColor.Gray;
                     }
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Destination - " + destinationItem + " // " + string.Join(", ", implementsSpec));
+                    Console.WriteLine($"Destination - {destinationItem} // {string.Join(", ", implementsSpec)}");
                     Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }

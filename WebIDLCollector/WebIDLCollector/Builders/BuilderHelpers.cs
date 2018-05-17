@@ -130,7 +130,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
+                        SpecNames = new List<string> { "es6", "es2017", "es2019" }
                     };
 
                     if (!tmType.Properties.Contains(matchSymbol)) { tmType.Properties.Add(matchSymbol); }
@@ -147,7 +147,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
+                        SpecNames = new List<string> { "es6", "es2017", "es2019" }
                     };
 
                     if (!tmType.Properties.Contains(replaceSymbol)) { tmType.Properties.Add(replaceSymbol); }
@@ -164,7 +164,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
+                        SpecNames = new List<string> { "es6", "es2017", "es2019" }
                     };
 
                     if (!tmType.Properties.Contains(searchSymbol)) { tmType.Properties.Add(searchSymbol); }
@@ -181,7 +181,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
+                        SpecNames = new List<string> { "es6", "es2017", "es2019" }
                     };
 
                     if (!tmType.Properties.Contains(splitSymbol)) { tmType.Properties.Add(splitSymbol); }
@@ -201,7 +201,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = false,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = new List<string> { "es6", "es2017", "es2018" }
+                        SpecNames = new List<string> { "es6", "es2017", "es2019" }
                     };
 
                     if (!tmType.Properties.Contains(toPrimitiveSymbol)) { tmType.Properties.Add(toPrimitiveSymbol); }
@@ -261,7 +261,7 @@ namespace WebIDLCollector.Builders
                         IsConfigurable = true,
                         IsEnumerable = false,
                         IsWritable = false,
-                        SpecNames = new List<string> { "es6","es2017","es2018" }
+                        SpecNames = new List<string> { "es6","es2017","es2019" }
                     };
 
                     if (!tmType.Properties.Contains(hasInstanceSymbol)) { tmType.Properties.Add(hasInstanceSymbol); }

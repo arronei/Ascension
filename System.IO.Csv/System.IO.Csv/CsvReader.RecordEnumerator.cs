@@ -13,9 +13,6 @@ namespace System.IO.Csv
             /// <summary>Contains the enumerated <see cref="T:CsvReader"/>.</summary>
             private CsvReader _reader;
 
-            /// <summary>Contains the current record.</summary>
-            private string[] _current;
-
             /// <summary>Contains the current record index.</summary>
             private long _currentRecordIndex;
             #endregion
@@ -27,7 +24,7 @@ namespace System.IO.Csv
             public RecordEnumerator(CsvReader reader)
             {
                 _reader = reader ?? throw new ArgumentNullException("reader");
-                _current = null;
+                Current = null;
 
                 _currentRecordIndex = reader._currentRecordIndex;
             }
@@ -35,10 +32,7 @@ namespace System.IO.Csv
 
             #region IEnumerator<string[]> Members
             /// <summary>Gets the current record.</summary>
-            public string[] Current
-            {
-                get { return _current; }
-            }
+            public string[] Current { get; private set; }
 
             /// <summary>Advances the enumerator to the next record of the CSV.</summary>
             /// <returns><see langword="true"/> if the enumerator was successfully advanced to the next record, <see langword="false"/> if the enumerator has passed the end of the CSV.</returns>
@@ -51,16 +45,16 @@ namespace System.IO.Csv
 
                 if (_reader.ReadNextRecord())
                 {
-                    _current = new string[_reader._fieldCount];
+                    Current = new string[_reader._fieldCount];
 
-                    _reader.CopyCurrentRecordTo(_current);
+                    _reader.CopyCurrentRecordTo(Current);
                     _currentRecordIndex = _reader._currentRecordIndex;
 
                     return true;
                 }
                 else
                 {
-                    _current = null;
+                    Current = null;
                     _currentRecordIndex = _reader._currentRecordIndex;
 
                     return false;
@@ -77,7 +71,7 @@ namespace System.IO.Csv
 
                 _reader.MoveTo(-1);
 
-                _current = null;
+                Current = null;
                 _currentRecordIndex = _reader._currentRecordIndex;
             }
 
@@ -92,7 +86,6 @@ namespace System.IO.Csv
                     return this.Current;
                 }
             }
-
             #endregion
 
             #region IDisposable Members
@@ -100,7 +93,7 @@ namespace System.IO.Csv
             public void Dispose()
             {
                 _reader = null;
-                _current = null;
+                Current = null;
             }
             #endregion
         }
