@@ -37,16 +37,15 @@ namespace WebIDLCollector.GetData
 
         private const string specialOperations = @"(((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))(?(?![\[\(])\s+)){1,5}" + type + @"(?<item>\w+)?\s*(?<function>\((?<args>.*)\))|";
         private const string constant = @"(?<const>const)" + type + @"(?<item>\w+?)\s*=\s*(?<value>.+?)|";
-        //private const string serializer = @"(?<serializer>serializer)(" + type + @"((?< item >\w+?)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>((?<curly>\{)|(?<square>\[)))?\s*(?<value>[^;}\]\)]*)\s*(?(curly)\}|(?(square)\])))?|";
+        private const string serializer = @"(?<serializer>serializer)(" + type + @"((?< item >\w+?)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>((?<curly>\{)|(?<square>\[)))?\s*(?<value>[^;}\]\)]*)\s*(?(curly)\}|(?(square)\])))?|";
         private const string stringifier = @"(?<stringifier>stringifier)((\s+(?<readonly>readonly))?\s+(?<attribute>attribute)" + type + @"((?<required>required)\s+)?(?<item>\w+)|" + type + @"(?<item>\w+)?(?<function>\((?<args>.*)\)))?|";
 
 
 
         private static readonly Regex IndividualInterfaceMember = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
-        ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
-        (?<const>const)\s+(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)(?<item>.+?)\s*=\s*(?<value>.+?)|
-        (?<serializer>serializer)(\s+(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
-
+        ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(dom::)?(?<type>.+)\s+(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
+        (?<const>const)\s+(dom::)?(?<type>.+)\s+(?<item>.+?)\s*=\s*(?<value>.+?)|
+        (?<serializer>serializer)(\s+(dom::)?(?<type>.+)\s+((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
         (?<stringifier>stringifier)((\s+((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)(\s+(?<required>required))?(\s+(?<item>[^;]+)))|(\s+(?<type>.+))(\s+(?<item>.+))?(?<function>\((?<args>.*)\)))?$|
         (?<static>static)\s+(((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<type>.+?)\s*((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\)))|
         ((?<iterable>iterable)|(?<legacyiterable>legacyiterable))\s*<(?<type>.+)>|
@@ -208,6 +207,10 @@ namespace WebIDLCollector.GetData
                     if (new[] { "_camel_cased_attribute", "_webkit_cased_attribute", "_dashed_attribute" }.Contains(name))
                     {
                         continue;
+                    }
+                    if (Regex.IsMatch(name, "^_[a-z]", RegexOptions.IgnoreCase))
+                    {
+                        name = name.TrimStart('_');
                     }
                     var memberItem = new Member(name)
                     {

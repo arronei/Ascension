@@ -1,7 +1,8 @@
-﻿using System;
+﻿using MS.Internal.Utility;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using MS.Internal.Utility;
 
 namespace TypeSystem.Data.Browser
 {
@@ -52,9 +53,9 @@ namespace TypeSystem.Data.Browser
                 var browserReleases = new List<BrowserInfo>();
                 foreach (var item in FindAll(a => a.ShortName == browserName))
                 {
-                    latestVersion = latestVersion == null || latestVersion.Version < item.Version ? item : latestVersion;
+                    latestVersion = latestVersion == null || (latestVersion.Version < item.Version && File.Exists(item.GetFilePath()))? item : latestVersion;
 
-                    latestReleaseDate = latestReleaseDate == null ? item : (latestReleaseDate.ReleaseDate < item.ReleaseDate) ? item : latestReleaseDate;
+                    latestReleaseDate = latestReleaseDate == null || (latestReleaseDate.ReleaseDate < item.ReleaseDate && File.Exists(item.GetFilePath())) ? item : latestReleaseDate;
 
                     if (releases != null && item.Release.Split(',').Intersect(releases, StringComparer.InvariantCultureIgnoreCase).Any())
                     {
