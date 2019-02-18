@@ -34,19 +34,28 @@ namespace WebIDLCollector.GetData
         private const string extended = @"(\[(?<extended>[^\]]+)]\s*)?";
 
         private const string type = @"(\s*(?<uniontype>\(.+?\)+\??)\s*|(\s*\[(?<typeextended>[^\]]+)]\s*|\s+)((?<recordtype>.+>+\??)\s*|(dom\s*::\s*)?(?<type>[^\s:\(\)<>]+?)\s+))";
+        private const string type2 = @"(\s*(?<uniontype>\(.+?\)+\??)\s*|(\s*\[(?<typeextended>[^\]]+)])?\s*((?<recordtype>.+>+\??)|(dom\s*::\s*)?(?<type>[^\s:\(\)<>]+?))\s*)";
 
         private const string specialOperations = @"(((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))(?(?![\[\(])\s+)){1,5}" + type + @"(?<item>\w+)?\s*(?<function>\((?<args>.*)\))|";
         private const string constant = @"(?<const>const)" + type + @"(?<item>\w+?)\s*=\s*(?<value>.+?)|";
-        //private const string serializer = @"(?<serializer>serializer)(" + type + @"((?< item >\w+?)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>((?<curly>\{)|(?<square>\[)))?\s*(?<value>[^;}\]\)]*)\s*(?(curly)\}|(?(square)\])))?|";
+        private const string serializer = @"(?<serializer>serializer)(" + type + @"((?< item >\w+?)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>((?<curly>\{)|(?<square>\[)))?\s*(?<value>[^;}\]\)]*)\s*(?(curly)\}|(?(square)\])))?|";
         private const string stringifier = @"(?<stringifier>stringifier)((\s+(?<readonly>readonly))?\s+(?<attribute>attribute)" + type + @"((?<required>required)\s+)?(?<item>\w+)|" + type + @"(?<item>\w+)?(?<function>\((?<args>.*)\)))?|";
+        private const string staticMember = @"(?<static>static)((\s+(?<readonly>readonly))?\s+(?<attribute>attribute)" + type + @"((?<required>required)|(?<item>\w+))|" + type + @"((?<item>\w+)\s*)?(?<function>\((?<args>.*)\)))|";
+        private const string iterable = @"((?<iterable>iterable)|(?<legacyiterable>legacyiterable))\s*<" + type2 + @">|"; // Uses modified definition of type
+        private const string maplikesetlike = @"((?<maplike>maplike)|(?<setlike>setlike))\s*<" + type2 + @">|"; // Uses modified definition of type
+        private const string readonlyMember = @"(?<readonly>readonly)\s+((?<attribute>attribute)" + type + @"((?<required>required)|(?<item>\w+))|" + maplikesetlike;
+        private const string inheritMember = @"(?<inherit>inherit)(\s+(?<readonly>readonly))?\s+(?<attribute>attribute)" + type + @"((?<required>required)|(?<item>\w+))|";
+        private const string setRaises = @"(?<attribute>attribute)" + type + @"((?<required>required)|(?<item>\w+))\s+(?<setraises>setraises)(\s*\(.*\))?|";
+        private const string attribute = @"(?<attribute>attribute)" + type + @"((?<required>required)|(?<item>\w+))|";
+        private const string operation = type + @"(?<item>\w+)\s*(?<function>\((?<args>.*)\))";
 
-
+        private static readonly Regex InterfaceMember = new Regex(@"^\s*" + extended + @"(" + specialOperations + constant + serializer + stringifier + staticMember + iterable + readonlyMember + inheritMember + setRaises + attribute + maplikesetlike + operation + @")\s*;?$"
+        , RegexOptions.Compiled | RegexOptions.ExplicitCapture | RegexOptions.IgnoreCase | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace);
 
         private static readonly Regex IndividualInterfaceMember = new Regex(@"^\s*(\[(?<extended>[^\]]+)]\s*)?(
         ((((?<getter>getter)|(?<setter>setter)|(?<creator>creator)|(?<deleter>deleter)|(?<legacycaller>legacycaller))\s+){1,5}\s*)(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)(?<item>[^(\s]+)?\s*(?<function>\((?<args>.*)\))|
         (?<const>const)\s+(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)(?<item>.+?)\s*=\s*(?<value>.+?)|
         (?<serializer>serializer)(\s+(dom::)?((?<type>.+?[\)>]+\??)\s*|(?<type>.+?)\s+)((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\))|\s*=\s*(?<bracket>[\{\[])?\s*(?<value>[^\}\]]*)\s*[\}\]]?)?|
-
         (?<stringifier>stringifier)((\s+((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)(\s+(?<required>required))?(\s+(?<item>[^;]+)))|(\s+(?<type>.+))(\s+(?<item>.+))?(?<function>\((?<args>.*)\)))?$|
         (?<static>static)\s+(((?<readonly>readonly)\s+)?(?<attribute>attribute)\s+(?<type>.+)\s+((?<required>required)|(?<item>.+))|(?<type>.+?)\s*((?<item>[^\(\s]+)\s*)?(?<function>\((?<args>.*)\)))|
         ((?<iterable>iterable)|(?<legacyiterable>legacyiterable))\s*<(?<type>.+)>|
