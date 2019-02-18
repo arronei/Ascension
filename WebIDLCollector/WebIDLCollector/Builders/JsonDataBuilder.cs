@@ -43,10 +43,49 @@ namespace WebIDLCollector.Builders
         private string CreateJsonObject()
         {
             var sb = new StringBuilder();
-            var finalList = GenerateFinalInterfaceList();
             var commaPlaceHolder = string.Empty;
 
-            foreach (var interfaceType in finalList.Values)
+            var finalNamespaceList = GenerateFinalNamespaceList();
+            foreach (var namespaceType in finalNamespaceList.Values)
+            {
+                var tmType = new TypeMirrorType
+                {
+                    TypeName = namespaceType.Name,
+                    BaseType = string.Empty,
+                    Confidence = 4,
+                    DerivedTypes = new List<string>(),
+                    Properties = new List<TypeMirrorProperty>(),
+                    SpecNames = namespaceType.SpecNames
+                };
+
+                var mem = namespaceType.Members.ToList();
+
+                foreach (var tmProperty in mem)
+                {
+                    if (string.IsNullOrWhiteSpace(tmProperty.Name)) { continue; }
+                    var item = new TypeMirrorProperty
+                    {
+                        Name = tmProperty.Name,
+                        Type = tmProperty.Type,
+                        Confidence = 4,
+                        HasGet = tmProperty.HasGet,
+                        HasSet = tmProperty.HasSet,
+                        IsConfigurable = true,
+                        IsEnumerable = true,
+                        IsWritable = true,
+                        SpecNames = tmProperty.SpecNames
+                    };
+
+                    tmType.Properties.Add(item);
+                }
+
+                sb.Append(commaPlaceHolder);
+                commaPlaceHolder = ",\r\n";
+                sb.Append(tmType);
+            }
+
+            var finalInterfaceList = GenerateFinalInterfaceList();
+            foreach (var interfaceType in finalInterfaceList.Values)
             {
                 var tmType = new TypeMirrorType
                 {
@@ -65,7 +104,8 @@ namespace WebIDLCollector.Builders
                     var constructor = new TypeMirrorProperty
                     {
                         Name = "constructor",
-                        SpecNames = (interfaceType.Constructors.Any() || interfaceType.HtmlConstructor) ? interfaceType.SpecNames : new List<string> { "webidl" },
+                        //SpecNames = (interfaceType.Constructors.Any() || interfaceType.HtmlConstructor) ? interfaceType.SpecNames : new List<string> { "webidl" },
+                        SpecNames = new List<string> { "webidl" },
                         Confidence = 4,
                         IsConfigurable = true,
                         IsWritable = true,
@@ -195,6 +235,11 @@ namespace WebIDLCollector.Builders
             }
 
             return finalList;
+        }
+
+        private Dictionary<string, NamespaceType> GenerateFinalNamespaceList()
+        {
+            return _specData.Namespaces.ToDictionary(a => a.Name, b => b);
         }
     }
 }

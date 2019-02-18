@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -217,6 +217,10 @@ namespace WebIDLCollector.GetData
                     if (new[] { "_camel_cased_attribute", "_webkit_cased_attribute", "_dashed_attribute" }.Contains(name))
                     {
                         continue;
+                    }
+                    if (Regex.IsMatch(name, "^_[a-z]", RegexOptions.IgnoreCase))
+                    {
+                        name = name.TrimStart('_');
                     }
                     var memberItem = new Member(name)
                     {

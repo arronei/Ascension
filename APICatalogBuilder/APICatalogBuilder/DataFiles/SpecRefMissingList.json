@@ -28,6 +28,7 @@
   "es2016": "ECMAScript 2016",
   "es2017": "ECMAScript 2017",
   "es2018": "ECMAScript 2018",
+  "es2019": "ECMAScript 2019",
   "wapa": "Web Accessibility Properties and Actions (WAPA) Explainer",
   "touch-events-2": "Touch Events Level 2",
   "filesystemapi": "FileSystem API",
@@ -35,5 +36,13 @@
   "wbauthn": "Web Authentication",
   "navigatorcores": "Navigator HW Concurrency",
   "speech-api": "Web Speech API",
-  "geometry": "Geometry Interfaces Level 1"
+  "geometry": "Geometry Interfaces Level 1",
+  "deviceorientation": "DeviceOrientation Event Specification",
+  "gamepad-extensions": "Gamepad Extensions",
+  "webxr": "WebXR Device API",
+  "longtasks": "Long Tasks API 1",
+  "resizeobserver": "Resize Observer 1",
+  "aria-reflection": "ARIA reflection",
+  "execcommand": "execCommand",
+  "font-metrics-api-1" : "Font Metrics API Level 1"
 }

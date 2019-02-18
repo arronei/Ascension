@@ -721,6 +721,24 @@ namespace WebIDLCollector.Builders
                 if (!tmType.Properties.Contains(entries)) { tmType.Properties.Add(entries); }
             }
 
+            if (!mem.Exists(a => a.Name.Equals("forEach", StringComparison.OrdinalIgnoreCase)))
+            {
+                var forEach = new TypeMirrorProperty
+                {
+                    Name = "forEach",
+                    Type = "void",
+                    Confidence = 4,
+                    HasGet = tmProperty.HasGet,
+                    HasSet = tmProperty.HasSet,
+                    IsConfigurable = true,
+                    IsEnumerable = true,
+                    IsWritable = true,
+                    SpecNames = new List<string> { "webidl" }
+                };
+
+                if (!tmType.Properties.Contains(forEach)) { tmType.Properties.Add(forEach); }
+            }
+
             if (!mem.Exists(a => a.Name.Equals("keys", StringComparison.OrdinalIgnoreCase)))
             {
                 var keys = new TypeMirrorProperty
@@ -806,7 +824,7 @@ namespace WebIDLCollector.Builders
                     HasSet = false,
                     IsConfigurable = true,
                     IsEnumerable = false,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "es6", "es2017", "es2019" }
                 };
 
                 if (!tmType.Properties.Contains(callerMember)) { tmType.Properties.Add(callerMember); }
@@ -823,7 +841,7 @@ namespace WebIDLCollector.Builders
                     HasSet = false,
                     IsConfigurable = true,
                     IsEnumerable = false,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "es6", "es2017", "es2019" }
                 };
 
                 if (!tmType.Properties.Contains(argumentsMember)) { tmType.Properties.Add(argumentsMember); }
@@ -840,7 +858,7 @@ namespace WebIDLCollector.Builders
                     HasSet = false,
                     IsConfigurable = true,
                     IsEnumerable = false,
-                    SpecNames = tmType.SpecNames
+                    SpecNames = new List<string> { "es6", "es2017", "es2019" }
                 };
 
                 if (!tmType.Properties.Contains(nameMember)) { tmType.Properties.Add(nameMember); }

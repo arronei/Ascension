@@ -24,7 +24,14 @@ namespace TypeSystem.Data.ApiCatalog
                 }
                 foreach (var specShortName in Interfaces.Values.SelectMany(a => a.SpecificationNames).Distinct().OrderBy(a => a))
                 {
-                    _specifications.Add(specShortName, _specRefFullList[specShortName]);
+                    if (!_specRefFullList.Keys.Contains(specShortName))
+                    {
+                        _specifications.Add(specShortName, _specRefFullList[specShortName]);
+                    }
+                    else
+                    {
+                        //Log message
+                    }
                 }
 
                 var thisListOfSpecs = Interfaces.Values.SelectMany(a => a.SpecificationNames).Distinct().OrderBy(a => a).ToDictionary(k=>k);

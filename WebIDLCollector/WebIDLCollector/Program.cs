@@ -219,7 +219,10 @@ namespace WebIDLCollector
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Unable to load document");
                     Console.ForegroundColor = ConsoleColor.Gray;
-                    Errors.Add(specUrl);
+                    if (!Errors.Contains(specUrl))
+                    {
+                        Errors.Add(specUrl);
+                    }
                     return false;
                 }
 
@@ -229,7 +232,10 @@ namespace WebIDLCollector
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Unable to determine what to parse");
                     Console.ForegroundColor = ConsoleColor.Gray;
-                    Errors.Add(specUrl);
+                    if (!Errors.Contains(specUrl))
+                    {
+                        Errors.Add(specUrl);
+                    }
                     return false;
                 }
 
@@ -343,6 +349,10 @@ namespace WebIDLCollector
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("No common bikeshed sections found");
                     Console.ForegroundColor = ConsoleColor.Gray;
+                    if (!Errors.Contains(specData.Url))
+                    {
+                        Errors.Add(specData.Url);
+                    }
                 }
                 else
                 {
@@ -376,6 +386,10 @@ namespace WebIDLCollector
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("No common respec sections found");
                     Console.ForegroundColor = ConsoleColor.Gray;
+                    if (!Errors.Contains(specData.Url))
+                    {
+                        Errors.Add(specData.Url);
+                    }
                 }
                 else
                 {
@@ -413,6 +427,10 @@ namespace WebIDLCollector
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("No common sections to parse");
                 Console.ForegroundColor = ConsoleColor.Gray;
+                if (!Errors.Contains(specData.Url))
+                {
+                    Errors.Add(specData.Url);
+                }
             }
             specIdentification.AddRange(fallbackIdentificationList);
 

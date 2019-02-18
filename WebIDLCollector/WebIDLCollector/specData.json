@@ -240,7 +240,15 @@
   },
   {
     "name": "css-fonts-3",
-    "url": "https://drafts.csswg.org/css-fonts/"
+    "url": "https://drafts.csswg.org/css-fonts-3/"
+  },
+  {
+    "name": "css-fonts-4",
+    "url": "http://www.w3.org/TR/css-fonts-4/"
+  },
+  {
+    "name": "css-fonts-4",
+    "url": "https://drafts.csswg.org/css-fonts-4/"
   },
   {
     "name": "css-gcpm-3",
@@ -252,11 +260,19 @@
   },
   {
     "name": "css-grid-1",
-    "url": "http://www.w3.org/TR/css3-grid-layout/"
+    "url": "http://www.w3.org/TR/css-grid-1/"
   },
   {
     "name": "css-grid-1",
-    "url": "https://drafts.csswg.org/css-grid/"
+    "url": "https://drafts.csswg.org/css-grid-1/"
+  },
+  {
+    "name": "css-grid-2",
+    "url": "https://www.w3.org/TR/css-grid-2/"
+  },
+  {
+    "name": "css-grid-2",
+    "url": "https://drafts.csswg.org/css-grid-2/"
   },
   {
     "name": "css-images-3",
@@ -821,6 +837,14 @@
   {
     "name": "media-source",
     "url": "https://w3c.github.io/media-source/"
+  },
+  //{
+  //  "name": "media-playback-quality",
+  //  "url": "https://www.w3.org/TR/media-playback-quality/"
+  //},
+  {
+    "name": "media-playback-quality",
+    "url": "https://wicg.github.io/media-playback-quality/"
   },
   {
     "name": "pointerevents",
@@ -1514,11 +1538,11 @@
     "number": 11,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
   },
-  {
-    "name": "webgl",
-    "number": 12,
-    "url": "https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_compressed_texture_atc/"
-  },
+  //{
+  //  "name": "webgl",
+  //  "number": 12,
+  //  "url": "https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_compressed_texture_atc/"
+  //},
   {
     "name": "webgl",
     "number": 13,
@@ -1564,11 +1588,11 @@
     "number": 21,
     "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
   },
-  {
-    "name": "webgl",
-    "number": 22,
-    "url": "https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_shared_resources/"
-  },
+  //{
+  //  "name": "webgl",
+  //  "number": 22,
+  //  "url": "https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_shared_resources/"
+  //},
   {
     "name": "webgl",
     "number": 23,
@@ -1624,11 +1648,11 @@
     "number": 33,
     "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
   },
-  {
-    "name": "webgl",
-    "number": 34,
-    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_get_buffer_sub_data_async/"
-  },
+  //{
+  //  "name": "webgl",
+  //  "number": 34,
+  //  "url": "https://www.khronos.org/registry/webgl/extensions/rejected/WEBGL_get_buffer_sub_data_async/"
+  //},
   {
     "name": "webgl",
     "number": 35,
@@ -1658,7 +1682,13 @@
   {
     "name": "whatwg-html",
     "title": "HTML Living Standard",
-    "url": "https://html.spec.whatwg.org/"
+    "url": "https://html.spec.whatwg.org/",
+    "identification": [
+      {
+        "selector": "pre code.idl",
+        "type": "idl"
+      }
+    ],
   },
   {
     "name": "compositing-1",
@@ -1767,9 +1797,13 @@
     "url": "https://w3c.github.io/orientation-sensor/"
   },
   {
-    "name": "aom",
-    "url": "https://wicg.github.io/aom/spec/"
+    "name": "aria-reflection",
+    "url": "https://wicg.github.io/aom/spec/aria-reflection.html"
   },
+  //{
+  //  "name": "aom",
+  //  "url": "https://wicg.github.io/aom/spec/"
+  //},
   {
     "name": "web-animations-1",
     "url": "https://www.w3.org/TR/web-animations-1/"
@@ -1890,10 +1924,10 @@
     "name": "input-events",
     "url": "https://w3c.github.io/input-events/"
   },
-  {
-    "name": "contentEditable",
-    "url": "https://w3c.github.io/editing/contentEditable.html"
-  },
+  //{
+  //  "name": "contentEditable",
+  //  "url": "https://w3c.github.io/editing/contentEditable.html"
+  //},
   {
     "name": "streams-api",
     "url": "https://streams.spec.whatwg.org/",
@@ -1902,5 +1936,13 @@
   {
     "name": "picture-in-picture",
     "url": "https://wicg.github.io/picture-in-picture/"
+  },
+  {
+    "name": "execcommand",
+    "url": "https://w3c.github.io/editing/execCommand.html"
+  },
+  {
+    "name": "visual-viewport",
+    "url": "https://wicg.github.io/visual-viewport/"
   }
 ]

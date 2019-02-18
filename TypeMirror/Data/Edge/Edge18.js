@@ -1,6 +1,6 @@
 {
   "browserVersion": "Edge 18",
-  "timestamp": "2018-05-15T18:34:37.763Z",
+  "timestamp": "2018-07-30T16:16:23.192Z",
   "types": {
     "ANGLE_instanced_arrays": {
       "typeName": "ANGLE_instanced_arrays",
@@ -209,6 +209,106 @@
         "prototype": {
           "confidence": 3,
           "type": "AbortSignalPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "AbstractRange": {
+      "typeName": "AbstractRange",
+      "derivedTypes": [
+        "Range",
+        "StaticRange"
+      ],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "collapsed": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "endContainer": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "endOffset": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "startContainer": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "startOffset": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "AbstractRangePrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -873,29 +973,7 @@
           "isEnumerable": false,
           "isWritable": true
         },
-        "indexOf": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
         "every": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "filter": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -1017,6 +1095,28 @@
           "isWritable": true
         },
         "entries": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "indexOf": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "filter": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -2759,6 +2859,210 @@
         }
       }
     },
+    "AuthenticatorAssertionResponse": {
+      "typeName": "AuthenticatorAssertionResponse",
+      "derivedTypes": [],
+      "baseType": "AuthenticatorResponse",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "authenticatorData": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "signature": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "userHandle": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "AuthenticatorAssertionResponsePrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "AuthenticatorAttestationResponse": {
+      "typeName": "AuthenticatorAttestationResponse",
+      "derivedTypes": [],
+      "baseType": "AuthenticatorResponse",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "attestationObject": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "AuthenticatorAttestationResponsePrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "AuthenticatorResponse": {
+      "typeName": "AuthenticatorResponse",
+      "derivedTypes": [
+        "AuthenticatorAssertionResponse",
+        "AuthenticatorAttestationResponse"
+      ],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "clientDataJSON": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "AuthenticatorResponsePrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
     "BarProp": {
       "typeName": "BarProp",
       "derivedTypes": [],
@@ -4278,6 +4582,18 @@
       "baseType": "Object",
       "confidence": 4,
       "properties": {
+        "@@iterator": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true,
+          "extraData": "value-iterable"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -4514,6 +4830,16 @@
           "isEnumerable": true
         },
         "backgroundAttachment": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "backgroundBlendMode": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -6043,6 +6369,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "maskComposite": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "maskImage": {
           "confidence": 4,
           "type": "string",
@@ -6074,6 +6410,16 @@
           "isEnumerable": true
         },
         "maskPositionY": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "maskRepeat": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -6694,6 +7040,16 @@
           "isEnumerable": true
         },
         "overflow": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "overflowWrap": {
           "confidence": 4,
           "type": "string",
           "isPlausiblyInherited": false,
@@ -7893,6 +8249,86 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "webkitMask": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitMaskComposite": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitMaskImage": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitMaskPosition": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitMaskPositionX": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitMaskPositionY": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitMaskRepeat": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "webkitMaskSize": {
+          "confidence": 4,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "webkitOrder": {
           "confidence": 4,
           "type": "string",
@@ -8382,7 +8818,7 @@
         },
         "id": {
           "confidence": 4,
-          "type": "string",
+          "type": "object",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -10321,6 +10757,155 @@
         "prototype": {
           "confidence": 3,
           "type": "CountQueuingStrategyPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "Credential": {
+      "typeName": "Credential",
+      "derivedTypes": [
+        "PublicKeyCredential"
+      ],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "id": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "type": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "CredentialPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "isUserVerifyingPlatformAuthenticatorAvailable": {
+          "isPlausiblyDefined": true
+        }
+      }
+    },
+    "CredentialsContainer": {
+      "typeName": "CredentialsContainer",
+      "derivedTypes": [],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "create": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "get": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "CredentialsContainerPrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -17050,6 +17635,17 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "getAttributeNames": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "getAttributeNode": {
           "confidence": 4,
           "type": "function",
@@ -18230,6 +18826,15 @@
           "isEnumerable": false,
           "isWritable": true
         },
+        "contextMenuSourceElement": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "prototype": {
           "confidence": 3,
           "type": "ExternalPrototype",
@@ -18852,6 +19457,18 @@
       "baseType": "Object",
       "confidence": 4,
       "properties": {
+        "@@iterator": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true,
+          "extraData": "pair-iterable"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -18874,9 +19491,127 @@
           "isEnumerable": true,
           "isWritable": true
         },
+        "forEach": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "get": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "entries": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "keys": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "values": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "prototype": {
           "confidence": 3,
           "type": "FormDataPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "FormDataIterator": {
+      "typeName": "FormDataIterator",
+      "derivedTypes": [],
+      "baseType": "Object",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "next": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "FormDataIteratorPrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -24564,16 +25299,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "srcdoc": {
-          "confidence": 4,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "width": {
           "confidence": 4,
           "type": "string",
@@ -27479,6 +28204,17 @@
           "isWritable": true
         },
         "getSVGDocument": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "reportValidity": {
           "confidence": 4,
           "type": "function",
           "isPlausiblyInherited": false,
@@ -33649,6 +34385,17 @@
           "isConfigurable": true,
           "isEnumerable": false,
           "isWritable": true
+        },
+        "PluralRules": {
+          "confidence": 3,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
         }
       }
     },
@@ -34107,79 +34854,6 @@
         }
       }
     },
-    "MSAssertion": {
-      "typeName": "MSAssertion",
-      "derivedTypes": [
-        "MSFIDOCredentialAssertion",
-        "MSFIDOSignatureAssertion"
-      ],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "id": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "type": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "MSAssertionPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
     "MSBlobBuilder": {
       "typeName": "MSBlobBuilder",
       "derivedTypes": [],
@@ -34222,80 +34896,6 @@
         "prototype": {
           "confidence": 3,
           "type": "MSBlobBuilderPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "MSCredentials": {
-      "typeName": "MSCredentials",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "getAssertion": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "makeCredential": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "MSCredentialsPrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -34436,234 +35036,6 @@
         "prototype": {
           "confidence": 3,
           "type": "MSDSHEventPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "MSFIDOCredentialAssertion": {
-      "typeName": "MSFIDOCredentialAssertion",
-      "derivedTypes": [],
-      "baseType": "MSAssertion",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "algorithm": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "attestation": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "publicKey": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "transportHints": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "MSFIDOCredentialAssertionPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "MSFIDOSignature": {
-      "typeName": "MSFIDOSignature",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "authnrData": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "clientData": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "signature": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "MSFIDOSignaturePrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "MSFIDOSignatureAssertion": {
-      "typeName": "MSFIDOSignatureAssertion",
-      "derivedTypes": [],
-      "baseType": "MSAssertion",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "signature": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "MSFIDOSignatureAssertionPrototype",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -37143,6 +37515,17 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "toJSON": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
         "prototype": {
           "confidence": 3,
           "type": "MediaDeviceInfoPrototype",
@@ -38097,6 +38480,18 @@
       "baseType": "Object",
       "confidence": 4,
       "properties": {
+        "@@iterator": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true,
+          "extraData": "value-iterable"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -40635,9 +41030,9 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "authentication": {
+        "cookieEnabled": {
           "confidence": 4,
-          "type": "WebAuthentication",
+          "type": "boolean",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -40645,9 +41040,9 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "cookieEnabled": {
+        "credentials": {
           "confidence": 4,
-          "type": "boolean",
+          "type": "CredentialsContainer",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -42885,12 +43280,14 @@
       "derivedTypes": [
         "ANGLE_instanced_arrays",
         "AbortController",
+        "AbstractRange",
         "Array",
         "ArrayBuffer",
         "AudioBuffer",
         "AudioListener",
         "AudioParam",
         "AudioTrack",
+        "AuthenticatorResponse",
         "BarProp",
         "BhxBrowser",
         "Blob",
@@ -42905,6 +43302,8 @@
         "ClientRect",
         "ClientRectList",
         "CountQueuingStrategy",
+        "Credential",
+        "CredentialsContainer",
         "Crypto",
         "CryptoKey",
         "CryptoKeyPair",
@@ -42932,6 +43331,7 @@
         "External",
         "FileList",
         "FormData",
+        "FormDataIterator",
         "Function",
         "Gamepad",
         "GamepadButton",
@@ -42951,10 +43351,7 @@
         "IntersectionObserver",
         "IntersectionObserverEntry",
         "Location",
-        "MSAssertion",
         "MSBlobBuilder",
-        "MSCredentials",
-        "MSFIDOSignature",
         "MSGesture",
         "MSGraphicsTrust",
         "MSMediaKeyError",
@@ -43002,7 +43399,6 @@
         "Promise",
         "RTCIceCandidate",
         "RTCSessionDescription",
-        "Range",
         "ReadableStream",
         "ReadableStreamReader",
         "RegExp",
@@ -43037,8 +43433,6 @@
         "SVGTransform",
         "SVGTransformList",
         "SVGUnitTypes",
-        "ScopedCredential",
-        "ScopedCredentialInfo",
         "Selection",
         "Set",
         "SpeechSynthesisVoice",
@@ -43073,8 +43467,6 @@
         "WEBGL_depth_texture",
         "WeakMap",
         "WeakSet",
-        "WebAuthentication",
-        "WebAuthnAssertion",
         "WebGLActiveInfo",
         "WebGLObject",
         "WebGLRenderingContext",
@@ -44996,7 +45388,6 @@
       "derivedTypes": [
         "PerformanceMark",
         "PerformanceMeasure",
-        "PerformanceNavigationTiming",
         "PerformanceResourceTiming"
       ],
       "baseType": "Object",
@@ -45319,7 +45710,7 @@
     "PerformanceNavigationTiming": {
       "typeName": "PerformanceNavigationTiming",
       "derivedTypes": [],
-      "baseType": "PerformanceEntry",
+      "baseType": "PerformanceResourceTiming",
       "confidence": 4,
       "properties": {
         "constructor": {
@@ -45332,26 +45723,6 @@
           "isConfigurable": true,
           "isEnumerable": false,
           "isWritable": true
-        },
-        "connectEnd": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "connectStart": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
         },
         "domComplete": {
           "confidence": 4,
@@ -45393,46 +45764,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "domLoading": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "domainLookupEnd": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "domainLookupStart": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "fetchStart": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "loadEventEnd": {
           "confidence": 4,
           "type": "number",
@@ -45453,67 +45784,7 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "navigationStart": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "redirectCount": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "redirectEnd": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "redirectStart": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "requestStart": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "responseEnd": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "responseStart": {
           "confidence": 4,
           "type": "number",
           "isPlausiblyInherited": false,
@@ -45544,16 +45815,6 @@
           "isEnumerable": true
         },
         "unloadEventStart": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "workerStart": {
           "confidence": 4,
           "type": "number",
           "isPlausiblyInherited": false,
@@ -45600,7 +45861,9 @@
     },
     "PerformanceResourceTiming": {
       "typeName": "PerformanceResourceTiming",
-      "derivedTypes": [],
+      "derivedTypes": [
+        "PerformanceNavigationTiming"
+      ],
       "baseType": "PerformanceEntry",
       "confidence": 4,
       "properties": {
@@ -45726,6 +45989,16 @@
           "isEnumerable": true
         },
         "responseStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "secureConnectionStart": {
           "confidence": 4,
           "type": "number",
           "isPlausiblyInherited": false,
@@ -45978,6 +46251,16 @@
           "isEnumerable": true
         },
         "responseStart": {
+          "confidence": 4,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "secureConnectionStart": {
           "confidence": 4,
           "type": "number",
           "isPlausiblyInherited": false,
@@ -46339,16 +46622,6 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
-        "hwTimestamp": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "isPrimary": {
           "confidence": 4,
           "type": "boolean",
@@ -46428,17 +46701,6 @@
           "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true
-        },
-        "initPointerEvent": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
         },
         "prototype": {
           "confidence": 3,
@@ -46861,6 +47123,98 @@
         "revocable": {
           "confidence": 3,
           "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
+    "PublicKeyCredential": {
+      "typeName": "PublicKeyCredential",
+      "derivedTypes": [],
+      "baseType": "Credential",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "rawId": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "response": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "getClientExtensionResults": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "PublicKeyCredentialPrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "isUserVerifyingPlatformAuthenticatorAvailable": {
+          "confidence": 1,
+          "type": "function",
+          "isPlausiblyInherited": true,
+          "isPlausiblyDefined": true,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": true,
+          "isWritable": true
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": false,
@@ -48949,7 +49303,7 @@
     "Range": {
       "typeName": "Range",
       "derivedTypes": [],
-      "baseType": "Object",
+      "baseType": "AbstractRange",
       "confidence": 4,
       "properties": {
         "constructor": {
@@ -48963,59 +49317,9 @@
           "isEnumerable": false,
           "isWritable": true
         },
-        "collapsed": {
-          "confidence": 4,
-          "type": "boolean",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
         "commonAncestorContainer": {
           "confidence": 4,
           "type": "HTMLDocument",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "endContainer": {
-          "confidence": 4,
-          "type": "HTMLDocument",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "endOffset": {
-          "confidence": 4,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "startContainer": {
-          "confidence": 4,
-          "type": "HTMLDocument",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "startOffset": {
-          "confidence": 4,
-          "type": "number",
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
           "hasGet": true,
@@ -50364,15 +50668,6 @@
           "isEnumerable": true
         },
         "signal": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "type": {
           "confidence": 4,
           "isPlausiblyInherited": false,
           "isPlausiblyDefined": false,
@@ -52733,6 +53028,15 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "onmousewheel": {
+          "confidence": 4,
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "onmsgesturechange": {
           "confidence": 4,
           "isPlausiblyInherited": false,
@@ -53099,15 +53403,6 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "xmlbase": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": true,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -64655,146 +64950,6 @@
         }
       }
     },
-    "ScopedCredential": {
-      "typeName": "ScopedCredential",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "id": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "type": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "ScopedCredentialPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "ScopedCredentialInfo": {
-      "typeName": "ScopedCredentialInfo",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "credential": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "publicKey": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "ScopedCredentialInfoPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
     "Screen": {
       "typeName": "Screen",
       "derivedTypes": [],
@@ -66528,6 +66683,58 @@
         }
       }
     },
+    "StaticRange": {
+      "typeName": "StaticRange",
+      "derivedTypes": [],
+      "baseType": "AbstractRange",
+      "confidence": 4,
+      "properties": {
+        "constructor": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true
+        },
+        "prototype": {
+          "confidence": 3,
+          "type": "StaticRangePrototype",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": false,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "length": {
+          "confidence": 3,
+          "type": "number",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        },
+        "name": {
+          "confidence": 3,
+          "type": "string",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": false
+        }
+      }
+    },
     "StereoPannerNode": {
       "typeName": "StereoPannerNode",
       "derivedTypes": [],
@@ -67573,6 +67780,18 @@
       "baseType": "Object",
       "confidence": 4,
       "properties": {
+        "@@iterator": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true,
+          "extraData": "value-iterable"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -67635,6 +67854,18 @@
       "baseType": "Object",
       "confidence": 4,
       "properties": {
+        "@@iterator": {
+          "confidence": 4,
+          "type": "function",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": false,
+          "hasSet": false,
+          "isConfigurable": true,
+          "isEnumerable": false,
+          "isWritable": true,
+          "extraData": "value-iterable"
+        },
         "constructor": {
           "confidence": 4,
           "type": "function",
@@ -72785,168 +73016,6 @@
           "isConfigurable": true,
           "isEnumerable": false,
           "isWritable": true
-        }
-      }
-    },
-    "WebAuthentication": {
-      "typeName": "WebAuthentication",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "getAssertion": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "makeCredential": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true,
-          "isWritable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "WebAuthenticationPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        }
-      }
-    },
-    "WebAuthnAssertion": {
-      "typeName": "WebAuthnAssertion",
-      "derivedTypes": [],
-      "baseType": "Object",
-      "confidence": 4,
-      "properties": {
-        "constructor": {
-          "confidence": 4,
-          "type": "function",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": true
-        },
-        "authenticatorData": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "clientData": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "credential": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "signature": {
-          "confidence": 4,
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "prototype": {
-          "confidence": 3,
-          "type": "WebAuthnAssertionPrototype",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": false,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "length": {
-          "confidence": 3,
-          "type": "number",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
-        },
-        "name": {
-          "confidence": 3,
-          "type": "string",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": false,
-          "hasSet": false,
-          "isConfigurable": true,
-          "isEnumerable": false,
-          "isWritable": false
         }
       }
     },
@@ -79652,6 +79721,16 @@
           "isConfigurable": true,
           "isEnumerable": true
         },
+        "browser": {
+          "confidence": 2,
+          "type": "Object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
         "clientInformation": {
           "confidence": 2,
           "type": "Navigator",
@@ -79839,16 +79918,6 @@
           "isPlausiblyDefined": false,
           "hasGet": true,
           "hasSet": true,
-          "isConfigurable": true,
-          "isEnumerable": true
-        },
-        "msCredentials": {
-          "confidence": 2,
-          "type": "MSCredentials",
-          "isPlausiblyInherited": false,
-          "isPlausiblyDefined": false,
-          "hasGet": true,
-          "hasSet": false,
           "isConfigurable": true,
           "isEnumerable": true
         },
@@ -80963,6 +81032,46 @@
           "isEnumerable": true
         },
         "onwaiting": {
+          "confidence": 2,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onwebkitanimationend": {
+          "confidence": 2,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onwebkitanimationiteration": {
+          "confidence": 2,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onwebkitanimationstart": {
+          "confidence": 2,
+          "type": "object",
+          "isPlausiblyInherited": false,
+          "isPlausiblyDefined": false,
+          "hasGet": true,
+          "hasSet": true,
+          "isConfigurable": true,
+          "isEnumerable": true
+        },
+        "onwebkittransitionend": {
           "confidence": 2,
           "type": "object",
           "isPlausiblyInherited": false,
